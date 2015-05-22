@@ -5,7 +5,7 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 1.4.1
+// SDK Version 1.4.2
 
 #import <Foundation/Foundation.h>
 
@@ -57,6 +57,11 @@
  */
 @property(nonatomic, assign) BOOL      disableInApps;
 
+
+/**
+ Set the property to YES if you don't want MoEngage to reset bagde no. on app open
+ */
+@property(nonatomic, assign) BOOL      disableBadgeReset;
 
 #pragma mark - Shared instance 
 
