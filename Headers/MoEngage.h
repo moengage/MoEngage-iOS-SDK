@@ -5,9 +5,14 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 1.4.3
+// SDK Version 1.5
 
 #import <Foundation/Foundation.h>
+
+typedef enum _AppStatus{
+    INSTALL,
+    UPDATE
+}AppStatus;
 
 /** 
  Conform to this protocol if you want to handle the action of the in-app messages' button clicks.
@@ -167,6 +172,12 @@
  @see MOInAppDelegate
  */
 -(UIView *)getNudgeView;
+
+/**
+ Use this method to set the app status.
+ @param appStatus - Two possible enum values - APP_UDPATE (for app updates) and APP_INSTALL (for new installs)
+ */
+-(void)appStatus:(AppStatus)appStatus;
 
 /**
  Use this method in viewWillAppear
