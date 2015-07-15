@@ -5,8 +5,9 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 1.5
+// SDK Version 1.6
 
+@import CoreLocation;
 #import <Foundation/Foundation.h>
 
 typedef enum _AppStatus{
@@ -192,5 +193,12 @@ typedef enum _AppStatus{
  @warning This method is not mandatory for now. If you have both Android and iOS apps, please suffix or prefix the OS name for easier understanding of the marketing team.
  */
 -(void)trackScreenStop:(NSString *)screen;
+
+/**
+ Use this method to start tracking geofences for the current location. 
+ @param locManager Pass the location manager instance if you have create one. Else, a new one will be created. This param is optional.
+ @param location Pass this param if you already have the location of the user or want to hard code a location. Else the location manager will take the current location of the user
+ */
+-(void)startGeofencingWithLocationManager:(CLLocationManager *)locManager andCurrentLocation:(CLLocation *)location;
 
 @end
