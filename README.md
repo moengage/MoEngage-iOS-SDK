@@ -11,6 +11,13 @@ To update, simply run pod update
 
 For more information about the SDK and manual installation, go to the following link --> http://docs.moengage.com/en/latest/iOS.html
 
+v1.7
+New attribute location. This can be set as a user as well as event attribute.
+Inbox is available as a custom component. You can modify it as per your need.
+Nudge bug fix. If multiple nudges are created, and the first one will be expired, the active one will be shown. 
+Delay for in-app after a push message is removed.
+New callback for userNotification types.
+
 v1.6
 Now you can use Geofencing.
 In-app experience improved as in-app images are now cached.
