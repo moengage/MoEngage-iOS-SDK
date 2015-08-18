@@ -10,7 +10,7 @@
 #import "MOInboxTableViewCell.h"
 #import "MOInboxPushDataModel.h"
 #import "MOInbox.h"
-#import "MOInboxConstants.h"
+#import "MOInboxExposedConstants.h"
 
 
 @interface NSDictionary (SafeDictionary)
@@ -99,13 +99,13 @@ static NSInteger const MOInboxTableHeightConst = 30;
     if([_inboxMessagesArray count]){
         
         NSDictionary *dataDict = [_inboxMessagesArray objectAtIndex:indexPath.row];
-        dataDict = [dataDict safeObjectForKey:MO_DATA];
-        NSDictionary *apsDict = [dataDict safeObjectForKey:MO_PUSH_APS];
-        NSString *alertStr = [apsDict safeObjectForKey:MO_PUSH_ALERT];
+        dataDict = [dataDict safeObjectForKey:MO_EXP_DATA];
+        NSDictionary *apsDict = [dataDict safeObjectForKey:MO_EXP_PUSH_APS];
+        NSString *alertStr = [apsDict safeObjectForKey:MO_EXP_PUSH_ALERT];
         
         UIFont *myFont = [self getCellFontForDict:dataDict];
         
-        if([dataDict safeObjectForKey:MO_PUSH_IS_READ]){
+        if([dataDict safeObjectForKey:MO_EXP_PUSH_IS_READ]){
             
             // 30 is for left and right margin. You can customise this as per your need
             return [MOInbox findHeightForText:alertStr havingWidth:[MOInbox screenWidth]-30 andFont:myFont] + MOInboxTableHeightConst;
@@ -136,7 +136,7 @@ static NSInteger const MOInboxTableHeightConst = 30;
     MOInboxPushDataModel *dictionary = [[MOInboxPushDataModel alloc]initWithDictionary:[_inboxMessagesArray objectAtIndex:indexPath.row]];
     if(!dictionary.isRead){
         NSMutableDictionary *newDict = [NSMutableDictionary dictionaryWithDictionary:[_inboxMessagesArray objectAtIndex:indexPath.row]];
-        [newDict setObject:@YES forKey:MO_PUSH_IS_READ];
+        [newDict setObject:@YES forKey:MO_EXP_PUSH_IS_READ];
         [_inboxMessagesArray replaceObjectAtIndex:indexPath.row withObject:newDict];
         
         NSArray *tempArray = [[_inboxMessagesArray reverseObjectEnumerator]allObjects];
@@ -182,7 +182,7 @@ static NSInteger const MOInboxTableHeightConst = 30;
 }
 
 -(UIFont *)getCellFontForDict:(NSDictionary *)dataDict{
-    if([dataDict safeObjectForKey:MO_PUSH_IS_READ]){
+    if([dataDict safeObjectForKey:MO_EXP_PUSH_IS_READ]){
         if(self.notificationTextLabelFont){
             return self.notificationTextLabelFont;
         }else{
