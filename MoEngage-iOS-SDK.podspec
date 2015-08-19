@@ -17,7 +17,8 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => 'https://github.com/moengage/MoEngage-iOS-SDK.git', :tag => s.version.to_s }
 
-  s.resource = 'MoEngage.bundle', 'MOInbox.storyboard'
+  s.resources = 'MoEngage.bundle', 'MOInbox/*.{storyboard}'
+
   s.source_files  = 'MOHeaders/*', 'MOGeofence/*', 'MOInbox/*', 'MoEngage.bundle'
 
   s.documentation_url = 'http://docs.moengage.com'
