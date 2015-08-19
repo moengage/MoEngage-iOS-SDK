@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.resources = 'MoEngage.bundle', 'MOInbox/*.{storyboard}'
 
-  s.source_files  = 'MOHeaders/*', 'MOGeofence/*', 'MOInbox/*', 'MoEngage.bundle'
+  s.source_files  = 'MOHeaders/*', 'MOGeofence/*', 'MOInbox/*.{h,m}', 'MoEngage.bundle'
 
   s.documentation_url = 'http://docs.moengage.com'
   s.requires_arc = true
