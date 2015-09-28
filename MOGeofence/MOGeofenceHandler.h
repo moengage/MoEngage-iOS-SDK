@@ -25,7 +25,9 @@
 @property(nonatomic, strong) CLLocationManager *locationManager;
 @property(nonatomic, weak) id<MOGeoDelegate> delegate;
 
+@property (nonatomic, copy) void (^finishedBlock)(NSDictionary * regionsDict, NSError *err);
+
 +(instancetype)sharedInstance;
--(void)startGeofenceWithManager:(CLLocationManager *)locManager andLocation:(CLLocation *)location;
+-(void)startGeofenceWithManager:(CLLocationManager *)locManager andLocation:(CLLocation *)location andData:(void (^)(NSDictionary * regionsDict, NSError *err))regionsAdded;
 
 @end

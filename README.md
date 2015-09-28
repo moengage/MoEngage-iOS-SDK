@@ -11,6 +11,14 @@ To update, simply run pod update
 
 For more information about the SDK and manual installation, go to the following link --> http://docs.moengage.com/en/latest/iOS.html
 
+Change log:
+
+v1.8
+Includes bitcode support for iOS9 and Xcode7. This will not work with Xcode6, since it does not have bitcode support.
+A data sync issue fix where user goes to background and within a second terminates the app. The data was being sent twice. (happened rarely)
+Geofencing now has a completion handler to notfiy which regions are being tracked, and allowing you to manipulate them.
+MoEngage.bundle Xcode 7 incompatibility issues fixed.
+
 v1.7
 New attribute location. This can be set as a user as well as event attribute.
 Inbox is available as a custom component. You can modify it as per your need.
