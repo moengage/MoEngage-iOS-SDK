@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.library = 'MoEngageSDK'
   s.ios.vendored_library = 'libMoEngageSDK.a'
 
-  s.frameworks = 'SystemConfiguration', 'CoreLocation' 
+  s.frameworks = 'SystemConfiguration', 'AdSupport', 'CoreLocation' 
   s.compiler_flags = '-ObjC'
 
 end
