@@ -26,5 +26,14 @@
  */
 -(void)setTimeStamp:(double)timestamp forKey:(NSString *)key;
 
+/**
+ Use this method to set latitude and longitude.
+ */
+-(void)setLocationLat:(double)latitude lng:(double)longitude forKey:(NSString *)key;
+
+/**
+ Use this method to set date in NSDate format.
+ */
+-(void)setDate:(NSDate *)date forKey:(NSString *)key;
 
 @end

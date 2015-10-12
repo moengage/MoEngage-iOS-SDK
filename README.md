@@ -13,6 +13,10 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v1.8.1
+Location user attribute and event attribute support.
+NSLog fix for Release mode.
+
 v1.8
 Includes bitcode support for iOS9 and Xcode7. This will not work with Xcode6, since it does not have bitcode support.
 A data sync issue fix where user goes to background and within a second terminates the app. The data was being sent twice. (happened rarely)

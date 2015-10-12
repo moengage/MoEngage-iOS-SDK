@@ -5,7 +5,7 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 1.8
+// SDK Version 1.8.1
 
 @import CoreLocation;
 #import <Foundation/Foundation.h>
@@ -135,6 +135,13 @@ typedef enum _AppStatus{
  @param timestamp The timestamp in epoch format.
  */
 -(void)setUserAttributeTimestamp:(double)timestamp forKey:(NSString *)key;
+
+/**
+ Use this method to set user attribute location.
+ @param lat The latitude of the location
+ @param lng The longitude of the location
+ */
+-(void)setUserAttributeLocationLatitude:(double)lat longitude:(double)lng forKey:(NSString *)key;
 
 /**
  Call this method in AppDelegate in didReceiveRemoteNotification
