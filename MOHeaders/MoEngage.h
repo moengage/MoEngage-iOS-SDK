@@ -5,7 +5,7 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 1.8.1
+// SDK Version 1.8.2
 
 @import CoreLocation;
 #import <Foundation/Foundation.h>

@@ -13,9 +13,11 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v1.8.2
+NSLogs are disabled in this release. The library is made in Release scheme.
+
 v1.8.1
 Location user attribute and event attribute support.
-NSLog fix for Release mode.
 
 v1.8
 Includes bitcode support for iOS9 and Xcode7. This will not work with Xcode6, since it does not have bitcode support.
