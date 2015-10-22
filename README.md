@@ -13,6 +13,11 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v1.8.3
+Duplicate symbols fix. In some cases, the SDK does not build and shows duplicate symbols.
+NSLogs now work only for simulators and are disabled for devices.
+PushTime fix, for swift compatibility as swift has issues with Casting.
+
 v1.8.2
 NSLogs are disabled in this release. The library is made in Release scheme.
 

@@ -14,7 +14,7 @@
 @property(nonatomic, copy)      NSString        *campaignID;
 @property(nonatomic, copy)      NSString        *screenName;
 @property(nonatomic, copy)      NSString        *alertMessage;
-@property(nonatomic, copy)      NSString        *pushTime;
+@property(nonatomic, copy)      NSNumber        *pushTime;
 @property(nonatomic, strong)    NSDictionary    *extraData;
 
 @property(nonatomic, assign) BOOL isGiven;
