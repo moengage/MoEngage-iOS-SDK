@@ -13,6 +13,11 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v1.8.4
+Warnings resulting from CLANG_ENABLE_MODULES have been fixed. 
+Warnings resulting from GCC_PRECOMPILE_PREFIX_HEADER have been fixed. 
+Apple is fixing the above issues soon. A bug has been filed with them.
+
 v1.8.3
 Duplicate symbols fix. In some cases, the SDK does not build and shows duplicate symbols.
 NSLogs now work only for simulators and are disabled for devices.

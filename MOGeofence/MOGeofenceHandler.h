@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@import CoreLocation;
+#import <CoreLocation/CoreLocation.h>
 
 @protocol MOGeoDelegate <NSObject>
 @optional

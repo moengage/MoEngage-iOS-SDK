@@ -5,9 +5,9 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 1.8.3
+// SDK Version 1.8.4
 
-@import CoreLocation;
+#import <CoreLocation/CoreLocation.h>
 #import <Foundation/Foundation.h>
 #import "MOPayloadBuilder.h"
 
