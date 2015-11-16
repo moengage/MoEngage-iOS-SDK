@@ -13,6 +13,10 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v1.8.5
+Ad Support Framework is weak linked. We will not collect IDFA by default.
+Only if the framework is added, the IDFA will be collected by MoEngage.
+
 v1.8.4
 Warnings resulting from CLANG_ENABLE_MODULES have been fixed. 
 Warnings resulting from GCC_PRECOMPILE_PREFIX_HEADER have been fixed. 
