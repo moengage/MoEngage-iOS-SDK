@@ -17,10 +17,16 @@
 
 -(void)setDataWithMessage:(MOInboxPushDataModel *)messageDict{
     
-    self.notificationTextLabel.text = messageDict.alertMessage;
-    [self.notificationTextLabel sizeToFit];
-    [self setFontForMessage:messageDict];
-    [self setPushTimeForMessage:messageDict];
+    @try {
+        self.notificationTextLabel.text = messageDict.alertMessage;
+        [self.notificationTextLabel sizeToFit];
+        [self setFontForMessage:messageDict];
+        [self setPushTimeForMessage:messageDict];
+    }
+    @catch (NSException *exception) {
+        NSLog(@"MoEngage - exception while setting data with message in inbox cell is %@", exception);
+    }
+    @finally {}
 }
 
 -(void)setPushTimeForMessage:(MOInboxPushDataModel *)messageDict{

@@ -13,6 +13,12 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v1.9
+Now you can control MoEngage logs by using [MoEngage debug:YES/NO]; You can also set Log Levels and log everything, nothing or just the exceptions.
+A new event is sent for when a user recieves a notifcation when his app is active.
+Events done during the duration of resetUser were lost (1-2 secs). They won't be lost, but will be attributed to the new user now.
+Nudge view has screenname in it's view layer now. [view.layer valueForKey:@"screenName"]; Using this, you can show nudges on specific screens.
+
 v1.8.5
 Ad Support Framework is weak linked. We will not collect IDFA by default.
 Only if the framework is added, the IDFA will be collected by MoEngage.

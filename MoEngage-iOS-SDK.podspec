@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'MoEngage-iOS-SDK'
-  s.version      = '1.8.5'
+  s.version      = '1.9'
   s.summary      = 'MoEngage Mobile Marketing Automation SDK for iOS - iPhone and iPad'
   s.description  = <<-DESC
                    MoEngage is a mobile marketing automation company. This SDK helps you track events, trigger smart notifications and in-apps, provides a drop-in Inbox Controller for notifications.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.library = 'MoEngageSDK'
   s.ios.vendored_library = 'libMoEngageSDK.a'
 
-  s.frameworks = 'SystemConfiguration', 'CoreLocation' 
+  s.frameworks = 'SystemConfiguration', 'CoreLocation' , 'Security'
   s.compiler_flags = '-ObjC'
 
 end

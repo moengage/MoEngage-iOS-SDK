@@ -5,7 +5,7 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 1.8.4
+// SDK Version 1.9
 
 #import <CoreLocation/CoreLocation.h>
 #import <Foundation/Foundation.h>
@@ -15,6 +15,12 @@ typedef enum _AppStatus{
     INSTALL,
     UPDATE
 }AppStatus;
+
+typedef enum _LogLevel{
+    LOG_NONE,
+    LOG_ALL,
+    LOG_EXCEPTIONS
+}LogLevel;
 
 /** 
  Conform to this protocol if you want to handle the action of the in-app messages' button clicks.
@@ -201,25 +207,36 @@ typedef enum _AppStatus{
 -(void)appStatus:(AppStatus)appStatus;
 
 /**
- Use this method in viewWillAppear
- @param screen - The name of the view controller or a similar name to identify the same
- @warning This method is not mandatory for now. If you have both Android and iOS apps, please suffix or prefix the OS name for easier understanding of the marketing team.
- */
--(void)trackScreenStart:(NSString *)screen;
-
-/**
- Use this method in viewWillDisappear
- @param screen - The name of the view controller or a similar name to identify the same
- @warning This method is not mandatory for now. If you have both Android and iOS apps, please suffix or prefix the OS name for easier understanding of the marketing team.
- */
--(void)trackScreenStop:(NSString *)screen;
-
-/**
  Use this method to start tracking geofences for the current location. 
  @param locManager Pass the location manager instance if you have create one. Else, a new one will be created. This param is optional.
  @param location Pass this param if you already have the location of the user or want to hard code a location. Else the location manager will take the current location of the user
  @see MOGeofenceHandler to get completion block
  */
 -(void)startGeofencingWithLocationManager:(CLLocationManager *)locManager andCurrentLocation:(CLLocation *)location;
+
+/**
+ Use this method to enable logs for the MoEngage SDK. You can simply pass yes and no to disable the logs.
+ Alternatively you can use Log Levels.
+ @see LogLevel
+ */
++(void)debug:(LogLevel) logLevel;
+
+@end
+
+@interface MoEngage (Deprecated)
+
+/**
+ Use this method in viewWillAppear
+ @param screen - The name of the view controller or a similar name to identify the same
+ @warning This method is not mandatory for now. If you have both Android and iOS apps, please suffix or prefix the OS name for easier understanding of the marketing team.
+ */
+-(void)trackScreenStart:(NSString *)screen __deprecated_msg("use trackEvent with screen name as the event name");
+
+/**
+ Use this method in viewWillDisappear
+ @param screen - The name of the view controller or a similar name to identify the same
+ @warning This method is not mandatory for now. If you have both Android and iOS apps, please suffix or prefix the OS name for easier understanding of the marketing team.
+ */
+-(void)trackScreenStop:(NSString *)screen __deprecated_msg("use trackEvent with screen name as the event name");
 
 @end
