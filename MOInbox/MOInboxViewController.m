@@ -95,6 +95,10 @@ static NSInteger const MOInboxTableHeightConst = 30;
 
 #pragma mark - Table View
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if([_inboxMessagesArray count]){
         
@@ -145,6 +149,19 @@ static NSInteger const MOInboxTableHeightConst = 30;
     }
     [self.delegate inboxCellSelectedWithData:dictionary.extraData];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        //remove the deleted object from your data source.
+        //If your data source is an NSMutableArray, do this
+        [self.inboxMessagesArray removeObjectAtIndex:indexPath.row];
+        
+        NSArray *tempArray = [[_inboxMessagesArray reverseObjectEnumerator]allObjects];
+        [MOInbox writeArrayToFile:[NSMutableArray arrayWithArray:tempArray]];
+
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+    }
 }
 
 #pragma mark - Cell customisation

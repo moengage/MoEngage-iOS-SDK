@@ -13,6 +13,10 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v1.9.1
+Inbox now has the ability to delete a message. Swipe the cell to delete.
+Some Inbox messages coming blank bug fix.
+
 v1.9
 Now you can control MoEngage logs by using [MoEngage debug:YES/NO]; You can also set Log Levels and log everything, nothing or just the exceptions.
 A new event is sent for when a user recieves a notifcation when his app is active.
