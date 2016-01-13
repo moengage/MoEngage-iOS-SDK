@@ -13,6 +13,9 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v1.9.2
+Now you can get nudges specific to a screen by using getNudgeViewForScreen;
+
 v1.9.1
 Inbox now has the ability to delete a message. Swipe the cell to delete.
 Some Inbox messages coming blank bug fix.

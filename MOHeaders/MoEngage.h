@@ -5,7 +5,7 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 1.9.1
+// SDK Version 1.9.2
 
 #import <CoreLocation/CoreLocation.h>
 #import <Foundation/Foundation.h>
@@ -199,6 +199,12 @@ typedef enum _LogLevel{
  @see MOInAppDelegate
  */
 -(UIView *)getNudgeView;
+
+/**
+ Call this method to get the nudge view for a specific screen. This param is passed in the iOS screen name or Show only in screen, while creating a nudge on the dashboard.
+ @param viewController - The View controller for which you want to get the nudge.
+ */
+-(UIView *)getNudgeViewForScreen:(UIViewController*)viewController;
 
 /**
  Use this method to set the app status.
