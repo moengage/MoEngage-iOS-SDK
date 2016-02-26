@@ -5,7 +5,7 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 1.9.3
+// SDK Version 1.9.4
 
 #import <CoreLocation/CoreLocation.h>
 #import <Foundation/Foundation.h>
@@ -169,7 +169,7 @@ typedef enum _LogLevel{
  @param locationAttrName The name of the location attribute
  @param dict The dict associated with this location event, if any
  */
-+(void)setLocationwithLat:(double)lat lng:(double)lng withName:(NSString*)locationAttrName inDictionary:(NSMutableDictionary*) dict;
++(void)setLocationwithLat:(double)lat lng:(double)lng withName:(NSString*)locationAttrName inDictionary:(NSMutableDictionary*) dict __deprecated_msg("use setUserAttributeLocationLatitude:longitude:forKey: instead");
 
 /**
  Call this method in AppDelegate in applicationWillTerminate

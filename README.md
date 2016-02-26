@@ -13,6 +13,12 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v1.9.4
+iOS 7 crash while string match for Geofence fix.
+If an attribute is set to nil, a log is printed, and the value is discarded.
+Deprecated setLocationwithLat: lng: . Use setUserAttributeLocationLatitude: longitude: forKey: instead.
+Better tracking of Push Preference for iOS8.
+
 v1.9.3
 Bug fix for events being lost sometimes if sync fails.
 Inbox Storyboard fix for version type. The storyboard didn't open for some versions of Xcode.
