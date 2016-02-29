@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
                    MoEngage is a mobile marketing automation company. This SDK helps you track events, trigger smart notifications and in-apps, provides a drop-in Inbox Controller for notifications.
                    DESC
 
-  s.homepage     = 'https://www.moengage.com'
+  s.homepage     = 'http://www.moengage.com'
 
   s.license      = { :type => 'Commercial', :file => 'LICENSE' }
   s.author             = { 'Gautam Jain' => 'gautam@moengage.com' }
