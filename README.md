@@ -13,6 +13,9 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v1.9.5
+IDFV can be nil if the device is restarted and not unlocked. While it's extremely rare, it can happen. Added a check for the same.
+
 v1.9.4
 iOS 7 crash while string match for Geofence fix.
 If an attribute is set to nil, a log is printed, and the value is discarded.
