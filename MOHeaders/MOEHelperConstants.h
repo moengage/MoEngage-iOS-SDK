@@ -28,7 +28,7 @@ extern NSString* const GENDER_FEMALE;
 
 /*
  @see MoEngage.h for method setUserAttributeLocationLatitude: longitude: forKey: 
- You can see this key in that method or add a custom key if desired.
+ You can use this key in that method or add a custom key if desired.
  */
 extern NSString* const USER_ATTRIBUTE_USER_LOCATION;
 

@@ -5,11 +5,19 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 1.9.5
+// SDK Version 2.0
+
 
 #import <CoreLocation/CoreLocation.h>
 #import <Foundation/Foundation.h>
 #import "MOPayloadBuilder.h"
+
+typedef void(^NudgeCreationCompletionBlock)(UIView *nudgeView, NSString* campaignID);
+
+typedef enum {
+    NudgeTop,
+    NudgeBottom
+}NudgePosition;
 
 typedef enum _AppStatus{
     INSTALL,
@@ -22,29 +30,38 @@ typedef enum _LogLevel{
     LOG_EXCEPTIONS
 }LogLevel;
 
+typedef enum _InAppWidget{
+    CLOSE_BUTTON,
+    BUTTON,
+    IMAGE,
+    LABEL
+}InAppWidget;
+
+
 /** 
  Conform to this protocol if you want to handle the action of the in-app messages' button clicks.
  */
 @protocol MOInAppDelegate <NSObject>
 @optional
-/**
- This method is called when the user clicks on the button in the in-app message. Conform to MoInAppDelegate to use this callback method.
- @param text - The text shown on the button.
- @param dataDictionary - The key value data dictionary associated with the button.
- */
--(void)inAppButtonClickedWithText:(NSString *)text andData:(NSDictionary *)dataDictionary;
 
 /**
- This method is called when the user clicks on the nudge view.
- @param dataDictionary - The key value data dictionary associated with the nudge view object.
+ This method is called when the inApp is shown.
+ @param campaignID - Campaign ID of InApp shown.
  */
--(void)nudgeTapped:(NSDictionary *)dataDictionary;
+-(void)inAppShownWithCampaignID:(NSString*)campaignID;
 
 /**
- This method is called when when the user clicks on the cross/dismiss button of the nudge view.
- @param dataDictionary - The key value data dictionary associated with the nugde view object.
-*/
--(void)nudgeClosed:(NSDictionary *)dataDictionary;
+ This method is called when the user clicks on a widget in the in-app message. Conform to MoInAppDelegate to use this callback method.
+ @param screenName - Used in DeepLinking, gives the screen name to navigate.
+ @param dataDict - The key value data dictionary associated with the widget tapped.
+ */
+-(void)inAppClickedForWidget:(InAppWidget)widget screenName:(NSString*)screenName andDataDict:(NSDictionary *)dataDict;
+
+/**
+ This method is called when an event triggers an in-app from the server, which is of type self handled. 
+ @param data - The data mentioned on the dashboard while creating the in-app is passed onto you
+ */
+-(void)eventTriggeredInAppAvailableWithData:(id)data;
 
 @end
 
@@ -69,7 +86,6 @@ typedef enum _LogLevel{
  Set this property to YES if you don't use in app messaging.
  */
 @property(nonatomic, assign) BOOL      disableInApps;
-
 
 /**
  Set the property to YES if you don't want MoEngage to reset bagde no. on app open
@@ -163,6 +179,12 @@ typedef enum _LogLevel{
 -(void)applicationBecameActiveinApplication:(UIApplication*)application;
 
 /**
+ Call this method in applicationWillEnterForeground
+ @param application The application instance
+ */
+-(void)applicationWillEnterForeground:(UIApplication *)application;
+
+/**
  Use this method to set the location associated with a location attribute
  @param lat The latitude of the location
  @param lng The longitude of the location
@@ -178,11 +200,28 @@ typedef enum _LogLevel{
 -(void)applicationTerminated:(UIApplication*)application;
 
 /**
- Call this method in viewDidLoad of the view controller where you want to show the in app message
+ Call this method in viewDidAppear of the view controller where you want to show the in app message
  NOTE: Adhere to the delegate for InApp - MOInAppDelegate, if you want the callback for the button actions.
  @see MOInAppDelegate
  */
 -(void)handleInAppMessage;
+
+/**
+ Call this method in viewDidLoad of the view controller where you don't want to show in app messages
+ @param viewcontroller The viewcontroller instance where you don't want to show in app
+ */
+-(void)dontShowInAppInViewController:(UIViewController*)viewcontroller;
+
+/**
+ Call this method in viewDidAppear of the view controller where you want to get a self handled in app message
+ */
+-(NSDictionary*)getSelfHandledInApp;
+
+/**
+ Call this method to track if self handled in app was shown.
+  @param campaignID The campaign ID of the self handled in app shown
+ */
+-(void)selfHandledInAppViewShownWithCampaignID:(NSString*)campaignID;
 
 /**
  Call this method to clear the unique attributes of the current user, and add him as a new user. One of the use cases is when a user logs out
@@ -195,16 +234,22 @@ typedef enum _LogLevel{
 -(void)syncNow;
 
 /**
- Call this method to get the nudge view created in the dashboard. There is only 1 nudge view
- @see MOInAppDelegate
+ Call this method to get the nudge view created in the dashboard. There can be only 1 active nudge view at any given point of time
+ @param completionBlock Completion Block with the nudge View and campaign ID.
  */
--(UIView *)getNudgeView;
+-(void)getNudgeViewWithCompletionBlock:(NudgeCreationCompletionBlock)completionBlock;
 
 /**
- Call this method to get the nudge view for a specific screen. This param is passed in the iOS screen name or Show only in screen, while creating a nudge on the dashboard.
- @param viewController - The View controller for which you want to get the nudge.
+ Call this method to track if nudge obtained from getNudgeViewWithCompletionBlock was shown.
+ @param campaignID The campaign ID of the nudge shown
  */
--(UIView *)getNudgeViewForScreen:(UIViewController*)viewController;
+-(void)nudgeViewShownWithCampaignID:(NSString*)campaignID;
+
+/**
+ Call this method to show the nudge view created in the dashboard at top/bottom of the viewcontroller. There can be only 1 active nudge view at any given point of time.
+ @param position Defines where to add the nudge view Top/Bottom.
+ */
+-(void)showNudgeViewAtNudgePosition:(NudgePosition)position;
 
 /**
  Use this method to set the app status.
@@ -229,20 +274,3 @@ typedef enum _LogLevel{
 
 @end
 
-@interface MoEngage (Deprecated)
-
-/**
- Use this method in viewWillAppear
- @param screen - The name of the view controller or a similar name to identify the same
- @warning This method is not mandatory for now. If you have both Android and iOS apps, please suffix or prefix the OS name for easier understanding of the marketing team.
- */
--(void)trackScreenStart:(NSString *)screen __deprecated_msg("use trackEvent with screen name as the event name");
-
-/**
- Use this method in viewWillDisappear
- @param screen - The name of the view controller or a similar name to identify the same
- @warning This method is not mandatory for now. If you have both Android and iOS apps, please suffix or prefix the OS name for easier understanding of the marketing team.
- */
--(void)trackScreenStop:(NSString *)screen __deprecated_msg("use trackEvent with screen name as the event name");
-
-@end

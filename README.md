@@ -13,6 +13,15 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v2.0
+This is a major release. It is recommeded to update to 2.0.
+In-App V2 aka In-App Nativ is live. This SDK includes the next version of in-apps which are totally customisable. 
+You will have to change the old callbacks for In-Apps. 
+Some methods are removed. Please check the MoEngage.h file.
+Install/Update events are now extended to creating Smart trigger pushes.
+WebViewController is always presented now, along with a DONE button at the top to dismiss the controller.
+Self Handled in-apps available now.
+
 v1.9.5
 IDFV can be nil if the device is restarted and not unlocked. While it's extremely rare, it can happen. Added a check for the same.
 
