@@ -13,6 +13,9 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v2.1
+Minor bug fix for data sync.
+
 v2.0
 This is a major release. It is recommeded to update to 2.0.
 In-App V2 aka In-App Nativ is live. This SDK includes the next version of in-apps which are totally customisable. 
