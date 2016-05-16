@@ -13,6 +13,11 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v2.2
+Notification can now have categories for action buttons - http://docs.moengage.com/docs/actionable-notifications
+In-App fix for Navigation controller in a tab bar controller, where we had trouble finding what the top view controller on the stack was.
+Deeplinking, Coupon Code and Rich landing page options for Notification actions, while creating a campaign. The SDK will handle them by default.
+
 v2.1
 Minor bug fix for data sync.
 
