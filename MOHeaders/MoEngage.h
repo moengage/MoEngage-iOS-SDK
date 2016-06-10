@@ -5,12 +5,16 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 2.2
+// SDK Version 2.3
 
 
 #import <CoreLocation/CoreLocation.h>
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "MOPayloadBuilder.h"
+#import "MOEHelperConstants.h"
+#import "MONotificationCategory.h"
+
 
 typedef void(^NudgeCreationCompletionBlock)(UIView *nudgeView, NSString* campaignID);
 
@@ -93,13 +97,24 @@ typedef enum _InAppWidget{
 #pragma mark - User Lifecycle
 
 /**
- Call this method in the AppDelegate in didFinishLaunchingWithOptions to initialize the SDK
+ Call this method in the AppDelegate in didFinishLaunchingWithOptions to initialize the SDK for dev build
  @param apiKey The unique apiKey provided for your app
  @param application The application instance
  @param launchOptions The launch options dictionary
  @param openUrl This tells us whether the deeplink should be handled or not, which means whether we call handleOpenUrl or you do it yourself.
+ @warning implement initializeProdWithApiKey method also, refer this link for more details : http://docs.moengage.com/docs/ios-app-delegate-changes
  */
--(void)initializeWithApiKey:(NSString *)apiKey inApplication:(UIApplication *)application withLaunchOptions:(NSDictionary *)launchOptions openDeeplinkUrlAutomatically:(BOOL)openUrl;
+-(void)initializeDevWithApiKey:(NSString *)apiKey inApplication:(UIApplication *)application withLaunchOptions:(NSDictionary *)launchOptions openDeeplinkUrlAutomatically:(BOOL)openUrl;
+
+/**
+ Call this method in the AppDelegate in didFinishLaunchingWithOptions to initialize the SDK for production build
+ @param apiKey The unique apiKey provided for your app
+ @param application The application instance
+ @param launchOptions The launch options dictionary
+ @param openUrl This tells us whether the deeplink should be handled or not, which means whether we call handleOpenUrl or you do it yourself.
+@warning implement initializeDevWithApiKey method also, refer this link for more details : http://docs.moengage.com/docs/ios-app-delegate-changes
+ */
+-(void)initializeProdWithApiKey:(NSString *)apiKey inApplication:(UIApplication *)application withLaunchOptions:(NSDictionary *)launchOptions openDeeplinkUrlAutomatically:(BOOL)openUrl;
 
 /**
  Call this method in applicationDidBecomeActive
@@ -283,9 +298,9 @@ typedef enum _InAppWidget{
 
 #pragma mark - Deprecated methods
 
-+(void)setLocationwithLat:(double)lat lng:(double)lng withName:(NSString*)locationAttrName inDictionary:(NSMutableDictionary*) dict __deprecated_msg("use setUserAttributeLocationLatitude:longitude:forKey: instead");
-
 -(void)initializeWithApiKey:(NSString *)apiKey inApplication:(UIApplication*)application withLaunchOptions:(NSDictionary*)launchOptions __deprecated_msg("use initializeWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically instead");
+
+-(void)initializeWithApiKey:(NSString *)apiKey inApplication:(UIApplication *)application withLaunchOptions:(NSDictionary *)launchOptions openDeeplinkUrlAutomatically:(BOOL)openUrl __deprecated_msg("use initializeDevWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically: --AND-- initializeProdWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically: instead to differentiate a dev build to a production build");
 
 @end
 
