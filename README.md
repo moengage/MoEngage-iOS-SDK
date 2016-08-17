@@ -13,6 +13,11 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v2.3.2
+RichLanding content will be shown in SFSafariViewController for iOS9 and above.
+We are now tracking change in Push Preference status event.
+You can now test inApps through push notification.
+
 v2.3.1
 Bug Fixes for event tracking through inApps and saving data on failure to sync with server.
 

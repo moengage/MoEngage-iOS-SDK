@@ -5,12 +5,14 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 2.3.1
+// SDK Version 2.3.2
 
 
 #import <CoreLocation/CoreLocation.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <SafariServices/SafariServices.h>
+
 #import "MOPayloadBuilder.h"
 #import "MOEHelperConstants.h"
 #import "MONotificationCategory.h"
@@ -69,7 +71,7 @@ typedef enum _InAppWidget{
 
 @end
 
-@interface MoEngage : NSObject
+@interface MoEngage : NSObject <SFSafariViewControllerDelegate>
 
 #pragma mark - Properties 
 
