@@ -12,6 +12,14 @@ To update, simply run pod update
 For more information about the SDK and manual installation, go to the following link --> http://docs.moengage.com/en/latest/iOS.html
 
 Change log:
+v2.4
+Supporting Nudges for testing inApp campaigns from push notification and added alerts on failure to show test inApps.
+Bug fix : InApp can be shown along with Nudges now.
+Bug fixes in inApp module to show inApp if handleInAppMessage called during fetching inApp from server.
+Inbox module supports notification containing alert as dictionary.
+Bug Fixes for Rich Landing from push notification.
+Improved exception handling in the SDK, along with detailed logs on exceptions to help in debug.
+
 
 v2.3.2
 RichLanding content will be shown in SFSafariViewController for iOS9 and above.

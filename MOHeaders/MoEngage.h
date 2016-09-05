@@ -5,7 +5,7 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 2.3.2
+// SDK Version 2.4
 
 
 #import <CoreLocation/CoreLocation.h>
@@ -20,22 +20,34 @@
 
 typedef void(^NudgeCreationCompletionBlock)(UIView *nudgeView, NSString* campaignID);
 
+/**
+ Enumerator to define where to place nudge
+ */
 typedef enum {
     NudgeTop,
     NudgeBottom
 }NudgePosition;
 
+/**
+ Enumerator to differentiate between Install/Update (Existing user or not)
+ */
 typedef enum _AppStatus{
     INSTALL,
     UPDATE
 }AppStatus;
 
+/**
+ Enumerator to set Log Levels for Debugging
+ */
 typedef enum _LogLevel{
     LOG_NONE,
     LOG_ALL,
     LOG_EXCEPTIONS
 }LogLevel;
 
+/**
+ Enumerator which gives which widget in an InApp was clicked in an inApp
+ */
 typedef enum _InAppWidget{
     CLOSE_BUTTON,
     BUTTON,
@@ -300,9 +312,15 @@ typedef enum _InAppWidget{
 
 #pragma mark - Deprecated methods
 
--(void)initializeWithApiKey:(NSString *)apiKey inApplication:(UIApplication*)application withLaunchOptions:(NSDictionary*)launchOptions __deprecated_msg("use initializeWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically instead");
+// These methods will be removed from SDK version 3.0 onwards.
+// Use initializeDevWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:
+//     --AND--
+//     initializeProdWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically: instead to differentiate a dev build to a production build
 
--(void)initializeWithApiKey:(NSString *)apiKey inApplication:(UIApplication *)application withLaunchOptions:(NSDictionary *)launchOptions openDeeplinkUrlAutomatically:(BOOL)openUrl __deprecated_msg("use initializeDevWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically: --AND-- initializeProdWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically: instead to differentiate a dev build to a production build");
+ -(void)initializeWithApiKey:(NSString *)apiKey inApplication:(UIApplication*)application withLaunchOptions:(NSDictionary*)launchOptions __deprecated_msg("use initializeDevWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically: --AND-- initializeProdWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically: instead to differentiate a dev build to a production build");
+
+ -(void)initializeWithApiKey:(NSString *)apiKey inApplication:(UIApplication *)application withLaunchOptions:(NSDictionary *)launchOptions openDeeplinkUrlAutomatically:(BOOL)openUrl __deprecated_msg("use initializeDevWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically: --AND-- initializeProdWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically: instead to differentiate a dev build to a production build");
+
 
 @end
 

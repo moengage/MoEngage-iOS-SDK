@@ -9,10 +9,25 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
+/**
+ *  MOGeoDelegate
+ */
 @protocol MOGeoDelegate <NSObject>
 @optional
-
+/**
+ *  Method will be called when a geoFence region is entered(Optional)
+ *
+ *  @param locationManager location manager instance
+ *  @param region          GeoFence region entered
+ */
 -(void)locManager:(CLLocationManager *)locationManager didEnterRegion:(CLRegion *)region;
+
+/**
+ *  Method will be called when a geoFence region is exited(Optional)
+ *
+ *  @param locationManager location manager instance
+ *  @param region          GeoFence region exited
+ */
 -(void)locManager:(CLLocationManager *)locationManager didExitRegion:(CLRegion *)region;
 
 @end
@@ -25,9 +40,14 @@
 @property(nonatomic, strong) CLLocationManager *locationManager;
 @property(nonatomic, weak) id<MOGeoDelegate> delegate;
 
-@property (nonatomic, copy) void (^finishedBlock)(NSDictionary * regionsDict, NSError *err);
-
 +(instancetype)sharedInstance;
--(void)startGeofenceWithManager:(CLLocationManager *)locManager andLocation:(CLLocation *)location andData:(void (^)(NSDictionary * regionsDict, NSError *err))regionsAdded;
+
+/**
+ *  Call this method to enable GeoFence based campaign
+ *
+ *  @param locManager Optional parameter where you can send CLLocationManager Instance
+ *  @param location   Location for which GeoFences have to considered
+ */
+-(void)startGeofenceWithManager:(CLLocationManager *)locManager andLocation:(CLLocation *)location;
 
 @end

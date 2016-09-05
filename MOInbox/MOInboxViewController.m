@@ -71,7 +71,7 @@ static NSInteger const MOInboxTableHeightConst = 30;
 }
 
 #pragma mark -
-
+// Set Title for View Controller
 -(void)setTitleForInbox{
     if(self.inboxTitle){
         self.title = self.inboxTitle;
@@ -80,6 +80,7 @@ static NSInteger const MOInboxTableHeightConst = 30;
     }
 }
 
+// Check if inbox messages are there or not. And display label informing No Messages present if no messages
 -(void)checkInboxMessagesCount{
     if([_inboxMessagesArray count]){
         [self.inboxTableView reloadData];
@@ -100,24 +101,38 @@ static NSInteger const MOInboxTableHeightConst = 30;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if([_inboxMessagesArray count]){
-        
-        NSDictionary *dataDict = [_inboxMessagesArray objectAtIndex:indexPath.row];
-        dataDict = [dataDict safeObjectForKey:MO_EXP_DATA];
-        NSDictionary *apsDict = [dataDict safeObjectForKey:MO_EXP_PUSH_APS];
-        NSString *alertStr = [apsDict safeObjectForKey:MO_EXP_PUSH_ALERT];
-        
-        UIFont *myFont = [self getCellFontForDict:dataDict];
-        
-        if([dataDict safeObjectForKey:MO_EXP_PUSH_IS_READ]){
+    
+    @try {
+        if([_inboxMessagesArray count]){
             
-            // 30 is for left and right margin. You can customise this as per your need
-            return [MOInbox findHeightForText:alertStr havingWidth:[MOInbox screenWidth]-30 andFont:myFont] + MOInboxTableHeightConst;
-        }else{
-            return [MOInbox findHeightForText:alertStr havingWidth:[MOInbox screenWidth]-30 andFont:myFont] + MOInboxTableHeightConst;
+            NSDictionary *dataDict = [_inboxMessagesArray objectAtIndex:indexPath.row];
+            dataDict = [dataDict safeObjectForKey:MO_EXP_DATA];
+            NSDictionary *apsDict = [dataDict safeObjectForKey:MO_EXP_PUSH_APS];
+            NSString *alertStr;
+            if ([[apsDict safeObjectForKey:MO_EXP_PUSH_ALERT] isKindOfClass:[NSDictionary class]]) {
+                NSDictionary* alertDict = [apsDict safeObjectForKey:MO_EXP_PUSH_ALERT];
+                alertStr = [alertDict safeObjectForKey:@"body"];
+            }
+            else if ([[apsDict safeObjectForKey:MO_EXP_PUSH_ALERT] isKindOfClass:[NSString class]]){
+                alertStr = [apsDict safeObjectForKey:MO_EXP_PUSH_ALERT];
+            }
+            
+            
+            UIFont *myFont = [self getCellFontForDict:dataDict];
+            
+            if([dataDict safeObjectForKey:MO_EXP_PUSH_IS_READ]){
+                // 30 is for left and right margin. You can customise this as per your need
+                return [MOInbox findHeightForText:alertStr havingWidth:[MOInbox screenWidth]-30 andFont:myFont] + MOInboxTableHeightConst;
+            }else{
+                return [MOInbox findHeightForText:alertStr havingWidth:[MOInbox screenWidth]-30 andFont:myFont] + MOInboxTableHeightConst;
+            }
         }
+        return 0;
+    } @catch (NSException *exception) {
+        NSLog(@"Exception : %@",exception);
+        return 0;
     }
-    return 0;
+    
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -125,30 +140,42 @@ static NSInteger const MOInboxTableHeightConst = 30;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *cellIdentifier = @"InboxCell";
-    MOInboxTableViewCell *cell = (MOInboxTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if([_inboxMessagesArray count] > indexPath.row){
-        
-        MOInboxPushDataModel *pushDataDict = [[MOInboxPushDataModel alloc]initWithDictionary:[_inboxMessagesArray objectAtIndex:indexPath.row]];
-        [self setPropertiesForCell:cell];
-        [cell setDataWithMessage:pushDataDict];
+    @try {
+        static NSString *cellIdentifier = @"InboxCell";
+        MOInboxTableViewCell *cell = (MOInboxTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+        if([_inboxMessagesArray count] > indexPath.row){
+            
+            MOInboxPushDataModel *pushDataDict = [[MOInboxPushDataModel alloc]initWithDictionary:[_inboxMessagesArray objectAtIndex:indexPath.row]];
+            [self setPropertiesForCell:cell];
+            [cell setDataWithMessage:pushDataDict];
+        }
+        return cell;
+    } @catch (NSException *exception) {
+        NSLog(@"Exception : %@",exception);
+        return nil;
     }
-    return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    MOInboxPushDataModel *dictionary = [[MOInboxPushDataModel alloc]initWithDictionary:[_inboxMessagesArray objectAtIndex:indexPath.row]];
-    if(!dictionary.isRead){
-        NSMutableDictionary *newDict = [NSMutableDictionary dictionaryWithDictionary:[_inboxMessagesArray objectAtIndex:indexPath.row]];
-        [newDict setObject:@YES forKey:MO_EXP_PUSH_IS_READ];
-        [_inboxMessagesArray replaceObjectAtIndex:indexPath.row withObject:newDict];
-        
-        NSArray *tempArray = [[_inboxMessagesArray reverseObjectEnumerator]allObjects];
-        [MOInbox writeArrayToFile:[NSMutableArray arrayWithArray:tempArray]];
-        [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    
+    @try {
+        MOInboxPushDataModel *dictionary = [[MOInboxPushDataModel alloc]initWithDictionary:[_inboxMessagesArray objectAtIndex:indexPath.row]];
+        if(!dictionary.isRead){
+            NSMutableDictionary *newDict = [NSMutableDictionary dictionaryWithDictionary:[_inboxMessagesArray objectAtIndex:indexPath.row]];
+            [newDict setObject:@YES forKey:MO_EXP_PUSH_IS_READ];
+            [_inboxMessagesArray replaceObjectAtIndex:indexPath.row withObject:newDict];
+            
+            NSArray *tempArray = [[_inboxMessagesArray reverseObjectEnumerator]allObjects];
+            [MOInbox writeArrayToFile:[NSMutableArray arrayWithArray:tempArray]];
+            [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        }
+        if ([self.delegate respondsToSelector:@selector(inboxCellSelectedWithData:)]) {
+            [self.delegate inboxCellSelectedWithData:dictionary.extraData];
+        }
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    } @catch (NSException *exception) {
+        NSLog(@"Exception : %@",exception);
     }
-    [self.delegate inboxCellSelectedWithData:dictionary.extraData];
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
