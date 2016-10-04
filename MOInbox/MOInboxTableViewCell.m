@@ -13,6 +13,7 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    [super awakeFromNib];
 }
 
 -(void)setDataWithMessage:(MOInboxPushDataModel *)messageDict{

@@ -5,7 +5,7 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 2.4
+// SDK Version 3.0.0
 
 
 #import <CoreLocation/CoreLocation.h>
@@ -15,6 +15,7 @@
 
 #import "MOPayloadBuilder.h"
 #import "MOEHelperConstants.h"
+#import <UserNotifications/UserNotifications.h>
 #import "MONotificationCategory.h"
 
 
@@ -157,6 +158,24 @@ typedef enum _InAppWidget{
 #pragma mark - Push Notifications
 
 /**
+ * Method to register for push notification(doesn't support Notification Action in OS version below iOS10)
+ @param categories : to set categories for supporting Notification Actions (iOS10)
+ @param categoriesForPreviousOS : to set categories for supporting Notification Actions in iOS8 and iOS9 (This should be a set of MONotificationCategory objects)
+ @param delegate : to set the delegate for UNUserNotificationCenter.
+ */
+-(void)registerForRemoteNotificationWithCategories:(NSSet<UNNotificationCategory*>*)categories andCategoriesForPreviousVersions:(NSSet<MONotificationCategory*>*)categoriesForPreviousOS andWithUserNotificationCenterDelegate:(id)delegate;
+
+/**
+ * Method to send notification categories to SDK to support Notification Action in iOS10 and above
+ */
+-(void)setUserNotificationCategories:(NSSet<UNNotificationCategory*>*)categories;
+
+/**
+ * Method to send notification categories to SDK to support Notification Action in iOS8 and iOS9
+ */
+-(void)setNotificationCategoriesForEarlieriOSVersionsWithCategories:(NSSet<MONotificationCategory*>*)categories;
+
+/**
  Call this method in AppDelegate in didRegisterForRemoteNotificationsWithDeviceToken to register your app with MoEngage for push notifications
  @param deviceToken The token of the device for push notifications
  */
@@ -182,15 +201,14 @@ typedef enum _InAppWidget{
 -(void)didFailToRegisterForPush;
 
 /**
- Use this to set categories for notifications. Use MONotificationCategory to create categories.
+ * Call this method in AppDelegate in userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:
  */
--(void)setNotificationCategories:(NSSet*)categories;
+-(void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response;
 
-/**
- Call this method in handleActionWithIdentifier method in the App Delegate.
+/*
+ * Call this method in AppDelegate in application:handleActionWithIdentifier:forRemoteNotification:completionHandler:
  */
--(void)handleActionWithIdentifier:(NSString*)identifier forRemoteNotification:(NSDictionary*)notification;
-
+-(void)handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)notification;
 
 #pragma mark - Tracking events and attributes
 
@@ -308,18 +326,6 @@ typedef enum _InAppWidget{
  @see LogLevel
  */
 +(void)debug:(LogLevel) logLevel;
-
-
-#pragma mark - Deprecated methods
-
-// These methods will be removed from SDK version 3.0 onwards.
-// Use initializeDevWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:
-//     --AND--
-//     initializeProdWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically: instead to differentiate a dev build to a production build
-
- -(void)initializeWithApiKey:(NSString *)apiKey inApplication:(UIApplication*)application withLaunchOptions:(NSDictionary*)launchOptions __deprecated_msg("use initializeDevWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically: --AND-- initializeProdWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically: instead to differentiate a dev build to a production build");
-
- -(void)initializeWithApiKey:(NSString *)apiKey inApplication:(UIApplication *)application withLaunchOptions:(NSDictionary *)launchOptions openDeeplinkUrlAutomatically:(BOOL)openUrl __deprecated_msg("use initializeDevWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically: --AND-- initializeProdWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically: instead to differentiate a dev build to a production build");
 
 
 @end

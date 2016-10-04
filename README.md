@@ -9,9 +9,19 @@ pod install
 
 To update, simply run pod update
 
-For more information about the SDK and manual installation, go to the following link --> http://docs.moengage.com/en/latest/iOS.html
+For more information about the SDK and manual installation, go to the following link --> http://docs.moengage.com/docs/ios-sdk-integration
 
 Change log:
+v3.0.0
+Supports iOS10 changes for Notifications. 
+Makes use of UserNotifications framework for iOS10. 
+Registration for push is handled in SDK now.
+
+v2.4.1
+Cordova plugin updated to add AppID from the plugin add command variables.
+Cordova plugin updated to handle all the lifecycle callbacks on its own, therefore no changes are required in AppDelegate.
+Notifications provided to Remote Notification registration methods and push notification receiving method.
+
 v2.4
 Supporting Nudges for testing inApp campaigns from push notification and added alerts on failure to show test inApps.
 Bug fix : InApp can be shown along with Nudges now.
