@@ -5,17 +5,16 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 3.0.0
+// SDK Version 3.1.0
 
-
+#import <UserNotifications/UserNotifications.h>
+#import <SafariServices/SafariServices.h>
 #import <CoreLocation/CoreLocation.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <SafariServices/SafariServices.h>
 
 #import "MOPayloadBuilder.h"
 #import "MOEHelperConstants.h"
-#import <UserNotifications/UserNotifications.h>
 #import "MONotificationCategory.h"
 
 
@@ -170,6 +169,7 @@ typedef enum _InAppWidget{
  */
 -(void)setUserNotificationCategories:(NSSet<UNNotificationCategory*>*)categories;
 
+
 /**
  * Method to send notification categories to SDK to support Notification Action in iOS8 and iOS9
  */
@@ -204,6 +204,7 @@ typedef enum _InAppWidget{
  * Call this method in AppDelegate in userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:
  */
 -(void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response;
+
 
 /*
  * Call this method in AppDelegate in application:handleActionWithIdentifier:forRemoteNotification:completionHandler:
@@ -327,6 +328,11 @@ typedef enum _InAppWidget{
  */
 +(void)debug:(LogLevel) logLevel;
 
+/**
+ Use this method to redirect the data tracked
+ @warning Consult with MoEngage team before using this method for redirecting the data
+ */
++(void)setDataRedirection:(BOOL)value;
 
 @end
 

@@ -12,6 +12,11 @@ To update, simply run pod update
 For more information about the SDK and manual installation, go to the following link --> http://docs.moengage.com/docs/ios-sdk-integration
 
 Change log:
+
+v3.1.0
+Fixed a bug where InApp was shown even when the keyboard was over the screen. 
+Improved logging mechanism, which will help in debugging any issue which arises.
+
 v3.0.0
 Supports iOS10 changes for Notifications. 
 Makes use of UserNotifications framework for iOS10. 
