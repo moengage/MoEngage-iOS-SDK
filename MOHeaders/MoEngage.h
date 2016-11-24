@@ -5,7 +5,7 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 3.1.0
+// SDK Version 3.2.0
 
 #import <UserNotifications/UserNotifications.h>
 #import <SafariServices/SafariServices.h>
@@ -333,6 +333,11 @@ typedef enum _InAppWidget{
  @warning Consult with MoEngage team before using this method for redirecting the data
  */
 +(void)setDataRedirection:(BOOL)value;
+
+/**
+ Method to set the App Group ID for Notification impression tracking.
+ */
++(void)setAppGroupID:(NSString*)appGroupID;
 
 @end
 

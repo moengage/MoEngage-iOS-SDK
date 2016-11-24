@@ -17,6 +17,9 @@
 @property(nonatomic, copy)      NSString        *pushTime;
 @property(nonatomic, strong)    NSDictionary    *extraData;
 
+@property(nonatomic, strong)    NSDictionary    *pushDict;
+@property(nonatomic, strong)    NSString        *mediaAttachmentURL;
+
 @property(nonatomic, assign) BOOL isGiven;
 @property(nonatomic, assign) BOOL isRead;
 

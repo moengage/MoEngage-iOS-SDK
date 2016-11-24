@@ -13,6 +13,12 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v3.2.0
+Enabled tracking of push delivery using Notification Extension and AppGroups.
+Enabled Test InApp from push when push is received in foreground. 
+Check in SDK to prevent getting multiple UPDATE events.
+Inbox module changes to get media-attachment sent in case of iOS Rich Notifications.
+
 v3.1.0
 Fixed a bug where InApp was shown even when the keyboard was over the screen. 
 Improved logging mechanism, which will help in debugging any issue which arises.
