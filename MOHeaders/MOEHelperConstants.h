@@ -32,4 +32,16 @@ extern NSString* const GENDER_FEMALE;
  */
 extern NSString* const USER_ATTRIBUTE_USER_LOCATION;
 
+/*
+ Only for React Native and Cordova Plugins
+ */
+extern NSString* const MoEngage_Cordova_SDK_Version;
+extern NSString* const MoEngage_Device_Token_Key;
+extern NSString* const MoEngage_Notification_Settings_Key;
+
+extern NSString* const MoEngage_Notification_Received_Notification;
+extern NSString* const MoEngage_Notification_Registered_Notification;
+extern NSString* const MoEngage_Notification_Registration_Failed_Notification;
+extern NSString* const MoEngage_Notification_UserSettings_Registered_Notification;
+
 @end
