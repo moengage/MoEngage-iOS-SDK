@@ -55,6 +55,7 @@ v2.3.1
 Bug Fixes for event tracking through inApps and saving data on failure to sync with server.
 
 v2.3
+
 We now have two separate methods for initializing the SDK with your App ID, this is for differentiating test devices which runs in DEBUG mode with production build in AppStore which runs in RELEASE mode. Refer the following link for more details : http://docs.moengage.com/docs/appdelegate-changes#section-initializing-moengage-sdk 
 
 v2.2
