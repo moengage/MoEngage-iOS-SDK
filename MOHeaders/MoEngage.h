@@ -5,7 +5,7 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 3.2.2
+// SDK Version 3.3.0
 
 #import <UserNotifications/UserNotifications.h>
 #import <SafariServices/SafariServices.h>
@@ -54,6 +54,11 @@ typedef enum _InAppWidget{
     IMAGE,
     LABEL
 }InAppWidget;
+
+typedef enum UserGender{
+    MALE,
+    FEMALE
+}UserGender;
 
 #pragma mark - In App Protocol
 /** 
@@ -108,7 +113,7 @@ typedef enum _InAppWidget{
 
 +(instancetype)sharedInstance;
 
-#pragma mark - User Lifecycle
+#pragma mark - Initialization Methods
 
 /**
  Call this method in the AppDelegate in didFinishLaunchingWithOptions to initialize the SDK for dev build
@@ -129,30 +134,6 @@ typedef enum _InAppWidget{
 @warning implement initializeDevWithApiKey method also, refer this link for more details : http://docs.moengage.com/docs/ios-app-delegate-changes
  */
 -(void)initializeProdWithApiKey:(NSString *)apiKey inApplication:(UIApplication *)application withLaunchOptions:(NSDictionary *)launchOptions openDeeplinkUrlAutomatically:(BOOL)openUrl;
-
-/**
- Call this method in applicationDidBecomeActive
- @param application The application instance
- */
--(void)applicationBecameActiveinApplication:(UIApplication*)application;
-
-/**
- Call this method in applicationWillEnterForeground
- @param application The application instance
- */
--(void)applicationWillEnterForeground:(UIApplication *)application;
-
-/**
- Call this method in AppDelegate in applicationDidEnterBackground
- @param application The application instance
- */
--(void)stop:(UIApplication *)application;
-
-/**
- Call this method in AppDelegate in applicationWillTerminate
- @param application The application instance
- */
--(void)applicationTerminated:(UIApplication*)application;
 
 #pragma mark - Push Notifications
 
@@ -211,7 +192,7 @@ typedef enum _InAppWidget{
  */
 -(void)handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)notification;
 
-#pragma mark - Tracking events and attributes
+#pragma mark - Tracking custom events and attributes
 
 /**
  Call this method to track events.
@@ -248,8 +229,39 @@ typedef enum _InAppWidget{
  */
 -(void)setUserAttributeLocationLatitude:(double)lat longitude:(double)lng forKey:(NSString *)key;
 
+#pragma mark - Tracking default user attributes
+/**
+ Use these methods to set default user attributes.
+ */
 
-#pragma mark - In-App 
+// Set Unique ID for user
+-(void)setUserUniqueID:(id)uniqueID;
+
+//Set User Email ID
+-(void)setUserEmailID:(NSString*)emailID;
+
+//Set User Name
+-(void)setUserName:(NSString*)name;
+
+//Set User First Name
+-(void)setUserFirstName:(NSString*)firstName;
+
+//Set User Last Name
+-(void)setUserLastName:(NSString*)lastName;
+
+//Set User Contact Number
+-(void)setUserMobileNo:(id)phNumber;
+
+//Set User Gender
+-(void)setUserGender:(UserGender)gender;
+
+//Set User Date of Birth
+-(void)setUserDateOfBirth:(NSDate*)date;
+
+//Set User Location
+-(void)setUserLocationLatitude:(double)lat andLongitude:(double)lng;
+
+#pragma mark - In-App
 
 /**
  Call this method in viewDidAppear of the view controller where you want to show the in app message
@@ -339,5 +351,27 @@ typedef enum _InAppWidget{
  */
 +(void)setAppGroupID:(NSString*)appGroupID;
 
+
+#pragma mark- Deprecated Methods
+
+/**
+ This method has been deprecated from MoEngage-iOS-SDK version 3.3.0
+ */
+-(void)applicationBecameActiveinApplication:(UIApplication*)application __deprecated;
+
+/**
+ This method has been deprecated from MoEngage-iOS-SDK version 3.3.0
+ */
+-(void)applicationWillEnterForeground:(UIApplication *)application __deprecated;
+
+/**
+ This method has been deprecated from MoEngage-iOS-SDK version 3.3.0
+ */
+-(void)stop:(UIApplication *)application __deprecated;
+
+/**
+ This method has been deprecated from MoEngage-iOS-SDK version 3.3.0
+ */
+-(void)applicationTerminated:(UIApplication*)application __deprecated;
 @end
 

@@ -13,6 +13,11 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v3.3.0
+App Lifecycle methods which were earlier called from App Delegate are deprecated now, SDK is internally handling these methods.
+Optimization in syncing of tracked events.
+Separate methods are provided now to set default User Attributes. eg: EmailID, User Name etc.
+
 v3.2.2
 Fixed a bug where SDK was not able to find MOInbox.storyboard while using MoEngage-iOS-SDK as framework(by defining use_framework! in pod file)
 InApp changes to handle Notification Permission/Setting Permission Actions more efficiently.
