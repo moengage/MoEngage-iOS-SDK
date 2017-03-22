@@ -13,6 +13,9 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v3.3.1
+Fixed a crash in OS versions below iOS10 which occurred in Swift Xcode Projects due to UserNotifications framework.
+
 v3.3.0
 App Lifecycle methods which were earlier called from App Delegate are deprecated now, SDK is internally handling these methods.
 Optimization in syncing of tracked events.
