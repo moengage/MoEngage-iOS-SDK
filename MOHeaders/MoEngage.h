@@ -5,7 +5,7 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 3.3.1
+// SDK Version 3.4.0
 
 #import <UserNotifications/UserNotifications.h>
 #import <SafariServices/SafariServices.h>
@@ -282,10 +282,13 @@ typedef enum UserGender{
 -(NSDictionary*)getSelfHandledInApp;
 
 /**
- Call this method to track if self handled in app was shown.
-  @param campaignID The campaign ID of the self handled in app shown
+ Call these methods to track if self handled in app was shown OR clicked.
+ @param campaignID The campaign ID of the self handled in app shown/Clicked
  */
 -(void)selfHandledInAppViewShownWithCampaignID:(NSString*)campaignID;
+-(void)selfHandledInAppClickedWithPrimaryActionAndCampaignID:(NSString*)campaignID;
+-(void)selfHandledInAppClickedWithSecondaryActionAndCampaignID:(NSString*)campaignID;
+-(void)selfHandledInAppClickedWithDismissActionAndCampaignID:(NSString*)campaignID;
 
 /**
  Call this method to get the nudge view created in the dashboard. There can be only 1 active nudge view at any given point of time

@@ -13,8 +13,14 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v3.4.0
+Started tracking locale of device
+Started showing reason for failure of displaying inApp in an alert, in case of test inApp from push
+Fixed a bug where test inApp feature for Self-Handled inApp wasn't getting displayed.
+Dictionary returned for self-handled inApp contain's additional parameters now i.e,expiretime, maxTimes, interval, autoDismissInterval, persistent
+
 v3.3.1
-Fixed a crash in OS versions below iOS10 which occurred in Swift Xcode Projects due to UserNotifications framework.
+Fixed a crash in OS versions below iOS10 which occured in Swift Xcode Projects due to UserNotifications framework.
 
 v3.3.0
 App Lifecycle methods which were earlier called from App Delegate are deprecated now, SDK is internally handling these methods.
