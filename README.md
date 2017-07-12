@@ -13,6 +13,10 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v3.4.1
+Provided method to delete all the messages from Inbox
+Fixed a crash in Self-handled InApp
+
 v3.4.0
 Started tracking locale of device
 Started showing reason for failure of displaying inApp in an alert, in case of test inApp from push

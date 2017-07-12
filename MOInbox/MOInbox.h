@@ -70,4 +70,9 @@
  */
 +(void)fetchInboxMessagesWithCompletion:(void(^) (BOOL newMessages))completion;
 
+/**
+ Use this method to remove all the messages currently stored in notification center
+ */
++(void)removeInboxMessages;
+
 @end
