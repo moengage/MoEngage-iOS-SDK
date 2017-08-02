@@ -13,6 +13,9 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
+v3.4.2
+Fixed an issue in Logger class of the SDK.
+
 v3.4.1
 Provided method to delete all the messages from Inbox
 Fixed a crash in Self-handled InApp
@@ -24,7 +27,7 @@ Fixed a bug where test inApp feature for Self-Handled inApp wasn't getting displ
 Dictionary returned for self-handled inApp contain's additional parameters now i.e,expiretime, maxTimes, interval, autoDismissInterval, persistent
 
 v3.3.1
-Fixed a crash in OS versions below iOS10 which occured in Swift Xcode Projects due to UserNotifications framework.
+Fixed a compilation issue in OS versions below iOS10 which occured in Swift Xcode Projects due to UserNotifications framework.
 
 v3.3.0
 App Lifecycle methods which were earlier called from App Delegate are deprecated now, SDK is internally handling these methods.
