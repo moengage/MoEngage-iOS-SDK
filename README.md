@@ -13,8 +13,9 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
-v3.4.2
+v3.4.2, 3.4.3
 Fixed an issue in Logger class of the SDK.
+Fixed an issue with opening of Deeplinks when app in foreground.
 
 v3.4.1
 Provided method to delete all the messages from Inbox
