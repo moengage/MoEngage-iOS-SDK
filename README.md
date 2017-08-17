@@ -13,13 +13,18 @@ For more information about the SDK and manual installation, go to the following 
 
 Change log:
 
-v3.4.2, 3.4.3
-Fixed an issue in Logger class of the SDK.
-Fixed an issue with opening of Deeplinks when app in foreground.
+v3.5.0
+Optimized SDK Network calls.
+Fixed issues with locale tracking in iOS versions below iOS10.
 
-v3.4.1
-Provided method to delete all the messages from Inbox
+v3.4.3
+Fixed an issue with opening of Deeplinks when app in foreground.
 Fixed a crash in Self-handled InApp
+
+v3.4.1 
+Provided method to delete all the messages from Inbox
+Fixed an issue in Logger class of the SDK.
+
 
 v3.4.0
 Started tracking locale of device
