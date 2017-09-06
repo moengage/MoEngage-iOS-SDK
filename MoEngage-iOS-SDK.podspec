@@ -29,6 +29,4 @@ Pod::Spec.new do |s|
   s.ios.vendored_library = 'libMoEngageSDK.a'
 
   s.frameworks = 'SystemConfiguration', 'CoreLocation' , 'Security', 'UserNotifications'
-  s.compiler_flags = '-ObjC'
-
 end
