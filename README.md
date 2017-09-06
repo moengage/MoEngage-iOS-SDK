@@ -1,7 +1,7 @@
 # MoEngage-iOS-SDK
 MoEngage iOS SDK
 
-The best way to install is via Cocoapods. Add the following line to your podfile.
+The best way to install is via CocoaPods. Add the following line to your podfile.
 
 pod 'MoEngage-iOS-SDK'
 
