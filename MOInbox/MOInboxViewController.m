@@ -144,7 +144,6 @@ static NSInteger const MOInboxTableHeightConst = 30;
         static NSString *cellIdentifier = @"InboxCell";
         MOInboxTableViewCell *cell = (MOInboxTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
         if([_inboxMessagesArray count] > indexPath.row){
-            
             MOInboxPushDataModel *pushDataDict = [[MOInboxPushDataModel alloc]initWithDictionary:[_inboxMessagesArray objectAtIndex:indexPath.row]];
             [self setPropertiesForCell:cell];
             [cell setDataWithMessage:pushDataDict];

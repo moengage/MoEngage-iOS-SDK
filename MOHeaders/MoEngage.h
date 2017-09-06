@@ -5,7 +5,7 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 alphadevs. All rights reserved.
 //
-// SDK Version 3.5.0
+// SDK Version 3.6.0
 
 #import <UserNotifications/UserNotifications.h>
 #import <SafariServices/SafariServices.h>
@@ -228,6 +228,12 @@ typedef enum UserGender{
  @param lng The longitude of the location
  */
 -(void)setUserAttributeLocationLatitude:(double)lat longitude:(double)lng forKey:(NSString *)key;
+
+/**
+ Use this method to track device locale settings of user.
+ */
+-(void)trackLocale;
+
 
 #pragma mark - Tracking default user attributes
 /**
