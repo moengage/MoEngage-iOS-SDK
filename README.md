@@ -1,7 +1,7 @@
 # MoEngage-iOS-SDK
 MoEngage iOS SDK
 
-The best way to install is via CocoaPods. Add the following line to your podfile.
+The best way to install is via Cocoapods. Add the following line to your podfile.
 
 pod 'MoEngage-iOS-SDK'
 
@@ -12,6 +12,8 @@ To update, simply run pod update
 For more information about the SDK and manual installation, go to the following link --> http://docs.moengage.com/docs/sdk-integration
 
 Change log:
+v3.7.0
+SDK supports blacklisting of events to be tracked in the app.
 
 v3.6.0
 Inbox messages will have an expiry value, based on which it will be deleted from User Inbox. By default the value will be set to 30 days.
