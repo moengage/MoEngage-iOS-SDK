@@ -1,183 +1,82 @@
 # MoEngage-iOS-SDK
-MoEngage iOS SDK
 
-The best way to install is via Cocoapods. Add the following line to your podfile.
+MoEngage provides a platform which enables companies to deliver personalized interactions to their users through push notifications, in-app campaigns, email campaigns and other re-targeting channels.
 
-pod 'MoEngage-iOS-SDK'
+## Integration
+------------------------
+There are two ways you can integrate the SDK - CocoaPods or Manual integration.
 
-pod install
+### Integration through CocoaPods
+Cocoapods is a dependency manager for Objective C & Swift projects and makes integration easier.
 
-To update, simply run pod update
+    1. If you don't have cocoapods installed, you can do it by executing the following line in your terminal.
+    ```sudo gem install cocoapods```
+    
+    2. If you don't have a Podfile, create a plain text file named Podfile in the Xcode project directory with the following content, making sure to set the platform and version that matches your app.
+    ```pod 'MoEngage-iOS-SDK'```
+    
+    3. Install MoEngage SDK by executing the following in the Xcode project directory.
+    ```pod install```
+    
+    4. Now, open your project workspace and check if MoEngage SDK is properly added.
+    
+### Manual Integration
 
-For more information about the SDK and manual installation, go to the following link --> http://docs.moengage.com/docs/sdk-integration
+To install manually, follow the steps below:
 
-Change log:
-v3.7.0
-SDK supports blacklisting of events to be tracked in the app.
+    1. Download the latest sdk from the following link(https://drive.google.com/a/moengage.com/folderview?id=0B0gKRBBr6rFHb0pzYnhrVTh3NHc&usp=drive_web#list).
 
-v3.6.0
-Inbox messages will have an expiry value, based on which it will be deleted from User Inbox. By default the value will be set to 30 days.
-Locale tracking won't be done by default in the SDK, instead trackLocale: method has to be called to track user locale settings.(https://docs.moengage.com/v1.0/docs/tracking-user-attributes#section-tracking-user-locale)
+    2. Add the given library file (.a extension) from **MoEngageSDK** folder to your project.
 
-v3.5.0
-Optimized SDK Network calls.
-Fixed issues with locale tracking in iOS versions below iOS10.
+    3. Add the given header files (.h extensions) from **MoEngageSDK** folder, by dragging and dropping the files in to your project.
 
-v3.4.3
-Fixed an issue with opening of Deeplinks when app in foreground.
-Fixed a crash in Self-handled InApp
+    4. Add the following compiler flag: -ObjC. Select your project. Go to “Build Settings” ->”Linker” ->”Other Linker Flags” and add this flag.
 
-v3.4.1 
-Provided method to delete all the messages from Inbox
-Fixed an issue in Logger class of the SDK.
+### Using SDK in Swift
 
+If you are not using dynamic frameworks:
+Simply add the MoEngage-iOS-SDK/MoEngage.h and other header files as needed, in your bridging header and you will be good to go.
 
-v3.4.0
-Started tracking locale of device
-Started showing reason for failure of displaying inApp in an alert, in case of test inApp from push
-Fixed a bug where test inApp feature for Self-Handled inApp wasn't getting displayed.
-Dictionary returned for self-handled inApp contain's additional parameters now i.e,expiretime, maxTimes, interval, autoDismissInterval, persistent
+```#import <MoEngage-iOS-SDK/MoEngage.h>
+#import <MoEngage-iOS-SDK/MOInbox.h>
+#import <MoEngage-iOS-SDK/MOEHelperConstants.h>
+#import <MoEngage-iOS-SDK/MOGeofenceHandler.h>```
 
-v3.3.1
-Fixed a compilation issue in OS versions below iOS10 which occured in Swift Xcode Projects due to UserNotifications framework.
-
-v3.3.0
-App Lifecycle methods which were earlier called from App Delegate are deprecated now, SDK is internally handling these methods.
-Optimization in syncing of tracked events.
-Separate methods are provided now to set default User Attributes. eg: EmailID, User Name etc.
-
-v3.2.2
-Fixed a bug where SDK was not able to find MOInbox.storyboard while using MoEngage-iOS-SDK as framework(by defining use_framework! in pod file)
-InApp changes to handle Notification Permission/Setting Permission Actions more efficiently.
-
-v3.2.0
-Enabled tracking of push delivery using Notification Extension and AppGroups - http://docs.moengage.com/docs/push-delivery-tracking
-Enabled Test InApp from push when push is received in foreground. 
-Check in SDK to prevent getting multiple UPDATE events.
-Inbox module changes to get media-attachment sent in case of iOS Rich Notifications.
-
-v3.1.0
-Fixed a bug where InApp was shown even when the keyboard was over the screen. 
-Improved logging mechanism, which will help in debugging any issue which arises.
-
-v3.0.0
-Supports iOS10 changes for Notifications - http://docs.moengage.com/docs/ios-10-rich-notifications
-Makes use of UserNotifications framework for iOS10. 
-Registration for push is handled in SDK now.
-
-v2.4.1
-Cordova plugin updated to add AppID from the plugin add command variables.
-Cordova plugin updated to handle all the lifecycle callbacks on its own, therefore no changes are required in AppDelegate.
-Notifications provided to Remote Notification registration methods and push notification receiving method.
-
-v2.4
-Supporting Nudges for testing inApp campaigns from push notification and added alerts on failure to show test inApps.
-Bug fix : InApp can be shown along with Nudges now.
-Bug fixes in inApp module to show inApp if handleInAppMessage called during fetching inApp from server.
-Inbox module supports notification containing alert as dictionary.
-Bug Fixes for Rich Landing from push notification.
-Improved exception handling in the SDK, along with detailed logs on exceptions to help in debug.
+If you are using dynamic frameworks:
+Here you will have to import the SDK by directly using an import statement as below:
+```import MoEngage_iOS_SDK```
 
 
-v2.3.2
-RichLanding content will be shown in SFSafariViewController for iOS9 and above.
-We are now tracking change in Push Preference status event.
-You can now test inApps through push notification.
+## SDK Initialization
+Login to your MoEngage account, go to **Settings** in the left panel of the dashboard. Under App Settings, you will find your **APP ID**. Provide this APP ID while initializing the SDK with **initializeDevWithApiKey:** and **initializeProdWithApiKey:** methods as shown below.
 
-v2.3.1
-Bug Fixes for event tracking through inApps and saving data on failure to sync with server.
+### In Objective-C:
+``` - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-v2.3
+// Separate initialization methods for Dev and Prod initializations
+// openDeeplinkUrlAutomatically tells us whether you want the SDK to call handleOpenUrl for deeplinks specified while creating a campaign
+#ifdef DEBUG
+[[MoEngage sharedInstance] initializeDevWithApiKey:@"Your APP ID" inApplication:application withLaunchOptions:launchOption openDeeplinkUrlAutomatically:YES];
+#else
+[[MoEngage sharedInstance] initializeProdWithApiKey:@"Your APP ID" inApplication:application withLaunchOptions:launchOption openDeeplinkUrlAutomatically:YES];
+#endif
+//Rest of the implementation of method
+//-------
+}```
 
-We now have two separate methods for initializing the SDK with your App ID, this is for differentiating test devices which runs in DEBUG mode with production build in AppStore which runs in RELEASE mode. Refer the following link for more details : http://docs.moengage.com/docs/appdelegate-changes#section-initializing-moengage-sdk 
+### In Swift:
+``` func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+// Separate initialization methods for Dev and Prod initializations
+// openDeeplinkUrlAutomatically tells us whether you want the SDK to call handleOpenUrl for deeplinks specified while creating a campaign
+#if DEBUG
+MoEngage.sharedInstance().initializeDev(withApiKey: "Your APP ID", in: application, withLaunchOptions: launchOptions, openDeeplinkUrlAutomatically: true)
+#else
+MoEngage.sharedInstance().initializeProd(withApiKey: "Your APP ID", in: application, withLaunchOptions: launchOptions, openDeeplinkUrlAutomatically: true)
+#endif
+//Rest of the implementation of method
+//-------
+return true
+}```
 
-v2.2
-Notification can now have categories for action buttons - http://docs.moengage.com/docs/actionable-notifications
-In-App fix for Navigation controller in a tab bar controller, where we had trouble finding what the top view controller on the stack was.
-Deeplinking, Coupon Code and Rich landing page options for Notification actions, while creating a campaign. The SDK will handle them by default.
+Thats it!! SDK is successfully integrated and initialized in the project, and ready to use. Please refer to our developer docs to know how to make use of our SDK to track Events and User Attributes, to implement Push Notification and InApps: https://docs.moengage.com/docs/sdk-integration.
 
-v2.1
-Minor bug fix for data sync.
-
-v2.0
-This is a major release. It is recommeded to update to 2.0.
-In-App V2 aka In-App Nativ is live. This SDK includes the next version of in-apps which are totally customisable. 
-You will have to change the old callbacks for In-Apps. 
-Some methods are removed. Please check the MoEngage.h file.
-Install/Update events are now extended to creating Smart trigger pushes.
-WebViewController is always presented now, along with a DONE button at the top to dismiss the controller.
-Self Handled in-apps available now.
-
-v1.9.5
-IDFV can be nil if the device is restarted and not unlocked. While it's extremely rare, it can happen. Added a check for the same.
-
-v1.9.4
-iOS 7 crash while string match for Geofence fix.
-If an attribute is set to nil, a log is printed, and the value is discarded.
-Deprecated setLocationwithLat: lng: . Use setUserAttributeLocationLatitude: longitude: forKey: instead.
-Better tracking of Push Preference for iOS8.
-
-v1.9.3
-Bug fix for events being lost sometimes if sync fails.
-Inbox Storyboard fix for version type. The storyboard didn't open for some versions of Xcode.
-
-v1.9.2
-Now you can get nudges specific to a screen by using getNudgeViewForScreen;
-
-v1.9.1
-Inbox now has the ability to delete a message. Swipe the cell to delete.
-Some Inbox messages coming blank bug fix.
-
-v1.9
-Now you can control MoEngage logs by using [MoEngage debug:YES/NO]; You can also set Log Levels and log everything, nothing or just the exceptions.
-A new event is sent for when a user recieves a notifcation when his app is active.
-Events done during the duration of resetUser were lost (1-2 secs). They won't be lost, but will be attributed to the new user now.
-Nudge view has screenname in it's view layer now. [view.layer valueForKey:@"screenName"]; Using this, you can show nudges on specific screens.
-
-v1.8.5
-Ad Support Framework is weak linked. We will not collect IDFA by default.
-Only if the framework is added, the IDFA will be collected by MoEngage.
-
-v1.8.4
-Warnings resulting from CLANG_ENABLE_MODULES have been fixed. 
-Warnings resulting from GCC_PRECOMPILE_PREFIX_HEADER have been fixed. 
-Apple is fixing the above issues soon. A bug has been filed with them.
-
-v1.8.3
-Duplicate symbols fix. In some cases, the SDK does not build and shows duplicate symbols.
-NSLogs now work only for simulators and are disabled for devices.
-PushTime fix, for swift compatibility as swift has issues with Casting.
-
-v1.8.2
-NSLogs are disabled in this release. The library is made in Release scheme.
-
-v1.8.1
-Location user attribute and event attribute support.
-
-v1.8
-Includes bitcode support for iOS9 and Xcode7. This will not work with Xcode6, since it does not have bitcode support.
-A data sync issue fix where user goes to background and within a second terminates the app. The data was being sent twice. (happened rarely)
-Geofencing now has a completion handler to notfiy which regions are being tracked, and allowing you to manipulate them.
-MoEngage.bundle Xcode 7 incompatibility issues fixed.
-
-v1.7
-New attribute location. This can be set as a user as well as event attribute.
-Inbox is available as a custom component. You can modify it as per your need.
-Nudge bug fix. If multiple nudges are created, and the first one will be expired, the active one will be shown. 
-Delay for in-app after a push message is removed.
-New callback for userNotification types.
-
-v1.6
-Now you can use Geofencing.
-In-app experience improved as in-app images are now cached.
-
-v1.5
-Added method for INSTALL and UPDATE. Now you can send us the info for INSTALL and UPDATE of the app and manage campaigns accordingly.
-iOS6 support for event tracking.
-
-v1.4.3
-Critical bug fix for Apple SDK not recognising NSFoundationVersionNumber_iOS_7_0.
-
-v1.4.1
-1.Crash handling for NSData and NSUrl data types.
-2. In-app support for iPad.
