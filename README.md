@@ -95,4 +95,14 @@ Login to your MoEngage account, go to **Settings** in the left panel of the dash
         //-------
     }
 
-Thats it!! SDK is successfully integrated and initialized in the project, and ready to use. Please refer to our developer docs to know how to make use of our SDK to track Events and User Attributes, to implement Push Notification and InApps: https://docs.moengage.com/docs/sdk-integration.
+Thats it!! SDK is successfully integrated and initialized in the project, and ready to use. 
+
+## Developer Docs
+Please refer to our developer docs to know how to make use of our SDK to track Events and User Attributes, to implement Push Notification and InApps: https://docs.moengage.com/docs/sdk-integration.
+
+## Change Log
+See [SDK Change Log](https://github.com/moengage/MoEngage-iOS-SDK/blob/master/CHANGELOG.md) for information on every released version.
+
+## Support
+Please visit this repository's [Github issue tracker](https://github.com/moengage/MoEngage-iOS-SDK/issues) for bug reports specific to our iOS SDK.
+For other issues and support please contact MoEngage support from your dashboard.
