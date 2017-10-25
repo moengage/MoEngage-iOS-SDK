@@ -1,3 +1,4 @@
+
 # MoEngage-iOS-SDK
 
 MoEngage provides a platform which enables companies to deliver personalized interactions to their users through push notifications, in-app campaigns, email campaigns and other re-targeting channels.
@@ -27,7 +28,7 @@ Cocoapods is a dependency manager for Objective C & Swift projects and makes int
 
 To install manually, follow the steps below:
 
-1. Download the latest sdk from the following link(https://drive.google.com/a/moengage.com/folderview?id=0B0gKRBBr6rFHb0pzYnhrVTh3NHc&usp=drive_web#list).
+1. Download the latest sdk from the following [link](https://drive.google.com/a/moengage.com/folderview?id=0B0gKRBBr6rFHb0pzYnhrVTh3NHc&usp=drive_web#list).
 
 2. Add the given library file (.a extension) from **MoEngageSDK** folder to your project.
 
@@ -40,16 +41,16 @@ To install manually, follow the steps below:
 If you are not using dynamic frameworks:
 Simply add the MoEngage-iOS-SDK/MoEngage.h and other header files as needed, in your bridging header and you will be good to go.
 
-    ```#import <MoEngage-iOS-SDK/MoEngage.h>
+    #import <MoEngage-iOS-SDK/MoEngage.h>
     #import <MoEngage-iOS-SDK/MOInbox.h>
     #import <MoEngage-iOS-SDK/MOEHelperConstants.h>
-    #import <MoEngage-iOS-SDK/MOGeofenceHandler.h>```
+    #import <MoEngage-iOS-SDK/MOGeofenceHandler.h>
 
 If you are using dynamic frameworks:
 
 Here you will have to import the SDK by directly using an import statement as below:
 
-    ```import MoEngage_iOS_SDK```
+    import MoEngage_iOS_SDK
 
 
 ## SDK Initialization
@@ -58,7 +59,7 @@ Login to your MoEngage account, go to **Settings** in the left panel of the dash
 
 ### In Objective-C:
 
-    ``` - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     // Separate initialization methods for Dev and Prod initializations
     // openDeeplinkUrlAutomatically tells us whether you want the SDK to call handleOpenUrl for deeplinks specified while creating a campaign
@@ -69,11 +70,11 @@ Login to your MoEngage account, go to **Settings** in the left panel of the dash
     #endif
     //Rest of the implementation of method
     //-------
-    }```
+    }
 
 ### In Swift:
 
-    ``` func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:     [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:     [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Separate initialization methods for Dev and Prod initializations
     // openDeeplinkUrlAutomatically tells us whether you want the SDK to call handleOpenUrl for deeplinks specified while creating a campaign
     #if DEBUG
@@ -84,7 +85,6 @@ Login to your MoEngage account, go to **Settings** in the left panel of the dash
     //Rest of the implementation of method
     //-------
     return true
-    }```
+    }
 
 Thats it!! SDK is successfully integrated and initialized in the project, and ready to use. Please refer to our developer docs to know how to make use of our SDK to track Events and User Attributes, to implement Push Notification and InApps: https://docs.moengage.com/docs/sdk-integration.
-
