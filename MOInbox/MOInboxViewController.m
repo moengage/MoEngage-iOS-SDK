@@ -158,18 +158,19 @@ static NSInteger const MOInboxTableHeightConst = 30;
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     @try {
-        MOInboxPushDataModel *dictionary = [[MOInboxPushDataModel alloc]initWithDictionary:[_inboxMessagesArray objectAtIndex:indexPath.row]];
-        if(!dictionary.isRead){
-            NSMutableDictionary *newDict = [NSMutableDictionary dictionaryWithDictionary:[_inboxMessagesArray objectAtIndex:indexPath.row]];
-            [newDict setObject:@YES forKey:MO_EXP_PUSH_IS_READ];
-            [_inboxMessagesArray replaceObjectAtIndex:indexPath.row withObject:newDict];
-            
-            NSArray *tempArray = [[_inboxMessagesArray reverseObjectEnumerator]allObjects];
-            [MOInbox writeArrayToFile:[NSMutableArray arrayWithArray:tempArray]];
-            [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        NSDictionary* msg = [self.inboxMessagesArray objectAtIndex:indexPath.row];
+        MOInboxPushDataModel *pushDataObj = [[MOInboxPushDataModel alloc] initWithDictionary:[msg mutableCopy]];
+        
+        if (!pushDataObj.isRead){
+            NSMutableDictionary* updatedDict = [MOInbox markNotificationReadWithCampaignID:pushDataObj.campaignID];
+            if (updatedDict != nil){
+                [self.inboxMessagesArray replaceObjectAtIndex:indexPath.row withObject:updatedDict];
+                [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+            }
         }
+        
         if ([self.delegate respondsToSelector:@selector(inboxCellSelectedWithData:)]) {
-            [self.delegate inboxCellSelectedWithData:dictionary.extraData];
+            [self.delegate inboxCellSelectedWithData:pushDataObj.extraData];
         }
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
     } @catch (NSException *exception) {

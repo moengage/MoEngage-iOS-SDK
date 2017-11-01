@@ -71,6 +71,13 @@
 +(void)fetchInboxMessagesWithCompletion:(void(^) (BOOL newMessages))completion;
 
 /**
+ This method is to mark a notification as read
+ @param cid The Campaign ID of the notification to be marked as read.
+ @return Updated Dictionary of the notification payload after marking it as Read
+ */
++(NSMutableDictionary*)markNotificationReadWithCampaignID:(NSString*)cid;
+
+/**
  Use this method to remove all the messages currently stored in notification center
  */
 +(void)removeInboxMessages;
