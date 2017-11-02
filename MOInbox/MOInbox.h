@@ -3,11 +3,12 @@
 //  MoEngage
 //
 //  Created by Gautam on 05/03/15.
-//  Copyright (c) 2015 alphadevs. All rights reserved.
+//  Copyright (c) 2015 MoEngage Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "MOInboxViewController.h"
+#import "MOInboxPushDataModel.h"
 
 @interface MOInbox : NSObject
 
@@ -66,19 +67,26 @@
 +(UIFont *)defaultUnreadTextFont;
 
 /**
- Use this method to get new inbox messages. Reload table if new messages == YES, to get the new messages in the Inbox instantly.
+ Use this method to get new inbox notifications. Reload table if new messages == YES, to get the new messages in the Inbox instantly.
  */
 +(void)fetchInboxMessagesWithCompletion:(void(^) (BOOL newMessages))completion;
 
 /**
- This method is to mark a notification as read
+ Method to mark an inbox notification as read by providing the campaign ID.
  @param cid The Campaign ID of the notification to be marked as read.
  @return Updated Dictionary of the notification payload after marking it as Read
  */
 +(NSMutableDictionary*)markNotificationReadWithCampaignID:(NSString*)cid;
 
 /**
- Use this method to remove all the messages currently stored in notification center
+ Track notification click for notification in Inbox using this method.
+ @param campaignObj An MOInboxPushDataModel instance of the notification to be marked as read.
+ @param isFirstClick Bool value indicating if this is the first time user is clicking the notification in Inbox.
+ */
++(void)trackInboxNotificationClickForCampaign:(MOInboxPushDataModel*)campaignObj andIsFirstClick:(BOOL)isFirstClick;
+
+/**
+ Method to remove all the notifications currently stored in notification center
  */
 +(void)removeInboxMessages;
 

@@ -3,6 +3,16 @@
 
 ## Change Log:
 
+### Version 3.7.2  *(2nd November, 2017)*
+-------------------------------------------
+Provided a method to track inbox notification clicks.
+Removed the check of Show Only In Screen for Test InApp Campaigns.
+
+### Version 3.7.1  *(1st November, 2017)*
+-------------------------------------------
+Provided methods to mark a inbox notification as read.
+Added additional debug logs to debug inApp issues.
+
 ### Version 3.7.0  *(27th September, 2017)*
 -------------------------------------------
 SDK supports blacklisting of events to be tracked in the app.

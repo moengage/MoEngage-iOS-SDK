@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'MoEngage-iOS-SDK'
-  s.version      = '3.7.1'
+  s.version      = '3.7.2'
   s.summary      = 'MoEngage Mobile Marketing Automation SDK for iOS - iPhone and iPad'
   s.description  = <<-DESC
                    MoEngage is a mobile marketing automation company. This SDK helps you track events, trigger smart notifications and in-apps, provides a drop-in Inbox Controller for notifications.
@@ -11,7 +11,8 @@ Pod::Spec.new do |s|
   s.homepage     = 'http://www.moengage.com'
 
   s.license      = { :type => 'Commercial', :file => 'LICENSE' }
-  s.author             = { 'Chengappa' => 'chengappa@moengage.com' }
+  s.author             = { 'Chengappa C D' => 'chengappa@moengage.com' }
+  s.social_media_url   = 'https://twitter.com/moengage'
   s.platform     = :ios
   s.ios.deployment_target = '8.0'
 

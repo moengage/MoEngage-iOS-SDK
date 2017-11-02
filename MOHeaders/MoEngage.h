@@ -3,9 +3,9 @@
 //  MoEngageSDK
 //
 //  Created by Karthik Thirumalasetti on 06/07/14.
-//  Copyright (c) 2014 alphadevs. All rights reserved.
+//  Copyright (c) 2014 MoEngage Inc. All rights reserved.
 //
-// SDK Version 3.7.1
+// SDK Version 3.7.2
 
 #import <UserNotifications/UserNotifications.h>
 #import <SafariServices/SafariServices.h>

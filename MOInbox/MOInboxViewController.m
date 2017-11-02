@@ -3,7 +3,7 @@
 //  MoEngage
 //
 //  Created by Gautam on 26/02/15.
-//  Copyright (c) 2015 alphadevs. All rights reserved.
+//  Copyright (c) 2015 MoEngage Inc. All rights reserved.
 //
 
 #import "MOInboxViewController.h"
@@ -129,7 +129,7 @@ static NSInteger const MOInboxTableHeightConst = 30;
         }
         return 0;
     } @catch (NSException *exception) {
-        NSLog(@"Exception : %@",exception);
+        NSLog(@"MoEngage - Exception : %@",exception);
         return 0;
     }
     
@@ -150,7 +150,7 @@ static NSInteger const MOInboxTableHeightConst = 30;
         }
         return cell;
     } @catch (NSException *exception) {
-        NSLog(@"Exception : %@",exception);
+        NSLog(@"MoEngage - Exception : %@",exception);
         return nil;
     }
 }
@@ -162,11 +162,15 @@ static NSInteger const MOInboxTableHeightConst = 30;
         MOInboxPushDataModel *pushDataObj = [[MOInboxPushDataModel alloc] initWithDictionary:[msg mutableCopy]];
         
         if (!pushDataObj.isRead){
+            [MOInbox trackInboxNotificationClickForCampaign:pushDataObj andIsFirstClick:true];
             NSMutableDictionary* updatedDict = [MOInbox markNotificationReadWithCampaignID:pushDataObj.campaignID];
             if (updatedDict != nil){
                 [self.inboxMessagesArray replaceObjectAtIndex:indexPath.row withObject:updatedDict];
                 [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
             }
+        }
+        else{
+            [MOInbox trackInboxNotificationClickForCampaign:pushDataObj andIsFirstClick:false];
         }
         
         if ([self.delegate respondsToSelector:@selector(inboxCellSelectedWithData:)]) {
@@ -174,7 +178,7 @@ static NSInteger const MOInboxTableHeightConst = 30;
         }
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
     } @catch (NSException *exception) {
-        NSLog(@"Exception : %@",exception);
+        NSLog(@"MoEngage - Exception : %@",exception);
     }
 }
 

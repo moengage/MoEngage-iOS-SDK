@@ -3,7 +3,7 @@
 //  MoEngage
 //
 //  Created by Gautam on 27/01/15.
-//  Copyright (c) 2015 alphadevs. All rights reserved.
+//  Copyright (c) 2015 MoEngage Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

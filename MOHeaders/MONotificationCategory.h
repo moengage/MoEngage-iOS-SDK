@@ -3,7 +3,7 @@
 //  MoEngage
 //
 //  Created by Chengappa on 04/04/16.
-//  Copyright © 2016 alphadevs. All rights reserved.
+//  Copyright © 2016 MoEngage Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

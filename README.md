@@ -12,9 +12,9 @@ MoEngage provides a platform which enables companies to deliver personalized int
 There are two ways you can integrate the SDK - CocoaPods or Manual integration.
 
 ### Integration through CocoaPods
-Cocoapods is a dependency manager for Objective C & Swift projects and makes integration easier.
+CocoaPods is a dependency manager for Objective C & Swift projects and makes integration easier.
 
-1. If you don't have cocoapods installed, you can do it by executing the following line in your terminal.
+1. If you don't have CocoaPods installed, you can do it by executing the following line in your terminal.
 
     ```sudo gem install cocoapods```
     
