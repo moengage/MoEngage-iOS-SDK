@@ -5,7 +5,7 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 MoEngage Inc. All rights reserved.
 //
-// SDK Version 3.7.2
+// SDK Version 3.7.3
 
 #import <UserNotifications/UserNotifications.h>
 #import <SafariServices/SafariServices.h>
@@ -21,7 +21,7 @@
 typedef void(^NudgeCreationCompletionBlock)(UIView *nudgeView, NSString* campaignID);
 
 /**
- Enumerator to define where to place nudge
+ Enumerator to define where to place nudge inApp in the screen
  */
 typedef enum {
     NudgeTop,
@@ -29,7 +29,7 @@ typedef enum {
 }NudgePosition;
 
 /**
- Enumerator to differentiate between Install/Update (Existing user or not)
+ Enumerator to differentiate between INSTALL/UPDATE (Existing user or not)
  */
 typedef enum _AppStatus{
     INSTALL,
@@ -37,7 +37,7 @@ typedef enum _AppStatus{
 }AppStatus;
 
 /**
- Enumerator to set Log Levels for Debugging
+ Enumerator to set Log Levels of SDK for Debugging
  */
 typedef enum _LogLevel{
     LOG_NONE,
@@ -55,10 +55,23 @@ typedef enum _InAppWidget{
     LABEL
 }InAppWidget;
 
+/**
+ Enumerator which defines possible value for Gender user attribute for a user
+ */
 typedef enum UserGender{
     MALE,
     FEMALE
 }UserGender;
+
+/**
+ Enumerator which gives which Region the Data has to be redirected
+ @warning Consult with MoEngage team before using this enumerator in the App
+ */
+typedef enum DataRedirectionRegion{
+    MOE_REGION_INDIA,
+    MOE_REGION_EU,
+    MOE_REGION_DEFAULT
+}DataRedirectionRegion;
 
 #pragma mark - In App Protocol
 /** 
@@ -350,10 +363,10 @@ typedef enum UserGender{
 +(void)debug:(LogLevel) logLevel;
 
 /**
- Use this method to redirect the data tracked
+ Use this method to redirect the data to region defined in DataRedirectionRegion Enumerator
  @warning Consult with MoEngage team before using this method for redirecting the data
  */
-+(void)setDataRedirection:(BOOL)value;
++(void)redirectDataToRegion:(DataRedirectionRegion)region;
 
 /**
  Method to set the App Group ID for Notification impression tracking.
@@ -362,6 +375,13 @@ typedef enum UserGender{
 
 
 #pragma mark- Deprecated Methods
+
+/**
+ Use this method to redirect the data tracked
+ This method has been deprecated from MoEngage-iOS-SDK version 3.8.0 and use redirectDataToRegion: method instead of this method
+ @warning Consult with MoEngage team before using this method for redirecting the data
+ */
++(void)setDataRedirection:(BOOL)value __deprecated;
 
 /**
  This method has been deprecated from MoEngage-iOS-SDK version 3.3.0
