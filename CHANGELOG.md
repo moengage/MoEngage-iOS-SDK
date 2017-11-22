@@ -3,9 +3,14 @@
 
 ## Change Log:
 
+### Version 3.8.0  *(22nd November, 2017)*
+-------------------------------------------
+* Provided  `setAlias:`  method to update `USER_ATTRIBUTE_UNIQUE_ID` - [link](https://docs.moengage.com/v1.0/docs/tracking-user-attributes#section-updating-user-attribute-unique-id)
+* Now if the `USER_ATTRIBUTE_UNIQUE_ID` is updated using `setUserUniqueID:` with a new value, will reset the current user and lead to creation of unintended users in our system.
+
 ### Version 3.7.3  *(13th November, 2017)*
 -------------------------------------------
-* Provided a method to redirect data to EU servers using redirectDataToRegion:.
+* Provided a method to redirect data to EU servers using `redirectDataToRegion:`. - [link](https://docs.moengage.com/v1.0/docs/data-redirection)
 
 ### Version 3.7.2  *(2nd November, 2017)*
 -------------------------------------------

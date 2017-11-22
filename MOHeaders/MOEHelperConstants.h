@@ -2,7 +2,7 @@
 //  MOEHelperConstants.h
 //  MoEngage
 //
-//  Created by apple on 10/16/14.
+//  Created by MoEngageDev on 10/16/14.
 //  Copyright (c) 2014 MoEngage Inc. All rights reserved.
 //
 

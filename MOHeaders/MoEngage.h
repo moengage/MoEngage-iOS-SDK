@@ -5,7 +5,7 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 MoEngage Inc. All rights reserved.
 //
-// SDK Version 3.7.3
+// SDK Version 3.8.0
 
 #import <UserNotifications/UserNotifications.h>
 #import <SafariServices/SafariServices.h>
@@ -255,6 +255,8 @@ typedef enum DataRedirectionRegion{
 
 // Set Unique ID for user
 -(void)setUserUniqueID:(id)uniqueID;
+
+-(void)setAlias:(id)uniqueID;
 
 //Set User Email ID
 -(void)setUserEmailID:(NSString*)emailID;
