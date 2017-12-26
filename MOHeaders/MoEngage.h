@@ -5,7 +5,7 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 MoEngage Inc. All rights reserved.
 //
-// SDK Version 3.8.0
+// SDK Version 3.8.1
 
 #import <UserNotifications/UserNotifications.h>
 #import <SafariServices/SafariServices.h>

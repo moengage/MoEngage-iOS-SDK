@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 3.8.1  *(26th December, 2017)*
+-------------------------------------------
+* Fixed an issue where in some cases calling *resetUser* simultaneously with *syncNow* was causing a crash.
+
 ### Version 3.8.0  *(22nd November, 2017)*
 -------------------------------------------
 * Provided  `setAlias:`  method to update `USER_ATTRIBUTE_UNIQUE_ID` - [link](https://docs.moengage.com/v1.0/docs/tracking-user-attributes#section-updating-user-attribute-unique-id)
