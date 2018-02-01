@@ -2,6 +2,11 @@
 =================================
 
 ## Change Log:
+### Version 3.9.0  *(1st February, 2018)*
+-------------------------------------------
+* Conditional Action supported in inApp for rating template.
+* Periodic Flush of events introduced in the SDK.
+* Tracking of Device Model implemented.
 
 ### Version 3.8.1  *(26th December, 2017)*
 -------------------------------------------
