@@ -2,6 +2,11 @@
 =================================
 
 ## Change Log:
+
+### Version 3.9.1  *(23rd February, 2018)*
+-------------------------------------------
+* Bug Fix for issue where a black tint view was added on viewcontroller  in case of self-handled Smart Trigger InApp.
+
 ### Version 3.9.0  *(1st February, 2018)*
 -------------------------------------------
 * Conditional Action supported in inApp for rating template.
