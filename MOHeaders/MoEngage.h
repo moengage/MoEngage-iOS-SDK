@@ -5,14 +5,13 @@
 //  Created by Karthik Thirumalasetti on 06/07/14.
 //  Copyright (c) 2014 MoEngage Inc. All rights reserved.
 //
-// SDK Version 3.9.1
+// SDK Version 3.9.2
 
 
 #if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
 #import <UserNotifications/UserNotifications.h>
 #endif
 
-#import <SafariServices/SafariServices.h>
 #import <CoreLocation/CoreLocation.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -105,7 +104,7 @@ typedef enum DataRedirectionRegion{
 
 @end
 
-@interface MoEngage : NSObject <SFSafariViewControllerDelegate>
+@interface MoEngage : NSObject
 
 #pragma mark - Properties 
 
@@ -468,6 +467,11 @@ typedef enum DataRedirectionRegion{
  */
 +(void)setAppGroupID:(NSString*)appGroupID;
 
+/**
+ Method to dismiss the RichLanding Controller manually
+ @param animate Bool value indicating if the dismissing the controller should be with animation
+ */
+-(void)dismissRichLandingWebViewControllerWithAnimation:(BOOL)animate;
 
 #pragma mark- Deprecated Methods
 

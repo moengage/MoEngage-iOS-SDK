@@ -3,9 +3,14 @@
 
 ## Change Log:
 
+### Version 3.9.2  *(14th March, 2018)*
+-------------------------------------------
+* Issue fixed where sometimes SDK was crashing due to calling sync in multiple threads.
+* Provided a method to manually dismiss RichLanding Webview Controller(SFSafariController for iOS9+) :  `dismissRichLandingWebViewControllerWithAnimation:`
+
 ### Version 3.9.1  *(23rd February, 2018)*
 -------------------------------------------
-* Bug Fix for issue where a black tint view was added on viewcontroller  in case of self-handled Smart Trigger InApp.
+* Bug Fix for issue where a black tint view was added on viewcontroller in case of self-handled Smart Trigger InApp.
 
 ### Version 3.9.0  *(1st February, 2018)*
 -------------------------------------------
