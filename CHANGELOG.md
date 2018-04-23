@@ -3,6 +3,11 @@
 
 ## Change Log:
 
+### Version 4.0.0  *(23rd April, 2018)*
+-------------------------------------------
+* SDK was changed to dynamic framework
+* Support for Real-Time Triggers added
+
 ### Version 3.9.2  *(14th March, 2018)*
 -------------------------------------------
 * Issue fixed where sometimes SDK was crashing due to calling sync in multiple threads.
