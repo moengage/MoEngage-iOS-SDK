@@ -365,6 +365,15 @@ typedef enum DataRedirectionRegion{
  */
 -(void)trackUserPushPreference:(BOOL)isPushEnabled;
 
+#pragma mark - Real-Time Triggers
+
+/**
+ Method to sync the realtime trigger campaigns created in your account
+ @param completionBlock Completion Block indicating the success/failure of the sync
+ @version 4.0.1 and above
+ */
+-(void)syncRealTimeTriggersWithCompletionBlock:(void(^_Nullable)(BOOL rtSyncCompleted))completionBlock;
+
 #pragma mark - In-App
 
 /**
