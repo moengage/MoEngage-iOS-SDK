@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MOInAppDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Protocol/MOInAppDelegate" class="dashAnchor"></a>
+    <a title="MOInAppDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">MoEngage Docs</a> (63% documented)</p>
+        <p class="header-right"><a href="https://github.com/moengage/MoEngage-iOS-SDK"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">MoEngage Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        MOInAppDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/MoEngage.html">MoEngage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DataRedirectionRegion.html">DataRedirectionRegion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserGender.html">UserGender</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/_AppStatus.html">_AppStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/_InAppWidget.html">_InAppWidget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/_LogLevel.html">_LogLevel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/MOInAppDelegate.html">MOInAppDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions/AppStatus.html">AppStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions/InAppWidget.html">InAppWidget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions/LogLevel.html">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:MoEngage.h@T@NudgeCreationCompletionBlock">NudgeCreationCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions/NudgePosition.html">NudgePosition</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>MOInAppDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MOInAppDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>Confirm to this protocol if you want to handle the action of the in-app messages&rsquo; button clicks.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MOInAppDelegate(im)inAppShownWithCampaignID:"></a>
+                    <a name="//apple_ref/objc/Method/-inAppShownWithCampaignID:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MOInAppDelegate(im)inAppShownWithCampaignID:">-inAppShownWithCampaignID:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This delegate method is called whenever an inApp is shown on the screen</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">inAppShownWithCampaignID</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">campaignID</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">inAppShown</span><span class="p">(</span><span class="n">withCampaignID</span> <span class="nv">campaignID</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>campaignID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>- Campaign ID of InApp campaign shown.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MOInAppDelegate(im)inAppClickedForWidget:screenName:andDataDict:"></a>
+                    <a name="//apple_ref/objc/Method/-inAppClickedForWidget:screenName:andDataDict:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MOInAppDelegate(im)inAppClickedForWidget:screenName:andDataDict:">-inAppClickedForWidget:screenName:andDataDict:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is called when the user clicks on a widget in the in-app message. Conform to MoInAppDelegate to use this callback method.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">inAppClickedForWidget</span><span class="p">:(</span><span class="n"><a href="../Type Definitions/InAppWidget.html">InAppWidget</a></span><span class="p">)</span><span class="nv">widget</span>
+                   <span class="nf">screenName</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">screenName</span>
+                  <span class="nf">andDataDict</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">dataDict</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">inAppClicked</span><span class="p">(</span><span class="k">for</span> <span class="nv">widget</span><span class="p">:</span> <span class="kt"><a href="../Type Definitions/InAppWidget.html">InAppWidget</a></span><span class="p">,</span> <span class="nv">screenName</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="n">andDataDict</span> <span class="nv">dataDict</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>screenName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>- Used in DeepLinking, gives the screen name to navigate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dataDict</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>- The key value data dictionary associated with the widget tapped.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MOInAppDelegate(im)eventTriggeredInAppAvailableWithData:"></a>
+                    <a name="//apple_ref/objc/Method/-eventTriggeredInAppAvailableWithData:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MOInAppDelegate(im)eventTriggeredInAppAvailableWithData:">-eventTriggeredInAppAvailableWithData:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is called when an event triggers an in-app from the server, which is of type self handled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">eventTriggeredInAppAvailableWithData</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">data</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">eventTriggeredInAppAvailable</span><span class="p">(</span><span class="n">withData</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>- The data mentioned on the dashboard while creating the in-app is passed onto you</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://moengage.com" target="_blank" rel="external">MoEngage</a>. All rights reserved. (Last updated: 2018-04-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

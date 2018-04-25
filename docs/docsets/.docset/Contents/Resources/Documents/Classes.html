@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Classes  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Section/Classes" class="dashAnchor"></a>
+    <a title="Classes  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (63% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Classes  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/MoEngage.html">MoEngage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/DataRedirectionRegion.html">DataRedirectionRegion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/UserGender.html">UserGender</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/_AppStatus.html">_AppStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/_InAppWidget.html">_InAppWidget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/_LogLevel.html">_LogLevel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/MOInAppDelegate.html">MOInAppDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Type Definitions/AppStatus.html">AppStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type Definitions/InAppWidget.html">InAppWidget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type Definitions/LogLevel.html">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type Definitions.html#/c:MoEngage.h@T@NudgeCreationCompletionBlock">NudgeCreationCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type Definitions/NudgePosition.html">NudgePosition</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Classes</h1>
+            <p>The following classes are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/In%20App%20Protocol"></a>
+                <a name="//apple_ref/objc/Section/In App Protocol" class="dashAnchor"></a>
+                <a href="#/In%20App%20Protocol">
+                  <h3 class="section-name">In App Protocol</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MoEngage"></a>
+                    <a name="//apple_ref/objc/Class/MoEngage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MoEngage">MoEngage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Classes/MoEngage.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">MoEngage</span> <span class="p">:</span> <span class="nc">NSObject</span>
+
+<span class="cp">#pragma mark - Properties
+</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">weak</span><span class="p">)</span> <span class="n">id</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/MOInAppDelegate.html">MOInAppDelegate</a></span><span class="o">&gt;</span><span class="n">delegate</span><span class="p">;</span>
+
+<span class="cm">/**
+ Set this property to YES if you don't wish to use the Inbox / Notification center feature
+ */</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">)</span> <span class="n">BOOL</span>      <span class="n">disableInbox</span><span class="p">;</span>
+
+<span class="cm">/**
+ Set this property to YES if you don't use in app messaging.
+ */</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">)</span> <span class="n">BOOL</span>      <span class="n">disableInApps</span><span class="p">;</span>
+
+<span class="cm">/**
+ Set the property to YES if you don't want MoEngage to reset bagde no. on app open
+ */</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">)</span> <span class="n">BOOL</span>      <span class="n">disableBadgeReset</span><span class="p">;</span>
+
+<span class="cp">#pragma mark - Shared instance
+</span>
+<span class="k">+</span><span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nonnull</span> <span class="p">)</span><span class="n">sharedInstance</span><span class="p">;</span>
+
+<span class="cp">#pragma mark - Initialization Methods
+</span>
+<span class="cm">/**
+ Call this method in the AppDelegate in application:didFinishLaunchingWithOptions: to initialize the SDK for dev build
+ @param apiKey The unique apiKey provided for your app
+ @param application The application instance
+ @param launchOptions The launch options dictionary
+ @param openUrl This tells us whether the deeplink should be handled or not, which means whether we call handleOpenUrl or you do it yourself.
+ @warning Make sure initializeProdWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically: method is also implemented, refer this link for more details: [Initializing MoEngage SDK](https://docs.moengage.com/docs/appdelegate-changes#section-initializing-moengage-sdk)
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">initializeDevWithApiKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">apiKey</span> <span class="nf">inApplication</span><span class="p">:(</span><span class="n">UIApplication</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">application</span> <span class="nf">withLaunchOptions</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">launchOptions</span> <span class="nf">openDeeplinkUrlAutomatically</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">openUrl</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method in the AppDelegate in application:didFinishLaunchingWithOptions: to initialize the SDK for production build
+ @param apiKey The unique apiKey provided for your app
+ @param application The application instance
+ @param launchOptions The launch options dictionary
+ @param openUrl This tells us whether the deeplink should be handled or not, which means whether we call handleOpenUrl or you do it yourself.
+ @warning Make sure initializeProdWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically: method is also implemented, refer this link for more details: [Initializing MoEngage SDK](https://docs.moengage.com/docs/appdelegate-changes#section-initializing-moengage-sdk)
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">initializeProdWithApiKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">apiKey</span> <span class="nf">inApplication</span><span class="p">:(</span><span class="n">UIApplication</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">application</span> <span class="nf">withLaunchOptions</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">launchOptions</span> <span class="nf">openDeeplinkUrlAutomatically</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">openUrl</span><span class="p">;</span>
+
+<span class="cp">#pragma mark - Push Notifications
+</span>
+<span class="cm">/**
+ Method to register your app for push notification with APNS for iOS10 and above.
+ @param categories to set categories for supporting Notification Actions (iOS10 and above)
+ @param delegate to set the delegate for UNUserNotificationCenter.
+ @version 4.0.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">registerForRemoteNotificationWithCategories</span><span class="p">:(</span><span class="n">NSSet</span><span class="o">&lt;</span><span class="n">UNNotificationCategory</span><span class="o">*&gt;*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">categories</span> <span class="nf">withUserNotificationCenterDelegate</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span> <span class="p">)</span><span class="nv">delegate</span> <span class="n">API_AVAILABLE</span><span class="p">(</span><span class="n">ios</span><span class="p">(</span><span class="mi">10</span><span class="p">.</span><span class="mi">0</span><span class="p">));</span>
+
+<span class="cm">/**
+ Method to register your app for push notification with APNS for iOS versions below iOS10.
+ @param categoriesForPreviousOS to set categories for supporting Notification Actions in iOS8 and iOS9 (This should be a set of MONotificationCategory objects)
+ @version 4.0.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">registerForRemoteNotificationForBelowiOS10WithCategories</span><span class="p">:(</span><span class="n">NSSet</span><span class="o">&lt;</span><span class="n">MONotificationCategory</span><span class="o">*&gt;*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">categoriesForPreviousOS</span> <span class="n">API_DEPRECATED</span><span class="p">(</span><span class="s">"This method is for iOS version below iOS 10.0"</span><span class="p">,</span> <span class="n">ios</span><span class="p">(</span><span class="mi">8</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">.</span><span class="mi">3</span><span class="p">.</span><span class="mi">5</span><span class="p">));</span>
+
+<span class="cm">/**
+ * Method to send notification categories to SDK to support Notification Action in iOS10 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserNotificationCategories</span><span class="p">:(</span><span class="n">NSSet</span><span class="o">&lt;</span><span class="n">UNNotificationCategory</span><span class="o">*&gt;*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">categories</span> <span class="n">API_AVAILABLE</span><span class="p">(</span><span class="n">ios</span><span class="p">(</span><span class="mi">10</span><span class="p">.</span><span class="mi">0</span><span class="p">));</span>
+
+
+<span class="cm">/**
+ * Method to send notification categories to SDK to support Notification Action in iOS8 and iOS9
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setNotificationCategoriesForEarlieriOSVersionsWithCategories</span><span class="p">:(</span><span class="n">NSSet</span><span class="o">&lt;</span><span class="n">MONotificationCategory</span><span class="o">*&gt;*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">categories</span> <span class="n">API_DEPRECATED</span><span class="p">(</span><span class="s">"This method is for iOS version below iOS 10.0"</span><span class="p">,</span> <span class="n">ios</span><span class="p">(</span><span class="mi">8</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">.</span><span class="mi">3</span><span class="p">.</span><span class="mi">5</span><span class="p">));</span>
+
+
+<span class="cm">/**
+ Use this method to pass the device token/push token generated by APNS for your app to MoEngage SDK which can be later used for sending push notification to your app users.
+ 
+ Call this method in AppDelegate in application:didRegisterForRemoteNotificationsWithDeviceToken:.
+ @param deviceToken The token of the device for push notifications
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setPushToken</span><span class="p">:(</span><span class="n">NSData</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">deviceToken</span><span class="p">;</span>
+
+
+<span class="cm">/**
+ Call this method in AppDelegate in didReceiveRemoteNotification
+ @param application The application instance
+ @param userInfo The info dict with the push
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didReceieveNotificationinApplication</span><span class="p">:(</span><span class="n">UIApplication</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">application</span> <span class="nf">withInfo</span><span class="p">:(</span><span class="n">NSDictionary</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">userInfo</span> <span class="nf">openDeeplinkUrlAutomatically</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">openUrl</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method in AppDelegate in didRegisterUserNotificationSettings to register the app for notification setting changes by the user
+ @param settings The push notification settings.
+ @since iOS8
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didRegisterForUserNotificationSettings</span><span class="p">:(</span><span class="n">UIUserNotificationSettings</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">settings</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method in AppDelegate in didFailToRegisterForRemoteNotificationsWithError
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didFailToRegisterForPush</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method in AppDelegate in userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:
+ @since iOS 10
+ @version 3.0.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">userNotificationCenter</span><span class="p">:(</span><span class="n">UNUserNotificationCenter</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">center</span> <span class="nf">didReceiveNotificationResponse</span><span class="p">:(</span><span class="n">UNNotificationResponse</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">response</span> <span class="n">API_AVAILABLE</span><span class="p">(</span><span class="n">ios</span><span class="p">(</span><span class="mi">10</span><span class="p">.</span><span class="mi">0</span><span class="p">));</span>
+
+<span class="cm">/**
+ Use this method to track which action button was clicked by user for a notification.
+ 
+ Call this method in AppDelegate in application:handleActionWithIdentifier:forRemoteNotification:completionHandler:
+ 
+ @param identifier Action Identifier of the Action button clicked by user
+ @param notification NSDictionary instance of the notification payload received by the app.
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">handleActionWithIdentifier</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">identifier</span> <span class="nf">forRemoteNotification</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">notification</span><span class="p">;</span>
+
+<span class="cp">#pragma mark - Tracking custom events and attributes
+</span>
+<span class="cm">/**
+ Call this method to track events.
+ @param name The name of the event
+ @param payload The dictionary you want to associate with the event (optional)
+ @warning Please make sure that you are tracking event attributes without changing their data types. Our system detects the data type automatically unless you explicitly specify it as a string.
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">trackEvent</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">name</span> <span class="nf">andPayload</span><span class="p">:(</span><span class="n">NSMutableDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">payload</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method if you want to track events with special types like timestamp/datetime or location.
+ @param name Event name to be tracked
+ @param payload of type MOPayloadBuilder. See MOPaylodBuilder for more details.
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">trackEvent</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">name</span> <span class="nf">builderPayload</span><span class="p">:(</span><span class="n">MOPayloadBuilder</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">payload</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to set unique attributes to identify the app user. For eg. username, email, age, gender etc.
+ @param value The value/attribute
+ @warning value can of be type string, integer or bool
+ @param key The key, name of the attribute
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserAttribute</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span> <span class="p">)</span><span class="nv">value</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to set a user attribute which is datetime or time.
+ @param timestamp The timestamp in epoch format.
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserAttributeTimestamp</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">timestamp</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to set user attribute location.
+ @param lat The latitude of the location
+ @param lng The longitude of the location
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserAttributeLocationLatitude</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">lat</span> <span class="nf">longitude</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">lng</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to track device locale settings of user.
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">trackLocale</span><span class="p">;</span>
+
+<span class="cp">#pragma mark - Tracking default user attributes
+</span><span class="cm">/**
+ Use this method to set a unique Identifier(ID) for a user. Please make sure you use this method wisely to only set the unique ID and not use it to update the unique ID, make use of `setAlias:` method for updating the unique ID for a user.
+ @param uniqueID A Unique ID to filter the specific user from your user base. Please make sure this value is not hardcoded.
+ @attention Please make sure not to use this method to update the unique ID of a logged in user, use setAlias: instead
+ @version 3.3.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserUniqueID</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span> <span class="p">)</span><span class="nv">uniqueID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to update the Unique ID(ID) value of a user.
+ @param uniqueID Unique ID to filter the specific user from your user base. Please make sure this value is not hardcoded.
+ @version 3.8.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setAlias</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span> <span class="p">)</span><span class="nv">uniqueID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to track Email ID of a user.
+ @param emailID Email ID value to be tracked.
+ @version 3.3.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserEmailID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">emailID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to track User Name of a user.
+ @param name User Name value to be tracked for the user.
+ @version 3.3.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserName</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">name</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to track First Name of a user.
+ @param firstName User First Name value to be tracked for the user.
+ @version 3.3.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserFirstName</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">firstName</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to track Last Name of a user.
+ @param lastName User last name value to be tracked for the user.
+ @version 3.3.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserLastName</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">lastName</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to track Phone Number of a user.
+ @param phNumber Phone Number of user to be tracked.
+ @version 3.3.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserMobileNo</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span> <span class="p">)</span><span class="nv">phNumber</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to track gender of a user.
+ @param gender UserGender value indicating if user is MALE or FEMALE.
+ @version 3.3.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserGender</span><span class="p">:(</span><span class="n"><a href="Enums/UserGender.html">UserGender</a></span><span class="p">)</span><span class="nv">gender</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to track Date of birth of a user.
+ @param date NSDate instance of birthdate of user.
+ @version 3.3.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserDateOfBirth</span><span class="p">:(</span><span class="n">NSDate</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">date</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to track location of a user.
+ @param lat latitude value in double of the location cordinate to be tracked.
+ @param lng longitude value in double of the location cordinate to be tracked.
+ @version 3.3.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserLocationLatitude</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">lat</span> <span class="nf">andLongitude</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">lng</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to track push preference set by a user.
+ @param isPushEnabled A Bool value indicating if the user has enabled push preference in the app.
+ @version 3.8.1 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">trackUserPushPreference</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">isPushEnabled</span><span class="p">;</span>
+
+<span class="cp">#pragma mark - Real-Time Triggers
+</span>
+<span class="cm">/**
+ Method to sync the realtime trigger campaigns created in your account
+ @param completionBlock Completion Block indicating the success/failure of the sync
+ @version 4.0.1 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">syncRealTimeTriggersWithCompletionBlock</span><span class="p">:(</span><span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="n">BOOL</span> <span class="n">rtSyncCompleted</span><span class="p">))</span><span class="nv">completionBlock</span><span class="p">;</span>
+
+<span class="cp">#pragma mark - In-App
+</span>
+<span class="cm">/**
+ Call this method in viewDidAppear of the view controller where you want to show the in app message
+ @note Adhere to the delegate for InApp - MOInAppDelegate, if you want the callback for the button actions.
+ @see MOInAppDelegate
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">handleInAppMessage</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method in viewDidLoad of the view controller where you don't want to show in app messages
+ @param viewcontroller The viewcontroller instance where you don't want to show in app
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">dontShowInAppInViewController</span><span class="p">:(</span><span class="n">UIViewController</span><span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">viewcontroller</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method in viewDidAppear of the view controller where you want to get a self handled in app message
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="n">NSDictionary</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="n">getSelfHandledInApp</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method to track if self handled in app was shown.
+ @param campaignID The campaign ID of the self handled in app shown.
+ @version 2.0.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">selfHandledInAppViewShownWithCampaignID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">campaignID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method to track if self handled in app Primary widget is clicked.
+ @param campaignID The campaign ID of the self handled in app shown.
+ @version 3.4.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">selfHandledInAppClickedWithPrimaryActionAndCampaignID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">campaignID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method to track if self handled in app widget(other than Primary Widget) is clicked.
+ @param campaignID The campaign ID of the self handled in app shown.
+ @version 3.4.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">selfHandledInAppClickedWithSecondaryActionAndCampaignID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">campaignID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method to track dismiss actions on the inApp.
+ @param campaignID The campaign ID of the self handled in app shown.
+ @version 3.4.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">selfHandledInAppClickedWithDismissActionAndCampaignID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">campaignID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method to get the nudge view created in the dashboard. There can be only 1 active nudge view at any given point of time
+ @param completionBlock Completion Block with the nudge View and campaign ID.
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">getNudgeViewWithCompletionBlock</span><span class="p">:(</span><span class="n"><a href="Type Definitions.html#/c:MoEngage.h@T@NudgeCreationCompletionBlock">NudgeCreationCompletionBlock</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completionBlock</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method to track if nudge obtained from getNudgeViewWithCompletionBlock was shown.
+ @param campaignID The campaign ID of the nudge shown
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">nudgeViewShownWithCampaignID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">campaignID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method to show the nudge view created in the dashboard at top/bottom of the viewcontroller.
+ @attention There can be only 1 active nudge view at any given point of time.
+ @param position Defines where to add the nudge view Top/Bottom.
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">showNudgeViewAtNudgePosition</span><span class="p">:(</span><span class="n"><a href="Type Definitions/NudgePosition.html">NudgePosition</a></span><span class="p">)</span><span class="nv">position</span><span class="p">;</span>
+
+<span class="cp">#pragma mark - Geofencing
+</span><span class="cm">/**
+ Use this method to start tracking geofences for the current location.
+ @param locManager Pass the location manager instance if you have create one. Else, a new one will be created. This param is optional.
+ @param location Pass this param if you already have the location of the user or want to hard code a location. Else the location manager will take the current location of the user
+ @see MOGeofenceHandler to get completion block
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">startGeofencingWithLocationManager</span><span class="p">:(</span><span class="n">CLLocationManager</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">locManager</span> <span class="nf">andCurrentLocation</span><span class="p">:(</span><span class="n">CLLocation</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">location</span><span class="p">;</span>
+
+
+<span class="cp">#pragma mark - Utility Methods
+</span>
+<span class="cm">/**
+ Call this method to clear the unique attributes of the current user, and add him as a new user. One of the use cases is when a user logs out
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">resetUser</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to forcefully sync events to server right now. Useful for testing and to send data in realtime when you don't wish to wait for when the user goes to background or terminates the app.
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">syncNow</span><span class="p">;</span>
+
+<span class="cm">/**
+ There is a periodic sync enabled by default in SDK, use this method to disable this periodic sync by SDK
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">disablePeriodicFlush</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to change the periodic sync interval in the SDK,
+ @note The interval should be greater than 60 Secs
+ @param flushInterval - Interval in seconds for periodic Flush, the interval set should be greater than 60 secs
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setFlushInterval</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">flushInterval</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to set the app status.
+ @param appStatus - Two possible enum values - APP_UDPATE (for app updates) and APP_INSTALL (for new installs)
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">appStatus</span><span class="p">:(</span><span class="n"><a href="Type Definitions/AppStatus.html">AppStatus</a></span><span class="p">)</span><span class="nv">appStatus</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to enable logs for the MoEngage SDK. You can simply pass yes and no to disable the logs.
+ Alternatively you can use Log Levels.
+ @see LogLevel
+ */</span>
+<span class="k">+</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">debug</span><span class="p">:(</span><span class="n"><a href="Type Definitions/LogLevel.html">LogLevel</a></span><span class="p">)</span> <span class="n">logLevel</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to redirect the data to region defined in DataRedirectionRegion Enumerator
+ @warning Consult with MoEngage team before using this method for redirecting the data
+ */</span>
+<span class="k">+</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">redirectDataToRegion</span><span class="p">:(</span><span class="n"><a href="Enums/DataRedirectionRegion.html">DataRedirectionRegion</a></span><span class="p">)</span><span class="nv">region</span><span class="p">;</span>
+
+<span class="cm">/**
+ Method to set the App Group ID for Notification impression tracking.
+ */</span>
+<span class="k">+</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setAppGroupID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">appGroupID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Method to dismiss the RichLanding Controller manually
+ @param animate Bool value indicating if the dismissing the controller should be with animation
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">dismissRichLandingWebViewControllerWithAnimation</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">animate</span><span class="p">;</span>
+
+<span class="cp">#pragma mark- Deprecated Methods
+</span><span class="cm">/**
+ This method has been deprecated from MoEngage-iOS-SDK version 4.0.0
+ Method to register your app for push notification with APNS.
+ @param categories to set categories for supporting Notification Actions (iOS10 and above)
+ @param categoriesForPreviousOS to set categories for supporting Notification Actions in iOS8 and iOS9 (This should be a set of MONotificationCategory objects)
+ @param delegate to set the delegate for UNUserNotificationCenter.
+ @version 3.0.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">registerForRemoteNotificationWithCategories</span><span class="p">:(</span><span class="n">NSSet</span><span class="o">&lt;</span><span class="n">UNNotificationCategory</span><span class="o">*&gt;*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">categories</span> <span class="nf">andCategoriesForPreviousVersions</span><span class="p">:(</span><span class="n">NSSet</span><span class="o">&lt;</span><span class="n">MONotificationCategory</span><span class="o">*&gt;*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">categoriesForPreviousOS</span> <span class="nf">andWithUserNotificationCenterDelegate</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span> <span class="p">)</span><span class="nv">delegate</span> <span class="n">__deprecated</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to pass the device token/push token generated by APNS for your app to MoEngage SDK which can be later used for sending push notification to your app users.
+ 
+ Call this method in AppDelegate in application:didRegisterForRemoteNotificationsWithDeviceToken:.
+ @param deviceToken The token of the device for push notifications
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">registerForPush</span><span class="p">:(</span><span class="n">NSData</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">deviceToken</span> <span class="n">__deprecated</span><span class="p">;</span>
+
+
+<span class="cm">/**
+ Use this method to redirect the data tracked
+ This method has been deprecated from MoEngage-iOS-SDK version 3.8.0 and use redirectDataToRegion: method instead of this method
+ @warning Consult with MoEngage team before using this method for redirecting the data
+ */</span>
+<span class="k">+</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDataRedirection</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">value</span> <span class="n">__deprecated</span><span class="p">;</span>
+<span class="k">@end</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">MoEngage</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-04-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
