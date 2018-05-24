@@ -3,6 +3,11 @@
 
 ## Change Log:
 
+### Version 4.1.0  *(24th May, 2018)*
+-------------------------------------------
+* SDK changes to make it GDPR complient. We have provided optout methods for event tracking, push notifications and inApp Notifications in this release.
+* Provided `resetUserWithCompletionBlock:` and `flushWithCompletionBlock:` methods.
+
 ### Version 4.0.0  *(23rd April, 2018)*
 -------------------------------------------
 * SDK was changed to dynamic framework

@@ -167,6 +167,30 @@ typedef enum DataRedirectionRegion{
  */
 -(void)initializeProdWithApiKey:(NSString *_Nonnull)apiKey inApplication:(UIApplication *_Nullable)application withLaunchOptions:(NSDictionary *_Nullable)launchOptions openDeeplinkUrlAutomatically:(BOOL)openUrl;
 
+#pragma mark- Opt Out methods
+
+/**
+ Method to opt out of the data tracking for a particular user
+ @param isOptedOut Bool value to indicate if the data tracking is to be opted out
+ @version 4.1.0 and above
+ */
+-(void)optOutOfDataTracking:(BOOL)isOptedOut;
+
+/**
+ Method to opt out of push for a particular user
+ @param isPushOptedOut Bool value to indicate if the push is to be opted out
+ @version 4.1.0 and above
+ */
+-(void)optOutOfMoEngagePushNotification:(BOOL)isPushOptedOut;
+
+/**
+ Method to opt out of the data tracking for a particular user
+ @param isInAppOptedOut Bool value to indicate if the data tracking is to be opted out
+ @version 4.1.0 and above
+ */
+-(void)optOutOfInAppCampaign:(BOOL)isInAppOptedOut;
+
+
 #pragma mark - Push Notifications
 
 /**
@@ -459,9 +483,25 @@ typedef enum DataRedirectionRegion{
 -(void)resetUser;
 
 /**
+ Call this method to clear the unique attributes of the current user, and add him as a new user. One of the use cases is when a user logs out
+ @param completionBlock : Completion block called after the User Reset is done
+ @version 4.1.0 and above
+ */
+-(void)resetUserWithCompletionBlock:(void(^_Nullable)(BOOL userResetSuccessfully))completionBlock;
+
+
+/**
  Use this method to forcefully sync events to server right now. Useful for testing and to send data in realtime when you don't wish to wait for when the user goes to background or terminates the app.
  */
 -(void)syncNow;
+
+/**
+ Use this method to forcefully sync events to server right now. Useful for testing and to send data in realtime when you don't wish to wait for when the user goes to background or terminates the app.
+
+ @param completionBlock : Completion block called after data sync is completed
+ @version 4.1.0 and above
+*/
+-(void)flushWithCompletionBlock:(void(^_Nullable)(BOOL syncSuccessful))completionBlock;
 
 /**
  There is a periodic sync enabled by default in SDK, use this method to disable this periodic sync by SDK
