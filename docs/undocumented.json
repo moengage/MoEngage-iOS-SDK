@@ -1,299 +1,299 @@
 {
   "warnings": [
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 38,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 40,
       "symbol": "NudgeCreationCompletionBlock",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 43,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 45,
       "symbol": "LogLevel",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 44,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 46,
       "symbol": "LogLevel._LogLevel.LOG_NONE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 44,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 46,
       "symbol": "_LogLevel.LOG_NONE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 45,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 47,
       "symbol": "LogLevel._LogLevel.LOG_ALL",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 45,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 47,
       "symbol": "_LogLevel.LOG_ALL",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 46,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 48,
       "symbol": "LogLevel._LogLevel.LOG_EXCEPTIONS",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 46,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 48,
       "symbol": "_LogLevel.LOG_EXCEPTIONS",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 52,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 54,
       "symbol": "NudgePosition",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 53,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 55,
       "symbol": ".NudgeTop",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 53,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 55,
       "symbol": "NudgePosition..NudgeTop",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 54,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 56,
       "symbol": ".NudgeBottom",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 54,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 56,
       "symbol": "NudgePosition..NudgeBottom",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 60,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 62,
       "symbol": "AppStatus",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 61,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 63,
       "symbol": "AppStatus._AppStatus.INSTALL",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 61,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 63,
       "symbol": "_AppStatus.INSTALL",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 62,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 64,
       "symbol": "AppStatus._AppStatus.UPDATE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 62,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 64,
       "symbol": "_AppStatus.UPDATE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 68,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 70,
       "symbol": "InAppWidget",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 69,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 71,
       "symbol": "InAppWidget._InAppWidget.CLOSE_BUTTON",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 69,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 71,
       "symbol": "_InAppWidget.CLOSE_BUTTON",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 70,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 72,
       "symbol": "InAppWidget._InAppWidget.BUTTON",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 70,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 72,
       "symbol": "_InAppWidget.BUTTON",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 71,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 73,
       "symbol": "InAppWidget._InAppWidget.IMAGE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 71,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 73,
       "symbol": "_InAppWidget.IMAGE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 72,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 74,
       "symbol": "InAppWidget._InAppWidget.LABEL",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 72,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 74,
       "symbol": "_InAppWidget.LABEL",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 78,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 80,
       "symbol": "UserGender",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 79,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 81,
       "symbol": "UserGender.MALE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 79,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 81,
       "symbol": "UserGender.UserGender.MALE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 80,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 82,
       "symbol": "UserGender.FEMALE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 80,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 82,
       "symbol": "UserGender.UserGender.FEMALE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
-      "line": 88,
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
+      "line": 89,
       "symbol": "DataRedirectionRegion",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
       "line": 90,
       "symbol": "DataRedirectionRegion.DataRedirectionRegion.MOE_REGION_INDIA",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
       "line": 90,
       "symbol": "DataRedirectionRegion.MOE_REGION_INDIA",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
       "line": 91,
       "symbol": "DataRedirectionRegion.DataRedirectionRegion.MOE_REGION_EU",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
       "line": 91,
       "symbol": "DataRedirectionRegion.MOE_REGION_EU",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
       "line": 92,
       "symbol": "DataRedirectionRegion.DataRedirectionRegion.MOE_REGION_DEFAULT",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
       "line": 92,
       "symbol": "DataRedirectionRegion.MOE_REGION_DEFAULT",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
       "line": 123,
       "symbol": "MoEngage",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
       "line": 127,
       "symbol": "MoEngage.delegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.h",
+      "file": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod/MoEngage/MoEngage.framework/Headers/MoEngage.h",
       "line": 146,
       "symbol": "MoEngage.+sharedInstance",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage"
+  "source_directory": "/Users/Chengappa/Documents/MoEngage/MoEngageCocoaPod"
 }
