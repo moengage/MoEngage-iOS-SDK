@@ -3,15 +3,20 @@
 
 ## Change Log:
 
+### Version 4.1.1  *(12th June, 2018)*
+-------------------------------------------
+* App Exit Event being tracked for using Real-time triggers when app goes to background.
+* Real-Time triggers can now also be triggered by events being tracked when app is in background state.
+
 ### Version 4.1.0  *(24th May, 2018)*
 -------------------------------------------
-* SDK changes to make it GDPR complient. We have provided optout methods for event tracking, push notifications and inApp Notifications in this release.
-* Provided `resetUserWithCompletionBlock:` and `flushWithCompletionBlock:` methods.
+* SDK changes to make it GDPR compliant. We have provided opt-out methods for event tracking, push notifications and inApp Notifications in this release.
+* Provided `resetUserWithCompletionBlock:` and `flushWithCompletionBlock:` methods to provide callbacks once the request is processed.
 
 ### Version 4.0.0  *(23rd April, 2018)*
 -------------------------------------------
 * SDK was changed to dynamic framework
-* Support for Real-Time Triggers added
+* Support for [Real-Time Triggers](https://docs.moengage.com/v1.0/docs/real-time-triggers) added
 
 ### Version 3.9.2  *(14th March, 2018)*
 -------------------------------------------

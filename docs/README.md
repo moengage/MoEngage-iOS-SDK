@@ -43,18 +43,16 @@ To install manually, follow the steps below:
 ### Using SDK in Swift
 
 If you are not using dynamic frameworks:
-Simply add the MoEngage-iOS-SDK/MoEngage.h and other header files as needed, in your bridging header and you will be good to go.
+Simply add the `MoEngage/MoEngage.h`  in your bridging header and you will be good to go.
 
-    #import <MoEngage-iOS-SDK/MoEngage.h>
-    #import <MoEngage-iOS-SDK/MOInbox.h>
-    #import <MoEngage-iOS-SDK/MOEHelperConstants.h>
-    #import <MoEngage-iOS-SDK/MOGeofenceHandler.h>
+    #import <MoEngage/MoEngage.h>
+
 
 If you are using dynamic frameworks:
 
 Here you will have to import the SDK by directly using an import statement as below:
 
-    import MoEngage_iOS_SDK
+    import MoEngage
 
 
 ## SDK Initialization
