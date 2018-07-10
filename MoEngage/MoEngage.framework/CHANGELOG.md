@@ -2,6 +2,13 @@
 =================================
 
 ## Change Log:
+### Version 4.2.1  *(10th July, 2018)*
+-------------------------------------------
+* Network request and response caching in Cache.db disabled.
+
+### Version 4.2.0  *(22nd June, 2018)*
+-------------------------------------------
+* Changed routes of sync API calls in SDK.
 
 ### Version 4.1.1  *(12th June, 2018)*
 -------------------------------------------
