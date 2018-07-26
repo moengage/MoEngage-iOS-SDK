@@ -85,6 +85,14 @@
  */
 +(void)trackInboxNotificationClickForCampaign:(MOInboxPushDataModel*)campaignObj andIsFirstClick:(BOOL)isFirstClick;
 
+
+/**
+ Method to process default notification actions(i.e, deeplinks, rich-landing and coupon code etc.)
+
+ @param pushObj MOInboxPushDataModel Instance of the push campaign
+ */
++(void)processInboxNotificationOnClickForCampaign:(MOInboxPushDataModel*)pushObj;
+
 /**
  Method to remove all the notifications currently stored in notification center
  */

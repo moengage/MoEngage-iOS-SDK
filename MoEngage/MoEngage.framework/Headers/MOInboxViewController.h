@@ -13,6 +13,7 @@
  */
 @protocol MOInboxCellSelectedDelegate <NSObject>
 @optional
+-(void)inboxCellSelectedWithPushDict:(NSDictionary *)pushDict;
 -(void)inboxCellSelectedWithData:(NSDictionary *)dataDict;
 @end
 
@@ -20,6 +21,7 @@
 
 @property(nonatomic, strong) UIColor *tableBackgroundColor;
 @property(nonatomic, strong) NSString *inboxTitle;
+@property(nonatomic, assign) BOOL shouldProcessNotificationActions;
 
 @property(nonatomic, weak) id <MOInboxCellSelectedDelegate> delegate;
 

@@ -2,6 +2,12 @@
 =================================
 
 ## Change Log:
+
+### Version 4.2.2  *(26th July, 2018)*
+-------------------------------------------
+* Delegate method `inboxCellSelectedWithPushDict:`  provided for getting Push Notification Payload on clicking notification in SDK inbox.
+* Now for processing inbox notifications clicks the same way as push notification clicks set `shouldProcessNotificationActions` of MOInboxViewController instance to `true`.
+
 ### Version 4.2.1  *(10th July, 2018)*
 -------------------------------------------
 * Network request and response caching in Cache.db disabled.
