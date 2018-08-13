@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 4.2.3  *(13th August, 2018)*
+-------------------------------------------
+* Real-time Trigger Campaigns Bug Fix : Wrong push notification payload was posted in offline scenarios where event personalization was used.
+
 ### Version 4.2.2  *(26th July, 2018)*
 -------------------------------------------
 * Delegate method `inboxCellSelectedWithPushDict:`  provided for getting Push Notification Payload on clicking notification in SDK inbox.
