@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 4.2.4  *(4th October, 2018)*
+-------------------------------------------
+* Bug Fix: Universal links when sent as deep links were not working.
+
 ### Version 4.2.3  *(13th August, 2018)*
 -------------------------------------------
 * Real-time Trigger Campaigns Bug Fix : Wrong push notification payload was posted in offline scenarios where event personalization was used.
