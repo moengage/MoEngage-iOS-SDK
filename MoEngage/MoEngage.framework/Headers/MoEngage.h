@@ -26,7 +26,6 @@ FOUNDATION_EXPORT const unsigned char MoEngageVersionString[];
 #import <MoEngage/MOPayloadBuilder.h>
 #import <MoEngage/MOEHelperConstants.h>
 #import <MoEngage/MONotificationCategory.h>
-#import <MoEngage/MOGeoFenceHandler.h>
 
 //Inbox
 #import <MoEngage/MOInbox.h>
@@ -36,17 +35,13 @@ FOUNDATION_EXPORT const unsigned char MoEngageVersionString[];
 #import <MoEngage/MOInboxTableViewCell.h>
 
 
+#import <MoEngage/MOLogger.h>
+#import <MoEngage/MOConfigmanager.h>
+#import <MoEngage/MONetworkInterface.h>
+#import <MoEngage/NSDictionary+MOExtension.h>
+#import <MoEngage/NSMutableDictionary+MOExtension.h>
 
 typedef void(^NudgeCreationCompletionBlock)(UIView * _Nullable nudgeView, NSString* _Nullable campaignID);
-
-/**
- Enumerator to set Log Levels of SDK for Debugging
- */
-typedef enum _LogLevel{
-    LOG_NONE,
-    LOG_ALL,
-    LOG_EXCEPTIONS
-}LogLevel;
 
 /**
  Enumerator to define where to place nudge inApp in the screen
@@ -81,16 +76,6 @@ typedef enum UserGender{
     MALE,
     FEMALE
 }UserGender;
-
-/**
- Enumerator which gives which Region the Data has to be redirected
- @warning Consult with MoEngage team before using this enumerator in the App
- */
-typedef enum DataRedirectionRegion{
-    MOE_REGION_INDIA,
-    MOE_REGION_EU,
-    MOE_REGION_DEFAULT
-}DataRedirectionRegion;
 
 #pragma mark - In App Protocol
 /**
@@ -464,16 +449,6 @@ typedef enum DataRedirectionRegion{
  @param position Defines where to add the nudge view Top/Bottom.
  */
 -(void)showNudgeViewAtNudgePosition:(NudgePosition)position;
-
-#pragma mark - Geofencing
-/**
- Use this method to start tracking geofences for the current location.
- @param locManager Pass the location manager instance if you have create one. Else, a new one will be created. This param is optional.
- @param location Pass this param if you already have the location of the user or want to hard code a location. Else the location manager will take the current location of the user
- @see MOGeofenceHandler to get completion block
- */
--(void)startGeofencingWithLocationManager:(CLLocationManager* _Nullable)locManager andCurrentLocation:(CLLocation *_Nullable)location;
-
 
 #pragma mark - Utility Methods
 

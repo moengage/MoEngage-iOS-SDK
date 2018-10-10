@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 4.3.0  *(10th October, 2018)*
+-------------------------------------------
+* Geofence Module Separated from the Core SDK. Refer to the [docs](https://docs.moengage.com/docs/geofences) for more info.
+
 ### Version 4.2.4  *(4th October, 2018)*
 -------------------------------------------
 * Bug Fix: Universal links when sent as deep links were not working.
