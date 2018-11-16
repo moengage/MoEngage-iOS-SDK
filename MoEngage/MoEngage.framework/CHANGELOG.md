@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 4.3.2  *(16th November, 2018)*
+-------------------------------------------
+* Fixed a of crash in periodic sync module of the SDK, which used to occur due to a deadlock while initiating the timer for periodic sync.
+
 ### Version 4.3.0  *(10th October, 2018)*
 -------------------------------------------
 * Geofence Module Separated from the Core SDK. Refer to the [docs](https://docs.moengage.com/docs/geofences) for more info.
