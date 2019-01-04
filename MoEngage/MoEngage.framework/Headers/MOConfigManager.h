@@ -46,6 +46,7 @@ typedef enum DataRedirectionRegion{
 -(NSInteger)getInboxDefaultExpiry;
 -(NSInteger)getEventBatchCount;
 -(NSInteger)getPeriodicSyncDuration;
+-(NSInteger)getUserAttributeCachingDuration;
 
 // Track Event Methods
 -(BOOL)isEventBlackListed:(NSString*)eventname;

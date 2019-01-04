@@ -8,30 +8,31 @@
 
 #import <Foundation/Foundation.h>
 
+__deprecated_msg("This class will be removed from SDK Version 5.0.0. Use MOInboxModel instead.")
 @interface MOInboxPushDataModel : NSObject
 
-@property(nonatomic, strong)    NSDictionary    *screenData;
-@property(nonatomic, copy)      NSString        *campaignID;
-@property(nonatomic, copy)      NSString        *screenName;
 
-@property(nonatomic, copy)      NSString        *alertTitle;
-@property(nonatomic, copy)      NSString        *alertSubTitle;
-@property(nonatomic, copy)      NSString        *alertMessage;
-@property(nonatomic, copy)      NSString        *alertSound;
+@property(nonatomic, copy)    NSString        *campaignID;
 
-@property(nonatomic, copy)      NSString        *pushTime;
+@property(nonatomic, copy)    NSDictionary    *pushDict;
+@property(nonatomic, copy)    NSDictionary    *extraData;
+@property(nonatomic, copy)    NSDictionary    *screenData;
 
-@property(nonatomic, strong)    NSDictionary    *extraData;
-
-@property(nonatomic, strong)    NSDictionary    *pushDict;
-@property(nonatomic, strong)    NSString        *mediaAttachmentURL;
-
-@property(nonatomic, assign) BOOL isGiven;
-@property(nonatomic, assign) BOOL isRead;
+@property(nonatomic, copy)    NSString        *alertTitle;
+@property(nonatomic, copy)    NSString        *alertSubTitle;
+@property(nonatomic, copy)    NSString        *alertMessage;
+@property(nonatomic, copy)    NSString        *alertSound;
 
 // NSDate instances which gives push notification created time and inbox expiry time in system timezone.
-@property(nonatomic, assign) NSDate* pushCreateTime;
-@property(nonatomic, assign) NSDate* inboxExpiryTime;
+@property(nonatomic, copy)    NSDate          *pushCreateTime;
+@property(nonatomic, copy)    NSDate          *inboxExpiryTime;
+
+@property(nonatomic, copy)    NSString        *screenName;
+@property(nonatomic, copy)    NSString        *pushTime;
+@property(nonatomic, copy)    NSString        *mediaAttachmentURL;
+
+@property(nonatomic, assign)  BOOL isGiven;
+@property(nonatomic, assign)  BOOL isRead;
 
 -(id)initWithDictionary:(NSMutableDictionary *)pushDictionary;
 

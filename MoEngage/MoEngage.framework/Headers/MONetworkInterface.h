@@ -12,6 +12,14 @@
     
 +(instancetype)sharedNetworkInterface;
 
+
+/**
+ *  API call to get all the notifications sent to user from last updated time
+ *
+ */
+-(void)syncInboxDataWithLastUpdatedTime:(NSDate *)lastUpdatedTime andCompletion:(void(^)(NSDictionary *notificationData))completion;
+
+
 /**
  *  API call to fetch all the active Geofence campaigns
  *

@@ -7,16 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MOInboxPushDataModel.h"
+#import "MOInboxModel.h"
 
 @interface MOInboxTableViewCell : UITableViewCell
 
+@property(nonatomic, weak) IBOutlet UILabel *notificationTitleTextLabel;
 @property(nonatomic, weak) IBOutlet UILabel *notificationTextLabel;
 @property(nonatomic, weak) IBOutlet UILabel *dateLabelTextLabel;
 
-@property(nonatomic, strong) UIFont *notificationTextReadFont;
-@property(nonatomic, strong) UIFont *notificationTextUnreadFont;
-
--(void)setDataWithMessage:(MOInboxPushDataModel *)messageDict;
+-(void)setDataWithMessage:(MOInboxModel*)inbox_entry;
 
 @end

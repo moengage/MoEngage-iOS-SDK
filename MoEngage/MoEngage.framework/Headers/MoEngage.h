@@ -27,19 +27,21 @@ FOUNDATION_EXPORT const unsigned char MoEngageVersionString[];
 #import <MoEngage/MOEHelperConstants.h>
 #import <MoEngage/MONotificationCategory.h>
 
-//Inbox
-#import <MoEngage/MOInbox.h>
-#import <MoEngage/MOInboxExposedConstants.h>
-#import <MoEngage/MOInboxPushDataModel.h>
-#import <MoEngage/MOInboxViewController.h>
-#import <MoEngage/MOInboxTableViewCell.h>
-
-
 #import <MoEngage/MOLogger.h>
+#import <MoEngage/MOUtils.h>
+#import <MoEngage/MODateUtils.h>
 #import <MoEngage/MOConfigmanager.h>
 #import <MoEngage/MONetworkInterface.h>
 #import <MoEngage/NSDictionary+MOExtension.h>
 #import <MoEngage/NSMutableDictionary+MOExtension.h>
+
+#import <MoEngage/MOInbox.h>
+#import <MoEngage/MOInboxExposedConstants.h>
+#import <MoEngage/MOInboxModel.h>
+#import <MoEngage/MOInboxPushDataModel.h>
+#import <MoEngage/MOInboxViewController.h>
+#import <MoEngage/MOInboxTableViewCell.h>
+
 
 typedef void(^NudgeCreationCompletionBlock)(UIView * _Nullable nudgeView, NSString* _Nullable campaignID);
 

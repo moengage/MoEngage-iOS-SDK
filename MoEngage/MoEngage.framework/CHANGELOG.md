@@ -3,9 +3,14 @@
 
 ## Change Log:
 
+### Version 4.4.0  *(4th January, 2018)*
+-------------------------------------------
+* Inbox module revamp where few of the existing APIs are deprecated for new APIs and now notifcations are synced from Notification Service Extension using MORichNotification aswell instead of just relying on the Network API Sync.
+* Internal changes to make the SDK API calls more secure.
+
 ### Version 4.3.2  *(16th November, 2018)*
 -------------------------------------------
-* Fixed a of crash in periodic sync module of the SDK, which used to occur due to a deadlock while initiating the timer for periodic sync.
+* Fixed a crash in periodic sync module of the SDK, which used to occur due to a deadlock while initiating the timer for periodic sync.
 
 ### Version 4.3.0  *(10th October, 2018)*
 -------------------------------------------
