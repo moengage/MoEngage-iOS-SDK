@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'MOGeofence'
-  s.version      = '1.0.0'
+  s.version      = '1.0.1'
   s.summary      = 'MoEngage Mobile Marketing Automation SDK for Geofence based campaigns'
   s.description  = <<-DESC
                    MoEngage is a mobile marketing automation company. This framework helps you in using Geofence based push campaigns.
@@ -26,5 +26,5 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.frameworks = 'CoreLocation'
-  s.dependency 'MoEngage-iOS-SDK', '~> 4.3.0'
+  s.dependency 'MoEngage-iOS-SDK', '~> 4.4.0'
 end
