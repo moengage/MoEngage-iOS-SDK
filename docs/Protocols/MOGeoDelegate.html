@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>MOInAppDelegate Protocol Reference</title>
+	<title>MOGeoDelegate Protocol Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -60,11 +60,9 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/eventTriggeredInAppAvailableWithData:">- eventTriggeredInAppAvailableWithData:</option>
+		<option value="//api/name/locManager:didEnterRegion:">- locManager:didEnterRegion:</option>
 		
-		<option value="//api/name/inAppClickedForWidget:screenName:andDataDict:">- inAppClickedForWidget:screenName:andDataDict:</option>
-		
-		<option value="//api/name/inAppShownWithCampaignID:">- inAppShownWithCampaignID:</option>
+		<option value="//api/name/locManager:didExitRegion:">- locManager:didExitRegion:</option>
 		
 	</optgroup>
 	
@@ -81,7 +79,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">MOInAppDelegate Protocol Reference</h1>
+					<h1 class="title">MOGeoDelegate Protocol Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -90,7 +88,7 @@
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>MoEngage.h</td>
+	<td>MOGeofenceHandler.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -100,7 +98,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Conform to this protocol if you want to handle the action of the in-app messages' button clicks.</p>
+						<p>MOGeoDelegate</p>
 					</div>
 					
 					
@@ -116,8 +114,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/inAppShownWithCampaignID:" title="inAppShownWithCampaignID:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/inAppShownWithCampaignID:">&ndash;&nbsp;inAppShownWithCampaignID:</a></code>
+	<a name="//api/name/locManager:didEnterRegion:" title="locManager:didEnterRegion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/locManager:didEnterRegion:">&ndash;&nbsp;locManager:didEnterRegion:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -127,12 +125,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>This method is called when the inApp is shown.</p>
+				<p>Method will be called when a geoFence region is entered(Optional)</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)inAppShownWithCampaignID:(NSString *_Nullable)<em>campaignID</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)locManager:(CLLocationManager *)<em>locationManager</em> didEnterRegion:(CLRegion *)<em>region</em></code></div>
 
 		    
 			
@@ -141,11 +139,13 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>campaignID</code></th>
-						<td><ul>
-<li>Campaign ID of InApp shown.</li>
-</ul>
-</td>
+						<th scope="row" class="argument-name"><code>locationManager</code></th>
+						<td><p>location manager instance</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>region</code></th>
+						<td><p>GeoFence region entered</p></td>
 					</tr>
 				
 				</table>
@@ -165,15 +165,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MoEngage.h</code></p>
+				<p><code class="declared-in-ref">MOGeofenceHandler.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/inAppClickedForWidget:screenName:andDataDict:" title="inAppClickedForWidget:screenName:andDataDict:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/inAppClickedForWidget:screenName:andDataDict:">&ndash;&nbsp;inAppClickedForWidget:screenName:andDataDict:</a></code>
+	<a name="//api/name/locManager:didExitRegion:" title="locManager:didExitRegion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/locManager:didExitRegion:">&ndash;&nbsp;locManager:didExitRegion:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -183,12 +183,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>This method is called when the user clicks on a widget in the in-app message. Conform to MoInAppDelegate to use this callback method.</p>
+				<p>Method will be called when a geoFence region is exited(Optional)</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)inAppClickedForWidget:(InAppWidget)<em>widget</em> screenName:(NSString *_Nullable)<em>screenName</em> andDataDict:(NSDictionary *_Nullable)<em>dataDict</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)locManager:(CLLocationManager *)<em>locationManager</em> didExitRegion:(CLRegion *)<em>region</em></code></div>
 
 		    
 			
@@ -197,19 +197,13 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>screenName</code></th>
-						<td><ul>
-<li>Used in DeepLinking, gives the screen name to navigate.</li>
-</ul>
-</td>
+						<th scope="row" class="argument-name"><code>locationManager</code></th>
+						<td><p>location manager instance</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>dataDict</code></th>
-						<td><ul>
-<li>The key value data dictionary associated with the widget tapped.</li>
-</ul>
-</td>
+						<th scope="row" class="argument-name"><code>region</code></th>
+						<td><p>GeoFence region exited</p></td>
 					</tr>
 				
 				</table>
@@ -229,63 +223,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MoEngage.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/eventTriggeredInAppAvailableWithData:" title="eventTriggeredInAppAvailableWithData:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/eventTriggeredInAppAvailableWithData:">&ndash;&nbsp;eventTriggeredInAppAvailableWithData:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>This method is called when an event triggers an in-app from the server, which is of type self handled.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)eventTriggeredInAppAvailableWithData:(id _Nullable)<em>data</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>data</code></th>
-						<td><ul>
-<li>The data mentioned on the dashboard while creating the in-app is passed onto you</li>
-</ul>
-</td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MoEngage.h</code></p>
+				<p><code class="declared-in-ref">MOGeofenceHandler.h</code></p>
 			</div>
 			
 			

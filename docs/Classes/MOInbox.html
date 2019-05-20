@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MOInbox Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MoEngage </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MoEngage</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/dateFormatterWithFormat:">+ dateFormatterWithFormat:</option>
+		
+		<option value="//api/name/defaultTextFont">+ defaultTextFont</option>
+		
+		<option value="//api/name/defaultUnreadTextFont">+ defaultUnreadTextFont</option>
+		
+		<option value="//api/name/fetchInboxMessagesWithCompletion:">+ fetchInboxMessagesWithCompletion:</option>
+		
+		<option value="//api/name/getAllNotificationCount">+ getAllNotificationCount</option>
+		
+		<option value="//api/name/getInboxMessages">+ getInboxMessages</option>
+		
+		<option value="//api/name/getInboxMessagesWithCompletionBlock:">+ getInboxMessagesWithCompletionBlock:</option>
+		
+		<option value="//api/name/getUnreadNotifictionCount">+ getUnreadNotifictionCount</option>
+		
+		<option value="//api/name/initializeInboxOnController:">+ initializeInboxOnController:</option>
+		
+		<option value="//api/name/markInboxNotificationClickedWithCampaignID:">+ markInboxNotificationClickedWithCampaignID:</option>
+		
+		<option value="//api/name/markNotificationReadWithCampaignID:">+ markNotificationReadWithCampaignID:</option>
+		
+		<option value="//api/name/processInboxNotificationOnClickForCampaign:">+ processInboxNotificationOnClickForCampaign:</option>
+		
+		<option value="//api/name/processInboxNotificationWithCampaignID:">+ processInboxNotificationWithCampaignID:</option>
+		
+		<option value="//api/name/removeInboxMessages">+ removeInboxMessages</option>
+		
+		<option value="//api/name/removeMessageWithCampaignID:">+ removeMessageWithCampaignID:</option>
+		
+		<option value="//api/name/trackInboxNotificationClickForCampaign:andIsFirstClick:">+ trackInboxNotificationClickForCampaign:andIsFirstClick:</option>
+		
+		<option value="//api/name/trackInboxNotificationClickWithCampaignID:">+ trackInboxNotificationClickWithCampaignID:</option>
+		
+		<option value="//api/name/writeArrayToFile:">+ writeArrayToFile:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MOInbox Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MOInbox.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initializeInboxOnController:" title="initializeInboxOnController:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initializeInboxOnController:">+&nbsp;initializeInboxOnController:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This methods add the inbox view controller as a child view controller to your controller. Alternatively, you can initialize and add inbox view controller as per your need. It is open source.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (MOInboxViewController *)initializeInboxOnController:(UIViewController *)<em>controller</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>controller</code></th>
+						<td><p>This is your view controller. You will pass self here.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MOInbox.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getInboxMessagesWithCompletionBlock:" title="getInboxMessagesWithCompletionBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getInboxMessagesWithCompletionBlock:">+&nbsp;getInboxMessagesWithCompletionBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to fetch the notifcations in Inbox</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)getInboxMessagesWithCompletionBlock:(void ( ^ ) ( NSArray&lt;MOInboxModel*&gt; *inboxMessages ))<em>completionBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>Completion Block where you will get list of Inbox Messages</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MOInbox.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchInboxMessagesWithCompletion:" title="fetchInboxMessagesWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchInboxMessagesWithCompletion:">+&nbsp;fetchInboxMessagesWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Use this method to sync inbox notifications.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)fetchInboxMessagesWithCompletion:(void ( ^ ) ( BOOL newMessages ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion Block is called indicating the sync is complete</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MOInbox.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/processInboxNotificationWithCampaignID:" title="processInboxNotificationWithCampaignID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/processInboxNotificationWithCampaignID:">+&nbsp;processInboxNotificationWithCampaignID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to process Inbox Notification of given Campaign ID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)processInboxNotificationWithCampaignID:(NSString *)<em>campaignID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>campaignID</code></th>
+						<td><p>The Campaign ID of the notification to be processed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MOInbox.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/markInboxNotificationClickedWithCampaignID:" title="markInboxNotificationClickedWithCampaignID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/markInboxNotificationClickedWithCampaignID:">+&nbsp;markInboxNotificationClickedWithCampaignID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to mark Inbox Notification as read of given Campaign ID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)markInboxNotificationClickedWithCampaignID:(NSString *)<em>campaignID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>campaignID</code></th>
+						<td><p>The Campaign ID of the notification to be marked as read.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MOInbox.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackInboxNotificationClickWithCampaignID:" title="trackInboxNotificationClickWithCampaignID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackInboxNotificationClickWithCampaignID:">+&nbsp;trackInboxNotificationClickWithCampaignID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to track Notification click for a campaign in Inbox</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)trackInboxNotificationClickWithCampaignID:(NSString *)<em>campaignID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>campaignID</code></th>
+						<td><p>The Campaign ID of the notification for which click has to be tracked.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MOInbox.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeInboxMessages" title="removeInboxMessages"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeInboxMessages">+&nbsp;removeInboxMessages</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to remove all the notifications currently stored in notification center</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)removeInboxMessages</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MOInbox.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeMessageWithCampaignID:" title="removeMessageWithCampaignID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeMessageWithCampaignID:">+&nbsp;removeMessageWithCampaignID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to remove a particular notification stored in notification center with Campaign ID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)removeMessageWithCampaignID:(NSString *)<em>cid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cid</code></th>
+						<td><p>The Campaign ID of the notification to be deleted.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MOInbox.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dateFormatterWithFormat:" title="dateFormatterWithFormat:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dateFormatterWithFormat:">+&nbsp;dateFormatterWithFormat:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to get NSDateFormatter instance for given format</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSDateFormatter *)dateFormatterWithFormat:(NSString *)<em>format</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MOInbox.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/defaultTextFont" title="defaultTextFont"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultTextFont">+&nbsp;defaultTextFont</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This is AvenirNext-Regular size-16</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIFont *)defaultTextFont</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MOInbox.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/defaultUnreadTextFont" title="defaultUnreadTextFont"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultUnreadTextFont">+&nbsp;defaultUnreadTextFont</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This is AvenirNext-Bold size-16</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIFont *)defaultUnreadTextFont</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MOInbox.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAllNotificationCount" title="getAllNotificationCount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAllNotificationCount">+&nbsp;getAllNotificationCount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to get total notification count in the User Inbox</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSInteger)getAllNotificationCount</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Total number of notifications in User Inbox in Integer</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MOInbox.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getUnreadNotifictionCount" title="getUnreadNotifictionCount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUnreadNotifictionCount">+&nbsp;getUnreadNotifictionCount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to get unread notification count in the User Inbox</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSInteger)getUnreadNotifictionCount</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Unread notifications count in User Inbox in Integer</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MOInbox.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getInboxMessages" title="getInboxMessages"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getInboxMessages">+&nbsp;getInboxMessages</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Use this method to get all the inbox messages in the storage. Max no. of messages stored = 100</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSArray *)getInboxMessages</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MOInbox.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackInboxNotificationClickForCampaign:andIsFirstClick:" title="trackInboxNotificationClickForCampaign:andIsFirstClick:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackInboxNotificationClickForCampaign:andIsFirstClick:">+&nbsp;trackInboxNotificationClickForCampaign:andIsFirstClick:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Track notification click for notification in Inbox using this method.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)trackInboxNotificationClickForCampaign:(MOInboxPushDataModel *)<em>campaignObj</em> andIsFirstClick:(BOOL)<em>isFirstClick</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>campaignObj</code></th>
+						<td><p>An <a href="../Classes/MOInboxPushDataModel.html">MOInboxPushDataModel</a> instance of the notification to be marked as read.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isFirstClick</code></th>
+						<td><p>Bool value indicating if this is the first time user is clicking the notification in Inbox.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MOInbox.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/processInboxNotificationOnClickForCampaign:" title="processInboxNotificationOnClickForCampaign:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/processInboxNotificationOnClickForCampaign:">+&nbsp;processInboxNotificationOnClickForCampaign:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to process default notification actions(i.e, deeplinks, rich-landing and coupon code etc.)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)processInboxNotificationOnClickForCampaign:(MOInboxPushDataModel *)<em>campaignObj</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>campaignObj</code></th>
+						<td><p><a href="../Classes/MOInboxPushDataModel.html">MOInboxPushDataModel</a> Instance of the push campaign</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MOInbox.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/markNotificationReadWithCampaignID:" title="markNotificationReadWithCampaignID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/markNotificationReadWithCampaignID:">+&nbsp;markNotificationReadWithCampaignID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to mark an inbox notification as read by providing the campaign ID.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSMutableDictionary *)markNotificationReadWithCampaignID:(NSString *)<em>cid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cid</code></th>
+						<td><p>The Campaign ID of the notification to be marked as read.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Updated Dictionary of the notification payload after marking it as Read</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MOInbox.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeArrayToFile:" title="writeArrayToFile:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeArrayToFile:">+&nbsp;writeArrayToFile:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to overwrite the inbox content</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)writeArrayToFile:(NSMutableArray *)<em>anArray</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MOInbox.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 MoEngage. All rights reserved. Updated: 2019-05-20</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
