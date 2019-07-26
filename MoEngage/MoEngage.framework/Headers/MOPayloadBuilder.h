@@ -18,6 +18,7 @@
 @property(nonatomic, strong) NSMutableDictionary *eventDict;
 @property(nonatomic, strong) NSMutableArray *timeStampArray;
 @property(nonatomic, strong) NSMutableArray *locationArray;
+@property(nonatomic, assign) BOOL isNonInteractive;
 
 -(instancetype)initWithDictionary:(NSMutableDictionary *)dict;
 
@@ -35,5 +36,13 @@
  Use this method to set date in NSDate format.
  */
 -(void)setDate:(NSDate *)date forKey:(NSString *)key;
+
+
+-(void)checkNonInteractive;
+
+/**
+ Use this method to set a event as Non-Interactive.
+ */
+-(void)setNonInteractive;
 
 @end

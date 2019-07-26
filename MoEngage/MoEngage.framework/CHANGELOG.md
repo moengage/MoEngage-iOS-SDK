@@ -3,7 +3,13 @@
 
 ## Change Log:
 
-### Version 4.4.0  *(4th January, 2018)*
+### Version 5.0.0  *(25th July, 2019)*
+-------------------------------------------
+* Session and Source tracking is possible in the SDK.
+* AppDelegate Swizzling implemented to ease the integration of PushNotification. It can be disabled by setting the `MoEngageAppDelegateProxyEnabled` key to `NO` in your `Info.plist` file.
+* Removed support for previously deprecated methods.
+
+### Version 4.4.0  *(4th January, 2019)*
 -------------------------------------------
 * Inbox module revamp where few of the existing APIs are deprecated for new APIs and now notifcations are synced from Notification Service Extension using MORichNotification aswell instead of just relying on the Network API Sync.
 * Internal changes to make the SDK API calls more secure.

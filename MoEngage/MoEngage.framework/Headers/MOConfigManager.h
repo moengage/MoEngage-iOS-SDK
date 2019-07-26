@@ -39,7 +39,7 @@ typedef enum DataRedirectionRegion{
 -(BOOL)isLogentriesEnabled;
 -(BOOL)isPeriodicSyncEnabled;
 -(BOOL)isDeviceTriggerEnabled;
-
+-(BOOL)isSessionSourceTrackingEnabled;
 
 // Get Backend Configurations
 -(NSString*)getLogEntriesToken;
@@ -47,12 +47,22 @@ typedef enum DataRedirectionRegion{
 -(NSInteger)getEventBatchCount;
 -(NSInteger)getPeriodicSyncDuration;
 -(NSInteger)getUserAttributeCachingDuration;
+-(NSInteger)getSessionInActiveDuration;
+-(NSInteger)getRealTimeTriggerSyncInterval;
+-(NSArray*)getSourceExtraKeys;
+-(NSArray*)getBlackListedEvents;
+-(NSArray*)getInstantFlushEvents;
+-(NSArray*)getWhitelistedEvents;
+
+
+// Unique ID
+-(NSArray*)getRestrictedUniqueIDRegex;
+-(BOOL)isUniqueIDRestricted:(NSString*)uniqueID;
 
 // Track Event Methods
 -(BOOL)isEventBlackListed:(NSString*)eventname;
 -(BOOL)isEventInstantFlushEvent:(NSString*)eventname;
 -(BOOL)isEventWhitelistedEvent:(NSString*)eventname;
--(BOOL)shouldAppExitEventBeTracked;
 
 // GDPR Changes
 -(void)setDataTrackingOptedOut:(BOOL)dataTrackingStatus;

@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+
+/**
+ Use MONotificationCategory of type UIMutableUserNotificationCategory to support Actionable notifications in iOS version below iOS10, post iOS 10 UNNotificationCategory is being used.
+ */
 API_DEPRECATED("MONotificationCategory is for iOS version below iOS 10.0", ios(8.0, 9.3.5))
 @interface MONotificationCategory : UIMutableUserNotificationCategory
 

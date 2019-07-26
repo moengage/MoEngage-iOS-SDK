@@ -14,6 +14,7 @@
 +(NSDateComponents *)getTimeDifferenceBetweenDate:(NSDate *)date andSecondDate:(NSDate *)secondDate;
 +(NSDateFormatter *)dateFormatterWithFormat:(NSString *)format;
 +(NSString*)getCurrentTimeInISOFormat;
++(NSString*)getDateTimeInISOFormatForDate:(NSDate*)date;
 
 +(BOOL)isDate1:(NSDate*)date1 sameAsDate2:(NSDate*)date2;
 +(BOOL)isDate1:(NSDate*)date1 laterToDate2:(NSDate*)date2;

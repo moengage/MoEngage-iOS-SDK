@@ -13,16 +13,42 @@
  */
 @protocol MOInboxCellSelectedDelegate <NSObject>
 @optional
+/**
+ This delegate method is called when a inbox cell is clicked
+ @param pushDict - entire push Payload for the inbox cell selected
+ */
 -(void)inboxCellSelectedWithPushDict:(NSDictionary *)pushDict;
+
+/**
+ This delegate method is called when a inbox cell is clicked
+ @param dataDict -  gives only the screenData dict in the push Payload containing custom key-value pairs for the inbox cell selected
+ */
 -(void)inboxCellSelectedWithData:(NSDictionary *)dataDict;
 @end
 
+/**
+ MOInboxViewController gives a default UI for showing the list of notifications received by the user.
+ */
 @interface MOInboxViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+/**
+ Property to set the background color of the inbox table view
+ */
 @property(nonatomic, strong) UIColor *tableBackgroundColor;
+
+/**
+ Property to set the title of the controller showing the inbox data
+ */
 @property(nonatomic, strong) NSString *inboxTitle;
+
+/**
+ shouldProcessNotificationActions Bool property decides if the notification action has to be processed on inbox cell selection
+ */
 @property(nonatomic, assign) BOOL shouldProcessNotificationActions;
 
+/**
+ Set this delegate to get the callbacks on clicking the inbox cell
+ */
 @property(nonatomic, weak) id <MOInboxCellSelectedDelegate> delegate;
 
 /**
