@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 5.0.1  *(9th August, 2019)*
+-------------------------------------------
+* BugFix: Session start time is tracked in GMT timezone.
+
 ### Version 5.0.0  *(25th July, 2019)*
 -------------------------------------------
 * Session and Source tracking is possible in the SDK.
