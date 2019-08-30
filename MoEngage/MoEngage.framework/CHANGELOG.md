@@ -3,9 +3,13 @@
 
 ## Change Log:
 
+### Version 5.0.2  *(30th August, 2019)*
+-------------------------------------------
+* BugFix: Show Only in Screen in InApp was always failing, its been fixed. 
+
 ### Version 5.0.1  *(9th August, 2019)*
 -------------------------------------------
-* BugFix: Session start time is tracked in GMT timezone.
+* BugFix: Session start time is tracked in GMT timezone instead of device time zone.
 
 ### Version 5.0.0  *(25th July, 2019)*
 -------------------------------------------

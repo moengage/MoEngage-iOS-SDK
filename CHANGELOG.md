@@ -3,6 +3,33 @@
 
 ## Change Log:
 
+### Version 5.0.2  *(30th August, 2019)*
+-------------------------------------------
+* BugFix: Show Only in Screen in InApp was always failing, its been fixed. 
+
+### Version 5.0.1  *(9th August, 2019)*
+-------------------------------------------
+* BugFix: Session start time is tracked in GMT timezone instead of device time zone.
+
+### Version 5.0.0  *(25th July, 2019)*
+-------------------------------------------
+* Session and Source tracking is possible in the SDK.
+* AppDelegate Swizzling implemented to ease the integration of PushNotification. It can be disabled by setting the `MoEngageAppDelegateProxyEnabled` key to `NO` in your `Info.plist` file.
+* Removed support for previously deprecated methods.
+
+### Version 4.4.0  *(4th January, 2019)*
+-------------------------------------------
+* Inbox module revamp where few of the existing APIs are deprecated for new APIs and now notifcations are synced from Notification Service Extension using MORichNotification aswell instead of just relying on the Network API Sync.
+* Internal changes to make the SDK API calls more secure.
+
+### Version 4.3.2  *(16th November, 2018)*
+-------------------------------------------
+* Fixed a crash in periodic sync module of the SDK, which used to occur due to a deadlock while initiating the timer for periodic sync.
+
+### Version 4.3.0  *(10th October, 2018)*
+-------------------------------------------
+* Geofence Module Separated from the Core SDK. Refer to the [docs](https://docs.moengage.com/docs/geofences) for more info.
+
 ### Version 4.2.4  *(4th October, 2018)*
 -------------------------------------------
 * Bug Fix: Universal links when sent as deep links were not working.
