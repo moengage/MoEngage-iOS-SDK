@@ -1698,6 +1698,7 @@ ___26+[MoEngage sharedInstance]_block_invoke
 -[MoEngage initializeProdWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:]
 -[MoEngage initializeWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:]
 ___94-[MoEngage initializeWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:]_block_invoke
+___94-[MoEngage initializeWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:]_block_invoke.57
 -[MoEngage configureAppDelegateProxy]
 -[MoEngage trackSDKVersion]
 -[MoEngage processURL:]
@@ -1717,7 +1718,7 @@ ___25-[MoEngage updateModules]_block_invoke_2
 -[MoEngage trackLocale]
 -[MoEngage deviceUpdateOnSessionTerminationWithApplication:]
 ___60-[MoEngage deviceUpdateOnSessionTerminationWithApplication:]_block_invoke
-___60-[MoEngage deviceUpdateOnSessionTerminationWithApplication:]_block_invoke.229
+___60-[MoEngage deviceUpdateOnSessionTerminationWithApplication:]_block_invoke.230
 ___60-[MoEngage deviceUpdateOnSessionTerminationWithApplication:]_block_invoke_2
 -[MoEngage endBGTaskWithIdentifier:]
 -[MoEngage syncOnSessionTerminationWithApplication:]
@@ -1818,15 +1819,16 @@ ___33-[MoEngage optOutOfDataTracking:]_block_invoke
 -[MoEngage moeAppExitBGTask]
 -[MoEngage setMoeAppExitBGTask:]
 -[MoEngage .cxx_destruct]
+___block_descriptor_49_e8_32s40s_e5_v8@?0l
 ___block_descriptor_40_e8_32w_e8_v12@?0B8l
-___block_literal_global.185
-___block_literal_global.198
-___block_literal_global.242
+___block_literal_global.186
+___block_literal_global.199
+___block_literal_global.243
 ___block_descriptor_40_e8_32s_e11_v16@?0B8B12l
 ___block_descriptor_56_e8_32s_e5_v8@?0l
 ___block_descriptor_40_e8_32bs_e11_v16@?0B8B12l
 ___block_descriptor_32_e20_v20@?0B8@"NSError"12l
-___block_literal_global.333
+___block_literal_global.334
 ___block_descriptor_41_e8_32w_e8_v12@?0B8l
 _OBJC_IVAR_$_MoEngage._delegate
 _OBJC_IVAR_$_MoEngage._disableInbox
@@ -1860,13 +1862,14 @@ __52-[MoEngage syncOnSessionTerminationWithApplication:]_block_invoke_3
 __52-[MoEngage syncOnSessionTerminationWithApplication:]_block_invoke_2
 __52-[MoEngage syncOnSessionTerminationWithApplication:]_block_invoke
 __60-[MoEngage deviceUpdateOnSessionTerminationWithApplication:]_block_invoke_2
-__60-[MoEngage deviceUpdateOnSessionTerminationWithApplication:]_block_invoke.229
+__60-[MoEngage deviceUpdateOnSessionTerminationWithApplication:]_block_invoke.230
 __60-[MoEngage deviceUpdateOnSessionTerminationWithApplication:]_block_invoke
 __25-[MoEngage updateModules]_block_invoke_2
 __25-[MoEngage updateModules]_block_invoke
 __destroy_helper_block_e8_32w
 __copy_helper_block_e8_32w
 __23-[MoEngage initNewUser]_block_invoke
+__94-[MoEngage initializeWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:]_block_invoke.57
 __94-[MoEngage initializeWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:]_block_invoke
 __26+[MoEngage sharedInstance]_block_invoke
 -[MOSource initMoESourceWithPushPayload:]
