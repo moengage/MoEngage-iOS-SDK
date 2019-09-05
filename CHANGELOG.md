@@ -3,9 +3,14 @@
 
 ## Change Log:
 
+### Version 5.0.3  *(5th September, 2019)*
+-------------------------------------------
+* Added a Main thread check for processing of  launchOptions and configuring of AddDelegate Proxy.
+
 ### Version 5.0.2  *(30th August, 2019)*
 -------------------------------------------
 * BugFix: Show Only in Screen in InApp was always failing, its been fixed. 
+* Fixed a memory leak identified in the SDK.
 
 ### Version 5.0.1  *(9th August, 2019)*
 -------------------------------------------
