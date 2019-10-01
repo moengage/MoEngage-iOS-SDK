@@ -3,9 +3,13 @@
 
 ## Change Log:
 
+### Version 5.1.0  *(1st October, 2019)*
+-------------------------------------------
+* BugFix: Session start time was not tracked in correct format, its been fixed.
+
 ### Version 5.0.3  *(5th September, 2019)*
 -------------------------------------------
-* Added a Main thread check for processing of  launchOptions and configuring of AddDelegate Proxy.
+* Added a Main thread check for processing of  launchOptions and configuring of AppDelegate Proxy.
 
 ### Version 5.0.2  *(30th August, 2019)*
 -------------------------------------------
