@@ -3,6 +3,11 @@
 
 ## Change Log:
 
+### Version 5.2.0  *(12th October, 2019)*
+-------------------------------------------
+* BugFix: Notification Clicked was not getting tracked when app was in terminated state with AppDelegate Proxy enabled.
+* BugFix: There was a bug related to computation of session endtime which is fixed now.
+
 ### Version 5.1.0  *(1st October, 2019)*
 -------------------------------------------
 * BugFix: Session start time was not tracked in correct format, its been fixed.
