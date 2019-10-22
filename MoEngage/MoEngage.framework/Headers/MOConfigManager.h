@@ -39,7 +39,6 @@ typedef enum DataRedirectionRegion{
 -(BOOL)isLogentriesEnabled;
 -(BOOL)isPeriodicSyncEnabled;
 -(BOOL)isDeviceTriggerEnabled;
--(BOOL)isSessionSourceTrackingEnabled;
 
 // Get Backend Configurations
 -(NSString*)getLogEntriesToken;

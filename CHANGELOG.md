@@ -3,7 +3,11 @@
 
 ## Change Log:
 
-### Version 5.2.0  *(12th October, 2019)*
+### Version 5.2.1  *(22nd October, 2019)*
+-------------------------------------------
+* Session and Source Tracking will be enabled by default.
+
+### Version 5.2.0  *(14th October, 2019)*
 -------------------------------------------
 * BugFix: Notification Clicked was not getting tracked when app was in terminated state with AppDelegate Proxy enabled.
 * BugFix: There was a bug related to computation of session endtime which is fixed now.

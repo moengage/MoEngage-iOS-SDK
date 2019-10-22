@@ -217,7 +217,7 @@ ___72-[MONotificationHandler showCouponAlertView:andUserInfo:handleDeeplink:]_bl
 ___72-[MONotificationHandler showCouponAlertView:andUserInfo:handleDeeplink:]_block_invoke_2
 ___copy_helper_block_e4_20s24s28s
 ___destroy_helper_block_e4_20s24s28s
-___72-[MONotificationHandler showCouponAlertView:andUserInfo:handleDeeplink:]_block_invoke.313
+___72-[MONotificationHandler showCouponAlertView:andUserInfo:handleDeeplink:]_block_invoke.311
 -[MONotificationHandler setNotificationCategories:]
 -[MONotificationHandler setNotificationCategoriesForEarlierVersions:]
 -[MONotificationHandler handleActionWithIdentifier:forRemoteNotification:]
@@ -230,11 +230,11 @@ ___75-[MONotificationHandler checkPushNotificationsSettingsWithCompletionBlock:]
 ___clang_at_available_requires_core_foundation_framework
 ___clang_at_available_requires_core_foundation_framework.cold.1
 ___block_descriptor_20_e7_v8?0c4l
-___block_literal_global.23
+___block_literal_global.28
 ___block_descriptor_28_e4_20bs_e7_v8?0c4l
 ___block_descriptor_24_e4_20s_e31_v8?0"UNNotificationSettings"4l
 ___block_descriptor_32_e4_20s24s_e5_v4?0l
-___block_literal_global.264
+___block_literal_global.262
 ___block_descriptor_28_e4_20s_e5_v4?0l
 ___block_descriptor_24_e4_20s_e5_v4?0l
 ___block_descriptor_33_e4_20s24s28s_e22_v8?0"UIAlertAction"4l
@@ -247,7 +247,7 @@ _OBJC_IVAR_$_MONotificationHandler._handleDeepLinks
 MoEngage/MoEngageSDK/MONotificationHandler/MONotificationHandler.h
 __75-[MONotificationHandler checkPushNotificationsSettingsWithCompletionBlock:]_block_invoke
 MoEngage/MoEngageSDK/MONotificationHandler/MONotificationHandler.m
-__72-[MONotificationHandler showCouponAlertView:andUserInfo:handleDeeplink:]_block_invoke.313
+__72-[MONotificationHandler showCouponAlertView:andUserInfo:handleDeeplink:]_block_invoke.311
 __destroy_helper_block_e4_20s24s28s
 __copy_helper_block_e4_20s24s28s
 __72-[MONotificationHandler showCouponAlertView:andUserInfo:handleDeeplink:]_block_invoke_2
@@ -684,8 +684,6 @@ __45-[MODownloadManager download:withCompletion:]_block_invoke
 -[MOConfig setDeviceTriggerServiceStatus:]
 -[MOConfig periodicSyncStatus]
 -[MOConfig setPeriodicSyncStatus:]
--[MOConfig sessionSourceTrackingStatus]
--[MOConfig setSessionSourceTrackingStatus:]
 -[MOConfig logEntriesToken]
 -[MOConfig setLogEntriesToken:]
 -[MOConfig blackListedEventsArray]
@@ -729,7 +727,6 @@ _OBJC_IVAR_$_MOConfig._geofenceServiceStatus
 _OBJC_IVAR_$_MOConfig._logEntriesServiceStatus
 _OBJC_IVAR_$_MOConfig._deviceTriggerServiceStatus
 _OBJC_IVAR_$_MOConfig._periodicSyncStatus
-_OBJC_IVAR_$_MOConfig._sessionSourceTrackingStatus
 _OBJC_IVAR_$_MOConfig._logEntriesToken
 _OBJC_IVAR_$_MOConfig._blackListedEventsArray
 _OBJC_IVAR_$_MOConfig._instantFlushEventsArray
@@ -832,7 +829,6 @@ ___33+[MOConfigManager sharedInstance]_block_invoke
 -[MOConfigManager isLogentriesEnabled]
 -[MOConfigManager isPeriodicSyncEnabled]
 -[MOConfigManager isDeviceTriggerEnabled]
--[MOConfigManager isSessionSourceTrackingEnabled]
 -[MOConfigManager getSourceExtraKeys]
 -[MOConfigManager getBlackListedEvents]
 -[MOConfigManager isEventBlackListed:]
@@ -1747,7 +1743,7 @@ ___26+[MoEngage sharedInstance]_block_invoke
 -[MoEngage initializeProdWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:]
 -[MoEngage initializeWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:]
 ___94-[MoEngage initializeWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:]_block_invoke
-___94-[MoEngage initializeWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:]_block_invoke.51
+___94-[MoEngage initializeWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:]_block_invoke.46
 -[MoEngage setupSDK]
 -[MoEngage processLaunchOptions:andShouldOpenURL:]
 -[MoEngage configureAppDelegateProxy]
@@ -1769,7 +1765,7 @@ ___25-[MoEngage updateModules]_block_invoke_2
 -[MoEngage trackLocale]
 -[MoEngage deviceUpdateOnSessionTerminationWithApplication:]
 ___60-[MoEngage deviceUpdateOnSessionTerminationWithApplication:]_block_invoke
-___60-[MoEngage deviceUpdateOnSessionTerminationWithApplication:]_block_invoke.237
+___60-[MoEngage deviceUpdateOnSessionTerminationWithApplication:]_block_invoke.235
 ___60-[MoEngage deviceUpdateOnSessionTerminationWithApplication:]_block_invoke_2
 -[MoEngage endBGTaskWithIdentifier:]
 -[MoEngage syncOnSessionTerminationWithApplication:]
@@ -1874,15 +1870,15 @@ ___33-[MoEngage optOutOfDataTracking:]_block_invoke
 -[MoEngage .cxx_destruct]
 ___block_descriptor_29_e4_20s24s_e5_v4?0l
 ___block_descriptor_24_e4_20w_e7_v8?0c4l
-___block_literal_global.193
-___block_literal_global.206
-___block_literal_global.250
+___block_literal_global.191
+___block_literal_global.204
+___block_literal_global.248
 ___block_descriptor_24_e4_20s_e10_v12?0c4c8l
 ___block_descriptor_36_e8_20s_e5_v4?0l
 ___block_descriptor_44_e8_20s_e5_v4?0l
 ___block_descriptor_24_e4_20bs_e10_v12?0c4c8l
 ___block_descriptor_20_e19_v12?0c4"NSError"8l
-___block_literal_global.339
+___block_literal_global.337
 ___block_descriptor_25_e4_20w_e7_v8?0c4l
 _OBJC_IVAR_$_MoEngage._disableInbox
 _OBJC_IVAR_$_MoEngage._disableInApps
@@ -1919,14 +1915,14 @@ __52-[MoEngage syncOnSessionTerminationWithApplication:]_block_invoke_3
 __52-[MoEngage syncOnSessionTerminationWithApplication:]_block_invoke_2
 __52-[MoEngage syncOnSessionTerminationWithApplication:]_block_invoke
 __60-[MoEngage deviceUpdateOnSessionTerminationWithApplication:]_block_invoke_2
-__60-[MoEngage deviceUpdateOnSessionTerminationWithApplication:]_block_invoke.237
+__60-[MoEngage deviceUpdateOnSessionTerminationWithApplication:]_block_invoke.235
 __60-[MoEngage deviceUpdateOnSessionTerminationWithApplication:]_block_invoke
 __25-[MoEngage updateModules]_block_invoke_2
 __25-[MoEngage updateModules]_block_invoke
 __destroy_helper_block_e4_20w
 __copy_helper_block_e4_20w
 __23-[MoEngage initNewUser]_block_invoke
-__94-[MoEngage initializeWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:]_block_invoke.51
+__94-[MoEngage initializeWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:]_block_invoke.46
 __94-[MoEngage initializeWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:]_block_invoke
 __26+[MoEngage sharedInstance]_block_invoke
 -[MOSource initMoESourceWithPushPayload:]
