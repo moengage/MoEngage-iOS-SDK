@@ -2458,10 +2458,10 @@ _sharedSessionManager.onceToken
 _sharedSessionManager.instance
 ___block_descriptor_48_e8_32bs40r_e8_v12?0B8l
 ___block_descriptor_32_e19_v16?0"MOSession"8l
-___block_literal_global.70
-___block_literal_global.81
-___block_literal_global.113
-___block_literal_global.118
+___block_literal_global.72
+___block_literal_global.83
+___block_literal_global.115
+___block_literal_global.120
 _OBJC_IVAR_$_MOSessionManager._isAppInBackground
 _OBJC_IVAR_$_MOSessionManager._sessionInfo
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/MOAnalytics/MOSessionManager.m
