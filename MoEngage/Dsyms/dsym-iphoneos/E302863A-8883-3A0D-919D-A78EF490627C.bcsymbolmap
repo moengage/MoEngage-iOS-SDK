@@ -454,6 +454,7 @@ __33+[MOAppDelegateProxy sharedProxy]_block_invoke
 +[MOUserAttributesHandler sharedHandler]
 ___40+[MOUserAttributesHandler sharedHandler]_block_invoke
 -[MOUserAttributesHandler init]
+-[MOUserAttributesHandler applicationInActive:]
 -[MOUserAttributesHandler migrateLegacyPlistValuesToNewFile]
 -[MOUserAttributesHandler setUserAttributeUniqueID:]
 -[MOUserAttributesHandler forceResetUserWithNewUserAttributeUniqueID:]
@@ -483,8 +484,8 @@ ___70-[MOUserAttributesHandler forceResetUserWithNewUserAttributeUniqueID:]_bloc
 _sharedHandler.onceToken
 _sharedHandler.instance
 ___block_descriptor_20_e10_v12?0c4c8l
-___block_literal_global.104
-___block_literal_global.109
+___block_literal_global.113
+___block_literal_global.118
 _OBJC_IVAR_$_MOUserAttributesHandler._userAttributeData
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/MODataHandler/UserAttributes/MOUserAttributesHandler.m
 MoEngage/MoEngageSDK/MODataHandler/UserAttributes/MOUserAttributesHandler.m

@@ -3,7 +3,11 @@
 
 ## Change Log:
 
-### Version 5.2.1  *(22nd October, 2019)*
+### Version 5.2.3  *(23rd October, 2019)*
+-------------------------------------------
+* Fixed a crash which was occuring sometimes while trying to persist the tracked user attributes in SDK.
+
+### Version 5.2.2  *(22nd October, 2019)*
 -------------------------------------------
 * Session and Source Tracking will be enabled by default.
 
