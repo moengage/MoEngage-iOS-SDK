@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 5.2.4  *(30th October, 2019)*
+-------------------------------------------
+* Event local time was getting tracked according to the Calendar and locale set in the device, have made it device setting independent now.
+
 ### Version 5.2.3  *(23rd October, 2019)*
 -------------------------------------------
 * Fixed a crash which was occuring sometimes while trying to persist the tracked user attributes in SDK.
