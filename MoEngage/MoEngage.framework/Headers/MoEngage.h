@@ -30,7 +30,7 @@ FOUNDATION_EXPORT const unsigned char MoEngageVersionString[];
 #import <MoEngage/MOLogger.h>
 #import <MoEngage/MOUtils.h>
 #import <MoEngage/MODateUtils.h>
-#import <MoEngage/MOConfigmanager.h>
+#import <MoEngage/MOConfigManager.h>
 #import <MoEngage/MONetworkInterface.h>
 #import <MoEngage/NSDictionary+MOExtension.h>
 #import <MoEngage/NSMutableDictionary+MOExtension.h>
