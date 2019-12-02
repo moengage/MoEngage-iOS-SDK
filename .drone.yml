@@ -21,7 +21,7 @@ steps:
       - echo $DRONE_REPO
       - cd moe-truffleHog
       - git branch
-      -	pip install -r requirements.txt
+      - pip install -r requirements.txt
       - python truffleHog/truffleHog.py --regex --rules rules.json --max_depth 1 --branch $DRONE_SOURCE_BRANCH "https://github.com/$DRONE_REPO.git" --entropy true 
       - echo "No tokens Found"
   when:
