@@ -285,6 +285,13 @@ typedef enum UserGender{
  */
 -(void)setUserAttributeTimestamp:(double)timestamp forKey:(NSString *_Nonnull)key;
 
+
+/**
+ Use this method to set a user attribute which is NSDate instance.
+ @param date The NSDate instance value to track.
+ */
+-(void)setUserAttributeDate:(NSDate* _Nonnull)date forKey:(NSString *_Nonnull)key;
+
 /**
  Use this method to set user attribute location.
  @param lat The latitude of the location

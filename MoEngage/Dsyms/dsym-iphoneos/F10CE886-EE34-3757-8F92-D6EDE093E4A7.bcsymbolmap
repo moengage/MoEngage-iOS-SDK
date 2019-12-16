@@ -16,18 +16,18 @@ ___43+[MONetworkRequestGenerator sharedInstance]_block_invoke
 -[MONetworkRequestGenerator .cxx_destruct]
 _sharedInstance.onceToken
 _sharedInstance.instance
-___block_descriptor_20_e5_v4?0l
+___block_descriptor_32_e5_v8?0l
 ___block_literal_global
 _OBJC_IVAR_$_MONetworkRequestGenerator._scheme
 _OBJC_IVAR_$_MONetworkRequestGenerator._host
 _OBJC_IVAR_$_MONetworkRequestGenerator._port
-Apple clang version 11.0.0 (clang-1100.0.33.8)
+Apple clang version 11.0.0 (clang-1100.0.33.12)
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/Network/MONetworkRequestGenerator.m
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage
 MoEngage/MoEngageSDK/Network/MONetworkRequestGenerator.m
 MoEngage/MoEngageSDK/Network/MONetworkRequestGenerator.h
 __43+[MONetworkRequestGenerator sharedInstance]_block_invoke
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.sdk/usr/include/dispatch/once.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/once.h
 -[MOInboxTableViewCell awakeFromNib]
 -[MOInboxTableViewCell setDataWithMessage:]
 -[MOInboxTableViewCell setPushTimeForMessage:]
@@ -52,19 +52,19 @@ ___Block_byref_object_copy_
 ___Block_byref_object_dispose_
 ___61-[MONudgesHandler showNudgeInViewController:atNudgePosition:]_block_invoke
 ___61-[MONudgesHandler showNudgeInViewController:atNudgePosition:]_block_invoke_2
-___copy_helper_block_e4_20s
-___destroy_helper_block_e4_20s
+___copy_helper_block_e8_32s
+___destroy_helper_block_e8_32s
 ___61-[MONudgesHandler showNudgeInViewController:atNudgePosition:]_block_invoke.65
-___copy_helper_block_e4_20s24r
-___destroy_helper_block_e4_20s24r
+___copy_helper_block_e8_32s40r
+___destroy_helper_block_e8_32s40r
 -[MONudgesHandler showNudgeWithNudgeObject:]
 ___44-[MONudgesHandler showNudgeWithNudgeObject:]_block_invoke
 ___44-[MONudgesHandler showNudgeWithNudgeObject:]_block_invoke_2
 ___44-[MONudgesHandler showNudgeWithNudgeObject:]_block_invoke_3
 -[MONudgesHandler getNudgeViewForViewController:andCompletionBlock:]
 ___68-[MONudgesHandler getNudgeViewForViewController:andCompletionBlock:]_block_invoke
-___copy_helper_block_e4_20s24b
-___destroy_helper_block_e4_20s24s
+___copy_helper_block_e8_32s40b
+___destroy_helper_block_e8_32s40s
 -[MONudgesHandler saveLastShownTimeAndTrackEventForNudge:]
 -[MONudgesHandler buttonTapped:]
 -[MONudgesHandler imageViewTapped:]
@@ -92,12 +92,12 @@ ___34-[MONudgesHandler removeNudgeView]_block_invoke_2
 -[MONudgesHandler nudgeCreationInProgress]
 -[MONudgesHandler setNudgeCreationInProgress:]
 -[MONudgesHandler .cxx_destruct]
-___block_descriptor_40_e4_20s_e5_v4?0l
-___block_descriptor_28_e4_20s_e7_v8?0c4l
-___block_descriptor_36_e4_20s24r_e15_v8?0"UIView"4l
-___block_descriptor_32_e4_20s24r_e15_v8?0"UIView"4l
-___block_descriptor_28_e4_20s24bs_e15_v8?0"UIView"4l
-___block_descriptor_24_e4_20s_e7_v8?0c4l
+___block_descriptor_72_e8_32s_e5_v8?0l
+___block_descriptor_48_e8_32s_e8_v12?0B8l
+___block_descriptor_60_e8_32s40r_e16_v16?0"UIView"8l
+___block_descriptor_56_e8_32s40r_e16_v16?0"UIView"8l
+___block_descriptor_48_e8_32s40bs_e16_v16?0"UIView"8l
+___block_descriptor_40_e8_32s_e8_v12?0B8l
 __OBJC_PROTOCOL_$_NSObject
 __OBJC_LABEL_PROTOCOL_$_NSObject
 __OBJC_PROTOCOL_$_UIAlertViewDelegate
@@ -106,25 +106,25 @@ _OBJC_IVAR_$_MONudgesHandler._showNudgeTopCalledDuringFetch
 _OBJC_IVAR_$_MONudgesHandler._showNudgeBottomCalledDuringFetch
 _OBJC_IVAR_$_MONudgesHandler._cantDismissNudge
 _OBJC_IVAR_$_MONudgesHandler._nudgeCreationInProgress
+_OBJC_IVAR_$_MONudgesHandler._currentNudgePosition
 _OBJC_IVAR_$_MONudgesHandler._nudgeObject
 _OBJC_IVAR_$_MONudgesHandler._nudgeView
-_OBJC_IVAR_$_MONudgesHandler._currentNudgePosition
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/MOInAppV2/InAppHandlers/MONudgeHandler/MONudgesHandler.m
 MoEngage/MoEngageSDK/MOInAppV2/InAppHandlers/MONudgeHandler/MONudgesHandler.m
 MoEngage/MoEngageSDK/MOInAppV2/InAppHandlers/MONudgeHandler/MONudgesHandler.h
 __34-[MONudgesHandler removeNudgeView]_block_invoke_2
 __34-[MONudgesHandler removeNudgeView]_block_invoke
-__destroy_helper_block_e4_20s24s
-__copy_helper_block_e4_20s24b
+__destroy_helper_block_e8_32s40s
+__copy_helper_block_e8_32s40b
 __68-[MONudgesHandler getNudgeViewForViewController:andCompletionBlock:]_block_invoke
 __44-[MONudgesHandler showNudgeWithNudgeObject:]_block_invoke_3
 __44-[MONudgesHandler showNudgeWithNudgeObject:]_block_invoke_2
 __44-[MONudgesHandler showNudgeWithNudgeObject:]_block_invoke
-__destroy_helper_block_e4_20s24r
-__copy_helper_block_e4_20s24r
+__destroy_helper_block_e8_32s40r
+__copy_helper_block_e8_32s40r
 __61-[MONudgesHandler showNudgeInViewController:atNudgePosition:]_block_invoke.65
-__destroy_helper_block_e4_20s
-__copy_helper_block_e4_20s
+__destroy_helper_block_e8_32s
+__copy_helper_block_e8_32s
 __61-[MONudgesHandler showNudgeInViewController:atNudgePosition:]_block_invoke_2
 __61-[MONudgesHandler showNudgeInViewController:atNudgePosition:]_block_invoke
 __Block_byref_object_dispose_
@@ -182,7 +182,7 @@ ___38-[MONotificationHandler setPushToken:]_block_invoke
 -[MONotificationHandler saveAndRegisterWithToken:]
 -[MONotificationHandler updateDeviceWithCompletion:]
 ___52-[MONotificationHandler updateDeviceWithCompletion:]_block_invoke
-___copy_helper_block_e4_20b
+___copy_helper_block_e8_32b
 -[MONotificationHandler didFailToRegisterForPush]
 -[MONotificationHandler didRegisterForUserNotificationSettings:]
 -[MONotificationHandler pushDisabled]
@@ -204,7 +204,7 @@ ___47-[MONotificationHandler checkForPushPermission]_block_invoke
 -[MONotificationHandler handleDeepLinking:]
 -[MONotificationHandler openUniversalLink:]
 ___43-[MONotificationHandler openUniversalLink:]_block_invoke
-___copy_helper_block_e4_20s24s
+___copy_helper_block_e8_32s40s
 -[MONotificationHandler openDeepLink:]
 ___38-[MONotificationHandler openDeepLink:]_block_invoke
 ___38-[MONotificationHandler openDeepLink:]_block_invoke_2
@@ -215,8 +215,8 @@ ___45-[MONotificationHandler handleInAppFromPush:]_block_invoke
 -[MONotificationHandler showCouponAlertView:andUserInfo:handleDeeplink:]
 ___72-[MONotificationHandler showCouponAlertView:andUserInfo:handleDeeplink:]_block_invoke
 ___72-[MONotificationHandler showCouponAlertView:andUserInfo:handleDeeplink:]_block_invoke_2
-___copy_helper_block_e4_20s24s28s
-___destroy_helper_block_e4_20s24s28s
+___copy_helper_block_e8_32s40s48s
+___destroy_helper_block_e8_32s40s48s
 ___72-[MONotificationHandler showCouponAlertView:andUserInfo:handleDeeplink:]_block_invoke.311
 -[MONotificationHandler setNotificationCategories:]
 -[MONotificationHandler setNotificationCategoriesForEarlierVersions:]
@@ -229,18 +229,18 @@ ___75-[MONotificationHandler checkPushNotificationsSettingsWithCompletionBlock:]
 -[MONotificationHandler setHandleDeepLinks:]
 ___clang_at_available_requires_core_foundation_framework
 ___clang_at_available_requires_core_foundation_framework.cold.1
-___block_descriptor_20_e7_v8?0c4l
+___block_descriptor_32_e8_v12?0B8l
 ___block_literal_global.28
-___block_descriptor_28_e4_20bs_e7_v8?0c4l
-___block_descriptor_24_e4_20s_e31_v8?0"UNNotificationSettings"4l
-___block_descriptor_32_e4_20s24s_e5_v4?0l
+___block_descriptor_48_e8_32bs_e8_v12?0B8l
+___block_descriptor_40_e8_32s_e32_v16?0"UNNotificationSettings"8l
+___block_descriptor_56_e8_32s40s_e5_v8?0l
 ___block_literal_global.262
-___block_descriptor_28_e4_20s_e5_v4?0l
-___block_descriptor_24_e4_20s_e5_v4?0l
-___block_descriptor_33_e4_20s24s28s_e22_v8?0"UIAlertAction"4l
-___block_descriptor_29_e4_20s24s_e22_v8?0"UIAlertAction"4l
-___block_descriptor_37_e4_20s24s28s_e5_v4?0l
-___block_descriptor_24_e4_20bs_e31_v8?0"UNNotificationSettings"4l
+___block_descriptor_48_e8_32s_e5_v8?0l
+___block_descriptor_40_e8_32s_e5_v8?0l
+___block_descriptor_57_e8_32s40s48s_e23_v16?0"UIAlertAction"8l
+___block_descriptor_49_e8_32s40s_e23_v16?0"UIAlertAction"8l
+___block_descriptor_65_e8_32s40s48s_e5_v8?0l
+___block_descriptor_40_e8_32bs_e32_v16?0"UNNotificationSettings"8l
 _OBJC_IVAR_$_MONotificationHandler._didReceivePush
 _OBJC_IVAR_$_MONotificationHandler._handleDeepLinks
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/MONotificationHandler/MONotificationHandler.m
@@ -248,17 +248,17 @@ MoEngage/MoEngageSDK/MONotificationHandler/MONotificationHandler.h
 __75-[MONotificationHandler checkPushNotificationsSettingsWithCompletionBlock:]_block_invoke
 MoEngage/MoEngageSDK/MONotificationHandler/MONotificationHandler.m
 __72-[MONotificationHandler showCouponAlertView:andUserInfo:handleDeeplink:]_block_invoke.311
-__destroy_helper_block_e4_20s24s28s
-__copy_helper_block_e4_20s24s28s
+__destroy_helper_block_e8_32s40s48s
+__copy_helper_block_e8_32s40s48s
 __72-[MONotificationHandler showCouponAlertView:andUserInfo:handleDeeplink:]_block_invoke_2
 __72-[MONotificationHandler showCouponAlertView:andUserInfo:handleDeeplink:]_block_invoke
 __45-[MONotificationHandler handleInAppFromPush:]_block_invoke
 __38-[MONotificationHandler openDeepLink:]_block_invoke_2
 __38-[MONotificationHandler openDeepLink:]_block_invoke
-__copy_helper_block_e4_20s24s
+__copy_helper_block_e8_32s40s
 __43-[MONotificationHandler openUniversalLink:]_block_invoke
 __47-[MONotificationHandler checkForPushPermission]_block_invoke
-__copy_helper_block_e4_20b
+__copy_helper_block_e8_32b
 __52-[MONotificationHandler updateDeviceWithCompletion:]_block_invoke
 __38-[MONotificationHandler setPushToken:]_block_invoke
 __39+[MONotificationHandler sharedInstance]_block_invoke
@@ -408,8 +408,8 @@ ___33+[MOAppDelegateProxy sharedProxy]_block_invoke
 -[MOAppDelegateProxy application:openURL:options:]
 -[MOAppDelegateProxy application:continueUserActivity:restorationHandler:]
 ___moe_swizzle_willPresentNotificationWithHandler_block_invoke
-___copy_helper_block_e4_20s24s28s32b
-___destroy_helper_block_e4_20s24s28s32s
+___copy_helper_block_e8_32s40s48s56b
+___destroy_helper_block_e8_32s40s48s56s
 ___moe_swizzle_didReceiveNotificationResponseWithHandler_block_invoke
 -[MOAppDelegateProxy originalAppDelegateImps]
 -[MOAppDelegateProxy setOriginalAppDelegateImps:]
@@ -431,7 +431,7 @@ ___moe_swizzle_didReceiveNotificationResponseWithHandler_block_invoke
 _sharedProxy.proxy
 _sharedProxy.onceToken
 _UserNotificationObserverContext
-___block_descriptor_44_e4_20s24s28s32bs_e5_v4?0l
+___block_descriptor_80_e8_32s40s48s56bs_e5_v8?0l
 __OBJC_PROTOCOL_$_UIApplicationDelegate
 __OBJC_LABEL_PROTOCOL_$_UIApplicationDelegate
 _OBJC_IVAR_$_MOAppDelegateProxy._didSwizzleMethods
@@ -445,8 +445,8 @@ _OBJC_IVAR_$_MOAppDelegateProxy._appDelegateInterceptorID
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/AppDelegateSwizzler/MOAppDelegateProxy.m
 MoEngage/MoEngageSDK/AppDelegateSwizzler/MOAppDelegateProxy.m
 __moe_swizzle_didReceiveNotificationResponseWithHandler_block_invoke
-__destroy_helper_block_e4_20s24s28s32s
-__copy_helper_block_e4_20s24s28s32b
+__destroy_helper_block_e8_32s40s48s56s
+__copy_helper_block_e8_32s40s48s56b
 __moe_swizzle_willPresentNotificationWithHandler_block_invoke
 moe_swizzle_didReceiveNotificationResponseWithHandler
 moe_swizzle_willPresentNotificationWithHandler
@@ -484,7 +484,7 @@ ___70-[MOUserAttributesHandler forceResetUserWithNewUserAttributeUniqueID:]_bloc
 -[MOUserAttributesHandler .cxx_destruct]
 _sharedHandler.onceToken
 _sharedHandler.instance
-___block_descriptor_20_e10_v12?0c4c8l
+___block_descriptor_32_e11_v16?0B8B12l
 ___block_literal_global.113
 ___block_literal_global.118
 _OBJC_IVAR_$_MOUserAttributesHandler._userAttributeData
@@ -543,8 +543,8 @@ ___147-[MOInAppV2ActionHandler actionHandlerWithArray:forButton:orForImage:orFor
 -[MOInAppV2ActionHandler nudgeView]
 -[MOInAppV2ActionHandler setNudgeView:]
 -[MOInAppV2ActionHandler .cxx_destruct]
-___block_descriptor_24_e4_20s_e22_v8?0"UIAlertAction"4l
-___block_descriptor_20_e22_v8?0"UIAlertAction"4l
+___block_descriptor_40_e8_32s_e23_v16?0"UIAlertAction"8l
+___block_descriptor_32_e23_v16?0"UIAlertAction"8l
 ___block_literal_global.195
 _OBJC_IVAR_$_MOInAppV2ActionHandler._inAppHandler
 _OBJC_IVAR_$_MOInAppV2ActionHandler._inAppObject
@@ -580,7 +580,7 @@ ___62-[MOInboxHandler syncInboxNotificationsWithCompletionHandler:]_block_invoke
 -[MOInboxHandler syncNotificationsFromExtension:]
 -[MOInboxHandler syncNotificationsFromServer:]
 ___46-[MOInboxHandler syncNotificationsFromServer:]_block_invoke
-___copy_helper_block_e4_20b24s
+___copy_helper_block_e8_32b40s
 -[MOInboxHandler syncNotificationFromOlderPlist:]
 -[MOInboxHandler syncInboxFromServerRequestWithCompletionBlock:]
 ___64-[MOInboxHandler syncInboxFromServerRequestWithCompletionBlock:]_block_invoke
@@ -612,16 +612,16 @@ ___64-[MOInboxHandler syncInboxFromServerRequestWithCompletionBlock:]_block_invo
 -[MOInboxHandler syncInProgress]
 -[MOInboxHandler setSyncInProgress:]
 -[MOInboxHandler .cxx_destruct]
-___block_descriptor_28_e4_20s24bs_e7_v8?0c4l
-___block_descriptor_28_e4_20bs24s_e19_v12?0c4"NSArray"8l
-___block_descriptor_28_e4_20bs_e21_v8?0"NSDictionary"4l
+___block_descriptor_48_e8_32s40bs_e8_v12?0B8l
+___block_descriptor_48_e8_32bs40s_e20_v20?0B8"NSArray"12l
+___block_descriptor_48_e8_32bs_e22_v16?0"NSDictionary"8l
 _OBJC_IVAR_$_MOInboxHandler._syncInProgress
 _OBJC_IVAR_$_MOInboxHandler._inboxData
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/MONotificationHandler/MOInbox/MOInboxHandler.m
 MoEngage/MoEngageSDK/MONotificationHandler/MOInbox/MOInboxHandler.m
 MoEngage/MoEngageSDK/MONotificationHandler/MOInbox/MOInboxHandler.h
 __64-[MOInboxHandler syncInboxFromServerRequestWithCompletionBlock:]_block_invoke
-__copy_helper_block_e4_20b24s
+__copy_helper_block_e8_32b40s
 __46-[MOInboxHandler syncNotificationsFromServer:]_block_invoke
 __62-[MOInboxHandler syncInboxNotificationsWithCompletionHandler:]_block_invoke_3
 __62-[MOInboxHandler syncInboxNotificationsWithCompletionHandler:]_block_invoke_2
@@ -635,28 +635,28 @@ _OBJC_IVAR_$_MOLabel._contentInsets
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/MOInAppV2/Views/MOLabel/MOLabel.m
 MoEngage/MoEngageSDK/MOInAppV2/Views/MOLabel/MOLabel.m
 UIEdgeInsetsInsetRect
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGeometry.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGeometry.h
 -[MODownloadManager init]
 -[MODownloadManager download:withCompletion:]
 ___Block_byref_object_copy_.19
 ___Block_byref_object_dispose_.20
 ___45-[MODownloadManager download:withCompletion:]_block_invoke
-___copy_helper_block_e4_20s24r28r32r36w
-___destroy_helper_block_e4_20s24r28r32r36w
+___copy_helper_block_e8_32s40r48r56r64w
+___destroy_helper_block_e8_32s40r48r56r64w
 -[MODownloadManager cleanupDataArray:]
 -[MODownloadManager downloadQueue]
 -[MODownloadManager setDownloadQueue:]
 -[MODownloadManager downloads]
 -[MODownloadManager setDownloads:]
 -[MODownloadManager .cxx_destruct]
-___block_descriptor_44_e4_20s24r28r32r36w_e59_v20?0"MOImageDownloadOperation"4"NSData"8c12"NSError"16l
+___block_descriptor_80_e8_32s40r48r56r64w_e60_v36?0"MOImageDownloadOperation"8"NSData"16B24"NSError"28l
 _OBJC_IVAR_$_MODownloadManager._downloadQueue
 _OBJC_IVAR_$_MODownloadManager._downloads
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/Network/ImageDownload/MODownloadManager.m
 MoEngage/MoEngageSDK/Network/ImageDownload/MODownloadManager.m
 MoEngage/MoEngageSDK/Network/ImageDownload/MODownloadManager.h
-__destroy_helper_block_e4_20s24r28r32r36w
-__copy_helper_block_e4_20s24r28r32r36w
+__destroy_helper_block_e8_32s40r48r56r64w
+__copy_helper_block_e8_32s40r48r56r64w
 __45-[MODownloadManager download:withCompletion:]_block_invoke
 -[MOConfig init]
 -[MOConfig initWithCoder:]
@@ -759,7 +759,7 @@ ___44+[MOInbox fetchInboxMessagesWithCompletion:]_block_invoke
 +[MOInbox defaultUnreadTextFont]
 +[MOInbox getAllNotificationCount]
 +[MOInbox getUnreadNotifictionCount]
-___block_descriptor_24_e4_20bs_e7_v8?0c4l
+___block_descriptor_40_e8_32bs_e8_v12?0B8l
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/MONotificationHandler/MOInbox/MOInbox.m
 MoEngage/MoEngageSDK/MONotificationHandler/MOInbox/MOInbox.m
 __44+[MOInbox fetchInboxMessagesWithCompletion:]_block_invoke
@@ -1004,10 +1004,10 @@ ___78-[MOInAppViewV2 exitWithAnimationWithActionArray:onButtonClick:andButtonTex
 -[MOInAppViewV2 currentYOrigin]
 -[MOInAppViewV2 setCurrentYOrigin:]
 -[MOInAppViewV2 .cxx_destruct]
-___block_descriptor_32_e4_20s24bs_e7_v8?0c4l
+___block_descriptor_56_e8_32s40bs_e8_v12?0B8l
 _OBJC_IVAR_$_MOInAppViewV2._currentXOrigin
 _OBJC_IVAR_$_MOInAppViewV2._currentYOrigin
-___block_descriptor_32_e4_20s24s_e7_v8?0c4l
+___block_descriptor_56_e8_32s40s_e8_v12?0B8l
 _OBJC_IVAR_$_MOInAppViewV2._inAppLayoutType
 _OBJC_IVAR_$_MOInAppViewV2._inAppObject
 _OBJC_IVAR_$_MOInAppViewV2._inAppHandler
@@ -1022,10 +1022,8 @@ __78-[MOInAppViewV2 exitWithAnimationWithActionArray:onButtonClick:andButtonText
 __40-[MOInAppViewV2 entryAnimationForInApp:]_block_invoke.183
 __40-[MOInAppViewV2 entryAnimationForInApp:]_block_invoke.176
 __40-[MOInAppViewV2 entryAnimationForInApp:]_block_invoke
-CGRectMake
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 UI_USER_INTERFACE_IDIOM
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
 __38-[MOInAppViewV2 createViewCompletion:]_block_invoke
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/MONotificationHandler/MOInbox/MOInboxUtils/MOInboxExposedConstants.m
 +[MOWebViewHandler sharedInstance]
@@ -1046,7 +1044,7 @@ ___48-[MOWebViewHandler dismissWebViewWithAnimation:]_block_invoke
 -[MOWebViewHandler webViewVC]
 -[MOWebViewHandler setWebViewVC:]
 -[MOWebViewHandler .cxx_destruct]
-___block_descriptor_25_e4_20s_e5_v4?0l
+___block_descriptor_41_e8_32s_e5_v8?0l
 __OBJC_PROTOCOL_$_SFSafariViewControllerDelegate
 __OBJC_LABEL_PROTOCOL_$_SFSafariViewControllerDelegate
 _OBJC_IVAR_$_MOWebViewHandler._sfVC
@@ -1071,10 +1069,10 @@ ___56-[MONetworkClient sendLogRequest:withCompletionHandler:]_block_invoke
 -[MONetworkClient networkSession]
 -[MONetworkClient setNetworkSession:]
 -[MONetworkClient .cxx_destruct]
-___block_descriptor_28_e4_20bs24s_e5_v4?0l
-___block_descriptor_24_e4_20bs_e5_v4?0l
-___block_descriptor_28_e4_20bs_e45_v16?0"NSData"4"NSURLResponse"8"NSError"12l
-___block_descriptor_24_e4_20bs_e45_v16?0"NSData"4"NSURLResponse"8"NSError"12l
+___block_descriptor_48_e8_32bs40s_e5_v8?0l
+___block_descriptor_40_e8_32bs_e5_v8?0l
+___block_descriptor_48_e8_32bs_e46_v32?0"NSData"8"NSURLResponse"16"NSError"24l
+___block_descriptor_40_e8_32bs_e46_v32?0"NSData"8"NSURLResponse"16"NSError"24l
 _OBJC_IVAR_$_MONetworkClient._networkSession
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/Network/MONetworkClient.m
 MoEngage/MoEngageSDK/Network/MONetworkClient.m
@@ -1108,7 +1106,7 @@ ___44+[MONetworkInterface sharedNetworkInterface]_block_invoke
 ___69-[MONetworkInterface syncInboxDataWithLastUpdatedTime:andCompletion:]_block_invoke
 _sharedNetworkInterface.onceToken
 _sharedNetworkInterface.instance
-___block_descriptor_24_e4_20bs_e21_v8?0"NSDictionary"4l
+___block_descriptor_40_e8_32bs_e22_v16?0"NSDictionary"8l
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/Network/MONetworkInterface.m
 __69-[MONetworkInterface syncInboxDataWithLastUpdatedTime:andCompletion:]_block_invoke
 MoEngage/MoEngageSDK/Network/MONetworkInterface.m
@@ -1132,16 +1130,16 @@ ___61-[MODeviceTriggersHandler startBGTaskForEvent:withEventDict:]_block_invoke.
 -[MODeviceTriggersHandler getPayloadToShow:forOffline:]
 -[MODeviceTriggersHandler postDeviceTriggerCampaign:isOffline:]
 ___63-[MODeviceTriggersHandler postDeviceTriggerCampaign:isOffline:]_block_invoke
-___copy_helper_block_e4_20s24s28w
-___destroy_helper_block_e4_20s24s28w
+___copy_helper_block_e8_32s40s48w
+___destroy_helper_block_e8_32s40s48w
 -[MODeviceTriggersHandler postDeviceTriggerForAboveiOS10:WithPayload:andAttachment:isOffline:]
 ___94-[MODeviceTriggersHandler postDeviceTriggerForAboveiOS10:WithPayload:andAttachment:isOffline:]_block_invoke
 -[MODeviceTriggersHandler postDeviceTriggerCampaignForBelowiOS10:WithPayload:isOffline:]
 -[MODeviceTriggersHandler createWithFileName:andExtension:fromTemporaryLocation:]
 -[MODeviceTriggersHandler downloadAttachmentForCampaignID:andPayload:withCompletionBlock:]
 ___90-[MODeviceTriggersHandler downloadAttachmentForCampaignID:andPayload:withCompletionBlock:]_block_invoke
-___copy_helper_block_e4_20s24b28r32r
-___destroy_helper_block_e4_20s24s28r32r
+___copy_helper_block_e8_32s40b48r56r
+___destroy_helper_block_e8_32s40s48r56r
 -[MODeviceTriggersHandler trackNotificationScheduledFailedForCampaign:withPayload:]
 -[MODeviceTriggersHandler trackNotificationScheduledForCampaign:withPayload:]
 -[MODeviceTriggersHandler trackNotificationOfflineForCampaign:withPayload:]
@@ -1158,24 +1156,24 @@ ___destroy_helper_block_e4_20s24s28r32r
 -[MODeviceTriggersHandler setDt_BgTask:]
 -[MODeviceTriggersHandler lastUpdatedTime]
 -[MODeviceTriggersHandler setLastUpdatedTime:]
-___block_descriptor_32_e4_20s24bs_e7_v8?04l
-___block_descriptor_32_e4_20s24s28s_e7_v8?0c4l
-___block_descriptor_32_e4_20s24s_e7_v8?04l
-___block_descriptor_28_e4_20s24s_e5_v4?0l
-___block_descriptor_32_e4_20s24s28s_e5_v4?0l
-___block_descriptor_37_e4_20s24s28w_e33_v8?0"UNNotificationAttachment"4l
-___block_descriptor_37_e4_20s24s28s_e16_v8?0"NSError"4l
-___block_descriptor_36_e4_20s24bs28r32r_e44_v16?0"NSURL"4"NSURLResponse"8"NSError"12l
+___block_descriptor_56_e8_32s40bs_e8_v16?08l
+___block_descriptor_56_e8_32s40s48s_e8_v12?0B8l
+___block_descriptor_56_e8_32s40s_e8_v16?08l
+___block_descriptor_48_e8_32s40s_e5_v8?0l
+___block_descriptor_56_e8_32s40s48s_e5_v8?0l
+___block_descriptor_65_e8_32s40s48w_e34_v16?0"UNNotificationAttachment"8l
+___block_descriptor_65_e8_32s40s48s_e17_v16?0"NSError"8l
+___block_descriptor_64_e8_32s40bs48r56r_e45_v32?0"NSURL"8"NSURLResponse"16"NSError"24l
 _OBJC_IVAR_$_MODeviceTriggersHandler._dt_BgTask
 _OBJC_IVAR_$_MODeviceTriggersHandler._lastUpdatedTime
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/MONotificationHandler/MORealTimeTriggers/DTHandler/MODeviceTriggersHandler.m
 MoEngage/MoEngageSDK/MONotificationHandler/MORealTimeTriggers/DTHandler/MODeviceTriggersHandler.m
-__destroy_helper_block_e4_20s24s28r32r
-__copy_helper_block_e4_20s24b28r32r
+__destroy_helper_block_e8_32s40s48r56r
+__copy_helper_block_e8_32s40b48r56r
 __90-[MODeviceTriggersHandler downloadAttachmentForCampaignID:andPayload:withCompletionBlock:]_block_invoke
 __94-[MODeviceTriggersHandler postDeviceTriggerForAboveiOS10:WithPayload:andAttachment:isOffline:]_block_invoke
-__destroy_helper_block_e4_20s24s28w
-__copy_helper_block_e4_20s24s28w
+__destroy_helper_block_e8_32s40s48w
+__copy_helper_block_e8_32s40s48w
 __63-[MODeviceTriggersHandler postDeviceTriggerCampaign:isOffline:]_block_invoke
 __61-[MODeviceTriggersHandler startBGTaskForEvent:withEventDict:]_block_invoke.243
 __61-[MODeviceTriggersHandler startBGTaskForEvent:withEventDict:]_block_invoke_2
@@ -1222,8 +1220,6 @@ MoEngage/MoEngageSDK/MODataHandler/UserAttributes/MOUserAttribute.h
 +[MOInAppWidgetManager getFrameForObject:currentXOrigin:currentYOrigin:width:height:inContainerView:andWidgetType:forButtonArray:]
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/MOInAppV2/WidgetManager/MOInAppWidgetManager.m
 MoEngage/MoEngageSDK/MOInAppV2/WidgetManager/MOInAppWidgetManager.m
-UIEdgeInsetsMake
-CGSizeMake
 +[MODeviceAttributesHandler sharedInstance]
 ___43+[MODeviceAttributesHandler sharedInstance]_block_invoke
 -[MODeviceAttributesHandler setDeviceAttribute:forKey:]
@@ -1408,7 +1404,6 @@ _OBJC_IVAR_$_MOHCSStarRatingView._shouldBeginGestureRecognizerBlock
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/MOInAppV2/Views/RatingView/MOHCSStarRatingView.m
 MoEngage/MoEngageSDK/MOInAppV2/Views/RatingView/MOHCSStarRatingView.m
 MoEngage/MoEngageSDK/MOInAppV2/Views/RatingView/MOHCSStarRatingView.h
-CGPointMake
 -[MOInboxViewController viewDidLoad]
 -[MOInboxViewController viewWillAppear:]
 -[MOInboxViewController didReceiveMemoryWarning]
@@ -1581,7 +1576,7 @@ ___49+[MOCoreUtils showAlertViewWithMessage:andTitle:]_block_invoke
 +[MOCoreUtils transformPayloadForIncompatibleTypes:]
 ___52+[MOCoreUtils transformPayloadForIncompatibleTypes:]_block_invoke
 _getDeviceName.deviceNamesByCode
-___block_descriptor_28_e4_20s_e14_v16?048^c12l
+___block_descriptor_48_e8_32s_e15_v32?0816^B24l
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/MOUtilities/MOCoreUtils.m
 __52+[MOCoreUtils transformPayloadForIncompatibleTypes:]_block_invoke
 MoEngage/MoEngageSDK/MOUtilities/MOCoreUtils.m
@@ -1720,22 +1715,22 @@ ___33-[MOImageDownloadOperation start]_block_invoke
 -[MOImageDownloadOperation startDownload]
 ___41-[MOImageDownloadOperation startDownload]_block_invoke
 ___41-[MOImageDownloadOperation startDownload]_block_invoke_2
-___copy_helper_block_e4_20s24s28s32r
-___destroy_helper_block_e4_20s24s28s32r
+___copy_helper_block_e8_32s40s48s56r
+___destroy_helper_block_e8_32s40s48s56r
 -[MOImageDownloadOperation url]
 -[MOImageDownloadOperation setUrl:]
 -[MOImageDownloadOperation imageDownloadCompletionBlock]
 -[MOImageDownloadOperation setImageDownloadCompletionBlock:]
 -[MOImageDownloadOperation .cxx_destruct]
-___block_descriptor_36_e4_20s24s28s32r_e5_v4?0l
-___block_descriptor_24_e4_20s_e45_v16?0"NSData"4"NSURLResponse"8"NSError"12l
+___block_descriptor_64_e8_32s40s48s56r_e5_v8?0l
+___block_descriptor_40_e8_32s_e46_v32?0"NSData"8"NSURLResponse"16"NSError"24l
 _OBJC_IVAR_$_MOImageDownloadOperation._url
 _OBJC_IVAR_$_MOImageDownloadOperation._imageDownloadCompletionBlock
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/Network/ImageDownload/MOImageDownloadOperation.m
 MoEngage/MoEngageSDK/Network/ImageDownload/MOImageDownloadOperation.m
 MoEngage/MoEngageSDK/Network/ImageDownload/MOImageDownloadOperation.h
-__destroy_helper_block_e4_20s24s28s32r
-__copy_helper_block_e4_20s24s28s32r
+__destroy_helper_block_e8_32s40s48s56r
+__copy_helper_block_e8_32s40s48s56r
 __41-[MOImageDownloadOperation startDownload]_block_invoke_2
 __41-[MOImageDownloadOperation startDownload]_block_invoke
 __33-[MOImageDownloadOperation start]_block_invoke
@@ -1759,8 +1754,8 @@ ___94-[MoEngage initializeWithApiKey:inApplication:withLaunchOptions:openDeeplin
 -[MoEngage sessionStarted]
 -[MoEngage initNewUser]
 ___23-[MoEngage initNewUser]_block_invoke
-___copy_helper_block_e4_20w
-___destroy_helper_block_e4_20w
+___copy_helper_block_e8_32w
+___destroy_helper_block_e8_32w
 -[MoEngage updateModules]
 ___25-[MoEngage updateModules]_block_invoke
 ___25-[MoEngage updateModules]_block_invoke_2
@@ -1805,8 +1800,8 @@ ___38-[MoEngage trackEvent:builderPayload:]_block_invoke
 ___36-[MoEngage setUserAttribute:forKey:]_block_invoke
 -[MoEngage setUserAttributeTimestamp:forKey:]
 ___45-[MoEngage setUserAttributeTimestamp:forKey:]_block_invoke
-___copy_helper_block_e8_20s
-___destroy_helper_block_e8_20s
+-[MoEngage setUserAttributeDate:forKey:]
+___40-[MoEngage setUserAttributeDate:forKey:]_block_invoke
 -[MoEngage setUserAttributeLocationLatitude:longitude:forKey:]
 ___62-[MoEngage setUserAttributeLocationLatitude:longitude:forKey:]_block_invoke
 -[MoEngage resetUser]
@@ -1873,17 +1868,16 @@ ___33-[MoEngage optOutOfDataTracking:]_block_invoke
 -[MoEngage isAppDelegateProxyConfigured]
 -[MoEngage setIsAppDelegateProxyConfigured:]
 -[MoEngage .cxx_destruct]
-___block_descriptor_29_e4_20s24s_e5_v4?0l
-___block_descriptor_24_e4_20w_e7_v8?0c4l
+___block_descriptor_49_e8_32s40s_e5_v8?0l
+___block_descriptor_40_e8_32w_e8_v12?0B8l
 ___block_literal_global.208
 ___block_literal_global.252
-___block_descriptor_24_e4_20s_e10_v12?0c4c8l
-___block_descriptor_36_e8_20s_e5_v4?0l
-___block_descriptor_44_e8_20s_e5_v4?0l
-___block_descriptor_24_e4_20bs_e10_v12?0c4c8l
-___block_descriptor_20_e19_v12?0c4"NSError"8l
+___block_descriptor_40_e8_32s_e11_v16?0B8B12l
+___block_descriptor_56_e8_32s_e5_v8?0l
+___block_descriptor_40_e8_32bs_e11_v16?0B8B12l
+___block_descriptor_32_e20_v20?0B8"NSError"12l
 ___block_literal_global.341
-___block_descriptor_25_e4_20w_e7_v8?0c4l
+___block_descriptor_41_e8_32w_e8_v12?0B8l
 _OBJC_IVAR_$_MoEngage._disableInbox
 _OBJC_IVAR_$_MoEngage._disableInApps
 _OBJC_IVAR_$_MoEngage._disableBadgeReset
@@ -1904,8 +1898,7 @@ __91-[MoEngage registerForRemoteNotificationWithCategories:withUserNotificationC
 __41-[MoEngage resetUserWithCompletionBlock:]_block_invoke_2
 __41-[MoEngage resetUserWithCompletionBlock:]_block_invoke
 __62-[MoEngage setUserAttributeLocationLatitude:longitude:forKey:]_block_invoke
-__destroy_helper_block_e8_20s
-__copy_helper_block_e8_20s
+__40-[MoEngage setUserAttributeDate:forKey:]_block_invoke
 __45-[MoEngage setUserAttributeTimestamp:forKey:]_block_invoke
 __36-[MoEngage setUserAttribute:forKey:]_block_invoke
 __38-[MoEngage trackEvent:builderPayload:]_block_invoke
@@ -1924,8 +1917,8 @@ __60-[MoEngage deviceUpdateOnSessionTerminationWithApplication:]_block_invoke.23
 __60-[MoEngage deviceUpdateOnSessionTerminationWithApplication:]_block_invoke
 __25-[MoEngage updateModules]_block_invoke_2
 __25-[MoEngage updateModules]_block_invoke
-__destroy_helper_block_e4_20w
-__copy_helper_block_e4_20w
+__destroy_helper_block_e8_32w
+__copy_helper_block_e8_32w
 __23-[MoEngage initNewUser]_block_invoke
 __94-[MoEngage initializeWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:]_block_invoke.46
 __94-[MoEngage initializeWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:]_block_invoke
@@ -1989,8 +1982,8 @@ ___39+[MOAppDelegateObserver sharedInstance]_block_invoke
 ___46+[MOAppDelegateSwizzler proxyOriginalDelegate]_block_invoke
 +[MOAppDelegateSwizzler proxyOriginalDelegateIncludingAPNSMethods]
 ___66+[MOAppDelegateSwizzler proxyOriginalDelegateIncludingAPNSMethods]_block_invoke
-___copy_helper_block_e4_
-___destroy_helper_block_e4_
+___copy_helper_block_e8_
+___destroy_helper_block_e8_
 +[MOAppDelegateSwizzler sharedApplication]
 +[MOAppDelegateSwizzler createSubclassWithObject:]
 +[MOAppDelegateSwizzler proxyRemoteNotificationsMethodsWithAppDelegateSubClass:realClass:appDelegate:realImplementationsBySelector:]
@@ -2009,14 +2002,14 @@ ___71+[MOAppDelegateSwizzler notifyInterceptorsWithMethodSelector:callback:]_blo
 ___53-[MOAppDelegateSwizzler application:openURL:options:]_block_invoke
 -[MOAppDelegateSwizzler application:openURL:sourceApplication:annotation:]
 ___74-[MOAppDelegateSwizzler application:openURL:sourceApplication:annotation:]_block_invoke
-___copy_helper_block_e4_20s24s28s32s36r
-___destroy_helper_block_e4_20s24s28s32s36r
+___copy_helper_block_e8_32s40s48s56s64r
+___destroy_helper_block_e8_32s40s48s56s64r
 -[MOAppDelegateSwizzler application:handleEventsForBackgroundURLSession:completionHandler:]
 ___91-[MOAppDelegateSwizzler application:handleEventsForBackgroundURLSession:completionHandler:]_block_invoke
-___copy_helper_block_e4_20s24s28b
+___copy_helper_block_e8_32s40s48b
 -[MOAppDelegateSwizzler application:continueUserActivity:restorationHandler:]
 ___77-[MOAppDelegateSwizzler application:continueUserActivity:restorationHandler:]_block_invoke
-___copy_helper_block_e4_20s24s28b32r
+___copy_helper_block_e8_32s40s48b56r
 -[MOAppDelegateSwizzler application:donor_didRegisterForRemoteNotificationsWithDeviceToken:]
 ___92-[MOAppDelegateSwizzler application:donor_didRegisterForRemoteNotificationsWithDeviceToken:]_block_invoke
 -[MOAppDelegateSwizzler application:donor_didFailToRegisterForRemoteNotificationsWithError:]
@@ -2037,41 +2030,41 @@ _OBJC_IVAR_$_MOAppDelegateObserver._isObserving
 _appdelgateSwizzlingDisabled
 l_OBJC_PROTOCOL_REFERENCE_$_UIApplicationDelegate
 _sProxyAppDelegateOnceToken
-___block_literal_global.231
+___block_literal_global.233
 _sProxyAppDelegateRemoteNotificationOnceToken
 _kMOERealIMPBySelectorKey
 _MOEAppDelegateSubclass
 _MOEOriginalAppDelegateClass
-___block_descriptor_24_e4__e5_v4?0l
+___block_descriptor_40_e8__e5_v8?0l
 _kMOERealClassKey
 _interceptors.onceToken
 _interceptors.sInterceptors
-___block_literal_global.295
-___block_descriptor_28_e4_20bs_e14_v16?048^c12l
-___block_descriptor_36_e4_20s24s28s32r_e32_v8?0"<UIApplicationDelegate>"4l
-___block_descriptor_40_e4_20s24s28s32s36r_e32_v8?0"<UIApplicationDelegate>"4l
-___block_descriptor_32_e4_20s24s28bs_e32_v8?0"<UIApplicationDelegate>"4l
-___block_descriptor_36_e4_20s24s28bs32r_e32_v8?0"<UIApplicationDelegate>"4l
-___block_descriptor_32_e4_20s24s_e32_v8?0"<UIApplicationDelegate>"4l
-___block_descriptor_36_e4_20s24s28bs_e32_v8?0"<UIApplicationDelegate>"4l
+___block_literal_global.297
+___block_descriptor_48_e8_32bs_e15_v32?0816^B24l
+___block_descriptor_64_e8_32s40s48s56r_e33_v16?0"<UIApplicationDelegate>"8l
+___block_descriptor_72_e8_32s40s48s56s64r_e33_v16?0"<UIApplicationDelegate>"8l
+___block_descriptor_56_e8_32s40s48bs_e33_v16?0"<UIApplicationDelegate>"8l
+___block_descriptor_64_e8_32s40s48bs56r_e33_v16?0"<UIApplicationDelegate>"8l
+___block_descriptor_56_e8_32s40s_e33_v16?0"<UIApplicationDelegate>"8l
+___block_descriptor_64_e8_32s40s48bs_e33_v16?0"<UIApplicationDelegate>"8l
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/AppDelegateSwizzler/MOAppDelegateSwizzler.m
 MoEngage/MoEngageSDK/AppDelegateSwizzler/MOAppDelegateSwizzler.m
 __72-[MOAppDelegateSwizzler application:donor_didReceiveRemoteNotification:]_block_invoke
 __95-[MOAppDelegateSwizzler application:donor_didReceiveRemoteNotification:fetchCompletionHandler:]_block_invoke
 __92-[MOAppDelegateSwizzler application:donor_didFailToRegisterForRemoteNotificationsWithError:]_block_invoke
 __92-[MOAppDelegateSwizzler application:donor_didRegisterForRemoteNotificationsWithDeviceToken:]_block_invoke
-__copy_helper_block_e4_20s24s28b32r
+__copy_helper_block_e8_32s40s48b56r
 __77-[MOAppDelegateSwizzler application:continueUserActivity:restorationHandler:]_block_invoke
-__copy_helper_block_e4_20s24s28b
+__copy_helper_block_e8_32s40s48b
 __91-[MOAppDelegateSwizzler application:handleEventsForBackgroundURLSession:completionHandler:]_block_invoke
-__destroy_helper_block_e4_20s24s28s32s36r
-__copy_helper_block_e4_20s24s28s32s36r
+__destroy_helper_block_e8_32s40s48s56s64r
+__copy_helper_block_e8_32s40s48s56s64r
 __74-[MOAppDelegateSwizzler application:openURL:sourceApplication:annotation:]_block_invoke
 __53-[MOAppDelegateSwizzler application:openURL:options:]_block_invoke
 __71+[MOAppDelegateSwizzler notifyInterceptorsWithMethodSelector:callback:]_block_invoke
 __37+[MOAppDelegateSwizzler interceptors]_block_invoke
-__destroy_helper_block_e4_
-__copy_helper_block_e4_
+__destroy_helper_block_e8_
+__copy_helper_block_e8_
 __66+[MOAppDelegateSwizzler proxyOriginalDelegateIncludingAPNSMethods]_block_invoke
 __46+[MOAppDelegateSwizzler proxyOriginalDelegate]_block_invoke
 __39+[MOAppDelegateObserver sharedInstance]_block_invoke
@@ -2145,10 +2138,10 @@ ___61-[MONetworkHandler downloadImageForURL:andCompletionHandler:]_block_invoke
 -[MONetworkHandler setRequestGenerator:]
 -[MONetworkHandler .cxx_destruct]
 _moe_device_unique_id
-___block_descriptor_24_e4_20bs_e10_v12?0c48l
-___block_literal_global.307
-___block_descriptor_24_e10_v12?0c48l
-___block_descriptor_24_e7_v8?0c4l
+___block_descriptor_40_e8_32bs_e11_v20?0B812l
+___block_literal_global.305
+___block_descriptor_40_e11_v20?0B812l
+___block_descriptor_40_e8_v12?0B8l
 _OBJC_IVAR_$_MONetworkHandler._httpClient
 _OBJC_IVAR_$_MONetworkHandler._requestGenerator
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/Network/MONetworkHandler.m
@@ -2218,13 +2211,13 @@ ___51-[MOEventsHandler addEventToViewInfoWithEventDict:]_block_invoke
 ___44-[MOEventsHandler flushWithCompletionBlock:]_block_invoke
 -[MOEventsHandler flushEventsInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]
 ___94-[MOEventsHandler flushEventsInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]_block_invoke
-___copy_helper_block_e4_20s24s28s32s36b
-___destroy_helper_block_e4_20s24s28s32s36s
+___copy_helper_block_e8_32s40s48s56s64b
+___destroy_helper_block_e8_32s40s48s56s64s
 -[MOEventsHandler synchronousFlushInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]
 ___99-[MOEventsHandler synchronousFlushInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]_block_invoke
 ___99-[MOEventsHandler synchronousFlushInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]_block_invoke_2
-___copy_helper_block_e4_20s24s28s32b36r40r44r48r
-___destroy_helper_block_e4_20s24s28s32s36r40r44r48r
+___copy_helper_block_e8_32s40s48s56b64r72r80r88r
+___destroy_helper_block_e8_32s40s48s56s64r72r80r88r
 -[MOEventsHandler flushAttemptCompletedInBackground:andForReset:]
 -[MOEventsHandler getBatchesWithViewsArray:]
 -[MOEventsHandler disablePeriodicFlush]
@@ -2236,8 +2229,8 @@ ___destroy_helper_block_e4_20s24s28s32s36r40r44r48r
 -[MOEventsHandler removeEventsPlistFile]
 -[MOEventsHandler syncToServerFromDumpFile]
 ___43-[MOEventsHandler syncToServerFromDumpFile]_block_invoke
-___copy_helper_block_e4_20s24r28r
-___destroy_helper_block_e4_20s24r28r
+___copy_helper_block_e8_32s40r48r
+___destroy_helper_block_e8_32s40r48r
 -[MOEventsHandler getEventsFromDumpFile]
 -[MOEventsHandler oldDatFilePath]
 -[MOEventsHandler removeDatFile]
@@ -2263,10 +2256,10 @@ ___destroy_helper_block_e4_20s24r28r
 -[MOEventsHandler eventsBatchCountTreshold]
 -[MOEventsHandler setEventsBatchCountTreshold:]
 -[MOEventsHandler .cxx_destruct]
-___block_descriptor_40_e4_20s24s28s32s36bs_e5_v4?0l
-___block_descriptor_53_e4_20s24s28s32bs36r40r44r48r_e5_v4?0l
-___block_descriptor_56_e4_20s24s28s32bs36r40r44r48r_e7_v8?0c4l
-___block_descriptor_32_e4_20s24r28r_e7_v8?0c4l
+___block_descriptor_72_e8_32s40s48s56s64bs_e5_v8?0l
+___block_descriptor_97_e8_32s40s48s56bs64r72r80r88r_e5_v8?0l
+___block_descriptor_104_e8_32s40s48s56bs64r72r80r88r_e8_v12?0B8l
+___block_descriptor_56_e8_32s40r48r_e8_v12?0B8l
 _OBJC_IVAR_$_MOEventsHandler._syncInProgress
 _OBJC_IVAR_$_MOEventsHandler._periodicFlushDisabled
 _OBJC_IVAR_$_MOEventsHandler._bgTask
@@ -2280,15 +2273,15 @@ _OBJC_IVAR_$_MOEventsHandler._eventsBatchCountTreshold
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/MODataHandler/EventManagement/MOEventsHandler.m
 MoEngage/MoEngageSDK/MODataHandler/EventManagement/MOEventsHandler.m
 MoEngage/MoEngageSDK/MODataHandler/EventManagement/MOEventsHandler.h
-__destroy_helper_block_e4_20s24r28r
-__copy_helper_block_e4_20s24r28r
+__destroy_helper_block_e8_32s40r48r
+__copy_helper_block_e8_32s40r48r
 __43-[MOEventsHandler syncToServerFromDumpFile]_block_invoke
-__destroy_helper_block_e4_20s24s28s32s36r40r44r48r
-__copy_helper_block_e4_20s24s28s32b36r40r44r48r
+__destroy_helper_block_e8_32s40s48s56s64r72r80r88r
+__copy_helper_block_e8_32s40s48s56b64r72r80r88r
 __99-[MOEventsHandler synchronousFlushInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]_block_invoke_2
 __99-[MOEventsHandler synchronousFlushInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]_block_invoke
-__destroy_helper_block_e4_20s24s28s32s36s
-__copy_helper_block_e4_20s24s28s32s36b
+__destroy_helper_block_e8_32s40s48s56s64s
+__copy_helper_block_e8_32s40s48s56s64b
 __94-[MOEventsHandler flushEventsInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]_block_invoke
 __44-[MOEventsHandler flushWithCompletionBlock:]_block_invoke
 __51-[MOEventsHandler addEventToViewInfoWithEventDict:]_block_invoke
@@ -2303,12 +2296,12 @@ __33+[MOEventsHandler sharedInstance]_block_invoke
 +[MOKeychain keychainItem:]
 +[MOKeychain createDeviceUniqueIDForService:]
 ___45+[MOKeychain createDeviceUniqueIDForService:]_block_invoke
-___copy_helper_block_e4_24s28r
-___destroy_helper_block_e4_24s28r
-___block_descriptor_32_e4_24s28r_e5_v4?0l
+___copy_helper_block_e8_40s48r
+___destroy_helper_block_e8_40s48r
+___block_descriptor_56_e8_40s48r_e5_v8?0l
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngageSDK/MOUtilities/Misc/KeychainServices/MOKeychain.m
-__destroy_helper_block_e4_24s28r
-__copy_helper_block_e4_24s28r
+__destroy_helper_block_e8_40s48r
+__copy_helper_block_e8_40s48r
 __45+[MOKeychain createDeviceUniqueIDForService:]_block_invoke
 MoEngage/MoEngageSDK/MOUtilities/Misc/KeychainServices/MOKeychain.m
 -[MOInAppV2Object initWithDictionary:andPropertiesObject:]
@@ -2355,13 +2348,13 @@ ___37-[MOInAppV2Handler getInAppCampaigns]_block_invoke_2
 -[MOInAppV2Handler showInAppsIfCalledDuringInAppFetch]
 -[MOInAppV2Handler downloadImagesForObject:completion:]
 ___55-[MOInAppV2Handler downloadImagesForObject:completion:]_block_invoke
-___copy_helper_block_e4_20b24s28r
-___destroy_helper_block_e4_20s24s28r
+___copy_helper_block_e8_32b40s48r
+___destroy_helper_block_e8_32s40s48r
 -[MOInAppV2Handler getDownloadsArrayForObject:]
 -[MOInAppV2Handler addImageUrlForObject:]
 -[MOInAppV2Handler showInAppV2WithObject:]
 ___42-[MOInAppV2Handler showInAppV2WithObject:]_block_invoke
-___copy_helper_block_e4_20s24s28r
+___copy_helper_block_e8_32s40s48r
 -[MOInAppV2Handler showInAppForViewController:]
 -[MOInAppV2Handler dontShowInAppInViewController:]
 +[MOInAppV2Handler returnSelfHandledInAppData:]
@@ -2411,12 +2404,12 @@ ___64+[MOInAppV2Handler fetchAndShowInAppForCampaignID:forTestInApp:]_block_invo
 -[MOInAppV2Handler inAppCancelledDueToKeyboard]
 -[MOInAppV2Handler setInAppCancelledDueToKeyboard:]
 -[MOInAppV2Handler .cxx_destruct]
-___block_descriptor_28_e4_20s_e24_v12?0c4"NSDictionary"8l
-___block_descriptor_32_e4_20bs24s28r_e31_v16?0c4"NSError"8"NSArray"12l
-___block_descriptor_36_e4_20s24s28r_e22_v8?0"MOInAppViewV2"4l
-___block_descriptor_32_e4_20s24bs_e22_v8?0"MOInAppViewV2"4l
-___block_descriptor_28_e4_20s_e7_v8?04l
-___block_descriptor_37_e4_24s28r_e7_v8?04l
+___block_descriptor_48_e8_32s_e25_v20?0B8"NSDictionary"12l
+___block_descriptor_56_e8_32bs40s48r_e32_v28?0B8"NSError"12"NSArray"20l
+___block_descriptor_64_e8_32s40s48r_e23_v16?0"MOInAppViewV2"8l
+___block_descriptor_56_e8_32s40bs_e23_v16?0"MOInAppViewV2"8l
+___block_descriptor_48_e8_32s_e8_v16?08l
+___block_descriptor_65_e8_40s48r_e8_v16?08l
 _OBJC_IVAR_$_MOInAppV2Handler._currentlyFetchingInApps
 _OBJC_IVAR_$_MOInAppV2Handler._handleInAppsCalledDuringFetch
 _OBJC_IVAR_$_MOInAppV2Handler._inAppHandlingInProgress
@@ -2431,10 +2424,10 @@ MoEngage/MoEngageSDK/MOInAppV2/InAppHandlers/GeneralInAppHandler/MOInAppV2Handle
 __64+[MOInAppV2Handler fetchAndShowInAppForCampaignID:forTestInApp:]_block_invoke
 __57-[MOInAppV2Handler smartTriggerInAppForEvent:andPayload:]_block_invoke
 __84-[MOInAppV2Handler getNudgeViewWithNudgeInAppObject:withHandler:andCompletionBlock:]_block_invoke
-__copy_helper_block_e4_20s24s28r
+__copy_helper_block_e8_32s40s48r
 __42-[MOInAppV2Handler showInAppV2WithObject:]_block_invoke
-__destroy_helper_block_e4_20s24s28r
-__copy_helper_block_e4_20b24s28r
+__destroy_helper_block_e8_32s40s48r
+__copy_helper_block_e8_32b40s48r
 __55-[MOInAppV2Handler downloadImagesForObject:completion:]_block_invoke
 __37-[MOInAppV2Handler getInAppCampaigns]_block_invoke_2
 __37-[MOInAppV2Handler getInAppCampaigns]_block_invoke
@@ -2447,7 +2440,7 @@ ___40+[MOSessionManager sharedSessionManager]_block_invoke
 -[MOSessionManager applicationInActive:]
 -[MOSessionManager initiateNewSessionWithSources:andCompletionBlock:]
 ___69-[MOSessionManager initiateNewSessionWithSources:andCompletionBlock:]_block_invoke
-___copy_helper_block_e4_20b24r
+___copy_helper_block_e8_32b40r
 -[MOSessionManager reinitiateSessionOnLogout]
 -[MOSessionManager resetSessionOnBlocked]
 -[MOSessionManager startSessionOnAllowed]
@@ -2473,8 +2466,8 @@ ___45-[MOSessionManager appOpenedWithSourceArray:]_block_invoke_2
 -[MOSessionManager .cxx_destruct]
 _sharedSessionManager.onceToken
 _sharedSessionManager.instance
-___block_descriptor_28_e4_20bs24r_e7_v8?0c4l
-___block_descriptor_20_e18_v8?0"MOSession"4l
+___block_descriptor_48_e8_32bs40r_e8_v12?0B8l
+___block_descriptor_32_e19_v16?0"MOSession"8l
 ___block_literal_global.72
 ___block_literal_global.83
 ___block_literal_global.115
@@ -2488,7 +2481,7 @@ __45-[MOSessionManager appOpenedWithSourceArray:]_block_invoke_2
 __45-[MOSessionManager appOpenedWithSourceArray:]_block_invoke
 __45-[MOSessionManager eventTracked:withPayload:]_block_invoke
 __41-[MOSessionManager startSessionOnAllowed]_block_invoke
-__copy_helper_block_e4_20b24r
+__copy_helper_block_e8_32b40r
 __69-[MOSessionManager initiateNewSessionWithSources:andCompletionBlock:]_block_invoke
 __40+[MOSessionManager sharedSessionManager]_block_invoke
 -[MOInAppV2CampaignPropertiesObject initWithDictionary:]
@@ -2567,30 +2560,7 @@ MoEngage/MoEngageSDK/MOUtilities/MOConditionEvaluator/MOEventFilter.m
 MoEngage/MoEngageSDK/MOUtilities/MOConditionEvaluator/MOEventFilter.h
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/build/MoEngage.build/Release-iphoneos/MoEngage.build/DerivedSources/MoEngage_vers.c
 __ZL15__ARCLite__loadv
-__ZL30add_image_hook_autoreleasepoolPK11mach_headerl
-__ZL34__arclite_objc_autoreleasePoolPushv
-__ZL33__arclite_objc_autoreleasePoolPopPv
-__ZL19patch_lazy_pointersPK11mach_headerP7patch_tm
-__ZL42__arclite_NSArray_objectAtIndexedSubscriptP7NSArrayP13objc_selectorj
-__ZL53__arclite_NSMutableArray_setObject_atIndexedSubscriptP14NSMutableArrayP13objc_selectorP11objc_objectj
-__ZL46__arclite_NSDictionary_objectForKeyedSubscriptP12NSDictionaryP13objc_selectorP11objc_object
-__ZL47__arclite_NSOrderedSet_objectAtIndexedSubscriptP12NSOrderedSetP13objc_selectorj
-__ZL58__arclite_NSMutableOrderedSet_setObject_atIndexedSubscriptP19NSMutableOrderedSetP13objc_selectorP11objc_objectj
 __ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
-__ZL18add_image_hook_ARCPK11mach_headerl
-__ZL27__arclite_objc_loadClassrefPP10objc_class
-__ZL36__arclite_object_setInstanceVariableP11objc_objectPKcPv
-__ZL24__arclite_object_setIvarP11objc_objectP9objc_ivarS0_
-__ZL21__arclite_object_copyP11objc_objectm
-__ZL21__arclite_objc_retainP11objc_object
-__ZL26__arclite_objc_retainBlockP11objc_object
-__ZL22__arclite_objc_releaseP11objc_object
-__ZL26__arclite_objc_autoreleaseP11objc_object
-__ZL32__arclite_objc_retainAutoreleaseP11objc_object
-__ZL37__arclite_objc_autoreleaseReturnValueP11objc_object
-__ZL43__arclite_objc_retainAutoreleaseReturnValueP11objc_object
-__ZL44__arclite_objc_retainAutoreleasedReturnValueP11objc_object
-__ZL26__arclite_objc_storeStrongPP11objc_objectS0_
 __ZL22add_image_hook_swiftV1PK11mach_headerl
 __ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
 __ZL30__arclite_NSManagedObject_initP11objc_objectP13objc_selector
@@ -2633,17 +2603,9 @@ __ZL11_class_name
 __ZL32OBJC_$_CLASS_METHODS___ARCLite__
 __ZL17_load_method_name
 __ZL17_load_method_type
-__ZL23NSAutoreleasePool_class
-__ZZL30add_image_hook_autoreleasepoolPK11mach_headerlE7patches
-__ZGVZL30add_image_hook_autoreleasepoolPK11mach_headerlE7patches
-__OBJC_PROTOCOL_$___ARCLiteIndexedSubscripting__
-__OBJC_LABEL_PROTOCOL_$___ARCLiteIndexedSubscripting__
-l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteIndexedSubscripting__
 __OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
 __OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
 l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteKeyedSubscripting__
-__ZZL18add_image_hook_ARCPK11mach_headerlE7patches
-__ZGVZL18add_image_hook_ARCPK11mach_headerlE7patches
 __ZL30NSUndoManagerProxy_targetClass
 __ZL29original_NSManagedObject_init
 __ZL40original_NSManagedObject_allocWithEntity
@@ -2671,7 +2633,7 @@ __ZL25original_protocol_getName
 __ZL36original_objc_copyClassNamesForImage
 __ZL12demangleLock
 __ZL9Demangled
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ --target=armv7-apple-ios4.3 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources-normal/armv7 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/armv7 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.o -Wno-framework-include-private-from-public -Wno-atimport-in-framework-header -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -mlinker-version=512.4 -march=armv7a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ --target=arm64-apple-ios4.3 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources-normal/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.o -Wno-framework-include-private-from-public -Wno-atimport-in-framework-header -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -mlinker-version=520
 /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76/source/arclite.mm
 /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76
 fixStringForCoreData
@@ -2723,6 +2685,7 @@ __arclite_NSManagedObject_allocWithEntity
 __arclite_NSManagedObject_init
 __arclite_NSUndoManagerProxy_isKindOfClass
 add_image_hook_swiftV1
+patch_lazy_pointers
 patch_t<const char **(const char *, unsigned int *)>
 patch_t<const char *(Protocol *)>
 patch_t<const char *(Class)>
@@ -2731,54 +2694,10 @@ patch_t<Class (const char *)>
 patch_t<void *(id)>
 patch_t<Class (Class, const char *, unsigned long)>
 patch_t<Class (Class, const objc_image_info *)>
-__arclite_objc_storeStrong
-__arclite_objc_release
-__arclite_objc_retain
-__arclite_objc_retainAutoreleasedReturnValue
-__arclite_objc_retainAutoreleaseReturnValue
-__arclite_objc_autoreleaseReturnValue
-__arclite_objc_retainAutorelease
-__arclite_objc_autorelease
-__arclite_objc_retainBlock
-__arclite_object_copy
-fixupCopiedReferences
-_class_getInstanceStart
-alignedInstanceStart
-__arclite_class_usesAutomaticRetainRelease
-classOrSuperClassesUseARR
-__arclite_object_setIvar
-isScannedOffset
-_ivar_getClass
-__arclite_object_setInstanceVariable
-__arclite_objc_loadClassref
-add_image_hook_ARC
-patch_t<void (id *, id)>
-patch_t<id (id)>
-patch_t<void (id)>
-patch_t<id (id, unsigned long)>
-patch_t<void (id, objc_ivar *, id)>
-patch_t<objc_ivar *(id, const char *, void *)>
-patch_t<Class (Class *)>
 __arclite_NSMutableDictionary__setObject_forKeyedSubscript
-__arclite_NSMutableOrderedSet_setObject_atIndexedSubscript
-__arclite_NSOrderedSet_objectAtIndexedSubscript
-__arclite_NSDictionary_objectForKeyedSubscript
-__arclite_NSMutableArray_setObject_atIndexedSubscript
-__arclite_NSArray_objectAtIndexedSubscript
-patch_lazy_pointers
-__arclite_objc_autoreleasePoolPop
-__arclite_objc_autoreleasePoolPush
-add_image_hook_autoreleasepool
-patch_t<void (void *)>
-patch_t<void *()>
 __ARCLite__load
 install_swiftV1
 replaceMethod
-install_ARC
 install_dict_nil_value
 addOrReplaceMethod
 keyedGetter
-install_subscripting
-addMethod
-indexedGetter
-install_autoreleasepool

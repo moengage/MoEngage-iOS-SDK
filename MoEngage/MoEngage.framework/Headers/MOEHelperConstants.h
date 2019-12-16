@@ -38,6 +38,8 @@ extern NSString* const USER_ATTRIBUTE_USER_LOCATION;
 extern NSString* const MoEngage_Cordova_SDK_Version;
 extern NSString* const MoEngage_React_Native_SDK_Version;
 extern NSString* const MoEngage_Segment_SDK_Version;
+extern NSString* const MoEngage_Xamarin_SDK_Version;
+extern NSString* const MoEngage_Flutter_SDK_Version;
 
 extern NSString* const MoEngage_Device_Token_Key;
 extern NSString* const MoEngage_Notification_Settings_Key;

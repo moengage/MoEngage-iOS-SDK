@@ -3,7 +3,11 @@
 
 ## Change Log:
 
-### Version 5.2.4  *(30th October, 2019)*
+### Version 5.2.6  *(16th December, 2019)*
+-------------------------------------------
+* Added a method to track UserAttribute by passing the date instance.
+
+### Version 5.2.5  *(30th October, 2019)*
 -------------------------------------------
 * Event local time was getting tracked according to the Calendar and locale set in the device, have made it device setting independent now.
 

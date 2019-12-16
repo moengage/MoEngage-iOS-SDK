@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'MoEngage-iOS-SDK'
-  s.version      = '5.2.5'
+  s.version      = '5.2.6'
   s.summary      = 'MoEngage Mobile Marketing Automation SDK for iOS - iPhone and iPad'
 
   s.description  = <<-DESC
