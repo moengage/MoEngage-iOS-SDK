@@ -1,0 +1,17 @@
+source 'https://cdn.cocoapods.org/'
+
+use_frameworks!
+
+target 'MoESwiftSample' do
+  platform :ios, '9.0'
+  pod 'MoEngage-iOS-SDK', :path => '../../'
+  pod 'MoEngageInApp', :path => '../../'
+  pod 'MOGeofence', :path => '../../'
+
+end
+
+target 'NotificationService' do
+  platform :ios, '10.0'
+  pod 'MORichNotification', :path => '../../'
+end
+

@@ -1,0 +1,662 @@
+BCSymbolMap Version: 2.0
++[MOEventsHandler sharedInstance]
+___33+[MOEventsHandler sharedInstance]_block_invoke
+-[MOEventsHandler init]
+-[MOEventsHandler applicationEnteredForeground:]
+-[MOEventsHandler applicationEnteredBackground:]
+-[MOEventsHandler initiateTimer]
+___32-[MOEventsHandler initiateTimer]_block_invoke
+___copy_helper_block_e8_20s
+___destroy_helper_block_e8_20s
+-[MOEventsHandler stopPeriodicSyncTimer]
+___40-[MOEventsHandler stopPeriodicSyncTimer]_block_invoke
+___copy_helper_block_e4_20s
+___destroy_helper_block_e4_20s
+-[MOEventsHandler periodicSync]
+-[MOEventsHandler trackEvent:andPayload:]
+-[MOEventsHandler trackEvent:builderPayload:withCompletionBlock:]
+___65-[MOEventsHandler trackEvent:builderPayload:withCompletionBlock:]_block_invoke
+___65-[MOEventsHandler trackEvent:builderPayload:withCompletionBlock:]_block_invoke_2
+___65-[MOEventsHandler trackEvent:builderPayload:withCompletionBlock:]_block_invoke_3
+___copy_helper_block_e4_20s24s28s32b
+___destroy_helper_block_e4_20s24s28s32s
+-[MOEventsHandler shouldEventBeTrackedWithName:andPayload:]
+-[MOEventsHandler shouldEventSkippedFromDataOptOut:]
+-[MOEventsHandler getAnalyticsWhitelistedEvents]
+-[MOEventsHandler getEventDictForEvent:andPayloadBuilder:]
+-[MOEventsHandler checkForTriggersForEvent:andEventDict:]
+-[MOEventsHandler addEventToViewInfoWithEventDict:]
+-[MOEventsHandler flushWithCompletionBlock:]
+___44-[MOEventsHandler flushWithCompletionBlock:]_block_invoke
+___copy_helper_block_e4_20b
+-[MOEventsHandler reportAddPayloadForBatchInfo:]
+-[MOEventsHandler flushEventsInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]
+___94-[MOEventsHandler flushEventsInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]_block_invoke
+___copy_helper_block_e4_20s24s28s32s36b
+___destroy_helper_block_e4_20s24s28s32s36s
+-[MOEventsHandler synchronousFlushInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___99-[MOEventsHandler synchronousFlushInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]_block_invoke
+___99-[MOEventsHandler synchronousFlushInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]_block_invoke_2
+___copy_helper_block_e4_20s24s28s32b36r40r44r48r
+___destroy_helper_block_e4_20s24s28s32s36r40r44r48r
+-[MOEventsHandler flushAttemptCompletedInBackground:andForReset:]
+-[MOEventsHandler setReportsResetInvocationInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]
+-[MOEventsHandler getBatchesWithViewsArray:]
+-[MOEventsHandler disablePeriodicFlush]
+-[MOEventsHandler setFlushInterval:]
+-[MOEventsHandler cleanUp]
+-[MOEventsHandler clearEventsdata]
+-[MOEventsHandler eventsPlistFilePath]
+-[MOEventsHandler writeEvents:ToFileWithBatchID:]
+-[MOEventsHandler removeEventsPlistFile]
+-[MOEventsHandler syncToServerFromDumpFile]
+___43-[MOEventsHandler syncToServerFromDumpFile]_block_invoke
+___copy_helper_block_e4_20s24r28r
+___destroy_helper_block_e4_20s24r28r
+-[MOEventsHandler getEventsFromDumpFile]
+-[MOEventsHandler oldDatFilePath]
+-[MOEventsHandler removeDatFile]
+-[MOEventsHandler checkIfFileExists]
+-[MOEventsHandler updateSDKWhiteListedEvents:]
+-[MOEventsHandler bgTask]
+-[MOEventsHandler setBgTask:]
+-[MOEventsHandler syncInProgress]
+-[MOEventsHandler setSyncInProgress:]
+-[MOEventsHandler periodicFlushDisabled]
+-[MOEventsHandler setPeriodicFlushDisabled:]
+-[MOEventsHandler periodicFlushDuration]
+-[MOEventsHandler setPeriodicFlushDuration:]
+-[MOEventsHandler periodicFlushTimer]
+-[MOEventsHandler setPeriodicFlushTimer:]
+-[MOEventsHandler resetInvocation]
+-[MOEventsHandler setResetInvocation:]
+-[MOEventsHandler reports_serial_queue]
+-[MOEventsHandler setReports_serial_queue:]
+-[MOEventsHandler viewsInfoArray]
+-[MOEventsHandler setViewsInfoArray:]
+-[MOEventsHandler batches]
+-[MOEventsHandler setBatches:]
+-[MOEventsHandler eventsBatchCountTreshold]
+-[MOEventsHandler setEventsBatchCountTreshold:]
+-[MOEventsHandler sdkWhitelistedEvents]
+-[MOEventsHandler setSdkWhitelistedEvents:]
+-[MOEventsHandler .cxx_destruct]
+_sharedInstance.onceToken
+_sharedInstance.instance
+___block_descriptor_20_e5_v4?0l
+___block_literal_global
+___block_descriptor_36_e8_20s_e5_v4?0l
+___block_descriptor_24_e4_20s_e5_v4?0l
+___block_descriptor_36_e4_20s24s28s32bs_e5_v4?0l
+___block_descriptor_24_e4_20bs_e10_v12?0c4c8l
+___block_descriptor_40_e4_20s24s28s32s36bs_e5_v4?0l
+___block_descriptor_53_e4_20s24s28s32bs36r40r44r48r_e5_v4?0l
+___block_descriptor_56_e4_20s24s28s32bs36r40r44r48r_e24_v12?0c4"NSDictionary"8l
+___block_descriptor_32_e4_20s24r28r_e24_v12?0c4"NSDictionary"8l
+_OBJC_IVAR_$_MOEventsHandler._syncInProgress
+_OBJC_IVAR_$_MOEventsHandler._periodicFlushDisabled
+_OBJC_IVAR_$_MOEventsHandler._bgTask
+_OBJC_IVAR_$_MOEventsHandler._periodicFlushDuration
+_OBJC_IVAR_$_MOEventsHandler._periodicFlushTimer
+_OBJC_IVAR_$_MOEventsHandler._resetInvocation
+_OBJC_IVAR_$_MOEventsHandler._reports_serial_queue
+_OBJC_IVAR_$_MOEventsHandler._viewsInfoArray
+_OBJC_IVAR_$_MOEventsHandler._batches
+_OBJC_IVAR_$_MOEventsHandler._eventsBatchCountTreshold
+_OBJC_IVAR_$_MOEventsHandler._sdkWhitelistedEvents
+Apple clang version 11.0.0 (clang-1100.0.33.12)
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOAnalytics/EventManagement/MOEventsHandler.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage
+MOAnalytics/EventManagement/MOEventsHandler.m
+MOAnalytics/EventManagement/MOEventsHandler.h
+__destroy_helper_block_e4_20s24r28r
+__copy_helper_block_e4_20s24r28r
+__43-[MOEventsHandler syncToServerFromDumpFile]_block_invoke
+__destroy_helper_block_e4_20s24s28s32s36r40r44r48r
+__copy_helper_block_e4_20s24s28s32b36r40r44r48r
+__99-[MOEventsHandler synchronousFlushInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]_block_invoke_2
+__99-[MOEventsHandler synchronousFlushInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]_block_invoke
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
+__destroy_helper_block_e4_20s24s28s32s36s
+__copy_helper_block_e4_20s24s28s32s36b
+__94-[MOEventsHandler flushEventsInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]_block_invoke
+__copy_helper_block_e4_20b
+__44-[MOEventsHandler flushWithCompletionBlock:]_block_invoke
+__destroy_helper_block_e4_20s24s28s32s
+__copy_helper_block_e4_20s24s28s32b
+__65-[MOEventsHandler trackEvent:builderPayload:withCompletionBlock:]_block_invoke_3
+__65-[MOEventsHandler trackEvent:builderPayload:withCompletionBlock:]_block_invoke_2
+__65-[MOEventsHandler trackEvent:builderPayload:withCompletionBlock:]_block_invoke
+__destroy_helper_block_e4_20s
+__copy_helper_block_e4_20s
+__40-[MOEventsHandler stopPeriodicSyncTimer]_block_invoke
+__destroy_helper_block_e8_20s
+__copy_helper_block_e8_20s
+__32-[MOEventsHandler initiateTimer]_block_invoke
+__33+[MOEventsHandler sharedInstance]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/once.h
+-[MOUserAttribute initWithAttribute:andValue:]
+-[MOUserAttribute initWithCoder:]
+-[MOUserAttribute encodeWithCoder:]
+-[MOUserAttribute shouldUpdateAttributeWithNewValue:]
+-[MOUserAttribute attributeName]
+-[MOUserAttribute setAttributeName:]
+-[MOUserAttribute attributeValue]
+-[MOUserAttribute setAttributeValue:]
+-[MOUserAttribute lastTracked]
+-[MOUserAttribute setLastTracked:]
+-[MOUserAttribute .cxx_destruct]
+-[MOUserAttributeData init]
+-[MOUserAttributeData initWithCoder:]
+-[MOUserAttributeData encodeWithCoder:]
+-[MOUserAttributeData getIdentifierDict]
+-[MOUserAttributeData getUserAttrUniqueID]
+-[MOUserAttributeData saveAttribute:withValue:]
+-[MOUserAttributeData userAttributesArray]
+-[MOUserAttributeData setUserAttributesArray:]
+-[MOUserAttributeData .cxx_destruct]
+__OBJC_PROTOCOL_$_NSCoding
+__OBJC_LABEL_PROTOCOL_$_NSCoding
+_OBJC_IVAR_$_MOUserAttribute._attributeName
+_OBJC_IVAR_$_MOUserAttribute._attributeValue
+_OBJC_IVAR_$_MOUserAttribute._lastTracked
+_OBJC_IVAR_$_MOUserAttributeData._userAttributesArray
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOAnalytics/UserAttributes/MOUserAttribute.m
+MOAnalytics/UserAttributes/MOUserAttribute.m
+MOAnalytics/UserAttributes/MOUserAttribute.h
+-[MOProperties initWithAttributes:]
+-[MOProperties init]
+-[MOProperties addAttribute:withName:]
+-[MOProperties addLocationAttribute:withName:]
+-[MOProperties addDateAttribute:withName:]
+-[MOProperties addDateISOStringAttribute:withName:]
+-[MOProperties addDateEpochAttribute:withName:]
+-[MOProperties setNonInteractive]
+-[MOProperties checkNonInteractive]
+-[MOProperties getPayloadBuilder]
+-[MOProperties payloadBuilder]
+-[MOProperties setPayloadBuilder:]
+-[MOProperties .cxx_destruct]
+_OBJC_IVAR_$_MOProperties._payloadBuilder
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOAnalytics/Utils/PayloadBuilder/MOProperties.m
+MOAnalytics/Utils/PayloadBuilder/MOProperties.m
++[MOUserAttributesHandler sharedHandler]
+___40+[MOUserAttributesHandler sharedHandler]_block_invoke
+-[MOUserAttributesHandler init]
+-[MOUserAttributesHandler applicationInActive:]
+-[MOUserAttributesHandler migrateLegacyPlistValuesToNewFile]
+-[MOUserAttributesHandler setUserAttributeUniqueID:]
+-[MOUserAttributesHandler forceResetUserWithNewUserAttributeUniqueID:]
+___70-[MOUserAttributesHandler forceResetUserWithNewUserAttributeUniqueID:]_block_invoke
+___70-[MOUserAttributesHandler forceResetUserWithNewUserAttributeUniqueID:]_block_invoke_2
+___70-[MOUserAttributesHandler forceResetUserWithNewUserAttributeUniqueID:]_block_invoke_3
+-[MOUserAttributesHandler updateUserAttributeUniqueID:]
+-[MOUserAttributesHandler setUserAttributeValue:withName:checkStorage:]
+-[MOUserAttributesHandler setUserAttributeTimestamp:forKey:]
+-[MOUserAttributesHandler setUserAttributeLocationLatitude:longitude:forKey:]
+-[MOUserAttributesHandler getIdentifierDictionary]
+-[MOUserAttributesHandler clearUserAttributesData]
+-[MOUserAttributesHandler clearUserDefaultsOnLogout]
+-[MOUserAttributesHandler getFilePathForUserAttribute]
+-[MOUserAttributesHandler persistUserAttributesData]
+-[MOUserAttributesHandler isAValidUserAttributeValue:forKey:]
+-[MOUserAttributesHandler getUserAttributesArray]
+-[MOUserAttributesHandler trackLocale]
+-[MOUserAttributesHandler userAttributePlistFilePath]
+-[MOUserAttributesHandler checkIfUserAttributePlistExists]
+-[MOUserAttributesHandler contentOfUserAttributePlist]
+-[MOUserAttributesHandler userAttributeRemovePlistFile]
+-[MOUserAttributesHandler getMoEUserUniqueIDFromPlist]
+-[MOUserAttributesHandler getSegAnonymousIDFromPlist]
+-[MOUserAttributesHandler userAttributeData]
+-[MOUserAttributesHandler setUserAttributeData:]
+-[MOUserAttributesHandler .cxx_destruct]
+___clang_at_available_requires_core_foundation_framework
+___clang_at_available_requires_core_foundation_framework.cold.1
+_sharedHandler.onceToken
+_sharedHandler.instance
+___block_descriptor_20_e10_v12?0c4c8l
+___block_literal_global.109
+___block_literal_global.114
+_OBJC_IVAR_$_MOUserAttributesHandler._userAttributeData
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOAnalytics/UserAttributes/MOUserAttributesHandler.m
+MOAnalytics/UserAttributes/MOUserAttributesHandler.m
+__70-[MOUserAttributesHandler forceResetUserWithNewUserAttributeUniqueID:]_block_invoke_3
+__70-[MOUserAttributesHandler forceResetUserWithNewUserAttributeUniqueID:]_block_invoke_2
+__70-[MOUserAttributesHandler forceResetUserWithNewUserAttributeUniqueID:]_block_invoke
+__40+[MOUserAttributesHandler sharedHandler]_block_invoke
+-[MOPayloadBuilder initWithDictionary:]
+-[MOPayloadBuilder init]
+-[MOPayloadBuilder checkNonInteractive]
+-[MOPayloadBuilder setNonInteractive]
+-[MOPayloadBuilder setDate:forKey:]
+-[MOPayloadBuilder setDateISOString:forKey:]
+-[MOPayloadBuilder setTimeStamp:forKey:]
+-[MOPayloadBuilder setLocationLat:lng:forKey:]
+-[MOPayloadBuilder eventDict]
+-[MOPayloadBuilder setEventDict:]
+-[MOPayloadBuilder timeStampArray]
+-[MOPayloadBuilder setTimeStampArray:]
+-[MOPayloadBuilder locationArray]
+-[MOPayloadBuilder setLocationArray:]
+-[MOPayloadBuilder isNonInteractive]
+-[MOPayloadBuilder setIsNonInteractive:]
+-[MOPayloadBuilder .cxx_destruct]
+_OBJC_IVAR_$_MOPayloadBuilder._isNonInteractive
+_OBJC_IVAR_$_MOPayloadBuilder._eventDict
+_OBJC_IVAR_$_MOPayloadBuilder._timeStampArray
+_OBJC_IVAR_$_MOPayloadBuilder._locationArray
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOAnalytics/Utils/PayloadBuilder/MOPayloadBuilder.m
+MOAnalytics/Utils/PayloadBuilder/MOPayloadBuilder.m
+MOAnalytics/Utils/PayloadBuilder/MOPayloadBuilder.h
++[MODeviceAttributesHandler sharedInstance]
+___43+[MODeviceAttributesHandler sharedInstance]_block_invoke
+-[MODeviceAttributesHandler setDeviceAttribute:forKey:]
+-[MODeviceAttributesHandler setDeviceModelAttributes]
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOAnalytics/DeviceAttribute/MODeviceAttributesHandler.m
+MOAnalytics/DeviceAttribute/MODeviceAttributesHandler.m
+__43+[MODeviceAttributesHandler sharedInstance]_block_invoke
++[MOAppDelegateAnalyticsProxy canSwizzleMethods]
++[MOAppDelegateAnalyticsProxy sharedProxy]
+___42+[MOAppDelegateAnalyticsProxy sharedProxy]_block_invoke
+-[MOAppDelegateAnalyticsProxy init]
+-[MOAppDelegateAnalyticsProxy dealloc]
+-[MOAppDelegateAnalyticsProxy swizzleMethodsIfPossible]
+-[MOAppDelegateAnalyticsProxy unswizzleAllMethods]
+-[MOAppDelegateAnalyticsProxy saveOriginalImplementation:forSelector:]
+-[MOAppDelegateAnalyticsProxy originalImplementationForSelector:]
+-[MOAppDelegateAnalyticsProxy trackSwizzledSelector:ofClass:]
+-[MOAppDelegateAnalyticsProxy removeImplementationForSelector:]
+-[MOAppDelegateAnalyticsProxy swizzleSelector:inClass:withImplementation:inProtocol:]
+-[MOAppDelegateAnalyticsProxy unswizzleSelector:inClass:]
+-[MOAppDelegateAnalyticsProxy nonExistantMethodImplementationForClass:]
+-[MOAppDelegateAnalyticsProxy application:openURL:sourceApplication:annotation:]
+-[MOAppDelegateAnalyticsProxy application:openURL:options:]
+-[MOAppDelegateAnalyticsProxy application:continueUserActivity:restorationHandler:]
+-[MOAppDelegateAnalyticsProxy originalAppDelegateImps]
+-[MOAppDelegateAnalyticsProxy setOriginalAppDelegateImps:]
+-[MOAppDelegateAnalyticsProxy swizzledSelectorsByClass]
+-[MOAppDelegateAnalyticsProxy setSwizzledSelectorsByClass:]
+-[MOAppDelegateAnalyticsProxy didSwizzleMethods]
+-[MOAppDelegateAnalyticsProxy setDidSwizzleMethods:]
+-[MOAppDelegateAnalyticsProxy appDelegateInterceptorID]
+-[MOAppDelegateAnalyticsProxy setAppDelegateInterceptorID:]
+-[MOAppDelegateAnalyticsProxy .cxx_destruct]
+_sharedProxy.proxy
+_sharedProxy.onceToken
+__OBJC_PROTOCOL_$_NSObject
+__OBJC_LABEL_PROTOCOL_$_NSObject
+__OBJC_PROTOCOL_$_UIApplicationDelegate
+__OBJC_LABEL_PROTOCOL_$_UIApplicationDelegate
+_OBJC_IVAR_$_MOAppDelegateAnalyticsProxy._didSwizzleMethods
+_OBJC_IVAR_$_MOAppDelegateAnalyticsProxy._originalAppDelegateImps
+_OBJC_IVAR_$_MOAppDelegateAnalyticsProxy._swizzledSelectorsByClass
+_OBJC_IVAR_$_MOAppDelegateAnalyticsProxy._appDelegateInterceptorID
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOAnalytics/Utils/AppDelegateSwizzler/MOAppDelegateAnalyticsProxy.m
+MOAnalytics/Utils/AppDelegateSwizzler/MOAppDelegateAnalyticsProxy.m
+getNamedPropertyFromObject
+__42+[MOAppDelegateAnalyticsProxy sharedProxy]_block_invoke
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOAnalytics/Constants/MOAnalyticsConstants.m
+-[MOEventCondition initWithDictionary:]
+-[MOEventCondition getFilterOperator:]
+-[MOEventCondition checkIfAttributeConditionSatisfiedForEvent:andAttributes:]
+-[MOEventCondition eventName]
+-[MOEventCondition setEventName:]
+-[MOEventCondition filterOperator]
+-[MOEventCondition setFilterOperator:]
+-[MOEventCondition filters]
+-[MOEventCondition setFilters:]
+-[MOEventCondition .cxx_destruct]
+_OBJC_IVAR_$_MOEventCondition._eventName
+_OBJC_IVAR_$_MOEventCondition._filterOperator
+_OBJC_IVAR_$_MOEventCondition._filters
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOAnalytics/Utils/MOConditionEvaluator/MOEventCondition.m
+MOAnalytics/Utils/MOConditionEvaluator/MOEventCondition.m
+MOAnalytics/Utils/MOConditionEvaluator/MOEventCondition.h
+-[MOEventFilter initWithDictionary:]
+-[MOEventFilter getFilterValueType:]
+-[MOEventFilter getDataType:]
+-[MOEventFilter getOperator:]
+-[MOEventFilter checkFilterSatisfiedForAttrValue:]
+-[MOEventFilter boolAttrCheckWithValue:]
+-[MOEventFilter doubleAttrCheckWithValue:]
+-[MOEventFilter getDateStringFromDate:]
+-[MOEventFilter getDateFromISOString:]
+-[MOEventFilter dateByAddingDays:toDate:]
+-[MOEventFilter getDateWithTimeZero:]
+-[MOEventFilter getDateForFilterWithVal:]
+-[MOEventFilter dateAttrCheckWithValue:]
+-[MOEventFilter checkDateBetweenOperationWithAttributeValue:withLowerFilterVal:andUpperFilterVal:]
+-[MOEventFilter stringAttrCheckWithValue:]
+-[MOEventFilter stringConditionCheckWithArrayConditionValue:andAttrvalue:]
+-[MOEventFilter stringConditionCheckWithStringConditionValue:andArrayAttrvalue:]
+-[MOEventFilter stringConditionCheckWithStringConditionValue:andStringAttrvalue:]
+-[MOEventFilter condAttrName]
+-[MOEventFilter setCondAttrName:]
+-[MOEventFilter condValue]
+-[MOEventFilter setCondValue:]
+-[MOEventFilter filterOperator]
+-[MOEventFilter setFilterOperator:]
+-[MOEventFilter filterValueType]
+-[MOEventFilter setFilterValueType:]
+-[MOEventFilter isNegate]
+-[MOEventFilter setIsNegate:]
+-[MOEventFilter isCaseSensitive]
+-[MOEventFilter setIsCaseSensitive:]
+-[MOEventFilter dataType]
+-[MOEventFilter setDataType:]
+-[MOEventFilter .cxx_destruct]
+_OBJC_IVAR_$_MOEventFilter._condAttrName
+_OBJC_IVAR_$_MOEventFilter._condValue
+_OBJC_IVAR_$_MOEventFilter._filterOperator
+_OBJC_IVAR_$_MOEventFilter._filterValueType
+_OBJC_IVAR_$_MOEventFilter._isNegate
+_OBJC_IVAR_$_MOEventFilter._isCaseSensitive
+_OBJC_IVAR_$_MOEventFilter._dataType
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOAnalytics/Utils/MOConditionEvaluator/MOEventFilter.m
+MOAnalytics/Utils/MOConditionEvaluator/MOEventFilter.m
+MOAnalytics/Utils/MOConditionEvaluator/MOEventFilter.h
++[MOAnalytics sharedInstance]
+___29+[MOAnalytics sharedInstance]_block_invoke
+-[MOAnalytics init]
+-[MOAnalytics initializeAnalytics]
+___34-[MOAnalytics initializeAnalytics]_block_invoke
+-[MOAnalytics trackSDKVersion]
+-[MOAnalytics configureAppDelegateProxy]
+-[MOAnalytics addObserverForApplicationLifeCycle]
+-[MOAnalytics applicationIsActive:]
+-[MOAnalytics applicationIsInactive:]
+-[MOAnalytics applicationEnteredForeground:]
+-[MOAnalytics applicationEnteredBackground:]
+___44-[MOAnalytics applicationEnteredBackground:]_block_invoke
+___44-[MOAnalytics applicationEnteredBackground:]_block_invoke_2
+-[MOAnalytics updateModules]
+___28-[MOAnalytics updateModules]_block_invoke
+-[MOAnalytics sessionStarted]
+-[MOAnalytics syncOnMoEAppExitWithApplication:]
+___47-[MOAnalytics syncOnMoEAppExitWithApplication:]_block_invoke
+___47-[MOAnalytics syncOnMoEAppExitWithApplication:]_block_invoke_2
+___47-[MOAnalytics syncOnMoEAppExitWithApplication:]_block_invoke_3
+-[MOAnalytics deviceUpdateOnSessionTerminationWithApplication:]
+___63-[MOAnalytics deviceUpdateOnSessionTerminationWithApplication:]_block_invoke
+___63-[MOAnalytics deviceUpdateOnSessionTerminationWithApplication:]_block_invoke_2
+___63-[MOAnalytics deviceUpdateOnSessionTerminationWithApplication:]_block_invoke_3
+-[MOAnalytics endBGTaskWithIdentifier:]
+-[MOAnalytics syncOnSessionTerminationWithApplication:]
+___55-[MOAnalytics syncOnSessionTerminationWithApplication:]_block_invoke
+___55-[MOAnalytics syncOnSessionTerminationWithApplication:]_block_invoke_2
+___55-[MOAnalytics syncOnSessionTerminationWithApplication:]_block_invoke_3
+-[MOAnalytics initNewUser]
+___26-[MOAnalytics initNewUser]_block_invoke
+___copy_helper_block_e4_20w
+___destroy_helper_block_e4_20w
+-[MOAnalytics clearUserInfo]
+-[MOAnalytics trackReinstall]
+-[MOAnalytics setDeviceModelAttributes]
+-[MOAnalytics trackAdvertisingIdentifier]
+-[MOAnalytics trackEvent:andPayload:]
+___37-[MOAnalytics trackEvent:andPayload:]_block_invoke
+___copy_helper_block_e4_20s24s
+___destroy_helper_block_e4_20s24s
+-[MOAnalytics trackEvent:builderPayload:]
+___41-[MOAnalytics trackEvent:builderPayload:]_block_invoke
+-[MOAnalytics trackEvent:withProperties:]
+-[MOAnalytics setAlias:]
+-[MOAnalytics trackUserPushPreference:]
+-[MOAnalytics setUserAttribute:forKey:]
+___39-[MOAnalytics setUserAttribute:forKey:]_block_invoke
+-[MOAnalytics setUserAttributeTimestamp:forKey:]
+___48-[MOAnalytics setUserAttributeTimestamp:forKey:]_block_invoke
+-[MOAnalytics setUserAttributeDate:forKey:]
+___43-[MOAnalytics setUserAttributeDate:forKey:]_block_invoke
+-[MOAnalytics setUserAttributeISODateString:forKey:]
+___52-[MOAnalytics setUserAttributeISODateString:forKey:]_block_invoke
+-[MOAnalytics setUserAttributeLocationLatitude:longitude:forKey:]
+___65-[MOAnalytics setUserAttributeLocationLatitude:longitude:forKey:]_block_invoke
+-[MOAnalytics resetUser]
+-[MOAnalytics resetUserWithCompletionBlock:]
+___44-[MOAnalytics resetUserWithCompletionBlock:]_block_invoke
+___44-[MOAnalytics resetUserWithCompletionBlock:]_block_invoke_2
+___44-[MOAnalytics resetUserWithCompletionBlock:]_block_invoke_3
+-[MOAnalytics syncNow]
+-[MOAnalytics flushWithCompletionBlock:]
+___40-[MOAnalytics flushWithCompletionBlock:]_block_invoke
+___40-[MOAnalytics flushWithCompletionBlock:]_block_invoke_2
+-[MOAnalytics disablePeriodicFlush]
+-[MOAnalytics setFlushInterval:]
+-[MOAnalytics appStatus:]
+-[MOAnalytics smartTriggerForAppStatus:]
+-[MOAnalytics processURL:]
+-[MOAnalytics pushTokenUpdated]
+___31-[MOAnalytics pushTokenUpdated]_block_invoke
+-[MOAnalytics updateDeviceWithCompletion:]
+___42-[MOAnalytics updateDeviceWithCompletion:]_block_invoke
+-[MOAnalytics getDeviceAddRequestBody]
+-[MOAnalytics trackLocale]
+-[MOAnalytics updateSourcesForCurrentSession:]
+-[MOAnalytics getTrackedIDFA]
+-[MOAnalytics updateOptOutEvents:]
+-[MOAnalytics optOutOfDataTracking:]
+___36-[MOAnalytics optOutOfDataTracking:]_block_invoke
+-[MOAnalytics setPushGDPROptOutStatus:forKey:]
+-[MOAnalytics inappTriggerDelegate]
+-[MOAnalytics setInappTriggerDelegate:]
+-[MOAnalytics messagingTriggerDelegate]
+-[MOAnalytics setMessagingTriggerDelegate:]
+-[MOAnalytics reportsBGTask]
+-[MOAnalytics setReportsBGTask:]
+-[MOAnalytics deviceUpdateBGTask]
+-[MOAnalytics setDeviceUpdateBGTask:]
+-[MOAnalytics moeAppExitBGTask]
+-[MOAnalytics setMoeAppExitBGTask:]
+-[MOAnalytics .cxx_destruct]
+___block_literal_global.117
+___block_descriptor_24_e4_20s_e10_v12?0c4c8l
+___block_descriptor_24_e4_20s_e7_v8?0c4l
+___block_literal_global.168
+___block_descriptor_24_e4_20w_e7_v8?0c4l
+___block_descriptor_28_e4_20s24s_e5_v4?0l
+___block_descriptor_44_e8_20s_e5_v4?0l
+___block_descriptor_24_e4_20bs_e5_v4?0l
+___block_descriptor_24_e4_20bs_e7_v8?0c4l
+___block_descriptor_20_e7_v8?0c4l
+___block_literal_global.272
+___block_descriptor_28_e4_20bs_e24_v12?0c4"NSDictionary"8l
+___block_descriptor_25_e4_20w_e7_v8?0c4l
+_OBJC_IVAR_$_MOAnalytics._inappTriggerDelegate
+_OBJC_IVAR_$_MOAnalytics._messagingTriggerDelegate
+_OBJC_IVAR_$_MOAnalytics._reportsBGTask
+_OBJC_IVAR_$_MOAnalytics._deviceUpdateBGTask
+_OBJC_IVAR_$_MOAnalytics._moeAppExitBGTask
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOAnalytics/MOAnalytics.m
+MOAnalytics/MOAnalytics.m
+MOAnalytics/MOAnalytics.h
+__36-[MOAnalytics optOutOfDataTracking:]_block_invoke
+__42-[MOAnalytics updateDeviceWithCompletion:]_block_invoke
+__31-[MOAnalytics pushTokenUpdated]_block_invoke
+__40-[MOAnalytics flushWithCompletionBlock:]_block_invoke_2
+__40-[MOAnalytics flushWithCompletionBlock:]_block_invoke
+__44-[MOAnalytics resetUserWithCompletionBlock:]_block_invoke_3
+__44-[MOAnalytics resetUserWithCompletionBlock:]_block_invoke_2
+__44-[MOAnalytics resetUserWithCompletionBlock:]_block_invoke
+__65-[MOAnalytics setUserAttributeLocationLatitude:longitude:forKey:]_block_invoke
+__52-[MOAnalytics setUserAttributeISODateString:forKey:]_block_invoke
+__43-[MOAnalytics setUserAttributeDate:forKey:]_block_invoke
+__48-[MOAnalytics setUserAttributeTimestamp:forKey:]_block_invoke
+__39-[MOAnalytics setUserAttribute:forKey:]_block_invoke
+__41-[MOAnalytics trackEvent:builderPayload:]_block_invoke
+__destroy_helper_block_e4_20s24s
+__copy_helper_block_e4_20s24s
+__37-[MOAnalytics trackEvent:andPayload:]_block_invoke
+__destroy_helper_block_e4_20w
+__copy_helper_block_e4_20w
+__26-[MOAnalytics initNewUser]_block_invoke
+__55-[MOAnalytics syncOnSessionTerminationWithApplication:]_block_invoke_3
+__55-[MOAnalytics syncOnSessionTerminationWithApplication:]_block_invoke_2
+__55-[MOAnalytics syncOnSessionTerminationWithApplication:]_block_invoke
+__63-[MOAnalytics deviceUpdateOnSessionTerminationWithApplication:]_block_invoke_3
+__63-[MOAnalytics deviceUpdateOnSessionTerminationWithApplication:]_block_invoke_2
+__63-[MOAnalytics deviceUpdateOnSessionTerminationWithApplication:]_block_invoke
+__47-[MOAnalytics syncOnMoEAppExitWithApplication:]_block_invoke_3
+__47-[MOAnalytics syncOnMoEAppExitWithApplication:]_block_invoke_2
+__47-[MOAnalytics syncOnMoEAppExitWithApplication:]_block_invoke
+__28-[MOAnalytics updateModules]_block_invoke
+__44-[MOAnalytics applicationEnteredBackground:]_block_invoke_2
+__44-[MOAnalytics applicationEnteredBackground:]_block_invoke
+__34-[MOAnalytics initializeAnalytics]_block_invoke
+__29+[MOAnalytics sharedInstance]_block_invoke
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOAnalytics/Constants/MOHelperConstants.m
+-[MOSource initMoESourceWithPushPayload:]
+-[MOSource initSourceWithPushPayload:]
+-[MOSource initSourceWithURL:]
+-[MOSource initWithCoder:]
+-[MOSource encodeWithCoder:]
+-[MOSource setSourceParamsFromInfoDict:]
+-[MOSource getSourceNameFromDict:]
+-[MOSource getCampaignIDFromDict:]
+-[MOSource getCampaignNameFromDict:]
+-[MOSource getMediumFromDict:]
+-[MOSource getTermFromDict:]
+-[MOSource getContentFromDict:]
+-[MOSource getExtraDictFromInfoDict:]
+-[MOSource isEqual:]
+-[MOSource isValidSource]
+-[MOSource getSourceInfoDict]
+-[MOSource sourceName]
+-[MOSource setSourceName:]
+-[MOSource campaignID]
+-[MOSource setCampaignID:]
+-[MOSource campaignName]
+-[MOSource setCampaignName:]
+-[MOSource medium]
+-[MOSource setMedium:]
+-[MOSource term]
+-[MOSource setTerm:]
+-[MOSource content]
+-[MOSource setContent:]
+-[MOSource sourceURL]
+-[MOSource setSourceURL:]
+-[MOSource extras]
+-[MOSource setExtras:]
+-[MOSource .cxx_destruct]
+_OBJC_IVAR_$_MOSource._sourceName
+_OBJC_IVAR_$_MOSource._campaignID
+_OBJC_IVAR_$_MOSource._campaignName
+_OBJC_IVAR_$_MOSource._medium
+_OBJC_IVAR_$_MOSource._term
+_OBJC_IVAR_$_MOSource._content
+_OBJC_IVAR_$_MOSource._sourceURL
+_OBJC_IVAR_$_MOSource._extras
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOAnalytics/SessionAndSource/MOSource.m
+MOAnalytics/SessionAndSource/MOSource.m
+MOAnalytics/SessionAndSource/MOSource.h
+-[MOSessionInfo init]
+-[MOSessionInfo initWithCoder:]
+-[MOSessionInfo encodeWithCoder:]
+-[MOSessionInfo currentSession]
+-[MOSessionInfo setCurrentSession:]
+-[MOSessionInfo .cxx_destruct]
+-[MOSession initNewSessionWithSources:andIsBackgroundInitiated:]
+-[MOSession initWithCoder:]
+-[MOSession encodeWithCoder:]
+-[MOSession updateLastInteractionTime]
+-[MOSession generateSessionID]
+-[MOSession getSessionInfoDict]
+-[MOSession updateSessionWithSources:]
+-[MOSession sessionID]
+-[MOSession setSessionID:]
+-[MOSession sessionSources]
+-[MOSession setSessionSources:]
+-[MOSession sessionStartTime]
+-[MOSession setSessionStartTime:]
+-[MOSession sessionLastInteractionTime]
+-[MOSession setSessionLastInteractionTime:]
+-[MOSession backgroundInitiated]
+-[MOSession setBackgroundInitiated:]
+-[MOSession .cxx_destruct]
+_OBJC_IVAR_$_MOSessionInfo._currentSession
+_OBJC_IVAR_$_MOSession._backgroundInitiated
+_OBJC_IVAR_$_MOSession._sessionID
+_OBJC_IVAR_$_MOSession._sessionSources
+_OBJC_IVAR_$_MOSession._sessionStartTime
+_OBJC_IVAR_$_MOSession._sessionLastInteractionTime
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOAnalytics/SessionAndSource/MOSession.m
+MOAnalytics/SessionAndSource/MOSession.m
+MOAnalytics/SessionAndSource/MOSession.h
++[MOSessionManager sharedSessionManager]
+___40+[MOSessionManager sharedSessionManager]_block_invoke
+-[MOSessionManager init]
+-[MOSessionManager applicationEnteredForeground:]
+-[MOSessionManager applicationEnteredBackground:]
+-[MOSessionManager applicationInActive:]
+-[MOSessionManager initiateNewSessionWithSources:andCompletionBlock:]
+___69-[MOSessionManager initiateNewSessionWithSources:andCompletionBlock:]_block_invoke
+___copy_helper_block_e4_20b24r
+___destroy_helper_block_e4_20s24r
+-[MOSessionManager isAppInBackgroundState]
+-[MOSessionManager reinitiateSessionOnLogout]
+-[MOSessionManager checkSessionForEvent:withPayload:withCompletionBlock:]
+___73-[MOSessionManager checkSessionForEvent:withPayload:withCompletionBlock:]_block_invoke
+-[MOSessionManager isCurrentSessionSourceSameAs:]
+-[MOSessionManager hasCurrentSessionExpired]
+-[MOSessionManager getSessionInactiveDuration]
+-[MOSessionManager appOpenedWithSourceArray:]
+___45-[MOSessionManager appOpenedWithSourceArray:]_block_invoke
+___45-[MOSessionManager appOpenedWithSourceArray:]_block_invoke_2
+-[MOSessionManager updateSourcesForCurrentSession:]
+-[MOSessionManager getFilePathForSessionInfo]
+-[MOSessionManager getCurrentSessionInfoDict]
+-[MOSessionManager getCurrentSessionSourceInfoArray]
+-[MOSessionManager saveSessionInfo]
++[MOSessionManager processURL:]
+-[MOSessionManager isAppInBackground]
+-[MOSessionManager setIsAppInBackground:]
+-[MOSessionManager sessionInfo]
+-[MOSessionManager setSessionInfo:]
+-[MOSessionManager .cxx_destruct]
+_sharedSessionManager.onceToken
+_sharedSessionManager.instance
+___block_descriptor_28_e4_20bs24r_e7_v8?0c4l
+___block_descriptor_24_e4_20bs_e18_v8?0"MOSession"4l
+___block_descriptor_20_e18_v8?0"MOSession"4l
+___block_literal_global.116
+___block_literal_global.125
+_OBJC_IVAR_$_MOSessionManager._isAppInBackground
+_OBJC_IVAR_$_MOSessionManager._sessionInfo
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOAnalytics/SessionAndSource/MOSessionManager.m
+MOAnalytics/SessionAndSource/MOSessionManager.m
+MOAnalytics/SessionAndSource/MOSessionManager.h
+__45-[MOSessionManager appOpenedWithSourceArray:]_block_invoke_2
+__45-[MOSessionManager appOpenedWithSourceArray:]_block_invoke
+__73-[MOSessionManager checkSessionForEvent:withPayload:withCompletionBlock:]_block_invoke
+__destroy_helper_block_e4_20s24r
+__copy_helper_block_e4_20b24r
+__69-[MOSessionManager initiateNewSessionWithSources:andCompletionBlock:]_block_invoke
+__40+[MOSessionManager sharedSessionManager]_block_invoke
+-[MOGeoLocation initWithLatitude:andLongitude:]
+-[MOGeoLocation latitude]
+-[MOGeoLocation setLatitude:]
+-[MOGeoLocation longitude]
+-[MOGeoLocation setLongitude:]
+_OBJC_IVAR_$_MOGeoLocation._latitude
+_OBJC_IVAR_$_MOGeoLocation._longitude
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOAnalytics/Utils/PayloadBuilder/MOGeoLocation.m
+MOAnalytics/Utils/PayloadBuilder/MOGeoLocation.h
+MOAnalytics/Utils/PayloadBuilder/MOGeoLocation.m
++[MOAnalyticsUtils createBatchIdentifier]
++[MOAnalyticsUtils getRequestIDForPayload:]
++[MOAnalyticsUtils getDevicePreferencesDictionaryForReportsAPI:]
++[MOAnalyticsUtils getSignatureWithComponents:]
++[MOAnalyticsUtils sha1:]
++[MOAnalyticsUtils advertiserID]
++[MOAnalyticsUtils saveAdvertisingID:]
++[MOAnalyticsUtils getSavedAdvertisingID]
++[MOAnalyticsUtils isAppDelegateProxyConfigured]
++[MOAnalyticsUtils appDelegateProxyConfigured]
+_moAnalyticsAppDelegateProxyConfigured
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOAnalytics/Utils/MOAnalyticsUtils.m
+MOAnalytics/Utils/MOAnalyticsUtils.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/build/MoEngage.build/Release-iphoneos/MOAnalytics.build/DerivedSources/MOAnalytics_vers.c

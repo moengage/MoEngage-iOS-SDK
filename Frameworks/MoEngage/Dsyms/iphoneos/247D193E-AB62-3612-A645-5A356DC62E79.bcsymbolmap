@@ -1,0 +1,70 @@
+BCSymbolMap Version: 2.0
++[MoEngage sharedInstance]
+___26+[MoEngage sharedInstance]_block_invoke
+-[MoEngage initializeDevWithAppID:withLaunchOptions:]
+-[MoEngage initializeDevWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:]
+-[MoEngage initializeProdWithAppID:withLaunchOptions:]
+-[MoEngage initializeProdWithApiKey:inApplication:withLaunchOptions:openDeeplinkUrlAutomatically:]
+-[MoEngage initializeWithAppID:withLaunchOptions:]
+-[MoEngage syncNow]
+-[MoEngage flushWithCompletionBlock:]
+-[MoEngage disablePeriodicFlush]
+-[MoEngage setFlushInterval:]
+-[MoEngage trackEvent:andPayload:]
+-[MoEngage trackEvent:builderPayload:]
+-[MoEngage trackEvent:withProperties:]
+-[MoEngage setUserUniqueID:]
+-[MoEngage setAlias:]
+-[MoEngage setUserEmailID:]
+-[MoEngage setUserName:]
+-[MoEngage setUserFirstName:]
+-[MoEngage setUserLastName:]
+-[MoEngage setUserMobileNo:]
+-[MoEngage setUserGender:]
+-[MoEngage setUserDateOfBirth:]
+-[MoEngage setUserLocationLatitude:andLongitude:]
+-[MoEngage trackUserPushPreference:]
+-[MoEngage setUserAttribute:forKey:]
+-[MoEngage setUserAttributeTimestamp:forKey:]
+-[MoEngage setUserAttributeDate:forKey:]
+-[MoEngage setUserAttributeISODateString:forKey:]
+-[MoEngage setUserAttributeLocationLatitude:longitude:forKey:]
+-[MoEngage trackLocale]
+-[MoEngage resetUser]
+-[MoEngage resetUserWithCompletionBlock:]
+-[MoEngage appStatus:]
+-[MoEngage processURL:]
+-[MoEngage syncRealTimeTriggersWithCompletionBlock:]
+-[MoEngage setDisableBadgeReset:]
+-[MoEngage registerForRemoteNotificationWithCategories:withUserNotificationCenterDelegate:]
+-[MoEngage registerForRemoteNotificationForBelowiOS10WithCategories:]
+-[MoEngage setPushToken:]
+-[MoEngage didFailToRegisterForPush]
+-[MoEngage didRegisterForUserNotificationSettings:]
+-[MoEngage didReceieveNotificationinApplication:withInfo:]
+-[MoEngage didReceieveNotificationinApplication:withInfo:openDeeplinkUrlAutomatically:]
+-[MoEngage userNotificationCenter:didReceiveNotificationResponse:]
+-[MoEngage handleActionWithIdentifier:forRemoteNotification:]
+-[MoEngage setUserNotificationCategories:]
+-[MoEngage setNotificationCategoriesForEarlieriOSVersionsWithCategories:]
++[MoEngage debug:]
++[MoEngage setAppGroupID:]
+-[MoEngage dismissRichLandingWebViewControllerWithAnimation:]
++[MoEngage redirectDataToRegion:]
+-[MoEngage optOutOfDataTracking:]
+-[MoEngage optOutOfMoEngagePushNotification:]
+-[MoEngage optOutOfInAppCampaign:]
+-[MoEngage disableBadgeReset]
+_sharedInstance.onceToken
+_sharedInstance.instance
+___block_descriptor_20_e5_v4?0l
+___block_literal_global
+_OBJC_IVAR_$_MoEngage._disableBadgeReset
+Apple clang version 11.0.0 (clang-1100.0.33.12)
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage
+MoEngage/MoEngage.h
+MoEngage/MoEngage.m
+__26+[MoEngage sharedInstance]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/once.h
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/build/MoEngage.build/Release-iphoneos/MoEngage.build/DerivedSources/MoEngage_vers.c

@@ -1,0 +1,684 @@
+BCSymbolMap Version: 2.0
++[MOInbox initializeInboxOnController:]
++[MOInbox getInboxMessagesWithCompletionBlock:]
++[MOInbox fetchInboxMessagesWithCompletion:]
+___44+[MOInbox fetchInboxMessagesWithCompletion:]_block_invoke
+___copy_helper_block_e8_32b
+___destroy_helper_block_e8_32s
++[MOInbox markInboxNotificationClickedWithCampaignID:]
++[MOInbox processInboxNotificationWithCampaignID:]
++[MOInbox trackInboxNotificationClickWithCampaignID:]
++[MOInbox removeInboxMessages]
++[MOInbox removeMessageWithCampaignID:]
++[MOInbox dateFormatterWithFormat:]
++[MOInbox defaultTextFont]
++[MOInbox defaultUnreadTextFont]
++[MOInbox getAllNotificationCount]
++[MOInbox getUnreadNotifictionCount]
+___block_descriptor_40_e8_32bs_e8_v12?0B8l
+Apple clang version 11.0.0 (clang-1100.0.33.12)
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInbox.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage
+MOMessaging/MOInbox/MOInbox.m
+__destroy_helper_block_e8_32s
+__copy_helper_block_e8_32b
+__44+[MOInbox fetchInboxMessagesWithCompletion:]_block_invoke
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/Constants/MOMessagingConstants.m
+-[MONotificationCategory setActions:forContext:]
+-[MONotificationCategory minimalContextActions]
+-[MONotificationCategory setMinimalContextActions:]
+-[MONotificationCategory .cxx_destruct]
+_OBJC_IVAR_$_MONotificationCategory._minimalContextActions
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/Utils/Categories/MONotificationCategory.m
+MOMessaging/Utils/Categories/MONotificationCategory.m
+MOMessaging/Utils/Categories/MONotificationCategory.h
+-[MOInboxViewController viewDidLoad]
+-[MOInboxViewController viewWillAppear:]
+-[MOInboxViewController didReceiveMemoryWarning]
+-[MOInboxViewController setTitleForInbox]
+-[MOInboxViewController checkInboxMessagesCount]
+-[MOInboxViewController tableView:canEditRowAtIndexPath:]
+-[MOInboxViewController tableView:numberOfRowsInSection:]
+-[MOInboxViewController tableView:cellForRowAtIndexPath:]
+-[MOInboxViewController tableView:didSelectRowAtIndexPath:]
+___59-[MOInboxViewController tableView:didSelectRowAtIndexPath:]_block_invoke
+___copy_helper_block_e8_32s40s48s
+___destroy_helper_block_e8_32s40s48s
+-[MOInboxViewController tableView:commitEditingStyle:forRowAtIndexPath:]
+-[MOInboxViewController setPropertiesForCell:forClickedNotification:]
+-[MOInboxViewController customiseInboxWithCellTextColor:fontForReadMsg:fontForUnreadMsg:dateTextColor:font:cellBackgroundColor:]
+-[MOInboxViewController getCellFontForDict:]
+-[MOInboxViewController tableBackgroundColor]
+-[MOInboxViewController setTableBackgroundColor:]
+-[MOInboxViewController inboxTitle]
+-[MOInboxViewController setInboxTitle:]
+-[MOInboxViewController shouldProcessNotificationActions]
+-[MOInboxViewController setShouldProcessNotificationActions:]
+-[MOInboxViewController delegate]
+-[MOInboxViewController setDelegate:]
+-[MOInboxViewController notificationTextLabelColor]
+-[MOInboxViewController setNotificationTextLabelColor:]
+-[MOInboxViewController dateTextLabelColor]
+-[MOInboxViewController setDateTextLabelColor:]
+-[MOInboxViewController cellBackgroundColor]
+-[MOInboxViewController setCellBackgroundColor:]
+-[MOInboxViewController notificationTextLabelFont]
+-[MOInboxViewController setNotificationTextLabelFont:]
+-[MOInboxViewController dateTextLabelFont]
+-[MOInboxViewController setDateTextLabelFont:]
+-[MOInboxViewController notificationTextLabelUnreadFont]
+-[MOInboxViewController setNotificationTextLabelUnreadFont:]
+-[MOInboxViewController inboxMessagesArray]
+-[MOInboxViewController setInboxMessagesArray:]
+-[MOInboxViewController inboxTableView]
+-[MOInboxViewController setInboxTableView:]
+-[MOInboxViewController .cxx_destruct]
+_OBJC_IVAR_$_MOInboxViewController._inboxMessagesArray
+_tableView:cellForRowAtIndexPath:.cellIdentifier
+___block_descriptor_56_e8_32s40s48s_e5_v8?0l
+_OBJC_IVAR_$_MOInboxViewController._tableBackgroundColor
+_OBJC_IVAR_$_MOInboxViewController._inboxTitle
+_OBJC_IVAR_$_MOInboxViewController._shouldProcessNotificationActions
+_OBJC_IVAR_$_MOInboxViewController._delegate
+_OBJC_IVAR_$_MOInboxViewController._notificationTextLabelColor
+_OBJC_IVAR_$_MOInboxViewController._dateTextLabelColor
+_OBJC_IVAR_$_MOInboxViewController._cellBackgroundColor
+_OBJC_IVAR_$_MOInboxViewController._notificationTextLabelFont
+_OBJC_IVAR_$_MOInboxViewController._dateTextLabelFont
+_OBJC_IVAR_$_MOInboxViewController._notificationTextLabelUnreadFont
+_OBJC_IVAR_$_MOInboxViewController._inboxTableView
+__OBJC_PROTOCOL_$_NSObject
+__OBJC_LABEL_PROTOCOL_$_NSObject
+__OBJC_PROTOCOL_$_UITableViewDataSource
+__OBJC_LABEL_PROTOCOL_$_UITableViewDataSource
+__OBJC_PROTOCOL_$_UIScrollViewDelegate
+__OBJC_LABEL_PROTOCOL_$_UIScrollViewDelegate
+__OBJC_PROTOCOL_$_UITableViewDelegate
+__OBJC_LABEL_PROTOCOL_$_UITableViewDelegate
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxUI/MOInboxViewController.m
+MOMessaging/MOInbox/MOInboxUI/MOInboxViewController.m
+MOMessaging/MOInbox/MOInboxUI/MOInboxViewController.h
+__destroy_helper_block_e8_32s40s48s
+__copy_helper_block_e8_32s40s48s
+__59-[MOInboxViewController tableView:didSelectRowAtIndexPath:]_block_invoke
+-[MODeviceTriggerStatus initWithDictionary:]
+-[MODeviceTriggerStatus encodeWithCoder:]
+-[MODeviceTriggerStatus initWithCoder:]
+-[MODeviceTriggerStatus campaignID]
+-[MODeviceTriggerStatus setCampaignID:]
+-[MODeviceTriggerStatus numberOfTimesShown]
+-[MODeviceTriggerStatus setNumberOfTimesShown:]
+-[MODeviceTriggerStatus lastShownTime]
+-[MODeviceTriggerStatus setLastShownTime:]
+-[MODeviceTriggerStatus expiry]
+-[MODeviceTriggerStatus setExpiry:]
+-[MODeviceTriggerStatus .cxx_destruct]
+-[MODeviceTriggerCampaign encodeWithCoder:]
+-[MODeviceTriggerCampaign initWithCoder:]
+-[MODeviceTriggerCampaign initWithDictionary:]
+-[MODeviceTriggerCampaign getDeviceTriggerType:]
+-[MODeviceTriggerCampaign updateNotificationPayload:]
+-[MODeviceTriggerCampaign checkIfAttributeConditionSatisfiedForEvent:andAttributes:]
+-[MODeviceTriggerCampaign campaignID]
+-[MODeviceTriggerCampaign setCampaignID:]
+-[MODeviceTriggerCampaign payload]
+-[MODeviceTriggerCampaign setPayload:]
+-[MODeviceTriggerCampaign updated_payload]
+-[MODeviceTriggerCampaign setUpdated_payload:]
+-[MODeviceTriggerCampaign triggerEvent]
+-[MODeviceTriggerCampaign setTriggerEvent:]
+-[MODeviceTriggerCampaign attrConditions]
+-[MODeviceTriggerCampaign setAttrConditions:]
+-[MODeviceTriggerCampaign campaignType]
+-[MODeviceTriggerCampaign setCampaignType:]
+-[MODeviceTriggerCampaign status]
+-[MODeviceTriggerCampaign setStatus:]
+-[MODeviceTriggerCampaign expiry]
+-[MODeviceTriggerCampaign setExpiry:]
+-[MODeviceTriggerCampaign maxTimes]
+-[MODeviceTriggerCampaign setMaxTimes:]
+-[MODeviceTriggerCampaign priority]
+-[MODeviceTriggerCampaign setPriority:]
+-[MODeviceTriggerCampaign triggerDelay]
+-[MODeviceTriggerCampaign setTriggerDelay:]
+-[MODeviceTriggerCampaign maxSyncDelay]
+-[MODeviceTriggerCampaign setMaxSyncDelay:]
+-[MODeviceTriggerCampaign campaignDelay]
+-[MODeviceTriggerCampaign setCampaignDelay:]
+-[MODeviceTriggerCampaign lastUpdatedTime]
+-[MODeviceTriggerCampaign setLastUpdatedTime:]
+-[MODeviceTriggerCampaign shouldSupportOffline]
+-[MODeviceTriggerCampaign setShouldSupportOffline:]
+-[MODeviceTriggerCampaign shouldIgnoreDND]
+-[MODeviceTriggerCampaign setShouldIgnoreDND:]
+-[MODeviceTriggerCampaign .cxx_destruct]
+-[MODeviceTriggerPayload initWithDictionary:]
+-[MODeviceTriggerPayload encodeWithCoder:]
+-[MODeviceTriggerPayload initWithCoder:]
+-[MODeviceTriggerPayload campaignID]
+-[MODeviceTriggerPayload setCampaignID:]
+-[MODeviceTriggerPayload alertTitle]
+-[MODeviceTriggerPayload setAlertTitle:]
+-[MODeviceTriggerPayload alertSubTitle]
+-[MODeviceTriggerPayload setAlertSubTitle:]
+-[MODeviceTriggerPayload alertBody]
+-[MODeviceTriggerPayload setAlertBody:]
+-[MODeviceTriggerPayload alertSound]
+-[MODeviceTriggerPayload setAlertSound:]
+-[MODeviceTriggerPayload attachmentURL]
+-[MODeviceTriggerPayload setAttachmentURL:]
+-[MODeviceTriggerPayload category]
+-[MODeviceTriggerPayload setCategory:]
+-[MODeviceTriggerPayload pushDict]
+-[MODeviceTriggerPayload setPushDict:]
+-[MODeviceTriggerPayload .cxx_destruct]
+_OBJC_IVAR_$_MODeviceTriggerStatus._campaignID
+_OBJC_IVAR_$_MODeviceTriggerStatus._numberOfTimesShown
+_OBJC_IVAR_$_MODeviceTriggerStatus._lastShownTime
+_OBJC_IVAR_$_MODeviceTriggerStatus._expiry
+__OBJC_PROTOCOL_$_NSCoding
+__OBJC_LABEL_PROTOCOL_$_NSCoding
+_OBJC_IVAR_$_MODeviceTriggerCampaign._campaignID
+_OBJC_IVAR_$_MODeviceTriggerCampaign._payload
+_OBJC_IVAR_$_MODeviceTriggerCampaign._updated_payload
+_OBJC_IVAR_$_MODeviceTriggerCampaign._triggerEvent
+_OBJC_IVAR_$_MODeviceTriggerCampaign._attrConditions
+_OBJC_IVAR_$_MODeviceTriggerCampaign._campaignType
+_OBJC_IVAR_$_MODeviceTriggerCampaign._status
+_OBJC_IVAR_$_MODeviceTriggerCampaign._expiry
+_OBJC_IVAR_$_MODeviceTriggerCampaign._maxTimes
+_OBJC_IVAR_$_MODeviceTriggerCampaign._priority
+_OBJC_IVAR_$_MODeviceTriggerCampaign._triggerDelay
+_OBJC_IVAR_$_MODeviceTriggerCampaign._maxSyncDelay
+_OBJC_IVAR_$_MODeviceTriggerCampaign._campaignDelay
+_OBJC_IVAR_$_MODeviceTriggerCampaign._lastUpdatedTime
+_OBJC_IVAR_$_MODeviceTriggerCampaign._shouldSupportOffline
+_OBJC_IVAR_$_MODeviceTriggerCampaign._shouldIgnoreDND
+_OBJC_IVAR_$_MODeviceTriggerPayload._campaignID
+_OBJC_IVAR_$_MODeviceTriggerPayload._alertTitle
+_OBJC_IVAR_$_MODeviceTriggerPayload._alertSubTitle
+_OBJC_IVAR_$_MODeviceTriggerPayload._alertBody
+_OBJC_IVAR_$_MODeviceTriggerPayload._alertSound
+_OBJC_IVAR_$_MODeviceTriggerPayload._attachmentURL
+_OBJC_IVAR_$_MODeviceTriggerPayload._category
+_OBJC_IVAR_$_MODeviceTriggerPayload._pushDict
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerCampaign.m
+MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerCampaign.m
+MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerCampaign.h
+-[MOInboxModel initWithNotificationPayload:]
+-[MOInboxModel setNotificationContentProperties:andMoeDict:]
+-[MOInboxModel setNotificationDeepLinkingPropertiesWithPayload:]
+-[MOInboxModel initWithLegacyInboxPlistPayload:]
+-[MOInboxModel initWithCoder:]
+-[MOInboxModel encodeWithCoder:]
+-[MOInboxModel updateClickedDate]
+-[MOInboxModel getLegacyInboxPayload]
+-[MOInboxModel campaignID]
+-[MOInboxModel setCampaignID:]
+-[MOInboxModel notificationPayloadDict]
+-[MOInboxModel setNotificationPayloadDict:]
+-[MOInboxModel screenDataDict]
+-[MOInboxModel setScreenDataDict:]
+-[MOInboxModel moengageDict]
+-[MOInboxModel setMoengageDict:]
+-[MOInboxModel notificationTitle]
+-[MOInboxModel setNotificationTitle:]
+-[MOInboxModel notificationSubTitle]
+-[MOInboxModel setNotificationSubTitle:]
+-[MOInboxModel notificationBody]
+-[MOInboxModel setNotificationBody:]
+-[MOInboxModel notificationSound]
+-[MOInboxModel setNotificationSound:]
+-[MOInboxModel notificationMediaURL]
+-[MOInboxModel setNotificationMediaURL:]
+-[MOInboxModel screenName]
+-[MOInboxModel setScreenName:]
+-[MOInboxModel deepLinkURL]
+-[MOInboxModel setDeepLinkURL:]
+-[MOInboxModel richLandingURL]
+-[MOInboxModel setRichLandingURL:]
+-[MOInboxModel receivedDate]
+-[MOInboxModel setReceivedDate:]
+-[MOInboxModel clickedDate]
+-[MOInboxModel setClickedDate:]
+-[MOInboxModel inboxExpiryDate]
+-[MOInboxModel setInboxExpiryDate:]
+-[MOInboxModel isRead]
+-[MOInboxModel setIsRead:]
+-[MOInboxModel .cxx_destruct]
+-[MOInboxData init]
+-[MOInboxData initWithCoder:]
+-[MOInboxData encodeWithCoder:]
+-[MOInboxData inboxMessages]
+-[MOInboxData setInboxMessages:]
+-[MOInboxData lastUpdatedFromServerSync]
+-[MOInboxData setLastUpdatedFromServerSync:]
+-[MOInboxData .cxx_destruct]
+_OBJC_IVAR_$_MOInboxModel._isRead
+_OBJC_IVAR_$_MOInboxModel._campaignID
+_OBJC_IVAR_$_MOInboxModel._notificationPayloadDict
+_OBJC_IVAR_$_MOInboxModel._screenDataDict
+_OBJC_IVAR_$_MOInboxModel._moengageDict
+_OBJC_IVAR_$_MOInboxModel._notificationTitle
+_OBJC_IVAR_$_MOInboxModel._notificationSubTitle
+_OBJC_IVAR_$_MOInboxModel._notificationBody
+_OBJC_IVAR_$_MOInboxModel._notificationSound
+_OBJC_IVAR_$_MOInboxModel._notificationMediaURL
+_OBJC_IVAR_$_MOInboxModel._screenName
+_OBJC_IVAR_$_MOInboxModel._deepLinkURL
+_OBJC_IVAR_$_MOInboxModel._richLandingURL
+_OBJC_IVAR_$_MOInboxModel._receivedDate
+_OBJC_IVAR_$_MOInboxModel._clickedDate
+_OBJC_IVAR_$_MOInboxModel._inboxExpiryDate
+_OBJC_IVAR_$_MOInboxData._inboxMessages
+_OBJC_IVAR_$_MOInboxData._lastUpdatedFromServerSync
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxStorage/MOInboxModel.m
+MOMessaging/MOInbox/MOInboxStorage/MOInboxModel.m
+MOMessaging/MOInbox/MOInboxStorage/MOInboxModel.h
++[MODeviceTriggersHandler sharedInstance]
+___41+[MODeviceTriggersHandler sharedInstance]_block_invoke
+-[MODeviceTriggersHandler getDeviceTriggerSyncRequestPayload]
+-[MODeviceTriggersHandler syncDeviceTriggersWithCompletionBlock:]
+___65-[MODeviceTriggersHandler syncDeviceTriggersWithCompletionBlock:]_block_invoke
+___copy_helper_block_e8_32s40b
+___destroy_helper_block_e8_32s40s
+-[MODeviceTriggersHandler isRealTimeTriggerEnabled]
+-[MODeviceTriggersHandler shouldFetch]
+-[MODeviceTriggersHandler checkDeviceTriggerForEvent:withEventAttributes:]
+___74-[MODeviceTriggersHandler checkDeviceTriggerForEvent:withEventAttributes:]_block_invoke
+-[MODeviceTriggersHandler checkPreconditionsForDeviceTriggerWithEvent:withEventAttributes:]
+-[MODeviceTriggersHandler canPostDeviceTrigger:]
+-[MODeviceTriggersHandler getUserInSegmentPayloadWithCampaignID:andEventDict:]
+-[MODeviceTriggersHandler checkUserInSegmentForDTCampaign:withEventDict:]
+___73-[MODeviceTriggersHandler checkUserInSegmentForDTCampaign:withEventDict:]_block_invoke
+___copy_helper_block_e8_32s40s
+-[MODeviceTriggersHandler startBGTaskForEvent:withEventDict:]
+___61-[MODeviceTriggersHandler startBGTaskForEvent:withEventDict:]_block_invoke
+___61-[MODeviceTriggersHandler startBGTaskForEvent:withEventDict:]_block_invoke_2
+___61-[MODeviceTriggersHandler startBGTaskForEvent:withEventDict:]_block_invoke.278
+-[MODeviceTriggersHandler endBGTask]
+-[MODeviceTriggersHandler getPayloadToShow:forOffline:]
+-[MODeviceTriggersHandler postDeviceTriggerCampaign:isOffline:]
+___63-[MODeviceTriggersHandler postDeviceTriggerCampaign:isOffline:]_block_invoke
+___copy_helper_block_e8_32s40s48w
+___destroy_helper_block_e8_32s40s48w
+-[MODeviceTriggersHandler postDeviceTriggerForAboveiOS10:WithPayload:andAttachment:isOffline:]
+___94-[MODeviceTriggersHandler postDeviceTriggerForAboveiOS10:WithPayload:andAttachment:isOffline:]_block_invoke
+-[MODeviceTriggersHandler postDeviceTriggerCampaignForBelowiOS10:WithPayload:isOffline:]
+-[MODeviceTriggersHandler createWithFileName:andExtension:fromTemporaryLocation:]
+-[MODeviceTriggersHandler downloadAttachmentForCampaignID:andPayload:withCompletionBlock:]
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___90-[MODeviceTriggersHandler downloadAttachmentForCampaignID:andPayload:withCompletionBlock:]_block_invoke
+___copy_helper_block_e8_32s40b48r56r
+___destroy_helper_block_e8_32s40s48r56r
+-[MODeviceTriggersHandler trackNotificationScheduledFailedForCampaign:withPayload:]
+-[MODeviceTriggersHandler trackNotificationScheduledForCampaign:withPayload:]
+-[MODeviceTriggersHandler trackNotificationOfflineForCampaign:withPayload:]
+-[MODeviceTriggersHandler getPayloadForTrackingEventsForCampaign:withPayload:]
+-[MODeviceTriggersHandler getExistingCampaignList]
+-[MODeviceTriggersHandler clearDeviceTriggersData]
+-[MODeviceTriggersHandler checkForGlobalDelay]
+-[MODeviceTriggersHandler isDateTimeGreaterThanNow:]
+-[MODeviceTriggersHandler checkIfDNDForCampaign:]
+-[MODeviceTriggersHandler DNDTimeStringFromNumber:]
+-[MODeviceTriggersHandler hourFromDNDString:]
+-[MODeviceTriggersHandler minuteFromDNDString:]
+-[MODeviceTriggersHandler dt_BgTask]
+-[MODeviceTriggersHandler setDt_BgTask:]
+-[MODeviceTriggersHandler lastUpdatedTime]
+-[MODeviceTriggersHandler setLastUpdatedTime:]
+___clang_at_available_requires_core_foundation_framework
+___clang_at_available_requires_core_foundation_framework.cold.1
+_sharedInstance.onceToken
+_sharedInstance.instance
+___block_descriptor_32_e5_v8?0l
+___block_literal_global
+___block_descriptor_56_e8_32s40bs_e25_v20?0B8"NSDictionary"12l
+___block_descriptor_56_e8_32s40s48s_e8_v12?0B8l
+___block_descriptor_56_e8_32s40s_e25_v20?0B8"NSDictionary"12l
+___block_descriptor_48_e8_32s40s_e5_v8?0l
+___block_descriptor_65_e8_32s40s48w_e34_v16?0"UNNotificationAttachment"8l
+___block_descriptor_65_e8_32s40s48s_e17_v16?0"NSError"8l
+___block_descriptor_64_e8_32s40bs48r56r_e45_v32?0"NSURL"8"NSURLResponse"16"NSError"24l
+_OBJC_IVAR_$_MODeviceTriggersHandler._dt_BgTask
+_OBJC_IVAR_$_MODeviceTriggersHandler._lastUpdatedTime
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTHandler/MODeviceTriggersHandler.m
+MOMessaging/MORealTimeTriggers/DTHandler/MODeviceTriggersHandler.m
+__destroy_helper_block_e8_32s40s48r56r
+__copy_helper_block_e8_32s40b48r56r
+__90-[MODeviceTriggersHandler downloadAttachmentForCampaignID:andPayload:withCompletionBlock:]_block_invoke
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
+__94-[MODeviceTriggersHandler postDeviceTriggerForAboveiOS10:WithPayload:andAttachment:isOffline:]_block_invoke
+__destroy_helper_block_e8_32s40s48w
+__copy_helper_block_e8_32s40s48w
+__63-[MODeviceTriggersHandler postDeviceTriggerCampaign:isOffline:]_block_invoke
+__61-[MODeviceTriggersHandler startBGTaskForEvent:withEventDict:]_block_invoke.278
+__61-[MODeviceTriggersHandler startBGTaskForEvent:withEventDict:]_block_invoke_2
+__61-[MODeviceTriggersHandler startBGTaskForEvent:withEventDict:]_block_invoke
+__copy_helper_block_e8_32s40s
+__73-[MODeviceTriggersHandler checkUserInSegmentForDTCampaign:withEventDict:]_block_invoke
+__74-[MODeviceTriggersHandler checkDeviceTriggerForEvent:withEventAttributes:]_block_invoke
+__destroy_helper_block_e8_32s40s
+__copy_helper_block_e8_32s40b
+__65-[MODeviceTriggersHandler syncDeviceTriggersWithCompletionBlock:]_block_invoke
+__41+[MODeviceTriggersHandler sharedInstance]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/once.h
++[MOAppDelegateMessagingProxy canSwizzleMethods]
++[MOAppDelegateMessagingProxy sharedProxy]
+___42+[MOAppDelegateMessagingProxy sharedProxy]_block_invoke
+-[MOAppDelegateMessagingProxy init]
+-[MOAppDelegateMessagingProxy dealloc]
+-[MOAppDelegateMessagingProxy swizzleMethodsIfPossible]
+-[MOAppDelegateMessagingProxy unswizzleAllMethods]
+-[MOAppDelegateMessagingProxy listenForDelegateChangesInUserNotificationCenter:]
+-[MOAppDelegateMessagingProxy swizzleUserNotificationCenterDelegate:]
+-[MOAppDelegateMessagingProxy unswizzleUserNotificationCenterDelegate:]
+-[MOAppDelegateMessagingProxy addDelegateObserverToUserNotificationCenter:]
+-[MOAppDelegateMessagingProxy removeUserNotificationCenterDelegateObserver]
+-[MOAppDelegateMessagingProxy observeValueForKeyPath:ofObject:change:context:]
+-[MOAppDelegateMessagingProxy saveOriginalImplementation:forSelector:]
+-[MOAppDelegateMessagingProxy originalImplementationForSelector:]
+-[MOAppDelegateMessagingProxy trackSwizzledSelector:ofClass:]
+-[MOAppDelegateMessagingProxy removeImplementationForSelector:]
+-[MOAppDelegateMessagingProxy swizzleSelector:inClass:withImplementation:inProtocol:]
+-[MOAppDelegateMessagingProxy unswizzleSelector:inClass:]
+-[MOAppDelegateMessagingProxy nonExistantMethodImplementationForClass:]
+-[MOAppDelegateMessagingProxy application:didReceiveRemoteNotification:]
+-[MOAppDelegateMessagingProxy application:didReceiveRemoteNotification:fetchCompletionHandler:]
+-[MOAppDelegateMessagingProxy application:didFailToRegisterForRemoteNotificationsWithError:]
+-[MOAppDelegateMessagingProxy application:didRegisterForRemoteNotificationsWithDeviceToken:]
+___moe_swizzle_willPresentNotificationWithHandler_block_invoke
+___copy_helper_block_e8_32s40s48s56b
+___destroy_helper_block_e8_32s40s48s56s
+___moe_swizzle_didReceiveNotificationResponseWithHandler_block_invoke
+-[MOAppDelegateMessagingProxy originalAppDelegateImps]
+-[MOAppDelegateMessagingProxy setOriginalAppDelegateImps:]
+-[MOAppDelegateMessagingProxy swizzledSelectorsByClass]
+-[MOAppDelegateMessagingProxy setSwizzledSelectorsByClass:]
+-[MOAppDelegateMessagingProxy didSwizzleMethods]
+-[MOAppDelegateMessagingProxy setDidSwizzleMethods:]
+-[MOAppDelegateMessagingProxy hasSwizzledUserNotificationDelegate]
+-[MOAppDelegateMessagingProxy setHasSwizzledUserNotificationDelegate:]
+-[MOAppDelegateMessagingProxy isObservingUserNotificationDelegateChanges]
+-[MOAppDelegateMessagingProxy setIsObservingUserNotificationDelegateChanges:]
+-[MOAppDelegateMessagingProxy userNotificationCenter]
+-[MOAppDelegateMessagingProxy setUserNotificationCenter:]
+-[MOAppDelegateMessagingProxy currentUserNotificationCenterDelegate]
+-[MOAppDelegateMessagingProxy setCurrentUserNotificationCenterDelegate:]
+-[MOAppDelegateMessagingProxy appDelegateInterceptorID]
+-[MOAppDelegateMessagingProxy setAppDelegateInterceptorID:]
+-[MOAppDelegateMessagingProxy .cxx_destruct]
+_sharedProxy.proxy
+_sharedProxy.onceToken
+_UserNotificationObserverContext
+___block_descriptor_80_e8_32s40s48s56bs_e5_v8?0l
+__OBJC_PROTOCOL_$_UIApplicationDelegate
+__OBJC_LABEL_PROTOCOL_$_UIApplicationDelegate
+_OBJC_IVAR_$_MOAppDelegateMessagingProxy._didSwizzleMethods
+_OBJC_IVAR_$_MOAppDelegateMessagingProxy._hasSwizzledUserNotificationDelegate
+_OBJC_IVAR_$_MOAppDelegateMessagingProxy._isObservingUserNotificationDelegateChanges
+_OBJC_IVAR_$_MOAppDelegateMessagingProxy._originalAppDelegateImps
+_OBJC_IVAR_$_MOAppDelegateMessagingProxy._swizzledSelectorsByClass
+_OBJC_IVAR_$_MOAppDelegateMessagingProxy._userNotificationCenter
+_OBJC_IVAR_$_MOAppDelegateMessagingProxy._currentUserNotificationCenterDelegate
+_OBJC_IVAR_$_MOAppDelegateMessagingProxy._appDelegateInterceptorID
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/AppDelegateSwizzler/MOAppDelegateMessagingProxy.m
+MOMessaging/AppDelegateSwizzler/MOAppDelegateMessagingProxy.m
+__moe_swizzle_didReceiveNotificationResponseWithHandler_block_invoke
+__destroy_helper_block_e8_32s40s48s56s
+__copy_helper_block_e8_32s40s48s56b
+__moe_swizzle_willPresentNotificationWithHandler_block_invoke
+moe_swizzle_didReceiveNotificationResponseWithHandler
+moe_swizzle_willPresentNotificationWithHandler
+getNamedPropertyFromObject
+__42+[MOAppDelegateMessagingProxy sharedProxy]_block_invoke
+-[MOInboxTableViewCell awakeFromNib]
+-[MOInboxTableViewCell setDataWithMessage:]
+-[MOInboxTableViewCell setPushTimeForMessage:]
+-[MOInboxTableViewCell setSelected:animated:]
+-[MOInboxTableViewCell notificationTitleTextLabel]
+-[MOInboxTableViewCell setNotificationTitleTextLabel:]
+-[MOInboxTableViewCell notificationTextLabel]
+-[MOInboxTableViewCell setNotificationTextLabel:]
+-[MOInboxTableViewCell dateLabelTextLabel]
+-[MOInboxTableViewCell setDateLabelTextLabel:]
+-[MOInboxTableViewCell .cxx_destruct]
+_OBJC_IVAR_$_MOInboxTableViewCell._notificationTitleTextLabel
+_OBJC_IVAR_$_MOInboxTableViewCell._notificationTextLabel
+_OBJC_IVAR_$_MOInboxTableViewCell._dateLabelTextLabel
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxUI/MOInboxTableViewCell.m
+MOMessaging/MOInbox/MOInboxUI/MOInboxTableViewCell.m
+MOMessaging/MOInbox/MOInboxUI/MOInboxTableViewCell.h
++[MOMessagingUtils statsEventAttributesFromPayload:]
++[MOMessagingUtils isAppDelegateProxyConfigured]
++[MOMessagingUtils appDelegateProxyConfigured]
+_moMessagingAppDelegateProxyConfigured
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/Utils/MOMessagingUtils.m
+MOMessaging/Utils/MOMessagingUtils.m
++[MOMessaging sharedInstance]
+___29+[MOMessaging sharedInstance]_block_invoke
+-[MOMessaging init]
+-[MOMessaging initializeMessagingWithLaunchOptions:]
+___52-[MOMessaging initializeMessagingWithLaunchOptions:]_block_invoke
+-[MOMessaging configureAppDelegateProxy]
+-[MOMessaging processLaunchOptions:]
+-[MOMessaging eventTrackedWithName:andEventAttr:]
+-[MOMessaging addObserverForApplicationLifeCycle]
+-[MOMessaging clearUserInfo]
+-[MOMessaging applicationEnteredForeground:]
+-[MOMessaging updateModules]
+___28-[MOMessaging updateModules]_block_invoke
+-[MOMessaging syncRealTimeTriggersWithCompletionBlock:]
+___55-[MOMessaging syncRealTimeTriggersWithCompletionBlock:]_block_invoke
+-[MOMessaging registerForRemoteNotificationWithCategories:withUserNotificationCenterDelegate:]
+___94-[MOMessaging registerForRemoteNotificationWithCategories:withUserNotificationCenterDelegate:]_block_invoke
+___94-[MOMessaging registerForRemoteNotificationWithCategories:withUserNotificationCenterDelegate:]_block_invoke_2
+___94-[MOMessaging registerForRemoteNotificationWithCategories:withUserNotificationCenterDelegate:]_block_invoke_3
+-[MOMessaging registerForRemoteNotificationForBelowiOS10WithCategories:]
+___72-[MOMessaging registerForRemoteNotificationForBelowiOS10WithCategories:]_block_invoke
+___72-[MOMessaging registerForRemoteNotificationForBelowiOS10WithCategories:]_block_invoke_2
+-[MOMessaging setPushToken:]
+-[MOMessaging didFailToRegisterForPush]
+-[MOMessaging didRegisterForUserNotificationSettings:]
+-[MOMessaging didReceieveNotificationinApplication:withInfo:]
+-[MOMessaging userNotificationCenter:didReceiveNotificationResponse:]
+-[MOMessaging handleActionWithIdentifier:forRemoteNotification:]
+-[MOMessaging setUserNotificationCategories:]
+-[MOMessaging setNotificationCategoriesForEarlieriOSVersionsWithCategories:]
+-[MOMessaging getMessagingWhitelistedEvents]
+-[MOMessaging optOutOfMoEngagePushNotification:]
+-[MOMessaging disableInbox]
+-[MOMessaging setDisableInbox:]
+-[MOMessaging disableBadgeReset]
+-[MOMessaging setDisableBadgeReset:]
+___block_literal_global.100
+___block_descriptor_32_e20_v20?0B8"NSError"12l
+___block_literal_global.141
+__OBJC_PROTOCOL_$_MOEventTriggerDelegate
+__OBJC_LABEL_PROTOCOL_$_MOEventTriggerDelegate
+_OBJC_IVAR_$_MOMessaging._disableInbox
+_OBJC_IVAR_$_MOMessaging._disableBadgeReset
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOMessaging.m
+MOMessaging/MOMessaging.h
+MOMessaging/MOMessaging.m
+__72-[MOMessaging registerForRemoteNotificationForBelowiOS10WithCategories:]_block_invoke_2
+__72-[MOMessaging registerForRemoteNotificationForBelowiOS10WithCategories:]_block_invoke
+__94-[MOMessaging registerForRemoteNotificationWithCategories:withUserNotificationCenterDelegate:]_block_invoke_3
+__94-[MOMessaging registerForRemoteNotificationWithCategories:withUserNotificationCenterDelegate:]_block_invoke_2
+__94-[MOMessaging registerForRemoteNotificationWithCategories:withUserNotificationCenterDelegate:]_block_invoke
+__55-[MOMessaging syncRealTimeTriggersWithCompletionBlock:]_block_invoke
+__28-[MOMessaging updateModules]_block_invoke
+__52-[MOMessaging initializeMessagingWithLaunchOptions:]_block_invoke
+__29+[MOMessaging sharedInstance]_block_invoke
+-[MODeviceTriggers init]
+-[MODeviceTriggers initWithCoder:]
+-[MODeviceTriggers encodeWithCoder:]
+-[MODeviceTriggers deviceTriggers]
+-[MODeviceTriggers setDeviceTriggers:]
+-[MODeviceTriggers deviceTriggerEvents]
+-[MODeviceTriggers setDeviceTriggerEvents:]
+-[MODeviceTriggers deviceTriggerStatus]
+-[MODeviceTriggers setDeviceTriggerStatus:]
+-[MODeviceTriggers dndStartTime]
+-[MODeviceTriggers setDndStartTime:]
+-[MODeviceTriggers dndEndTime]
+-[MODeviceTriggers setDndEndTime:]
+-[MODeviceTriggers globalDelay]
+-[MODeviceTriggers setGlobalDelay:]
+-[MODeviceTriggers deviceTriggerLastUpdatedTime]
+-[MODeviceTriggers setDeviceTriggerLastUpdatedTime:]
+-[MODeviceTriggers deviceTriggerLastPostedTime]
+-[MODeviceTriggers setDeviceTriggerLastPostedTime:]
+-[MODeviceTriggers .cxx_destruct]
++[MODeviceTriggersDataManager sharedInstance]
+___45+[MODeviceTriggersDataManager sharedInstance]_block_invoke
+-[MODeviceTriggersDataManager init]
+-[MODeviceTriggersDataManager saveDeviceTriggerCampaigns:andUpdateLastSyncTime:]
+-[MODeviceTriggersDataManager updateDeviceTriggersFromServerResponse:]
+-[MODeviceTriggersDataManager updateStatusEntriesForCampaigns:]
+-[MODeviceTriggersDataManager removeExpiredCampaign:]
+-[MODeviceTriggersDataManager sortCampaignByLastUpdatedTime:]
+-[MODeviceTriggersDataManager getTriggerEvents:]
+-[MODeviceTriggersDataManager getCampaignsForEvent:withAttributes:]
+-[MODeviceTriggersDataManager getStatusInstanceForCampaign:]
+-[MODeviceTriggersDataManager updateCampaignShownForCampaignID:]
+-[MODeviceTriggersDataManager updateDeviceTriggersInPersistentStorage]
+-[MODeviceTriggersDataManager getDeviceTriggerFilePath]
+-[MODeviceTriggersDataManager getDeviceTriggerLastUpdatedTime]
+-[MODeviceTriggersDataManager activeDeviceTriggers]
+-[MODeviceTriggersDataManager setActiveDeviceTriggers:]
+-[MODeviceTriggersDataManager .cxx_destruct]
+_OBJC_IVAR_$_MODeviceTriggers._deviceTriggers
+_OBJC_IVAR_$_MODeviceTriggers._deviceTriggerEvents
+_OBJC_IVAR_$_MODeviceTriggers._deviceTriggerStatus
+_OBJC_IVAR_$_MODeviceTriggers._dndStartTime
+_OBJC_IVAR_$_MODeviceTriggers._dndEndTime
+_OBJC_IVAR_$_MODeviceTriggers._globalDelay
+_OBJC_IVAR_$_MODeviceTriggers._deviceTriggerLastUpdatedTime
+_OBJC_IVAR_$_MODeviceTriggers._deviceTriggerLastPostedTime
+_OBJC_IVAR_$_MODeviceTriggersDataManager._activeDeviceTriggers
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTDataManager/MODeviceTriggersDataManager.m
+MOMessaging/MORealTimeTriggers/DTDataManager/MODeviceTriggersDataManager.m
+MOMessaging/MORealTimeTriggers/DTDataManager/MODeviceTriggersDataManager.h
+__45+[MODeviceTriggersDataManager sharedInstance]_block_invoke
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxUtils/MOInboxExposedConstants.m
++[MONotificationHandler sharedInstance]
+___39+[MONotificationHandler sharedInstance]_block_invoke
+-[MONotificationHandler setPushToken:]
+-[MONotificationHandler saveAndRegisterWithToken:]
+-[MONotificationHandler didFailToRegisterForPush]
+-[MONotificationHandler didRegisterForUserNotificationSettings:]
+-[MONotificationHandler pushDisabled]
+-[MONotificationHandler pushEnabled]
+-[MONotificationHandler trackPushPreferenceChangedEventWithStatus:]
+-[MONotificationHandler didReceieveNotificationinApplication:withInfo:]
+-[MONotificationHandler userNotificationCenter:didReceiveNotificationResponse:]
+-[MONotificationHandler broadcastNotificationClickedWithPushPayload:]
+-[MONotificationHandler broadcastNotificationRegisteredWithToken:]
+-[MONotificationHandler broadcastNotificationRegisterationFailure]
+-[MONotificationHandler shouldProcessNotificationMoEngageDict:]
+-[MONotificationHandler isPushFromMoEngageWithPayload:]
+-[MONotificationHandler updateAnalyticsModuleWithPushPayload:]
+-[MONotificationHandler checkForPushPermission]
+___47-[MONotificationHandler checkForPushPermission]_block_invoke
+___copy_helper_block_e8_32s
+-[MONotificationHandler handlePushNotificationInApplication:userInfo:]
+-[MONotificationHandler handlePushNotificationForeground:]
+-[MONotificationHandler handlePushInMainQueueWithData:]
+-[MONotificationHandler handleDeepLinking:]
+-[MONotificationHandler handleRichLandingPage:]
+-[MONotificationHandler handleInAppFromPush:]
+-[MONotificationHandler handleCouponCodeForPush:]
+-[MONotificationHandler showCouponAlertView:andUserInfo:]
+___57-[MONotificationHandler showCouponAlertView:andUserInfo:]_block_invoke
+___57-[MONotificationHandler showCouponAlertView:andUserInfo:]_block_invoke_2
+___57-[MONotificationHandler showCouponAlertView:andUserInfo:]_block_invoke.236
+-[MONotificationHandler setNotificationCategories:]
+-[MONotificationHandler setNotificationCategoriesForEarlierVersions:]
+-[MONotificationHandler sendCategoriesWithArray:]
+___49-[MONotificationHandler sendCategoriesWithArray:]_block_invoke
+-[MONotificationHandler handleActionWithIdentifier:forRemoteNotification:]
+-[MONotificationHandler checkPushNotificationsSettingsWithCompletionBlock:]
+___75-[MONotificationHandler checkPushNotificationsSettingsWithCompletionBlock:]_block_invoke
+-[MONotificationHandler disableDeepLinksProcessing]
+-[MONotificationHandler setDisableDeepLinksProcessing:]
+___block_descriptor_40_e8_32s_e32_v16?0"UNNotificationSettings"8l
+___block_descriptor_56_e8_32s40s48s_e23_v16?0"UIAlertAction"8l
+___block_descriptor_48_e8_32s40s_e23_v16?0"UIAlertAction"8l
+___block_descriptor_64_e8_32s40s48s_e5_v8?0l
+___block_descriptor_32_e25_v20?0B8"NSDictionary"12l
+___block_literal_global.284
+___block_descriptor_40_e8_32bs_e32_v16?0"UNNotificationSettings"8l
+_OBJC_IVAR_$_MONotificationHandler._disableDeepLinksProcessing
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/NotificationHandler/MONotificationHandler.m
+MOMessaging/NotificationHandler/MONotificationHandler.h
+__75-[MONotificationHandler checkPushNotificationsSettingsWithCompletionBlock:]_block_invoke
+MOMessaging/NotificationHandler/MONotificationHandler.m
+__49-[MONotificationHandler sendCategoriesWithArray:]_block_invoke
+__57-[MONotificationHandler showCouponAlertView:andUserInfo:]_block_invoke.236
+__57-[MONotificationHandler showCouponAlertView:andUserInfo:]_block_invoke_2
+__57-[MONotificationHandler showCouponAlertView:andUserInfo:]_block_invoke
+__copy_helper_block_e8_32s
+__47-[MONotificationHandler checkForPushPermission]_block_invoke
+__39+[MONotificationHandler sharedInstance]_block_invoke
++[MOInboxHandler sharedInstance]
+___32+[MOInboxHandler sharedInstance]_block_invoke
+-[MOInboxHandler init]
+-[MOInboxHandler getFilePathForInbox]
+-[MOInboxHandler syncInboxNotificationsWithCompletionHandler:]
+___62-[MOInboxHandler syncInboxNotificationsWithCompletionHandler:]_block_invoke
+___62-[MOInboxHandler syncInboxNotificationsWithCompletionHandler:]_block_invoke_2
+___62-[MOInboxHandler syncInboxNotificationsWithCompletionHandler:]_block_invoke_3
+-[MOInboxHandler syncNotificationsFromExtension:]
+-[MOInboxHandler syncNotificationsFromServer:]
+___46-[MOInboxHandler syncNotificationsFromServer:]_block_invoke
+___copy_helper_block_e8_32b40s
+-[MOInboxHandler syncNotificationFromOlderPlist:]
+-[MOInboxHandler syncInboxFromServerRequestWithCompletionBlock:]
+___64-[MOInboxHandler syncInboxFromServerRequestWithCompletionBlock:]_block_invoke
+-[MOInboxHandler getPreviouslyStoredNotifications]
+-[MOInboxHandler getStoredNotificationsInExtension]
+-[MOInboxHandler updateClickedNotificationInStorageWithPayload:]
+-[MOInboxHandler getAllNotificationModelObjs]
+-[MOInboxHandler getAllNotificationPayloads]
+-[MOInboxHandler getUnreadNotificationPayloads]
+-[MOInboxHandler getReadNotificationPayloads]
+-[MOInboxHandler getAllNotificationCount]
+-[MOInboxHandler getUnreadNotifictionCount]
+-[MOInboxHandler fetchInboxEntryForCampaignID:]
+-[MOInboxHandler markInboxNotificationReadForCampaignID:]
+-[MOInboxHandler trackInboxNotificationClickForCampaignID:]
+-[MOInboxHandler getSortedInboxArray:]
+-[MOInboxHandler getInboxArrayPostDuplicationCheckWithNewEntries:]
+-[MOInboxHandler defaultTextFont]
+-[MOInboxHandler defaultUnreadTextFont]
+-[MOInboxHandler updateInboxStorage]
+-[MOInboxHandler getOlderInboxMessagesPlistFile]
+-[MOInboxHandler resetInboxDataWithLegacyPayloadArray:]
+-[MOInboxHandler clearInboxData]
+-[MOInboxHandler removeNotificationForCampaignID:]
+-[MOInboxHandler removeExpiredInboxMessages]
+-[MOInboxHandler removeOldInboxPlistFile]
+-[MOInboxHandler inboxData]
+-[MOInboxHandler setInboxData:]
+-[MOInboxHandler syncInProgress]
+-[MOInboxHandler setSyncInProgress:]
+-[MOInboxHandler .cxx_destruct]
+___block_descriptor_48_e8_32s40bs_e8_v12?0B8l
+___block_descriptor_48_e8_32bs40s_e20_v20?0B8"NSArray"12l
+___block_descriptor_48_e8_32bs_e25_v20?0B8"NSDictionary"12l
+_OBJC_IVAR_$_MOInboxHandler._syncInProgress
+_OBJC_IVAR_$_MOInboxHandler._inboxData
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxHandler.m
+MOMessaging/MOInbox/MOInboxHandler.m
+MOMessaging/MOInbox/MOInboxHandler.h
+__64-[MOInboxHandler syncInboxFromServerRequestWithCompletionBlock:]_block_invoke
+__copy_helper_block_e8_32b40s
+__46-[MOInboxHandler syncNotificationsFromServer:]_block_invoke
+__62-[MOInboxHandler syncInboxNotificationsWithCompletionHandler:]_block_invoke_3
+__62-[MOInboxHandler syncInboxNotificationsWithCompletionHandler:]_block_invoke_2
+__62-[MOInboxHandler syncInboxNotificationsWithCompletionHandler:]_block_invoke
+__32+[MOInboxHandler sharedInstance]_block_invoke
+/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/build/MoEngage.build/Release-iphoneos/MOMessaging.build/DerivedSources/MOMessaging_vers.c

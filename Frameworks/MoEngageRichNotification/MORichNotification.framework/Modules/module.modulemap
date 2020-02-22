@@ -1,0 +1,6 @@
+framework module MORichNotification {
+  umbrella header "MORichNotification.h"
+
+  export *
+  module * { export * }
+}

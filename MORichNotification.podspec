@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'MORichNotification'
-  s.version          = '3.0.2'
-  s.summary          = 'MORichNotification is part of the MoEngage SDK which handles Notification Service Extensions from iOS10.'
+  s.version          = '3.1.0'
+  s.summary          = 'MoEngage Rich Notifications for iOS.'
 
   s.description  = <<-DESC
-                   MoEngage is a mobile marketing automation company. MORichNotification helps you to handle Notification Service Extensions provided by Apple from iOS10. It download's the attachment for the notification and adds it to Notification content.
+                   MORichNotification helps you to make use Notification Service Extensions to support media in notifications(Rich Push Notifications). This feature is available from iOS version 10.0 and above. 
                    DESC
 
   s.homepage     = 'http://www.moengage.com'
@@ -17,14 +17,14 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
   s.source           = { 
   	:git => 'https://github.com/moengage/MoEngage-iOS-SDK.git', 
-  	:tag => 'MORichNotification-' + s.version.to_s 
+  	:tag => 'richPush-' + s.version.to_s 
   }
 
 
-  s.ios.vendored_frameworks = 'MORichNotification/MORichNotification.framework'
-  s.preserve_paths = 'MORichNotification/MORichNotification.framework'
-  s.module_map = 'MORichNotification/MORichNotification.framework/Modules/module.modulemap'
+  s.ios.vendored_frameworks = 'Frameworks/MoEngageRichNotification/MORichNotification.framework'
+  s.preserve_paths = 'Frameworks/MoEngageRichNotification/MORichNotification.framework'
+  s.module_map = 'Frameworks/MoEngageRichNotification/MORichNotification.framework/Modules/module.modulemap'
 
   s.requires_arc = true
-  s.frameworks = 'UserNotifications'
+  s.frameworks = 'Foundation', 'UIKit', 'UserNotifications'
 end
