@@ -9,8 +9,6 @@ MoEngage provides a platform which enables companies to deliver personalized int
 
 ## Integration
 
-There are two ways you can integrate the SDK - CocoaPods or Manual integration.
-
 ### Integration through CocoaPods
 CocoaPods is a dependency manager for Objective C & Swift projects and makes integration easier.
 
@@ -28,32 +26,6 @@ CocoaPods is a dependency manager for Objective C & Swift projects and makes int
     
 4. Now, open your project workspace and check if MoEngage SDK is properly added.
     
-### Manual Integration
-
-To install manually, follow the steps below:
-
-1. Download the latest sdk from the following [link](https://drive.google.com/a/moengage.com/folderview?id=0B0gKRBBr6rFHb0pzYnhrVTh3NHc&usp=drive_web#list).
-
-2. Add the given library file (.a extension) from **MoEngageSDK** folder to your project.
-
-3. Add the given header files (.h extensions) from **MoEngageSDK** folder, by dragging and dropping the files in to your project.
-
-4. Add the following compiler flag: -ObjC. Select your project. Go to “Build Settings” ->”Linker” ->”Other Linker Flags” and add this flag.
-
-### Using SDK in Swift
-
-If you are not using dynamic frameworks:
-Simply add the `MoEngage/MoEngage.h`  in your bridging header and you will be good to go.
-
-    #import <MoEngage/MoEngage.h>
-
-
-If you are using dynamic frameworks:
-
-Here you will have to import the SDK by directly using an import statement as below:
-
-    import MoEngage
-
 
 ## SDK Initialization
 
@@ -64,12 +36,11 @@ Login to your MoEngage account, go to **Settings** in the left panel of the dash
     - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
         // Separate initialization methods for Dev and Prod initializations
-        // openDeeplinkUrlAutomatically tells us whether you want the SDK to call handleOpenUrl for deeplinks specified while creating a campaign
     
         #ifdef DEBUG
-            [[MoEngage sharedInstance] initializeDevWithApiKey:@"Your APP ID" inApplication:application withLaunchOptions:launchOption  openDeeplinkUrlAutomatically:YES];
+            [[MoEngage sharedInstance] initializeDevwithAppID:@"Your APP ID" withLaunchOptions:launchOption];
         #else
-            [[MoEngage sharedInstance] initializeProdWithApiKey:@"Your APP ID" inApplication:application withLaunchOptions:launchOption openDeeplinkUrlAutomatically:YES];
+            [[MoEngage sharedInstance] initializeProdwithAppID:@"Your APP ID" withLaunchOptions:launchOption];
         #endif
         
         //Rest of the implementation of method
@@ -81,12 +52,11 @@ Login to your MoEngage account, go to **Settings** in the left panel of the dash
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:     [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
         // Separate initialization methods for Dev and Prod initializations
-        // openDeeplinkUrlAutomatically tells us whether you want the SDK to call handleOpenUrl for deeplinks specified while creating a campaign
 
         #if DEBUG
-            MoEngage.sharedInstance().initializeDev(withApiKey: "Your APP ID", in: application, withLaunchOptions: launchOptions, openDeeplinkUrlAutomatically: true)
+            MoEngage.sharedInstance().initializeDev(withAppID:"Your APP ID", withLaunchOptions: launchOptions)
         #else
-            MoEngage.sharedInstance().initializeProd(withApiKey: "Your APP ID", in: application, withLaunchOptions: launchOptions, openDeeplinkUrlAutomatically: true)
+            MoEngage.sharedInstance().initializeProd(withAppID:"Your APP ID", withLaunchOptions: launchOptions)
         #endif
         
         //Rest of the implementation of method
