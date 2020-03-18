@@ -143,27 +143,31 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 }
 
 extension ViewController : MOInAppNativDelegate{
+    // Called when an inApp is shown on the screen
     func inAppShown(withCampaignInfo inappCampaign: MOInAppCampaign) {
         print("InApp Shown with Campaign ID \(inappCampaign.campaign_id)")
     }
     
+    // Called when an inApp is dismissed by the user
     func inAppDismissed(withCampaignInfo inappCampaign: MOInAppCampaign) {
          print("InApp Dismissed with Campaign ID \(inappCampaign.campaign_id)")
     }
     
+    // Called when an inApp is clicked by the user, and it has been configured with a custom action
     func inAppClicked(withCampaignInfo inappCampaign: MOInAppCampaign, andCustomActionInfo customAction: MOInAppAction) {
         print("InApp Clicked with Campaign ID \(inappCampaign.campaign_id)")
         print("Custom Actions Key Value Pairs: \(customAction.keyValuePairs)")
     }
     
+    // Called when an inApp is clicked by the user, and it has been configured with a navigation action
     func inAppClicked(withCampaignInfo inappCampaign: MOInAppCampaign, andNavigationActionInfo navigationAction: MOInAppAction) {
         print("InApp Clicked with Campaign ID \(inappCampaign.campaign_id)")
         print("Navigation Action Screen Name \(navigationAction.screenName) Key Value Pairs: \((navigationAction.keyValuePairs))")
     }
-    
+
+    // This method is called when an event triggers an in-app from the server, which is of type self handled.
     func selfHandledInAppTriggered(withInfo inappCampaign: MOInAppSelfHandledCampaign) {
         print("Self Handled InApp Triggered with info:\nCampaign ID:\(inappCampaign.campaign_id) \nContent: \(inappCampaign.campaignContent)")
     }
 }
-
 

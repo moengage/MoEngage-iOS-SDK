@@ -57,10 +57,10 @@ ___26+[MoEngage sharedInstance]_block_invoke
 -[MoEngage disableBadgeReset]
 _sharedInstance.onceToken
 _sharedInstance.instance
-___block_descriptor_20_e5_v4?0l
+___block_descriptor_32_e5_v8?0l
 ___block_literal_global
 _OBJC_IVAR_$_MoEngage._disableBadgeReset
-Apple clang version 11.0.0 (clang-1100.0.33.12)
+Apple clang version 11.0.0 (clang-1100.0.33.17)
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngage/MoEngage.m
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage
 MoEngage/MoEngage.h

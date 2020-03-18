@@ -3,8 +3,13 @@
 
 ## Change Log:
 
+### Version 6.0.1  *(18th March, 2020)*
+-------------------------------------------
+* Support for India cluster.
+
 ### Version 6.0.0  *(21st February, 2020)*
 -------------------------------------------
+* Removed Support for iOS 8
 * SDK Rearchitected and has been split into 5 modules now i.e, `MoEngageCore`, `MOAnalytics`, `MOMessaging`, `MOInApp` and `MoEngage`(Umbrella framework).
 * InApp Module completely revamped, and has to be integrated separately now. Most of the APIs have changed, therefore refer to this [doc](https://docs.moengage.com/docs/in-app-nativ) to reintegrate the module to the project.
 * Initialization Methods are deprecated, get info on the updated intialization method from [here](https://docs.moengage.com/docs/appdelegate-changes#section-initializing-moengage-sdk)

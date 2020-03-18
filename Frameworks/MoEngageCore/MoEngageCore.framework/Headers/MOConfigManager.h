@@ -13,7 +13,7 @@
  @warning Consult with MoEngage team before using this enumerator in the App
  */
 typedef enum DataRedirectionRegion{
-    MOE_REGION_INDIA,
+    MOE_REGION_SERV3,
     MOE_REGION_EU,
     MOE_REGION_DEFAULT
 }DataRedirectionRegion;

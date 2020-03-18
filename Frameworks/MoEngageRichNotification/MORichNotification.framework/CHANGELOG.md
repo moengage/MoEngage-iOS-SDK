@@ -1,5 +1,9 @@
 # Change Log:
 
+### Version 3.1.1  *(18th March, 2020)*
+-------------------------------------------
+* Support for India cluster and fixes in impression tracking.
+
 ### Version 3.1.0  *(21st February, 2020)*
 -------------------------------------------
 * Minor optimizations and bug fixes.

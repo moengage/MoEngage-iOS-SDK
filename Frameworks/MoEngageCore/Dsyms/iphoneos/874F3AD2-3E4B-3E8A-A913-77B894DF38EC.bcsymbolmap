@@ -85,7 +85,7 @@ _OBJC_IVAR_$_MOConfig._deviceTriggerSyncDuration
 _OBJC_IVAR_$_MOConfig._userAttrCachingDuration
 _OBJC_IVAR_$_MOConfig._analyticsSessionInactiveDuration
 _OBJC_IVAR_$_MOConfig._dataRedirectionRegion
-Apple clang version 11.0.0 (clang-1100.0.33.12)
+Apple clang version 11.0.0 (clang-1100.0.33.17)
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOConfigManager/MOConfig.m
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage
 MoEngageCore/MOConfigManager/MOConfig.m
@@ -437,6 +437,7 @@ __30+[MoEngageCore sharedInstance]_block_invoke
 MoEngageCore/MOUtils/DateUtils/MODateUtils.m
 -[MONetworkRequest initWithService:params:additionalHeaders:requestBody:andAdditionalPathComponent:]
 -[MONetworkRequest createURLWithPathComponent:]
+-[MONetworkRequest saveReportsRequestInfoWithComponents:]
 -[MONetworkRequest getRequestInstance]
 -[MONetworkRequest executeRequestWithCompletionBlock:]
 -[MONetworkRequest service]

@@ -24,6 +24,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [MOInApp sharedInstance].inAppDelegate = self;
+    
     // Geofence Monitoring
     [[MOGeofenceHandler sharedInstance] startGeofenceMonitoring];
     
@@ -82,25 +85,29 @@
 
 
 #pragma mark- MOInAppNativDelegate Methods
-
+// Called when an inApp is shown on the screen
 -(void)inAppShownWithCampaignInfo:(MOInAppCampaign *)inappCampaign{
     NSLog(@"InApp Shown with Campaign ID %@",inappCampaign.campaign_id);
 }
 
+// Called when an inApp is dismissed by the user
 -(void)inAppDismissedWithCampaignInfo:(MOInAppCampaign *)inappCampaign{
     NSLog(@"InApp Dismissed with Campaign ID %@",inappCampaign.campaign_id);
 }
 
+// Called when an inApp is clicked by the user, and it has been configured with a custom action
 -(void)inAppClickedWithCampaignInfo:(MOInAppCampaign *)inappCampaign andCustomActionInfo:(MOInAppAction *)customAction{
     NSLog(@"InApp Clicked with Campaign ID %@",inappCampaign.campaign_id);
     NSLog(@"Custom Action Key Value Pairs: %@", customAction.screenName);
 }
 
+// Called when an inApp is clicked by the user, and it has been configured with a navigation action
 -(void)inAppClickedWithCampaignInfo:(MOInAppCampaign *)inappCampaign andNavigationActionInfo:(MOInAppAction *)navigationAction{
     NSLog(@"InApp Clicked with Campaign ID %@",inappCampaign.campaign_id);
     NSLog(@"Navigation Action Screen Name %@\n Key Value Pairs: %@", navigationAction.screenName,navigationAction.keyValuePairs);
 }
 
+// This method is called when an event triggers an in-app from the server, which is of type self handled.
 -(void)selfHandledInAppTriggeredWithInfo:(MOInAppSelfHandledCampaign *)inappCampaign{
     NSLog(@"Self Handled InApp Triggered with info:\nCampaign ID: %@ \nContent: %@",inappCampaign.campaign_id, inappCampaign.campaignContent);
 }
