@@ -43,5 +43,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Location Services are required for testing Geofence.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Location Services are required for testing Geofence.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location Services are required for testing Geofence.</string>
 </dict>
 </plist>

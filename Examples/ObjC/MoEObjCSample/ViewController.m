@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <MoEngage/MoEngage.h>
+#import <MOGeofence/MOGeofence.h>
 
 @interface ViewController () <MOInAppNativDelegate>
 

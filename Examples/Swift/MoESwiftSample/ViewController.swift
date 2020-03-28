@@ -8,8 +8,6 @@
 
 import UIKit
 import MoEngage
-import MOInApp
-import MOGeofence
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     

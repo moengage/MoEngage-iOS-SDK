@@ -24,12 +24,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         MoEngage.debug(LOG_ALL)
         
         //TODO: Add your MoEngage App ID
-        var yourMoEAppID = "Your App Group"
+        var yourMoEAppID = "Your App ID"
         DispatchQueue.main.async {
             #if DEBUG
             MoEngage.sharedInstance().initializeDev(withAppID:yourMoEAppID , withLaunchOptions: launchOptions)
             #else
-            MoEngage.sharedInstance().initializeProd(withApiKey:yourMoEAppID, withLaunchOptions: launchOptions)
+            MoEngage.sharedInstance().initializeProd(withAppID:yourMoEAppID, withLaunchOptions: launchOptions)
             #endif
         }
         

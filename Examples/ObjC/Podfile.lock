@@ -1,5 +1,5 @@
 PODS:
-  - MoEngage-iOS-SDK (6.0.1)
+  - MoEngage-iOS-SDK (6.0.2)
   - MoEngageInApp (1.0.0):
     - MoEngage-iOS-SDK (~> 6.0.0)
   - MOGeofence (2.0.0):
@@ -23,7 +23,7 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  MoEngage-iOS-SDK: 65e976cbbb11850925b609cfae0a0d7dd3f962e9
+  MoEngage-iOS-SDK: 9f905093cea1c1b3d7e32f86506f1aae91eae85e
   MoEngageInApp: 2111c128f2b4d8779a75b58302a88829a21f1912
   MOGeofence: e7cef5f242ac4de16012a89e24ee98e1d26065d1
   MORichNotification: 5937217a088bdeb2fa79e8a681d992d89beea083
