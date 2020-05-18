@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'MoEngage-iOS-SDK'
-  s.version      = '5.2.6'
+  s.version      = '5.2.7'
   s.summary      = 'MoEngage Mobile Marketing Automation SDK for iOS - iPhone and iPad'
 
   s.description  = <<-DESC
@@ -19,7 +19,8 @@ Pod::Spec.new do |s|
   s.author       = { 'Chengappa C D' => 'chengappa@moengage.com' }
 
   s.source       = { 
-    :git => 'https://github.com/moengage/MoEngage-iOS-SDK.git', 
+    :git => 'https://github.com/moengage/MoEngage-iOS-SDK.git',
+    :branch => 'Above_5.2.6' 
     :tag => 'Core-' + s.version.to_s 
   }
                     

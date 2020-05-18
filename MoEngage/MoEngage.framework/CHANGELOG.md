@@ -2,6 +2,9 @@
 =================================
 
 ## Change Log:
+### Version 5.2.7  *(18th May, 2020)*
+-------------------------------------------
+* BugFix: Universal Links were not considered for Source tracking in Analytics
 
 ### Version 5.2.6  *(16th December, 2019)*
 -------------------------------------------
