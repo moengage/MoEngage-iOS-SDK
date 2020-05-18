@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.source       = { 
     :git => 'https://github.com/moengage/MoEngage-iOS-SDK.git',
-    :branch => 'Above_5.2.6' 
+    :branch => 'Above_5.2.6',
     :tag => 'Core-' + s.version.to_s 
   }
                     
