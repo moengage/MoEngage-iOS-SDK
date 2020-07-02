@@ -7,7 +7,7 @@ target 'MoESwiftSample' do
   pod 'MoEngage-iOS-SDK', :path => '../../'
   pod 'MoEngageInApp', :path => '../../'
   pod 'MOGeofence', :path => '../../'
-
+  pod 'MoEngageCards', :path => '../../'
 end
 
 target 'NotificationService' do

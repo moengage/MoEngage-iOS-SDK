@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MORichNotification'
-  s.version          = '3.1.1'
+  s.version          = '3.1.2'
   s.summary          = 'MoEngage Rich Notifications for iOS.'
 
   s.description  = <<-DESC
@@ -21,9 +21,9 @@ Pod::Spec.new do |s|
   }
 
 
-  s.ios.vendored_frameworks = 'Frameworks/MoEngageRichNotification/MORichNotification.framework'
-  s.preserve_paths = 'Frameworks/MoEngageRichNotification/MORichNotification.framework'
-  s.module_map = 'Frameworks/MoEngageRichNotification/MORichNotification.framework/Modules/module.modulemap'
+  s.ios.vendored_frameworks = 'Frameworks/MORichNotification.framework'
+  s.preserve_paths = 'Frameworks/MORichNotification.framework'
+  s.module_map = 'Frameworks/MORichNotification.framework/Modules/module.modulemap'
 
   s.requires_arc = true
   s.frameworks = 'Foundation', 'UIKit', 'UserNotifications'

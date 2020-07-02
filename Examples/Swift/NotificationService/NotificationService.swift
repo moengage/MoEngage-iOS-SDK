@@ -17,7 +17,7 @@ class NotificationService: UNNotificationServiceExtension {
     override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
         
         //TODO: Add your App Group ID
-        MORichNotification.setAppGroupID("Your App Group ID")
+        MORichNotification.setAppGroupID("group.com.moengage.SampleApp.MoEngage")
         
         //Handle Rich Notification
         self.contentHandler = contentHandler

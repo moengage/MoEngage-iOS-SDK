@@ -18,13 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         //TODO: Add your App Group ID
-        MoEngage.setAppGroupID("Your App Group ID")
+        MoEngage.setAppGroupID("group.com.moengage.SampleApp.MoEngage")
         
         //This is to enable logs of MoEngage SDK
-        MoEngage.debug(LOG_ALL)
+        //MoEngage.debug(LOG_ALL)
         
         //TODO: Add your MoEngage App ID
-        var yourMoEAppID = "Your App ID"
+        var yourMoEAppID = "DAO6UGZ73D9RTK8B5W96TPYN"
+        MoEngage.debug(LOG_ALL)
         DispatchQueue.main.async {
             #if DEBUG
             MoEngage.sharedInstance().initializeDev(withAppID:yourMoEAppID , withLaunchOptions: launchOptions)

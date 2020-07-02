@@ -1,0 +1,4 @@
+module MoEngageCore{
+    header "/usr/include/MoEngageCore/MoEngageCore.h"
+    export *
+}

@@ -1,12 +1,11 @@
 source 'https://cdn.cocoapods.org/'
 
-use_frameworks!
-
 target 'MoEObjCSample' do
   platform :ios, '9.0'
   pod 'MoEngage-iOS-SDK', :path => '../../'
   pod 'MoEngageInApp', :path => '../../'
   pod 'MOGeofence', :path => '../../'
+  pod 'MoEngageCards', :path => '../../'
 end
 
 target 'NotificationService' do

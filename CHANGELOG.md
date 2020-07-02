@@ -3,6 +3,11 @@
 
 ## Change Log:
 
+### Version 6.1.0  *(2nd July, 2020)*
+-------------------------------------------
+* Support For [Cards Campaign](https://docs.moengage.com/docs/ios-cards) added
+* BugFix: InApp exit animation was not being applied correctly.
+
 ### Version 6.0.3  *(18th May, 2020)*
 -------------------------------------------
 * BugFix: Universal Links were not considered for Source tracking in Analytics

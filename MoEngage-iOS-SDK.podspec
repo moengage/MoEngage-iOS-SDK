@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'MoEngage-iOS-SDK'
-  s.version      = '6.0.3'
+  s.version      = '6.1.0'
   s.summary      = 'MoEngage for iOS'
   s.description  = <<-DESC
                    MoEngage is a mobile marketing automation company. This framework acts like a umbrella framework to include MoEngageCore, MOAnalytics and MOMessaging frameworks.
@@ -24,9 +24,9 @@ Pod::Spec.new do |s|
                     :tag => 'moengage-' + s.version.to_s 
                     }
                     
-  s.ios.vendored_frameworks = 'Frameworks/MoEngage/MoEngage.framework','Frameworks/MoEngageCore/MoEngageCore.framework', 'Frameworks/MoEngageAnalytics/MOAnalytics.framework', 'Frameworks/MoEngageMessaging/MOMessaging.framework'
-  s.preserve_paths =  'Frameworks/MoEngage/MoEngage.framework','Frameworks/MoEngageCore/MoEngageCore.framework', 'Frameworks/MoEngageAnalytics/MOAnalytics.framework', 'Frameworks/MoEngageMessaging/MOMessaging.framework'
-  s.module_map = 'Frameworks/MoEngage/MoEngage.framework/Modules/module.modulemap'
+  s.ios.vendored_frameworks = 'Frameworks/MoEngage.framework','Frameworks/MoEngageCore.framework', 'Frameworks/MOAnalytics.framework', 'Frameworks/MOMessaging.framework'
+  s.preserve_paths =  'Frameworks/MoEngage.framework','Frameworks/MoEngageCore.framework', 'Frameworks/MOAnalytics.framework', 'Frameworks/MOMessaging.framework'
+  s.module_map = 'Frameworks/MoEngage.framework/Modules/module.modulemap'
 
   s.requires_arc = true
   s.frameworks = 'Foundation', 'UIKit', 'SystemConfiguration' , 'Security'
