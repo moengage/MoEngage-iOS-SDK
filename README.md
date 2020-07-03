@@ -3,7 +3,6 @@
 
 [![Version](https://img.shields.io/cocoapods/v/MoEngage-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/MoEngage-iOS-SDK)
 [![License](https://img.shields.io/cocoapods/l/MoEngage-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/MoEngage-iOS-SDK)
-[![CocoaPods](https://img.shields.io/cocoapods/dm/MoEngage-iOS-SDK.svg)](https://cocoapods.org/pods/MoEngage-iOS-SDK)
 
 MoEngage provides a platform which enables companies to deliver personalized interactions to their users through push notifications, in-app campaigns, email campaigns and other re-targeting channels.
 
@@ -38,9 +37,9 @@ Login to your MoEngage account, go to **Settings** in the left panel of the dash
         // Separate initialization methods for Dev and Prod initializations
     
         #ifdef DEBUG
-            [[MoEngage sharedInstance] initializeDevwithAppID:@"Your APP ID" withLaunchOptions:launchOption];
+            [[MoEngage sharedInstance] initializeDevWithAppID:@"Your APP ID" withLaunchOptions:launchOption];
         #else
-            [[MoEngage sharedInstance] initializeProdwithAppID:@"Your APP ID" withLaunchOptions:launchOption];
+            [[MoEngage sharedInstance] initializeProdWithAppID:@"Your APP ID" withLaunchOptions:launchOption];
         #endif
         
         //Rest of the implementation of method
