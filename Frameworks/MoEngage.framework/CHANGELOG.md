@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 6.1.1  *(5th July, 2020)*
+-------------------------------------------
+* Unity Integration tracking added.
+
 ### Version 6.1.0  *(2nd July, 2020)*
 -------------------------------------------
 * Support For [Cards Campaign](https://docs.moengage.com/docs/ios-cards) added

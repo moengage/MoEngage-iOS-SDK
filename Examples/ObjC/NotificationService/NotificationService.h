@@ -1,9 +1,9 @@
 //
 //  NotificationService.h
-//  NotificationServiceExtension
+//  MoENotificationServiceExtension
 //
-//  Created by Chengappa C D on 04/04/18.
-//  Copyright © 2018 MoEngage. All rights reserved.
+//  Created by Chengappa C D on 04/04/20.
+//  Copyright © 2020 MoEngage. All rights reserved.
 //
 
 #import <UserNotifications/UserNotifications.h>

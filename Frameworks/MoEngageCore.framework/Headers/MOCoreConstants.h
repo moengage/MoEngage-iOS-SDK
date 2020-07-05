@@ -34,6 +34,7 @@ extern NSString* const MoEngage_React_Native_SDK_Version;
 extern NSString* const MoEngage_Segment_SDK_Version;
 extern NSString* const MoEngage_Xamarin_SDK_Version;
 extern NSString* const MoEngage_Flutter_SDK_Version;
+extern NSString* const MoEngage_Unity_SDK_Version;
 
 // Misc
 extern NSString* const kMoEngageSDKBundleId;

@@ -52,6 +52,10 @@ typedef enum UserGender{
 /// Delegate for getting callback on track event for real-time trigger Campaign
 @property(weak, nonatomic, nullable) id<MOEventTriggerDelegate> messagingTriggerDelegate;
 
+@property(assign, nonatomic) BOOL idfaTrackingOptedOut;
+
+@property(assign, nonatomic) BOOL idfvTrackingOptedOut;
+
 #pragma mark - Initialize Methods
 
 /// Method to get the singleton instance
@@ -196,6 +200,14 @@ Method to support deprecated trackEvent:builderPayload: in MoEngage class
 /// Method to opt-out of GDPR Data Tracking
 /// @param isOptedOut Data Tracking opt-out status
 -(void)optOutOfDataTracking:(BOOL)isOptedOut;
+
+/// Method to opt-out of Advertising Identifier Tracking
+/// @param isOptedOut IDFA Tracking opt-out status
+-(void)optOutOfIDFATracking:(BOOL)isOptedOut;
+
+/// Method to opt-out of IDFV Tracking
+/// @param isOptedOut IDFV Tracking opt-out status
+-(void)optOutOfIDFVTracking:(BOOL)isOptedOut;
 
 /// Method to track GDPR Push opt-out status
 /// @param value Bool value push opt-out status

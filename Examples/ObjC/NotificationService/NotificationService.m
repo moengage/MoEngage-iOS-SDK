@@ -1,13 +1,17 @@
+//
+//  NotificationService.m
+//  MoENotificationServiceExtension
+//
+//  Created by Chengappa C D on 04/04/20.
+//  Copyright © 2020 MoEngage. All rights reserved.
+//
+
 #import "NotificationService.h"
 #import <MORichNotification/MORichNotification.h>
 
-
-
 @interface NotificationService ()
-
 @property (nonatomic, strong) void (^contentHandler)(UNNotificationContent *contentToDeliver);
 @property (nonatomic, strong) UNMutableNotificationContent *bestAttemptContent;
-
 @end
 
 @implementation NotificationService
@@ -37,7 +41,5 @@
     // Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used.
     self.contentHandler(self.bestAttemptContent);
 }
-
-
 
 @end

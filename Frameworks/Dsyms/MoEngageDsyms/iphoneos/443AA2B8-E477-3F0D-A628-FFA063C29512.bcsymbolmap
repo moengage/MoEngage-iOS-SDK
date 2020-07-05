@@ -9,20 +9,18 @@ ___33+[MOEventsHandler sharedInstance]_block_invoke
 -[MOEventsHandler applicationEnteredBackground:]
 -[MOEventsHandler initiateTimer]
 ___32-[MOEventsHandler initiateTimer]_block_invoke
-___copy_helper_block_e8_20s
-___destroy_helper_block_e8_20s
+___copy_helper_block_e8_32s
+___destroy_helper_block_e8_32s
 -[MOEventsHandler stopPeriodicSyncTimer]
 ___40-[MOEventsHandler stopPeriodicSyncTimer]_block_invoke
-___copy_helper_block_e4_20s
-___destroy_helper_block_e4_20s
 -[MOEventsHandler periodicSync]
 -[MOEventsHandler trackEvent:andPayload:]
 -[MOEventsHandler trackEvent:builderPayload:withCompletionBlock:]
 ___65-[MOEventsHandler trackEvent:builderPayload:withCompletionBlock:]_block_invoke
 ___65-[MOEventsHandler trackEvent:builderPayload:withCompletionBlock:]_block_invoke_2
 ___65-[MOEventsHandler trackEvent:builderPayload:withCompletionBlock:]_block_invoke_3
-___copy_helper_block_e4_20s24s28s32b
-___destroy_helper_block_e4_20s24s28s32s
+___copy_helper_block_e8_32s40s48s56b
+___destroy_helper_block_e8_32s40s48s56s
 -[MOEventsHandler shouldEventBeTrackedWithName:andPayload:]
 -[MOEventsHandler shouldEventSkippedFromDataOptOut:]
 -[MOEventsHandler getAnalyticsWhitelistedEvents]
@@ -31,19 +29,19 @@ ___destroy_helper_block_e4_20s24s28s32s
 -[MOEventsHandler addEventToViewInfoWithEventDict:]
 -[MOEventsHandler flushWithCompletionBlock:]
 ___44-[MOEventsHandler flushWithCompletionBlock:]_block_invoke
-___copy_helper_block_e4_20b
+___copy_helper_block_e8_32b
 -[MOEventsHandler reportAddPayloadForBatchInfo:]
 -[MOEventsHandler flushEventsInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]
 ___94-[MOEventsHandler flushEventsInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]_block_invoke
-___copy_helper_block_e4_20s24s28s32s36b
-___destroy_helper_block_e4_20s24s28s32s36s
+___copy_helper_block_e8_32s40s48s56s64b
+___destroy_helper_block_e8_32s40s48s56s64s
 -[MOEventsHandler synchronousFlushInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]
 ___Block_byref_object_copy_
 ___Block_byref_object_dispose_
 ___99-[MOEventsHandler synchronousFlushInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]_block_invoke
 ___99-[MOEventsHandler synchronousFlushInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]_block_invoke_2
-___copy_helper_block_e4_20s24s28s32b36r40r44r48r
-___destroy_helper_block_e4_20s24s28s32s36r40r44r48r
+___copy_helper_block_e8_32s40s48s56b64r72r80r88r
+___destroy_helper_block_e8_32s40s48s56s64r72r80r88r
 -[MOEventsHandler flushAttemptCompletedInBackground:andForReset:]
 -[MOEventsHandler setReportsResetInvocationInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]
 -[MOEventsHandler getBatchesWithViewsArray:]
@@ -56,8 +54,8 @@ ___destroy_helper_block_e4_20s24s28s32s36r40r44r48r
 -[MOEventsHandler removeEventsPlistFile]
 -[MOEventsHandler syncToServerFromDumpFile]
 ___43-[MOEventsHandler syncToServerFromDumpFile]_block_invoke
-___copy_helper_block_e4_20s24r28r
-___destroy_helper_block_e4_20s24r28r
+___copy_helper_block_e8_32s40r48r
+___destroy_helper_block_e8_32s40r48r
 -[MOEventsHandler getEventsFromDumpFile]
 -[MOEventsHandler oldDatFilePath]
 -[MOEventsHandler removeDatFile]
@@ -88,7 +86,7 @@ ___destroy_helper_block_e4_20s24r28r
 -[MOEventsHandler .cxx_destruct]
 _sharedInstance.onceToken
 _sharedInstance.instance
-___block_descriptor_20_e5_v4?0l
+___block_descriptor_32_e5_v8?0l
 ___block_literal_global
 _OBJC_CLASSLIST_REFERENCES_$_
 _OBJC_SELECTOR_REFERENCES_
@@ -131,10 +129,10 @@ _OBJC_CLASSLIST_REFERENCES_$_.68
 _OBJC_SELECTOR_REFERENCES_.70
 _OBJC_SELECTOR_REFERENCES_.72
 _OBJC_SELECTOR_REFERENCES_.74
-___block_descriptor_36_e8_20s_e5_v4?0l
+___block_descriptor_48_e8_32s_e5_v8?0l
 _OBJC_SELECTOR_REFERENCES_.80
 _OBJC_SELECTOR_REFERENCES_.82
-___block_descriptor_24_e4_20s_e5_v4?0l
+___block_descriptor_40_e8_32s_e5_v8?0l
 _OBJC_SELECTOR_REFERENCES_.88
 _OBJC_CLASSLIST_REFERENCES_$_.89
 _OBJC_SELECTOR_REFERENCES_.91
@@ -154,7 +152,7 @@ _OBJC_SELECTOR_REFERENCES_.115
 _OBJC_SELECTOR_REFERENCES_.117
 _OBJC_SELECTOR_REFERENCES_.119
 _OBJC_SELECTOR_REFERENCES_.121
-___block_descriptor_36_e4_20s24s28s32bs_e5_v4?0l
+___block_descriptor_64_e8_32s40s48s56bs_e5_v8?0l
 _OBJC_SELECTOR_REFERENCES_.123
 _OBJC_SELECTOR_REFERENCES_.125
 _OBJC_SELECTOR_REFERENCES_.127
@@ -189,7 +187,7 @@ _OBJC_SELECTOR_REFERENCES_.191
 _OBJC_SELECTOR_REFERENCES_.193
 _OBJC_SELECTOR_REFERENCES_.195
 _OBJC_SELECTOR_REFERENCES_.197
-___block_descriptor_24_e4_20bs_e10_v12?0c4c8l
+___block_descriptor_40_e8_32bs_e11_v16?0B8B12l
 _OBJC_SELECTOR_REFERENCES_.200
 _OBJC_SELECTOR_REFERENCES_.206
 _OBJC_SELECTOR_REFERENCES_.208
@@ -207,7 +205,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.236
 _OBJC_SELECTOR_REFERENCES_.238
 _OBJC_SELECTOR_REFERENCES_.240
 _OBJC_SELECTOR_REFERENCES_.242
-___block_descriptor_40_e4_20s24s28s32s36bs_e5_v4?0l
+___block_descriptor_72_e8_32s40s48s56s64bs_e5_v8?0l
 _OBJC_SELECTOR_REFERENCES_.246
 _OBJC_SELECTOR_REFERENCES_.248
 _OBJC_SELECTOR_REFERENCES_.250
@@ -231,8 +229,8 @@ _OBJC_CLASSLIST_REFERENCES_$_.287
 _OBJC_SELECTOR_REFERENCES_.289
 _OBJC_SELECTOR_REFERENCES_.293
 _OBJC_SELECTOR_REFERENCES_.297
-___block_descriptor_53_e4_20s24s28s32bs36r40r44r48r_e5_v4?0l
-___block_descriptor_56_e4_20s24s28s32bs36r40r44r48r_e24_v12?0c4"NSDictionary"8l
+___block_descriptor_97_e8_32s40s48s56bs64r72r80r88r_e5_v8?0l
+___block_descriptor_104_e8_32s40s48s56bs64r72r80r88r_e25_v20?0B8"NSDictionary"12l
 _OBJC_SELECTOR_REFERENCES_.302
 _OBJC_SELECTOR_REFERENCES_.304
 _OBJC_SELECTOR_REFERENCES_.306
@@ -271,7 +269,7 @@ _OBJC_SELECTOR_REFERENCES_.377
 _OBJC_SELECTOR_REFERENCES_.383
 _OBJC_SELECTOR_REFERENCES_.385
 _OBJC_SELECTOR_REFERENCES_.391
-___block_descriptor_32_e4_20s24r28r_e24_v12?0c4"NSDictionary"8l
+___block_descriptor_56_e8_32s40r48r_e25_v20?0B8"NSDictionary"12l
 _OBJC_SELECTOR_REFERENCES_.393
 _OBJC_SELECTOR_REFERENCES_.395
 _OBJC_CLASSLIST_REFERENCES_$_.396
@@ -301,30 +299,28 @@ _OBJC_LABEL_CLASS_$
 /Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/EventManagement/MOEventsHandler.m
 MOAnalytics/EventManagement/MOEventsHandler.m
 MOAnalytics/EventManagement/MOEventsHandler.h
-__destroy_helper_block_e4_20s24r28r
-__copy_helper_block_e4_20s24r28r
+__destroy_helper_block_e8_32s40r48r
+__copy_helper_block_e8_32s40r48r
 __43-[MOEventsHandler syncToServerFromDumpFile]_block_invoke
-__destroy_helper_block_e4_20s24s28s32s36r40r44r48r
-__copy_helper_block_e4_20s24s28s32b36r40r44r48r
+__destroy_helper_block_e8_32s40s48s56s64r72r80r88r
+__copy_helper_block_e8_32s40s48s56b64r72r80r88r
 __99-[MOEventsHandler synchronousFlushInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]_block_invoke_2
 __99-[MOEventsHandler synchronousFlushInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]_block_invoke
 __Block_byref_object_dispose_
 __Block_byref_object_copy_
-__destroy_helper_block_e4_20s24s28s32s36s
-__copy_helper_block_e4_20s24s28s32s36b
+__destroy_helper_block_e8_32s40s48s56s64s
+__copy_helper_block_e8_32s40s48s56s64b
 __94-[MOEventsHandler flushEventsInBackground:andReset:andOnlyForEventsPlist:withCompletionBlock:]_block_invoke
-__copy_helper_block_e4_20b
+__copy_helper_block_e8_32b
 __44-[MOEventsHandler flushWithCompletionBlock:]_block_invoke
-__destroy_helper_block_e4_20s24s28s32s
-__copy_helper_block_e4_20s24s28s32b
+__destroy_helper_block_e8_32s40s48s56s
+__copy_helper_block_e8_32s40s48s56b
 __65-[MOEventsHandler trackEvent:builderPayload:withCompletionBlock:]_block_invoke_3
 __65-[MOEventsHandler trackEvent:builderPayload:withCompletionBlock:]_block_invoke_2
 __65-[MOEventsHandler trackEvent:builderPayload:withCompletionBlock:]_block_invoke
-__destroy_helper_block_e4_20s
-__copy_helper_block_e4_20s
 __40-[MOEventsHandler stopPeriodicSyncTimer]_block_invoke
-__destroy_helper_block_e8_20s
-__copy_helper_block_e8_20s
+__destroy_helper_block_e8_32s
+__copy_helper_block_e8_32s
 __32-[MOEventsHandler initiateTimer]_block_invoke
 __33+[MOEventsHandler sharedInstance]_block_invoke
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/usr/include/dispatch/once.h
@@ -496,7 +492,7 @@ _OBJC_SELECTOR_REFERENCES_.92
 _OBJC_CLASSLIST_REFERENCES_$_.93
 _OBJC_CLASSLIST_REFERENCES_$_.98
 _OBJC_CLASSLIST_REFERENCES_$_.99
-___block_descriptor_20_e10_v12?0c4c8l
+___block_descriptor_32_e11_v16?0B8B12l
 ___block_literal_global.109
 ___block_literal_global.114
 _OBJC_SELECTOR_REFERENCES_.118
@@ -588,6 +584,9 @@ ___43+[MODeviceAttributesHandler sharedInstance]_block_invoke
 -[MODeviceAttributesHandler setDeviceModelAttributes]
 _OBJC_CLASSLIST_REFERENCES_$_.10
 _OBJC_CLASSLIST_REFERENCES_$_.26
+_OBJC_CLASSLIST_REFERENCES_$_.53
+_OBJC_SELECTOR_REFERENCES_.55
+_OBJC_SELECTOR_REFERENCES_.57
 __OBJC_$_CLASS_METHODS_MODeviceAttributesHandler
 __OBJC_METACLASS_RO_$_MODeviceAttributesHandler
 __OBJC_$_INSTANCE_METHODS_MODeviceAttributesHandler
@@ -626,8 +625,6 @@ _sharedProxy.onceToken
 _OBJC_CLASSLIST_REFERENCES_$_.4
 _OBJC_CLASSLIST_REFERENCES_$_.42
 _OBJC_CLASSLIST_REFERENCES_$_.51
-_OBJC_SELECTOR_REFERENCES_.55
-_OBJC_SELECTOR_REFERENCES_.57
 _OBJC_SELECTOR_REFERENCES_.59
 _OBJC_CLASSLIST_REFERENCES_$_.60
 _OBJC_SELECTOR_REFERENCES_.66
@@ -803,16 +800,16 @@ ___55-[MOAnalytics syncOnSessionTerminationWithApplication:]_block_invoke_2
 ___55-[MOAnalytics syncOnSessionTerminationWithApplication:]_block_invoke_3
 -[MOAnalytics initNewUser]
 ___26-[MOAnalytics initNewUser]_block_invoke
-___copy_helper_block_e4_20w
-___destroy_helper_block_e4_20w
+___copy_helper_block_e8_32w
+___destroy_helper_block_e8_32w
 -[MOAnalytics clearUserInfo]
 -[MOAnalytics trackReinstall]
 -[MOAnalytics setDeviceModelAttributes]
 -[MOAnalytics trackAdvertisingIdentifier]
 -[MOAnalytics trackEvent:andPayload:]
 ___37-[MOAnalytics trackEvent:andPayload:]_block_invoke
-___copy_helper_block_e4_20s24s
-___destroy_helper_block_e4_20s24s
+___copy_helper_block_e8_32s40s
+___destroy_helper_block_e8_32s40s
 -[MOAnalytics trackEvent:builderPayload:]
 ___41-[MOAnalytics trackEvent:builderPayload:]_block_invoke
 -[MOAnalytics trackEvent:withProperties:]
@@ -854,14 +851,16 @@ ___42-[MOAnalytics updateDeviceWithCompletion:]_block_invoke
 -[MOAnalytics optOutOfDataTracking:]
 ___36-[MOAnalytics optOutOfDataTracking:]_block_invoke
 -[MOAnalytics setPushGDPROptOutStatus:forKey:]
--[MOAnalytics makeCardsRequest]
-___31-[MOAnalytics makeCardsRequest]_block_invoke
--[MOAnalytics makeCardsDeleteRequest]
-___37-[MOAnalytics makeCardsDeleteRequest]_block_invoke
+-[MOAnalytics optOutOfIDFVTracking:]
+-[MOAnalytics optOutOfIDFATracking:]
 -[MOAnalytics inappTriggerDelegate]
 -[MOAnalytics setInappTriggerDelegate:]
 -[MOAnalytics messagingTriggerDelegate]
 -[MOAnalytics setMessagingTriggerDelegate:]
+-[MOAnalytics idfaTrackingOptedOut]
+-[MOAnalytics setIdfaTrackingOptedOut:]
+-[MOAnalytics idfvTrackingOptedOut]
+-[MOAnalytics setIdfvTrackingOptedOut:]
 -[MOAnalytics reportsBGTask]
 -[MOAnalytics setReportsBGTask:]
 -[MOAnalytics deviceUpdateBGTask]
@@ -872,7 +871,6 @@ ___37-[MOAnalytics makeCardsDeleteRequest]_block_invoke
 _OBJC_CLASSLIST_REFERENCES_$_.9
 _OBJC_CLASSLIST_REFERENCES_$_.14
 _OBJC_CLASSLIST_REFERENCES_$_.21
-_OBJC_CLASSLIST_REFERENCES_$_.53
 _OBJC_SELECTOR_REFERENCES_.61
 _OBJC_SELECTOR_REFERENCES_.78
 _OBJC_CLASSLIST_REFERENCES_$_.85
@@ -883,84 +881,67 @@ _OBJC_CLASSLIST_REFERENCES_$_.107
 ___block_literal_global.117
 _OBJC_CLASSLIST_REFERENCES_$_.124
 _OBJC_SELECTOR_REFERENCES_.148
-___block_descriptor_24_e4_20s_e10_v12?0c4c8l
-___block_descriptor_24_e4_20s_e7_v8?0c4l
+___block_descriptor_40_e8_32s_e11_v16?0B8B12l
+___block_descriptor_40_e8_32s_e8_v12?0B8l
 ___block_literal_global.168
-___block_descriptor_24_e4_20w_e7_v8?0c4l
+___block_descriptor_40_e8_32w_e8_v12?0B8l
 _OBJC_CLASSLIST_REFERENCES_$_.181
 _OBJC_CLASSLIST_REFERENCES_$_.184
 _OBJC_SELECTOR_REFERENCES_.186
 _OBJC_SELECTOR_REFERENCES_.188
 _OBJC_CLASSLIST_REFERENCES_$_.191
-_OBJC_CLASSLIST_REFERENCES_$_.194
-___block_descriptor_28_e4_20s24s_e5_v4?0l
+_OBJC_CLASSLIST_REFERENCES_$_.196
+___block_descriptor_48_e8_32s40s_e5_v8?0l
 _OBJC_SELECTOR_REFERENCES_.212
-_OBJC_SELECTOR_REFERENCES_.216
-_OBJC_CLASSLIST_REFERENCES_$_.225
-_OBJC_SELECTOR_REFERENCES_.227
+_OBJC_SELECTOR_REFERENCES_.214
+_OBJC_SELECTOR_REFERENCES_.218
+_OBJC_CLASSLIST_REFERENCES_$_.227
 _OBJC_SELECTOR_REFERENCES_.229
-___block_descriptor_44_e8_20s_e5_v4?0l
-___block_descriptor_24_e4_20bs_e5_v4?0l
-_OBJC_SELECTOR_REFERENCES_.239
-___block_descriptor_24_e4_20bs_e7_v8?0c4l
-_OBJC_SELECTOR_REFERENCES_.245
+___block_descriptor_56_e8_32s_e5_v8?0l
+___block_descriptor_40_e8_32bs_e5_v8?0l
+_OBJC_SELECTOR_REFERENCES_.241
+___block_descriptor_40_e8_32bs_e8_v12?0B8l
 _OBJC_SELECTOR_REFERENCES_.247
 _OBJC_SELECTOR_REFERENCES_.249
 _OBJC_SELECTOR_REFERENCES_.251
-_OBJC_SELECTOR_REFERENCES_.255
+_OBJC_SELECTOR_REFERENCES_.253
 _OBJC_SELECTOR_REFERENCES_.257
 _OBJC_SELECTOR_REFERENCES_.259
 _OBJC_SELECTOR_REFERENCES_.261
 _OBJC_SELECTOR_REFERENCES_.263
 _OBJC_SELECTOR_REFERENCES_.265
-___block_descriptor_20_e7_v8?0c4l
-___block_literal_global.272
-_OBJC_SELECTOR_REFERENCES_.280
+___block_descriptor_32_e8_v12?0B8l
+___block_literal_global.274
 _OBJC_SELECTOR_REFERENCES_.288
-_OBJC_CLASSLIST_REFERENCES_$_.289
-_OBJC_SELECTOR_REFERENCES_.291
+_OBJC_SELECTOR_REFERENCES_.290
+_OBJC_CLASSLIST_REFERENCES_$_.291
 _OBJC_SELECTOR_REFERENCES_.295
-_OBJC_CLASSLIST_REFERENCES_$_.296
-_OBJC_SELECTOR_REFERENCES_.298
-___block_descriptor_28_e4_20bs_e24_v12?0c4"NSDictionary"8l
-_OBJC_SELECTOR_REFERENCES_.303
-_OBJC_CLASSLIST_REFERENCES_$_.304
-_OBJC_CLASSLIST_REFERENCES_$_.311
-_OBJC_SELECTOR_REFERENCES_.313
+_OBJC_CLASSLIST_REFERENCES_$_.298
+_OBJC_SELECTOR_REFERENCES_.300
+___block_descriptor_48_e8_32bs_e25_v20?0B8"NSDictionary"12l
+_OBJC_SELECTOR_REFERENCES_.305
+_OBJC_CLASSLIST_REFERENCES_$_.306
+_OBJC_CLASSLIST_REFERENCES_$_.313
 _OBJC_SELECTOR_REFERENCES_.315
-_OBJC_SELECTOR_REFERENCES_.319
+_OBJC_SELECTOR_REFERENCES_.317
+_OBJC_SELECTOR_REFERENCES_.329
+_OBJC_SELECTOR_REFERENCES_.331
+_OBJC_CLASSLIST_REFERENCES_$_.332
 _OBJC_SELECTOR_REFERENCES_.338
-_OBJC_SELECTOR_REFERENCES_.340
 _OBJC_SELECTOR_REFERENCES_.342
 _OBJC_SELECTOR_REFERENCES_.344
 _OBJC_SELECTOR_REFERENCES_.346
 _OBJC_SELECTOR_REFERENCES_.348
-___block_descriptor_25_e4_20w_e7_v8?0c4l
-_OBJC_CLASSLIST_REFERENCES_$_.351
-_OBJC_CLASSLIST_REFERENCES_$_.352
+_OBJC_SELECTOR_REFERENCES_.350
+_OBJC_SELECTOR_REFERENCES_.352
+___block_descriptor_41_e8_32w_e8_v12?0B8l
 _OBJC_SELECTOR_REFERENCES_.356
-_OBJC_SELECTOR_REFERENCES_.358
 _OBJC_SELECTOR_REFERENCES_.360
-_OBJC_SELECTOR_REFERENCES_.364
-_OBJC_SELECTOR_REFERENCES_.368
-_OBJC_SELECTOR_REFERENCES_.370
-_OBJC_SELECTOR_REFERENCES_.372
-_OBJC_SELECTOR_REFERENCES_.376
-_OBJC_SELECTOR_REFERENCES_.380
-_OBJC_CLASSLIST_REFERENCES_$_.405
-_OBJC_SELECTOR_REFERENCES_.407
-_OBJC_SELECTOR_REFERENCES_.409
-_OBJC_SELECTOR_REFERENCES_.411
-_OBJC_SELECTOR_REFERENCES_.413
-_OBJC_SELECTOR_REFERENCES_.415
-_OBJC_SELECTOR_REFERENCES_.419
-_OBJC_CLASSLIST_REFERENCES_$_.420
-___block_descriptor_24_e45_v16?0"NSData"4"NSURLResponse"8"NSError"12l
-_OBJC_SELECTOR_REFERENCES_.429
-_OBJC_SELECTOR_REFERENCES_.431
 __OBJC_$_CLASS_METHODS_MOAnalytics
 __OBJC_METACLASS_RO_$_MOAnalytics
 __OBJC_$_INSTANCE_METHODS_MOAnalytics
+_OBJC_IVAR_$_MOAnalytics._idfaTrackingOptedOut
+_OBJC_IVAR_$_MOAnalytics._idfvTrackingOptedOut
 _OBJC_IVAR_$_MOAnalytics._inappTriggerDelegate
 _OBJC_IVAR_$_MOAnalytics._messagingTriggerDelegate
 _OBJC_IVAR_$_MOAnalytics._reportsBGTask
@@ -972,8 +953,6 @@ __OBJC_CLASS_RO_$_MOAnalytics
 /Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/MOAnalytics.m
 MOAnalytics/MOAnalytics.m
 MOAnalytics/MOAnalytics.h
-__37-[MOAnalytics makeCardsDeleteRequest]_block_invoke
-__31-[MOAnalytics makeCardsRequest]_block_invoke
 __36-[MOAnalytics optOutOfDataTracking:]_block_invoke
 __42-[MOAnalytics updateDeviceWithCompletion:]_block_invoke
 __31-[MOAnalytics pushTokenUpdated]_block_invoke
@@ -988,11 +967,11 @@ __43-[MOAnalytics setUserAttributeDate:forKey:]_block_invoke
 __48-[MOAnalytics setUserAttributeTimestamp:forKey:]_block_invoke
 __39-[MOAnalytics setUserAttribute:forKey:]_block_invoke
 __41-[MOAnalytics trackEvent:builderPayload:]_block_invoke
-__destroy_helper_block_e4_20s24s
-__copy_helper_block_e4_20s24s
+__destroy_helper_block_e8_32s40s
+__copy_helper_block_e8_32s40s
 __37-[MOAnalytics trackEvent:andPayload:]_block_invoke
-__destroy_helper_block_e4_20w
-__copy_helper_block_e4_20w
+__destroy_helper_block_e8_32w
+__copy_helper_block_e8_32w
 __26-[MOAnalytics initNewUser]_block_invoke
 __55-[MOAnalytics syncOnSessionTerminationWithApplication:]_block_invoke_3
 __55-[MOAnalytics syncOnSessionTerminationWithApplication:]_block_invoke_2
@@ -1122,8 +1101,8 @@ ___40+[MOSessionManager sharedSessionManager]_block_invoke
 -[MOSessionManager applicationInActive:]
 -[MOSessionManager initiateNewSessionWithSources:andCompletionBlock:]
 ___69-[MOSessionManager initiateNewSessionWithSources:andCompletionBlock:]_block_invoke
-___copy_helper_block_e4_20b24r
-___destroy_helper_block_e4_20s24r
+___copy_helper_block_e8_32b40r
+___destroy_helper_block_e8_32s40r
 -[MOSessionManager isAppInBackgroundState]
 -[MOSessionManager reinitiateSessionOnLogout]
 -[MOSessionManager checkSessionForEvent:withPayload:withCompletionBlock:]
@@ -1150,11 +1129,11 @@ _sharedSessionManager.instance
 _OBJC_CLASSLIST_REFERENCES_$_.7
 _OBJC_CLASSLIST_REFERENCES_$_.39
 _OBJC_CLASSLIST_REFERENCES_$_.58
-___block_descriptor_28_e4_20bs24r_e7_v8?0c4l
-___block_descriptor_24_e4_20bs_e18_v8?0"MOSession"4l
+___block_descriptor_48_e8_32bs40r_e8_v12?0B8l
+___block_descriptor_40_e8_32bs_e19_v16?0"MOSession"8l
 _OBJC_CLASSLIST_REFERENCES_$_.101
 _OBJC_CLASSLIST_REFERENCES_$_.113
-___block_descriptor_20_e18_v8?0"MOSession"4l
+___block_descriptor_32_e19_v16?0"MOSession"8l
 ___block_literal_global.116
 ___block_literal_global.125
 _OBJC_CLASSLIST_REFERENCES_$_.137
@@ -1178,8 +1157,8 @@ MOAnalytics/SessionAndSource/MOSessionManager.h
 __45-[MOSessionManager appOpenedWithSourceArray:]_block_invoke_2
 __45-[MOSessionManager appOpenedWithSourceArray:]_block_invoke
 __73-[MOSessionManager checkSessionForEvent:withPayload:withCompletionBlock:]_block_invoke
-__destroy_helper_block_e4_20s24r
-__copy_helper_block_e4_20b24r
+__destroy_helper_block_e8_32s40r
+__copy_helper_block_e8_32b40r
 __69-[MOSessionManager initiateNewSessionWithSources:andCompletionBlock:]_block_invoke
 __40+[MOSessionManager sharedSessionManager]_block_invoke
 -[MOGeoLocation initWithLatitude:andLongitude:]
