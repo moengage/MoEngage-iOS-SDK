@@ -1,5 +1,9 @@
 # Change Log:
 
+### Version 3.1.3  *(17th August, 2020)*
+-------------------------------------------
+* Changed Deployment target in podspec to iOS 9.0.
+
 ### Version 3.1.1  *(18th March, 2020)*
 -------------------------------------------
 * Support for India cluster and fixes in impression tracking.
