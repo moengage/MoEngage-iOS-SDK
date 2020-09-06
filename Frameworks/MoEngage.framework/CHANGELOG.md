@@ -3,6 +3,11 @@
 
 ## Change Log:
 
+### Version 6.2.0  *(6th September, 2020)*
+-------------------------------------------
+* Push Templates Support Added(Stylized Basic and Simple Image Carousel).
+* Changes to support Inbox for multiple apps with same App Group ID.(with MORichNotification version 4.0.0)
+
 ### Version 6.1.1  *(5th July, 2020)*
 -------------------------------------------
 * Unity Integration tracking added.

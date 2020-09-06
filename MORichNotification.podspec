@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MORichNotification'
-  s.version          = '3.1.3'
+  s.version          = '4.0.0'
   s.summary          = 'MoEngage Rich Notifications for iOS.'
 
   s.description  = <<-DESC
@@ -25,5 +25,5 @@ Pod::Spec.new do |s|
   s.module_map = 'Frameworks/MORichNotification.framework/Modules/module.modulemap'
 
   s.requires_arc = true
-  s.frameworks = 'Foundation', 'UIKit', 'UserNotifications'
+  s.frameworks = 'Foundation', 'UIKit', 'UserNotifications', 'UserNotificationsUI'
 end

@@ -28,6 +28,21 @@ FOUNDATION_EXPORT const unsigned char MOMessagingVersionString[];
 
 
 NS_ASSUME_NONNULL_BEGIN
+
+#pragma mark - Messaging Protocol
+/**
+ Confirm to this protocol to get Notification related callbacks
+ */
+@protocol MOMessagingDelegate <NSObject>
+@optional
+
+/// This method will be called when a Notification is clicked by the user
+/// @param screenName Screen Name in case the click action contained a navigation action
+/// @param kvPairs Key Value pairs meant for the click action
+-(void)notificationClickedWithScreenName:(NSString* _Nullable)screenName andKVPairs:(NSDictionary* _Nullable)kvPairs;
+
+@end
+
 @interface MOMessaging : NSObject
 /**
  Set this property to YES if you don't wish to use the Inbox/Notification center feature
@@ -38,6 +53,9 @@ NS_ASSUME_NONNULL_BEGIN
  Set the property to YES if you don't want MoEngage to reset bagde no. on app open
  */
 @property(nonatomic, assign) BOOL      disableBadgeReset;
+
+/// Delegate to get the MOMessagingDelegate Protocol callbacks.
+@property(nonatomic, weak, nullable) id<MOMessagingDelegate> messagingDelegate;
 
 /// Method to get the singleton instance 
 +(instancetype _Nonnull )sharedInstance;
@@ -98,7 +116,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param settings The push notification settings.
  @since iOS8
  */
--(void)didRegisterForUserNotificationSettings:(UIUserNotificationSettings *_Nullable)settings;
+-(void)didRegisterForUserNotificationSettings:(UIUserNotificationSettings *_Nullable)settings API_DEPRECATED("This method is for iOS version below iOS 10.0", ios(8.0, 9.3.5));
 
 /**
  Call this method in AppDelegate in didFailToRegisterForRemoteNotificationsWithError

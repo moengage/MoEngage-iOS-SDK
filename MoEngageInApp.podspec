@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
                    InApp Messaging are custom views which you can send to a segment of users to show custom messages or give new offers or take to some specific pages. They can be created from your MoEngage dashboard and MOInApp framework enables you to show those InApp campaigns in your iOS Apps.
                    DESC
 
-  s.homepage     = 'http://www.moengage.com'
+  s.homepage     = 'https://www.moengage.com'
   s.documentation_url = 'https://docs.moengage.com/docs/in-app-nativ'
   s.license      = { :type => 'Commercial', :file => 'LICENSE' }
   s.author       = { 'Chengappa C D' => 'chengappa@moengage.com' }

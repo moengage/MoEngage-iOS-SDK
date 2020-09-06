@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
                    Create targeted or automated App Inbox/NewsFeed messages that can be grouped into various categories, and target your users with different updates or offers that can stay in the Inbox/Feed over a designated period of time.
                    DESC
 
-  s.homepage     = 'http://www.moengage.com'
+  s.homepage     = 'https://www.moengage.com'
   s.documentation_url = 'https://docs.moengage.com/docs/ios-cards'
   s.license      = { :type => 'Commercial', :file => 'LICENSE' }
   s.author       = { 'Chengappa C D' => 'chengappa@moengage.com' }

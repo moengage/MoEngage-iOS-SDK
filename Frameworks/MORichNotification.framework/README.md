@@ -3,12 +3,11 @@
 
 [![Version](https://img.shields.io/cocoapods/v/MORichNotification.svg?style=flat)](http://cocoapods.org/pods/MORichNotification)
 [![License](https://img.shields.io/cocoapods/l/MORichNotification.svg?style=flat)](http://cocoapods.org/pods/MORichNotification)
-[![CocoaPods](https://img.shields.io/cocoapods/dm/MORichNotification.svg)](https://cocoapods.org/pods/MORichNotification)
 
 Notifications have got a complete revamp in iOS10 with introduction of new UserNotifications and UserNotificationsUI framework. Now Apple has given us the ability to add images, gifs, audio and video files to the notifications. MORichNotification contains the part of MoEngageSDK where it handles these Rich Notifications.
 
 
-* First, create a Notification Service Extension for your app by referring the following [link](https://docs.moengage.com/docs/ios-10-rich-notifications#section-creating-notification-service-extension)
+* First, create a Notification Service Extension for your app.
 
 * Then integrate MORichNotification to Notification Service Extension via CocoaPods. Add the following line to your podfile for the Notification Service extension target. 
 
@@ -16,7 +15,7 @@ Notifications have got a complete revamp in iOS10 with introduction of new UserN
 
   To update, simply run ```pod update```
 
-  For more information on integration of the SDK, follow this [link](https://docs.moengage.com/docs/ios-10-rich-notifications#section-integrating-moengage-to-notification-service-extension).
+  For more information on integration of the SDK, follow this [link](https://docs.moengage.com/docs/push-notification-implementation#notification-service-extension-target-implementation).
 
 * Make the following code changes to your NotificationService Extension files:
   #### Objective-C:
@@ -36,15 +35,18 @@ Notifications have got a complete revamp in iOS10 with introduction of new UserN
 
 - (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler {
     @try {
+        //TODO: Add your App Group ID
+        [MORichNotification setAppGroupID:@"Your App Group ID"];
+        
         self.contentHandler = contentHandler;
         self.bestAttemptContent = [request.content mutableCopy];
+        
+        //Handle Rich Notification
         [MORichNotification handleRichNotificationRequest:request withContentHandler:contentHandler];
     } @catch (NSException *exception) {
         NSLog(@"MoEngage : exception : %@",exception);
     }
 }
-
-/// Save the image to disk
 
 - (void)serviceExtensionTimeWillExpire {
     // Called just before the extension will be terminated by the system.
@@ -57,7 +59,8 @@ Notifications have got a complete revamp in iOS10 with introduction of new UserN
   
   #### Swift:
   ```
-  import UserNotifications
+import UserNotifications
+import MORichNotification
 
 class NotificationService: UNNotificationServiceExtension {
 
@@ -65,19 +68,15 @@ class NotificationService: UNNotificationServiceExtension {
     var bestAttemptContent: UNMutableNotificationContent?
 
     override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
+        
+        //TODO: Add your App Group ID
+        MORichNotification.setAppGroupID("Your App Group ID")
+        
         self.contentHandler = contentHandler
         bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
         
-        MORichNotification.getAttachmentFrom(request) { (attachment) in
-            if let att = attachment {
-                self.bestAttemptContent?.attachments = [att]
-            }
-            
-            if let bestAttemptContent = self.bestAttemptContent {
-                contentHandler(bestAttemptContent)
-            }
-        }
-        
+        //Handle Rich Notification
+        MORichNotification.handle(request, withContentHandler: contentHandler)
     }
     
     override func serviceExtensionTimeWillExpire() {
@@ -98,11 +97,8 @@ class NotificationService: UNNotificationServiceExtension {
 
 
 ## Developer Docs
-Please refer to our developer docs to know more about MORichNotification: https://docs.moengage.com/docs/ios-10-rich-notifications.
+Please refer to our developer docs to know more about MORichNotification: https://docs.moengage.com/docs/push-notification-implementation#notification-service-extension-target-implementation.
 
 ## Change Log
 See [SDK Change Log](https://github.com/moengage/MORichNotification/blob/master/CHANGELOG.md) for information on every released version.
 
-## Support
-Please visit this repository's [Github issue tracker](https://github.com/moengage/MORichNotification/issues) for bug reports specific to our iOS SDK.
-For other issues and support please contact MoEngage support from your dashboard.

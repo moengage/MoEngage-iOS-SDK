@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
                    MOGeofence framework helps you to trigger notifications based on the exit/entry of geofences. This framework makes use of the Region Monitoring service of CoreLocation to achieve the same.
                    DESC
 
-  s.homepage     = 'http://www.moengage.com'
+  s.homepage     = 'https://www.moengage.com'
   s.documentation_url = 'https://docs.moengage.com/docs/geofences'
   s.license      = { :type => 'Commercial', :file => 'LICENSE' }
   s.author       = { 'Chengappa C D' => 'chengappa@moengage.com' }

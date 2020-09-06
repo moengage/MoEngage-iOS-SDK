@@ -1,8 +1,9 @@
 # Change Log:
 
-### Version 3.1.3  *(17th August, 2020)*
+### Version 4.0.0  *(6th September, 2020)*
 -------------------------------------------
-* Changed Deployment target in podspec to iOS 9.0.
+* Push Templates Support Added(Stylized Basic and Simple Image Carousel)
+* Changes to support Inbox for multiple apps with same App Group ID.(with MoEngage-iOS-SDK version 6.2.0)
 
 ### Version 3.1.1  *(18th March, 2020)*
 -------------------------------------------
@@ -49,4 +50,5 @@ Enabled tracking of push delivery using Notification Service Extension and AppGr
 ### Version 1.0.0  *(5th October, 2016)*
 -------------------------------------------
 Support for standard rich notifications with image/gif/video/audio supported for Notification Service Extension.
+
 

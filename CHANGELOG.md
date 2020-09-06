@@ -3,6 +3,15 @@
 
 ## Change Log:
 
+### Version 6.2.0  *(6th September, 2020)*
+-------------------------------------------
+* Push Templates Support Added(Stylized Basic and Simple Image Carousel).
+* Changes to support Inbox for multiple apps with same App Group ID.(with MORichNotification version 4.0.0)
+
+### Version 6.1.1  *(5th July, 2020)*
+-------------------------------------------
+* Unity Integration tracking added.
+
 ### Version 6.1.0  *(2nd July, 2020)*
 -------------------------------------------
 * Support For [Cards Campaign](https://docs.moengage.com/docs/ios-cards) added
@@ -22,7 +31,6 @@
 
 ### Version 6.0.0  *(21st February, 2020)*
 -------------------------------------------
-* Removed Support for iOS 8
 * SDK Rearchitected and has been split into 5 modules now i.e, `MoEngageCore`, `MOAnalytics`, `MOMessaging`, `MOInApp` and `MoEngage`(Umbrella framework).
 * InApp Module completely revamped, and has to be integrated separately now. Most of the APIs have changed, therefore refer to this [doc](https://docs.moengage.com/docs/in-app-nativ) to reintegrate the module to the project.
 * Initialization Methods are deprecated, get info on the updated intialization method from [here](https://docs.moengage.com/docs/appdelegate-changes#section-initializing-moengage-sdk)

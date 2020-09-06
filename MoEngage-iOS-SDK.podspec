@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'MoEngage-iOS-SDK'
-  s.version      = '6.1.1'
+  s.version      = '6.2.0'
   s.summary      = 'MoEngage for iOS'
   s.description  = <<-DESC
                    MoEngage is a mobile marketing automation company. This framework acts like a umbrella framework to include MoEngageCore, MOAnalytics and MOMessaging frameworks.
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
                    MOMessaging module will help you support all the features related to push notifications in your App.
                    DESC
 
-  s.homepage     = 'http://www.moengage.com'
+  s.homepage     = 'https://www.moengage.com'
   s.documentation_url = 'http://docs.moengage.com'
   s.license      = { :type => 'Commercial', :file => 'LICENSE' }
   s.author       = { 'Chengappa C D' => 'chengappa@moengage.com' }
@@ -31,4 +31,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.frameworks = 'Foundation', 'UIKit', 'SystemConfiguration' , 'Security'
   s.weak_framework = 'AdSupport', 'UserNotifications'
+  s.dependency 'MORichNotification', '~> 4.0'
 end

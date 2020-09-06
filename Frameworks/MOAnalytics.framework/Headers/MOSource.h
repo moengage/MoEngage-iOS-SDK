@@ -29,6 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(instancetype)initSourceWithPushPayload:(NSDictionary*)notifPayload;
 
+-(instancetype)initSourceWithSourceInfoDict:(NSDictionary*)sourceInfoDict;
+
 -(instancetype)initSourceWithURL:(NSString*)urlStr;
 
 @end

@@ -155,7 +155,7 @@ FOUNDATION_EXPORT const unsigned char MoEngageVersionString[];
  @param settings The push notification settings.
  @since iOS8
  */
--(void)didRegisterForUserNotificationSettings:(UIUserNotificationSettings *_Nullable)settings;
+-(void)didRegisterForUserNotificationSettings:(UIUserNotificationSettings *_Nullable)settings API_DEPRECATED("This method is for iOS version below iOS 10.0", ios(8.0, 9.3.5));
 
 /**
  Call this method in AppDelegate in didFailToRegisterForRemoteNotificationsWithError

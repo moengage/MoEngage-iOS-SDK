@@ -16,33 +16,39 @@ FOUNDATION_EXPORT double MORichNotificationVersionNumber;
 //! Project version string for MORichNotification.
 FOUNDATION_EXPORT const unsigned char MORichNotificationVersionString[];
 
+#import <MORichNotification/MOPushTemplateHandler.h>
+#import <MORichNotification/MOPushPayload.h>
+#import <MORichNotification/MORichPushMode.h>
+#import <MORichNotification/MORichPush.h>
+#import <MORichNotification/MOPushCard.h>
+#import <MORichNotification/MOPushWidget.h>
+#import <MORichNotification/MOPushAction.h>
+#import <MORichNotification/MOMedia.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+API_AVAILABLE(ios(10))
 @interface MORichNotification : NSObject
-/**
- *  Method to let SDK show Rich Notification
- */
+
+/// Method to let SDK show Rich Notification
+/// @param request UNNotificationRequest instance containing Remote notification info
+/// @param contentHandler Content Handler completion block to called after notification is processed
 +(void)handleRichNotificationRequest:(UNNotificationRequest*)request withContentHandler:(void (^)(UNNotificationContent *))contentHandler;
 
-/**
- *  Method to download and get attachment instance present in the notification request
- */
-+(void)getAttachmentFromNotificationRequest:(UNNotificationRequest*)request withCompletionBlock:(void (^)(UNNotificationAttachment*))completionBlock;
-
-/**
- * Method to enable logs to debug. By default the logs aren't shown.
- */
+/// Method to enable logs to debug. By default the logs aren't shown.
+/// @param shouldEnableDebug flag indicating to enable SDK logs
 +(void)enableDebugging:(BOOL)shouldEnableDebug;
 
-/*
- * Method to set the App Group ID for Notification impression tracking.
- */
+/// Method to set the App Group ID for Notification impression tracking.
+/// @param appGroupID app group Id
 +(void)setAppGroupID:(NSString*)appGroupID;
 
-/**
- Method to update badge on receiving the Notification
-
- @param bestAttemptContent Mutable Content instance to update badge
- */
-+(void)updateBadgeWithNotificationContent:(UNMutableNotificationContent*)bestAttemptContent;
+/// Method to support rich notifications for Local notifications
+/// @param request UNNotificationRequest instance containing Local notification info
+/// @param completionHandler Content Handler completion block to called after notification is processed
++(void)getLocalNotificationContentForRequest:(UNNotificationRequest*)request withCompletionHandler:(void (^)(UNNotificationContent *))completionHandler;;
 
 @end
 
+
+NS_ASSUME_NONNULL_END
