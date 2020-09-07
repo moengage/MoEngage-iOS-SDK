@@ -70,7 +70,3 @@ Please refer to our developer docs to know how to make use of our SDK to track E
 
 ## Change Log
 See [SDK Change Log](https://github.com/moengage/MoEngage-iOS-SDK/blob/master/CHANGELOG.md) for information on every released version.
-
-## Support
-Please visit this repository's [Github issue tracker](https://github.com/moengage/MoEngage-iOS-SDK/issues) for bug reports specific to our iOS SDK.
-For other issues and support please contact MoEngage support from your dashboard.
