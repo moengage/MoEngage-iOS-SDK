@@ -11,20 +11,22 @@ import MoEngage
 import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate{
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MOMessagingDelegate{
 
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         //TODO: Add your App Group ID
-        MoEngage.setAppGroupID("group.com.moengage.SampleApp.MoEngage")
+        MoEngage.setAppGroupID("Your App Group ID")
+        
+        MOMessaging.sharedInstance().messagingDelegate = self
         
         //This is to enable logs of MoEngage SDK
         //MoEngage.debug(LOG_ALL)
         
         //TODO: Add your MoEngage App ID
-        var yourMoEAppID = "DAO6UGZ73D9RTK8B5W96TPYN"
+        var yourMoEAppID = "Your MoEngage App ID"
         MoEngage.debug(LOG_ALL)
         DispatchQueue.main.async {
             #if DEBUG
@@ -157,6 +159,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func getAppVersion () -> AnyObject {
         return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")! as AnyObject
+    }
+    
+    func notificationClicked(withScreenName screenName: String?, andKVPairs kvPairs: [AnyHashable : Any]?) {
+        if let screenName = screenName {
+            print("Navigate to Screen:\(screenName)")
+        }
+        
+        if let actionKVPairs = kvPairs {
+            print("Selected Action KVPair:\(actionKVPairs)")
+        }
     }
 }
 

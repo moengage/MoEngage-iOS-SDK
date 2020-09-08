@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
 
     @IBOutlet weak var moeTableView: UITableView!
-    let moeActionArr : Array<String> = ["Track Event","Track User Attribute", "Show General InApp", "Show General self-handled InApp", "Inbox Messages", "Initiate Geofences Campaign", "Reset User"]
+    let moeActionArr : Array<String> = ["Track Event","Track User Attribute", "Show General InApp", "Show General self-handled InApp", "Inbox Messages", "Cards" , "Initiate Geofences Campaign", "Reset User"]
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -38,8 +38,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         case 2: self.showInApp()
         case 3: self.selfHandledInApp()
         case 4: self.getInboxMessages()
-        case 5: self.initiateGeoFences()
-        case 6: self.resetUser()
+        case 5: self.showCardsUI()
+        case 6: self.initiateGeoFences()
+        case 7: self.resetUser()
         default:
             print("Wrong Selection")
         }
@@ -114,6 +115,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    // Cards Feature
+    func showCardsUI () {
+        MOCards.sharedInstance.cardsDelegate = self
+        MOCards.sharedInstance.pushCardsViewController(toNavigationController: self.navigationController!)
+    }
+    
     func showInApp(){
         MOInApp.sharedInstance().show()
     }
@@ -169,3 +176,26 @@ extension ViewController : MOInAppNativDelegate{
     }
 }
 
+
+
+extension ViewController : MOCardsDelegate{
+    
+    func cardsSyncedSuccessfully() {
+        print("Callback called on successful sync of cards from server")
+    }
+    
+    func cardClicked(withCardInfo card: MOCard, andAction action: MOCardNavigationAction) -> Bool {
+        print("Card clicked with ID: \(card.cardID)")
+        return true
+    }
+    
+    func cardDeleted(withCardInfo card: MOCard) {
+         print("Card deleted with ID: \(card.cardID)")
+    }
+    
+    func cardsViewControllerDismissed() {
+        MOCards.sharedInstance.cardsDelegate = nil
+        print("Callback called on dismissing the Cards Viewcontroller")
+    }
+
+}

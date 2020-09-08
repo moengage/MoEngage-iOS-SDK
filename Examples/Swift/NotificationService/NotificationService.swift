@@ -17,23 +17,12 @@ class NotificationService: UNNotificationServiceExtension {
     override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
         
         //TODO: Add your App Group ID
-        MORichNotification.setAppGroupID("group.com.moengage.SampleApp.MoEngage")
+        MORichNotification.setAppGroupID("Your App Group ID")
         
         //Handle Rich Notification
         self.contentHandler = contentHandler
         bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
-        if let bestAttemptContent = bestAttemptContent {
-            MORichNotification.updateBadge(with: bestAttemptContent)
-            MORichNotification.getAttachmentFrom(request) { (attachment) in
-                if let attachment = attachment {
-                    self.bestAttemptContent?.attachments = [attachment]
-                }
-                if let bestAttemptContent = self.bestAttemptContent {
-                    contentHandler(bestAttemptContent)
-                }
-            }
-        }
-        
+        MORichNotification.handle(request, withContentHandler: contentHandler)
     }
     
     override func serviceExtensionTimeWillExpire() {
