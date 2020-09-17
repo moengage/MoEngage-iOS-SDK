@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 6.2.1  *(17th September, 2020)*
+-------------------------------------------
+* Added `notificationClickedWithScreenName:KVPairs:andPushPayload:` method to `MOMessagingDelegate` protocol.
+
 ### Version 6.2.0  *(6th September, 2020)*
 -------------------------------------------
 * Push Templates Support Added(Stylized Basic and Simple Image Carousel).

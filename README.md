@@ -3,7 +3,6 @@
 
 [![Version](https://img.shields.io/cocoapods/v/MoEngage-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/MoEngage-iOS-SDK)
 [![License](https://img.shields.io/cocoapods/l/MoEngage-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/MoEngage-iOS-SDK)
-[![CocoaPods](https://img.shields.io/cocoapods/dm/MoEngage-iOS-SDK.svg)](https://cocoapods.org/pods/MoEngage-iOS-SDK)
 
 MoEngage provides a platform which enables companies to deliver personalized interactions to their users through push notifications, in-app campaigns, email campaigns and other re-targeting channels.
 

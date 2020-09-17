@@ -41,6 +41,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param kvPairs Key Value pairs meant for the click action
 -(void)notificationClickedWithScreenName:(NSString* _Nullable)screenName andKVPairs:(NSDictionary* _Nullable)kvPairs;
 
+/// This method will be called when a Notification is clicked by the user
+/// @param screenName Screen Name in case the click action contained a navigation action
+/// @param kvPairs Key Value pairs meant for the click action
+/// @param userInfo Entire Push Payload
+-(void)notificationClickedWithScreenName:(NSString* _Nullable)screenName KVPairs:(NSDictionary* _Nullable)kvPairs andPushPayload:(NSDictionary*)userInfo;
+
 @end
 
 @interface MOMessaging : NSObject

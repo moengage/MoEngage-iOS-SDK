@@ -288,7 +288,7 @@ __OBJC_CLASS_RO_$_MOConfigManager
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOConfigManager/MOConfigManager.m
 MoEngageCore/MOConfigManager/MOConfigManager.m
 __33+[MOConfigManager sharedInstance]_block_invoke
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/usr/include/dispatch/once.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/usr/include/dispatch/once.h
 /Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOConfigManager/MOConfigConstant.m
 -[MONetworkClient init]
 -[MONetworkClient fetchRequest:withCompletionHandler:]
