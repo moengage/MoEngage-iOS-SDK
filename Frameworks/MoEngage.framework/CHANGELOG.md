@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 6.2.2  *(2nd November, 2020)*
+-------------------------------------------
+* Bugfix: Universal Links was taking user to Safari, instead of processing inside the app.
+
 ### Version 6.2.1  *(17th September, 2020)*
 -------------------------------------------
 * Added `notificationClickedWithScreenName:KVPairs:andPushPayload:` method to `MOMessagingDelegate` protocol.

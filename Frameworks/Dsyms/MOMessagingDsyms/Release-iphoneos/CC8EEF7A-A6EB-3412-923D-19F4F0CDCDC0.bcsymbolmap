@@ -1,7 +1,9 @@
 BCSymbolMap Version: 2.0
-Apple clang version 11.0.3 (clang-1103.0.32.62)
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/build/MoEngage.build/Release-iphoneos/MOMessaging.build/DerivedSources/MOMessaging_vers.c
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage
+Apple clang version 12.0.0 (clang-1200.0.32.2)
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk
+iPhoneOS14.0.sdk
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/build/MoEngage.build/Release-iphoneos/MOMessaging.build/DerivedSources/MOMessaging_vers.c
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage
 +[MOInbox initializeInboxOnController:]
 +[MOInbox getInboxMessagesWithCompletionBlock:]
 +[MOInbox fetchInboxMessagesWithCompletion:]
@@ -61,13 +63,12 @@ _OBJC_SELECTOR_REFERENCES_.84
 __OBJC_$_CLASS_METHODS_MOInbox
 __OBJC_METACLASS_RO_$_MOInbox
 __OBJC_CLASS_RO_$_MOInbox
-_OBJC_LABEL_CLASS_$
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInbox.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInbox.m
 MOMessaging/MOInbox/MOInbox.m
 __destroy_helper_block_e4_20s
 __copy_helper_block_e4_20b
 __44+[MOInbox fetchInboxMessagesWithCompletion:]_block_invoke
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/Constants/MOMessagingConstants.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/Constants/MOMessagingConstants.m
 +[MODeviceTriggerUtils trackNotificationScheduledFailedForCampaign:withPayload:]
 +[MODeviceTriggerUtils trackNotificationScheduledForCampaign:withPayload:]
 +[MODeviceTriggerUtils trackNotificationReceivedForCampaign:withPayload:]
@@ -98,13 +99,12 @@ _OBJC_SELECTOR_REFERENCES_.61
 __OBJC_$_CLASS_METHODS_MODeviceTriggerUtils
 __OBJC_METACLASS_RO_$_MODeviceTriggerUtils
 __OBJC_CLASS_RO_$_MODeviceTriggerUtils
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/MODeviceTriggerUtils.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/MODeviceTriggerUtils.m
 MOMessaging/MORealTimeTriggers/MODeviceTriggerUtils.m
 -[MONotificationCategory setActions:forContext:]
 -[MONotificationCategory minimalContextActions]
 -[MONotificationCategory setMinimalContextActions:]
 -[MONotificationCategory .cxx_destruct]
-_OBJC_CLASSLIST_SUP_REFS_$_
 _OBJC_SELECTOR_REFERENCES_.10
 _OBJC_IVAR_$_MONotificationCategory._minimalContextActions
 __OBJC_METACLASS_RO_$_MONotificationCategory
@@ -112,7 +112,7 @@ __OBJC_$_INSTANCE_METHODS_MONotificationCategory
 __OBJC_$_INSTANCE_VARIABLES_MONotificationCategory
 __OBJC_$_PROP_LIST_MONotificationCategory
 __OBJC_CLASS_RO_$_MONotificationCategory
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/Utils/Categories/MONotificationCategory.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/Utils/Categories/MONotificationCategory.m
 MOMessaging/Utils/Categories/MONotificationCategory.m
 MOMessaging/Utils/Categories/MONotificationCategory.h
 -[MOInboxViewController viewDidLoad]
@@ -252,14 +252,14 @@ __OBJC_$_INSTANCE_METHODS_MOInboxViewController
 __OBJC_$_INSTANCE_VARIABLES_MOInboxViewController
 __OBJC_$_PROP_LIST_MOInboxViewController
 __OBJC_CLASS_RO_$_MOInboxViewController
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxUI/MOInboxViewController.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxUI/MOInboxViewController.m
 MOMessaging/MOInbox/MOInboxUI/MOInboxViewController.m
 MOMessaging/MOInbox/MOInboxUI/MOInboxViewController.h
 __destroy_helper_block_e4_20s24s28s
 __copy_helper_block_e4_20s24s28s
 __59-[MOInboxViewController tableView:didSelectRowAtIndexPath:]_block_invoke
 CGRectMake
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 -[MODeviceTriggerCampaign encodeWithCoder:]
 -[MODeviceTriggerCampaign initWithCoder:]
 -[MODeviceTriggerCampaign initWithDictionary:]
@@ -359,7 +359,7 @@ __OBJC_$_INSTANCE_METHODS_MODeviceTriggerCampaign
 __OBJC_$_INSTANCE_VARIABLES_MODeviceTriggerCampaign
 __OBJC_$_PROP_LIST_MODeviceTriggerCampaign
 __OBJC_CLASS_RO_$_MODeviceTriggerCampaign
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerCampaign.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerCampaign.m
 MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerCampaign.m
 MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerCampaign.h
 -[MOInboxModel initWithNotificationPayload:]
@@ -468,7 +468,6 @@ _OBJC_IVAR_$_MOInboxModel._inboxExpiryDate
 __OBJC_$_INSTANCE_VARIABLES_MOInboxModel
 __OBJC_$_PROP_LIST_MOInboxModel
 __OBJC_CLASS_RO_$_MOInboxModel
-_OBJC_CLASSLIST_SUP_REFS_$_.271
 _OBJC_SELECTOR_REFERENCES_.273
 _OBJC_CLASSLIST_REFERENCES_$_.274
 _OBJC_SELECTOR_REFERENCES_.276
@@ -486,7 +485,7 @@ _OBJC_IVAR_$_MOInboxData._lastUpdatedFromServerSync
 __OBJC_$_INSTANCE_VARIABLES_MOInboxData
 __OBJC_$_PROP_LIST_MOInboxData
 __OBJC_CLASS_RO_$_MOInboxData
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxStorage/MOInboxModel.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxStorage/MOInboxModel.m
 MOMessaging/MOInbox/MOInboxStorage/MOInboxModel.m
 MOMessaging/MOInbox/MOInboxStorage/MOInboxModel.h
 +[MODeviceTriggersHandler sharedInstance]
@@ -535,7 +534,6 @@ ___destroy_helper_block_e4_20s24r
 -[MODeviceTriggersHandler lastUpdatedTime]
 -[MODeviceTriggersHandler setLastUpdatedTime:]
 ___clang_at_available_requires_core_foundation_framework
-___clang_at_available_requires_core_foundation_framework.cold.1
 _sharedInstance.onceToken
 _sharedInstance.instance
 ___block_descriptor_20_e5_v4?0l
@@ -661,7 +659,7 @@ _OBJC_IVAR_$_MODeviceTriggersHandler._lastUpdatedTime
 __OBJC_$_INSTANCE_VARIABLES_MODeviceTriggersHandler
 __OBJC_$_PROP_LIST_MODeviceTriggersHandler
 __OBJC_CLASS_RO_$_MODeviceTriggersHandler
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTHandler/MODeviceTriggersHandler.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTHandler/MODeviceTriggersHandler.m
 MOMessaging/MORealTimeTriggers/DTHandler/MODeviceTriggersHandler.m
 __destroy_helper_block_e4_20s24r
 __copy_helper_block_e4_20s24r
@@ -681,7 +679,7 @@ __destroy_helper_block_e4_20s24s
 __copy_helper_block_e4_20s24b
 __65-[MODeviceTriggersHandler syncDeviceTriggersWithCompletionBlock:]_block_invoke
 __41+[MODeviceTriggersHandler sharedInstance]_block_invoke
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/usr/include/dispatch/once.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/usr/include/dispatch/once.h
 +[MOAppDelegateMessagingProxy canSwizzleMethods]
 +[MOAppDelegateMessagingProxy sharedProxy]
 ___42+[MOAppDelegateMessagingProxy sharedProxy]_block_invoke
@@ -764,7 +762,7 @@ _OBJC_IVAR_$_MOAppDelegateMessagingProxy._appDelegateInterceptorID
 __OBJC_$_INSTANCE_VARIABLES_MOAppDelegateMessagingProxy
 __OBJC_$_PROP_LIST_MOAppDelegateMessagingProxy
 __OBJC_CLASS_RO_$_MOAppDelegateMessagingProxy
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/AppDelegateSwizzler/MOAppDelegateMessagingProxy.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/AppDelegateSwizzler/MOAppDelegateMessagingProxy.m
 MOMessaging/AppDelegateSwizzler/MOAppDelegateMessagingProxy.m
 __moe_swizzle_didReceiveNotificationResponseWithHandler_block_invoke
 __destroy_helper_block_e4_20s24s28s32s
@@ -794,7 +792,7 @@ __OBJC_$_INSTANCE_METHODS_MOInboxTableViewCell
 __OBJC_$_INSTANCE_VARIABLES_MOInboxTableViewCell
 __OBJC_$_PROP_LIST_MOInboxTableViewCell
 __OBJC_CLASS_RO_$_MOInboxTableViewCell
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxUI/MOInboxTableViewCell.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxUI/MOInboxTableViewCell.m
 MOMessaging/MOInbox/MOInboxUI/MOInboxTableViewCell.m
 MOMessaging/MOInbox/MOInboxUI/MOInboxTableViewCell.h
 -[MODeviceTriggerStatus initWithDictionary:]
@@ -819,7 +817,7 @@ __OBJC_$_INSTANCE_METHODS_MODeviceTriggerStatus
 __OBJC_$_INSTANCE_VARIABLES_MODeviceTriggerStatus
 __OBJC_$_PROP_LIST_MODeviceTriggerStatus
 __OBJC_CLASS_RO_$_MODeviceTriggerStatus
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerStatus.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerStatus.m
 MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerStatus.m
 MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerStatus.h
 +[MOMessagingUtils statsEventAttributesFromPayload:]
@@ -829,7 +827,7 @@ _moMessagingAppDelegateProxyConfigured
 __OBJC_$_CLASS_METHODS_MOMessagingUtils
 __OBJC_METACLASS_RO_$_MOMessagingUtils
 __OBJC_CLASS_RO_$_MOMessagingUtils
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/Utils/MOMessagingUtils.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/Utils/MOMessagingUtils.m
 MOMessaging/Utils/MOMessagingUtils.m
 +[MOMessaging sharedInstance]
 ___29+[MOMessaging sharedInstance]_block_invoke
@@ -941,7 +939,7 @@ _OBJC_IVAR_$_MOMessaging._messagingDelegate
 __OBJC_$_INSTANCE_VARIABLES_MOMessaging
 __OBJC_$_PROP_LIST_MOMessaging
 __OBJC_CLASS_RO_$_MOMessaging
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOMessaging.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MOMessaging.m
 MOMessaging/MOMessaging.m
 MOMessaging/MOMessaging.h
 __72-[MOMessaging registerForRemoteNotificationForBelowiOS10WithCategories:]_block_invoke_2
@@ -991,7 +989,7 @@ __OBJC_$_INSTANCE_METHODS_MODeviceTriggerPayload
 __OBJC_$_INSTANCE_VARIABLES_MODeviceTriggerPayload
 __OBJC_$_PROP_LIST_MODeviceTriggerPayload
 __OBJC_CLASS_RO_$_MODeviceTriggerPayload
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerPayload.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerPayload.m
 MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerPayload.m
 MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerPayload.h
 -[MODeviceTriggers init]
@@ -1048,7 +1046,6 @@ __OBJC_$_INSTANCE_VARIABLES_MODeviceTriggers
 __OBJC_$_PROP_LIST_MODeviceTriggers
 __OBJC_CLASS_RO_$_MODeviceTriggers
 _OBJC_CLASSLIST_REFERENCES_$_.95
-_OBJC_CLASSLIST_SUP_REFS_$_.98
 _OBJC_CLASSLIST_REFERENCES_$_.103
 _OBJC_CLASSLIST_REFERENCES_$_.108
 _OBJC_SELECTOR_REFERENCES_.114
@@ -1088,11 +1085,11 @@ _OBJC_IVAR_$_MODeviceTriggersDataManager._activeDeviceTriggers
 __OBJC_$_INSTANCE_VARIABLES_MODeviceTriggersDataManager
 __OBJC_$_PROP_LIST_MODeviceTriggersDataManager
 __OBJC_CLASS_RO_$_MODeviceTriggersDataManager
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTDataManager/MODeviceTriggersDataManager.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTDataManager/MODeviceTriggersDataManager.m
 MOMessaging/MORealTimeTriggers/DTDataManager/MODeviceTriggersDataManager.m
 MOMessaging/MORealTimeTriggers/DTDataManager/MODeviceTriggersDataManager.h
 __45+[MODeviceTriggersDataManager sharedInstance]_block_invoke
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxUtils/MOInboxExposedConstants.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxUtils/MOInboxExposedConstants.m
 -[MODTPostInfo initWithCampaign:withPayloadToPost:andIsOffline:]
 -[MODTPostInfo rtCampaign]
 -[MODTPostInfo setRtCampaign:]
@@ -1109,7 +1106,7 @@ _OBJC_IVAR_$_MODTPostInfo._finalPayload
 __OBJC_$_INSTANCE_VARIABLES_MODTPostInfo
 __OBJC_$_PROP_LIST_MODTPostInfo
 __OBJC_CLASS_RO_$_MODTPostInfo
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTModelClasses/MODTPostInfo.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTModelClasses/MODTPostInfo.m
 MOMessaging/MORealTimeTriggers/DTModelClasses/MODTPostInfo.m
 MOMessaging/MORealTimeTriggers/DTModelClasses/MODTPostInfo.h
 +[MONotificationHandler sharedInstance]
@@ -1215,7 +1212,7 @@ _OBJC_IVAR_$_MONotificationHandler._disableDeepLinksProcessing
 __OBJC_$_INSTANCE_VARIABLES_MONotificationHandler
 __OBJC_$_PROP_LIST_MONotificationHandler
 __OBJC_CLASS_RO_$_MONotificationHandler
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/NotificationHandler/MONotificationHandler.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/NotificationHandler/MONotificationHandler.m
 MOMessaging/NotificationHandler/MONotificationHandler.h
 __75-[MONotificationHandler checkPushNotificationsSettingsWithCompletionBlock:]_block_invoke
 MOMessaging/NotificationHandler/MONotificationHandler.m
@@ -1305,7 +1302,7 @@ _OBJC_IVAR_$_MOInboxHandler._inboxData
 __OBJC_$_INSTANCE_VARIABLES_MOInboxHandler
 __OBJC_$_PROP_LIST_MOInboxHandler
 __OBJC_CLASS_RO_$_MOInboxHandler
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxHandler.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxHandler.m
 MOMessaging/MOInbox/MOInboxHandler.m
 MOMessaging/MOInbox/MOInboxHandler.h
 __64-[MOInboxHandler syncInboxFromServerRequestWithCompletionBlock:]_block_invoke
