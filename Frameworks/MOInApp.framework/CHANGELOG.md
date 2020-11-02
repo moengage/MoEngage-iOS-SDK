@@ -2,6 +2,10 @@
 =====================
 ## Change Log:
 
+### Version 1.0.2  *(2nd November, 2020)*
+-------------------------------------------
+* Xcode 12 Build settings changes to exclude arm64 architecture for Simulator.
+
 ### Version 1.0.1 *(2nd July, 2020)*
 -------------------------------------------
 * BugFix: InApp exit animation was not being applied correctly.

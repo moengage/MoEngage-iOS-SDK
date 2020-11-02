@@ -6,6 +6,7 @@
 ### Version 6.2.2  *(2nd November, 2020)*
 -------------------------------------------
 * Bugfix: Universal Links was taking user to Safari, instead of processing inside the app.
+* Xcode 12 Build settings changes to exclude arm64 architecture for Simulator.
 
 ### Version 6.2.1  *(17th September, 2020)*
 -------------------------------------------

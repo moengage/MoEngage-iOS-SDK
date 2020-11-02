@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MORichNotification'
-  s.version          = '4.0.0'
+  s.version          = '4.0.1'
   s.summary          = 'MoEngage Rich Notifications for iOS.'
 
   s.description  = <<-DESC
@@ -26,4 +26,6 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.frameworks = 'Foundation', 'UIKit', 'UserNotifications', 'UserNotificationsUI'
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end

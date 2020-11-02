@@ -1,5 +1,9 @@
 # Change Log:
 
+### Version 4.0.1  *(2nd November, 2020)*
+-------------------------------------------
+* Xcode 12 Build settings changes to exclude arm64 architecture for Simulator.
+
 ### Version 4.0.0  *(6th September, 2020)*
 -------------------------------------------
 * Push Templates Support Added(Stylized Basic and Simple Image Carousel)
