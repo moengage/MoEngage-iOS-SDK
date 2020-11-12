@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 6.2.3  *(12th November, 2020)*
+-------------------------------------------
+* Cards Module stats events whitelisted for GDPR opt-outs.
+
 ### Version 6.2.2  *(2nd November, 2020)*
 -------------------------------------------
 * Bugfix: Universal Links was taking user to Safari, instead of processing inside the app.

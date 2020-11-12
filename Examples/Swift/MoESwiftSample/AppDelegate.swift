@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         //MoEngage.debug(LOG_ALL)
         
         //TODO: Add your MoEngage App ID
-        var yourMoEAppID = "Your MoEngage App ID"
+        var yourMoEAppID = "DAO6UGZ73D9RTK8B5W96TPYN"
         MoEngage.debug(LOG_ALL)
         DispatchQueue.main.async {
             #if DEBUG

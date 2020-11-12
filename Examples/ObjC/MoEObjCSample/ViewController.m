@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <MoEngage/MoEngage.h>
 #import <MOGeofence/MOGeofence.h>
+#import <MOCards/MOCards-Swift.h>
 
 @interface ViewController () <MOInAppNativDelegate>
 
@@ -39,6 +40,7 @@
     
     // Show InApp
     [[MOInApp sharedInstance] showInApp];
+    [MOCards.sharedInstance presentCardsViewControllerWithUIConfiguration:nil];
 }
 
 

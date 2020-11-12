@@ -1,4 +1,0 @@
-module MOAnalytics{
-    header "/usr/include/MOAnalytics/MOAnalytics.h"
-    export *
-}
