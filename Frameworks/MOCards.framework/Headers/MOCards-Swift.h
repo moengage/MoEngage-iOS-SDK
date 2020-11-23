@@ -223,26 +223,6 @@ SWIFT_CLASS("_TtC7MOCards22MOCardNavigationAction")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class MOCardsUIConfiguration;
-@class UINavigationController;
-@class MOCardsListViewController;
-
-SWIFT_CLASS("_TtC7MOCards7MOCards")
-@interface MOCards : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOCards * _Nonnull sharedInstance;)
-+ (MOCards * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)intializeCards;
-- (void)presentCardsViewControllerWithUIConfiguration:(MOCardsUIConfiguration * _Nullable)config;
-- (void)pushCardsViewControllerToNavigationController:(UINavigationController * _Nonnull)navController withUIConfiguration:(MOCardsUIConfiguration * _Nullable)config;
-- (MOCardsListViewController * _Nullable)getCardsViewControllerWithUIConfiguration:(MOCardsUIConfiguration * _Nullable)config SWIFT_WARN_UNUSED_RESULT;
-- (void)syncCardsWithCompletion:(void (^ _Nullable)(BOOL))completionBlock;
-- (NSInteger)getNewCardsCount SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)getUnclickedCardsCount SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)getClickedCardsCount SWIFT_WARN_UNUSED_RESULT;
-@end
-
 
 SWIFT_PROTOCOL("_TtP7MOCards15MOCardsDelegate_")
 @protocol MOCardsDelegate
@@ -294,6 +274,24 @@ SWIFT_CLASS("_TtC7MOCards25MOCardsNavigationBarStyle")
 SWIFT_CLASS("_TtC7MOCards22MOCardsUIConfiguration")
 @interface MOCardsUIConfiguration : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UINavigationController;
+
+SWIFT_CLASS("_TtC7MOCards13MoEngageCards")
+@interface MoEngageCards : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageCards * _Nonnull sharedInstance;)
++ (MoEngageCards * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)intializeCards;
+- (void)presentCardsViewControllerWithUIConfiguration:(MOCardsUIConfiguration * _Nullable)config;
+- (void)pushCardsViewControllerToNavigationController:(UINavigationController * _Nonnull)navController withUIConfiguration:(MOCardsUIConfiguration * _Nullable)config;
+- (MOCardsListViewController * _Nullable)getCardsViewControllerWithUIConfiguration:(MOCardsUIConfiguration * _Nullable)config SWIFT_WARN_UNUSED_RESULT;
+- (void)syncCardsWithCompletion:(void (^ _Nullable)(BOOL))completionBlock;
+- (NSInteger)getNewCardsCount SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)getUnclickedCardsCount SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)getClickedCardsCount SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -548,26 +546,6 @@ SWIFT_CLASS("_TtC7MOCards22MOCardNavigationAction")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class MOCardsUIConfiguration;
-@class UINavigationController;
-@class MOCardsListViewController;
-
-SWIFT_CLASS("_TtC7MOCards7MOCards")
-@interface MOCards : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOCards * _Nonnull sharedInstance;)
-+ (MOCards * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)intializeCards;
-- (void)presentCardsViewControllerWithUIConfiguration:(MOCardsUIConfiguration * _Nullable)config;
-- (void)pushCardsViewControllerToNavigationController:(UINavigationController * _Nonnull)navController withUIConfiguration:(MOCardsUIConfiguration * _Nullable)config;
-- (MOCardsListViewController * _Nullable)getCardsViewControllerWithUIConfiguration:(MOCardsUIConfiguration * _Nullable)config SWIFT_WARN_UNUSED_RESULT;
-- (void)syncCardsWithCompletion:(void (^ _Nullable)(BOOL))completionBlock;
-- (NSInteger)getNewCardsCount SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)getUnclickedCardsCount SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)getClickedCardsCount SWIFT_WARN_UNUSED_RESULT;
-@end
-
 
 SWIFT_PROTOCOL("_TtP7MOCards15MOCardsDelegate_")
 @protocol MOCardsDelegate
@@ -619,6 +597,24 @@ SWIFT_CLASS("_TtC7MOCards25MOCardsNavigationBarStyle")
 SWIFT_CLASS("_TtC7MOCards22MOCardsUIConfiguration")
 @interface MOCardsUIConfiguration : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UINavigationController;
+
+SWIFT_CLASS("_TtC7MOCards13MoEngageCards")
+@interface MoEngageCards : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageCards * _Nonnull sharedInstance;)
++ (MoEngageCards * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)intializeCards;
+- (void)presentCardsViewControllerWithUIConfiguration:(MOCardsUIConfiguration * _Nullable)config;
+- (void)pushCardsViewControllerToNavigationController:(UINavigationController * _Nonnull)navController withUIConfiguration:(MOCardsUIConfiguration * _Nullable)config;
+- (MOCardsListViewController * _Nullable)getCardsViewControllerWithUIConfiguration:(MOCardsUIConfiguration * _Nullable)config SWIFT_WARN_UNUSED_RESULT;
+- (void)syncCardsWithCompletion:(void (^ _Nullable)(BOOL))completionBlock;
+- (NSInteger)getNewCardsCount SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)getUnclickedCardsCount SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)getClickedCardsCount SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

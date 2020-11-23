@@ -117,8 +117,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // Cards Feature
     func showCardsUI () {
-        MOCards.sharedInstance.cardsDelegate = self
-        MOCards.sharedInstance.pushCardsViewController(toNavigationController: self.navigationController!)
+        MoEngageCards.sharedInstance.cardsDelegate = self
+        MoEngageCards.sharedInstance.pushCardsViewController(toNavigationController: self.navigationController!)
     }
     
     func showInApp(){
@@ -194,7 +194,7 @@ extension ViewController : MOCardsDelegate{
     }
     
     func cardsViewControllerDismissed() {
-        MOCards.sharedInstance.cardsDelegate = nil
+        MoEngageCards.sharedInstance.cardsDelegate = nil
         print("Callback called on dismissing the Cards Viewcontroller")
     }
 

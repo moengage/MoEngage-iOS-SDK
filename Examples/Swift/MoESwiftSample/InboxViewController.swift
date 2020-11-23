@@ -34,7 +34,7 @@ class InboxViewController: UIViewController, MOInboxCellSelectedDelegate{
     }
     
     @IBAction func unreadAction() {
-        MOCards.sharedInstance.presentCardsViewController()
+        MoEngageCards.sharedInstance.presentCardsViewController()
         
         return
         let unreadCounter = MOInbox.getUnreadNotifictionCount()

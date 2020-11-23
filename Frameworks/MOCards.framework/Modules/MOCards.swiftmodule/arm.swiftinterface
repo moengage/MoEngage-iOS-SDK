@@ -114,8 +114,8 @@ extension UIImageView {
   @objc optional func cardDeleted(withCardInfo card: MOCards.MOCard)
   @objc optional func cardClicked(withCardInfo card: MOCards.MOCard, andAction action: MOCards.MOCardNavigationAction) -> Swift.Bool
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MOCards : ObjectiveC.NSObject {
-  @objc public static let sharedInstance: MOCards.MOCards
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MoEngageCards : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: MOCards.MoEngageCards
   public var cardsDelegate: MOCards.MOCardsDelegate?
   @objc public func intializeCards()
   @objc public func presentCardsViewController(withUIConfiguration config: MOCards.MOCardsUIConfiguration? = nil)
