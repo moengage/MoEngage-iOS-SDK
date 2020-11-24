@@ -40,7 +40,7 @@
     
     // Show InApp
     [[MOInApp sharedInstance] showInApp];
-    [MOCards.sharedInstance presentCardsViewControllerWithUIConfiguration:nil];
+    [MoEngageCards.sharedInstance presentCardsViewControllerWithUIConfiguration:nil];
 }
 
 
