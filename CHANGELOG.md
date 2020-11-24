@@ -3,9 +3,18 @@
 
 ## Change Log:
 
+### Version 6.2.4  *(24th November, 2020)*
+-------------------------------------------
+* Changes to support Cards 1.1.0(Cards class name updated to MoEngageCards)
+
+### Version 6.2.3  *(12th November, 2020)*
+-------------------------------------------
+* Cards Module stats events whitelisted for GDPR opt-outs.
+
 ### Version 6.2.2  *(2nd November, 2020)*
 -------------------------------------------
 * Bugfix: Universal Links was taking user to Safari, instead of processing inside the app.
+* Xcode 12 Build settings changes to exclude arm64 architecture for Simulator.
 
 ### Version 6.2.1  *(17th September, 2020)*
 -------------------------------------------

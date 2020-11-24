@@ -39,7 +39,7 @@ FOUNDATION_EXPORT const unsigned char MoEngageVersionString[];
         #import <MOGeofence/MOGeofence.h>
     #endif
 
-    #if __has_include(<MOCards/MOCards.h>)
+    #if __has_include(<MOCards/MOCards-Swift.h>)
         #import <MOCards/MOCards-Swift.h>
     #endif
 
