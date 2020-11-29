@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 6.2.5  *(30th November, 2020)*
+-------------------------------------------
+* Bugfix: One of the SDK background tasks while syncing the data was getting terminated prematurely.
+
 ### Version 6.2.4  *(24th November, 2020)*
 -------------------------------------------
 * Changes to support Cards 1.1.0(Cards class name updated to MoEngageCards)
