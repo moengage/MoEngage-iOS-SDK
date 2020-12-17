@@ -43,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //App ID
 +(void)saveAppId:(NSString*)appId;
-+(NSString*)getMoEngageAppId;
++(NSString* _Nullable)getMoEngageAppId;
 
 //SDK Version
 +(NSString*)getMoEngageSDKVersion;
@@ -81,6 +81,10 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSString*)getDeviceUniqueID;
 
 +(UIColor *)getColorFromHexValue:(NSString *)hexValue;
+
++(BOOL)isSDKEnabled;
++(void)enableSDK;
++(void)disableSDK;
 @end
 
 NS_ASSUME_NONNULL_END

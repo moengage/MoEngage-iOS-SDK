@@ -78,6 +78,22 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param imageURL Image URL to be downloaded
 /// @param completion Completion block called after download with data downloaded
 -(void)downloadImageForURL:(NSURL*)imageURL andCompletionHandler:(void (^)(BOOL,NSData* _Nullable))completion;
+
+/**
+ Method to know the current status of the SDK. Enabled/Disabled
+ */
+-(BOOL)isSDKEnabled;
+
+/**
+ Method to enable all the SDK features
+ */
+-(void)enableSDK;
+
+/**
+ Method to disable all the SDK features
+ */
+-(void)disableSDK;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -6,7 +6,7 @@
 	<dict>
 		<key>CHANGELOG.md</key>
 		<data>
-		hBtbpjxtPa+5cJeLIRWmA6DK7AI=
+		8yyC/vAwo38znFWuxbp9YQ0mqE8=
 		</data>
 		<key>Headers/MOMedia.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XIVtWN1A/C+ZCeDxafwfs9ny11I=
+		+kHbopLttg4u57Rm97FdYWvgqXg=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -54,23 +54,23 @@
 		</data>
 		<key>MOCarouselCollectionView.nib</key>
 		<data>
-		PNyAV38vDCII8dwcd8TZCpWap4M=
+		Ynq3QiecqT3cQAAwWUjU02KyARA=
 		</data>
 		<key>MOImageCarouselCell.nib</key>
 		<data>
-		+fvA0cFclH6irmlG8+2RotC7HiU=
+		mR+umcvj/kghpSeMaSXAZ9boga0=
 		</data>
 		<key>MOPushBodyView.nib/objects-11.0+.nib</key>
 		<data>
-		frwwnMvAo/MUTXux8gk/dYXNRf4=
+		XY/z7aYIXh63ljwTW6x1SH1Qftc=
 		</data>
 		<key>MOPushBodyView.nib/runtime.nib</key>
 		<data>
-		yTq9lwZVpJrzcCQKq9hFpJk78Mo=
+		zwKe1nfkhDMARJM3V3yJzTEDFAs=
 		</data>
 		<key>MOPushMediaView.nib</key>
 		<data>
-		oLYuj2XmqCS9EHGaSq3Rz9lVUMU=
+		j+VJ0VMQcrabDs/9If8jac+Fk4o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -87,11 +87,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hBtbpjxtPa+5cJeLIRWmA6DK7AI=
+			8yyC/vAwo38znFWuxbp9YQ0mqE8=
 			</data>
 			<key>hash2</key>
 			<data>
-			WGnovkWDSElk/lnhPc/LrSyx0qxu6siGt6f+cxoOo1o=
+			su7xBzP/m/rGoarpwFtJF87LOyV4fWvvvkF60vcX5Og=
 			</data>
 		</dict>
 		<key>Headers/MOMedia.h</key>
@@ -208,55 +208,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PNyAV38vDCII8dwcd8TZCpWap4M=
+			Ynq3QiecqT3cQAAwWUjU02KyARA=
 			</data>
 			<key>hash2</key>
 			<data>
-			G5VnMx49xjXWrPpx2CFuPb6+JdxwU0HZe5H2xZEr0Rw=
+			1f4hl7TyzqwxDaMEyLvMoRq8OEORyFSdIjXtjdqwrO0=
 			</data>
 		</dict>
 		<key>MOImageCarouselCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+fvA0cFclH6irmlG8+2RotC7HiU=
+			mR+umcvj/kghpSeMaSXAZ9boga0=
 			</data>
 			<key>hash2</key>
 			<data>
-			DhHlvknWZidCMRfyZ0DT+KAG5ep7RVQ518HGcMQv/nc=
+			ack2xsVOvuJPxuxO16ctEtiW4I5McW36/UBrlD3svmE=
 			</data>
 		</dict>
 		<key>MOPushBodyView.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			frwwnMvAo/MUTXux8gk/dYXNRf4=
+			XY/z7aYIXh63ljwTW6x1SH1Qftc=
 			</data>
 			<key>hash2</key>
 			<data>
-			EByS047YDjRvPcXnd5U+YJJFnqVLHukPqD4nGVT/hH8=
+			zzlT+S3Ufb3jN0mkZlUeY3G4MDkDSCj4FX5/vpxxsuM=
 			</data>
 		</dict>
 		<key>MOPushBodyView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yTq9lwZVpJrzcCQKq9hFpJk78Mo=
+			zwKe1nfkhDMARJM3V3yJzTEDFAs=
 			</data>
 			<key>hash2</key>
 			<data>
-			RU4nB76eOU2/Xk/5juZlv3TNVhQSL5vgCjYDvNwt4Ws=
+			QuEqvvM1Oi3S6xVVxMEoGxYwfoveI70oWS72KHINEmw=
 			</data>
 		</dict>
 		<key>MOPushMediaView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oLYuj2XmqCS9EHGaSq3Rz9lVUMU=
+			j+VJ0VMQcrabDs/9If8jac+Fk4o=
 			</data>
 			<key>hash2</key>
 			<data>
-			ByytwNzOpkA4eysgawhAThWYlUGBa9UTv9nwUo5fJ6U=
+			KMSyXv1OePxDXbRRcRu5lI2avqHRoberV9rFND35EtI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

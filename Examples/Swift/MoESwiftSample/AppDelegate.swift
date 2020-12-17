@@ -170,5 +170,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             print("Selected Action KVPair:\(actionKVPairs)")
         }
     }
+    
+    func notificationClicked(withScreenName screenName: String?, kvPairs: [AnyHashable : Any]?, andPushPayload userInfo: [AnyHashable : Any]) {
+        
+        print("Push Payload: \(userInfo)")
+        
+        if let screenName = screenName {
+            print("Navigate to Screen:\(screenName)")
+        }
+        
+        if let actionKVPairs = kvPairs {
+            print("Selected Action KVPair:\(actionKVPairs)")
+        }
+    }
 }
 

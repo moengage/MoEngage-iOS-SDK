@@ -214,6 +214,11 @@ Method to support deprecated trackEvent:builderPayload: in MoEngage class
 /// @param key User Attribute Name to track Push opt-out status
 -(void)setPushGDPROptOutStatus:(id)value forKey:(NSString *_Nonnull)key;
 
+/**
+ Method called on SDK State update
+ */
+-(void)moengageSDKStateUpdated;
+
 @end
 
 NS_ASSUME_NONNULL_END

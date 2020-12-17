@@ -9,11 +9,13 @@
 #import <Foundation/Foundation.h>
 
 // User Default Keys
+extern NSString* const kUserDefaultSDKSuitName;
 extern NSString* const kUserDefaultKeySDKVersion;
 extern NSString* const kUserDefaultsKeyAppVersion;
 extern NSString* const kUserDefaultsKeySDKUniqueId;
 extern NSString* const kUserDefaultsKeyShouldRedirectData;
 extern NSString* const kUserDefaultsKeyHasDeviceAddFailed;
+extern NSString* const kUserDefaultsKeyIsSDKEnabled;
 
 // Notification Name Keys
 extern NSString* const kNotificationNameUserReset;

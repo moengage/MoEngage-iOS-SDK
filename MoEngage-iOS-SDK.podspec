@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'MoEngage-iOS-SDK'
-  s.version      = '6.2.5'
+  s.version      = '6.3.0'
   s.summary      = 'MoEngage for iOS'
   s.description  = <<-DESC
                    MoEngage is a mobile marketing automation company. This framework acts like a umbrella framework to include MoEngageCore, MOAnalytics and MOMessaging frameworks.
@@ -29,9 +29,9 @@ Pod::Spec.new do |s|
   s.module_map = 'Frameworks/MoEngage.framework/Modules/module.modulemap'
 
   s.requires_arc = true
-  s.frameworks = 'Foundation', 'UIKit', 'SystemConfiguration' , 'Security'
+  s.frameworks = 'Foundation', 'UIKit', 'SystemConfiguration' , 'Security', 'AppTrackingTransparency'
   s.weak_framework = 'AdSupport', 'UserNotifications'
-  s.dependency 'MORichNotification', '~> 4.0'
+  s.dependency 'MORichNotification', '~> 4.1.0'
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end

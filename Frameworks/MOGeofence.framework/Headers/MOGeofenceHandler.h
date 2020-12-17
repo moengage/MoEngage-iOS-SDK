@@ -55,4 +55,9 @@
 /// Method to start Geofence tracking in the SDK, this method also asks for location permission if not already done
 -(void)startGeofenceMonitoring;
 
+/**
+ Method called on SDK State update
+ */
+-(void)moengageSDKStateUpdated;
+
 @end

@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 6.3.0  *(17th December, 2020)*
+-------------------------------------------
+* Added  `enableSDK()` and `disableSDK()` methods for blocking/unblocking SDK features
+
 ### Version 6.2.5  *(30th November, 2020)*
 -------------------------------------------
 * Bugfix: One of the SDK background tasks while syncing the data was getting terminated prematurely.

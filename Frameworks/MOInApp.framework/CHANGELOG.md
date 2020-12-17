@@ -2,6 +2,10 @@
 =====================
 ## Change Log:
 
+### Version 1.1.0  *(17th December, 2020)*
+-------------------------------------------
+* Changes to support  `enableSDK()` and `disableSDK()` methods for blocking/unblocking SDK features
+
 ### Version 1.0.2  *(2nd November, 2020)*
 -------------------------------------------
 * Xcode 12 Build settings changes to exclude arm64 architecture for Simulator.

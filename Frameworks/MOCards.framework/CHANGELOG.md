@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 1.2.0  *(17th December, 2020)*
+-------------------------------------------
+* Changes to support  `enableSDK()` and `disableSDK()` methods for blocking/unblocking SDK features
+
 ### Version 1.1.0  *(24th November, 2020)*
 -------------------------------------------
 * `BUILD_LIBRARY_FOR_DISTRIBUTION` enabled for Cards.

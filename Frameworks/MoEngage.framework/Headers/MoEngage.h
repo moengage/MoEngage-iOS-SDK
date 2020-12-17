@@ -441,6 +441,16 @@ Call this method to track events.
  */
 -(void)optOutOfInAppCampaign:(BOOL)isInAppOptedOut;
 
+/**
+ Method to enable all the SDK features
+ */
+-(void)enableSDK;
+
+/**
+ Method to disable all the SDK features
+ */
+-(void)disableSDK;
+
 @end
 
 
