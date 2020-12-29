@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 6.3.1  *(29th December, 2020)*
+-------------------------------------------
+* Weak linked AppTrackingTransparency framework.
+
 ### Version 6.3.0  *(17th December, 2020)*
 -------------------------------------------
 * Added  `enableSDK()` and `disableSDK()` methods for blocking/unblocking SDK features

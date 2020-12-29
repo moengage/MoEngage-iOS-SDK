@@ -9,6 +9,7 @@
 import UIKit
 import MoEngage
 import UserNotifications
+import AppTrackingTransparency
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MOMessagingDelegate{
@@ -16,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        AppDelegate.requestIDFAPermission()
         
         //TODO: Add your App Group ID
         MoEngage.setAppGroupID("Your App Group ID")
@@ -181,6 +184,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         if let actionKVPairs = kvPairs {
             print("Selected Action KVPair:\(actionKVPairs)")
+        }
+    }
+    
+    static func requestIDFAPermission() {
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { status in
+                switch status {
+                case .authorized:
+                    print("ATTrackingManager - Authorized")
+                case .denied:
+                    print("Denied")
+                case .notDetermined:
+                    // Tracking authorization dialog has not been shown
+                    print("Not Determined")
+                case .restricted:
+                    print("Restricted")
+                @unknown default:
+                    print("Unknown")
+                }
+            }
         }
     }
 }

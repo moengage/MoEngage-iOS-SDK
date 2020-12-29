@@ -51,5 +51,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>NSUserTrackingUsageDescription</key>
+    <string>MoESample would like to access IDFA for tracking purpose</string>
 </dict>
 </plist>
