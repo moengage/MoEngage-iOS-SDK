@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <MOAnalytics/MOGeoLocation.h>
-#import <MOAnalytics/MOPayloadBuilder.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -38,11 +37,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// Use this method to set a event as Non-Interactive.
 -(void)setNonInteractive;
 
-/// Method to check if event is non-interactive
--(void)checkNonInteractive;
+/// Use this method to know if a event is Non-Interactive.
+-(BOOL)isNonInteractiveEvent;
 
-// Internal SDK Method to obtain payload builder instance
--(MOPayloadBuilder*)getPayloadBuilder;
+-(NSMutableDictionary*)getAttributesDict;
+-(NSMutableArray*)getDateTimeAttributesArray;
+-(NSMutableArray*)getLocationAttributesArray;
 
 @end
 

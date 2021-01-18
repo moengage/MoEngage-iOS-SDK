@@ -18,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSString*)getSDKLibraryDirectoryPath;
 +(NSString*)getDocumentsDirectoryPath;
 
++(BOOL)removeFileAtPath:(NSString *)path;
++(NSArray * __nullable)contentsOfDirectoryAtPath:(NSString *)path;
+
 
 #pragma mark- Top ViewController Methods
 +(UIViewController*)getTopMostViewController;
@@ -40,10 +43,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString*)getAppDelegateProxyInfoPlistKey;
 
 #pragma mark- Misc Methods
-
-//App ID
-+(void)saveAppId:(NSString*)appId;
-+(NSString* _Nullable)getMoEngageAppId;
 
 //SDK Version
 +(NSString*)getMoEngageSDKVersion;
@@ -76,8 +75,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 +(NSString*)hexTokenForData:(NSData*)data;
-+(NSMutableDictionary*)transformPayloadForIncompatibleTypes:(NSMutableDictionary*)payload;
-
 +(NSString*)getDeviceUniqueID;
 
 +(UIColor *)getColorFromHexValue:(NSString *)hexValue;
@@ -85,6 +82,8 @@ NS_ASSUME_NONNULL_BEGIN
 +(BOOL)isSDKEnabled;
 +(void)enableSDK;
 +(void)disableSDK;
++(NSUserDefaults*)getSDKUserDefault;
+
 @end
 
 NS_ASSUME_NONNULL_END

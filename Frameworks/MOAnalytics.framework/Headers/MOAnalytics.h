@@ -35,7 +35,8 @@ typedef enum _AppStatus{
  */
 typedef enum UserGender{
     MALE,
-    FEMALE
+    FEMALE,
+    OTHER
 }UserGender;
 
 
@@ -52,10 +53,6 @@ typedef enum UserGender{
 /// Delegate for getting callback on track event for real-time trigger Campaign
 @property(weak, nonatomic, nullable) id<MOEventTriggerDelegate> messagingTriggerDelegate;
 
-@property(assign, nonatomic) BOOL idfaTrackingOptedOut;
-
-@property(assign, nonatomic) BOOL idfvTrackingOptedOut;
-
 #pragma mark - Initialize Methods
 
 /// Method to get the singleton instance
@@ -68,18 +65,14 @@ typedef enum UserGender{
 -(void)initializeAnalytics;
 
 #pragma mark - Tracking custom events and attributes
-/*
- Method to support deprecated trackEvent:andPayload: in MoEngage class
- @warning This is an internal SDK method, and will be deprecated in SDK version 7.0.0
- */
--(void)trackEvent:(NSString *_Nonnull)name andPayload:(NSMutableDictionary *_Nullable)payload;
- 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 /*
 Method to support deprecated trackEvent:builderPayload: in MoEngage class
-@warning This is an internal SDK method, and will be deprecated in SDK version 7.0.0
+@warning This is an internal SDK method, and will be deprecated in SDK version 8.0.0
 */
 -(void)trackEvent:(NSString *_Nonnull)name builderPayload:(MOPayloadBuilder *_Nullable)payload;
-
+#pragma clang diagnostic pop
 /**
  Call this method to track events
  @param name Event name to be tracked
@@ -152,6 +145,11 @@ Method to support deprecated trackEvent:builderPayload: in MoEngage class
  @param completionBlock : Completion block called after the User Reset is done
  */
 -(void)resetUserWithCompletionBlock:(void(^_Nullable)(BOOL userResetSuccessfully))completionBlock;
+
+/**
+ Call this method to clear the unique attributes of the current user, and add him as a new user. One of the use cases is when a user logs out
+ */
+-(void)resetUser;
 
 /**
  Use this method to forcefully sync events to server right now. Useful for testing and to send data in realtime when you don't wish to wait for when the user goes to background or terminates the app.

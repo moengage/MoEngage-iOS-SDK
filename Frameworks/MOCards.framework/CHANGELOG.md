@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 2.0.0  *(18th January, 2021)*
+-------------------------------------------
+* Changes to support  MoEngage-iOS-SDK 7.0.0
+
 ### Version 1.2.0  *(17th December, 2020)*
 -------------------------------------------
 * Changes to support  `enableSDK()` and `disableSDK()` methods for blocking/unblocking SDK features

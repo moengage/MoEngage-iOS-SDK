@@ -30,7 +30,7 @@ typedef enum NetworkService{
     SERVICE_CARDS_FETCH,
     SERVICE_CARDS_DELETE,
     SERVICE_CARDS_UPDATE_USER_ACTIVITY,
-    SERVICE_LOG_ENTRIES
+    SERVICE_CRASH_LAKE
 }ServiceType;
 
 @interface MONetworkConfiguration : NSObject

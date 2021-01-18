@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MOAnalytics/MOProperties.h>
 
+__deprecated_msg("Use MOProperties instead")
 @interface MOPayloadBuilder : NSObject
 
 /**
@@ -50,5 +52,8 @@
  Use this method to set a event as Non-Interactive.
  */
 -(void)setNonInteractive;
+
+// Get MOProperties Instance for the Payload Builder
+-(MOProperties*)getProperties;
 
 @end

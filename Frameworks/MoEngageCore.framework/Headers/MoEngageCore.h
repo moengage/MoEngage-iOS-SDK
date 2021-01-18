@@ -14,8 +14,10 @@ FOUNDATION_EXPORT double MoEngageCoreVersionNumber;
 //! Project version string for MoEngageCore.
 FOUNDATION_EXPORT const unsigned char MoEngageCoreVersionString[];
 
-
-#import <MoEngageCore/MOConfigManager.h>
+#import <MoEngageCore/MOSDKConfig.h>
+#import <MoEngageCore/MOConfigLegacy.h>
+#import <MoEngageCore/MOConfigHandler.h>
+#import <MoEngageCore/MOConfigDataManager.h>
 
 #import <MoEngageCore/MONetworkRequest.h>
 #import <MoEngageCore/MONetworkConfiguration.h>
@@ -34,7 +36,13 @@ FOUNDATION_EXPORT const unsigned char MoEngageCoreVersionString[];
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol MOAppIDUpdateDelegate <NSObject>
+-(void)appIDChangeHandledWithCompletionBlock:(void(^)(void))completion;
+@end
+
 @interface MoEngageCore : NSObject
+
+@property(weak, nonatomic, nullable) id<MOAppIDUpdateDelegate> appIdUpdateDelegate;
 
 +(instancetype)sharedInstance;
 
@@ -43,22 +51,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /// Initialize SDK Core with MoEngage App ID
-/// @param appID MoEngage App ID.
+/// @param sdkConfig MoEngage App ID.
 /// To obtain AppID login to your MoEngage account, go to Settings in the left panel of the dashboard. Under App Settings, you will find your APP ID.
--(void)initializeWithAppID:(NSString*)appID;
+-(void)initializeWithConfig:(MOSDKConfig*)sdkConfig withCompletionBlock:(void(^)(void))completion;
 
-/**
- Use this method to enable logs for the MoEngage SDK. You can simply pass yes and no to disable the logs.
- Alternatively you can use Log Levels.
- @see LogLevel
- */
--(void)debug:(LogLevel) logLevel;
 
-/**
- Use this method to redirect the data to region defined in DataRedirectionRegion Enumerator
- @warning Consult with MoEngage team before using this method for redirecting the data
- */
--(void)redirectDataToRegion:(DataRedirectionRegion)region;
+-(void)updateSDKConfig:(MOSDKConfig* _Nonnull)sdkConfig withCompletionBlock:(void(^_Nullable)(void))completion;
+
+/// Use this method to enable logs for the MoEngage SDK.
+- (void)enableLogs:(BOOL) enable;
 
 /**
  Method to set the App Group ID for Notification impression tracking.
@@ -93,6 +94,8 @@ NS_ASSUME_NONNULL_BEGIN
  Method to disable all the SDK features
  */
 -(void)disableSDK;
+
+-(MOSDKConfig*)getDefaultSDKConfiguration;
 
 @end
 

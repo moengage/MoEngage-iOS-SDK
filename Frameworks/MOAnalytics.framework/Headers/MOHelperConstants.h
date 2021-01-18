@@ -25,6 +25,7 @@ extern NSString* const USER_ATTRIBUTE_USER_LAST_NAME;
 extern NSString* const USER_ATTRIBUTE_USER_BDAY;
 extern NSString* const GENDER_MALE;
 extern NSString* const GENDER_FEMALE;
+extern NSString* const GENDER_OTHER;
 
 /*
  @see MoEngage.h for method setUserAttributeLocationLatitude: longitude: forKey: 

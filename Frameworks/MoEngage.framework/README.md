@@ -29,18 +29,20 @@ CocoaPods is a dependency manager for Objective C & Swift projects and makes int
 
 ## SDK Initialization
 
-Login to your MoEngage account, go to **Settings** in the left panel of the dashboard. Under App Settings, you will find your **APP ID**. Provide this APP ID while initializing the SDK with **initializeDevWithApiKey:** and **initializeProdWithApiKey:** methods as shown below.
+Login to your MoEngage account, go to **Settings** in the left panel of the dashboard. Under App Settings, you will find your **APP ID**. Provide this APP ID while initializing the SDK with **initializeTestWithConfig:** and **initializeLiveWithConfig:** methods as shown below.
 
 ### In Objective-C:
 
     - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-        // Separate initialization methods for Dev and Prod initializations
-    
+        //Create a config object
+        MOSDKConfig *sdkConfig = [[MOSDKConfig alloc] initWithAppID:@"Your APP ID"];
+        
+        // Separate initialization methods for Test and Live Environments
         #ifdef DEBUG
-            [[MoEngage sharedInstance] initializeDevWithAppID:@"Your APP ID" withLaunchOptions:launchOption];
+            [[MoEngage sharedInstance] initializeTestWithConfig:sdkConfig andLaunchOptions:launchOptions];
         #else
-            [[MoEngage sharedInstance] initializeProdWithAppID:@"Your APP ID" withLaunchOptions:launchOption];
+            [[MoEngage sharedInstance] initializeLiveWithConfig:sdkConfig andLaunchOptions:launchOptions];
         #endif
         
         //Rest of the implementation of method
@@ -51,12 +53,14 @@ Login to your MoEngage account, go to **Settings** in the left panel of the dash
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:     [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
-        // Separate initialization methods for Dev and Prod initializations
-
+        //Create a config object
+        let sdkConfig = MOSDKConfig.init(appID: "Your APP ID")
+        
+        // Separate initialization methods for Test and Live Environments
         #if DEBUG
-            MoEngage.sharedInstance().initializeDev(withAppID:"Your APP ID", withLaunchOptions: launchOptions)
+            MoEngage.sharedInstance().initializeTest(with: sdkConfig, andLaunchOptions: launchOptions)
         #else
-            MoEngage.sharedInstance().initializeProd(withAppID:"Your APP ID", withLaunchOptions: launchOptions)
+            MoEngage.sharedInstance().initializeLive(with: sdkConfig, andLaunchOptions: launchOptions)
         #endif
         
         //Rest of the implementation of method

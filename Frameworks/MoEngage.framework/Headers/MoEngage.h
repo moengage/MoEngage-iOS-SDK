@@ -48,54 +48,60 @@ FOUNDATION_EXPORT const unsigned char MoEngageVersionString[];
 
 @interface MoEngage : NSObject
 
-#pragma mark - Shared instance
-+(instancetype _Nonnull)sharedInstance;
-
 /**
  Set the property to YES if you don't want MoEngage to reset bagde no. on app open
  */
 @property(nonatomic, assign) BOOL      disableBadgeReset;
 
-#pragma mark - Initialization Methods
-
-/**
- Call this method in the AppDelegate in application:didFinishLaunchingWithOptions: to initialize the SDK for dev build
- @param appID The unique apiKey provided for your app
- @param launchOptions The launch options dictionary
- @warning Make sure initializeProdWithAppID:withLaunchOptions: method is also implemented, refer this link for more details: [Initializing MoEngage SDK](https://docs.moengage.com/docs/appdelegate-changes)
- */
--(void)initializeDevWithAppID:(NSString *_Nonnull)appID withLaunchOptions:(NSDictionary *_Nullable)launchOptions;
-
-/**
- Call this method in the AppDelegate in application:didFinishLaunchingWithOptions: to initialize the SDK for production build
- @param appID The unique apiKey provided for your app
- @param launchOptions The launch options dictionary
- @warning Make sure initializeDevWithAppID:withLaunchOptions method is also implemented, refer this link for more details: [Initializing MoEngage SDK](https://docs.moengage.com/docs/appdelegate-changes)
- */
--(void)initializeProdWithAppID:(NSString *_Nonnull)appID withLaunchOptions:(NSDictionary *_Nullable)launchOptions;
-
-
-/**
- Call this method in the AppDelegate in application:didFinishLaunchingWithOptions: to initialize the SDK for dev build
- @param apiKey The unique apiKey provided for your app
- @param application The application instance
- @param launchOptions The launch options dictionary
- @warning This method is deprecated and will be removed from SDK Version 7.0.0. Use initializeDevWithAppID:withLaunchOptions instead
- */
--(void)initializeDevWithApiKey:(NSString *_Nonnull)apiKey inApplication:(UIApplication *_Nullable)application withLaunchOptions:(NSDictionary *_Nullable)launchOptions openDeeplinkUrlAutomatically:(BOOL)openUrl __deprecated_msg("Use initializeDevWithAppID:withLaunchOptions instead.");
-
-/**
- Call this method in the AppDelegate in application:didFinishLaunchingWithOptions: to initialize the SDK for production build
- @param apiKey The unique apiKey provided for your app
- @param application The application instance
- @param launchOptions The launch options dictionary
- @warning This method is deprecated and will be removed from SDK Version 7.0.0. Use initializeProdWithAppID:withLaunchOptions: instead
- */
--(void)initializeProdWithApiKey:(NSString *_Nonnull)apiKey inApplication:(UIApplication *_Nullable)application withLaunchOptions:(NSDictionary *_Nullable)launchOptions openDeeplinkUrlAutomatically:(BOOL)openUrl __deprecated_msg("Use initializeProdWithAppID:withLaunchOptions: instead.");
-
+#pragma mark - Shared instance
++(instancetype _Nonnull)sharedInstance;
 
 /// Making the init method private as this Class has Singleton implementation
 -(instancetype _Nonnull)init NS_UNAVAILABLE;
+
+#pragma mark - Initialization Methods
+
+/**
+ Call this method in the AppDelegate in application:didFinishLaunchingWithOptions: to initialize the SDK for Test Environment with MOSDKConfig instance
+ @param sdkConfig MOSDKConfig instance with the required config to initialize SDK
+ @param launchOptions Launch Options obtained application:didFinishLaunching: method
+ @version 7.0.0 and above
+ */
+-(void)initializeTestWithConfig:(MOSDKConfig* _Nonnull)sdkConfig andLaunchOptions:(NSDictionary* _Nullable)launchOptions;
+
+/**
+ Call this method in the AppDelegate in application:didFinishLaunchingWithOptions: to initialize the SDK for Live Environment with MOSDKConfig instance
+ @param sdkConfig MOSDKConfig instance with the required config to initialize SDK
+ @param launchOptions Launch Options obtained application:didFinishLaunching: method
+ @version 7.0.0 and above
+ */
+-(void)initializeLiveWithConfig:(MOSDKConfig* _Nonnull)sdkConfig andLaunchOptions:(NSDictionary* _Nullable)launchOptions;
+
+/**
+ Method to update SDK Configuration
+ @param sdkConfig MOSDKConfig instance with the required config to initialize SDK
+ @version 7.0.0 and above
+ */
+-(void)updateSDKConfig:(MOSDKConfig* _Nonnull)sdkConfig;
+
+
+/**
+ Call this method in the AppDelegate in application:didFinishLaunchingWithOptions: to initialize the SDK for dev build
+ @param appID The unique apiKey provided for your app
+ @param launchOptions The launch options dictionary
+ @warning This method is deprecated and will be removed from SDK Version 8.0.0. Use initializeTestWithConfig:andLaunchOptions instead
+ */
+-(void)initializeDevWithAppID:(NSString* _Nonnull)appID withLaunchOptions:(NSDictionary* _Nullable)launchOptions __deprecated_msg("Use initializeTestWithConfig:andLaunchOptions instead.");
+
+
+/**
+ Call this method in the AppDelegate in application:didFinishLaunchingWithOptions: to initialize the SDK for production build
+ @param appID The unique apiKey provided for your app
+ @param launchOptions The launch options dictionary
+ @warning This method is deprecated and will be removed from SDK Version 8.0.0. Use initializeLiveWithConfig:andLaunchOptions instead
+
+ */
+-(void)initializeProdWithAppID:(NSString* _Nonnull)appID withLaunchOptions:(NSDictionary* _Nullable)launchOptions __deprecated_msg("Use initializeLiveWithConfig:andLaunchOptions instead.");
 
 #pragma mark - Messaging Module
 #pragma mark Push Notification
@@ -105,26 +111,12 @@ FOUNDATION_EXPORT const unsigned char MoEngageVersionString[];
  @param delegate to set the delegate for UNUserNotificationCenter.
  @version 4.0.0 and above
  */
--(void)registerForRemoteNotificationWithCategories:(NSSet<UNNotificationCategory*>* _Nullable)categories withUserNotificationCenterDelegate:(id _Nullable )delegate API_AVAILABLE(ios(10.0));
-
-/**
- Method to register your app for push notification with APNS for iOS versions below iOS10.
- @param categoriesForPreviousOS to set categories for supporting Notification Actions in iOS8 and iOS9 (This should be a set of MONotificationCategory objects)
- @version 4.0.0 and above
- */
--(void)registerForRemoteNotificationForBelowiOS10WithCategories:(NSSet<MONotificationCategory*>*_Nullable)categoriesForPreviousOS API_DEPRECATED("This method is for iOS version below iOS 10.0", ios(8.0, 9.3.5));
+-(void)registerForRemoteNotificationWithCategories:(NSSet<UNNotificationCategory*>* _Nullable)categories withUserNotificationCenterDelegate:(id _Nullable )delegate;
 
 /**
  * Method to send notification categories to SDK to support Notification Action in iOS10 and above
  */
--(void)setUserNotificationCategories:(NSSet<UNNotificationCategory*>*_Nullable)categories API_AVAILABLE(ios(10.0));
-
-
-/**
- * Method to send notification categories to SDK to support Notification Action in iOS8 and iOS9
- */
--(void)setNotificationCategoriesForEarlieriOSVersionsWithCategories:(NSSet<MONotificationCategory*>*_Nullable)categories API_DEPRECATED("This method is for iOS version below iOS 10.0", ios(8.0, 9.3.5));
-
+-(void)setUserNotificationCategories:(NSSet<UNNotificationCategory*>*_Nullable)categories;
 
 /**
  Use this method to pass the device token/push token generated by APNS for your app to MoEngage SDK which can be later used for sending push notification to your app users.
@@ -141,22 +133,6 @@ FOUNDATION_EXPORT const unsigned char MoEngageVersionString[];
  */
 -(void)didReceieveNotificationinApplication:(UIApplication*_Nullable)application withInfo:(NSDictionary* _Nonnull)userInfo;
 
-
-/**
- Call this method in AppDelegate in didReceiveRemoteNotification
- @param application The application instance
- @param userInfo The info dict with the push
- @warning This method is deprecated and will be removed from SDK Version 7.0.0. Use didReceieveNotificationinApplication:withInfo: instead
- */
--(void)didReceieveNotificationinApplication:(UIApplication*_Nullable)application withInfo:(NSDictionary* _Nonnull)userInfo openDeeplinkUrlAutomatically:(BOOL)openUrl __deprecated_msg("Use didReceieveNotificationinApplication:withInfo: instead.");
-
-/**
- Call this method in AppDelegate in didRegisterUserNotificationSettings to register the app for notification setting changes by the user
- @param settings The push notification settings.
- @since iOS8
- */
--(void)didRegisterForUserNotificationSettings:(UIUserNotificationSettings *_Nullable)settings API_DEPRECATED("This method is for iOS version below iOS 10.0", ios(8.0, 9.3.5));
-
 /**
  Call this method in AppDelegate in didFailToRegisterForRemoteNotificationsWithError
  */
@@ -167,7 +143,7 @@ FOUNDATION_EXPORT const unsigned char MoEngageVersionString[];
  @since iOS 10
  @version 3.0.0 and above
  */
--(void)userNotificationCenter:(UNUserNotificationCenter *_Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse *_Nonnull)response API_AVAILABLE(ios(10.0));
+-(void)userNotificationCenter:(UNUserNotificationCenter *_Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse *_Nonnull)response;
 
 
 /**
@@ -201,18 +177,10 @@ FOUNDATION_EXPORT const unsigned char MoEngageVersionString[];
 #pragma mark Track Event
 
 /**
- Call this method to track events.
- @param name The name of the event
- @param payload The dictionary you want to associate with the event (optional)
- @warning This method is deprecated and will be removed in SDK version 7.0.0. Use trackEvent:withProperties: instead.
- */
--(void)trackEvent:(NSString *_Nonnull)name andPayload:(NSMutableDictionary *_Nullable)payload __deprecated_msg("Use trackEvent:withProperties: instead.");
-
-/**
  Call this method if you want to track events.
  @param name Event name to be tracked
  @param payload of type MOPayloadBuilder. See MOPaylodBuilder for more details.
- @warning This method is deprecated and will be removed in SDK version 7.0.0. Use trackEvent:withProperties: instead.
+ @warning This method is deprecated and will be removed in SDK version 8.0.0. Use trackEvent:withProperties: instead.
  */
 -(void)trackEvent:(NSString *_Nonnull)name builderPayload:(MOPayloadBuilder *_Nullable)payload __deprecated_msg("Use trackEvent:withProperties: instead.");
 
@@ -359,18 +327,6 @@ Call this method to track events.
  */
 -(void)flushWithCompletionBlock:(void(^_Nullable)(BOOL syncSuccessful))completionBlock;
 
-/**
- There is a periodic sync enabled by default in SDK, use this method to disable this periodic sync by SDK
- */
--(void)disablePeriodicFlush;
-
-/**
- Use this method to change the periodic sync interval in the SDK,
- @note The interval should be greater than 60 Secs
- @param flushInterval - Interval in seconds for periodic Flush, the interval set should be greater than 60 secs
- */
--(void)setFlushInterval:(NSInteger)flushInterval;
-
 #pragma mark Reset Method
 
 /**
@@ -394,23 +350,11 @@ Call this method to track events.
 -(void)processURL:(NSURL* _Nonnull)url;
 
 #pragma mark- Utility Methods
-/**
- Use this method to enable logs for the MoEngage SDK. You can simply pass yes and no to disable the logs.
- Alternatively you can use Log Levels.
- @see LogLevel
- */
-+(void)debug:(LogLevel) logLevel;
 
 /**
- Use this method to redirect the data to region defined in DataRedirectionRegion Enumerator
- @warning Consult with MoEngage team before using this method for redirecting the data
+ Use this method to enable logs for the MoEngage SDK.
  */
-+(void)redirectDataToRegion:(DataRedirectionRegion)region;
-
-/**
- Method to set the App Group ID for Notification impression tracking.
- */
-+(void)setAppGroupID:(NSString*_Nonnull)appGroupID;
++ (void)enableSDKLogs:(BOOL)enable;
 
 /**
  Method to dismiss the RichLanding Controller manually
@@ -450,6 +394,10 @@ Call this method to track events.
  Method to disable all the SDK features
  */
 -(void)disableSDK;
+
+#pragma mark- Default Config
+///Method to obtain the default config
+-(MOSDKConfig* _Nullable)getDefaultSDKConfiguration;
 
 @end
 

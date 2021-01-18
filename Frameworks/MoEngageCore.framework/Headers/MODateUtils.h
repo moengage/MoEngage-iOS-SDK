@@ -28,6 +28,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(NSDateComponents* _Nullable)getDateComponentsFromTimeString:(NSString* _Nullable)timeString;
 +(BOOL)isTime:(NSDateComponents*)evaluatedTime inSlotWithStartTime:(NSDateComponents*)startTime andEndTime:(NSDateComponents*)endTime;
+
++ (BOOL)checkDate:(NSDate *)date inRangeFromDate:(NSDate *)startDate toDate:(NSDate *)lastDate includeLast:(BOOL)include;
++ (NSDate *)dateByAddingDays: (NSInteger) dDays date:(NSDate *)date;
++ (NSDate *) dateBySubtractingDays: (NSInteger) dDays date:(NSDate *)date;
 @end
 
 

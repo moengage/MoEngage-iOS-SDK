@@ -3,6 +3,16 @@
 
 ## Change Log:
 
+### Version 7.0.0  *(18th January, 2021)*
+-------------------------------------------
+* MOSDKConfig class introduced to initialize the SDK.
+* Remote Logger added for debugging.
+* API Encryption option provided in the SDK
+* SDK UserDefault keys saved in a separate suite and not in standard User Defaults
+* SDK API Hosts are updated, configure the same by setting appropriate Data Center in MOSDKConfig.
+* SDK to support iOS 10.0 and above, iOS 9.* support dropped
+* Internal optimizations.
+
 ### Version 6.3.1  *(29th December, 2020)*
 -------------------------------------------
 * Weak linked AppTrackingTransparency framework.

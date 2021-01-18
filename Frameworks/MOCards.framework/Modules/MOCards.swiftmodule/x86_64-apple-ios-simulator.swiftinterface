@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
-// swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MOCards
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MOCards
 import Foundation
 import ImageIO
 import MOAnalytics
@@ -8,6 +8,26 @@ import MOAnalytics
 import MoEngageCore
 import Swift
 import UIKit
+@objc public protocol MOCardsDelegate {
+  @objc optional func cardsSyncedSuccessfully()
+  @objc optional func cardsViewControllerDismissed()
+  @objc optional func cardDeleted(withCardInfo card: MOCards.MOCard)
+  @objc optional func cardClicked(withCardInfo card: MOCards.MOCard, andAction action: MOCards.MOCardNavigationAction) -> Swift.Bool
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MoEngageCards : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: MOCards.MoEngageCards
+  public var cardsDelegate: MOCards.MOCardsDelegate?
+  @objc public func intializeCards()
+  @objc public func presentCardsViewController(withUIConfiguration config: MOCards.MOCardsUIConfiguration? = nil)
+  @objc public func pushCardsViewController(toNavigationController navController: UIKit.UINavigationController, withUIConfiguration config: MOCards.MOCardsUIConfiguration? = nil)
+  @objc public func getCardsViewController(withUIConfiguration config: MOCards.MOCardsUIConfiguration? = nil) -> MOCards.MOCardsListViewController?
+  @objc public func syncCards(withCompletion completionBlock: ((Swift.Bool) -> ())? = nil)
+  public func getAllCardStatusDict() -> [Foundation.NSDictionary]
+  @objc public func getNewCardsCount() -> Swift.Int
+  @objc public func getUnclickedCardsCount() -> Swift.Int
+  @objc public func getClickedCardsCount() -> Swift.Int
+  @objc deinit
+}
 public typealias GifLevelOfIntegrity = Swift.Float
 extension Float {
   public static let highestNoFrameSkipping: MOCards.GifLevelOfIntegrity
@@ -107,26 +127,6 @@ extension UIImageView {
   public func isDiscarded(_ imageView: UIKit.UIView?) -> Swift.Bool
   public func isDisplayedInScreen(_ imageView: UIKit.UIView?) -> Swift.Bool
   public func clear()
-}
-@objc public protocol MOCardsDelegate {
-  @objc optional func cardsSyncedSuccessfully()
-  @objc optional func cardsViewControllerDismissed()
-  @objc optional func cardDeleted(withCardInfo card: MOCards.MOCard)
-  @objc optional func cardClicked(withCardInfo card: MOCards.MOCard, andAction action: MOCards.MOCardNavigationAction) -> Swift.Bool
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MoEngageCards : ObjectiveC.NSObject {
-  @objc public static let sharedInstance: MOCards.MoEngageCards
-  public var cardsDelegate: MOCards.MOCardsDelegate?
-  @objc public func intializeCards()
-  @objc public func presentCardsViewController(withUIConfiguration config: MOCards.MOCardsUIConfiguration? = nil)
-  @objc public func pushCardsViewController(toNavigationController navController: UIKit.UINavigationController, withUIConfiguration config: MOCards.MOCardsUIConfiguration? = nil)
-  @objc public func getCardsViewController(withUIConfiguration config: MOCards.MOCardsUIConfiguration? = nil) -> MOCards.MOCardsListViewController?
-  @objc public func syncCards(withCompletion completionBlock: ((Swift.Bool) -> ())? = nil)
-  public func getAllCardStatusDict() -> [Foundation.NSDictionary]
-  @objc public func getNewCardsCount() -> Swift.Int
-  @objc public func getUnclickedCardsCount() -> Swift.Int
-  @objc public func getClickedCardsCount() -> Swift.Int
-  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class MOCard : ObjectiveC.NSObject {
   public var cardID: Swift.String
