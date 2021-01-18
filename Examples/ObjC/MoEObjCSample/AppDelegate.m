@@ -21,26 +21,25 @@
     
     MOMessaging.sharedInstance.messagingDelegate = self;
     //TODO: Add your App Group ID
-    [MoEngage setAppGroupID:@"Your App Group ID"];
-    
     // Enable SDK Logs
-    [MoEngage debug:LOG_ALL];
+    [MoEngage enableSDKLogs:true];
     
-    // MoEngage SDK Initialization
     //TODO: Add your MoEngage App ID
     NSString* yourMoEngageAppID = @"Your App ID";
+    
+    MOSDKConfig* sdkConfig = [[MOSDKConfig alloc] initWithAppID:yourMoEngageAppID];
+    sdkConfig.moeDataCenter = DATA_CENTER_01;
+    sdkConfig.appGroupID = @"appGroupID"; //appGroupID configured in capabilities
+    // MoEngage SDK Initialization
+    
     #ifdef DEBUG
-        [[MoEngage sharedInstance] initializeDevWithAppID:yourMoEngageAppID  withLaunchOptions:launchOptions];
+        [[MoEngage sharedInstance] initializeTestWithConfig:sdkConfig andLaunchOptions:launchOptions];
     #else
-        [[MoEngage sharedInstance] initializeProdWithAppID:yourMoEngageAppID  withLaunchOptions:launchOptions];
+        [[MoEngage sharedInstance] initializeLiveWithConfig:sdkConfig andLaunchOptions:launchOptions];
     #endif
     
     // Register For Push Notification
-    if (@available(iOS 10.0, *)) {
-        [[MoEngage sharedInstance] registerForRemoteNotificationWithCategories:nil withUserNotificationCenterDelegate:self];
-    } else {
-        [[MoEngage sharedInstance] registerForRemoteNotificationForBelowiOS10WithCategories:nil];
-    }
+    [[MoEngage sharedInstance] registerForRemoteNotificationWithCategories:nil withUserNotificationCenterDelegate:self];
     
     // Track App Status INSTALL/UPDATE
     [self sendAppStatusToMoEngage];

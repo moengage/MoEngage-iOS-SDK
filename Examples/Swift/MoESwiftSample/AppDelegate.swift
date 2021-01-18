@@ -20,8 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         AppDelegate.requestIDFAPermission()
         
-        //TODO: Add your App Group ID
-        MoEngage.setAppGroupID("Your App Group ID")
+        
         
         MOMessaging.sharedInstance().messagingDelegate = self
         
@@ -30,23 +29,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         //TODO: Add your MoEngage App ID
         var yourMoEAppID = "Your App ID"
-        MoEngage.debug(LOG_ALL)
+        
+        //TODO: Add your App Group ID
+        var appGroupID = "app group id"
+        
+        var sdkConfig = MOSDKConfig.init(appID: yourMoEAppID)
+        sdkConfig.appGroupID = appGroupID
+        sdkConfig.moeDataCenter = DATA_CENTER_01
+        MoEngage.enableSDKLogs(true)
         DispatchQueue.main.async {
             #if DEBUG
-            MoEngage.sharedInstance().initializeDev(withAppID:yourMoEAppID , withLaunchOptions: launchOptions)
+            MoEngage.sharedInstance().initializeTest(with: sdkConfig, andLaunchOptions: launchOptions)
             #else
-            MoEngage.sharedInstance().initializeProd(withAppID:yourMoEAppID, withLaunchOptions: launchOptions)
+            MoEngage.sharedInstance().initializeLive(with: sdkConfig, andLaunchOptions: launchOptions)
             #endif
         }
         
         //For registering for remote notification
-        if #available(iOS 10.0, *) {
-            let categoriesForiOS10 = self.getCategoriesForiOS10()
-            MoEngage.sharedInstance().registerForRemoteNotification(withCategories: categoriesForiOS10, withUserNotificationCenterDelegate: self)
-        } else {
-            let categoriesForBelowiOS10 = self.getCategoriesForEarlierVersions()
-            MoEngage.sharedInstance().registerForRemoteNotificationForBelowiOS10(withCategories: categoriesForBelowiOS10)
-        }
+        let categoriesForiOS10 = self.getCategoriesForiOS10()
+        MoEngage.sharedInstance().registerForRemoteNotification(withCategories: categoriesForiOS10, withUserNotificationCenterDelegate: self)
         
         //For tracking if it's a new install or on update by user
         self.sendAppStatusToMoEngage()
@@ -69,38 +70,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         return categoriesSet;
     }
     
-    
-    //This method gives categories for iOS version below 10.0
-    func getCategoriesForEarlierVersions() -> Set<MONotificationCategory>{
-        let acceptAction = UIMutableUserNotificationAction.init()
-        acceptAction.identifier = "ACCEPT_IDENTIFIER"
-        acceptAction.title = "Accept"
-        acceptAction.activationMode = .background
-        acceptAction.isDestructive = false
-        acceptAction.isAuthenticationRequired = false
-        
-        let declineAction = UIMutableUserNotificationAction.init()
-        declineAction.identifier = "DECLINE_IDENTIFIER"
-        declineAction.title = "Decline"
-        declineAction.activationMode = .background
-        declineAction.isDestructive = true
-        declineAction.isAuthenticationRequired = false
-        
-        let maybeAction = UIMutableUserNotificationAction.init()
-        maybeAction.identifier = "MAYBE_IDENTIFIER"
-        maybeAction.title = "May Be"
-        maybeAction.activationMode = .background
-        maybeAction.isDestructive = false
-        maybeAction.isAuthenticationRequired = false
-        
-        let inviteCategory = MONotificationCategory.init()
-        inviteCategory.identifier = "INVITE_CATEGORY"
-        inviteCategory.setActions([maybeAction,declineAction,acceptAction], for: .default)
-        inviteCategory.setActions([declineAction,acceptAction], for: .minimal)
-        
-        let categoriesSet = Set.init([inviteCategory])
-        return categoriesSet;
-    }
 
     //MARK:- Push Notification delegate Method
     

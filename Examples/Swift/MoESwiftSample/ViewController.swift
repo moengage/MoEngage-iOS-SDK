@@ -78,6 +78,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         eventProperties.addDateAttribute(Date(), withName: "Time of purchase")
         
         eventProperties.addLocationAttribute(MOGeoLocation.init(latitude: 12.23, andLongitude: 9.23), withName: "Pickup Location")
+        eventProperties.setNonInteractive()
         MoEngage.sharedInstance().trackEvent("Successful Purchase", with: eventProperties)
     }
     
