@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         MOMessaging.sharedInstance().messagingDelegate = self
         
         //This is to enable logs of MoEngage SDK
-        //MoEngage.debug(LOG_ALL)
+        //MoEngage.enableSDKLogs(true)
         
         //TODO: Add your MoEngage App ID
         var yourMoEAppID = "Your App ID"
@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         var sdkConfig = MOSDKConfig.init(appID: yourMoEAppID)
         sdkConfig.appGroupID = appGroupID
         sdkConfig.moeDataCenter = DATA_CENTER_01
-        MoEngage.enableSDKLogs(true)
+        
         DispatchQueue.main.async {
             #if DEBUG
             MoEngage.sharedInstance().initializeTest(with: sdkConfig, andLaunchOptions: launchOptions)

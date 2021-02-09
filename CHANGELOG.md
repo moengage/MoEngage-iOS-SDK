@@ -3,6 +3,11 @@
 
 ## Change Log:
 
+### Version 7.0.1  *(9th February, 2021)*
+-------------------------------------------
+* Add `setDataCenter()` to configure the Data Center in the SDK.
+* Reintroduced `setAppGroupID()` to configure AppGroup ID in the SDK.
+
 ### Version 7.0.0  *(18th January, 2021)*
 -------------------------------------------
 * MOSDKConfig class introduced to initialize the SDK.

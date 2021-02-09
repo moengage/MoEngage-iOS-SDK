@@ -352,6 +352,17 @@ Call this method to track events.
 #pragma mark- Utility Methods
 
 /**
+ Use this method to set the Data Center where your account is present using MODataCenter Enumerator
+ @warning Consult with MoEngage team before using this method
+ */
++(void)setDataCenter:(MODataCenter)dataCenter;
+
+/**
+ Method to set the App Group ID for Notification impression tracking.
+ */
++(void)setAppGroupID:(NSString*_Nonnull)appGroupID;
+
+/**
  Use this method to enable logs for the MoEngage SDK.
  */
 + (void)enableSDKLogs:(BOOL)enable;

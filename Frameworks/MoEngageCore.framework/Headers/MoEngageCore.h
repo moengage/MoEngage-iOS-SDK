@@ -61,15 +61,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// Use this method to enable logs for the MoEngage SDK.
 - (void)enableLogs:(BOOL) enable;
 
-/**
- Method to set the App Group ID for Notification impression tracking.
- */
+/// Method to set the App Group ID for Notification impression tracking.
 -(void)setAppGroupID:(NSString*_Nonnull)appGroupID;
 
-/**
- Method to dismiss the RichLanding Controller manually
- @param animate Bool value indicating if the dismissing the controller should be with animation
- */
+
+/// Method to dismiss the RichLanding Controller manually
+/// @param animate Bool value indicating if the dismissing the controller should be with animation
 -(void)dismissRichLandingWebViewControllerWithAnimation:(BOOL)animate;
 
 /// Method to check if Device Unique ID is present.
@@ -80,22 +77,20 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param completion Completion block called after download with data downloaded
 -(void)downloadImageForURL:(NSURL*)imageURL andCompletionHandler:(void (^)(BOOL,NSData* _Nullable))completion;
 
-/**
- Method to know the current status of the SDK. Enabled/Disabled
- */
+/// Method to know the current status of the SDK. Enabled/Disabled
 -(BOOL)isSDKEnabled;
 
-/**
- Method to enable all the SDK features
- */
+/// Method to enable all the SDK features
 -(void)enableSDK;
 
-/**
- Method to disable all the SDK features
- */
+///  Method to disable all the SDK features
 -(void)disableSDK;
 
+/// Get Default Configuration of the SDK
 -(MOSDKConfig*)getDefaultSDKConfiguration;
+
+/// Set Data Center in SDK Config
+-(void)setDataCenter:(MODataCenter)dataCenter;
 
 @end
 
