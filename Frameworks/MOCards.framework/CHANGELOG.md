@@ -3,6 +3,11 @@
 
 ## Change Log:
 
+### Version 2.0.2  *(25th February, 2021)*
+-------------------------------------------
+* Additional UIConfigurations added to enable/disable Pull to refresh and Delete/Cancel action sheet texts.
+* Showing empty screen on deletion of last card.
+
 ### Version 2.0.1  *(10th February, 2021)*
 -------------------------------------------
 * MoEngage-iOS-SDK Dependency updates

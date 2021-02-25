@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
 // swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MOCards
 import Foundation
 import ImageIO
@@ -76,9 +76,10 @@ extension MOCardsListViewController : UIKit.UITableViewDelegate, UIKit.UITableVi
   public var categorySelectionIndicatorBarColor: UIKit.UIColor
   public var categoryTabFont: UIKit.UIFont
   public var categorySelectedTabFont: UIKit.UIFont
+  public var enablePullToRefresh: Swift.Bool
+  public var pullToRefreshTintColor: UIKit.UIColor
   public var cardsViewControllerBGColor: UIKit.UIColor
   public var cardsTableViewBGColor: UIKit.UIColor
-  public var pullToRefreshTintColor: UIKit.UIColor
   public var newUpdatesButtonFont: UIKit.UIFont
   public var newUpdatesButtonBGColor: UIKit.UIColor
   public var newUpdatesButtonTextColor: UIKit.UIColor
@@ -104,6 +105,8 @@ extension MOCardsListViewController : UIKit.UITableViewDelegate, UIKit.UITableVi
   public var cardPlaceholderImage: UIKit.UIImage?
   public var cardPinnedImage: UIKit.UIImage?
   public var emptyInboxImage: UIKit.UIImage?
+  public var actionSheetDeletionText: Swift.String
+  public var actionSheetCancelText: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }

@@ -46,6 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(NSArray*)getSourceExtraKeys;
 -(NSArray*)getBlackListedEvents;
+-(NSArray*)getBlackListedUserAttributes;
 -(NSArray*)getInstantFlushEvents;
 -(NSArray*)getWhitelistedEvents;
 
@@ -53,6 +54,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(BOOL)isEventBlackListed:(NSString*)eventname;
 -(BOOL)isEventInstantFlushEvent:(NSString*)eventname;
 -(BOOL)isEventWhitelistedEvent:(NSString*)eventname;
+
+-(BOOL)isUserAttributeBlackListed:(NSString*)userAttrName;
 
 // Unique ID
 -(NSArray*)getRestrictedUniqueIDRegex;

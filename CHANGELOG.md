@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 7.0.2  *(25th February, 2021)*
+-------------------------------------------
+* Support for User Attribute Blacklisting with remote config.
+
 ### Version 7.0.1  *(9th February, 2021)*
 -------------------------------------------
 * Add `setDataCenter()` to configure the Data Center in the SDK.

@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'MoEngageCards'
-  s.version      = '2.0.1'
+  s.version      = '2.0.2'
   s.summary      = 'MoEngage Cards Campaigns for iOS'
   s.description  = <<-DESC
                    Create targeted or automated App Inbox/NewsFeed messages that can be grouped into various categories, and target your users with different updates or offers that can stay in the Inbox/Feed over a designated period of time.

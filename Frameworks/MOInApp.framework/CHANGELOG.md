@@ -2,6 +2,10 @@
 =====================
 ## Change Log:
 
+### Version 2.0.2  *(25th February, 2021)*
+-------------------------------------------
+* Provided dismiss callback for Nudges.
+
 ### Version 2.0.1  *(10th February, 2021)*
 -------------------------------------------
 * MoEngage-iOS-SDK Dependency updates
