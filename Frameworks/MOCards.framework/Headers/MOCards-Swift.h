@@ -241,6 +241,7 @@ SWIFT_PROTOCOL("_TtP7MOCards15MOCardsDelegate_")
 SWIFT_CLASS("_TtC7MOCards25MOCardsListViewController")
 @interface MOCardsListViewController : UIViewController <UIGestureRecognizerDelegate>
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLayoutSubviews;
 - (void)willTransitionToTraitCollection:(UITraitCollection * _Nonnull)newCollection withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
@@ -564,6 +565,7 @@ SWIFT_PROTOCOL("_TtP7MOCards15MOCardsDelegate_")
 SWIFT_CLASS("_TtC7MOCards25MOCardsListViewController")
 @interface MOCardsListViewController : UIViewController <UIGestureRecognizerDelegate>
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLayoutSubviews;
 - (void)willTransitionToTraitCollection:(UITraitCollection * _Nonnull)newCollection withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;

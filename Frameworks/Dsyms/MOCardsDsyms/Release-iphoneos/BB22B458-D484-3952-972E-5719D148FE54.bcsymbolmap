@@ -2,8 +2,8 @@ BCSymbolMap Version: 2.0
 Apple clang version 12.0.0 (clang-1200.0.32.29)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk
 iPhoneOS14.4.sdk
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/build/MoEngage.build/Release-iphoneos/MoEngageCore.build/DerivedSources/MoEngageCore_vers.c
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/build/MoEngage.build/Release-iphoneos/MoEngageCore.build/DerivedSources/MoEngageCore_vers.c
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage
 -[MOConfigLegacy init]
 -[MOConfigLegacy initWithCoder:]
 -[MOConfigLegacy encodeWithCoder:]
@@ -130,7 +130,7 @@ _OBJC_IVAR_$_MOConfigLegacy._dataRedirectionRegion
 __OBJC_$_INSTANCE_VARIABLES_MOConfigLegacy
 __OBJC_$_PROP_LIST_MOConfigLegacy
 __OBJC_CLASS_RO_$_MOConfigLegacy
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOConfig/ModelObjects/MOConfigLegacy.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOConfig/ModelObjects/MOConfigLegacy.m
 MoEngageCore/MOConfig/ModelObjects/MOConfigLegacy.m
 MoEngageCore/MOConfig/ModelObjects/MOConfigLegacy.h
 +[MOConfigDataManager sharedInstance]
@@ -273,11 +273,11 @@ _OBJC_IVAR_$_MOConfigDataManager._sdkConfig
 __OBJC_$_INSTANCE_VARIABLES_MOConfigDataManager
 __OBJC_$_PROP_LIST_MOConfigDataManager
 __OBJC_CLASS_RO_$_MOConfigDataManager
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOConfig/MOConfigDataManager.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOConfig/MOConfigDataManager.m
 MoEngageCore/MOConfig/MOConfigDataManager.m
 __37+[MOConfigDataManager sharedInstance]_block_invoke
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/usr/include/dispatch/once.h
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOConfig/Constants/MOConfigConstant.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOConfig/Constants/MOConfigConstant.m
 -[MONetworkClient init]
 -[MONetworkClient executeRequest:withCompletionHandler:]
 ___56-[MONetworkClient executeRequest:withCompletionHandler:]_block_invoke
@@ -315,7 +315,7 @@ _OBJC_IVAR_$_MONetworkClient._reachability
 __OBJC_$_INSTANCE_VARIABLES_MONetworkClient
 __OBJC_$_PROP_LIST_MONetworkClient
 __OBJC_CLASS_RO_$_MONetworkClient
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MONetwork/MONetworkClient.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MONetwork/MONetworkClient.m
 MoEngageCore/MONetwork/MONetworkClient.m
 __copy_helper_block_e8_32s40b
 __destroy_helper_block_e8_32s
@@ -492,7 +492,7 @@ __OBJC_$_CLASS_METHODS_MOAppDelegateSwizzler
 __OBJC_METACLASS_RO_$_MOAppDelegateSwizzler
 __OBJC_$_INSTANCE_METHODS_MOAppDelegateSwizzler
 __OBJC_CLASS_RO_$_MOAppDelegateSwizzler
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOUtils/AppDelegateSwizzler/MOAppDelegateSwizzler.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/AppDelegateSwizzler/MOAppDelegateSwizzler.m
 MoEngageCore/MOUtils/AppDelegateSwizzler/MOAppDelegateSwizzler.m
 __72-[MOAppDelegateSwizzler application:donor_didReceiveRemoteNotification:]_block_invoke
 __95-[MOAppDelegateSwizzler application:donor_didReceiveRemoteNotification:fetchCompletionHandler:]_block_invoke
@@ -565,9 +565,9 @@ _OBJC_CLASSLIST_REFERENCES_$_.164
 __OBJC_$_CLASS_METHODS_MONetworkUtils
 __OBJC_METACLASS_RO_$_MONetworkUtils
 __OBJC_CLASS_RO_$_MONetworkUtils
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MONetwork/Utils/MONetworkUtils.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MONetwork/Utils/MONetworkUtils.m
 MoEngageCore/MONetwork/Utils/MONetworkUtils.m
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MONetwork/Constants/MONetworkConstants.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MONetwork/Constants/MONetworkConstants.m
 -[NSData(Encryption) AESEncryptWithPassword:iv:error:]
 -[NSData(Encryption) AESDecryptWithPassword:iv:error:]
 -[NSData(Encryption) cryptData:operation:iv:error:]
@@ -576,7 +576,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.15
 __OBJC_$_CATEGORY_INSTANCE_METHODS_NSData_$_Encryption
 __OBJC_$_CATEGORY_CLASS_METHODS_NSData_$_Encryption
 __OBJC_$_CATEGORY_NSData_$_Encryption
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOUtils/Encryption/NSData+Encryption.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/Encryption/NSData+Encryption.m
 MoEngageCore/MOUtils/Encryption/NSData+Encryption.m
 +[MOConfigHandler sharedHandler]
 ___32+[MOConfigHandler sharedHandler]_block_invoke
@@ -613,7 +613,7 @@ _OBJC_IVAR_$_MOConfigHandler._dataManager
 __OBJC_$_INSTANCE_VARIABLES_MOConfigHandler
 __OBJC_$_PROP_LIST_MOConfigHandler
 __OBJC_CLASS_RO_$_MOConfigHandler
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOConfig/MOConfigHandler.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOConfig/MOConfigHandler.m
 MoEngageCore/MOConfig/MOConfigHandler.m
 __37-[MOConfigHandler updateRemoteConfig]_block_invoke
 __32+[MOConfigHandler sharedHandler]_block_invoke
@@ -713,7 +713,7 @@ _OBJC_IVAR_$_MORemoteConfig._analyticsSessionInactiveDuration
 __OBJC_$_INSTANCE_VARIABLES_MORemoteConfig
 __OBJC_$_PROP_LIST_MORemoteConfig
 __OBJC_CLASS_RO_$_MORemoteConfig
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOConfig/ModelObjects/MORemoteConfig.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOConfig/ModelObjects/MORemoteConfig.m
 MoEngageCore/MOConfig/ModelObjects/MORemoteConfig.m
 MoEngageCore/MOConfig/ModelObjects/MORemoteConfig.h
 +[MONetworkConfiguration defaultConfiguration]
@@ -751,7 +751,7 @@ _OBJC_IVAR_$_MONetworkConfiguration._moeNetworkSession
 __OBJC_$_INSTANCE_VARIABLES_MONetworkConfiguration
 __OBJC_$_PROP_LIST_MONetworkConfiguration
 __OBJC_CLASS_RO_$_MONetworkConfiguration
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MONetwork/MONetworkConfiguration.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MONetwork/MONetworkConfiguration.m
 MoEngageCore/MONetwork/MONetworkConfiguration.m
 __46+[MONetworkConfiguration defaultConfiguration]_block_invoke
 +[MOCoreUtils getSDKLibraryDirectoryPath]
@@ -860,7 +860,7 @@ _OBJC_SELECTOR_REFERENCES_.413
 __OBJC_$_CLASS_METHODS_MOCoreUtils
 __OBJC_METACLASS_RO_$_MOCoreUtils
 __OBJC_CLASS_RO_$_MOCoreUtils
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOUtils/MOCoreUtils.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/MOCoreUtils.m
 MoEngageCore/MOUtils/MOCoreUtils.m
 __33+[MOCoreUtils openCustomUrlLink:]_block_invoke_2
 __33+[MOCoreUtils openCustomUrlLink:]_block_invoke
@@ -924,7 +924,7 @@ _OBJC_IVAR_$_MoEngageCore._appIdUpdateDelegate
 __OBJC_$_INSTANCE_VARIABLES_MoEngageCore
 __OBJC_$_PROP_LIST_MoEngageCore
 __OBJC_CLASS_RO_$_MoEngageCore
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MoEngageCore.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MoEngageCore.m
 MoEngageCore/MoEngageCore.m
 MoEngageCore/MoEngageCore.h
 __30-[MoEngageCore setDataCenter:]_block_invoke
@@ -959,7 +959,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.64
 __OBJC_$_CLASS_METHODS_MODateUtils
 __OBJC_METACLASS_RO_$_MODateUtils
 __OBJC_CLASS_RO_$_MODateUtils
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOUtils/DateUtils/MODateUtils.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/DateUtils/MODateUtils.m
 MoEngageCore/MOUtils/DateUtils/MODateUtils.m
 -[MONetworkRequest initWithService:params:additionalHeaders:requestBody:andAdditionalPathComponent:]
 -[MONetworkRequest createURLWithPathComponent:]
@@ -1011,7 +1011,7 @@ _OBJC_IVAR_$_MONetworkRequest._requestBody
 __OBJC_$_INSTANCE_VARIABLES_MONetworkRequest
 __OBJC_$_PROP_LIST_MONetworkRequest
 __OBJC_CLASS_RO_$_MONetworkRequest
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MONetwork/MONetworkRequest.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MONetwork/MONetworkRequest.m
 MoEngageCore/MONetwork/MONetworkRequest.m
 MoEngageCore/MONetwork/MONetworkRequest.h
 +[MOLogger minLogDuration]
@@ -1076,7 +1076,7 @@ _OBJC_IVAR_$_MOLogger._tag
 __OBJC_$_INSTANCE_VARIABLES_MOLogger
 __OBJC_$_PROP_LIST_MOLogger
 __OBJC_CLASS_RO_$_MOLogger
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOUtils/MOLogger/MOLogger.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/MOLogger/MOLogger.m
 MoEngageCore/MOUtils/MOLogger/MOLogger.m
 __destroy_helper_block_e8_32r40w
 __copy_helper_block_e8_32r40w
@@ -1099,7 +1099,7 @@ ___block_descriptor_56_e8_40s48r_e5_v8?0l
 __OBJC_$_CLASS_METHODS_MOKeychain
 __OBJC_METACLASS_RO_$_MOKeychain
 __OBJC_CLASS_RO_$_MOKeychain
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOUtils/KeychainServices/MOKeychain.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/KeychainServices/MOKeychain.m
 __destroy_helper_block_e8_40s48r
 __copy_helper_block_e8_40s48r
 __45+[MOKeychain createDeviceUniqueIDForService:]_block_invoke
@@ -1132,7 +1132,7 @@ _OBJC_IVAR_$_MOWebViewHandler._sfVC
 __OBJC_$_INSTANCE_VARIABLES_MOWebViewHandler
 __OBJC_$_PROP_LIST_MOWebViewHandler
 __OBJC_CLASS_RO_$_MOWebViewHandler
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOUtils/MORichLanding/MOWebViewHandler.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/MORichLanding/MOWebViewHandler.m
 MoEngageCore/MOUtils/MORichLanding/MOWebViewHandler.m
 __57-[MOWebViewHandler dismissSafariControllerWithAnimation:]_block_invoke
 __43-[MOWebViewHandler presentSafariVCWithURL:]_block_invoke
@@ -1142,7 +1142,7 @@ __34+[MOWebViewHandler sharedInstance]_block_invoke
 __OBJC_METACLASS_RO_$_MOModelObject
 __OBJC_$_INSTANCE_METHODS_MOModelObject
 __OBJC_CLASS_RO_$_MOModelObject
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOUtils/MOModelObject/MOModelObject.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/MOModelObject/MOModelObject.m
 MoEngageCore/MOUtils/MOModelObject/MOModelObject.m
 -[MOLogger(Utility) formatForType:withTag:]
 -[MOLogger(Utility) labelForType:]
@@ -1151,7 +1151,7 @@ MoEngageCore/MOUtils/MOModelObject/MOModelObject.m
 -[MOLogger(Utility) stringRepresentationForLogType:]
 __OBJC_$_CATEGORY_INSTANCE_METHODS_MOLogger_$_Utility
 __OBJC_$_CATEGORY_MOLogger_$_Utility
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOUtils/MOLogger/MOLogger+Utility.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/MOLogger/MOLogger+Utility.m
 MoEngageCore/MOUtils/MOLogger/MOLogger+Utility.m
 +[MOReachability reachabilityWithHostName:]
 +[MOReachability reachabilityWithHostname:]
@@ -1209,24 +1209,24 @@ _OBJC_IVAR_$_MOReachability._reachabilityObject
 __OBJC_$_INSTANCE_VARIABLES_MOReachability
 __OBJC_$_PROP_LIST_MOReachability
 __OBJC_CLASS_RO_$_MOReachability
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MONetwork/Utils/MOReachability.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MONetwork/Utils/MOReachability.m
 MoEngageCore/MONetwork/Utils/MOReachability.m
 MoEngageCore/MONetwork/Utils/MOReachability.h
 __38-[MOReachability reachabilityChanged:]_block_invoke
 reachabilityFlags
 TMReachabilityCallback
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/Constants/MOCoreConstants.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/Constants/MOCoreConstants.m
 -[NSMutableDictionary(MOExtension) setObjectNilHandled:forKey:]
 -[NSMutableDictionary(MOExtension) removeValidObjectForKey:]
 __OBJC_$_CATEGORY_INSTANCE_METHODS_NSMutableDictionary_$_MOExtension
 __OBJC_$_CATEGORY_NSMutableDictionary_$_MOExtension
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOUtils/Categories/NSMutableDictionary+MOExtension.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/Categories/NSMutableDictionary+MOExtension.m
 MoEngageCore/MOUtils/Categories/NSMutableDictionary+MOExtension.m
 -[NSDictionary(MOExtension) validObjectForKey:]
 -[NSDictionary(MOExtension) validObjectForKeyPath:]
 __OBJC_$_CATEGORY_INSTANCE_METHODS_NSDictionary_$_MOExtension
 __OBJC_$_CATEGORY_NSDictionary_$_MOExtension
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOUtils/Categories/NSDictionary+MOExtension.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/Categories/NSDictionary+MOExtension.m
 MoEngageCore/MOUtils/Categories/NSDictionary+MOExtension.m
 +[MOEncryptionManager encryptData:withAppKey:]
 +[MOEncryptionManager decryptData:withAppKey:]
@@ -1238,7 +1238,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.36
 __OBJC_$_CLASS_METHODS_MOEncryptionManager
 __OBJC_METACLASS_RO_$_MOEncryptionManager
 __OBJC_CLASS_RO_$_MOEncryptionManager
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOUtils/Encryption/MOEncryptionManager.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/Encryption/MOEncryptionManager.m
 MoEngageCore/MOUtils/Encryption/MOEncryptionManager.m
 NSMakeRange
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
@@ -1261,7 +1261,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.43
 __OBJC_$_CLASS_METHODS_MOConfigUtils
 __OBJC_METACLASS_RO_$_MOConfigUtils
 __OBJC_CLASS_RO_$_MOConfigUtils
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOConfig/Utils/MOConfigUtils.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOConfig/Utils/MOConfigUtils.m
 MoEngageCore/MOConfig/Utils/MOConfigUtils.m
 -[MOSDKConfig initWithAppID:]
 -[MOSDKConfig init]
@@ -1314,7 +1314,7 @@ _OBJC_IVAR_$_MOSDKConfig._analyticsPeriodicFlushDuration
 __OBJC_$_INSTANCE_VARIABLES_MOSDKConfig
 __OBJC_$_PROP_LIST_MOSDKConfig
 __OBJC_CLASS_RO_$_MOSDKConfig
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOConfig/ModelObjects/MOSDKConfig.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOConfig/ModelObjects/MOSDKConfig.m
 MoEngageCore/MOConfig/ModelObjects/MOSDKConfig.m
 MoEngageCore/MOConfig/ModelObjects/MOSDKConfig.h
 -[MOLoggerFileManager init]
@@ -1357,7 +1357,7 @@ _OBJC_IVAR_$_MOLoggerFileManager._sessionStartTiming
 __OBJC_$_INSTANCE_VARIABLES_MOLoggerFileManager
 __OBJC_$_PROP_LIST_MOLoggerFileManager
 __OBJC_CLASS_RO_$_MOLoggerFileManager
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MoEngageCore/MOUtils/MOLogger/MOLoggerFileManager.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/MOLogger/MOLoggerFileManager.m
 MoEngageCore/MOUtils/MOLogger/MOLoggerFileManager.m
 MoEngageCore/MOUtils/MOLogger/MOLoggerFileManager.h
 __copy_helper_block_e8_32s40s48s

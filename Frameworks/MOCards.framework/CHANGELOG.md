@@ -3,6 +3,12 @@
 
 ## Change Log:
 
+### Version 2.0.3  *(31st March, 2021)*
+-------------------------------------------
+* Additional UIConfigurations added to change `New Updates` button title.
+* Changed the behaviour to load the cards on inbox fetch instead of showing `New Updates` button, in case of empty inbox.
+* Added check for updates on `viewDidAppear`, to handle TabBarController use cases.
+
 ### Version 2.0.2  *(25th February, 2021)*
 -------------------------------------------
 * Additional UIConfigurations added to enable/disable Pull to refresh and Delete/Cancel action sheet texts.

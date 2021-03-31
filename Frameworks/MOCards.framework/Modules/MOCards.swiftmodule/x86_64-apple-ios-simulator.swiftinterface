@@ -37,7 +37,9 @@ extension Float {
   public static let superLowForSlideShow: MOCards.GifLevelOfIntegrity
 }
 @objc @_inheritsConvenienceInitializers public class MOCardsListViewController : UIKit.UIViewController, UIKit.UIGestureRecognizerDelegate {
+  public func reloadInbox()
   @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @objc override dynamic public func viewDidLayoutSubviews()
   @objc override dynamic public func willTransition(to newCollection: UIKit.UITraitCollection, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
   @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
@@ -80,6 +82,7 @@ extension MOCardsListViewController : UIKit.UITableViewDelegate, UIKit.UITableVi
   public var pullToRefreshTintColor: UIKit.UIColor
   public var cardsViewControllerBGColor: UIKit.UIColor
   public var cardsTableViewBGColor: UIKit.UIColor
+  public var newUpdatesButtonTitle: Swift.String
   public var newUpdatesButtonFont: UIKit.UIFont
   public var newUpdatesButtonBGColor: UIKit.UIColor
   public var newUpdatesButtonTextColor: UIKit.UIColor
