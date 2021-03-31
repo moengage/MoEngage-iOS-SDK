@@ -25,13 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         MOMessaging.sharedInstance().messagingDelegate = self
         
         //This is to enable logs of MoEngage SDK
-        //MoEngage.enableSDKLogs(true)
+        MoEngage.enableSDKLogs(true)
         
         //TODO: Add your MoEngage App ID
-        var yourMoEAppID = "Your App ID"
+        let yourMoEAppID = "Your App ID"
         
         //TODO: Add your App Group ID
-        var appGroupID = "app group id"
+        let appGroupID = "app group id"
         
         var sdkConfig = MOSDKConfig.init(appID: yourMoEAppID)
         sdkConfig.appGroupID = appGroupID
