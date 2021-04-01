@@ -96,12 +96,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
     }
     
-    func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
-        if let userInfo = notification.userInfo  {
-            MoEngage.sharedInstance().didReceieveNotificationinApplication(application, withInfo: userInfo)
-        }
-    }
-    
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         MoEngage.sharedInstance().didReceieveNotificationinApplication(application, withInfo: userInfo)
         completionHandler(.newData)
