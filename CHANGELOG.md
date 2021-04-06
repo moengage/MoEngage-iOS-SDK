@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 7.0.3  *(6th April, 2021)*
+-------------------------------------------
+* Fixed a multithreading issue in Analytics Module, which led to crashes in few cases.
+
 ### Version 7.0.2  *(25th February, 2021)*
 -------------------------------------------
 * Support for User Attribute Blacklisting with remote config.
