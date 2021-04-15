@@ -2,6 +2,10 @@
 =====================
 ## Change Log:
 
+### Version 2.0.3  *(15th April, 2021)*
+-------------------------------------------
+* Fixed deeplink action issue, URL string is percentage encoded before URL instance is created and processed.
+
 ### Version 2.0.2  *(25th February, 2021)*
 -------------------------------------------
 * Provided dismiss callback for Nudges.

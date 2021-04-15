@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 7.0.4  *(15th April, 2021)*
+-------------------------------------------
+* Fixed deeplink action issue, URL string is percentage encoded before URL instance is created and processed.
+
 ### Version 7.0.3  *(6th April, 2021)*
 -------------------------------------------
 * Fixed a multithreading issue in Analytics Module, which led to crashes in few cases.

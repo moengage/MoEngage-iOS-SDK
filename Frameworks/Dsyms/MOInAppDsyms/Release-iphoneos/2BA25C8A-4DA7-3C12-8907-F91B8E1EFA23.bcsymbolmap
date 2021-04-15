@@ -1694,6 +1694,7 @@ _sharedActionHandler.onceToken
 _sharedActionHandler.instance
 _OBJC_CLASSLIST_REFERENCES_$_.67
 _OBJC_CLASSLIST_REFERENCES_$_.85
+_OBJC_CLASSLIST_REFERENCES_$_.94
 _OBJC_CLASSLIST_REFERENCES_$_.100
 ___block_literal_global.104
 _OBJC_CLASSLIST_REFERENCES_$_.105
@@ -1989,7 +1990,6 @@ MOInApp/Source/ModelObjects/MOInAppCampaign.h
 -[MOInAppWidget setActions:]
 -[MOInAppWidget .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.91
-_OBJC_CLASSLIST_REFERENCES_$_.94
 _OBJC_IVAR_$_MOInAppWidget._content
 _OBJC_IVAR_$_MOInAppWidget._actions
 __OBJC_$_CLASS_METHODS_MOInAppWidget

@@ -1,9 +1,8 @@
-![Logo](https://user-images.githubusercontent.com/15011722/32040752-7237c3c2-ba4f-11e7-9d68-a019049fccf5.png)
+![Logo](https://github.com/moengage/MoEngage-iOS-SDK/blob/master/Images/moe_logo_blue.png)
 # MoEngage-iOS-SDK
 
 [![Version](https://img.shields.io/cocoapods/v/MoEngage-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/MoEngage-iOS-SDK)
 [![License](https://img.shields.io/cocoapods/l/MoEngage-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/MoEngage-iOS-SDK)
-[![CocoaPods](https://img.shields.io/cocoapods/dm/MoEngage-iOS-SDK.svg)](https://cocoapods.org/pods/MoEngage-iOS-SDK)
 
 MoEngage provides a platform which enables companies to deliver personalized interactions to their users through push notifications, in-app campaigns, email campaigns and other re-targeting channels.
 
@@ -29,18 +28,20 @@ CocoaPods is a dependency manager for Objective C & Swift projects and makes int
 
 ## SDK Initialization
 
-Login to your MoEngage account, go to **Settings** in the left panel of the dashboard. Under App Settings, you will find your **APP ID**. Provide this APP ID while initializing the SDK with **initializeDevWithApiKey:** and **initializeProdWithApiKey:** methods as shown below.
+Login to your MoEngage account, go to **Settings** in the left panel of the dashboard. Under App Settings, you will find your **APP ID**. Provide this APP ID while initializing the SDK with **initializeTestWithConfig:** and **initializeLiveWithConfig:** methods as shown below.
 
 ### In Objective-C:
 
     - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-        // Separate initialization methods for Dev and Prod initializations
-    
+        //Create a config object
+        MOSDKConfig *sdkConfig = [[MOSDKConfig alloc] initWithAppID:@"Your APP ID"];
+        
+        // Separate initialization methods for Test and Live Environments
         #ifdef DEBUG
-            [[MoEngage sharedInstance] initializeDevWithAppID:@"Your APP ID" withLaunchOptions:launchOption];
+            [[MoEngage sharedInstance] initializeTestWithConfig:sdkConfig andLaunchOptions:launchOptions];
         #else
-            [[MoEngage sharedInstance] initializeProdWithAppID:@"Your APP ID" withLaunchOptions:launchOption];
+            [[MoEngage sharedInstance] initializeLiveWithConfig:sdkConfig andLaunchOptions:launchOptions];
         #endif
         
         //Rest of the implementation of method
@@ -51,12 +52,14 @@ Login to your MoEngage account, go to **Settings** in the left panel of the dash
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:     [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
-        // Separate initialization methods for Dev and Prod initializations
-
+        //Create a config object
+        let sdkConfig = MOSDKConfig.init(appID: "Your APP ID")
+        
+        // Separate initialization methods for Test and Live Environments
         #if DEBUG
-            MoEngage.sharedInstance().initializeDev(withAppID:appID, withLaunchOptions: launchOptions)
+            MoEngage.sharedInstance().initializeTest(with: sdkConfig, andLaunchOptions: launchOptions)
         #else
-            MoEngage.sharedInstance().initializeProd(withAppID:appID, withLaunchOptions: launchOptions)
+            MoEngage.sharedInstance().initializeLive(with: sdkConfig, andLaunchOptions: launchOptions)
         #endif
         
         //Rest of the implementation of method
@@ -66,11 +69,10 @@ Login to your MoEngage account, go to **Settings** in the left panel of the dash
 Thats it!! SDK is successfully integrated and initialized in the project, and ready to use. 
 
 ## Developer Docs
-Please refer to our developer docs to know how to make use of our SDK to track Events and User Attributes, to implement Push Notification and InApps: https://docs.moengage.com/docs/sdk-integration.
+Please refer to our developer docs to know how to make use of our SDK to track Events and User Attributes, to implement Push Notification and InApps: [link](https://docs.moengage.com/docs/sdk-integration).
 
 ## Change Log
 See [SDK Change Log](https://github.com/moengage/MoEngage-iOS-SDK/blob/master/CHANGELOG.md) for information on every released version.
 
 ## Support
-Please visit this repository's [Github issue tracker](https://github.com/moengage/MoEngage-iOS-SDK/issues) for bug reports specific to our iOS SDK.
-For other issues and support please contact MoEngage support from your dashboard.
+For any issues you face with the SDK and for any help with the integration contact us at `support@moengage.com`.

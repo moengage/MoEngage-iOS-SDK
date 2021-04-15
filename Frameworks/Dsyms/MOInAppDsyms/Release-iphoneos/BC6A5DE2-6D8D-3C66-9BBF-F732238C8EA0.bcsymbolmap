@@ -2,14 +2,14 @@ BCSymbolMap Version: 2.0
 Apple clang version 12.0.0 (clang-1200.0.32.29)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk
 iPhoneOS14.4.sdk
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/build/MoEngage.build/Release-iphoneos/MOMessaging.build/DerivedSources/MOMessaging_vers.c
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/build/MoEngage.build/Release-iphoneos/MOMessaging.build/DerivedSources/MOMessaging_vers.c
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage
 +[MOInbox initializeInboxOnController:]
 +[MOInbox getInboxMessagesWithCompletionBlock:]
 +[MOInbox fetchInboxMessagesWithCompletion:]
 ___44+[MOInbox fetchInboxMessagesWithCompletion:]_block_invoke
-___copy_helper_block_e8_32b
-___destroy_helper_block_e8_32s
+___copy_helper_block_e4_20b
+___destroy_helper_block_e4_20s
 +[MOInbox markInboxNotificationClickedWithCampaignID:]
 +[MOInbox processInboxNotificationWithCampaignID:]
 +[MOInbox trackInboxNotificationClickWithCampaignID:]
@@ -44,7 +44,7 @@ _OBJC_SELECTOR_REFERENCES_.34
 _OBJC_SELECTOR_REFERENCES_.36
 _OBJC_CLASSLIST_REFERENCES_$_.37
 _OBJC_SELECTOR_REFERENCES_.39
-___block_descriptor_40_e8_32bs_e8_v12?0B8l
+___block_descriptor_24_e4_20bs_e7_v8?0c4l
 _OBJC_SELECTOR_REFERENCES_.44
 _OBJC_SELECTOR_REFERENCES_.48
 _OBJC_SELECTOR_REFERENCES_.52
@@ -64,12 +64,12 @@ _OBJC_SELECTOR_REFERENCES_.86
 __OBJC_$_CLASS_METHODS_MOInbox
 __OBJC_METACLASS_RO_$_MOInbox
 __OBJC_CLASS_RO_$_MOInbox
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInbox.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInbox.m
 MOMessaging/MOInbox/MOInbox.m
-__destroy_helper_block_e8_32s
-__copy_helper_block_e8_32b
+__destroy_helper_block_e4_20s
+__copy_helper_block_e4_20b
 __44+[MOInbox fetchInboxMessagesWithCompletion:]_block_invoke
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/Constants/MOMessagingConstants.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/Constants/MOMessagingConstants.m
 +[MODeviceTriggerUtils trackNotificationScheduledFailedForCampaign:withPayload:]
 +[MODeviceTriggerUtils trackNotificationScheduledForCampaign:withPayload:]
 +[MODeviceTriggerUtils trackNotificationReceivedForCampaign:withPayload:]
@@ -101,7 +101,7 @@ _OBJC_SELECTOR_REFERENCES_.63
 __OBJC_$_CLASS_METHODS_MODeviceTriggerUtils
 __OBJC_METACLASS_RO_$_MODeviceTriggerUtils
 __OBJC_CLASS_RO_$_MODeviceTriggerUtils
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/MODeviceTriggerUtils.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/MODeviceTriggerUtils.m
 MOMessaging/MORealTimeTriggers/MODeviceTriggerUtils.m
 -[MOInboxViewController viewDidLoad]
 -[MOInboxViewController viewWillAppear:]
@@ -113,8 +113,8 @@ MOMessaging/MORealTimeTriggers/MODeviceTriggerUtils.m
 -[MOInboxViewController tableView:cellForRowAtIndexPath:]
 -[MOInboxViewController tableView:didSelectRowAtIndexPath:]
 ___59-[MOInboxViewController tableView:didSelectRowAtIndexPath:]_block_invoke
-___copy_helper_block_e8_32s40s48s
-___destroy_helper_block_e8_32s40s48s
+___copy_helper_block_e4_20s24s28s
+___destroy_helper_block_e4_20s24s28s
 -[MOInboxViewController tableView:commitEditingStyle:forRowAtIndexPath:]
 -[MOInboxViewController setPropertiesForCell:forClickedNotification:]
 -[MOInboxViewController customiseInboxWithCellTextColor:fontForReadMsg:fontForUnreadMsg:dateTextColor:font:cellBackgroundColor:]
@@ -165,7 +165,7 @@ _OBJC_SELECTOR_REFERENCES_.74
 _OBJC_CLASSLIST_REFERENCES_$_.83
 _OBJC_SELECTOR_REFERENCES_.85
 _OBJC_SELECTOR_REFERENCES_.87
-___block_descriptor_56_e8_32s40s48s_e5_v8?0l
+___block_descriptor_32_e4_20s24s28s_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.90
 _OBJC_SELECTOR_REFERENCES_.92
 _OBJC_CLASSLIST_REFERENCES_$_.93
@@ -239,12 +239,14 @@ __OBJC_$_INSTANCE_METHODS_MOInboxViewController
 __OBJC_$_INSTANCE_VARIABLES_MOInboxViewController
 __OBJC_$_PROP_LIST_MOInboxViewController
 __OBJC_CLASS_RO_$_MOInboxViewController
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxUI/MOInboxViewController.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxUI/MOInboxViewController.m
 MOMessaging/MOInbox/MOInboxUI/MOInboxViewController.m
 MOMessaging/MOInbox/MOInboxUI/MOInboxViewController.h
-__destroy_helper_block_e8_32s40s48s
-__copy_helper_block_e8_32s40s48s
+__destroy_helper_block_e4_20s24s28s
+__copy_helper_block_e4_20s24s28s
 __59-[MOInboxViewController tableView:didSelectRowAtIndexPath:]_block_invoke
+CGRectMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 -[MODeviceTriggerCampaign encodeWithCoder:]
 -[MODeviceTriggerCampaign initWithCoder:]
 -[MODeviceTriggerCampaign initWithDictionary:]
@@ -347,7 +349,7 @@ __OBJC_$_INSTANCE_METHODS_MODeviceTriggerCampaign
 __OBJC_$_INSTANCE_VARIABLES_MODeviceTriggerCampaign
 __OBJC_$_PROP_LIST_MODeviceTriggerCampaign
 __OBJC_CLASS_RO_$_MODeviceTriggerCampaign
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerCampaign.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerCampaign.m
 MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerCampaign.m
 MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerCampaign.h
 -[MOInboxModel initWithNotificationPayload:]
@@ -474,7 +476,7 @@ _OBJC_IVAR_$_MOInboxData._lastUpdatedFromServerSync
 __OBJC_$_INSTANCE_VARIABLES_MOInboxData
 __OBJC_$_PROP_LIST_MOInboxData
 __OBJC_CLASS_RO_$_MOInboxData
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxStorage/MOInboxModel.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxStorage/MOInboxModel.m
 MOMessaging/MOInbox/MOInboxStorage/MOInboxModel.m
 MOMessaging/MOInbox/MOInboxStorage/MOInboxModel.h
 +[MODeviceTriggersHandler sharedInstance]
@@ -482,8 +484,8 @@ ___41+[MODeviceTriggersHandler sharedInstance]_block_invoke
 -[MODeviceTriggersHandler getDeviceTriggerSyncRequestPayload]
 -[MODeviceTriggersHandler syncDeviceTriggersWithCompletionBlock:]
 ___65-[MODeviceTriggersHandler syncDeviceTriggersWithCompletionBlock:]_block_invoke
-___copy_helper_block_e8_32s40b
-___destroy_helper_block_e8_32s40s
+___copy_helper_block_e4_20s24b
+___destroy_helper_block_e4_20s24s
 -[MODeviceTriggersHandler isRealTimeTriggerEnabled]
 -[MODeviceTriggersHandler shouldFetch]
 -[MODeviceTriggersHandler checkDeviceTriggerForEvent:withEventAttributes:]
@@ -493,7 +495,7 @@ ___74-[MODeviceTriggersHandler checkDeviceTriggerForEvent:withEventAttributes:]_
 -[MODeviceTriggersHandler getUserInSegmentPayloadWithCampaignID:andEventDict:]
 -[MODeviceTriggersHandler checkUserInSegmentForDTCampaign:withEventDict:]
 ___73-[MODeviceTriggersHandler checkUserInSegmentForDTCampaign:withEventDict:]_block_invoke
-___copy_helper_block_e8_32s40s
+___copy_helper_block_e4_20s24s
 -[MODeviceTriggersHandler startBGTaskForEvent:withEventDict:]
 ___61-[MODeviceTriggersHandler startBGTaskForEvent:withEventDict:]_block_invoke
 ___61-[MODeviceTriggersHandler startBGTaskForEvent:withEventDict:]_block_invoke_2
@@ -504,12 +506,12 @@ ___61-[MODeviceTriggersHandler startBGTaskForEvent:withEventDict:]_block_invoke.
 ___Block_byref_object_copy_
 ___Block_byref_object_dispose_
 ___56-[MODeviceTriggersHandler processDeviceTriggerWithInfo:]_block_invoke
-___copy_helper_block_e8_32s40r48r
-___destroy_helper_block_e8_32s40r48r
+___copy_helper_block_e4_20s24r28r
+___destroy_helper_block_e4_20s24r28r
 -[MODeviceTriggersHandler postDeviceTriggerWithRequest:andInfo:]
 ___64-[MODeviceTriggersHandler postDeviceTriggerWithRequest:andInfo:]_block_invoke
-___copy_helper_block_e8_32s40r
-___destroy_helper_block_e8_32s40r
+___copy_helper_block_e4_20s24r
+___destroy_helper_block_e4_20s24r
 -[MODeviceTriggersHandler getRequestForPayload:withAttachments:andTimeTrigger:]
 -[MODeviceTriggersHandler getPayloadToShow:forOffline:]
 -[MODeviceTriggersHandler getExistingCampaignList]
@@ -523,7 +525,7 @@ ___destroy_helper_block_e8_32s40r
 -[MODeviceTriggersHandler setLastUpdatedTime:]
 _sharedInstance.onceToken
 _sharedInstance.instance
-___block_descriptor_32_e5_v8?0l
+___block_descriptor_20_e5_v4?0l
 ___block_literal_global
 _OBJC_CLASSLIST_REFERENCES_$_.8
 _OBJC_SELECTOR_REFERENCES_.10
@@ -534,12 +536,12 @@ _OBJC_CLASSLIST_REFERENCES_$_.27
 _OBJC_CLASSLIST_REFERENCES_$_.43
 _OBJC_SELECTOR_REFERENCES_.49
 _OBJC_CLASSLIST_REFERENCES_$_.62
-___block_descriptor_56_e8_32s40bs_e25_v20?0B8"NSDictionary"12l
+___block_descriptor_32_e4_20s24bs_e24_v12?0c4"NSDictionary"8l
 _OBJC_CLASSLIST_REFERENCES_$_.100
 _OBJC_CLASSLIST_REFERENCES_$_.103
 _OBJC_CLASSLIST_REFERENCES_$_.126
 _OBJC_SELECTOR_REFERENCES_.128
-___block_descriptor_56_e8_32s40s48s_e8_v12?0B8l
+___block_descriptor_32_e4_20s24s28s_e7_v8?0c4l
 _OBJC_SELECTOR_REFERENCES_.157
 _OBJC_SELECTOR_REFERENCES_.161
 _OBJC_SELECTOR_REFERENCES_.167
@@ -564,8 +566,8 @@ _OBJC_SELECTOR_REFERENCES_.253
 _OBJC_SELECTOR_REFERENCES_.259
 _OBJC_SELECTOR_REFERENCES_.263
 _OBJC_SELECTOR_REFERENCES_.265
-___block_descriptor_56_e8_32s40s_e25_v20?0B8"NSDictionary"12l
-___block_descriptor_48_e8_32s40s_e5_v8?0l
+___block_descriptor_32_e4_20s24s_e24_v12?0c4"NSDictionary"8l
+___block_descriptor_28_e4_20s24s_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.288
 _OBJC_SELECTOR_REFERENCES_.291
 _OBJC_SELECTOR_REFERENCES_.293
@@ -584,7 +586,7 @@ _OBJC_SELECTOR_REFERENCES_.317
 _OBJC_SELECTOR_REFERENCES_.319
 _OBJC_SELECTOR_REFERENCES_.321
 _OBJC_SELECTOR_REFERENCES_.323
-___block_descriptor_56_e8_32s40r48r_e31_v16?0"UNNotificationContent"8l
+___block_descriptor_32_e4_20s24r28r_e30_v8?0"UNNotificationContent"4l
 _OBJC_SELECTOR_REFERENCES_.326
 _OBJC_CLASSLIST_REFERENCES_$_.327
 _OBJC_SELECTOR_REFERENCES_.329
@@ -596,7 +598,7 @@ _OBJC_SELECTOR_REFERENCES_.343
 _OBJC_SELECTOR_REFERENCES_.345
 _OBJC_SELECTOR_REFERENCES_.347
 _OBJC_SELECTOR_REFERENCES_.349
-___block_descriptor_56_e8_32s40r_e17_v16?0"NSError"8l
+___block_descriptor_32_e4_20s24r_e16_v8?0"NSError"4l
 _OBJC_SELECTOR_REFERENCES_.354
 _OBJC_CLASSLIST_REFERENCES_$_.355
 _OBJC_SELECTOR_REFERENCES_.357
@@ -646,24 +648,24 @@ _OBJC_IVAR_$_MODeviceTriggersHandler._lastUpdatedTime
 __OBJC_$_INSTANCE_VARIABLES_MODeviceTriggersHandler
 __OBJC_$_PROP_LIST_MODeviceTriggersHandler
 __OBJC_CLASS_RO_$_MODeviceTriggersHandler
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTHandler/MODeviceTriggersHandler.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTHandler/MODeviceTriggersHandler.m
 MOMessaging/MORealTimeTriggers/DTHandler/MODeviceTriggersHandler.m
-__destroy_helper_block_e8_32s40r
-__copy_helper_block_e8_32s40r
+__destroy_helper_block_e4_20s24r
+__copy_helper_block_e4_20s24r
 __64-[MODeviceTriggersHandler postDeviceTriggerWithRequest:andInfo:]_block_invoke
-__destroy_helper_block_e8_32s40r48r
-__copy_helper_block_e8_32s40r48r
+__destroy_helper_block_e4_20s24r28r
+__copy_helper_block_e4_20s24r28r
 __56-[MODeviceTriggersHandler processDeviceTriggerWithInfo:]_block_invoke
 __Block_byref_object_dispose_
 __Block_byref_object_copy_
 __61-[MODeviceTriggersHandler startBGTaskForEvent:withEventDict:]_block_invoke.289
 __61-[MODeviceTriggersHandler startBGTaskForEvent:withEventDict:]_block_invoke_2
 __61-[MODeviceTriggersHandler startBGTaskForEvent:withEventDict:]_block_invoke
-__copy_helper_block_e8_32s40s
+__copy_helper_block_e4_20s24s
 __73-[MODeviceTriggersHandler checkUserInSegmentForDTCampaign:withEventDict:]_block_invoke
 __74-[MODeviceTriggersHandler checkDeviceTriggerForEvent:withEventAttributes:]_block_invoke
-__destroy_helper_block_e8_32s40s
-__copy_helper_block_e8_32s40b
+__destroy_helper_block_e4_20s24s
+__copy_helper_block_e4_20s24b
 __65-[MODeviceTriggersHandler syncDeviceTriggersWithCompletionBlock:]_block_invoke
 __41+[MODeviceTriggersHandler sharedInstance]_block_invoke
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/usr/include/dispatch/once.h
@@ -692,8 +694,8 @@ ___42+[MOAppDelegateMessagingProxy sharedProxy]_block_invoke
 -[MOAppDelegateMessagingProxy application:didFailToRegisterForRemoteNotificationsWithError:]
 -[MOAppDelegateMessagingProxy application:didRegisterForRemoteNotificationsWithDeviceToken:]
 ___moe_swizzle_willPresentNotificationWithHandler_block_invoke
-___copy_helper_block_e8_32s40s48s56b
-___destroy_helper_block_e8_32s40s48s56s
+___copy_helper_block_e4_20s24s28s32b
+___destroy_helper_block_e4_20s24s28s32s
 ___moe_swizzle_didReceiveNotificationResponseWithHandler_block_invoke
 -[MOAppDelegateMessagingProxy originalAppDelegateImps]
 -[MOAppDelegateMessagingProxy setOriginalAppDelegateImps:]
@@ -727,7 +729,7 @@ _OBJC_SELECTOR_REFERENCES_.120
 _OBJC_CLASSLIST_REFERENCES_$_.123
 _OBJC_CLASSLIST_REFERENCES_$_.153
 _OBJC_SELECTOR_REFERENCES_.159
-___block_descriptor_80_e8_32s40s48s56bs_e5_v8?0l
+___block_descriptor_44_e4_20s24s28s32bs_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.165
 __OBJC_$_CLASS_METHODS_MOAppDelegateMessagingProxy
 __OBJC_$_PROTOCOL_REFS_UIApplicationDelegate
@@ -750,11 +752,11 @@ _OBJC_IVAR_$_MOAppDelegateMessagingProxy._appDelegateInterceptorID
 __OBJC_$_INSTANCE_VARIABLES_MOAppDelegateMessagingProxy
 __OBJC_$_PROP_LIST_MOAppDelegateMessagingProxy
 __OBJC_CLASS_RO_$_MOAppDelegateMessagingProxy
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/AppDelegateSwizzler/MOAppDelegateMessagingProxy.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/AppDelegateSwizzler/MOAppDelegateMessagingProxy.m
 MOMessaging/AppDelegateSwizzler/MOAppDelegateMessagingProxy.m
 __moe_swizzle_didReceiveNotificationResponseWithHandler_block_invoke
-__destroy_helper_block_e8_32s40s48s56s
-__copy_helper_block_e8_32s40s48s56b
+__destroy_helper_block_e4_20s24s28s32s
+__copy_helper_block_e4_20s24s28s32b
 __moe_swizzle_willPresentNotificationWithHandler_block_invoke
 moe_swizzle_didReceiveNotificationResponseWithHandler
 moe_swizzle_willPresentNotificationWithHandler
@@ -781,7 +783,7 @@ __OBJC_$_INSTANCE_METHODS_MOInboxTableViewCell
 __OBJC_$_INSTANCE_VARIABLES_MOInboxTableViewCell
 __OBJC_$_PROP_LIST_MOInboxTableViewCell
 __OBJC_CLASS_RO_$_MOInboxTableViewCell
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxUI/MOInboxTableViewCell.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxUI/MOInboxTableViewCell.m
 MOMessaging/MOInbox/MOInboxUI/MOInboxTableViewCell.m
 MOMessaging/MOInbox/MOInboxUI/MOInboxTableViewCell.h
 -[MODeviceTriggerStatus initWithDictionary:]
@@ -806,7 +808,7 @@ __OBJC_$_INSTANCE_METHODS_MODeviceTriggerStatus
 __OBJC_$_INSTANCE_VARIABLES_MODeviceTriggerStatus
 __OBJC_$_PROP_LIST_MODeviceTriggerStatus
 __OBJC_CLASS_RO_$_MODeviceTriggerStatus
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerStatus.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerStatus.m
 MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerStatus.m
 MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerStatus.h
 +[MOMessagingUtils statsEventAttributesFromPayload:]
@@ -816,7 +818,7 @@ _moMessagingAppDelegateProxyConfigured
 __OBJC_$_CLASS_METHODS_MOMessagingUtils
 __OBJC_METACLASS_RO_$_MOMessagingUtils
 __OBJC_CLASS_RO_$_MOMessagingUtils
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/Utils/MOMessagingUtils.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/Utils/MOMessagingUtils.m
 MOMessaging/Utils/MOMessagingUtils.m
 +[MOMessaging sharedInstance]
 ___29+[MOMessaging sharedInstance]_block_invoke
@@ -868,7 +870,7 @@ ___block_literal_global.105
 _OBJC_SELECTOR_REFERENCES_.124
 _OBJC_CLASSLIST_REFERENCES_$_.129
 _OBJC_CLASSLIST_REFERENCES_$_.136
-___block_descriptor_32_e20_v20?0B8"NSError"12l
+___block_descriptor_20_e19_v12?0c4"NSError"8l
 ___block_literal_global.144
 _OBJC_SELECTOR_REFERENCES_.150
 _OBJC_CLASSLIST_REFERENCES_$_.155
@@ -906,7 +908,7 @@ _OBJC_IVAR_$_MOMessaging._messagingDelegate
 __OBJC_$_INSTANCE_VARIABLES_MOMessaging
 __OBJC_$_PROP_LIST_MOMessaging
 __OBJC_CLASS_RO_$_MOMessaging
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOMessaging.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MOMessaging.m
 MOMessaging/MOMessaging.m
 MOMessaging/MOMessaging.h
 __94-[MOMessaging registerForRemoteNotificationWithCategories:withUserNotificationCenterDelegate:]_block_invoke_3
@@ -953,7 +955,7 @@ __OBJC_$_INSTANCE_METHODS_MODeviceTriggerPayload
 __OBJC_$_INSTANCE_VARIABLES_MODeviceTriggerPayload
 __OBJC_$_PROP_LIST_MODeviceTriggerPayload
 __OBJC_CLASS_RO_$_MODeviceTriggerPayload
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerPayload.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerPayload.m
 MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerPayload.m
 MOMessaging/MORealTimeTriggers/DTModelClasses/MODeviceTriggerPayload.h
 -[MODeviceTriggers init]
@@ -1046,11 +1048,11 @@ _OBJC_IVAR_$_MODeviceTriggersDataManager._activeDeviceTriggers
 __OBJC_$_INSTANCE_VARIABLES_MODeviceTriggersDataManager
 __OBJC_$_PROP_LIST_MODeviceTriggersDataManager
 __OBJC_CLASS_RO_$_MODeviceTriggersDataManager
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTDataManager/MODeviceTriggersDataManager.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTDataManager/MODeviceTriggersDataManager.m
 MOMessaging/MORealTimeTriggers/DTDataManager/MODeviceTriggersDataManager.m
 MOMessaging/MORealTimeTriggers/DTDataManager/MODeviceTriggersDataManager.h
 __45+[MODeviceTriggersDataManager sharedInstance]_block_invoke
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxUtils/MOInboxExposedConstants.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxUtils/MOInboxExposedConstants.m
 -[MODTPostInfo initWithCampaign:withPayloadToPost:andIsOffline:]
 -[MODTPostInfo rtCampaign]
 -[MODTPostInfo setRtCampaign:]
@@ -1067,7 +1069,7 @@ _OBJC_IVAR_$_MODTPostInfo._finalPayload
 __OBJC_$_INSTANCE_VARIABLES_MODTPostInfo
 __OBJC_$_PROP_LIST_MODTPostInfo
 __OBJC_CLASS_RO_$_MODTPostInfo
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTModelClasses/MODTPostInfo.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MORealTimeTriggers/DTModelClasses/MODTPostInfo.m
 MOMessaging/MORealTimeTriggers/DTModelClasses/MODTPostInfo.m
 MOMessaging/MORealTimeTriggers/DTModelClasses/MODTPostInfo.h
 +[MONotificationHandler sharedInstance]
@@ -1087,7 +1089,7 @@ ___39+[MONotificationHandler sharedInstance]_block_invoke
 -[MONotificationHandler isPushFromMoEngageWithPayload:]
 -[MONotificationHandler checkForPushPermission]
 ___47-[MONotificationHandler checkForPushPermission]_block_invoke
-___copy_helper_block_e8_32s
+___copy_helper_block_e4_20s
 -[MONotificationHandler handlePushNotificationInApplication:userInfo:]
 -[MONotificationHandler handlePushNotificationForeground:]
 -[MONotificationHandler handleDefaultActionsWithPayload:]
@@ -1100,7 +1102,7 @@ ___copy_helper_block_e8_32s
 -[MONotificationHandler showCouponAlertView:andUserInfo:]
 ___57-[MONotificationHandler showCouponAlertView:andUserInfo:]_block_invoke
 ___57-[MONotificationHandler showCouponAlertView:andUserInfo:]_block_invoke_2
-___57-[MONotificationHandler showCouponAlertView:andUserInfo:]_block_invoke.287
+___57-[MONotificationHandler showCouponAlertView:andUserInfo:]_block_invoke.284
 -[MONotificationHandler updateAppSourceWithNonMoEPushPayload:]
 -[MONotificationHandler updateAppSourceForDefaultActionWithMoEPushPayload:]
 -[MONotificationHandler updateAppSourceForCardActionWithActionsArray:]
@@ -1125,7 +1127,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.120
 _OBJC_CLASSLIST_REFERENCES_$_.125
 _OBJC_SELECTOR_REFERENCES_.132
 _OBJC_SELECTOR_REFERENCES_.134
-___block_descriptor_40_e8_32s_e32_v16?0"UNNotificationSettings"8l
+___block_descriptor_24_e4_20s_e31_v8?0"UNNotificationSettings"4l
 _OBJC_CLASSLIST_REFERENCES_$_.140
 _OBJC_SELECTOR_REFERENCES_.144
 _OBJC_SELECTOR_REFERENCES_.148
@@ -1139,37 +1141,49 @@ _OBJC_SELECTOR_REFERENCES_.217
 _OBJC_SELECTOR_REFERENCES_.219
 _OBJC_SELECTOR_REFERENCES_.221
 _OBJC_SELECTOR_REFERENCES_.223
-_OBJC_CLASSLIST_REFERENCES_$_.228
-_OBJC_SELECTOR_REFERENCES_.230
-_OBJC_SELECTOR_REFERENCES_.232
-_OBJC_SELECTOR_REFERENCES_.246
-_OBJC_SELECTOR_REFERENCES_.248
-_OBJC_SELECTOR_REFERENCES_.250
-_OBJC_SELECTOR_REFERENCES_.262
-_OBJC_CLASSLIST_REFERENCES_$_.265
-_OBJC_SELECTOR_REFERENCES_.267
-_OBJC_SELECTOR_REFERENCES_.273
+_OBJC_SELECTOR_REFERENCES_.229
+_OBJC_SELECTOR_REFERENCES_.231
+_OBJC_SELECTOR_REFERENCES_.235
+_OBJC_SELECTOR_REFERENCES_.239
+_OBJC_SELECTOR_REFERENCES_.241
+_OBJC_SELECTOR_REFERENCES_.243
+_OBJC_SELECTOR_REFERENCES_.245
+_OBJC_SELECTOR_REFERENCES_.247
+_OBJC_CLASSLIST_REFERENCES_$_.262
+_OBJC_SELECTOR_REFERENCES_.264
+_OBJC_SELECTOR_REFERENCES_.270
+_OBJC_CLASSLIST_REFERENCES_$_.271
 _OBJC_CLASSLIST_REFERENCES_$_.274
-_OBJC_CLASSLIST_REFERENCES_$_.277
-_OBJC_SELECTOR_REFERENCES_.279
+_OBJC_SELECTOR_REFERENCES_.276
+___block_descriptor_32_e4_20s24s28s_e22_v8?0"UIAlertAction"4l
 _OBJC_SELECTOR_REFERENCES_.281
-___block_descriptor_56_e8_32s40s48s_e23_v16?0"UIAlertAction"8l
-___block_descriptor_48_e8_32s40s_e23_v16?0"UIAlertAction"8l
-_OBJC_SELECTOR_REFERENCES_.289
-___block_descriptor_64_e8_32s40s48s_e5_v8?0l
-_OBJC_CLASSLIST_REFERENCES_$_.299
-_OBJC_SELECTOR_REFERENCES_.301
-_OBJC_SELECTOR_REFERENCES_.303
-_OBJC_SELECTOR_REFERENCES_.307
-_OBJC_SELECTOR_REFERENCES_.315
-_OBJC_SELECTOR_REFERENCES_.335
-_OBJC_CLASSLIST_REFERENCES_$_.338
-_OBJC_SELECTOR_REFERENCES_.340
-_OBJC_CLASSLIST_REFERENCES_$_.349
-_OBJC_SELECTOR_REFERENCES_.351
-___block_descriptor_32_e25_v20?0B8"NSDictionary"12l
-___block_literal_global.353
-___block_descriptor_40_e8_32bs_e32_v16?0"UNNotificationSettings"8l
+___block_descriptor_28_e4_20s24s_e22_v8?0"UIAlertAction"4l
+_OBJC_SELECTOR_REFERENCES_.290
+___block_descriptor_36_e4_20s24s28s_e5_v4?0l
+_OBJC_CLASSLIST_REFERENCES_$_.293
+_OBJC_SELECTOR_REFERENCES_.295
+_OBJC_SELECTOR_REFERENCES_.304
+_OBJC_SELECTOR_REFERENCES_.306
+_OBJC_SELECTOR_REFERENCES_.308
+_OBJC_SELECTOR_REFERENCES_.310
+_OBJC_SELECTOR_REFERENCES_.312
+_OBJC_SELECTOR_REFERENCES_.314
+_OBJC_SELECTOR_REFERENCES_.316
+_OBJC_SELECTOR_REFERENCES_.318
+_OBJC_SELECTOR_REFERENCES_.320
+_OBJC_SELECTOR_REFERENCES_.324
+_OBJC_SELECTOR_REFERENCES_.330
+_OBJC_SELECTOR_REFERENCES_.336
+_OBJC_CLASSLIST_REFERENCES_$_.339
+_OBJC_CLASSLIST_REFERENCES_$_.350
+_OBJC_SELECTOR_REFERENCES_.352
+___block_descriptor_20_e24_v12?0c4"NSDictionary"8l
+___block_literal_global.354
+_OBJC_SELECTOR_REFERENCES_.360
+_OBJC_SELECTOR_REFERENCES_.362
+_OBJC_SELECTOR_REFERENCES_.364
+_OBJC_SELECTOR_REFERENCES_.366
+___block_descriptor_24_e4_20bs_e31_v8?0"UNNotificationSettings"4l
 __OBJC_$_CLASS_METHODS_MONotificationHandler
 __OBJC_METACLASS_RO_$_MONotificationHandler
 __OBJC_$_INSTANCE_METHODS_MONotificationHandler
@@ -1177,15 +1191,15 @@ _OBJC_IVAR_$_MONotificationHandler._disableDeepLinksProcessing
 __OBJC_$_INSTANCE_VARIABLES_MONotificationHandler
 __OBJC_$_PROP_LIST_MONotificationHandler
 __OBJC_CLASS_RO_$_MONotificationHandler
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/NotificationHandler/MONotificationHandler.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/NotificationHandler/MONotificationHandler.m
 MOMessaging/NotificationHandler/MONotificationHandler.h
 __75-[MONotificationHandler checkPushNotificationsSettingsWithCompletionBlock:]_block_invoke
 MOMessaging/NotificationHandler/MONotificationHandler.m
 __49-[MONotificationHandler sendCategoriesWithArray:]_block_invoke
-__57-[MONotificationHandler showCouponAlertView:andUserInfo:]_block_invoke.287
+__57-[MONotificationHandler showCouponAlertView:andUserInfo:]_block_invoke.284
 __57-[MONotificationHandler showCouponAlertView:andUserInfo:]_block_invoke_2
 __57-[MONotificationHandler showCouponAlertView:andUserInfo:]_block_invoke
-__copy_helper_block_e8_32s
+__copy_helper_block_e4_20s
 __47-[MONotificationHandler checkForPushPermission]_block_invoke
 __39+[MONotificationHandler sharedInstance]_block_invoke
 +[MOInboxHandler sharedInstance]
@@ -1199,7 +1213,7 @@ ___62-[MOInboxHandler syncInboxNotificationsWithCompletionHandler:]_block_invoke
 -[MOInboxHandler syncNotificationsFromExtension:]
 -[MOInboxHandler syncNotificationsFromServer:]
 ___46-[MOInboxHandler syncNotificationsFromServer:]_block_invoke
-___copy_helper_block_e8_32b40s
+___copy_helper_block_e4_20b24s
 -[MOInboxHandler syncNotificationFromOlderPlist:]
 -[MOInboxHandler syncInboxFromServerRequestWithCompletionBlock:]
 ___64-[MOInboxHandler syncInboxFromServerRequestWithCompletionBlock:]_block_invoke
@@ -1232,32 +1246,34 @@ ___64-[MOInboxHandler syncInboxFromServerRequestWithCompletionBlock:]_block_invo
 -[MOInboxHandler syncInProgress]
 -[MOInboxHandler setSyncInProgress:]
 -[MOInboxHandler .cxx_destruct]
-___block_descriptor_48_e8_32s40bs_e8_v12?0B8l
+___block_descriptor_28_e4_20s24bs_e7_v8?0c4l
 _OBJC_CLASSLIST_REFERENCES_$_.77
 _OBJC_CLASSLIST_REFERENCES_$_.82
-___block_descriptor_48_e8_32bs40s_e20_v20?0B8"NSArray"12l
+___block_descriptor_28_e4_20bs24s_e19_v12?0c4"NSArray"8l
 _OBJC_CLASSLIST_REFERENCES_$_.133
 _OBJC_CLASSLIST_REFERENCES_$_.151
-___block_descriptor_48_e8_32bs_e25_v20?0B8"NSDictionary"12l
+___block_descriptor_28_e4_20bs_e24_v12?0c4"NSDictionary"8l
 _OBJC_CLASSLIST_REFERENCES_$_.178
 _OBJC_CLASSLIST_REFERENCES_$_.207
 _OBJC_CLASSLIST_REFERENCES_$_.226
 _OBJC_SELECTOR_REFERENCES_.228
+_OBJC_SELECTOR_REFERENCES_.230
 _OBJC_CLASSLIST_REFERENCES_$_.239
-_OBJC_SELECTOR_REFERENCES_.241
 _OBJC_CLASSLIST_REFERENCES_$_.242
 _OBJC_CLASSLIST_REFERENCES_$_.247
 _OBJC_SELECTOR_REFERENCES_.255
 _OBJC_SELECTOR_REFERENCES_.261
+_OBJC_SELECTOR_REFERENCES_.267
 _OBJC_SELECTOR_REFERENCES_.269
 _OBJC_SELECTOR_REFERENCES_.271
+_OBJC_SELECTOR_REFERENCES_.273
 _OBJC_CLASSLIST_REFERENCES_$_.278
 _OBJC_CLASSLIST_REFERENCES_$_.285
 _OBJC_SELECTOR_REFERENCES_.287
-_OBJC_SELECTOR_REFERENCES_.295
+_OBJC_SELECTOR_REFERENCES_.289
+_OBJC_SELECTOR_REFERENCES_.301
+_OBJC_SELECTOR_REFERENCES_.303
 _OBJC_CLASSLIST_REFERENCES_$_.306
-_OBJC_SELECTOR_REFERENCES_.308
-_OBJC_SELECTOR_REFERENCES_.312
 __OBJC_$_CLASS_METHODS_MOInboxHandler
 __OBJC_METACLASS_RO_$_MOInboxHandler
 __OBJC_$_INSTANCE_METHODS_MOInboxHandler
@@ -1266,11 +1282,11 @@ _OBJC_IVAR_$_MOInboxHandler._inboxData
 __OBJC_$_INSTANCE_VARIABLES_MOInboxHandler
 __OBJC_$_PROP_LIST_MOInboxHandler
 __OBJC_CLASS_RO_$_MOInboxHandler
-/Users/Chengappa/Documents/MoEngage/MoEObjC/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxHandler.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOMessaging/MOInbox/MOInboxHandler.m
 MOMessaging/MOInbox/MOInboxHandler.m
 MOMessaging/MOInbox/MOInboxHandler.h
 __64-[MOInboxHandler syncInboxFromServerRequestWithCompletionBlock:]_block_invoke
-__copy_helper_block_e8_32b40s
+__copy_helper_block_e4_20b24s
 __46-[MOInboxHandler syncNotificationsFromServer:]_block_invoke
 __62-[MOInboxHandler syncInboxNotificationsWithCompletionHandler:]_block_invoke_3
 __62-[MOInboxHandler syncInboxNotificationsWithCompletionHandler:]_block_invoke_2

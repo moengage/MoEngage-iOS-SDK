@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 2.0.4  *(15th April, 2021)*
+-------------------------------------------
+* Fixed deeplink action issue, URL string is percentage encoded before URL instance is created and processed.
+
 ### Version 2.0.3  *(31st March, 2021)*
 -------------------------------------------
 * Additional UIConfigurations added to change `New Updates` button title.

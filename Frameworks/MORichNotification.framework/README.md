@@ -1,4 +1,4 @@
-![Logo](https://user-images.githubusercontent.com/15011722/32040752-7237c3c2-ba4f-11e7-9d68-a019049fccf5.png)
+![Logo](https://github.com/moengage/MoEngage-iOS-SDK/blob/master/Images/moe_logo_blue.png)
 # MORichNotification
 
 [![Version](https://img.shields.io/cocoapods/v/MORichNotification.svg?style=flat)](http://cocoapods.org/pods/MORichNotification)
@@ -91,14 +91,17 @@ class NotificationService: UNNotificationServiceExtension {
 ```
 
 **NOTE** : 
-1. You can use MORichNotifications only if you are using [MoEngage-iOS-SDK](https://github.com/moengage/MoEngage-iOS-SDK) in your app, as it will process only the notifications sent via MoEngage.
+1. You can use MORichNotifications only if you are using MoEngage-iOS-SDK in your app, as it will process only the notifications sent via MoEngage.
 2. Http URL's aren't supported in iOS10 unless explicitly specified in the plist. You will have include App Transport Security Settings Dictionary in your Notification Service Extension's Info.plist and inside this set Allow Arbitrary Loads to YES.
 3. Refer to the following [link](https://developer.apple.com/documentation/usernotifications/unnotificationattachment#overview) to know about the size and format limitation for attachments(media) supported in Rich Notifications.
 
 
 ## Developer Docs
-Please refer to our developer docs to know more about MORichNotification: https://docs.moengage.com/docs/push-notification-implementation#notification-service-extension-target-implementation.
+Please refer to our developer docs to know more about MORichNotification: [link](https://docs.moengage.com/docs/push-notification-implementation#notification-service-extension-target-implementation).
 
 ## Change Log
 See [SDK Change Log](https://github.com/moengage/MORichNotification/blob/master/CHANGELOG.md) for information on every released version.
+
+## Support
+For any issues you face with the SDK and for any help with the integration contact us at `support@moengage.com`.
 

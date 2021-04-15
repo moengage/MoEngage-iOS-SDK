@@ -34,6 +34,9 @@ NS_ASSUME_NONNULL_BEGIN
 +(void)showAlertViewWithMessage:(NSString *)message andTitle:(NSString*)title;
 +(void)openDeeplink:(NSURL*)link;
 +(void)openRichLandingLink:(NSURL*)link;
++(void)openDeeplinkWithURLString:(NSString*)urlStr;
++(void)openRichLandingLinkWithURLString:(NSString*)urlStr;
++(NSURL*)getURLFromString:(NSString*)urlStr;
 
 #pragma mark- Encryption Methods
 +(NSString *)MD5hashForString:(NSString*)str;
