@@ -1,5 +1,9 @@
 # Change Log:
 
+### Version 5.0.1  *(16th July, 2021)*
+-------------------------------------------
+* Handled an exception while setting attachments to Notification Content instance.
+
 ### Version 5.0.0  *(18th January, 2021)*
 -------------------------------------------
 * Changes to support  MoEngage-iOS-SDK 7.0.0
