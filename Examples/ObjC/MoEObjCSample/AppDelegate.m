@@ -19,8 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    MOMessaging.sharedInstance.messagingDelegate = self;
-    //TODO: Add your App Group ID
+    // Set User Notification Center Delegate
+    [UNUserNotificationCenter currentNotificationCenter].delegate = self;
+    
     // Enable SDK Logs
     [MoEngage enableSDKLogs:true];
     
@@ -29,6 +30,7 @@
     
     MOSDKConfig* sdkConfig = [[MOSDKConfig alloc] initWithAppID:yourMoEngageAppID];
     sdkConfig.moeDataCenter = DATA_CENTER_01;
+    //TODO: Add your App Group ID
     sdkConfig.appGroupID = @"appGroupID"; //appGroupID configured in capabilities
     // MoEngage SDK Initialization
     
@@ -46,13 +48,7 @@
     return YES;
 }
 
-
-- (void)configureMoEngageInApplication:(UIApplication *)application withLaunchOptions:(NSDictionary *)launchOptions {
-
-
-}
-
-#pragma mark - Push Notification
+#pragma mark - Push Notification Registration Callbacks
 
 //Remote notification Registration callback methods
 - (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken {
@@ -63,11 +59,9 @@
     [[MoEngage sharedInstance]didFailToRegisterForPush];
 }
 
-- (void) application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    [[MoEngage sharedInstance]didReceieveNotificationinApplication:application withInfo:userInfo];
-}
 
-#pragma mark- User Notification Center delegate methods
+#pragma mark - Push Notification Clicked Callbacks
+#pragma mark User Notification Center delegate methods
 
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center
        willPresentNotification:(UNNotification *)notification
@@ -83,9 +77,69 @@ didReceiveNotificationResponse:(UNNotificationResponse *)response
     NSDictionary *pushDictionary = response.notification.request.content.userInfo;
     if (pushDictionary) {
         NSLog(@"Push Payload : %@",pushDictionary);
+        /// Process Push Notifications here
     }
     completionHandler();
     
+}
+
+#pragma mark Below iOS 10.0
+// Use only if you are supporting below iOS 10.0, for iOS 10.0 and above SDK uses UserNotificationCenter delgate callbacks
+- (void) application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [[MoEngage sharedInstance]didReceieveNotificationinApplication:application withInfo:userInfo];
+}
+
+#pragma mark - MOMessaging Delegate Methods
+
+-(void)notificationClickedWithScreenName:(NSString *)screenName andKVPairs:(NSDictionary *)kvPairs{
+    if (screenName) {
+        NSLog(@"Screen Name : %@",screenName);
+    }
+    if (kvPairs) {
+        NSLog(@"KV Pairs : %@",kvPairs);
+    }
+}
+
+-(void)notificationClickedWithScreenName:(NSString *)screenName KVPairs:(NSDictionary *)kvPairs andPushPayload:(NSDictionary *)userInfo{
+    NSLog(@"Push Payload: %@",userInfo);
+    if (screenName) {
+        NSLog(@"Screen Name : %@",screenName);
+    }
+    if (kvPairs) {
+        NSLog(@"KV Pairs : %@",kvPairs);
+    }
+}
+
+#pragma mark- Deeplink/Universal link URL Callbacks
+
+-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+    NSLog(@"URL to be processed: %@", [url absoluteString]);
+    // Call MoEngage method for tracking Session Source in Analytics
+    [[MoEngage sharedInstance] processURL:url];
+    
+    /// Below write yours Deeplink Navigation logic
+    // --
+    // Navigation Logic here
+    // --
+    return true;
+}
+
+// Use below callback for Universal Links
+-(BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler{
+    if (userActivity.activityType == NSUserActivityTypeBrowsingWeb) {
+        
+        NSURL* url = userActivity.webpageURL;
+        NSLog(@"URL to be processed: %@", [url absoluteString]);
+        // Call MoEngage method for tracking Session Source in Analytics
+        [[MoEngage sharedInstance] processURL:url];
+        
+        /// Below write yours Deeplink Navigation logic
+        // --
+        // Navigation Logic here
+        // --
+        
+    }
+    return true;
 }
 
 #pragma mark - App Status Tracking Example
@@ -112,25 +166,6 @@ didReceiveNotificationResponse:(UNNotificationResponse *)response
     if(![[self getAppVersion] isEqualToString:[[NSUserDefaults standardUserDefaults]objectForKey:@"app_version"]]){
         [[MoEngage sharedInstance]appStatus: UPDATE];
         [self saveAppVersionToDefaults];
-    }
-}
-
--(void)notificationClickedWithScreenName:(NSString *)screenName andKVPairs:(NSDictionary *)kvPairs{
-    if (screenName) {
-        NSLog(@"Screen Name : %@",screenName);
-    }
-    if (kvPairs) {
-        NSLog(@"KV Pairs : %@",kvPairs);
-    }
-}
-
--(void)notificationClickedWithScreenName:(NSString *)screenName KVPairs:(NSDictionary *)kvPairs andPushPayload:(NSDictionary *)userInfo{
-    NSLog(@"Push Payload: %@",userInfo);
-    if (screenName) {
-        NSLog(@"Screen Name : %@",screenName);
-    }
-    if (kvPairs) {
-        NSLog(@"KV Pairs : %@",kvPairs);
     }
 }
 
