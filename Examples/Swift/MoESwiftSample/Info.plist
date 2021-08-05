@@ -28,6 +28,8 @@
 	<string>Location Services are required for testing Geofence.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Location Services are required for testing Geofence.</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>MoESample would like to access IDFA for tracking purpose</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>
@@ -51,7 +53,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>NSUserTrackingUsageDescription</key>
-    <string>MoESample would like to access IDFA for tracking purpose</string>
 </dict>
 </plist>

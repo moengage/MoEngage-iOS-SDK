@@ -3,9 +3,9 @@
 
 ## Change Log:
 
-### Version 2.0.4  *(15th April, 2021)*
+### Version 2.0.5  *(5th August, 2021)*
 -------------------------------------------
-* Fixed deeplink action issue, URL string is percentage encoded before URL instance is created and processed.
+* Image resource, deeplinks and richlanding URLs are percentage encoded if not already and then processed.
 
 ### Version 2.0.3  *(31st March, 2021)*
 -------------------------------------------

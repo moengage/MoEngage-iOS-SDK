@@ -1,5 +1,9 @@
 # Change Log:
 
+### Version 5.0.2  *(5th August, 2021)*
+-------------------------------------------
+* Image/media resources links are percentage encoded if not already and then processed.
+
 ### Version 5.0.1  *(16th July, 2021)*
 -------------------------------------------
 * Handled an exception while setting attachments to Notification Content instance.
