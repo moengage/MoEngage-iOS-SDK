@@ -14,7 +14,7 @@ target 'NotificationService' do
 end
 
 target 'PushTemplates' do
-  platform :ios, '12.0'
+  platform :ios, '10.0'
   pod 'MORichNotification', :path => '../../'
 end
 

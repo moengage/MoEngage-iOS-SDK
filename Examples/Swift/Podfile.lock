@@ -1,13 +1,13 @@
 PODS:
-  - MoEngage-iOS-SDK (7.0.5):
-    - MORichNotification (< 5.1.0, >= 5.0.0)
-  - MoEngageCards (2.0.5):
-    - MoEngage-iOS-SDK (< 7.1.0, >= 7.0.5)
-  - MoEngageInApp (2.0.4):
-    - MoEngage-iOS-SDK (< 7.1.0, >= 7.0.5)
-  - MOGeofence (3.0.1):
-    - MoEngage-iOS-SDK (< 7.1.0, >= 7.0.0)
-  - MORichNotification (5.0.2)
+  - MoEngage-iOS-SDK (7.1.0):
+    - MORichNotification (< 5.2.0, >= 5.1.0)
+  - MoEngageCards (2.1.0):
+    - MoEngage-iOS-SDK (< 7.2.0, >= 7.1.0)
+  - MoEngageInApp (2.1.0):
+    - MoEngage-iOS-SDK (< 7.2.0, >= 7.1.0)
+  - MOGeofence (3.1.0):
+    - MoEngage-iOS-SDK (< 7.2.0, >= 7.1.0)
+  - MORichNotification (5.1.0)
 
 DEPENDENCIES:
   - MoEngage-iOS-SDK (from `../../`)
@@ -29,12 +29,12 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  MoEngage-iOS-SDK: 604a6bba6b495eb03dcd25fd7bf858d0611bc272
-  MoEngageCards: 373a5b03f68aa4288540eeb88d3613d1674bc969
-  MoEngageInApp: 50f56233c5e97eba9c46125d38bd0d2160977329
-  MOGeofence: 5e139f99a3b319e9ca17ab39dd1dcae5dfd53df8
-  MORichNotification: d4cef22d783e9bba2bc33225176d19a96ac5f1e8
+  MoEngage-iOS-SDK: f96c05b33bdf39b83b8fcd61d93ed9e90ef70c04
+  MoEngageCards: af535c289c21e29f24894b2db7798ebc1561be97
+  MoEngageInApp: 0713efdeb1123bac134db942f5588745c8c78c0c
+  MOGeofence: 63ac8906b7cdba22bc60747cbc85a2db89e161af
+  MORichNotification: bc588aa1b09b37d9b3a6031c9a05a510f014464d
 
-PODFILE CHECKSUM: 7aefd2e4c4cd018e603a889689485ac606e2e4cb
+PODFILE CHECKSUM: 1804d8d67696547c76ddfa8edaaef55f8d95169f
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.2

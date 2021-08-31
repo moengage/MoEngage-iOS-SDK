@@ -1,0 +1,255 @@
+BCSymbolMap Version: 2.0
+Apple clang version 12.0.5 (clang-1205.0.22.11)
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk
+iPhoneOS14.5.sdk
+/Users/rakshitha/Library/Developer/Xcode/DerivedData/MoEngage-cmmkomvfnirhvydwlmcpvafliotx/Build/Intermediates.noindex/ArchiveIntermediates/MOGeofence/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MOGeofence.build/DerivedSources/MOGeofence_vers.c
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage
++[MOGeofenceHandler sharedInstance]
+___35+[MOGeofenceHandler sharedInstance]_block_invoke
+-[MOGeofenceHandler initGeofenceModule]
+-[MOGeofenceHandler startGeofenceMonitoring]
+-[MOGeofenceHandler startGeofenceWithManager:andLocation:]
+-[MOGeofenceHandler fetchGeofencesForLocation:]
+___47-[MOGeofenceHandler fetchGeofencesForLocation:]_block_invoke
+___copy_helper_block_e4_20s24s
+___destroy_helper_block_e4_20s24s
+-[MOGeofenceHandler getRequestBodyForFetchWithLocation:]
+-[MOGeofenceHandler addGeofences:]
+-[MOGeofenceHandler registerForGeofence:]
+-[MOGeofenceHandler cleanPreviousGeofences]
+-[MOGeofenceHandler geofenceTriggeredWithRegionID:andTransitionType:]
+-[MOGeofenceHandler performBgGeoTaskWithGeoID:campaignID:andTransitionType:]
+___76-[MOGeofenceHandler performBgGeoTaskWithGeoID:campaignID:andTransitionType:]_block_invoke
+___76-[MOGeofenceHandler performBgGeoTaskWithGeoID:campaignID:andTransitionType:]_block_invoke_2
+___copy_helper_block_e4_20s24s28s
+___destroy_helper_block_e4_20s24s28s
+-[MOGeofenceHandler geofenceHitWithGeoID:campaignID:andTransitionType:]
+___71-[MOGeofenceHandler geofenceHitWithGeoID:campaignID:andTransitionType:]_block_invoke
+-[MOGeofenceHandler getRequestBodyForGeoHitWithLocation:transitionType:andGeoID:]
+-[MOGeofenceHandler trackGeofenceHitEventWithGeoID:andCampaignID:forLocation:withTransitionType:]
+-[MOGeofenceHandler isLocationPermissionProvided]
+-[MOGeofenceHandler isLocationPermissionDetermined]
+-[MOGeofenceHandler shouldFetchGeofence]
+-[MOGeofenceHandler getLocationDictFromLocationCoordinate:]
+-[MOGeofenceHandler getGeofenceTransitionStrForType:]
+-[MOGeofenceHandler locationManager:didUpdateLocations:]
+-[MOGeofenceHandler locationManager:didFailWithError:]
+-[MOGeofenceHandler locationManager:didEnterRegion:]
+-[MOGeofenceHandler locationManager:didExitRegion:]
+-[MOGeofenceHandler locationManager:didChangeAuthorizationStatus:]
+-[MOGeofenceHandler shouldMakeGeofenceRequest]
+-[MOGeofenceHandler moengageSDKStateUpdated]
+-[MOGeofenceHandler delegate]
+-[MOGeofenceHandler setDelegate:]
+-[MOGeofenceHandler locationManager]
+-[MOGeofenceHandler setLocationManager:]
+-[MOGeofenceHandler fetchInProgress]
+-[MOGeofenceHandler setFetchInProgress:]
+-[MOGeofenceHandler lastUpdatedTime]
+-[MOGeofenceHandler setLastUpdatedTime:]
+-[MOGeofenceHandler .cxx_destruct]
+_sharedInstance.onceToken
+_sharedInstance.instance
+___block_descriptor_20_e5_v4?0l
+___block_literal_global
+_OBJC_CLASSLIST_REFERENCES_$_
+_OBJC_SELECTOR_REFERENCES_
+_OBJC_SELECTOR_REFERENCES_.2
+_OBJC_CLASSLIST_REFERENCES_$_.3
+_OBJC_SELECTOR_REFERENCES_.5
+_OBJC_SELECTOR_REFERENCES_.7
+_OBJC_SELECTOR_REFERENCES_.9
+_OBJC_SELECTOR_REFERENCES_.11
+_OBJC_SELECTOR_REFERENCES_.13
+_OBJC_SELECTOR_REFERENCES_.15
+_OBJC_SELECTOR_REFERENCES_.17
+_OBJC_SELECTOR_REFERENCES_.19
+_OBJC_SELECTOR_REFERENCES_.21
+_OBJC_SELECTOR_REFERENCES_.23
+_OBJC_CLASSLIST_REFERENCES_$_.24
+_OBJC_SELECTOR_REFERENCES_.26
+_OBJC_CLASSLIST_REFERENCES_$_.27
+_OBJC_SELECTOR_REFERENCES_.30
+_OBJC_CLASSLIST_REFERENCES_$_.31
+_OBJC_SELECTOR_REFERENCES_.33
+_OBJC_SELECTOR_REFERENCES_.35
+_OBJC_SELECTOR_REFERENCES_.38
+_OBJC_SELECTOR_REFERENCES_.40
+_OBJC_CLASSLIST_REFERENCES_$_.41
+_OBJC_SELECTOR_REFERENCES_.43
+_OBJC_SELECTOR_REFERENCES_.47
+_OBJC_SELECTOR_REFERENCES_.49
+_OBJC_SELECTOR_REFERENCES_.51
+_OBJC_SELECTOR_REFERENCES_.53
+_OBJC_CLASSLIST_REFERENCES_$_.56
+_OBJC_SELECTOR_REFERENCES_.58
+_OBJC_SELECTOR_REFERENCES_.60
+_OBJC_CLASSLIST_REFERENCES_$_.63
+_OBJC_SELECTOR_REFERENCES_.65
+_OBJC_SELECTOR_REFERENCES_.67
+_OBJC_SELECTOR_REFERENCES_.71
+_OBJC_SELECTOR_REFERENCES_.75
+_OBJC_CLASSLIST_REFERENCES_$_.78
+_OBJC_SELECTOR_REFERENCES_.80
+_OBJC_SELECTOR_REFERENCES_.82
+___block_descriptor_32_e4_20s24s_e24_v12?0c4"NSDictionary"8l
+_OBJC_SELECTOR_REFERENCES_.87
+_OBJC_SELECTOR_REFERENCES_.89
+_OBJC_SELECTOR_REFERENCES_.91
+_OBJC_CLASSLIST_REFERENCES_$_.92
+_OBJC_SELECTOR_REFERENCES_.94
+_OBJC_SELECTOR_REFERENCES_.98
+_OBJC_SELECTOR_REFERENCES_.100
+_OBJC_SELECTOR_REFERENCES_.106
+_OBJC_CLASSLIST_REFERENCES_$_.107
+_OBJC_SELECTOR_REFERENCES_.109
+_OBJC_SELECTOR_REFERENCES_.111
+_OBJC_SELECTOR_REFERENCES_.115
+_OBJC_CLASSLIST_REFERENCES_$_.116
+_OBJC_SELECTOR_REFERENCES_.118
+_OBJC_SELECTOR_REFERENCES_.122
+_OBJC_SELECTOR_REFERENCES_.124
+_OBJC_CLASSLIST_REFERENCES_$_.125
+_OBJC_SELECTOR_REFERENCES_.127
+_OBJC_SELECTOR_REFERENCES_.129
+_OBJC_SELECTOR_REFERENCES_.133
+_OBJC_SELECTOR_REFERENCES_.135
+_OBJC_SELECTOR_REFERENCES_.137
+_OBJC_SELECTOR_REFERENCES_.141
+_OBJC_SELECTOR_REFERENCES_.147
+_OBJC_SELECTOR_REFERENCES_.149
+_OBJC_SELECTOR_REFERENCES_.151
+_OBJC_SELECTOR_REFERENCES_.153
+_OBJC_SELECTOR_REFERENCES_.155
+_OBJC_SELECTOR_REFERENCES_.157
+_OBJC_SELECTOR_REFERENCES_.159
+_OBJC_SELECTOR_REFERENCES_.161
+_OBJC_SELECTOR_REFERENCES_.163
+_OBJC_SELECTOR_REFERENCES_.165
+_OBJC_SELECTOR_REFERENCES_.169
+_OBJC_SELECTOR_REFERENCES_.173
+_OBJC_SELECTOR_REFERENCES_.175
+_OBJC_SELECTOR_REFERENCES_.179
+_OBJC_SELECTOR_REFERENCES_.183
+_OBJC_SELECTOR_REFERENCES_.185
+_OBJC_SELECTOR_REFERENCES_.187
+_OBJC_CLASSLIST_REFERENCES_$_.188
+_OBJC_SELECTOR_REFERENCES_.190
+_OBJC_SELECTOR_REFERENCES_.192
+_OBJC_SELECTOR_REFERENCES_.194
+_OBJC_SELECTOR_REFERENCES_.196
+___block_literal_global.199
+_OBJC_SELECTOR_REFERENCES_.201
+_OBJC_SELECTOR_REFERENCES_.203
+___block_descriptor_36_e4_20s24s28s_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.205
+_OBJC_SELECTOR_REFERENCES_.207
+_OBJC_SELECTOR_REFERENCES_.211
+___block_descriptor_20_e24_v12?0c4"NSDictionary"8l
+___block_literal_global.212
+_OBJC_SELECTOR_REFERENCES_.218
+_OBJC_SELECTOR_REFERENCES_.220
+_OBJC_CLASSLIST_REFERENCES_$_.231
+_OBJC_SELECTOR_REFERENCES_.233
+_OBJC_CLASSLIST_REFERENCES_$_.234
+_OBJC_SELECTOR_REFERENCES_.236
+_OBJC_SELECTOR_REFERENCES_.240
+_OBJC_SELECTOR_REFERENCES_.242
+_OBJC_CLASSLIST_REFERENCES_$_.243
+_OBJC_SELECTOR_REFERENCES_.247
+_OBJC_SELECTOR_REFERENCES_.249
+_OBJC_SELECTOR_REFERENCES_.253
+_OBJC_SELECTOR_REFERENCES_.257
+_OBJC_SELECTOR_REFERENCES_.265
+_OBJC_SELECTOR_REFERENCES_.267
+_OBJC_SELECTOR_REFERENCES_.269
+_OBJC_SELECTOR_REFERENCES_.273
+_OBJC_SELECTOR_REFERENCES_.275
+_OBJC_SELECTOR_REFERENCES_.277
+_OBJC_SELECTOR_REFERENCES_.279
+_OBJC_SELECTOR_REFERENCES_.281
+_OBJC_CLASSLIST_REFERENCES_$_.282
+_OBJC_SELECTOR_REFERENCES_.284
+_OBJC_CLASSLIST_REFERENCES_$_.287
+_OBJC_SELECTOR_REFERENCES_.289
+_OBJC_SELECTOR_REFERENCES_.293
+_OBJC_SELECTOR_REFERENCES_.295
+__OBJC_$_CLASS_METHODS_MOGeofenceHandler
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+__OBJC_$_PROP_LIST_NSObject
+__OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+__OBJC_PROTOCOL_$_NSObject
+__OBJC_LABEL_PROTOCOL_$_NSObject
+__OBJC_$_PROTOCOL_REFS_CLLocationManagerDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_CLLocationManagerDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_CLLocationManagerDelegate
+__OBJC_PROTOCOL_$_CLLocationManagerDelegate
+__OBJC_LABEL_PROTOCOL_$_CLLocationManagerDelegate
+__OBJC_CLASS_PROTOCOLS_$_MOGeofenceHandler
+__OBJC_METACLASS_RO_$_MOGeofenceHandler
+__OBJC_$_INSTANCE_METHODS_MOGeofenceHandler
+_OBJC_IVAR_$_MOGeofenceHandler._fetchInProgress
+_OBJC_IVAR_$_MOGeofenceHandler._delegate
+_OBJC_IVAR_$_MOGeofenceHandler._locationManager
+_OBJC_IVAR_$_MOGeofenceHandler._lastUpdatedTime
+__OBJC_$_INSTANCE_VARIABLES_MOGeofenceHandler
+__OBJC_$_PROP_LIST_MOGeofenceHandler
+__OBJC_CLASS_RO_$_MOGeofenceHandler
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOGeofence/MOGeofenceHandler.m
+MOGeofence/MOGeofenceHandler.m
+MOGeofence/MOGeofenceHandler.h
+__71-[MOGeofenceHandler geofenceHitWithGeoID:campaignID:andTransitionType:]_block_invoke
+__destroy_helper_block_e4_20s24s28s
+__copy_helper_block_e4_20s24s28s
+__76-[MOGeofenceHandler performBgGeoTaskWithGeoID:campaignID:andTransitionType:]_block_invoke_2
+__76-[MOGeofenceHandler performBgGeoTaskWithGeoID:campaignID:andTransitionType:]_block_invoke
+__destroy_helper_block_e4_20s24s
+__copy_helper_block_e4_20s24s
+__47-[MOGeofenceHandler fetchGeofencesForLocation:]_block_invoke
+__35+[MOGeofenceHandler sharedInstance]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/usr/include/dispatch/once.h
+-[MOGeofenceModel initWithDictionary:]
+-[MOGeofenceModel distance]
+-[MOGeofenceModel setDistance:]
+-[MOGeofenceModel campaignID]
+-[MOGeofenceModel setCampaignID:]
+-[MOGeofenceModel geoID]
+-[MOGeofenceModel setGeoID:]
+-[MOGeofenceModel latitude]
+-[MOGeofenceModel setLatitude:]
+-[MOGeofenceModel longitude]
+-[MOGeofenceModel setLongitude:]
+-[MOGeofenceModel transitionType]
+-[MOGeofenceModel setTransitionType:]
+_OBJC_SELECTOR_REFERENCES_.4
+_OBJC_SELECTOR_REFERENCES_.6
+_OBJC_SELECTOR_REFERENCES_.10
+_OBJC_SELECTOR_REFERENCES_.14
+_OBJC_SELECTOR_REFERENCES_.16
+_OBJC_SELECTOR_REFERENCES_.20
+_OBJC_SELECTOR_REFERENCES_.24
+_OBJC_SELECTOR_REFERENCES_.32
+_OBJC_SELECTOR_REFERENCES_.36
+_OBJC_CLASSLIST_REFERENCES_$_.37
+_OBJC_SELECTOR_REFERENCES_.42
+_OBJC_CLASSLIST_REFERENCES_$_.43
+_OBJC_SELECTOR_REFERENCES_.45
+_OBJC_CLASSLIST_REFERENCES_$_.50
+_OBJC_SELECTOR_REFERENCES_.52
+_OBJC_SELECTOR_REFERENCES_.54
+_OBJC_SELECTOR_REFERENCES_.56
+__OBJC_METACLASS_RO_$_MOGeofenceModel
+__OBJC_$_INSTANCE_METHODS_MOGeofenceModel
+_OBJC_IVAR_$_MOGeofenceModel._distance
+_OBJC_IVAR_$_MOGeofenceModel._campaignID
+_OBJC_IVAR_$_MOGeofenceModel._geoID
+_OBJC_IVAR_$_MOGeofenceModel._transitionType
+_OBJC_IVAR_$_MOGeofenceModel._latitude
+_OBJC_IVAR_$_MOGeofenceModel._longitude
+__OBJC_$_INSTANCE_VARIABLES_MOGeofenceModel
+__OBJC_$_PROP_LIST_MOGeofenceModel
+__OBJC_CLASS_RO_$_MOGeofenceModel
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOGeofence/MOGeofenceModel.m
+MOGeofence/MOGeofenceModel.h
+MOGeofence/MOGeofenceModel.m

@@ -1,0 +1,6 @@
+framework module MOMessaging {
+  umbrella header "MOMessaging.h"
+
+  export *
+  module * { export * }
+}

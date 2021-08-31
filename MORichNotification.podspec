@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MORichNotification'
-  s.version          = '5.0.2'
+  s.version          = '5.1.0'
   s.summary          = 'MoEngage Rich Notifications for iOS.'
 
   s.description  = <<-DESC
@@ -20,12 +20,7 @@ Pod::Spec.new do |s|
   	:tag => 'richPush-' + s.version.to_s 
   }
 
-  s.ios.vendored_frameworks = 'Frameworks/MORichNotification.framework'
-  s.preserve_paths = 'Frameworks/MORichNotification.framework'
-  s.module_map = 'Frameworks/MORichNotification.framework/Modules/module.modulemap'
-
+  s.ios.vendored_frameworks = 'Frameworks/MORichNotification.xcframework'
   s.requires_arc = true
   s.frameworks = 'Foundation', 'UIKit', 'UserNotifications', 'UserNotificationsUI'
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end

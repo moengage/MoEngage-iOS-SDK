@@ -1,0 +1,152 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MOCards
+import Foundation
+import ImageIO
+import MOAnalytics
+@_exported import MOCards
+import MoEngageCore
+import Swift
+import UIKit
+@objc public protocol MOCardsDelegate {
+  @objc optional func cardsSyncedSuccessfully()
+  @objc optional func cardsViewControllerDismissed()
+  @objc optional func cardDeleted(withCardInfo card: MOCards.MOCard)
+  @objc optional func cardClicked(withCardInfo card: MOCards.MOCard, andAction action: MOCards.MOCardNavigationAction) -> Swift.Bool
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MoEngageCards : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: MOCards.MoEngageCards
+  public var cardsDelegate: MOCards.MOCardsDelegate?
+  @objc public func intializeCards()
+  @objc public func presentCardsViewController(withUIConfiguration config: MOCards.MOCardsUIConfiguration? = nil)
+  @objc public func pushCardsViewController(toNavigationController navController: UIKit.UINavigationController, withUIConfiguration config: MOCards.MOCardsUIConfiguration? = nil)
+  @objc public func getCardsViewController(withUIConfiguration config: MOCards.MOCardsUIConfiguration? = nil) -> MOCards.MOCardsListViewController?
+  @objc public func syncCards(withCompletion completionBlock: ((Swift.Bool) -> ())? = nil)
+  public func getAllCardStatusDict() -> [Foundation.NSDictionary]
+  @objc public func getNewCardsCount() -> Swift.Int
+  @objc public func getUnclickedCardsCount() -> Swift.Int
+  @objc public func getClickedCardsCount() -> Swift.Int
+  @objc deinit
+}
+public typealias GifLevelOfIntegrity = Swift.Float
+extension Float {
+  public static let highestNoFrameSkipping: MOCards.GifLevelOfIntegrity
+  public static let `default`: MOCards.GifLevelOfIntegrity
+  public static let lowForManyGifs: MOCards.GifLevelOfIntegrity
+  public static let lowForTooManyGifs: MOCards.GifLevelOfIntegrity
+  public static let superLowForSlideShow: MOCards.GifLevelOfIntegrity
+}
+@objc @_inheritsConvenienceInitializers public class MOCardsListViewController : UIKit.UIViewController, UIKit.UIGestureRecognizerDelegate {
+  public func reloadInbox()
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @objc override dynamic public func viewDidLayoutSubviews()
+  @objc override dynamic public func willTransition(to newCollection: UIKit.UITraitCollection, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
+  @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension MOCardsListViewController : UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
+  @objc dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, estimatedHeightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didHighlightRowAt indexPath: Foundation.IndexPath)
+  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didUnhighlightRowAt indexPath: Foundation.IndexPath)
+  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+@_inheritsConvenienceInitializers @objc public class MOCardsNavigationBarStyle : ObjectiveC.NSObject {
+  public var navigationBarColor: UIKit.UIColor?
+  public var navigationBarTintColor: UIKit.UIColor?
+  public var navigationBarTitleColor: UIKit.UIColor?
+  public var navigationBarTitleFont: UIKit.UIFont?
+  public var navigationBarTransluscent: Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MOCardsUIConfiguration : ObjectiveC.NSObject {
+  public var navigationBarTitle: Swift.String
+  public var navigationBarStyle: MOCards.MOCardsNavigationBarStyle?
+  public var categoryTabsContainerBGColor: UIKit.UIColor
+  public var categoryTabsBGColor: UIKit.UIColor
+  public var categoryTabsTextColor: UIKit.UIColor
+  public var categorySelectedTabBGColor: UIKit.UIColor
+  public var categorySelectedTabTextColor: UIKit.UIColor
+  public var categorySelectionIndicatorBarColor: UIKit.UIColor
+  public var categoryTabFont: UIKit.UIFont
+  public var categorySelectedTabFont: UIKit.UIFont
+  public var enablePullToRefresh: Swift.Bool
+  public var pullToRefreshTintColor: UIKit.UIColor
+  public var cardsViewControllerBGColor: UIKit.UIColor
+  public var cardsTableViewBGColor: UIKit.UIColor
+  public var newUpdatesButtonTitle: Swift.String
+  public var newUpdatesButtonFont: UIKit.UIFont
+  public var newUpdatesButtonBGColor: UIKit.UIColor
+  public var newUpdatesButtonTextColor: UIKit.UIColor
+  public var defaultCardBackgroundColor: UIKit.UIColor
+  public var cardSelectionTintColor: UIKit.UIColor
+  public var cardHeaderLabelDefaultTextColor: UIKit.UIColor
+  public var cardMessageLabelDefaultTextColor: UIKit.UIColor
+  public var cardTimestampLabelDefaultTextColor: UIKit.UIColor
+  public var cardButtonDefaultTextColor: UIKit.UIColor
+  public var cardButtonDefaultBGColor: UIKit.UIColor
+  public var cardImageBackgroundColor: UIKit.UIColor
+  public var cardSeparatorBackgroundColor: UIKit.UIColor
+  public var cardUnclickedIndicatorColor: UIKit.UIColor
+  public var cardHeaderLabelFont: UIKit.UIFont
+  public var cardMessageLabelFont: UIKit.UIFont
+  public var cardTimestampLabelFont: UIKit.UIFont
+  public var cardButtonFont: UIKit.UIFont
+  public var timestampDateFormat: Swift.String
+  public var emptyInboxText: Swift.String
+  public var emptyInboxTextColor: UIKit.UIColor
+  public var emptyInboxTextFont: UIKit.UIFont
+  public var cardUnclickedIndicatorImage: UIKit.UIImage?
+  public var cardPlaceholderImage: UIKit.UIImage?
+  public var cardPinnedImage: UIKit.UIImage?
+  public var emptyInboxImage: UIKit.UIImage?
+  public var actionSheetDeletionText: Swift.String
+  public var actionSheetCancelText: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol SwiftyGifDelegate {
+  @objc optional func gifDidStart(sender: UIKit.UIImageView)
+  @objc optional func gifDidLoop(sender: UIKit.UIImageView)
+  @objc optional func gifDidStop(sender: UIKit.UIImageView)
+  @objc optional func gifURLDidFinish(sender: UIKit.UIImageView)
+  @objc optional func gifURLDidFail(sender: UIKit.UIImageView, url: Foundation.URL, error: Swift.Error?)
+}
+extension UIImageView {
+  public func startAnimatingGif()
+  public func stopAnimatingGif()
+  public func isAnimatingGif() -> Swift.Bool
+  public func showFrameForIndexDelta(_ delta: Swift.Int)
+  public func showFrameAtIndex(_ index: Swift.Int)
+  public func updateCache()
+  public func updateCurrentImage()
+  public func currentFrameIndex() -> Swift.Int
+  public func frameAtIndex(index: Swift.Int) -> UIKit.UIImage
+  public func isDiscarded(_ imageView: UIKit.UIView?) -> Swift.Bool
+  public func isDisplayedInScreen(_ imageView: UIKit.UIView?) -> Swift.Bool
+  public func clear()
+}
+@objc @_inheritsConvenienceInitializers public class MOCard : ObjectiveC.NSObject {
+  public var cardID: Swift.String
+  public var category: Swift.String
+  public var createdDate: Foundation.Date?
+  public var updatedDate: Foundation.Date?
+  public var metaData: [Swift.String : Any]
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class MOCardNavigationAction : ObjectiveC.NSObject {
+  public var type: Swift.String?
+  public var value: Swift.String
+  public var kvPairs: [Swift.String : Any]
+  @objc override dynamic public init()
+  @objc deinit
+}

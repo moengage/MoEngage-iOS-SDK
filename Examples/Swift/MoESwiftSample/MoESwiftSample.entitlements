@@ -6,7 +6,7 @@
 	<string>development</string>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.moengage.SampleApp.moengage</string>
+		<string>group.com.moengage.SampleApp.moengage</string>
 	</array>
 </dict>
 </plist>
