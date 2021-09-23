@@ -3,7 +3,7 @@
 
 ## Change Log:
 
-### Version 2.1.0  *(31st August, 2021)*
+### Version 2.1.0  *(27th August, 2021)*
 -------------------------------------------
 * Releasing module as XCFramework.
 

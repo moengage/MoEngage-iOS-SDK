@@ -1,6 +1,10 @@
 # Change Log:
 
-### Version 5.1.0  *(31st August, 2021)*
+### Version 5.2.0  *(23rd September, 2021)*
+-------------------------------------------
+* iOS 15.0 Guidelines followed for Custom Push Templates.
+
+### Version 5.1.0  *(27th August, 2021)*
 -------------------------------------------
 * Releasing module as XCFramework.
 

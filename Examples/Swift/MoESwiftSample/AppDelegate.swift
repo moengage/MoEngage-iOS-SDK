@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         let yourMoEAppID = "Your App ID"
         
         //TODO: Add your App Group ID
-        let appGroupID = "app group id"
+        let appGroupID = "Your App Group ID"
         
         var sdkConfig = MOSDKConfig.init(appID: yourMoEAppID)
         sdkConfig.appGroupID = appGroupID

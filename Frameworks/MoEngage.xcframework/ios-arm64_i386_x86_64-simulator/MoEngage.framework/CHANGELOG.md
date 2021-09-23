@@ -1,9 +1,13 @@
 # MoEngage-iOS-SDK
 =================================
 
-## Change Log:
+## Changelog:
 
-### Version 7.1.0  *(31st August, 2021)*
+### Version 7.1.1  *(23rd September, 2021)*
+-------------------------------------------
+* Updated MORichNotification Dependency to `~>5.2.0`
+
+### Version 7.1.0  *(27th August, 2021)*
 -------------------------------------------
 * Releasing module as XCFramework.
 * HTML InApp Support Added.

@@ -85,8 +85,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func trackUserAttributes () {
         
         //Tracking default user attributes
-        MoEngage.sharedInstance().setUserUniqueID("test@moengage.com")
-        MoEngage.sharedInstance().setUserEmailID("test@moengage.com")
+        let uniqueID = "test\(Int(Date().timeIntervalSince1970))@moengage.com"
+        MoEngage.sharedInstance().setUserUniqueID(uniqueID)
+        MoEngage.sharedInstance().setUserEmailID(uniqueID)
         MoEngage.sharedInstance().setUserGender(MALE)
         MoEngage.sharedInstance().setUserFirstName("Test")
         MoEngage.sharedInstance().setUserLastName("MoEngage")

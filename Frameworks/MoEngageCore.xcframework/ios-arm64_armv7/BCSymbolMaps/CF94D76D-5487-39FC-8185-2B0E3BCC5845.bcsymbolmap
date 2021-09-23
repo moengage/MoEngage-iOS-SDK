@@ -1,0 +1,1397 @@
+BCSymbolMap Version: 2.0
+Apple clang version 13.0.0 (clang-1300.0.29.3)
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk
+iPhoneOS15.0.sdk
+/Users/Chengappa/Library/Developer/Xcode/DerivedData/MoEngage-drttrtgpnnpnzugsokmbfvkbgdni/Build/Intermediates.noindex/ArchiveIntermediates/MoEngageCore/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MoEngageCore.build/DerivedSources/MoEngageCore_vers.c
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage
+-[MOConfigLegacy init]
+-[MOConfigLegacy initWithCoder:]
+-[MOConfigLegacy encodeWithCoder:]
+-[MOConfigLegacy accountStatus]
+-[MOConfigLegacy setAccountStatus:]
+-[MOConfigLegacy inAppServiceStatus]
+-[MOConfigLegacy setInAppServiceStatus:]
+-[MOConfigLegacy inboxServiceStatus]
+-[MOConfigLegacy setInboxServiceStatus:]
+-[MOConfigLegacy geofenceServiceStatus]
+-[MOConfigLegacy setGeofenceServiceStatus:]
+-[MOConfigLegacy deviceTriggerServiceStatus]
+-[MOConfigLegacy setDeviceTriggerServiceStatus:]
+-[MOConfigLegacy periodicSyncStatus]
+-[MOConfigLegacy setPeriodicSyncStatus:]
+-[MOConfigLegacy blackListedEventsArray]
+-[MOConfigLegacy setBlackListedEventsArray:]
+-[MOConfigLegacy instantFlushEventsArray]
+-[MOConfigLegacy setInstantFlushEventsArray:]
+-[MOConfigLegacy dataTrackingOptedOutWhitelistedEventsArray]
+-[MOConfigLegacy setDataTrackingOptedOutWhitelistedEventsArray:]
+-[MOConfigLegacy analyticsSourceExtraKeysArray]
+-[MOConfigLegacy setAnalyticsSourceExtraKeysArray:]
+-[MOConfigLegacy restrictedUniqueIDRegexArray]
+-[MOConfigLegacy setRestrictedUniqueIDRegexArray:]
+-[MOConfigLegacy eventsBatchCount]
+-[MOConfigLegacy setEventsBatchCount:]
+-[MOConfigLegacy inboxDefaultDuration]
+-[MOConfigLegacy setInboxDefaultDuration:]
+-[MOConfigLegacy periodicSyncInterval]
+-[MOConfigLegacy setPeriodicSyncInterval:]
+-[MOConfigLegacy deviceTriggerSyncDuration]
+-[MOConfigLegacy setDeviceTriggerSyncDuration:]
+-[MOConfigLegacy userAttrCachingDuration]
+-[MOConfigLegacy setUserAttrCachingDuration:]
+-[MOConfigLegacy analyticsSessionInactiveDuration]
+-[MOConfigLegacy setAnalyticsSessionInactiveDuration:]
+-[MOConfigLegacy dataRedirectionRegion]
+-[MOConfigLegacy setDataRedirectionRegion:]
+-[MOConfigLegacy dataTrackingOptedOut]
+-[MOConfigLegacy setDataTrackingOptedOut:]
+-[MOConfigLegacy userPushOptedOut]
+-[MOConfigLegacy setUserPushOptedOut:]
+-[MOConfigLegacy userInAppOptedOut]
+-[MOConfigLegacy setUserInAppOptedOut:]
+-[MOConfigLegacy .cxx_destruct]
+_OBJC_SELECTOR_REFERENCES_
+_OBJC_SELECTOR_REFERENCES_.2
+_OBJC_SELECTOR_REFERENCES_.4
+_OBJC_SELECTOR_REFERENCES_.6
+_OBJC_SELECTOR_REFERENCES_.8
+_OBJC_SELECTOR_REFERENCES_.10
+_OBJC_SELECTOR_REFERENCES_.12
+_OBJC_SELECTOR_REFERENCES_.14
+_OBJC_SELECTOR_REFERENCES_.16
+_OBJC_SELECTOR_REFERENCES_.18
+_OBJC_SELECTOR_REFERENCES_.20
+_OBJC_SELECTOR_REFERENCES_.22
+_OBJC_SELECTOR_REFERENCES_.24
+_OBJC_SELECTOR_REFERENCES_.26
+_OBJC_SELECTOR_REFERENCES_.28
+_OBJC_SELECTOR_REFERENCES_.30
+_OBJC_SELECTOR_REFERENCES_.32
+_OBJC_SELECTOR_REFERENCES_.34
+_OBJC_SELECTOR_REFERENCES_.36
+_OBJC_SELECTOR_REFERENCES_.38
+_OBJC_SELECTOR_REFERENCES_.40
+_OBJC_SELECTOR_REFERENCES_.42
+_OBJC_SELECTOR_REFERENCES_.44
+_OBJC_SELECTOR_REFERENCES_.46
+_OBJC_SELECTOR_REFERENCES_.48
+_OBJC_SELECTOR_REFERENCES_.50
+_OBJC_SELECTOR_REFERENCES_.52
+_OBJC_SELECTOR_REFERENCES_.54
+_OBJC_SELECTOR_REFERENCES_.56
+_OBJC_SELECTOR_REFERENCES_.58
+_OBJC_SELECTOR_REFERENCES_.60
+_OBJC_SELECTOR_REFERENCES_.62
+_OBJC_SELECTOR_REFERENCES_.64
+_OBJC_SELECTOR_REFERENCES_.66
+_OBJC_SELECTOR_REFERENCES_.68
+_OBJC_SELECTOR_REFERENCES_.70
+_OBJC_SELECTOR_REFERENCES_.72
+_OBJC_SELECTOR_REFERENCES_.74
+_OBJC_SELECTOR_REFERENCES_.76
+_OBJC_SELECTOR_REFERENCES_.78
+_OBJC_SELECTOR_REFERENCES_.80
+_OBJC_SELECTOR_REFERENCES_.82
+_OBJC_SELECTOR_REFERENCES_.84
+_OBJC_SELECTOR_REFERENCES_.86
+_OBJC_SELECTOR_REFERENCES_.88
+_OBJC_SELECTOR_REFERENCES_.90
+_OBJC_SELECTOR_REFERENCES_.92
+_OBJC_SELECTOR_REFERENCES_.94
+_OBJC_SELECTOR_REFERENCES_.96
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_NSCoding
+__OBJC_$_PROTOCOL_METHOD_TYPES_NSCoding
+__OBJC_PROTOCOL_$_NSCoding
+__OBJC_LABEL_PROTOCOL_$_NSCoding
+__OBJC_CLASS_PROTOCOLS_$_MOConfigLegacy
+__OBJC_METACLASS_RO_$_MOConfigLegacy
+__OBJC_$_INSTANCE_METHODS_MOConfigLegacy
+_OBJC_IVAR_$_MOConfigLegacy._dataTrackingOptedOut
+_OBJC_IVAR_$_MOConfigLegacy._userPushOptedOut
+_OBJC_IVAR_$_MOConfigLegacy._userInAppOptedOut
+_OBJC_IVAR_$_MOConfigLegacy._accountStatus
+_OBJC_IVAR_$_MOConfigLegacy._inAppServiceStatus
+_OBJC_IVAR_$_MOConfigLegacy._inboxServiceStatus
+_OBJC_IVAR_$_MOConfigLegacy._geofenceServiceStatus
+_OBJC_IVAR_$_MOConfigLegacy._deviceTriggerServiceStatus
+_OBJC_IVAR_$_MOConfigLegacy._periodicSyncStatus
+_OBJC_IVAR_$_MOConfigLegacy._blackListedEventsArray
+_OBJC_IVAR_$_MOConfigLegacy._instantFlushEventsArray
+_OBJC_IVAR_$_MOConfigLegacy._dataTrackingOptedOutWhitelistedEventsArray
+_OBJC_IVAR_$_MOConfigLegacy._analyticsSourceExtraKeysArray
+_OBJC_IVAR_$_MOConfigLegacy._restrictedUniqueIDRegexArray
+_OBJC_IVAR_$_MOConfigLegacy._eventsBatchCount
+_OBJC_IVAR_$_MOConfigLegacy._inboxDefaultDuration
+_OBJC_IVAR_$_MOConfigLegacy._periodicSyncInterval
+_OBJC_IVAR_$_MOConfigLegacy._deviceTriggerSyncDuration
+_OBJC_IVAR_$_MOConfigLegacy._userAttrCachingDuration
+_OBJC_IVAR_$_MOConfigLegacy._analyticsSessionInactiveDuration
+_OBJC_IVAR_$_MOConfigLegacy._dataRedirectionRegion
+__OBJC_$_INSTANCE_VARIABLES_MOConfigLegacy
+__OBJC_$_PROP_LIST_MOConfigLegacy
+__OBJC_CLASS_RO_$_MOConfigLegacy
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOConfig/ModelObjects/MOConfigLegacy.m
+MoEngageCore/MOConfig/ModelObjects/MOConfigLegacy.m
+MoEngageCore/MOConfig/ModelObjects/MOConfigLegacy.h
++[MOConfigDataManager sharedInstance]
+___37+[MOConfigDataManager sharedInstance]_block_invoke
+-[MOConfigDataManager initializeConfigDataManager]
+-[MOConfigDataManager initializeRemoteConfig]
+-[MOConfigDataManager initializeSDKConfig]
+-[MOConfigDataManager migrateFromOlderConfig]
+-[MOConfigDataManager updateConfigFromResponse:]
+-[MOConfigDataManager updateSDKConfig:]
+-[MOConfigDataManager getRestrictedUniqueIDRegex]
+-[MOConfigDataManager isUniqueIDRestricted:]
+-[MOConfigDataManager isAccountActive]
+-[MOConfigDataManager isInAppServiceActive]
+-[MOConfigDataManager isGeofenceServiceActive]
+-[MOConfigDataManager isInboxServiceActive]
+-[MOConfigDataManager isRemoteLoggingEnabled]
+-[MOConfigDataManager getRemoteMinLogLevel]
+-[MOConfigDataManager isRealTimeTriggersEnabled]
+-[MOConfigDataManager isInAppStatsActive]
+-[MOConfigDataManager getSourceExtraKeys]
+-[MOConfigDataManager getBlackListedEvents]
+-[MOConfigDataManager isEventBlackListed:]
+-[MOConfigDataManager getBlackListedUserAttributes]
+-[MOConfigDataManager isUserAttributeBlackListed:]
+-[MOConfigDataManager getInstantFlushEvents]
+-[MOConfigDataManager isEventInstantFlushEvent:]
+-[MOConfigDataManager getInboxDefaultExpiry]
+-[MOConfigDataManager getRealTimeTriggerSyncInterval]
+-[MOConfigDataManager getUserAttributeCachingDuration]
+-[MOConfigDataManager getSessionInActiveDuration]
+-[MOConfigDataManager setDataTrackingOptedOut:]
+-[MOConfigDataManager setUserPushNotificationOptedOut:]
+-[MOConfigDataManager setUserInAppNotificationOptedOut:]
+-[MOConfigDataManager isDataTrackingEnabled]
+-[MOConfigDataManager isPushNotificationEnabled]
+-[MOConfigDataManager isInAppEnabled]
+-[MOConfigDataManager isIDFATrackingEnabled]
+-[MOConfigDataManager isIDFVTrackingEnabled]
+-[MOConfigDataManager isPeriodicFlushEnabled]
+-[MOConfigDataManager getPeriodicFlushDuration]
+-[MOConfigDataManager getMinimumPeriodicFlushDurationLimit]
+-[MOConfigDataManager setNetworkEncryptionStatus:]
+-[MOConfigDataManager isNetworkEncryptionEnabled]
+-[MOConfigDataManager getWhitelistedEvents]
+-[MOConfigDataManager isEventWhitelistedEvent:]
+-[MOConfigDataManager getEventBatchCount]
+-[MOConfigDataManager getAppEncryptionKey]
+-[MOConfigDataManager getDefaultEncryptionKey]
+-[MOConfigDataManager getDataCenter]
+-[MOConfigDataManager setDataCenter:]
+-[MOConfigDataManager getMoEAppID]
+-[MOConfigDataManager getIntegrationType]
+-[MOConfigDataManager getIntegrationVersion]
+-[MOConfigDataManager getAppGroupID]
+-[MOConfigDataManager getDefaultSDKConfiguration]
+-[MOConfigDataManager remoteConfig]
+-[MOConfigDataManager setRemoteConfig:]
+-[MOConfigDataManager sdkConfig]
+-[MOConfigDataManager setSdkConfig:]
+-[MOConfigDataManager .cxx_destruct]
+_sharedInstance.onceToken
+_sharedInstance.instance
+___block_descriptor_32_e5_v8?0l
+___block_literal_global
+_OBJC_CLASSLIST_REFERENCES_$_
+_OBJC_CLASSLIST_REFERENCES_$_.9
+_OBJC_SELECTOR_REFERENCES_.11
+_OBJC_CLASSLIST_REFERENCES_$_.12
+_OBJC_CLASSLIST_REFERENCES_$_.17
+_OBJC_SELECTOR_REFERENCES_.19
+_OBJC_SELECTOR_REFERENCES_.21
+_OBJC_SELECTOR_REFERENCES_.23
+_OBJC_SELECTOR_REFERENCES_.25
+_OBJC_CLASSLIST_REFERENCES_$_.26
+_OBJC_SELECTOR_REFERENCES_.29
+_OBJC_CLASSLIST_REFERENCES_$_.30
+_OBJC_CLASSLIST_REFERENCES_$_.41
+_OBJC_SELECTOR_REFERENCES_.43
+_OBJC_CLASSLIST_REFERENCES_$_.44
+_OBJC_CLASSLIST_REFERENCES_$_.49
+_OBJC_SELECTOR_REFERENCES_.51
+_OBJC_SELECTOR_REFERENCES_.53
+_OBJC_SELECTOR_REFERENCES_.55
+_OBJC_SELECTOR_REFERENCES_.57
+_OBJC_SELECTOR_REFERENCES_.59
+_OBJC_SELECTOR_REFERENCES_.61
+_OBJC_CLASSLIST_REFERENCES_$_.67
+_OBJC_SELECTOR_REFERENCES_.69
+_OBJC_SELECTOR_REFERENCES_.73
+_OBJC_SELECTOR_REFERENCES_.75
+_OBJC_SELECTOR_REFERENCES_.77
+_OBJC_SELECTOR_REFERENCES_.79
+_OBJC_SELECTOR_REFERENCES_.81
+_OBJC_SELECTOR_REFERENCES_.83
+_OBJC_CLASSLIST_REFERENCES_$_.84
+_OBJC_SELECTOR_REFERENCES_.98
+_OBJC_SELECTOR_REFERENCES_.100
+_OBJC_SELECTOR_REFERENCES_.102
+_OBJC_SELECTOR_REFERENCES_.104
+_OBJC_SELECTOR_REFERENCES_.106
+_OBJC_SELECTOR_REFERENCES_.108
+_OBJC_SELECTOR_REFERENCES_.110
+_OBJC_SELECTOR_REFERENCES_.112
+_OBJC_SELECTOR_REFERENCES_.114
+_OBJC_SELECTOR_REFERENCES_.116
+_OBJC_SELECTOR_REFERENCES_.118
+_OBJC_SELECTOR_REFERENCES_.120
+_OBJC_SELECTOR_REFERENCES_.122
+_OBJC_SELECTOR_REFERENCES_.124
+_OBJC_SELECTOR_REFERENCES_.126
+_OBJC_SELECTOR_REFERENCES_.128
+_OBJC_SELECTOR_REFERENCES_.130
+_OBJC_SELECTOR_REFERENCES_.132
+_OBJC_SELECTOR_REFERENCES_.134
+_OBJC_SELECTOR_REFERENCES_.136
+_OBJC_SELECTOR_REFERENCES_.138
+_OBJC_SELECTOR_REFERENCES_.140
+_OBJC_SELECTOR_REFERENCES_.142
+_OBJC_SELECTOR_REFERENCES_.144
+_OBJC_SELECTOR_REFERENCES_.146
+_OBJC_SELECTOR_REFERENCES_.148
+_OBJC_SELECTOR_REFERENCES_.150
+_OBJC_SELECTOR_REFERENCES_.152
+_OBJC_SELECTOR_REFERENCES_.154
+_OBJC_SELECTOR_REFERENCES_.156
+_OBJC_SELECTOR_REFERENCES_.158
+_OBJC_SELECTOR_REFERENCES_.160
+_OBJC_SELECTOR_REFERENCES_.162
+_OBJC_SELECTOR_REFERENCES_.164
+_OBJC_SELECTOR_REFERENCES_.166
+_OBJC_SELECTOR_REFERENCES_.168
+_OBJC_SELECTOR_REFERENCES_.170
+_OBJC_SELECTOR_REFERENCES_.172
+_OBJC_SELECTOR_REFERENCES_.174
+_OBJC_SELECTOR_REFERENCES_.176
+__OBJC_$_CLASS_METHODS_MOConfigDataManager
+__OBJC_METACLASS_RO_$_MOConfigDataManager
+__OBJC_$_INSTANCE_METHODS_MOConfigDataManager
+_OBJC_IVAR_$_MOConfigDataManager._remoteConfig
+_OBJC_IVAR_$_MOConfigDataManager._sdkConfig
+__OBJC_$_INSTANCE_VARIABLES_MOConfigDataManager
+__OBJC_$_PROP_LIST_MOConfigDataManager
+__OBJC_CLASS_RO_$_MOConfigDataManager
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOConfig/MOConfigDataManager.m
+MoEngageCore/MOConfig/MOConfigDataManager.m
+__37+[MOConfigDataManager sharedInstance]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/dispatch/once.h
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOConfig/Constants/MOConfigConstant.m
+-[MONetworkClient init]
+-[MONetworkClient executeRequest:withCompletionHandler:]
+___56-[MONetworkClient executeRequest:withCompletionHandler:]_block_invoke
+___56-[MONetworkClient executeRequest:withCompletionHandler:]_block_invoke_2
+___copy_helper_block_e8_32s40s48s56b64s
+___destroy_helper_block_e8_32s40s48s56s64s
+___copy_helper_block_e8_32b40s
+___destroy_helper_block_e8_32s40s
+-[MONetworkClient getDecryptedDataFromResponse:andEncryptedData:]
+-[MONetworkClient reachability]
+-[MONetworkClient setReachability:]
+-[MONetworkClient .cxx_destruct]
+_OBJC_SELECTOR_REFERENCES_.13
+_OBJC_SELECTOR_REFERENCES_.15
+_OBJC_CLASSLIST_REFERENCES_$_.16
+_OBJC_CLASSLIST_REFERENCES_$_.19
+_OBJC_CLASSLIST_REFERENCES_$_.22
+_OBJC_CLASSLIST_REFERENCES_$_.27
+_OBJC_SELECTOR_REFERENCES_.31
+___block_descriptor_72_e8_32s40s48s56bs64s_e5_v8?0l
+_OBJC_SELECTOR_REFERENCES_.35
+_OBJC_SELECTOR_REFERENCES_.37
+_OBJC_CLASSLIST_REFERENCES_$_.38
+___block_descriptor_56_e8_32bs40s_e46_v32?0"NSData"8"NSURLResponse"16"NSError"24l
+_OBJC_SELECTOR_REFERENCES_.49
+_OBJC_SELECTOR_REFERENCES_.63
+_OBJC_SELECTOR_REFERENCES_.65
+_OBJC_SELECTOR_REFERENCES_.67
+_OBJC_CLASSLIST_REFERENCES_$_.70
+_OBJC_CLASSLIST_REFERENCES_$_.75
+__OBJC_METACLASS_RO_$_MONetworkClient
+__OBJC_$_INSTANCE_METHODS_MONetworkClient
+_OBJC_IVAR_$_MONetworkClient._reachability
+__OBJC_$_INSTANCE_VARIABLES_MONetworkClient
+__OBJC_$_PROP_LIST_MONetworkClient
+__OBJC_CLASS_RO_$_MONetworkClient
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MONetwork/MONetworkClient.m
+MoEngageCore/MONetwork/MONetworkClient.m
+__destroy_helper_block_e8_32s40s
+__copy_helper_block_e8_32b40s
+__destroy_helper_block_e8_32s40s48s56s64s
+__copy_helper_block_e8_32s40s48s56b64s
+__56-[MONetworkClient executeRequest:withCompletionHandler:]_block_invoke_2
+__56-[MONetworkClient executeRequest:withCompletionHandler:]_block_invoke
+-[MOZeroingWeakContainer object]
+-[MOZeroingWeakContainer setObject:]
+-[MOZeroingWeakContainer .cxx_destruct]
++[MOAppDelegateObserver sharedInstance]
+___39+[MOAppDelegateObserver sharedInstance]_block_invoke
+-[MOAppDelegateObserver observeUIApplication]
+-[MOAppDelegateObserver observeValueForKeyPath:ofObject:change:context:]
++[MOAppDelegateSwizzler isAppDelegateProxyEnabled]
++[MOAppDelegateSwizzler registerAppDelegateInterceptor:]
++[MOAppDelegateSwizzler unregisterAppDelegateInterceptorWithID:]
++[MOAppDelegateSwizzler proxyOriginalDelegate]
+___46+[MOAppDelegateSwizzler proxyOriginalDelegate]_block_invoke
++[MOAppDelegateSwizzler proxyOriginalDelegateIncludingAPNSMethods]
+___66+[MOAppDelegateSwizzler proxyOriginalDelegateIncludingAPNSMethods]_block_invoke
+___copy_helper_block_e8_
+___destroy_helper_block_e8_
++[MOAppDelegateSwizzler sharedApplication]
++[MOAppDelegateSwizzler createSubclassWithObject:]
++[MOAppDelegateSwizzler proxyRemoteNotificationsMethodsWithAppDelegateSubClass:realClass:appDelegate:realImplementationsBySelector:]
++[MOAppDelegateSwizzler reassignAppDelegate]
++[MOAppDelegateSwizzler interceptors]
+___37+[MOAppDelegateSwizzler interceptors]_block_invoke
++[MOAppDelegateSwizzler originalImplementationForSelector:object:]
++[MOAppDelegateSwizzler proxyDestinationSelector:implementationsFromSourceSelector:fromClass:toClass:realClass:storeDestinationImplementationTo:]
++[MOAppDelegateSwizzler addInstanceMethodWithSelector:fromClass:toClass:]
++[MOAppDelegateSwizzler addInstanceMethodWithDestinationSelector:withImplementationFromSourceSelector:fromClass:toClass:]
++[MOAppDelegateSwizzler implementationOfMethodSelector:fromClass:]
++[MOAppDelegateSwizzler notifyInterceptorsWithMethodSelector:callback:]
+___71+[MOAppDelegateSwizzler notifyInterceptorsWithMethodSelector:callback:]_block_invoke
+___copy_helper_block_e8_32b
+___destroy_helper_block_e8_32s
+-[MOAppDelegateSwizzler fakeDescription]
+-[MOAppDelegateSwizzler application:openURL:options:]
+___53-[MOAppDelegateSwizzler application:openURL:options:]_block_invoke
+___copy_helper_block_e8_32s40s48s56r
+___destroy_helper_block_e8_32s40s48s56r
+-[MOAppDelegateSwizzler application:openURL:sourceApplication:annotation:]
+___74-[MOAppDelegateSwizzler application:openURL:sourceApplication:annotation:]_block_invoke
+___copy_helper_block_e8_32s40s48s56s64r
+___destroy_helper_block_e8_32s40s48s56s64r
+-[MOAppDelegateSwizzler application:handleEventsForBackgroundURLSession:completionHandler:]
+___91-[MOAppDelegateSwizzler application:handleEventsForBackgroundURLSession:completionHandler:]_block_invoke
+___copy_helper_block_e8_32s40s48b
+___destroy_helper_block_e8_32s40s48s
+-[MOAppDelegateSwizzler application:continueUserActivity:restorationHandler:]
+___77-[MOAppDelegateSwizzler application:continueUserActivity:restorationHandler:]_block_invoke
+___copy_helper_block_e8_32s40s48b56r
+-[MOAppDelegateSwizzler application:donor_didRegisterForRemoteNotificationsWithDeviceToken:]
+___92-[MOAppDelegateSwizzler application:donor_didRegisterForRemoteNotificationsWithDeviceToken:]_block_invoke
+___copy_helper_block_e8_32s40s
+-[MOAppDelegateSwizzler application:donor_didFailToRegisterForRemoteNotificationsWithError:]
+___92-[MOAppDelegateSwizzler application:donor_didFailToRegisterForRemoteNotificationsWithError:]_block_invoke
+-[MOAppDelegateSwizzler application:donor_didReceiveRemoteNotification:fetchCompletionHandler:]
+___95-[MOAppDelegateSwizzler application:donor_didReceiveRemoteNotification:fetchCompletionHandler:]_block_invoke
+-[MOAppDelegateSwizzler application:donor_didReceiveRemoteNotification:]
+___72-[MOAppDelegateSwizzler application:donor_didReceiveRemoteNotification:]_block_invoke
++[MOAppDelegateSwizzler appDelegateInvocationForSelector:]
++[MOAppDelegateSwizzler proxyAppDelegate:]
++[MOAppDelegateSwizzler clearInterceptors]
++[MOAppDelegateSwizzler resetProxyOriginalDelegateOnceToken]
++[MOAppDelegateSwizzler originalDelegate]
+__OBJC_METACLASS_RO_$_MOZeroingWeakContainer
+__OBJC_$_INSTANCE_METHODS_MOZeroingWeakContainer
+_OBJC_IVAR_$_MOZeroingWeakContainer._object
+__OBJC_$_INSTANCE_VARIABLES_MOZeroingWeakContainer
+__OBJC_$_PROP_LIST_MOZeroingWeakContainer
+__OBJC_CLASS_RO_$_MOZeroingWeakContainer
+_sharedInstance.once
+_OBJC_SELECTOR_REFERENCES_.27
+_MOEOriginalAppDelegate
+__OBJC_$_CLASS_METHODS_MOAppDelegateObserver
+__OBJC_METACLASS_RO_$_MOAppDelegateObserver
+__OBJC_$_INSTANCE_METHODS_MOAppDelegateObserver
+_OBJC_IVAR_$_MOAppDelegateObserver._isObserving
+__OBJC_$_INSTANCE_VARIABLES_MOAppDelegateObserver
+__OBJC_CLASS_RO_$_MOAppDelegateObserver
+_OBJC_CLASSLIST_REFERENCES_$_.39
+_OBJC_SELECTOR_REFERENCES_.41
+_OBJC_CLASSLIST_REFERENCES_$_.42
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+__OBJC_$_PROP_LIST_NSObject
+__OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+__OBJC_PROTOCOL_$_NSObject
+__OBJC_LABEL_PROTOCOL_$_NSObject
+__OBJC_$_PROTOCOL_REFS_UIApplicationDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIApplicationDelegate
+__OBJC_$_PROP_LIST_UIApplicationDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UIApplicationDelegate
+__OBJC_PROTOCOL_$_UIApplicationDelegate
+__OBJC_LABEL_PROTOCOL_$_UIApplicationDelegate
+__OBJC_PROTOCOL_REFERENCE_$_UIApplicationDelegate
+_OBJC_SELECTOR_REFERENCES_.206
+_OBJC_SELECTOR_REFERENCES_.212
+_OBJC_CLASSLIST_REFERENCES_$_.215
+_OBJC_SELECTOR_REFERENCES_.216
+_OBJC_SELECTOR_REFERENCES_.218
+_OBJC_SELECTOR_REFERENCES_.220
+_OBJC_SELECTOR_REFERENCES_.223
+_OBJC_SELECTOR_REFERENCES_.227
+_sProxyAppDelegateOnceToken
+___block_literal_global.228
+_OBJC_SELECTOR_REFERENCES_.230
+_OBJC_SELECTOR_REFERENCES_.232
+_OBJC_SELECTOR_REFERENCES_.234
+_sProxyAppDelegateRemoteNotificationOnceToken
+_kMOERealIMPBySelectorKey
+_OBJC_SELECTOR_REFERENCES_.236
+_MOEAppDelegateSubclass
+_MOEOriginalAppDelegateClass
+_OBJC_SELECTOR_REFERENCES_.238
+_OBJC_SELECTOR_REFERENCES_.240
+_OBJC_SELECTOR_REFERENCES_.242
+___block_descriptor_40_e8__e5_v8?0l
+_OBJC_SELECTOR_REFERENCES_.248
+_OBJC_SELECTOR_REFERENCES_.249
+_OBJC_SELECTOR_REFERENCES_.251
+_OBJC_CLASSLIST_REFERENCES_$_.254
+_OBJC_SELECTOR_REFERENCES_.256
+_OBJC_SELECTOR_REFERENCES_.258
+_OBJC_SELECTOR_REFERENCES_.262
+_OBJC_CLASSLIST_REFERENCES_$_.265
+_OBJC_SELECTOR_REFERENCES_.266
+_OBJC_SELECTOR_REFERENCES_.268
+_OBJC_SELECTOR_REFERENCES_.269
+_OBJC_SELECTOR_REFERENCES_.270
+_OBJC_SELECTOR_REFERENCES_.271
+_OBJC_SELECTOR_REFERENCES_.272
+_OBJC_SELECTOR_REFERENCES_.274
+_OBJC_SELECTOR_REFERENCES_.276
+_kMOERealClassKey
+_OBJC_SELECTOR_REFERENCES_.282
+_OBJC_SELECTOR_REFERENCES_.284
+_OBJC_SELECTOR_REFERENCES_.286
+_OBJC_SELECTOR_REFERENCES_.288
+_OBJC_SELECTOR_REFERENCES_.290
+_OBJC_SELECTOR_REFERENCES_.292
+_OBJC_SELECTOR_REFERENCES_.293
+_interceptors.onceToken
+_interceptors.sInterceptors
+___block_literal_global.294
+_OBJC_SELECTOR_REFERENCES_.296
+_OBJC_CLASSLIST_REFERENCES_$_.297
+_OBJC_SELECTOR_REFERENCES_.299
+___block_descriptor_48_e8_32bs_e15_v32?0816^B24l
+_OBJC_SELECTOR_REFERENCES_.306
+_OBJC_SELECTOR_REFERENCES_.310
+_OBJC_SELECTOR_REFERENCES_.312
+___block_descriptor_64_e8_32s40s48s56r_e33_v16?0"<UIApplicationDelegate>"8l
+_OBJC_SELECTOR_REFERENCES_.315
+___block_descriptor_72_e8_32s40s48s56s64r_e33_v16?0"<UIApplicationDelegate>"8l
+___block_descriptor_56_e8_32s40s48bs_e33_v16?0"<UIApplicationDelegate>"8l
+___block_descriptor_64_e8_32s40s48bs56r_e33_v16?0"<UIApplicationDelegate>"8l
+_OBJC_SELECTOR_REFERENCES_.317
+_OBJC_SELECTOR_REFERENCES_.319
+_OBJC_SELECTOR_REFERENCES_.321
+_OBJC_SELECTOR_REFERENCES_.323
+_OBJC_SELECTOR_REFERENCES_.325
+___block_descriptor_56_e8_32s40s_e33_v16?0"<UIApplicationDelegate>"8l
+___block_descriptor_64_e8_32s40s48bs_e33_v16?0"<UIApplicationDelegate>"8l
+_OBJC_CLASSLIST_REFERENCES_$_.326
+_OBJC_SELECTOR_REFERENCES_.328
+_OBJC_CLASSLIST_REFERENCES_$_.329
+_OBJC_SELECTOR_REFERENCES_.331
+_OBJC_SELECTOR_REFERENCES_.339
+_OBJC_SELECTOR_REFERENCES_.343
+__OBJC_$_CLASS_METHODS_MOAppDelegateSwizzler
+__OBJC_METACLASS_RO_$_MOAppDelegateSwizzler
+__OBJC_$_INSTANCE_METHODS_MOAppDelegateSwizzler
+__OBJC_CLASS_RO_$_MOAppDelegateSwizzler
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/AppDelegateSwizzler/MOAppDelegateSwizzler.m
+MoEngageCore/MOUtils/AppDelegateSwizzler/MOAppDelegateSwizzler.m
+__72-[MOAppDelegateSwizzler application:donor_didReceiveRemoteNotification:]_block_invoke
+__95-[MOAppDelegateSwizzler application:donor_didReceiveRemoteNotification:fetchCompletionHandler:]_block_invoke
+__92-[MOAppDelegateSwizzler application:donor_didFailToRegisterForRemoteNotificationsWithError:]_block_invoke
+__copy_helper_block_e8_32s40s
+__92-[MOAppDelegateSwizzler application:donor_didRegisterForRemoteNotificationsWithDeviceToken:]_block_invoke
+__copy_helper_block_e8_32s40s48b56r
+__77-[MOAppDelegateSwizzler application:continueUserActivity:restorationHandler:]_block_invoke
+__destroy_helper_block_e8_32s40s48s
+__copy_helper_block_e8_32s40s48b
+__91-[MOAppDelegateSwizzler application:handleEventsForBackgroundURLSession:completionHandler:]_block_invoke
+__destroy_helper_block_e8_32s40s48s56s64r
+__copy_helper_block_e8_32s40s48s56s64r
+__74-[MOAppDelegateSwizzler application:openURL:sourceApplication:annotation:]_block_invoke
+__destroy_helper_block_e8_32s40s48s56r
+__copy_helper_block_e8_32s40s48s56r
+__53-[MOAppDelegateSwizzler application:openURL:options:]_block_invoke
+__destroy_helper_block_e8_32s
+__copy_helper_block_e8_32b
+__71+[MOAppDelegateSwizzler notifyInterceptorsWithMethodSelector:callback:]_block_invoke
+__37+[MOAppDelegateSwizzler interceptors]_block_invoke
+__destroy_helper_block_e8_
+__copy_helper_block_e8_
+__66+[MOAppDelegateSwizzler proxyOriginalDelegateIncludingAPNSMethods]_block_invoke
+__46+[MOAppDelegateSwizzler proxyOriginalDelegate]_block_invoke
+__39+[MOAppDelegateObserver sharedInstance]_block_invoke
++[MONetworkUtils getAPIPathForService:withAdditionalPathComponent:]
++[MONetworkUtils getRequestMethodForService:]
++[MONetworkUtils getQueryParamsBodyDictForService:]
++[MONetworkUtils getRequestParamsWithV1:]
++[MONetworkUtils getRequestParamsForV1APIs]
++[MONetworkUtils getRequestParamsForV2]
++[MONetworkUtils getIntegrationParams]
++[MONetworkUtils getDeviceAttributeParams]
++[MONetworkUtils getDeviceUniqueID]
++[MONetworkUtils getDeviceUniqueIDFromKeyChain]
++[MONetworkUtils isDeviceUniqueIDPresentInKeyChain]
+_moe_device_unique_id
+_OBJC_CLASSLIST_REFERENCES_$_.5
+_OBJC_SELECTOR_REFERENCES_.7
+_OBJC_SELECTOR_REFERENCES_.9
+_OBJC_CLASSLIST_REFERENCES_$_.10
+_OBJC_CLASSLIST_REFERENCES_$_.25
+_OBJC_CLASSLIST_REFERENCES_$_.37
+_OBJC_SELECTOR_REFERENCES_.39
+_OBJC_SELECTOR_REFERENCES_.45
+_OBJC_SELECTOR_REFERENCES_.47
+_OBJC_CLASSLIST_REFERENCES_$_.54
+_OBJC_CLASSLIST_REFERENCES_$_.63
+_OBJC_SELECTOR_REFERENCES_.71
+_OBJC_SELECTOR_REFERENCES_.95
+_OBJC_CLASSLIST_REFERENCES_$_.98
+_OBJC_CLASSLIST_REFERENCES_$_.107
+_OBJC_SELECTOR_REFERENCES_.109
+_OBJC_SELECTOR_REFERENCES_.113
+_OBJC_SELECTOR_REFERENCES_.117
+_OBJC_SELECTOR_REFERENCES_.119
+_OBJC_SELECTOR_REFERENCES_.121
+_OBJC_SELECTOR_REFERENCES_.123
+_OBJC_SELECTOR_REFERENCES_.125
+_OBJC_SELECTOR_REFERENCES_.127
+_OBJC_SELECTOR_REFERENCES_.129
+_OBJC_SELECTOR_REFERENCES_.131
+_OBJC_SELECTOR_REFERENCES_.149
+_OBJC_SELECTOR_REFERENCES_.153
+_OBJC_SELECTOR_REFERENCES_.157
+_OBJC_SELECTOR_REFERENCES_.161
+_OBJC_SELECTOR_REFERENCES_.163
+_OBJC_CLASSLIST_REFERENCES_$_.164
+__OBJC_$_CLASS_METHODS_MONetworkUtils
+__OBJC_METACLASS_RO_$_MONetworkUtils
+__OBJC_CLASS_RO_$_MONetworkUtils
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MONetwork/Utils/MONetworkUtils.m
+MoEngageCore/MONetwork/Utils/MONetworkUtils.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MONetwork/Constants/MONetworkConstants.m
+-[NSData(Encryption) AESEncryptWithPassword:iv:error:]
+-[NSData(Encryption) AESDecryptWithPassword:iv:error:]
+-[NSData(Encryption) cryptData:operation:iv:error:]
++[NSData(Encryption) dataFromHexString:]
+_OBJC_CLASSLIST_REFERENCES_$_.15
+_OBJC_SELECTOR_REFERENCES_.17
+_OBJC_CLASSLIST_REFERENCES_$_.20
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSData_$_Encryption
+__OBJC_$_CATEGORY_CLASS_METHODS_NSData_$_Encryption
+__OBJC_$_CATEGORY_NSData_$_Encryption
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/Encryption/NSData+Encryption.m
+llvm.loop.mustprogress
+MoEngageCore/MOUtils/Encryption/NSData+Encryption.m
++[MOConfigHandler sharedHandler]
+___32+[MOConfigHandler sharedHandler]_block_invoke
+-[MOConfigHandler init]
+-[MOConfigHandler shouldSyncRemoteConfig]
+-[MOConfigHandler updateRemoteConfig]
+___37-[MOConfigHandler updateRemoteConfig]_block_invoke
+-[MOConfigHandler updateSDKConfig:]
+-[MOConfigHandler logCurrentConfigInfo]
+-[MOConfigHandler logCurrentRemoteConfigInfo]
+-[MOConfigHandler logCurrentSDKConfigInfo]
+-[MOConfigHandler getDefaultSDKConfiguration]
+-[MOConfigHandler dataManager]
+-[MOConfigHandler setDataManager:]
+-[MOConfigHandler .cxx_destruct]
+_sharedHandler.onceToken
+_sharedHandler.instance
+_OBJC_CLASSLIST_REFERENCES_$_.3
+_OBJC_SELECTOR_REFERENCES_.5
+_OBJC_CLASSLIST_REFERENCES_$_.8
+_OBJC_CLASSLIST_REFERENCES_$_.51
+_OBJC_CLASSLIST_REFERENCES_$_.73
+___block_descriptor_40_e25_v20?0B8"NSDictionary"12l
+_OBJC_SELECTOR_REFERENCES_.180
+_OBJC_SELECTOR_REFERENCES_.186
+_OBJC_SELECTOR_REFERENCES_.192
+_OBJC_SELECTOR_REFERENCES_.198
+_OBJC_SELECTOR_REFERENCES_.204
+__OBJC_$_CLASS_METHODS_MOConfigHandler
+__OBJC_METACLASS_RO_$_MOConfigHandler
+__OBJC_$_INSTANCE_METHODS_MOConfigHandler
+_OBJC_IVAR_$_MOConfigHandler._dataManager
+__OBJC_$_INSTANCE_VARIABLES_MOConfigHandler
+__OBJC_$_PROP_LIST_MOConfigHandler
+__OBJC_CLASS_RO_$_MOConfigHandler
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOConfig/MOConfigHandler.m
+MoEngageCore/MOConfig/MOConfigHandler.m
+__37-[MOConfigHandler updateRemoteConfig]_block_invoke
+__32+[MOConfigHandler sharedHandler]_block_invoke
+-[MORemoteConfig init]
+-[MORemoteConfig initWithCoder:]
+-[MORemoteConfig encodeWithCoder:]
+-[MORemoteConfig updateConfigProperty:withValue:]
+-[MORemoteConfig updateStatusConfigProperty:withValue:]
+-[MORemoteConfig updateDurationConfigProperty:withValue:]
+-[MORemoteConfig updateArrayConfigProperty:withValue:]
+-[MORemoteConfig updateMiscConfigProperty:withValue:]
+-[MORemoteConfig updateValuesFromLegacyConfig:]
+-[MORemoteConfig updateFromBackendResponse:]
+-[MORemoteConfig accountStatus]
+-[MORemoteConfig setAccountStatus:]
+-[MORemoteConfig inAppServiceStatus]
+-[MORemoteConfig setInAppServiceStatus:]
+-[MORemoteConfig inAppStatsStatus]
+-[MORemoteConfig setInAppStatsStatus:]
+-[MORemoteConfig inboxServiceStatus]
+-[MORemoteConfig setInboxServiceStatus:]
+-[MORemoteConfig geofenceServiceStatus]
+-[MORemoteConfig setGeofenceServiceStatus:]
+-[MORemoteConfig realTimeTriggersServiceStatus]
+-[MORemoteConfig setRealTimeTriggersServiceStatus:]
+-[MORemoteConfig periodicSyncStatus]
+-[MORemoteConfig setPeriodicSyncStatus:]
+-[MORemoteConfig remoteLoggingStatus]
+-[MORemoteConfig setRemoteLoggingStatus:]
+-[MORemoteConfig remoteLoggingLevel]
+-[MORemoteConfig setRemoteLoggingLevel:]
+-[MORemoteConfig defaultEncryptionKey]
+-[MORemoteConfig setDefaultEncryptionKey:]
+-[MORemoteConfig appEncryptionKey]
+-[MORemoteConfig setAppEncryptionKey:]
+-[MORemoteConfig blackListedEventsArray]
+-[MORemoteConfig setBlackListedEventsArray:]
+-[MORemoteConfig blackListedUserAttrsArray]
+-[MORemoteConfig setBlackListedUserAttrsArray:]
+-[MORemoteConfig instantFlushEventsArray]
+-[MORemoteConfig setInstantFlushEventsArray:]
+-[MORemoteConfig dataTrackingOptedOutWhitelistedEventsArray]
+-[MORemoteConfig setDataTrackingOptedOutWhitelistedEventsArray:]
+-[MORemoteConfig analyticsSourceExtraKeysArray]
+-[MORemoteConfig setAnalyticsSourceExtraKeysArray:]
+-[MORemoteConfig restrictedUniqueIDRegexArray]
+-[MORemoteConfig setRestrictedUniqueIDRegexArray:]
+-[MORemoteConfig eventsBatchCount]
+-[MORemoteConfig setEventsBatchCount:]
+-[MORemoteConfig inboxDefaultDuration]
+-[MORemoteConfig setInboxDefaultDuration:]
+-[MORemoteConfig periodicSyncInterval]
+-[MORemoteConfig setPeriodicSyncInterval:]
+-[MORemoteConfig realTimeTriggerSyncDuration]
+-[MORemoteConfig setRealTimeTriggerSyncDuration:]
+-[MORemoteConfig userAttrCachingDuration]
+-[MORemoteConfig setUserAttrCachingDuration:]
+-[MORemoteConfig analyticsSessionInactiveDuration]
+-[MORemoteConfig setAnalyticsSessionInactiveDuration:]
+-[MORemoteConfig .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.115
+_OBJC_CLASSLIST_REFERENCES_$_.118
+_OBJC_CLASSLIST_REFERENCES_$_.123
+_OBJC_SELECTOR_REFERENCES_.135
+_OBJC_SELECTOR_REFERENCES_.137
+_OBJC_SELECTOR_REFERENCES_.139
+_OBJC_SELECTOR_REFERENCES_.141
+_OBJC_SELECTOR_REFERENCES_.143
+_OBJC_SELECTOR_REFERENCES_.147
+_OBJC_SELECTOR_REFERENCES_.151
+_OBJC_CLASSLIST_REFERENCES_$_.157
+_OBJC_SELECTOR_REFERENCES_.159
+_OBJC_SELECTOR_REFERENCES_.165
+__OBJC_CLASS_PROTOCOLS_$_MORemoteConfig
+__OBJC_METACLASS_RO_$_MORemoteConfig
+__OBJC_$_INSTANCE_METHODS_MORemoteConfig
+_OBJC_IVAR_$_MORemoteConfig._remoteLoggingLevel
+_OBJC_IVAR_$_MORemoteConfig._accountStatus
+_OBJC_IVAR_$_MORemoteConfig._inAppServiceStatus
+_OBJC_IVAR_$_MORemoteConfig._inAppStatsStatus
+_OBJC_IVAR_$_MORemoteConfig._inboxServiceStatus
+_OBJC_IVAR_$_MORemoteConfig._geofenceServiceStatus
+_OBJC_IVAR_$_MORemoteConfig._realTimeTriggersServiceStatus
+_OBJC_IVAR_$_MORemoteConfig._periodicSyncStatus
+_OBJC_IVAR_$_MORemoteConfig._remoteLoggingStatus
+_OBJC_IVAR_$_MORemoteConfig._defaultEncryptionKey
+_OBJC_IVAR_$_MORemoteConfig._appEncryptionKey
+_OBJC_IVAR_$_MORemoteConfig._blackListedEventsArray
+_OBJC_IVAR_$_MORemoteConfig._blackListedUserAttrsArray
+_OBJC_IVAR_$_MORemoteConfig._instantFlushEventsArray
+_OBJC_IVAR_$_MORemoteConfig._dataTrackingOptedOutWhitelistedEventsArray
+_OBJC_IVAR_$_MORemoteConfig._analyticsSourceExtraKeysArray
+_OBJC_IVAR_$_MORemoteConfig._restrictedUniqueIDRegexArray
+_OBJC_IVAR_$_MORemoteConfig._eventsBatchCount
+_OBJC_IVAR_$_MORemoteConfig._inboxDefaultDuration
+_OBJC_IVAR_$_MORemoteConfig._periodicSyncInterval
+_OBJC_IVAR_$_MORemoteConfig._realTimeTriggerSyncDuration
+_OBJC_IVAR_$_MORemoteConfig._userAttrCachingDuration
+_OBJC_IVAR_$_MORemoteConfig._analyticsSessionInactiveDuration
+__OBJC_$_INSTANCE_VARIABLES_MORemoteConfig
+__OBJC_$_PROP_LIST_MORemoteConfig
+__OBJC_CLASS_RO_$_MORemoteConfig
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOConfig/ModelObjects/MORemoteConfig.m
+MoEngageCore/MOConfig/ModelObjects/MORemoteConfig.m
+MoEngageCore/MOConfig/ModelObjects/MORemoteConfig.h
++[MONetworkConfiguration defaultConfiguration]
+___46+[MONetworkConfiguration defaultConfiguration]_block_invoke
+-[MONetworkConfiguration init]
+-[MONetworkConfiguration updateDefaultHost:]
+-[MONetworkConfiguration updateDefaultScheme:]
+-[MONetworkConfiguration updateDefaultPort:]
+-[MONetworkConfiguration hostForService:]
+-[MONetworkConfiguration schemeForService:]
+-[MONetworkConfiguration portForService:]
+-[MONetworkConfiguration setMOURLSession]
+-[MONetworkConfiguration getMOURLSession]
++[MONetworkConfiguration getQueryParamsBodyDictForService:]
+-[MONetworkConfiguration scheme]
+-[MONetworkConfiguration setScheme:]
+-[MONetworkConfiguration host]
+-[MONetworkConfiguration setHost:]
+-[MONetworkConfiguration port]
+-[MONetworkConfiguration setPort:]
+-[MONetworkConfiguration moeNetworkSession]
+-[MONetworkConfiguration setMoeNetworkSession:]
+-[MONetworkConfiguration .cxx_destruct]
+_defaultConfiguration.onceToken
+_defaultConfiguration.instance
+_OBJC_CLASSLIST_REFERENCES_$_.11
+_OBJC_CLASSLIST_REFERENCES_$_.14
+__OBJC_$_CLASS_METHODS_MONetworkConfiguration
+__OBJC_METACLASS_RO_$_MONetworkConfiguration
+__OBJC_$_INSTANCE_METHODS_MONetworkConfiguration
+_OBJC_IVAR_$_MONetworkConfiguration._scheme
+_OBJC_IVAR_$_MONetworkConfiguration._host
+_OBJC_IVAR_$_MONetworkConfiguration._port
+_OBJC_IVAR_$_MONetworkConfiguration._moeNetworkSession
+__OBJC_$_INSTANCE_VARIABLES_MONetworkConfiguration
+__OBJC_$_PROP_LIST_MONetworkConfiguration
+__OBJC_CLASS_RO_$_MONetworkConfiguration
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MONetwork/MONetworkConfiguration.m
+MoEngageCore/MONetwork/MONetworkConfiguration.m
+__46+[MONetworkConfiguration defaultConfiguration]_block_invoke
++[MOCoreUtils getSDKLibraryDirectoryPath]
++[MOCoreUtils getDocumentsDirectoryPath]
++[MOCoreUtils removeFileAtPath:]
++[MOCoreUtils contentsOfDirectoryAtPath:]
++[MOCoreUtils getTopMostPresentedViewController]
++[MOCoreUtils getTopMostViewController]
++[MOCoreUtils deviceScreenWidth]
++[MOCoreUtils deviceScreenHeight]
++[MOCoreUtils showAlertViewWithMessage:andTitle:]
+___49+[MOCoreUtils showAlertViewWithMessage:andTitle:]_block_invoke
++[MOCoreUtils openDeeplinkWithURLString:]
++[MOCoreUtils openLinkInExternalBrowser:]
++[MOCoreUtils getURLFromString:]
++[MOCoreUtils isPercentageEncodedString:]
++[MOCoreUtils openDeeplink:]
++[MOCoreUtils openUniversalLink:]
+___33+[MOCoreUtils openUniversalLink:]_block_invoke
+___33+[MOCoreUtils openUniversalLink:]_block_invoke_2
+___copy_helper_block_e8_32s
++[MOCoreUtils openCustomUrlLink:]
+___33+[MOCoreUtils openCustomUrlLink:]_block_invoke
+___33+[MOCoreUtils openCustomUrlLink:]_block_invoke_2
++[MOCoreUtils openRichLandingLinkWithURLString:]
++[MOCoreUtils openRichLandingLink:]
++[MOCoreUtils MD5hashForString:]
++[MOCoreUtils getMoEngageSDKVersion]
++[MOCoreUtils appVersion]
++[MOCoreUtils bundleIdentifier]
++[MOCoreUtils getSDKUniqueIdForUser]
++[MOCoreUtils getCurrentDeviceType]
++[MOCoreUtils saveUniqueIdentifierForUser]
++[MOCoreUtils getIDFV]
++[MOCoreUtils getDeviceModel]
++[MOCoreUtils getDeviceName]
++[MOCoreUtils getDeviceSystemVersion]
++[MOCoreUtils getDeviceLocalizedModel]
++[MOCoreUtils saveDeviceToken:]
++[MOCoreUtils getDeviceToken]
++[MOCoreUtils getJSONStringFromDictionary:]
++[MOCoreUtils registerInstall]
++[MOCoreUtils installRegistered]
++[MOCoreUtils helveticaFont]
++[MOCoreUtils hexTokenForData:]
++[MOCoreUtils getColorFromHexValue:]
++[MOCoreUtils checkIfString:containsString:]
++[MOCoreUtils isAppDelegateProxyEnabled]
++[MOCoreUtils getAppDelegateProxyInfoPlistKey]
++[MOCoreUtils getDeviceUniqueID]
++[MOCoreUtils isSDKEnabled]
++[MOCoreUtils enableSDK]
++[MOCoreUtils disableSDK]
++[MOCoreUtils getSDKUserDefault]
+_sdkUserDefaults
+_OBJC_CLASSLIST_REFERENCES_$_.18
+_OBJC_CLASSLIST_REFERENCES_$_.23
+_OBJC_CLASSLIST_REFERENCES_$_.32
+_OBJC_CLASSLIST_REFERENCES_$_.46
+_OBJC_CLASSLIST_REFERENCES_$_.47
+_OBJC_CLASSLIST_REFERENCES_$_.56
+___block_descriptor_32_e23_v16?0"UIAlertAction"8l
+_OBJC_CLASSLIST_REFERENCES_$_.71
+_OBJC_CLASSLIST_REFERENCES_$_.81
+_OBJC_SELECTOR_REFERENCES_.87
+_OBJC_SELECTOR_REFERENCES_.89
+_OBJC_SELECTOR_REFERENCES_.91
+_OBJC_SELECTOR_REFERENCES_.93
+_OBJC_SELECTOR_REFERENCES_.97
+_OBJC_SELECTOR_REFERENCES_.99
+_OBJC_CLASSLIST_REFERENCES_$_.100
+_OBJC_CLASSLIST_REFERENCES_$_.103
+_OBJC_SELECTOR_REFERENCES_.105
+_OBJC_SELECTOR_REFERENCES_.107
+_OBJC_SELECTOR_REFERENCES_.111
+_OBJC_CLASSLIST_REFERENCES_$_.120
+___block_descriptor_32_e17_v16?0"NSArray"8l
+___block_literal_global.130
+___block_descriptor_56_e8_32s_e5_v8?0l
+___block_descriptor_32_e8_v12?0B8l
+___block_literal_global.139
+___block_descriptor_48_e8_32s_e5_v8?0l
+_OBJC_CLASSLIST_REFERENCES_$_.148
+_OBJC_CLASSLIST_REFERENCES_$_.153
+_OBJC_SELECTOR_REFERENCES_.155
+_OBJC_CLASSLIST_REFERENCES_$_.160
+_OBJC_SELECTOR_REFERENCES_.178
+_OBJC_CLASSLIST_REFERENCES_$_.179
+_OBJC_SELECTOR_REFERENCES_.181
+_OBJC_SELECTOR_REFERENCES_.183
+_OBJC_CLASSLIST_REFERENCES_$_.186
+_OBJC_SELECTOR_REFERENCES_.188
+_OBJC_SELECTOR_REFERENCES_.190
+_OBJC_SELECTOR_REFERENCES_.194
+_OBJC_CLASSLIST_REFERENCES_$_.195
+_OBJC_SELECTOR_REFERENCES_.197
+_OBJC_SELECTOR_REFERENCES_.199
+_OBJC_SELECTOR_REFERENCES_.201
+_OBJC_SELECTOR_REFERENCES_.203
+_getDeviceName.deviceNamesByCode
+_OBJC_CLASSLIST_REFERENCES_$_.376
+_OBJC_SELECTOR_REFERENCES_.378
+_OBJC_SELECTOR_REFERENCES_.382
+_OBJC_SELECTOR_REFERENCES_.386
+_OBJC_SELECTOR_REFERENCES_.388
+_OBJC_CLASSLIST_REFERENCES_$_.389
+_OBJC_SELECTOR_REFERENCES_.391
+_OBJC_SELECTOR_REFERENCES_.395
+_OBJC_SELECTOR_REFERENCES_.397
+_OBJC_SELECTOR_REFERENCES_.403
+_OBJC_CLASSLIST_REFERENCES_$_.406
+_OBJC_SELECTOR_REFERENCES_.408
+_OBJC_SELECTOR_REFERENCES_.410
+_OBJC_SELECTOR_REFERENCES_.412
+_OBJC_CLASSLIST_REFERENCES_$_.413
+_OBJC_SELECTOR_REFERENCES_.415
+_OBJC_SELECTOR_REFERENCES_.417
+_OBJC_SELECTOR_REFERENCES_.419
+_OBJC_SELECTOR_REFERENCES_.421
+_OBJC_CLASSLIST_REFERENCES_$_.422
+_OBJC_SELECTOR_REFERENCES_.424
+_OBJC_SELECTOR_REFERENCES_.426
+_OBJC_SELECTOR_REFERENCES_.428
+_OBJC_CLASSLIST_REFERENCES_$_.429
+_OBJC_SELECTOR_REFERENCES_.431
+__OBJC_$_CLASS_METHODS_MOCoreUtils
+__OBJC_METACLASS_RO_$_MOCoreUtils
+__OBJC_CLASS_RO_$_MOCoreUtils
+_OBJC_SELECTOR_REFERENCES_.477
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/MOCoreUtils.m
+MoEngageCore/MOUtils/MOCoreUtils.m
+UI_USER_INTERFACE_IDIOM
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
+__33+[MOCoreUtils openCustomUrlLink:]_block_invoke_2
+__33+[MOCoreUtils openCustomUrlLink:]_block_invoke
+__copy_helper_block_e8_32s
+__33+[MOCoreUtils openUniversalLink:]_block_invoke_2
+__33+[MOCoreUtils openUniversalLink:]_block_invoke
+__49+[MOCoreUtils showAlertViewWithMessage:andTitle:]_block_invoke
++[MoEngageCore sharedInstance]
+___30+[MoEngageCore sharedInstance]_block_invoke
+-[MoEngageCore init]
+-[MoEngageCore initializeWithConfig:withCompletionBlock:]
+___57-[MoEngageCore initializeWithConfig:withCompletionBlock:]_block_invoke
+___copy_helper_block_e8_32s40b
+-[MoEngageCore updateSDKConfig:withCompletionBlock:]
+___52-[MoEngageCore updateSDKConfig:withCompletionBlock:]_block_invoke
+-[MoEngageCore addObserverForApplicationLifeCycle]
+-[MoEngageCore applicationEnteredForeground:]
+-[MoEngageCore updateRemoteConfig]
+-[MoEngageCore userReset]
+-[MoEngageCore dismissRichLandingWebViewControllerWithAnimation:]
+-[MoEngageCore enableLogs:]
+-[MoEngageCore isDeviceUniqueIDPresentInKeyChain]
+-[MoEngageCore downloadAsset:withCompletionHandler:]
+___52-[MoEngageCore downloadAsset:withCompletionHandler:]_block_invoke
+-[MoEngageCore isSDKEnabled]
+-[MoEngageCore enableSDK]
+-[MoEngageCore disableSDK]
+-[MoEngageCore migrateSDKUserDefaultsInfo]
+-[MoEngageCore getDefaultSDKConfiguration]
+-[MoEngageCore setAppGroupID:]
+___30-[MoEngageCore setAppGroupID:]_block_invoke
+-[MoEngageCore setDataCenter:]
+___30-[MoEngageCore setDataCenter:]_block_invoke
+-[MoEngageCore appIdUpdateDelegate]
+-[MoEngageCore setAppIdUpdateDelegate:]
+-[MoEngageCore .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.7
+___block_descriptor_48_e8_32s40bs_e5_v8?0l
+_OBJC_CLASSLIST_REFERENCES_$_.21
+_OBJC_CLASSLIST_REFERENCES_$_.35
+_OBJC_CLASSLIST_REFERENCES_$_.50
+_OBJC_CLASSLIST_REFERENCES_$_.55
+_OBJC_CLASSLIST_REFERENCES_$_.80
+_OBJC_CLASSLIST_REFERENCES_$_.83
+_OBJC_SELECTOR_REFERENCES_.85
+___block_descriptor_40_e8_32bs_e46_v32?0"NSData"8"NSURLResponse"16"NSError"24l
+_OBJC_CLASSLIST_REFERENCES_$_.101
+_OBJC_SELECTOR_REFERENCES_.103
+_OBJC_SELECTOR_REFERENCES_.115
+___block_literal_global.120
+___block_literal_global.125
+__OBJC_$_CLASS_METHODS_MoEngageCore
+__OBJC_METACLASS_RO_$_MoEngageCore
+__OBJC_$_INSTANCE_METHODS_MoEngageCore
+_OBJC_IVAR_$_MoEngageCore._appIdUpdateDelegate
+__OBJC_$_INSTANCE_VARIABLES_MoEngageCore
+__OBJC_$_PROP_LIST_MoEngageCore
+__OBJC_CLASS_RO_$_MoEngageCore
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MoEngageCore.m
+MoEngageCore/MoEngageCore.m
+MoEngageCore/MoEngageCore.h
+__30-[MoEngageCore setDataCenter:]_block_invoke
+__30-[MoEngageCore setAppGroupID:]_block_invoke
+__52-[MoEngageCore downloadAsset:withCompletionHandler:]_block_invoke
+__52-[MoEngageCore updateSDKConfig:withCompletionBlock:]_block_invoke
+__copy_helper_block_e8_32s40b
+__57-[MoEngageCore initializeWithConfig:withCompletionBlock:]_block_invoke
+__30+[MoEngageCore sharedInstance]_block_invoke
++[MODateUtils getTimeDifferenceBetweenDate:andSecondDate:]
++[MODateUtils isDateTimeGreaterThanNow:]
++[MODateUtils isDate1:sameAsDate2:]
++[MODateUtils isDate1:laterToDate2:]
++[MODateUtils isDate1:earlierToDate2:]
++[MODateUtils dateFormatterForUsPosixLocaleWithFormat:forGMTTimeZone:]
++[MODateUtils dateFormatterForDeviceLocaleWithFormat:forGMTTimeZone:]
++[MODateUtils dateFormatterWithFormat:forGMTTimeZone:]
++[MODateUtils getStringForDate:withFormat:andForGMTTimeZone:]
++[MODateUtils getStringInDeviceLocaleForDate:withFormat:andForGMTTimeZone:]
++[MODateUtils getDateForString:withFormat:andForGMTTimeZone:]
++[MODateUtils getGMTtime]
++[MODateUtils getLocalTime]
++[MODateUtils getDateComponentsFromTimeString:]
++[MODateUtils isTime:inSlotWithStartTime:andEndTime:]
++[MODateUtils checkDate:inRangeFromDate:toDate:includeLast:]
++[MODateUtils dateByAddingDays:date:]
++[MODateUtils dateBySubtractingDays:date:]
+_OBJC_CLASSLIST_REFERENCES_$_.13
+_OBJC_SELECTOR_REFERENCES_.33
+_OBJC_CLASSLIST_REFERENCES_$_.45
+_OBJC_CLASSLIST_REFERENCES_$_.64
+__OBJC_$_CLASS_METHODS_MODateUtils
+__OBJC_METACLASS_RO_$_MODateUtils
+__OBJC_CLASS_RO_$_MODateUtils
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/DateUtils/MODateUtils.m
+MoEngageCore/MOUtils/DateUtils/MODateUtils.m
+-[MONetworkRequest initWithService:params:additionalHeaders:requestBody:andAdditionalPathComponent:]
+-[MONetworkRequest createURLWithPathComponent:]
+-[MONetworkRequest saveReportsRequestInfoWithComponents:]
+-[MONetworkRequest getRequestInstance]
+-[MONetworkRequest getAllRequestHeaders]
+-[MONetworkRequest shouldUseAppKeyToEncrypt]
+-[MONetworkRequest getRequestBodyData]
+-[MONetworkRequest executeRequestWithCompletionBlock:]
+___54-[MONetworkRequest executeRequestWithCompletionBlock:]_block_invoke
+-[MONetworkRequest executeRequestWithResponseCodeCompletionBlock:]
+-[MONetworkRequest service]
+-[MONetworkRequest setService:]
+-[MONetworkRequest requestURL]
+-[MONetworkRequest setRequestURL:]
+-[MONetworkRequest requestMethod]
+-[MONetworkRequest setRequestMethod:]
+-[MONetworkRequest requestHeaders]
+-[MONetworkRequest setRequestHeaders:]
+-[MONetworkRequest requestParams]
+-[MONetworkRequest setRequestParams:]
+-[MONetworkRequest requestBody]
+-[MONetworkRequest setRequestBody:]
+-[MONetworkRequest .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.52
+_OBJC_CLASSLIST_REFERENCES_$_.66
+_OBJC_CLASSLIST_REFERENCES_$_.77
+_OBJC_CLASSLIST_REFERENCES_$_.89
+_OBJC_CLASSLIST_REFERENCES_$_.92
+_OBJC_CLASSLIST_REFERENCES_$_.125
+_OBJC_SELECTOR_REFERENCES_.133
+_OBJC_SELECTOR_REFERENCES_.167
+_OBJC_SELECTOR_REFERENCES_.169
+_OBJC_SELECTOR_REFERENCES_.175
+_OBJC_SELECTOR_REFERENCES_.177
+_OBJC_CLASSLIST_REFERENCES_$_.180
+_OBJC_SELECTOR_REFERENCES_.182
+_OBJC_SELECTOR_REFERENCES_.184
+_OBJC_CLASSLIST_REFERENCES_$_.185
+_OBJC_SELECTOR_REFERENCES_.187
+_OBJC_SELECTOR_REFERENCES_.191
+_OBJC_CLASSLIST_REFERENCES_$_.192
+___block_descriptor_40_e8_32bs_e28_v28?0B8q12"NSDictionary"20l
+_OBJC_SELECTOR_REFERENCES_.195
+__OBJC_METACLASS_RO_$_MONetworkRequest
+__OBJC_$_INSTANCE_METHODS_MONetworkRequest
+_OBJC_IVAR_$_MONetworkRequest._service
+_OBJC_IVAR_$_MONetworkRequest._requestURL
+_OBJC_IVAR_$_MONetworkRequest._requestMethod
+_OBJC_IVAR_$_MONetworkRequest._requestHeaders
+_OBJC_IVAR_$_MONetworkRequest._requestParams
+_OBJC_IVAR_$_MONetworkRequest._requestBody
+__OBJC_$_INSTANCE_VARIABLES_MONetworkRequest
+__OBJC_$_PROP_LIST_MONetworkRequest
+__OBJC_CLASS_RO_$_MONetworkRequest
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MONetwork/MONetworkRequest.m
+MoEngageCore/MONetwork/MONetworkRequest.m
+MoEngageCore/MONetwork/MONetworkRequest.h
+__54-[MONetworkRequest executeRequestWithCompletionBlock:]_block_invoke
++[MOLogger minLogDuration]
++[MOLogger maxLogDuration]
++[MOLogger sharedInstance]
+___26+[MOLogger sharedInstance]_block_invoke
+-[MOLogger init]
+-[MOLogger initWithTag:]
+-[MOLogger dealloc]
+-[MOLogger logWithType:andFormatArgs:]
+-[MOLogger logErrorWithFormatArgs:andStackTrace:]
+-[MOLogger enableLogs:]
+-[MOLogger clearAllLogs]
+-[MOLogger saveLogsToFile:]
+-[MOLogger setLogFilesDuration:]
+-[MOLogger consoleLogWithMessage:]
+-[MOLogger logWithType:formatArgs:andStackTrace:]
+-[MOLogger getMessageForLogType:andFormatArgs:]
+-[MOLogger createLog:]
+-[MOLogger logToCrashLakeWithType:logMessage:formatArgs:andStackTrace:]
+-[MOLogger pushLogAndClearList]
+-[MOLogger pushLogsToServer:]
+___29-[MOLogger pushLogsToServer:]_block_invoke
+___29-[MOLogger pushLogsToServer:]_block_invoke_2
+-[MOLogger addLogMessageToFileData:]
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___36-[MOLogger addLogMessageToFileData:]_block_invoke
+___copy_helper_block_e8_32r40w
+___destroy_helper_block_e8_32r40w
+-[MOLogger applicationEnteredBackground:]
+-[MOLogger logFileManager]
+-[MOLogger setLogFileManager:]
+-[MOLogger logList]
+-[MOLogger setLogList:]
+-[MOLogger logsBatchCountThreshold]
+-[MOLogger setLogsBatchCountThreshold:]
+-[MOLogger tag]
+-[MOLogger setTag:]
+-[MOLogger shouldLogInDebug]
+-[MOLogger setShouldLogInDebug:]
+-[MOLogger .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.72
+_OBJC_CLASSLIST_REFERENCES_$_.108
+_OBJC_CLASSLIST_REFERENCES_$_.127
+_OBJC_CLASSLIST_REFERENCES_$_.136
+___block_descriptor_32_e25_v20?0B8"NSDictionary"12l
+___block_literal_global.140
+___block_descriptor_40_e8_32s_e5_v8?0l
+___block_descriptor_48_e8_32r40w_e5_v8?0l
+__OBJC_$_CLASS_METHODS_MOLogger
+__OBJC_$_CLASS_PROP_LIST_MOLogger
+__OBJC_METACLASS_RO_$_MOLogger
+__OBJC_$_INSTANCE_METHODS_MOLogger
+_OBJC_IVAR_$_MOLogger._shouldLogInDebug
+_OBJC_IVAR_$_MOLogger._logFileManager
+_OBJC_IVAR_$_MOLogger._logList
+_OBJC_IVAR_$_MOLogger._logsBatchCountThreshold
+_OBJC_IVAR_$_MOLogger._tag
+__OBJC_$_INSTANCE_VARIABLES_MOLogger
+__OBJC_$_PROP_LIST_MOLogger
+__OBJC_CLASS_RO_$_MOLogger
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/MOLogger/MOLogger.m
+MoEngageCore/MOUtils/MOLogger/MOLogger.m
+__destroy_helper_block_e8_32r40w
+__copy_helper_block_e8_32r40w
+__36-[MOLogger addLogMessageToFileData:]_block_invoke
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
+__29-[MOLogger pushLogsToServer:]_block_invoke_2
+__29-[MOLogger pushLogsToServer:]_block_invoke
+__26+[MOLogger sharedInstance]_block_invoke
++[MOKeychain getKeychainQuery:]
++[MOKeychain load:]
++[MOKeychain remove:]
++[MOKeychain save:data:]
++[MOKeychain keychainItem:]
++[MOKeychain createDeviceUniqueIDForService:]
+___45+[MOKeychain createDeviceUniqueIDForService:]_block_invoke
+___copy_helper_block_e8_40s48r
+___destroy_helper_block_e8_40s48r
+___block_descriptor_56_e8_40s48r_e5_v8?0l
+__OBJC_$_CLASS_METHODS_MOKeychain
+__OBJC_METACLASS_RO_$_MOKeychain
+__OBJC_CLASS_RO_$_MOKeychain
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/KeychainServices/MOKeychain.m
+__destroy_helper_block_e8_40s48r
+__copy_helper_block_e8_40s48r
+__45+[MOKeychain createDeviceUniqueIDForService:]_block_invoke
+MoEngageCore/MOUtils/KeychainServices/MOKeychain.m
++[MOWebViewHandler sharedInstance]
+___34+[MOWebViewHandler sharedInstance]_block_invoke
+-[MOWebViewHandler openWebViewWithUrl:]
+-[MOWebViewHandler presentSafariVCWithURL:]
+___43-[MOWebViewHandler presentSafariVCWithURL:]_block_invoke
+-[MOWebViewHandler dismissRichLandingWebViewControllerWithAnimation:]
+-[MOWebViewHandler dismissSafariControllerWithAnimation:]
+___57-[MOWebViewHandler dismissSafariControllerWithAnimation:]_block_invoke
+-[MOWebViewHandler safariViewControllerDidFinish:]
+-[MOWebViewHandler sfVC]
+-[MOWebViewHandler setSfVC:]
+-[MOWebViewHandler .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.6
+_OBJC_CLASSLIST_REFERENCES_$_.24
+___block_descriptor_41_e8_32s_e5_v8?0l
+__OBJC_$_CLASS_METHODS_MOWebViewHandler
+__OBJC_$_PROTOCOL_REFS_SFSafariViewControllerDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_SFSafariViewControllerDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_SFSafariViewControllerDelegate
+__OBJC_PROTOCOL_$_SFSafariViewControllerDelegate
+__OBJC_LABEL_PROTOCOL_$_SFSafariViewControllerDelegate
+__OBJC_CLASS_PROTOCOLS_$_MOWebViewHandler
+__OBJC_METACLASS_RO_$_MOWebViewHandler
+__OBJC_$_INSTANCE_METHODS_MOWebViewHandler
+_OBJC_IVAR_$_MOWebViewHandler._sfVC
+__OBJC_$_INSTANCE_VARIABLES_MOWebViewHandler
+__OBJC_$_PROP_LIST_MOWebViewHandler
+__OBJC_CLASS_RO_$_MOWebViewHandler
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/MORichLanding/MOWebViewHandler.m
+MoEngageCore/MOUtils/MORichLanding/MOWebViewHandler.m
+__57-[MOWebViewHandler dismissSafariControllerWithAnimation:]_block_invoke
+__43-[MOWebViewHandler presentSafariVCWithURL:]_block_invoke
+__34+[MOWebViewHandler sharedInstance]_block_invoke
+-[MOModelObject initWithDictionary:]
+-[MOModelObject dictionaryWithProperties]
+__OBJC_METACLASS_RO_$_MOModelObject
+__OBJC_$_INSTANCE_METHODS_MOModelObject
+__OBJC_CLASS_RO_$_MOModelObject
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/MOModelObject/MOModelObject.m
+MoEngageCore/MOUtils/MOModelObject/MOModelObject.m
+-[MOLogger(Utility) formatForType:withTag:]
+-[MOLogger(Utility) labelForType:]
+-[MOLogger(Utility) getLogLevelFromIntegerValue:]
+-[MOLogger(Utility) getLogLevelFromStringValue:]
+-[MOLogger(Utility) stringRepresentationForLogType:]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_MOLogger_$_Utility
+__OBJC_$_CATEGORY_MOLogger_$_Utility
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/MOLogger/MOLogger+Utility.m
+MoEngageCore/MOUtils/MOLogger/MOLogger+Utility.m
++[MOReachability reachabilityWithHostName:]
++[MOReachability reachabilityWithHostname:]
++[MOReachability reachabilityWithAddress:]
++[MOReachability reachabilityForInternetConnection]
++[MOReachability reachabilityForLocalWiFi]
++[MOReachability reachabilityWithURL:]
++[MOReachability isIpAddress:]
+-[MOReachability initWithReachabilityRef:]
+-[MOReachability dealloc]
+-[MOReachability startNotifier]
+_TMReachabilityCallback
+-[MOReachability stopNotifier]
+-[MOReachability isReachableWithFlags:]
+-[MOReachability isReachable]
+-[MOReachability isReachableViaWWAN]
+-[MOReachability isReachableViaWiFi]
+-[MOReachability isConnectionRequired]
+-[MOReachability connectionRequired]
+-[MOReachability isConnectionOnDemand]
+-[MOReachability isInterventionRequired]
+-[MOReachability currentReachabilityStatus]
+-[MOReachability reachabilityFlags]
+-[MOReachability currentReachabilityString]
+-[MOReachability currentReachabilityFlags]
+-[MOReachability reachabilityChanged:]
+___38-[MOReachability reachabilityChanged:]_block_invoke
+-[MOReachability description]
+-[MOReachability reachableBlock]
+-[MOReachability setReachableBlock:]
+-[MOReachability unreachableBlock]
+-[MOReachability setUnreachableBlock:]
+-[MOReachability reachabilityBlock]
+-[MOReachability setReachabilityBlock:]
+-[MOReachability reachableOnWWAN]
+-[MOReachability setReachableOnWWAN:]
+-[MOReachability reachabilityRef]
+-[MOReachability setReachabilityRef:]
+-[MOReachability reachabilitySerialQueue]
+-[MOReachability setReachabilitySerialQueue:]
+-[MOReachability reachabilityObject]
+-[MOReachability setReachabilityObject:]
+-[MOReachability .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.90
+__OBJC_$_CLASS_METHODS_MOReachability
+__OBJC_METACLASS_RO_$_MOReachability
+__OBJC_$_INSTANCE_METHODS_MOReachability
+_OBJC_IVAR_$_MOReachability._reachableOnWWAN
+_OBJC_IVAR_$_MOReachability._reachableBlock
+_OBJC_IVAR_$_MOReachability._unreachableBlock
+_OBJC_IVAR_$_MOReachability._reachabilityBlock
+_OBJC_IVAR_$_MOReachability._reachabilityRef
+_OBJC_IVAR_$_MOReachability._reachabilitySerialQueue
+_OBJC_IVAR_$_MOReachability._reachabilityObject
+__OBJC_$_INSTANCE_VARIABLES_MOReachability
+__OBJC_$_PROP_LIST_MOReachability
+__OBJC_CLASS_RO_$_MOReachability
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MONetwork/Utils/MOReachability.m
+MoEngageCore/MONetwork/Utils/MOReachability.m
+MoEngageCore/MONetwork/Utils/MOReachability.h
+__38-[MOReachability reachabilityChanged:]_block_invoke
+reachabilityFlags
+TMReachabilityCallback
+_OSSwapInt16
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/libkern/arm/OSByteOrder.h
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/Constants/MOCoreConstants.m
+-[NSMutableDictionary(MOExtension) setObjectNilHandled:forKey:]
+-[NSMutableDictionary(MOExtension) removeValidObjectForKey:]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSMutableDictionary_$_MOExtension
+__OBJC_$_CATEGORY_NSMutableDictionary_$_MOExtension
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/Categories/NSMutableDictionary+MOExtension.m
+MoEngageCore/MOUtils/Categories/NSMutableDictionary+MOExtension.m
+-[NSDictionary(MOExtension) validObjectForKey:]
+-[NSDictionary(MOExtension) validObjectForKeyPath:]
+-[NSDictionary(MOExtension) containsKey:]
+-[NSDictionary(MOExtension) getIntegerForKey:]
+-[NSDictionary(MOExtension) getStringForKey:]
+-[NSDictionary(MOExtension) getDateForKey:dateFormat:]
+-[NSDictionary(MOExtension) getBooleanForKey:]
+-[NSDictionary(MOExtension) stringForkey:]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSDictionary_$_MOExtension
+__OBJC_$_CATEGORY_NSDictionary_$_MOExtension
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/Categories/NSDictionary+MOExtension.m
+MoEngageCore/MOUtils/Categories/NSDictionary+MOExtension.m
++[MOEncryptionManager encryptData:withAppKey:]
++[MOEncryptionManager decryptData:withAppKey:]
++[MOEncryptionManager getIVDataForEncryption]
++[MOEncryptionManager getIVDataForDecryptionWithData:]
++[MOEncryptionManager getEncryptionKey:]
+_OBJC_CLASSLIST_REFERENCES_$_.31
+_OBJC_CLASSLIST_REFERENCES_$_.36
+__OBJC_$_CLASS_METHODS_MOEncryptionManager
+__OBJC_METACLASS_RO_$_MOEncryptionManager
+__OBJC_CLASS_RO_$_MOEncryptionManager
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/Encryption/MOEncryptionManager.m
+MoEngageCore/MOUtils/Encryption/MOEncryptionManager.m
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
++[MOConfigUtils getFilePathForOlderRemoteConfig]
++[MOConfigUtils getFilePathForRemoteConfig]
++[MOConfigUtils getFilePathForSDKConfig]
++[MOConfigUtils getConfigFolderPath]
++[MOConfigUtils persistRemoteConfig:]
++[MOConfigUtils persistSDKConfig:]
++[MOConfigUtils getDefaultValForStatusProperty:]
++[MOConfigUtils getDefaultValForDurationProperty:]
++[MOConfigUtils getDefaultValForArrayProperty:]
++[MOConfigUtils getDefaultValForMiscProperty:]
++[MOConfigUtils getDefaultValForGDPRProperty:]
++[MOConfigUtils getDataCenterFromInt:]
++[MOConfigUtils getIntegrationTypeFromInt:]
++[MOConfigUtils deleteLegacyConfigFile]
+_OBJC_CLASSLIST_REFERENCES_$_.43
+__OBJC_$_CLASS_METHODS_MOConfigUtils
+__OBJC_METACLASS_RO_$_MOConfigUtils
+__OBJC_CLASS_RO_$_MOConfigUtils
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOConfig/Utils/MOConfigUtils.m
+MoEngageCore/MOConfig/Utils/MOConfigUtils.m
+-[MOSDKConfig initWithAppID:]
+-[MOSDKConfig init]
+-[MOSDKConfig initWithCoder:]
+-[MOSDKConfig encodeWithCoder:]
+-[MOSDKConfig updateValuesFromLegacyConfig:]
+-[MOSDKConfig moeAppID]
+-[MOSDKConfig setMoeAppID:]
+-[MOSDKConfig moeDataCenter]
+-[MOSDKConfig setMoeDataCenter:]
+-[MOSDKConfig appGroupID]
+-[MOSDKConfig setAppGroupID:]
+-[MOSDKConfig pluginIntegrationType]
+-[MOSDKConfig setPluginIntegrationType:]
+-[MOSDKConfig pluginIntegrationVersion]
+-[MOSDKConfig setPluginIntegrationVersion:]
+-[MOSDKConfig analyticsPeriodicFlushDuration]
+-[MOSDKConfig setAnalyticsPeriodicFlushDuration:]
+-[MOSDKConfig analyticsDisablePeriodicFlush]
+-[MOSDKConfig setAnalyticsDisablePeriodicFlush:]
+-[MOSDKConfig encryptNetworkRequests]
+-[MOSDKConfig setEncryptNetworkRequests:]
+-[MOSDKConfig optOutDataTracking]
+-[MOSDKConfig setOptOutDataTracking:]
+-[MOSDKConfig optOutPushNotification]
+-[MOSDKConfig setOptOutPushNotification:]
+-[MOSDKConfig optOutInAppCampaign]
+-[MOSDKConfig setOptOutInAppCampaign:]
+-[MOSDKConfig optOutIDFATracking]
+-[MOSDKConfig setOptOutIDFATracking:]
+-[MOSDKConfig optOutIDFVTracking]
+-[MOSDKConfig setOptOutIDFVTracking:]
+-[MOSDKConfig .cxx_destruct]
+__OBJC_CLASS_PROTOCOLS_$_MOSDKConfig
+__OBJC_METACLASS_RO_$_MOSDKConfig
+__OBJC_$_INSTANCE_METHODS_MOSDKConfig
+_OBJC_IVAR_$_MOSDKConfig._analyticsDisablePeriodicFlush
+_OBJC_IVAR_$_MOSDKConfig._encryptNetworkRequests
+_OBJC_IVAR_$_MOSDKConfig._optOutDataTracking
+_OBJC_IVAR_$_MOSDKConfig._optOutPushNotification
+_OBJC_IVAR_$_MOSDKConfig._optOutInAppCampaign
+_OBJC_IVAR_$_MOSDKConfig._optOutIDFATracking
+_OBJC_IVAR_$_MOSDKConfig._optOutIDFVTracking
+_OBJC_IVAR_$_MOSDKConfig._moeDataCenter
+_OBJC_IVAR_$_MOSDKConfig._pluginIntegrationType
+_OBJC_IVAR_$_MOSDKConfig._moeAppID
+_OBJC_IVAR_$_MOSDKConfig._appGroupID
+_OBJC_IVAR_$_MOSDKConfig._pluginIntegrationVersion
+_OBJC_IVAR_$_MOSDKConfig._analyticsPeriodicFlushDuration
+__OBJC_$_INSTANCE_VARIABLES_MOSDKConfig
+__OBJC_$_PROP_LIST_MOSDKConfig
+__OBJC_CLASS_RO_$_MOSDKConfig
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOConfig/ModelObjects/MOSDKConfig.m
+MoEngageCore/MOConfig/ModelObjects/MOSDKConfig.m
+MoEngageCore/MOConfig/ModelObjects/MOSDKConfig.h
+-[MOLoggerFileManager init]
+-[MOLoggerFileManager dealloc]
+-[MOLoggerFileManager saveLogMessage:]
+-[MOLoggerFileManager persistLogsToFile]
+-[MOLoggerFileManager getLogsFilePath]
+-[MOLoggerFileManager clearLogs]
+-[MOLoggerFileManager getDirectoryPath]
+-[MOLoggerFileManager getFolderName]
+-[MOLoggerFileManager getLogsFolderPath]
+-[MOLoggerFileManager getCurrentTimeForLogs]
+-[MOLoggerFileManager removeOldLogFiles]
+___40-[MOLoggerFileManager removeOldLogFiles]_block_invoke
+___copy_helper_block_e8_32s40s48s
+-[MOLoggerFileManager getLogFilesDuration]
+-[MOLoggerFileManager applicationEnteredForeground:]
+-[MOLoggerFileManager applicationEnteredBackground:]
+-[MOLoggerFileManager shouldSaveLogsToFile]
+-[MOLoggerFileManager setShouldSaveLogsToFile:]
+-[MOLoggerFileManager logFileDuration]
+-[MOLoggerFileManager setLogFileDuration:]
+-[MOLoggerFileManager logsFileData]
+-[MOLoggerFileManager setLogsFileData:]
+-[MOLoggerFileManager sessionStartTiming]
+-[MOLoggerFileManager setSessionStartTiming:]
+-[MOLoggerFileManager .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.33
+_OBJC_CLASSLIST_REFERENCES_$_.65
+_OBJC_CLASSLIST_REFERENCES_$_.94
+___block_descriptor_56_e8_32s40s48s_e15_v32?08Q16^B24l
+__OBJC_METACLASS_RO_$_MOLoggerFileManager
+__OBJC_$_INSTANCE_METHODS_MOLoggerFileManager
+_OBJC_IVAR_$_MOLoggerFileManager._shouldSaveLogsToFile
+_OBJC_IVAR_$_MOLoggerFileManager._logFileDuration
+_OBJC_IVAR_$_MOLoggerFileManager._logsFileData
+_OBJC_IVAR_$_MOLoggerFileManager._sessionStartTiming
+__OBJC_$_INSTANCE_VARIABLES_MOLoggerFileManager
+__OBJC_$_PROP_LIST_MOLoggerFileManager
+__OBJC_CLASS_RO_$_MOLoggerFileManager
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MoEngageCore/MOUtils/MOLogger/MOLoggerFileManager.m
+MoEngageCore/MOUtils/MOLogger/MOLoggerFileManager.m
+MoEngageCore/MOUtils/MOLogger/MOLoggerFileManager.h
+__copy_helper_block_e8_32s40s48s
+__40-[MOLoggerFileManager removeOldLogFiles]_block_invoke

@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
 // swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MOCards
 import Foundation
 import ImageIO
@@ -8,6 +8,7 @@ import MOAnalytics
 import MoEngageCore
 import Swift
 import UIKit
+import _Concurrency
 @objc public protocol MOCardsDelegate {
   @objc optional func cardsSyncedSuccessfully()
   @objc optional func cardsViewControllerDismissed()
@@ -21,7 +22,7 @@ import UIKit
   @objc public func presentCardsViewController(withUIConfiguration config: MOCards.MOCardsUIConfiguration? = nil)
   @objc public func pushCardsViewController(toNavigationController navController: UIKit.UINavigationController, withUIConfiguration config: MOCards.MOCardsUIConfiguration? = nil)
   @objc public func getCardsViewController(withUIConfiguration config: MOCards.MOCardsUIConfiguration? = nil) -> MOCards.MOCardsListViewController?
-  @objc public func syncCards(withCompletion completionBlock: ((Swift.Bool) -> ())? = nil)
+  @objc public func syncCards(withCompletion completionBlock: ((_ success: Swift.Bool) -> ())? = nil)
   public func getAllCardStatusDict() -> [Foundation.NSDictionary]
   @objc public func getNewCardsCount() -> Swift.Int
   @objc public func getUnclickedCardsCount() -> Swift.Int
@@ -29,34 +30,34 @@ import UIKit
   @objc deinit
 }
 public typealias GifLevelOfIntegrity = Swift.Float
-extension Float {
+extension Swift.Float {
   public static let highestNoFrameSkipping: MOCards.GifLevelOfIntegrity
   public static let `default`: MOCards.GifLevelOfIntegrity
   public static let lowForManyGifs: MOCards.GifLevelOfIntegrity
   public static let lowForTooManyGifs: MOCards.GifLevelOfIntegrity
   public static let superLowForSlideShow: MOCards.GifLevelOfIntegrity
 }
-@objc @_inheritsConvenienceInitializers public class MOCardsListViewController : UIKit.UIViewController, UIKit.UIGestureRecognizerDelegate {
-  public func reloadInbox()
-  @objc override dynamic public func viewDidLoad()
-  @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @objc override dynamic public func viewDidLayoutSubviews()
-  @objc override dynamic public func willTransition(to newCollection: UIKit.UITraitCollection, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
-  @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MOCardsListViewController : UIKit.UIViewController, UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) public func reloadInbox()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func willTransition(to newCollection: UIKit.UITraitCollection, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-extension MOCardsListViewController : UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
-  @objc dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
-  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
-  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
-  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, estimatedHeightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
-  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
-  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
-  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didHighlightRowAt indexPath: Foundation.IndexPath)
-  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didUnhighlightRowAt indexPath: Foundation.IndexPath)
-  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+extension MOCards.MOCardsListViewController : UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, estimatedHeightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didHighlightRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didUnhighlightRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
 }
 @_inheritsConvenienceInitializers @objc public class MOCardsNavigationBarStyle : ObjectiveC.NSObject {
   public var navigationBarColor: UIKit.UIColor?
@@ -120,19 +121,19 @@ extension MOCardsListViewController : UIKit.UITableViewDelegate, UIKit.UITableVi
   @objc optional func gifURLDidFinish(sender: UIKit.UIImageView)
   @objc optional func gifURLDidFail(sender: UIKit.UIImageView, url: Foundation.URL, error: Swift.Error?)
 }
-extension UIImageView {
-  public func startAnimatingGif()
-  public func stopAnimatingGif()
-  public func isAnimatingGif() -> Swift.Bool
-  public func showFrameForIndexDelta(_ delta: Swift.Int)
-  public func showFrameAtIndex(_ index: Swift.Int)
-  public func updateCache()
-  public func updateCurrentImage()
-  public func currentFrameIndex() -> Swift.Int
-  public func frameAtIndex(index: Swift.Int) -> UIKit.UIImage
-  public func isDiscarded(_ imageView: UIKit.UIView?) -> Swift.Bool
-  public func isDisplayedInScreen(_ imageView: UIKit.UIView?) -> Swift.Bool
-  public func clear()
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) public func startAnimatingGif()
+  @_Concurrency.MainActor(unsafe) public func stopAnimatingGif()
+  @_Concurrency.MainActor(unsafe) public func isAnimatingGif() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) public func showFrameForIndexDelta(_ delta: Swift.Int)
+  @_Concurrency.MainActor(unsafe) public func showFrameAtIndex(_ index: Swift.Int)
+  @_Concurrency.MainActor(unsafe) public func updateCache()
+  @_Concurrency.MainActor(unsafe) public func updateCurrentImage()
+  @_Concurrency.MainActor(unsafe) public func currentFrameIndex() -> Swift.Int
+  @_Concurrency.MainActor(unsafe) public func frameAtIndex(index: Swift.Int) -> UIKit.UIImage
+  @_Concurrency.MainActor(unsafe) public func isDiscarded(_ imageView: UIKit.UIView?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) public func isDisplayedInScreen(_ imageView: UIKit.UIView?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) public func clear()
 }
 @objc @_inheritsConvenienceInitializers public class MOCard : ObjectiveC.NSObject {
   public var cardID: Swift.String
