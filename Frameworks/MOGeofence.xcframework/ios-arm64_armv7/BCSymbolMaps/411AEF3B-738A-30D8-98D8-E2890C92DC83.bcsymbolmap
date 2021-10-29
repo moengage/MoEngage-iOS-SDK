@@ -2,8 +2,8 @@ BCSymbolMap Version: 2.0
 Apple clang version 13.0.0 (clang-1300.0.29.3)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk
 iPhoneOS15.0.sdk
-/Users/Chengappa/Library/Developer/Xcode/DerivedData/MoEngage-drttrtgpnnpnzugsokmbfvkbgdni/Build/Intermediates.noindex/ArchiveIntermediates/MOGeofence/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MOGeofence.build/DerivedSources/MOGeofence_vers.c
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage
+/Users/rakshitha/Library/Developer/Xcode/DerivedData/MoEngage-cmmkomvfnirhvydwlmcpvafliotx/Build/Intermediates.noindex/ArchiveIntermediates/MOGeofence/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MOGeofence.build/DerivedSources/MOGeofence_vers.c
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage
 +[MOGeofenceHandler sharedInstance]
 ___35+[MOGeofenceHandler sharedInstance]_block_invoke
 -[MOGeofenceHandler initGeofenceModule]
@@ -196,7 +196,7 @@ _OBJC_IVAR_$_MOGeofenceHandler._lastUpdatedTime
 __OBJC_$_INSTANCE_VARIABLES_MOGeofenceHandler
 __OBJC_$_PROP_LIST_MOGeofenceHandler
 __OBJC_CLASS_RO_$_MOGeofenceHandler
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOGeofence/MOGeofenceHandler.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOGeofence/MOGeofenceHandler.m
 MOGeofence/MOGeofenceHandler.m
 MOGeofence/MOGeofenceHandler.h
 __71-[MOGeofenceHandler geofenceHitWithGeoID:campaignID:andTransitionType:]_block_invoke
@@ -250,6 +250,6 @@ _OBJC_IVAR_$_MOGeofenceModel._longitude
 __OBJC_$_INSTANCE_VARIABLES_MOGeofenceModel
 __OBJC_$_PROP_LIST_MOGeofenceModel
 __OBJC_CLASS_RO_$_MOGeofenceModel
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOGeofence/MOGeofenceModel.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOGeofence/MOGeofenceModel.m
 MOGeofence/MOGeofenceModel.h
 MOGeofence/MOGeofenceModel.m

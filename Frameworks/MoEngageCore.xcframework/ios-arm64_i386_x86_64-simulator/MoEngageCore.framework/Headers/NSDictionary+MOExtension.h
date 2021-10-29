@@ -8,18 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NSDictionary (MOExtension)
 
-- (id)validObjectForKey: (id)key;
+- (id _Nullable)validObjectForKey: (id _Nullable)key;
 
-- (id)validObjectForKeyPath:(id)keyPath;
+- (id _Nullable)validObjectForKeyPath:(id _Nullable)keyPath;
 
--(NSInteger)getIntegerForKey:(NSString *)key;
+-(NSInteger)getIntegerForKey:(NSString *_Nullable)key;
 
--(NSString *)getStringForKey:(NSString *)key;
+-(NSString *_Nullable)getStringForKey:(NSString *_Nullable)key;
 
--(BOOL)getBooleanForKey:(NSString *)key;
+-(BOOL)getBooleanForKey:(NSString *_Nullable)key;
 
--(NSDate * __nullable)getDateForKey:(NSString *)key dateFormat:(NSString *)format;
+-(NSDate * __nullable)getDateForKey:(NSString *_Nullable)key dateFormat:(NSString *_Nullable)format;
 
+NS_ASSUME_NONNULL_END
 @end

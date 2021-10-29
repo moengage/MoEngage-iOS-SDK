@@ -3,6 +3,10 @@
 
 ## Changelog:
 
+### Version 7.1.2  *(29th October, 2021)*
+-------------------------------------------
+* Handled warning in MoEngageCore due to missing nullability type specifier
+
 ### Version 7.1.1  *(23rd September, 2021)*
 -------------------------------------------
 * Updated MORichNotification Dependency to `~>5.2.0`
