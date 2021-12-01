@@ -3,6 +3,10 @@
 
 ## Changelog:
 
+### Version 7.1.3  *(1st December, 2021)*
+-------------------------------------------
+* Changed the implementation to determine SDK version, as in few instances App Version was getting tracked as SDK version.
+
 ### Version 7.1.2  *(29th October, 2021)*
 -------------------------------------------
 * Handled warning in MoEngageCore due to missing nullability type specifier

@@ -1,5 +1,5 @@
 PODS:
-  - MoEngage-iOS-SDK (7.1.2):
+  - MoEngage-iOS-SDK (7.1.3):
     - MORichNotification (< 5.3.0, >= 5.2.0)
   - MoEngageCards (2.1.0):
     - MoEngage-iOS-SDK (< 7.2.0, >= 7.1.0)
@@ -29,7 +29,7 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  MoEngage-iOS-SDK: 7fb1978324f395fe105d4c9ccbdb455b843fea99
+  MoEngage-iOS-SDK: f2bfc49d294b339efebf4bfd278ed604fc22015b
   MoEngageCards: af535c289c21e29f24894b2db7798ebc1561be97
   MoEngageInApp: 0713efdeb1123bac134db942f5588745c8c78c0c
   MOGeofence: 63ac8906b7cdba22bc60747cbc85a2db89e161af
@@ -37,4 +37,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 1804d8d67696547c76ddfa8edaaef55f8d95169f
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.0

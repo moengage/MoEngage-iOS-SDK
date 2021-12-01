@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		nHThpVh+Y5i/P9kglxwLrYTpV6A=
+		m9wN8ka4QeqOYW63PmGuay/Mkck=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>MOCardsStoryboard.storyboardc/5oj-Nb-bwU-view-ASK-kv-Zce.nib/objects-11.0+.nib</key>
 		<data>
-		Xgavz2aPZPNJDE4G8ln3zDV3Kp4=
+		28fY8Q0lX95Lx1luqj9R/C3fVYQ=
 		</data>
 		<key>MOCardsStoryboard.storyboardc/5oj-Nb-bwU-view-ASK-kv-Zce.nib/runtime.nib</key>
 		<data>
-		8+uIiA0b5fQJwdvxoDxAI3AwG1M=
+		QuaQa5BrNUHJ+S5LwwQ27HshQwA=
 		</data>
 		<key>MOCardsStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/MOCards.swiftmodule/arm.swiftmodule</key>
 		<data>
-		Xdz7d0NEnTyvBMSGb1r3GdM2JHo=
+		G+8obwze1IiQNmlaE1dCkYniF4U=
 		</data>
 		<key>Modules/MOCards.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Modules/MOCards.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		C18IE4Guc+SL8xkeDTZbrShJbGs=
+		S2eWmN0RexqOysL0T2sKl7GsfqY=
 		</data>
 		<key>Modules/MOCards.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Modules/MOCards.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		C18IE4Guc+SL8xkeDTZbrShJbGs=
+		S2eWmN0RexqOysL0T2sKl7GsfqY=
 		</data>
 		<key>Modules/MOCards.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Modules/MOCards.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		Xdz7d0NEnTyvBMSGb1r3GdM2JHo=
+		G+8obwze1IiQNmlaE1dCkYniF4U=
 		</data>
 		<key>Modules/MOCards.swiftmodule/armv7.swiftdoc</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Modules/MOCards.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		Xdz7d0NEnTyvBMSGb1r3GdM2JHo=
+		G+8obwze1IiQNmlaE1dCkYniF4U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -197,22 +197,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xgavz2aPZPNJDE4G8ln3zDV3Kp4=
+			28fY8Q0lX95Lx1luqj9R/C3fVYQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			bwBdq/8EHHsOShK+KVMhmfn/3AgnZKc7oIfL+YIhkT8=
+			m2kyzZVLYBUK+j0wvEHXelDtZtweUVIoDqsQMt0w+d0=
 			</data>
 		</dict>
 		<key>MOCardsStoryboard.storyboardc/5oj-Nb-bwU-view-ASK-kv-Zce.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8+uIiA0b5fQJwdvxoDxAI3AwG1M=
+			QuaQa5BrNUHJ+S5LwwQ27HshQwA=
 			</data>
 			<key>hash2</key>
 			<data>
-			RSD0jQ1SKLKHTiOp1f4/2dQWUIyFqjcycEigJ9A+Q9U=
+			MVxuwF50GeeMGOYrRfJxCXYZpg4DCGaS3k1rXR7Tt/I=
 			</data>
 		</dict>
 		<key>MOCardsStoryboard.storyboardc/Info.plist</key>
@@ -296,11 +296,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xdz7d0NEnTyvBMSGb1r3GdM2JHo=
+			G+8obwze1IiQNmlaE1dCkYniF4U=
 			</data>
 			<key>hash2</key>
 			<data>
-			TYtgBxmyOU5BuiBXI7yvtzESnt51ryoUaVvelDVdS00=
+			1LqMh+h4Tlmo/l+suO9q8twiWeOFB8lw7GGAtnNI0Ls=
 			</data>
 		</dict>
 		<key>Modules/MOCards.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -329,11 +329,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C18IE4Guc+SL8xkeDTZbrShJbGs=
+			S2eWmN0RexqOysL0T2sKl7GsfqY=
 			</data>
 			<key>hash2</key>
 			<data>
-			eHhccYABe8gRgIya6lT/6XW9MtBrqxZeShnvst47f8Q=
+			+eMrwcnmoFujzeKCfPwoBkwfUhc4vkEk2JA8z3Oas1k=
 			</data>
 		</dict>
 		<key>Modules/MOCards.swiftmodule/arm64.swiftdoc</key>
@@ -362,11 +362,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C18IE4Guc+SL8xkeDTZbrShJbGs=
+			S2eWmN0RexqOysL0T2sKl7GsfqY=
 			</data>
 			<key>hash2</key>
 			<data>
-			eHhccYABe8gRgIya6lT/6XW9MtBrqxZeShnvst47f8Q=
+			+eMrwcnmoFujzeKCfPwoBkwfUhc4vkEk2JA8z3Oas1k=
 			</data>
 		</dict>
 		<key>Modules/MOCards.swiftmodule/armv7-apple-ios.swiftdoc</key>
@@ -395,11 +395,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xdz7d0NEnTyvBMSGb1r3GdM2JHo=
+			G+8obwze1IiQNmlaE1dCkYniF4U=
 			</data>
 			<key>hash2</key>
 			<data>
-			TYtgBxmyOU5BuiBXI7yvtzESnt51ryoUaVvelDVdS00=
+			1LqMh+h4Tlmo/l+suO9q8twiWeOFB8lw7GGAtnNI0Ls=
 			</data>
 		</dict>
 		<key>Modules/MOCards.swiftmodule/armv7.swiftdoc</key>
@@ -428,11 +428,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xdz7d0NEnTyvBMSGb1r3GdM2JHo=
+			G+8obwze1IiQNmlaE1dCkYniF4U=
 			</data>
 			<key>hash2</key>
 			<data>
-			TYtgBxmyOU5BuiBXI7yvtzESnt51ryoUaVvelDVdS00=
+			1LqMh+h4Tlmo/l+suO9q8twiWeOFB8lw7GGAtnNI0Ls=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

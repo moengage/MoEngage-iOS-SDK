@@ -2,8 +2,8 @@ BCSymbolMap Version: 2.0
 Apple clang version 13.0.0 (clang-1300.0.29.3)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk
 iPhoneOS15.0.sdk
-/Users/rakshitha/Library/Developer/Xcode/DerivedData/MoEngage-cmmkomvfnirhvydwlmcpvafliotx/Build/Intermediates.noindex/ArchiveIntermediates/MORichNotification/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MORichNotification.build/DerivedSources/MORichNotification_vers.c
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage
+/Users/Chengappa/Library/Developer/Xcode/DerivedData/MoEngage-drttrtgpnnpnzugsokmbfvkbgdni/Build/Intermediates.noindex/ArchiveIntermediates/MORichNotification/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MORichNotification.build/DerivedSources/MORichNotification_vers.c
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage
 +[MORichNotification handleRichNotificationRequest:withContentHandler:]
 +[MORichNotification getLocalNotificationContentForRequest:withCompletionHandler:]
 +[MORichNotification setAppGroupID:]
@@ -20,7 +20,7 @@ _OBJC_SELECTOR_REFERENCES_.11
 __OBJC_$_CLASS_METHODS_MORichNotification
 __OBJC_METACLASS_RO_$_MORichNotification
 __OBJC_CLASS_RO_$_MORichNotification
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/MORichNotification.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/MORichNotification.m
 MORichNotification/Source/MORichNotification.m
 +[MORichNotificationHandler sharedHandler]
 ___42+[MORichNotificationHandler sharedHandler]_block_invoke
@@ -151,7 +151,7 @@ _OBJC_IVAR_$_MORichNotificationHandler._imageDownloadOperationQueue
 __OBJC_$_INSTANCE_VARIABLES_MORichNotificationHandler
 __OBJC_$_PROP_LIST_MORichNotificationHandler
 __OBJC_CLASS_RO_$_MORichNotificationHandler
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/MORichNotificationHandler.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/MORichNotificationHandler.m
 MORichNotification/Source/MORichNotificationHandler.m
 __destroy_helper_block_e4_20s24s28r32r36r
 __copy_helper_block_e4_20s24b28r32r36r
@@ -237,7 +237,7 @@ _OBJC_IVAR_$_MOExtensionDataManager._currentAppID
 __OBJC_$_INSTANCE_VARIABLES_MOExtensionDataManager
 __OBJC_$_PROP_LIST_MOExtensionDataManager
 __OBJC_CLASS_RO_$_MOExtensionDataManager
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/Inbox/MOExtensionDataManager.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/Inbox/MOExtensionDataManager.m
 MORichNotification/Source/Inbox/MOExtensionDataManager.m
 MORichNotification/Source/Inbox/MOExtensionDataManager.h
 __39+[MOExtensionDataManager sharedManager]_block_invoke
@@ -330,11 +330,11 @@ _OBJC_SELECTOR_REFERENCES_.236
 __OBJC_$_CLASS_METHODS_MORichNotifUtils
 __OBJC_METACLASS_RO_$_MORichNotifUtils
 __OBJC_CLASS_RO_$_MORichNotifUtils
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/Utils/MORichNotifUtils.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/Utils/MORichNotifUtils.m
 MORichNotification/Source/Utils/MORichNotifUtils.m
 __38+[MORichNotifUtils getStringFromHTML:]_block_invoke
 llvm.loop.mustprogress
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/Utils/MORichPushConstants.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/Utils/MORichPushConstants.m
 +[MOExtensionNetworkManager sharedManager]
 ___42+[MOExtensionNetworkManager sharedManager]_block_invoke
 -[MOExtensionNetworkManager getMoEURLSession]
@@ -377,7 +377,7 @@ _OBJC_IVAR_$_MOExtensionNetworkManager._networkSession
 __OBJC_$_INSTANCE_VARIABLES_MOExtensionNetworkManager
 __OBJC_$_PROP_LIST_MOExtensionNetworkManager
 __OBJC_CLASS_RO_$_MOExtensionNetworkManager
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/NetworkHandler/MOExtensionNetworkManager.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/NetworkHandler/MOExtensionNetworkManager.m
 MORichNotification/Source/NetworkHandler/MOExtensionNetworkManager.m
 MORichNotification/Source/NetworkHandler/MOExtensionNetworkManager.h
 __destroy_helper_block_e4_20s24s
@@ -434,7 +434,7 @@ _OBJC_IVAR_$_MOPushTemplateHandler._controller
 __OBJC_$_INSTANCE_VARIABLES_MOPushTemplateHandler
 __OBJC_$_PROP_LIST_MOPushTemplateHandler
 __OBJC_CLASS_RO_$_MOPushTemplateHandler
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/PushTemplates/MOPushTemplateHandler.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/PushTemplates/MOPushTemplateHandler.m
 MORichNotification/Source/PushTemplates/MOPushTemplateHandler.m
 __39+[MOPushTemplateHandler sharedInstance]_block_invoke
 -[MOPushBodyView configureViewWithPayload:]
@@ -478,7 +478,7 @@ __OBJC_$_INSTANCE_METHODS_MOPushBodyView
 __OBJC_$_INSTANCE_VARIABLES_MOPushBodyView
 __OBJC_$_PROP_LIST_MOPushBodyView
 __OBJC_CLASS_RO_$_MOPushBodyView
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/PushTemplates/View/PushBodyView/MOPushBodyView.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/PushTemplates/View/PushBodyView/MOPushBodyView.m
 MORichNotification/Source/PushTemplates/View/PushBodyView/MOPushBodyView.m
 MORichNotification/Source/PushTemplates/View/PushBodyView/MOPushBodyView.h
 -[MOPushMediaView configurePushMediaViewWithPayload:andNotification:]
@@ -513,7 +513,7 @@ __OBJC_$_INSTANCE_METHODS_MOPushMediaView
 __OBJC_$_INSTANCE_VARIABLES_MOPushMediaView
 __OBJC_$_PROP_LIST_MOPushMediaView
 __OBJC_CLASS_RO_$_MOPushMediaView
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/PushTemplates/View/Templates/PushMediaView/MOPushMediaView.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/PushTemplates/View/Templates/PushMediaView/MOPushMediaView.m
 MORichNotification/Source/PushTemplates/View/Templates/PushMediaView/MOPushMediaView.m
 -[MOCardCarouselItem cardInfo]
 -[MOCardCarouselItem setCardInfo:]
@@ -655,7 +655,7 @@ __OBJC_$_INSTANCE_METHODS_MOCarouselCollectionView
 __OBJC_$_INSTANCE_VARIABLES_MOCarouselCollectionView
 __OBJC_$_PROP_LIST_MOCarouselCollectionView
 __OBJC_CLASS_RO_$_MOCarouselCollectionView
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/PushTemplates/View/Templates/Carousel/CollectionView/MOCarouselCollectionView.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/PushTemplates/View/Templates/Carousel/CollectionView/MOCarouselCollectionView.m
 MORichNotification/Source/PushTemplates/View/Templates/Carousel/CollectionView/MOCarouselCollectionView.m
 MORichNotification/Source/PushTemplates/View/Templates/Carousel/CollectionView/MOCarouselCollectionView.h
 CGSizeMake
@@ -669,7 +669,7 @@ __OBJC_$_INSTANCE_METHODS_MOImageCarouselCell
 __OBJC_$_INSTANCE_VARIABLES_MOImageCarouselCell
 __OBJC_$_PROP_LIST_MOImageCarouselCell
 __OBJC_CLASS_RO_$_MOImageCarouselCell
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/PushTemplates/View/Templates/Carousel/SimpleImage/MOImageCarouselCell.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/PushTemplates/View/Templates/Carousel/SimpleImage/MOImageCarouselCell.m
 MORichNotification/Source/PushTemplates/View/Templates/Carousel/SimpleImage/MOImageCarouselCell.m
 MORichNotification/Source/PushTemplates/View/Templates/Carousel/SimpleImage/MOImageCarouselCell.h
 -[MOMedia initWithURL:andMediaType:]
@@ -693,7 +693,7 @@ _OBJC_IVAR_$_MOMedia._attachmentExtension
 __OBJC_$_INSTANCE_VARIABLES_MOMedia
 __OBJC_$_PROP_LIST_MOMedia
 __OBJC_CLASS_RO_$_MOMedia
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/ModelObjects/MOMedia/MOMedia.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/ModelObjects/MOMedia/MOMedia.m
 MORichNotification/Source/ModelObjects/MOMedia/MOMedia.m
 MORichNotification/Source/ModelObjects/MOMedia/MOMedia.h
 -[MORichPushMode initWithDictionary:]
@@ -721,7 +721,7 @@ _OBJC_IVAR_$_MORichPushMode._cards
 __OBJC_$_INSTANCE_VARIABLES_MORichPushMode
 __OBJC_$_PROP_LIST_MORichPushMode
 __OBJC_CLASS_RO_$_MORichPushMode
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/ModelObjects/PushTemplates/MORichPushMode.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/ModelObjects/PushTemplates/MORichPushMode.m
 MORichNotification/Source/ModelObjects/PushTemplates/MORichPushMode.m
 MORichNotification/Source/ModelObjects/PushTemplates/MORichPushMode.h
 -[MOPushWidget initWithDictionary:]
@@ -750,7 +750,7 @@ _OBJC_IVAR_$_MOPushWidget._actions
 __OBJC_$_INSTANCE_VARIABLES_MOPushWidget
 __OBJC_$_PROP_LIST_MOPushWidget
 __OBJC_CLASS_RO_$_MOPushWidget
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/ModelObjects/PushTemplates/MOPushWidget.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/ModelObjects/PushTemplates/MOPushWidget.m
 MORichNotification/Source/ModelObjects/PushTemplates/MOPushWidget.m
 MORichNotification/Source/ModelObjects/PushTemplates/MOPushWidget.h
 -[MOPushCard initWithDictionary:]
@@ -777,7 +777,7 @@ _OBJC_IVAR_$_MOPushCard._actions
 __OBJC_$_INSTANCE_VARIABLES_MOPushCard
 __OBJC_$_PROP_LIST_MOPushCard
 __OBJC_CLASS_RO_$_MOPushCard
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/ModelObjects/PushTemplates/MOPushCard.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/ModelObjects/PushTemplates/MOPushCard.m
 MORichNotification/Source/ModelObjects/PushTemplates/MOPushCard.m
 MORichNotification/Source/ModelObjects/PushTemplates/MOPushCard.h
 +[UIImage(MORichPushGif) animatedImageWithAnimatedGIFData:]
@@ -788,7 +788,7 @@ _frameArray
 __OBJC_$_CATEGORY_CLASS_METHODS_UIImage_$_MORichPushGif
 __OBJC_$_CATEGORY_UIImage_$_MORichPushGif
 _OBJC_CLASSLIST_REFERENCES_$_.7
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/Utils/UIImage+MORichPushGif.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/Utils/UIImage+MORichPushGif.m
 frameArray
 MORichNotification/Source/Utils/UIImage+MORichPushGif.m
 vectorGCD
@@ -820,7 +820,7 @@ _OBJC_IVAR_$_MOPushAction._kvPairs
 __OBJC_$_INSTANCE_VARIABLES_MOPushAction
 __OBJC_$_PROP_LIST_MOPushAction
 __OBJC_CLASS_RO_$_MOPushAction
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/ModelObjects/PushTemplates/MOPushAction.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/ModelObjects/PushTemplates/MOPushAction.m
 MORichNotification/Source/ModelObjects/PushTemplates/MOPushAction.m
 MORichNotification/Source/ModelObjects/PushTemplates/MOPushAction.h
 -[MOPushPayload initWithPushPayload:]
@@ -853,7 +853,7 @@ _OBJC_IVAR_$_MOPushPayload._richPush
 __OBJC_$_INSTANCE_VARIABLES_MOPushPayload
 __OBJC_$_PROP_LIST_MOPushPayload
 __OBJC_CLASS_RO_$_MOPushPayload
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/ModelObjects/PushTemplates/MOPushPayload.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/ModelObjects/PushTemplates/MOPushPayload.m
 MORichNotification/Source/ModelObjects/PushTemplates/MOPushPayload.m
 MORichNotification/Source/ModelObjects/PushTemplates/MOPushPayload.h
 -[MORichPush initWithDictionary:]
@@ -892,6 +892,6 @@ _OBJC_IVAR_$_MORichPush._defaultActions
 __OBJC_$_INSTANCE_VARIABLES_MORichPush
 __OBJC_$_PROP_LIST_MORichPush
 __OBJC_CLASS_RO_$_MORichPush
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MORichNotification/Source/ModelObjects/PushTemplates/MORichPush.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MORichNotification/Source/ModelObjects/PushTemplates/MORichPush.m
 MORichNotification/Source/ModelObjects/PushTemplates/MORichPush.m
 MORichNotification/Source/ModelObjects/PushTemplates/MORichPush.h

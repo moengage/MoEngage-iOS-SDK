@@ -55,4 +55,5 @@ extern NSString* const KDeviceTypeTV;
 
 #pragma mark- Other Keys
 extern NSString* const MO_KEYCHAIN_SERVICE;
+extern NSString* const kBundleIDMoEngageCore;
 

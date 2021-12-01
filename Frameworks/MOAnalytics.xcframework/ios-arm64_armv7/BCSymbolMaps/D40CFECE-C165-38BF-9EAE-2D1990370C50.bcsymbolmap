@@ -2,8 +2,8 @@ BCSymbolMap Version: 2.0
 Apple clang version 13.0.0 (clang-1300.0.29.3)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk
 iPhoneOS15.0.sdk
-/Users/rakshitha/Library/Developer/Xcode/DerivedData/MoEngage-cmmkomvfnirhvydwlmcpvafliotx/Build/Intermediates.noindex/ArchiveIntermediates/MOAnalytics/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MOAnalytics.build/DerivedSources/MOAnalytics_vers.c
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage
+/Users/Chengappa/Library/Developer/Xcode/DerivedData/MoEngage-drttrtgpnnpnzugsokmbfvkbgdni/Build/Intermediates.noindex/ArchiveIntermediates/MOAnalytics/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MOAnalytics.build/DerivedSources/MOAnalytics_vers.c
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage
 +[MOEventsHandler sharedInstance]
 ___33+[MOEventsHandler sharedInstance]_block_invoke
 -[MOEventsHandler init]
@@ -300,7 +300,7 @@ _OBJC_IVAR_$_MOEventsHandler._sdkWhitelistedEvents
 __OBJC_$_INSTANCE_VARIABLES_MOEventsHandler
 __OBJC_$_PROP_LIST_MOEventsHandler
 __OBJC_CLASS_RO_$_MOEventsHandler
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOAnalytics/EventManagement/MOEventsHandler.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/EventManagement/MOEventsHandler.m
 MOAnalytics/EventManagement/MOEventsHandler.m
 __destroy_helper_block_e4_20s24r28r
 __copy_helper_block_e4_20s24r28r
@@ -397,7 +397,7 @@ _OBJC_IVAR_$_MOUserAttributeData._userAttributesArray
 __OBJC_$_INSTANCE_VARIABLES_MOUserAttributeData
 __OBJC_$_PROP_LIST_MOUserAttributeData
 __OBJC_CLASS_RO_$_MOUserAttributeData
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOAnalytics/UserAttributes/MOUserAttribute.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/UserAttributes/MOUserAttribute.m
 MOAnalytics/UserAttributes/MOUserAttribute.m
 MOAnalytics/UserAttributes/MOUserAttribute.h
 -[MOProperties init]
@@ -482,7 +482,7 @@ _OBJC_IVAR_$_MOProperties._locationAttrArray
 __OBJC_$_INSTANCE_VARIABLES_MOProperties
 __OBJC_$_PROP_LIST_MOProperties
 __OBJC_CLASS_RO_$_MOProperties
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOAnalytics/Utils/PayloadBuilder/MOProperties.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/Utils/PayloadBuilder/MOProperties.m
 MOAnalytics/Utils/PayloadBuilder/MOProperties.m
 __54+[MOProperties transformDictAttrForIncompatibleTypes:]_block_invoke
 +[MOUserAttributesHandler sharedHandler]
@@ -580,7 +580,7 @@ _OBJC_IVAR_$_MOUserAttributesHandler._userAttributeData
 __OBJC_$_INSTANCE_VARIABLES_MOUserAttributesHandler
 __OBJC_$_PROP_LIST_MOUserAttributesHandler
 __OBJC_CLASS_RO_$_MOUserAttributesHandler
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOAnalytics/UserAttributes/MOUserAttributesHandler.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/UserAttributes/MOUserAttributesHandler.m
 MOAnalytics/UserAttributes/MOUserAttributesHandler.m
 __70-[MOUserAttributesHandler forceResetUserWithNewUserAttributeUniqueID:]_block_invoke_4
 __70-[MOUserAttributesHandler forceResetUserWithNewUserAttributeUniqueID:]_block_invoke_3
@@ -625,7 +625,7 @@ _OBJC_IVAR_$_MOPayloadBuilder._locationArray
 __OBJC_$_INSTANCE_VARIABLES_MOPayloadBuilder
 __OBJC_$_PROP_LIST_MOPayloadBuilder
 __OBJC_CLASS_RO_$_MOPayloadBuilder
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOAnalytics/Utils/PayloadBuilder/MOPayloadBuilder.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/Utils/PayloadBuilder/MOPayloadBuilder.m
 MOAnalytics/Utils/PayloadBuilder/MOPayloadBuilder.m
 MOAnalytics/Utils/PayloadBuilder/MOPayloadBuilder.h
 +[MODeviceAttributesHandler sharedInstance]
@@ -648,7 +648,7 @@ __OBJC_$_CLASS_METHODS_MODeviceAttributesHandler
 __OBJC_METACLASS_RO_$_MODeviceAttributesHandler
 __OBJC_$_INSTANCE_METHODS_MODeviceAttributesHandler
 __OBJC_CLASS_RO_$_MODeviceAttributesHandler
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOAnalytics/DeviceAttribute/MODeviceAttributesHandler.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/DeviceAttribute/MODeviceAttributesHandler.m
 MOAnalytics/DeviceAttribute/MODeviceAttributesHandler.m
 __43+[MODeviceAttributesHandler sharedInstance]_block_invoke
 +[MOAppDelegateAnalyticsProxy canSwizzleMethods]
@@ -709,11 +709,11 @@ _OBJC_IVAR_$_MOAppDelegateAnalyticsProxy._appDelegateInterceptorID
 __OBJC_$_INSTANCE_VARIABLES_MOAppDelegateAnalyticsProxy
 __OBJC_$_PROP_LIST_MOAppDelegateAnalyticsProxy
 __OBJC_CLASS_RO_$_MOAppDelegateAnalyticsProxy
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOAnalytics/Utils/AppDelegateSwizzler/MOAppDelegateAnalyticsProxy.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/Utils/AppDelegateSwizzler/MOAppDelegateAnalyticsProxy.m
 MOAnalytics/Utils/AppDelegateSwizzler/MOAppDelegateAnalyticsProxy.m
 getNamedPropertyFromObject
 __42+[MOAppDelegateAnalyticsProxy sharedProxy]_block_invoke
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOAnalytics/Constants/MOAnalyticsConstants.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/Constants/MOAnalyticsConstants.m
 -[MOEventCondition initWithDictionary:]
 -[MOEventCondition getFilterOperator:]
 -[MOEventCondition checkIfAttributeConditionSatisfiedForEvent:andAttributes:]
@@ -737,7 +737,7 @@ __OBJC_$_INSTANCE_METHODS_MOEventCondition
 __OBJC_$_INSTANCE_VARIABLES_MOEventCondition
 __OBJC_$_PROP_LIST_MOEventCondition
 __OBJC_CLASS_RO_$_MOEventCondition
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOAnalytics/Utils/MOConditionEvaluator/MOEventCondition.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/Utils/MOConditionEvaluator/MOEventCondition.m
 MOAnalytics/Utils/MOConditionEvaluator/MOEventCondition.m
 MOAnalytics/Utils/MOConditionEvaluator/MOEventCondition.h
 -[MOEventFilter initWithDictionary:]
@@ -806,7 +806,7 @@ __OBJC_$_INSTANCE_METHODS_MOEventFilter
 __OBJC_$_INSTANCE_VARIABLES_MOEventFilter
 __OBJC_$_PROP_LIST_MOEventFilter
 __OBJC_CLASS_RO_$_MOEventFilter
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOAnalytics/Utils/MOConditionEvaluator/MOEventFilter.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/Utils/MOConditionEvaluator/MOEventFilter.m
 MOAnalytics/Utils/MOConditionEvaluator/MOEventFilter.m
 MOAnalytics/Utils/MOConditionEvaluator/MOEventFilter.h
 +[MOAnalytics sharedInstance]
@@ -989,7 +989,7 @@ _OBJC_IVAR_$_MOAnalytics._moeAppExitBGTask
 __OBJC_$_INSTANCE_VARIABLES_MOAnalytics
 __OBJC_$_PROP_LIST_MOAnalytics
 __OBJC_CLASS_RO_$_MOAnalytics
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOAnalytics/MOAnalytics.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/MOAnalytics.m
 MOAnalytics/MOAnalytics.m
 MOAnalytics/MOAnalytics.h
 __36-[MOAnalytics optOutOfIDFATracking:]_block_invoke
@@ -1032,7 +1032,7 @@ __34-[MOAnalytics initializeAnalytics]_block_invoke
 __29+[MOAnalytics sharedInstance]_block_invoke
 __OBJC_METACLASS_RO_$_MOEHelperConstants
 __OBJC_CLASS_RO_$_MOEHelperConstants
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOAnalytics/Constants/MOHelperConstants.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/Constants/MOHelperConstants.m
 -[MOSource initMoESourceWithPushPayload:]
 -[MOSource initSourceWithPushPayload:]
 -[MOSource initSourceWithSourceInfoDict:]
@@ -1082,7 +1082,7 @@ _OBJC_IVAR_$_MOSource._extras
 __OBJC_$_INSTANCE_VARIABLES_MOSource
 __OBJC_$_PROP_LIST_MOSource
 __OBJC_CLASS_RO_$_MOSource
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOAnalytics/SessionAndSource/MOSource.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/SessionAndSource/MOSource.m
 MOAnalytics/SessionAndSource/MOSource.m
 MOAnalytics/SessionAndSource/MOSource.h
 -[MOSessionInfo init]
@@ -1130,7 +1130,7 @@ _OBJC_IVAR_$_MOSession._sessionLastInteractionTime
 __OBJC_$_INSTANCE_VARIABLES_MOSession
 __OBJC_$_PROP_LIST_MOSession
 __OBJC_CLASS_RO_$_MOSession
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOAnalytics/SessionAndSource/MOSession.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/SessionAndSource/MOSession.m
 MOAnalytics/SessionAndSource/MOSession.m
 MOAnalytics/SessionAndSource/MOSession.h
 +[MOSessionManager sharedSessionManager]
@@ -1193,7 +1193,7 @@ _OBJC_IVAR_$_MOSessionManager._sessionInfo
 __OBJC_$_INSTANCE_VARIABLES_MOSessionManager
 __OBJC_$_PROP_LIST_MOSessionManager
 __OBJC_CLASS_RO_$_MOSessionManager
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOAnalytics/SessionAndSource/MOSessionManager.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/SessionAndSource/MOSessionManager.m
 MOAnalytics/SessionAndSource/MOSessionManager.m
 MOAnalytics/SessionAndSource/MOSessionManager.h
 __45-[MOSessionManager appOpenedWithSourceArray:]_block_invoke_2
@@ -1213,7 +1213,7 @@ _OBJC_IVAR_$_MOGeoLocation._longitude
 __OBJC_$_INSTANCE_VARIABLES_MOGeoLocation
 __OBJC_$_PROP_LIST_MOGeoLocation
 __OBJC_CLASS_RO_$_MOGeoLocation
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOAnalytics/Utils/PayloadBuilder/MOGeoLocation.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/Utils/PayloadBuilder/MOGeoLocation.m
 MOAnalytics/Utils/PayloadBuilder/MOGeoLocation.h
 MOAnalytics/Utils/PayloadBuilder/MOGeoLocation.m
 +[MOAnalyticsUtils createBatchIdentifier]
@@ -1235,6 +1235,6 @@ _moAnalyticsAppDelegateProxyConfigured
 __OBJC_$_CLASS_METHODS_MOAnalyticsUtils
 __OBJC_METACLASS_RO_$_MOAnalyticsUtils
 __OBJC_CLASS_RO_$_MOAnalyticsUtils
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOAnalytics/Utils/MOAnalyticsUtils.m
+/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOAnalytics/Utils/MOAnalyticsUtils.m
 MOAnalytics/Utils/MOAnalyticsUtils.m
 llvm.loop.mustprogress
