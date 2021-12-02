@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = 'https://www.moengage.com'
-  s.documentation_url = 'https://docs.moengage.com'
+  s.documentation_url = 'https://developers.moengage.com'
   s.social_media_url   = 'https://twitter.com/moengage'
 
   s.license      = { :type => 'Commercial', :file => 'LICENSE' }

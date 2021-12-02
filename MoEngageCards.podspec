@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = 'https://www.moengage.com'
-  s.documentation_url = 'https://docs.moengage.com/docs/ios-cards'
+  s.documentation_url = 'https://developers.moengage.com'
   s.license      = { :type => 'Commercial', :file => 'LICENSE' }
   s.author       = { 'Chengappa C D' => 'chengappa@moengage.com' }
   s.social_media_url   = 'https://twitter.com/moengage'
