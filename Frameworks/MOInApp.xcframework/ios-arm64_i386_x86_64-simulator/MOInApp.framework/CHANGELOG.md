@@ -2,6 +2,10 @@
 =====================
 ## Change Log:
 
+### Version 2.1.1  *(25nd December, 2021)*
+-------------------------------------------
+* BugFix: Handled multiline text in text widget getting clipped in few of the devices.
+
 ### Version 2.1.0  *(27th August, 2021)*
 -------------------------------------------
 * Releasing module as XCFramework.
