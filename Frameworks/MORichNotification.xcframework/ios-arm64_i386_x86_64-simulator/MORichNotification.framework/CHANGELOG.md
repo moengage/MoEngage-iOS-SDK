@@ -1,5 +1,9 @@
 # Change Log:
 
+### Version 5.2.1  *(29th December 2021)*
+-------------------------------------------
+* Fixed pageControl UI issue as it was not appearing in iOS 15 devices.
+
 ### Version 5.2.0  *(23rd September, 2021)*
 -------------------------------------------
 * iOS 15.0 Guidelines followed for Custom Push Templates.
