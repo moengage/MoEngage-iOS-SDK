@@ -2,6 +2,9 @@
 =================================
 
 ## Changelog:
+### Version 7.1.4  *(29th December, 2021)*
+-------------------------------------------
+* Assigned the SDK version to a constant , as in few instances App Version was getting tracked as SDK version.
 
 ### Version 7.1.3  *(1st December, 2021)*
 -------------------------------------------

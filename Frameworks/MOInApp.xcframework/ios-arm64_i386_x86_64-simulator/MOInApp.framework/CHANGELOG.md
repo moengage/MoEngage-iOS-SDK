@@ -2,6 +2,10 @@
 =====================
 ## Change Log:
 
+### Version 2.1.2  *(29th December, 2021)*
+-------------------------------------------
+*  Assigned the InApp version to a constant , in order to avoid the wrong version getting tracked.
+
 ### Version 2.1.1  *(25nd December, 2021)*
 -------------------------------------------
 * BugFix: Handled multiline text in text widget getting clipped in few of the devices.

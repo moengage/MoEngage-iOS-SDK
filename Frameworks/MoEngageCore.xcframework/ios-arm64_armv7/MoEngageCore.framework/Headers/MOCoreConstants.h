@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString* const kSDKVersion;
 // User Default Keys
 extern NSString* const kUserDefaultSDKSuitName;
 
