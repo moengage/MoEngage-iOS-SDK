@@ -2,6 +2,10 @@
 =====================
 ## Change Log:
 
+### Version 2.2.0  *(31st January, 2022)*
+-------------------------------------------
+*  Added `Capacitor` integration type.
+
 ### Version 2.1.2  *(29th December, 2021)*
 -------------------------------------------
 *  Assigned the InApp version to a constant , in order to avoid the wrong version getting tracked.

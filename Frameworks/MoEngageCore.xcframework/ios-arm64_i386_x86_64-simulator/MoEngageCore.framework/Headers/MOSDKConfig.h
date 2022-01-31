@@ -28,7 +28,8 @@ typedef enum {
     REACT_NATIVE,
     FLUTTER,
     UNITY,
-    XAMARIN
+    XAMARIN,
+    CAPACITOR
 }MOPluginType;
 
 NS_ASSUME_NONNULL_BEGIN
