@@ -1,5 +1,10 @@
 # Change Log:
 
+### Version 5.3.0  *(31st January 2022)*
+-------------------------------------------
+* Added `Capacitor` integration type.
+* Fixed height for the message in the notification.
+
 ### Version 5.2.1  *(29th December 2021)*
 -------------------------------------------
 * Fixed pageControl UI issue as it was not appearing in iOS 15 devices.

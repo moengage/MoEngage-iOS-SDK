@@ -2,6 +2,10 @@
 =================================
 
 ## Changelog:
+### Version 7.2.0  *(31st January, 2022)*
+-------------------------------------------
+* Added `Capacitor` integration type.
+
 ### Version 7.1.4  *(29th December, 2021)*
 -------------------------------------------
 * Assigned the SDK version to a constant , as in few instances App Version was getting tracked as SDK version.

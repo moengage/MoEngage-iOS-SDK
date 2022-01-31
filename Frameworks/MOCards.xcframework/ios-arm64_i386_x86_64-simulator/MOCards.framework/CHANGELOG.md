@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 2.2.0  *(31st January, 2022)*
+-------------------------------------------
+* Added `Capacitor` integration type.
+
 ### Version 2.1.0  *(27th August, 2021)*
 -------------------------------------------
 * Releasing module as XCFramework.

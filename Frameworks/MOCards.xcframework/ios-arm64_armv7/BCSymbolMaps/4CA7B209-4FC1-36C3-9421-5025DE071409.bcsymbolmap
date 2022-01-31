@@ -2,8 +2,8 @@ BCSymbolMap Version: 2.0
 Apple clang version 13.0.0 (clang-1300.0.29.3)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk
 iPhoneOS15.0.sdk
-/Users/Chengappa/Library/Developer/Xcode/DerivedData/MoEngage-drttrtgpnnpnzugsokmbfvkbgdni/Build/Intermediates.noindex/ArchiveIntermediates/MOCards/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MOCards.build/DerivedSources/MOCards_vers.c
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage
+/Users/rakshitha/Library/Developer/Xcode/DerivedData/MoEngage-cnobpkmsqmaefpeplvsvpecxdigk/Build/Intermediates.noindex/ArchiveIntermediates/MOCards/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MOCards.build/DerivedSources/MOCards_vers.c
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage
 _$s7MOCards13MoEngageCardsC14sharedInstance_WZ
 _$s7MOCards13MoEngageCardsC14sharedInstanceACvgZTo
 _$s7MOCards13MoEngageCardsC13cardsDelegateAA0aF0_pSgvpACTK
@@ -321,7 +321,7 @@ Apple clang version 13.0.0 (clang-1300.0.29.1)
 -private-discriminator _8F1A80B21C561C229C7C911BC5F5F144
 <swift-imported-modules>
 Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/MoEngageCards.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/MoEngageCards.swift
 _conditionallyBridgeFromObjectiveC
 <compiler-generated>
 $sSq7flatMapyqd__SgABxKXEKlFSS_So21NSAttributedStringKeyaTgq5
@@ -738,7 +738,7 @@ _OBJC_CLASS_$__TtC7MOCards11MOCardStyle
 _$s7MOCards16MOCardActionTypeON
 _$s7MOCards16MOCardWidgetTypeON
 _$s7MOCards18MOCardTemplateTypeON
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/ModelObjects/CardsData/MOCardTemplateData.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/ModelObjects/CardsData/MOCardTemplateData.swift
 $sypWOb
 $sSo7UIColorCMa
 $sypSgWOb
@@ -942,7 +942,7 @@ _$s7MOCards13GifParseErrorOSQAAMcMK
 _$s7MOCards13GifParseErrorOSQAAMc
 _$s7MOCards13GifParseErrorON
 -private-discriminator _CD06497E7DBC58DD56CB1196E16A3721
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/Utils/ImageGif/UIImage+CardGif.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/Utils/ImageGif/UIImage+CardGif.swift
 $s7MOCards13GifParseErrorOACSQAAWl
 $s7MOCards13GifParseErrorOSHAASQWb
 $s7MOCards13GifParseErrorOMa
@@ -1230,7 +1230,7 @@ _$s7MOCards15CardsGifManagerC8hasCacheySbSo11UIImageViewCFTq
 _$s7MOCards15CardsGifManagerC15updateImageViewyyFTq
 _$s7MOCards15CardsGifManagerCN
 -private-discriminator _DC678CF64478BFC8C1C3C342C16630B2
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/Utils/ImageGif/CardGifManager.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/Utils/ImageGif/CardGifManager.swift
 objectdestroy.18
 $s7MOCards15CardsGifManagerC15updateCacheSize3for3addySo11UIImageViewC_SbtFyycAHcfu0_yycfu1_TA
 $s7MOCards15CardsGifManagerC15updateCacheSize3for3addySo11UIImageViewC_SbtFyycAHcfu0_yycfu1_
@@ -1568,7 +1568,7 @@ _$s7MOCards15MOCardBasicCellC24imageZeroWidthConstraintSo08NSLayoutH0CSgvMTq
 _$s7MOCards15MOCardBasicCellC04hideD17ImageIfNotPresent14inTemplateDatayAA0bkL0C_tFTq
 _$s7MOCards15MOCardBasicCellCN
 _OBJC_CLASS_$__TtC7MOCards15MOCardBasicCell
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/UIComponents/MOCardTableViewCell.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/UIComponents/MOCardTableViewCell.swift
 $s10Foundation4DateVSgWOh
 $s10Foundation4DateVSgWOc
 __swift_destroy_boxed_opaque_existential_0
@@ -2161,7 +2161,7 @@ _$s7MOCards0A18ListViewControllerC16newUpdateClickedyyypFTq
 _$s7MOCards0A18ListViewControllerC13initaiteFetchyyFTq
 _$s7MOCards0A18ListViewControllerC14showNewUpdatesyyFTq
 -private-discriminator _18190B5A5B98747BEA4F5825A4FC35EF
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/UIComponents/MOCardsListViewController.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/UIComponents/MOCardsListViewController.swift
 _swift_stdlib_malloc_size
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/lib/swift/shims/LibcShims.h
 $sSaySiGMa
@@ -2637,7 +2637,7 @@ _$s7MOCards27MOCategoryTabCollectionViewC5width9forString22withConstraintedHeigh
 _$s7MOCards27MOCategoryTabCollectionViewC18handleSwipeGestureyySo07UISwipeH10RecognizerCFTq
 _$s7MOCards27MOCategoryTabCollectionViewCN
 _OBJC_CLASS_$__TtC7MOCards27MOCategoryTabCollectionView
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/UIComponents/MOCategoryTabCollectionView.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/UIComponents/MOCategoryTabCollectionView.swift
 collectionView
 maxTabWidth.get
 width
@@ -2767,7 +2767,7 @@ _$s7MOCards15MOCardImageViewC08downloadC07withURL9andCardIDy10Foundation0G0V_SSt
 _$s7MOCards15MOCardImageViewCN
 _OBJC_CLASS_$__TtC7MOCards15MOCardImageView
 -private-discriminator _65BBFB6D5AAB6B30D21FDF9EB11614C2
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/UIComponents/MOCardImageView.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/UIComponents/MOCardImageView.swift
 $s7MOCards15MOCardImageViewC9configure7withURL6cardIDySS_SSSgtFyycfU_TA
 $s10Foundation3URLVSgWOd
 $s10Foundation3URLVSgWOb
@@ -2866,7 +2866,7 @@ _$s7MOCards14MOCardCampaignC6encode4withySo7NSCoderC_tFTq
 _$s7MOCards14MOCardCampaignC5coderACSo7NSCoderC_tcfCTq
 _$s7MOCards14MOCardCampaignCN
 _OBJC_CLASS_$__TtC7MOCards14MOCardCampaign
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/ModelObjects/CardsData/MOCardCampaign.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/ModelObjects/CardsData/MOCardCampaign.swift
 $s7MOCards14MOCardCampaignCMr
 $s7MOCards14MOCardCampaignCMa
 $s7MOCards14MOCardCampaignCMU
@@ -2943,7 +2943,7 @@ _$s7MOCards12MOCardStatusC5coderACSgSo7NSCoderC_tcfCTq
 _$s7MOCards12MOCardStatusC10withCardID16andDeliveredTimeACSS_10Foundation4DateVtcfCTq
 _$s7MOCards12MOCardStatusCN
 _OBJC_CLASS_$__TtC7MOCards12MOCardStatus
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/ModelObjects/CardStatusData/MOCardStatus.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/ModelObjects/CardStatusData/MOCardStatus.swift
 $s10Foundation4DateVSgWOd
 $s10Foundation4DateVSgMa
 $s7MOCards12MOCardStatusCMr
@@ -3099,7 +3099,7 @@ _$s7MOCards0A7HandlerC20getClickedCardsCountSiyFTq
 _$s7MOCards0A7HandlerCN
 _OBJC_CLASS_$__TtC7MOCards14MOCardsHandler
 -private-discriminator _BF7E91AFAD74925199AFC9B358C18485
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/MOCardsHandler.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/MOCardsHandler.swift
 $ss5Int64VABSzsWl
 $s7MOCards0A7HandlerC10fetchCards14withCompletionyySb_SbtcSg_tFyycfU_ySb_SDys11AnyHashableVypGSgtcfU_yycfU_Tf2ni_nTA
 $s7MOCards0A7HandlerC10fetchCards14withCompletionyySb_SbtcSg_tFyycfU_ySb_SDys11AnyHashableVypGSgtcfU_yycfU_Tf2ni_n
@@ -3252,7 +3252,7 @@ registerForSDKLifeCycle
 registerForAppLifeCycle
 $s7MOCards0A7HandlerC06sharedB0_WZ
 $sIeg_IeyB_TR
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/Utils/MOCardConstants.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/Utils/MOCardConstants.swift
 _$s7MOCards26MOCardClickedIndicatorViewC014createTriangleD0yyF
 _$s7MOCards26MOCardClickedIndicatorViewC5frameACSo6CGRectV_tcfcTo
 _$s7MOCards26MOCardClickedIndicatorViewC5coderACSgSo7NSCoderC_tcfcTo
@@ -3292,7 +3292,7 @@ _$s7MOCards26MOCardClickedIndicatorViewC014createTriangleD0yyFTq
 _$s7MOCards26MOCardClickedIndicatorViewC011createImageeD0yyFTq
 _$s7MOCards26MOCardClickedIndicatorViewCN
 _OBJC_CLASS_$__TtC7MOCards26MOCardClickedIndicatorView
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/UIComponents/MOCardClickedIndicatorView.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/UIComponents/MOCardClickedIndicatorView.swift
 $s7MOCards26MOCardClickedIndicatorViewCMa
 $s7MOCards26MOCardClickedIndicatorViewCfETo
 createTriangleIndicator
@@ -3638,7 +3638,7 @@ _$s7MOCards0A15UIConfigurationCMf
 _symbolic _____Sg 7MOCards0A18NavigationBarStyleC
 _symbolic So6UIFontC
 _$s7MOCards0A15UIConfigurationCMF
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/UIComponents/MOCardsUIConfiguration.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/UIComponents/MOCardsUIConfiguration.swift
 $s7MOCards0A15UIConfigurationCfETo
 $s7MOCards0A15UIConfigurationCMa
 actionSheetCancelText.modify
@@ -3739,7 +3739,7 @@ _$s7MOCards14MOSyncIntervalC6encode4withySo7NSCoderC_tFTq
 _$s7MOCards14MOSyncIntervalC5coderACSo7NSCoderC_tcfCTq
 _$s7MOCards14MOSyncIntervalCN
 _OBJC_CLASS_$__TtC7MOCards14MOSyncInterval
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/ModelObjects/CardStatusData/MOCardSyncInterval.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/ModelObjects/CardStatusData/MOCardSyncInterval.swift
 $s7MOCards14MOSyncIntervalCMa
 update
 userActivity.set
@@ -3787,7 +3787,7 @@ _$s7MOCards14CardsExceptionOSQAAMc
 _$s7MOCards14CardsExceptionOs5ErrorAAMcMK
 _$s7MOCards11MOCardUtilsCACycfCTq
 _$s7MOCards11MOCardUtilsCN
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/Utils/MOCardUtils.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/Utils/MOCardUtils.swift
 $s7MOCards14CardsExceptionOACSQAAWl
 $s7MOCards14CardsExceptionOSHAASQWb
 $s7MOCards14CardsExceptionOMa
@@ -3835,7 +3835,7 @@ _$s7MOCards14MOCategoryCellC09configureC012withCategory8uiConfig16andSelectedSta
 _$s7MOCards14MOCategoryCellC20updateSelectionStateyySb_AA0A15UIConfigurationCtFTq
 _$s7MOCards14MOCategoryCellCN
 _OBJC_CLASS_$__TtC7MOCards14MOCategoryCell
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/UIComponents/MOCategoryCell.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/UIComponents/MOCategoryCell.swift
 $s7MOCards14MOCategoryCellCMa
 $s7MOCards14MOCategoryCellCfETo
 updateSelectionState
@@ -3993,7 +3993,7 @@ _$s7MOCards0A11DataManagerC013getCardStatusB11FromStorageAA06MOCardfB0CyFZTq
 _$s7MOCards0A11DataManagerC012persistCardsB004withB0yAA0aB0C_tFTq
 _$s7MOCards0A11DataManagerC017persistCardStatusB0yyFTq
 _$s7MOCards0A11DataManagerCN
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/MOCardsDataManager.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/MOCardsDataManager.swift
 $sSo18NSLayoutConstraintCMa
 getCardsCampaignDataFilePath
 $ss22_ContiguousArrayBufferV19_uninitializedCount15minimumCapacityAByxGSi_SitcfCSi_Tg5Tf4nnd_n
@@ -4349,7 +4349,7 @@ _$s7MOCards14MOCardShowTimeC6encode4withySo7NSCoderC_tFTq
 _$s7MOCards14MOCardShowTimeC5coderACSgSo7NSCoderC_tcfCTq
 _$s7MOCards14MOCardShowTimeCN
 _OBJC_CLASS_$__TtC7MOCards14MOCardShowTime
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/ModelObjects/CardsData/MOCardDisplayControl.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/ModelObjects/CardsData/MOCardDisplayControl.swift
 $s7MOCards14MOCardShowTimeCMa
 $s7MOCards14MOCardShowTimeCfETo
 $ss17_NativeDictionaryV14uncheckedValue2atq_s10_HashTableV6BucketV_tF6$deferL_yySHRzr0_lFSS_SSTg5
@@ -4391,7 +4391,7 @@ _$s7MOCards17SwiftyGifDelegate_pMD
 _symbolic So7NSCacheC
 _$sSo7NSCacheCMD
 -private-discriminator _A408F42D1934F6E63FCACE4298FE6535
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/Utils/ImageGif/UIImageView+CardGif.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/Utils/ImageGif/UIImageView+CardGif.swift
 $sSo11UIImageViewCMa
 possiblyNil
 $s7MOCards12_delegateKey33_A408F42D1934F6E63FCACE4298FE6535LL_WZ
@@ -4499,7 +4499,7 @@ _$s7MOCards0A4DataC6encode4withySo7NSCoderC_tFTq
 _$s7MOCards0A4DataC5coderACSo7NSCoderC_tcfCTq
 _$s7MOCards0A4DataCN
 _OBJC_CLASS_$__TtC7MOCards11MOCardsData
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/ModelObjects/CardsData/MOCardsData.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/ModelObjects/CardsData/MOCardsData.swift
 $s7MOCards0A4DataCMa
 $s7MOCards0A4DataCfETo
 _$s7MOCards16MOCardStatusDataC6encode4withySo7NSCoderC_tF
@@ -4575,7 +4575,7 @@ _$s7MOCards16MOCardStatusDataC5coderACSgSo7NSCoderC_tcfCTq
 _$s7MOCards16MOCardStatusDataC18updateSyncInterval22WithCardsFetchResponseySDySSypG_tKFTq
 _$s7MOCards16MOCardStatusDataCN
 _OBJC_CLASS_$__TtC7MOCards16MOCardStatusData
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/ModelObjects/CardStatusData/MOCardStatusData.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/ModelObjects/CardStatusData/MOCardStatusData.swift
 $sSo6UIViewCMa
 $s10Foundation3URLVACSHAAWl
 $ss22__RawDictionaryStorageC4find_9hashValues10_HashTableV6BucketV6bucket_Sb5foundtx_SitSHRzlFSo21NSAttributedStringKeya_Tg5
@@ -4734,7 +4734,7 @@ _symbolic SS_ypt
 _$sSS_yptMD
 _$s7MOCards6MOCardC15updateCardsInfoyyAA0B8CampaignCFTq
 _$s7MOCards22MOCardNavigationActionC011updateCardsD4InfoyyAA0bD0CFTq
-/Users/Chengappa/Documents/MoEngage/MoEObjC2/MoEFramework/MoEngage/MOCards/Source/MOCard.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOCards/Source/MOCard.swift
 $ss17_NativeDictionaryV7_insert2at3key5valueys10_HashTableV6BucketV_xnq_ntFSo42NSAttributedStringDocumentReadingOptionKeya_ypTg5
 Swift runtime failure: Dictionary literal contains duplicate keys
 $ss17_NativeDictionaryV7_valuesSpyq_GvgSo42NSAttributedStringDocumentReadingOptionKeya_ypTg5
