@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44DC6D9A687029EAC6A42FCC /* Pods_PushTemplates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6CDA47557414D2F98AAE19 /* Pods_PushTemplates.framework */; };
-		6FE6BB2D73BFE4007DBDCB77 /* Pods_MoESwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85B4BB86C5CED25F7A5E64C /* Pods_MoESwiftSample.framework */; };
-		7D40326F76805DB70C57C110 /* Pods_NotificationService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4573D406D4CCE3E2E05C7C /* Pods_NotificationService.framework */; };
+		66CCCC77F1C4B6820BADB0F3 /* Pods_MoESwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977E7FD1A67ACEBF7CB3A88F /* Pods_MoESwiftSample.framework */; };
+		6A0E7FCF63361951CFE6D290 /* Pods_NotificationService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C9BB0C161BAAFD26F24101 /* Pods_NotificationService.framework */; };
+		A8E8A2B3DA60200ABB4270FA /* Pods_PushTemplates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7216422B1AE7291D4C9046 /* Pods_PushTemplates.framework */; };
 		AF1C7241250750FD004DDCE3 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF758AAA240292470048880D /* UserNotifications.framework */; };
 		AF1C7243250750FD004DDCE3 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1C7242250750FD004DDCE3 /* UserNotificationsUI.framework */; };
 		AF1C7246250750FD004DDCE3 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1C7245250750FD004DDCE3 /* NotificationViewController.swift */; };
@@ -60,13 +60,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0175E5D4E2FF8C26D057E7BE /* Pods-PushTemplates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushTemplates.debug.xcconfig"; path = "Target Support Files/Pods-PushTemplates/Pods-PushTemplates.debug.xcconfig"; sourceTree = "<group>"; };
-		0E9D7F7AC9AD1E78CC0E7601 /* Pods-MoESwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoESwiftSample.release.xcconfig"; path = "Target Support Files/Pods-MoESwiftSample/Pods-MoESwiftSample.release.xcconfig"; sourceTree = "<group>"; };
-		1A4573D406D4CCE3E2E05C7C /* Pods_NotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D5BD39156230918B311428D /* Pods-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.debug.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
-		71B7C4D4128030481F3D1FE9 /* Pods-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.release.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
-		78F605A747EB3D739827A819 /* Pods-MoESwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoESwiftSample.debug.xcconfig"; path = "Target Support Files/Pods-MoESwiftSample/Pods-MoESwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
-		7C6CDA47557414D2F98AAE19 /* Pods_PushTemplates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushTemplates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD979DE9D5BA4A8529EAA2E /* Pods-MoESwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoESwiftSample.release.xcconfig"; path = "Target Support Files/Pods-MoESwiftSample/Pods-MoESwiftSample.release.xcconfig"; sourceTree = "<group>"; };
+		65DEF482F8D162B6AF1654B1 /* Pods-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.debug.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
+		68C9BB0C161BAAFD26F24101 /* Pods_NotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		977E7FD1A67ACEBF7CB3A88F /* Pods_MoESwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoESwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E2157EE56B448FC76743788 /* Pods-PushTemplates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushTemplates.debug.xcconfig"; path = "Target Support Files/Pods-PushTemplates/Pods-PushTemplates.debug.xcconfig"; sourceTree = "<group>"; };
 		AF1C7240250750FD004DDCE3 /* PushTemplates.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PushTemplates.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1C7242250750FD004DDCE3 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		AF1C7245250750FD004DDCE3 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
@@ -91,8 +89,10 @@
 		C71D9BA51C8061BD00FBBD03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C71D9BAE1C8061BD00FBBD03 /* SwiftMoEngageIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMoEngageIntegrationTests.swift; sourceTree = "<group>"; };
 		C71D9BB01C8061BD00FBBD03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7B6E5638B76EF5CC986C19B /* Pods-PushTemplates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushTemplates.release.xcconfig"; path = "Target Support Files/Pods-PushTemplates/Pods-PushTemplates.release.xcconfig"; sourceTree = "<group>"; };
-		F85B4BB86C5CED25F7A5E64C /* Pods_MoESwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoESwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44353FE4BCEBCF7EB36F838 /* Pods-PushTemplates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushTemplates.release.xcconfig"; path = "Target Support Files/Pods-PushTemplates/Pods-PushTemplates.release.xcconfig"; sourceTree = "<group>"; };
+		D45AFAAA688C4A0A548101A8 /* Pods-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.release.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
+		F739D02FE3F05F2C0F52E26C /* Pods-MoESwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoESwiftSample.debug.xcconfig"; path = "Target Support Files/Pods-MoESwiftSample/Pods-MoESwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
+		FA7216422B1AE7291D4C9046 /* Pods_PushTemplates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushTemplates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 			files = (
 				AF1C7243250750FD004DDCE3 /* UserNotificationsUI.framework in Frameworks */,
 				AF1C7241250750FD004DDCE3 /* UserNotifications.framework in Frameworks */,
-				44DC6D9A687029EAC6A42FCC /* Pods_PushTemplates.framework in Frameworks */,
+				A8E8A2B3DA60200ABB4270FA /* Pods_PushTemplates.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D40326F76805DB70C57C110 /* Pods_NotificationService.framework in Frameworks */,
+				6A0E7FCF63361951CFE6D290 /* Pods_NotificationService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +120,7 @@
 			files = (
 				AF758AAB240292470048880D /* UserNotifications.framework in Frameworks */,
 				AF758AA9240292400048880D /* AdSupport.framework in Frameworks */,
-				6FE6BB2D73BFE4007DBDCB77 /* Pods_MoESwiftSample.framework in Frameworks */,
+				66CCCC77F1C4B6820BADB0F3 /* Pods_MoESwiftSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,9 +134,9 @@
 				AF758AAA240292470048880D /* UserNotifications.framework */,
 				AF758AA8240292400048880D /* AdSupport.framework */,
 				AF1C7242250750FD004DDCE3 /* UserNotificationsUI.framework */,
-				F85B4BB86C5CED25F7A5E64C /* Pods_MoESwiftSample.framework */,
-				1A4573D406D4CCE3E2E05C7C /* Pods_NotificationService.framework */,
-				7C6CDA47557414D2F98AAE19 /* Pods_PushTemplates.framework */,
+				977E7FD1A67ACEBF7CB3A88F /* Pods_MoESwiftSample.framework */,
+				68C9BB0C161BAAFD26F24101 /* Pods_NotificationService.framework */,
+				FA7216422B1AE7291D4C9046 /* Pods_PushTemplates.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,12 +144,12 @@
 		71BEC859A5C490F4212CE759 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				78F605A747EB3D739827A819 /* Pods-MoESwiftSample.debug.xcconfig */,
-				0E9D7F7AC9AD1E78CC0E7601 /* Pods-MoESwiftSample.release.xcconfig */,
-				3D5BD39156230918B311428D /* Pods-NotificationService.debug.xcconfig */,
-				71B7C4D4128030481F3D1FE9 /* Pods-NotificationService.release.xcconfig */,
-				0175E5D4E2FF8C26D057E7BE /* Pods-PushTemplates.debug.xcconfig */,
-				C7B6E5638B76EF5CC986C19B /* Pods-PushTemplates.release.xcconfig */,
+				F739D02FE3F05F2C0F52E26C /* Pods-MoESwiftSample.debug.xcconfig */,
+				1FD979DE9D5BA4A8529EAA2E /* Pods-MoESwiftSample.release.xcconfig */,
+				65DEF482F8D162B6AF1654B1 /* Pods-NotificationService.debug.xcconfig */,
+				D45AFAAA688C4A0A548101A8 /* Pods-NotificationService.release.xcconfig */,
+				9E2157EE56B448FC76743788 /* Pods-PushTemplates.debug.xcconfig */,
+				D44353FE4BCEBCF7EB36F838 /* Pods-PushTemplates.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -229,7 +229,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF1C724E250750FD004DDCE3 /* Build configuration list for PBXNativeTarget "PushTemplates" */;
 			buildPhases = (
-				FE9694C3CC7CEC7F375E1330 /* [CP] Check Pods Manifest.lock */,
+				A036046381F0B3CD20973B80 /* [CP] Check Pods Manifest.lock */,
 				AF1C723C250750FD004DDCE3 /* Sources */,
 				AF1C723D250750FD004DDCE3 /* Frameworks */,
 				AF1C723E250750FD004DDCE3 /* Resources */,
@@ -247,7 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF315F181F5007A900E3246B /* Build configuration list for PBXNativeTarget "NotificationService" */;
 			buildPhases = (
-				EE4E5579D250CB9C8641A41B /* [CP] Check Pods Manifest.lock */,
+				8E66788D8F604012D0785C41 /* [CP] Check Pods Manifest.lock */,
 				AF315F0A1F5007A900E3246B /* Sources */,
 				AF315F0B1F5007A900E3246B /* Frameworks */,
 				AF315F0C1F5007A900E3246B /* Resources */,
@@ -266,13 +266,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C71D9BB31C8061BD00FBBD03 /* Build configuration list for PBXNativeTarget "MoESwiftSample" */;
 			buildPhases = (
-				3A797342C9862FEC11732322 /* [CP] Check Pods Manifest.lock */,
+				B7F81148C5CA73272A88EE2C /* [CP] Check Pods Manifest.lock */,
 				C71D9B921C8061BC00FBBD03 /* Sources */,
 				C71D9B931C8061BC00FBBD03 /* Frameworks */,
 				C71D9B941C8061BC00FBBD03 /* Resources */,
 				AF315F191F5007A900E3246B /* Embed App Extensions */,
 				AFE7F50C21A54366007E5EF0 /* ShellScript */,
-				6A4948E613A2DA920B6C6348 /* [CP] Embed Pods Frameworks */,
+				DCB186BCE64B35E3D5909CC4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -382,7 +382,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3A797342C9862FEC11732322 /* [CP] Check Pods Manifest.lock */ = {
+		8E66788D8F604012D0785C41 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -397,43 +397,33 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MoESwiftSample-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-NotificationService-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6A4948E613A2DA920B6C6348 /* [CP] Embed Pods Frameworks */ = {
+		A036046381F0B3CD20973B80 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MoESwiftSample/Pods-MoESwiftSample-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MOGeofence/MOGeofence.framework/MOGeofence",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MORichNotification/MORichNotification.framework/MORichNotification",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MoEngage.framework/MoEngage",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MoEngageCore.framework/MoEngageCore",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MOAnalytics.framework/MOAnalytics",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MOMessaging.framework/MOMessaging",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngageCards/MOCards.framework/MOCards",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngageInApp/MOInApp.framework/MOInApp",
+			inputFileListPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOGeofence.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MORichNotification.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoEngage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoEngageCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOAnalytics.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOMessaging.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOCards.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOInApp.framework",
+				"$(DERIVED_FILE_DIR)/Pods-PushTemplates-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoESwiftSample/Pods-MoESwiftSample-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AFE7F50B21A54354007E5EF0 /* ShellScript */ = {
@@ -470,7 +460,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
-		EE4E5579D250CB9C8641A41B /* [CP] Check Pods Manifest.lock */ = {
+		B7F81148C5CA73272A88EE2C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -485,33 +475,43 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NotificationService-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MoESwiftSample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FE9694C3CC7CEC7F375E1330 /* [CP] Check Pods Manifest.lock */ = {
+		DCB186BCE64B35E3D5909CC4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${PODS_ROOT}/Target Support Files/Pods-MoESwiftSample/Pods-MoESwiftSample-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MOGeofence/MOGeofence.framework/MOGeofence",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MORichNotification/MORichNotification.framework/MORichNotification",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MoEngage.framework/MoEngage",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MoEngageCore.framework/MoEngageCore",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MOAnalytics.framework/MOAnalytics",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MOMessaging.framework/MOMessaging",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngageCards/MOCards.framework/MOCards",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngageInApp/MOInApp.framework/MOInApp",
 			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PushTemplates-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOGeofence.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MORichNotification.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoEngage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoEngageCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOAnalytics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOMessaging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOCards.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOInApp.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoESwiftSample/Pods-MoESwiftSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -580,7 +580,7 @@
 /* Begin XCBuildConfiguration section */
 		AF1C724F250750FD004DDCE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0175E5D4E2FF8C26D057E7BE /* Pods-PushTemplates.debug.xcconfig */;
+			baseConfigurationReference = 9E2157EE56B448FC76743788 /* Pods-PushTemplates.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -613,7 +613,7 @@
 		};
 		AF1C7250250750FD004DDCE3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7B6E5638B76EF5CC986C19B /* Pods-PushTemplates.release.xcconfig */;
+			baseConfigurationReference = D44353FE4BCEBCF7EB36F838 /* Pods-PushTemplates.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -644,7 +644,7 @@
 		};
 		AF315F161F5007A900E3246B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D5BD39156230918B311428D /* Pods-NotificationService.debug.xcconfig */;
+			baseConfigurationReference = 65DEF482F8D162B6AF1654B1 /* Pods-NotificationService.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -675,7 +675,7 @@
 		};
 		AF315F171F5007A900E3246B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71B7C4D4128030481F3D1FE9 /* Pods-NotificationService.release.xcconfig */;
+			baseConfigurationReference = D45AFAAA688C4A0A548101A8 /* Pods-NotificationService.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -814,7 +814,7 @@
 		};
 		C71D9BB41C8061BD00FBBD03 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78F605A747EB3D739827A819 /* Pods-MoESwiftSample.debug.xcconfig */;
+			baseConfigurationReference = F739D02FE3F05F2C0F52E26C /* Pods-MoESwiftSample.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -843,7 +843,7 @@
 		};
 		C71D9BB51C8061BD00FBBD03 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E9D7F7AC9AD1E78CC0E7601 /* Pods-MoESwiftSample.release.xcconfig */;
+			baseConfigurationReference = 1FD979DE9D5BA4A8529EAA2E /* Pods-MoESwiftSample.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;

@@ -3,6 +3,10 @@
 
 ## Change Log:
 
+### Version 2.2.1  *(11th February, 2022)*
+-------------------------------------------
+* BugFix - Handled crash in CardsController in 12.4 OS version.
+
 ### Version 2.2.0  *(31st January, 2022)*
 -------------------------------------------
 * Added `Capacitor` integration type.
