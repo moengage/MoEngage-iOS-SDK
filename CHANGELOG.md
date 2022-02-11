@@ -4,7 +4,7 @@
 ## Changelog:
 ### Version 7.2.1  *(11th February, 2022)*
 -------------------------------------------
-* SDK improvements.
+* Handled SDK initialization from background thread.
 
 ### Version 7.2.0  *(31st January, 2022)*
 -------------------------------------------

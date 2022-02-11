@@ -4,7 +4,7 @@
 ## Changelog:
 ### Version 7.2.1  *(11th February, 2022)*
 -------------------------------------------
-* BugFix SUP-8691 - Handled notification registering in the main thread.
+* BugFix - Handled SDK initialization from background thread.
 
 ### Version 7.2.0  *(31st January, 2022)*
 -------------------------------------------
