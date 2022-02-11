@@ -2,6 +2,10 @@
 =================================
 
 ## Changelog:
+### Version 7.2.1  *(11th February, 2022)*
+-------------------------------------------
+* SDK improvements.
+
 ### Version 7.2.0  *(31st January, 2022)*
 -------------------------------------------
 * Added `Capacitor` integration type.
