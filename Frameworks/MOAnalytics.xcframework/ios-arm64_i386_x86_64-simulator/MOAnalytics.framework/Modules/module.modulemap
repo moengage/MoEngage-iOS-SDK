@@ -1,6 +1,0 @@
-framework module MOAnalytics {
-  umbrella header "MOAnalytics.h"
-
-  export *
-  module * { export * }
-}

@@ -3,18 +3,13 @@ use_frameworks!
 target 'MoESwiftSample' do
   platform :ios, '10.0'
   pod 'MoEngage-iOS-SDK', :path => '../../'
-  pod 'MoEngageInApp', :path => '../../'
-  pod 'MOGeofence', :path => '../../'
-  pod 'MoEngageCards', :path => '../../'
 end
 
 target 'NotificationService' do
   platform :ios, '10.0'
-  pod 'MORichNotification', :path => '../../'
 end
 
 target 'PushTemplates' do
   platform :ios, '10.0'
-  pod 'MORichNotification', :path => '../../'
 end
 

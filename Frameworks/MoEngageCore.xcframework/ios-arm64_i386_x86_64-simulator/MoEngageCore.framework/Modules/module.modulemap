@@ -4,3 +4,8 @@ framework module MoEngageCore {
   export *
   module * { export * }
 }
+
+module MoEngageCore.Swift {
+    header "MoEngageCore-Swift.h"
+    requires objc
+}

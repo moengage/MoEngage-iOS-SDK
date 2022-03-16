@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MoEngage
+import MoEngageSDK
 import UserNotifications
 import AppTrackingTransparency
 
@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         
         
-        MOMessaging.sharedInstance().messagingDelegate = self
+        MOMessaging.sharedInstance.setMessagingDelegate(self, forAppID: nil)
         
         //This is to enable logs of MoEngage SDK
         MoEngage.enableSDKLogs(true)
@@ -33,15 +33,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         //TODO: Add your App Group ID
         let appGroupID = "Your App Group ID"
         
-        var sdkConfig = MOSDKConfig.init(appID: yourMoEAppID)
+        var sdkConfig = MOSDKConfig(withAppID: yourMoEAppID)
         sdkConfig.appGroupID = appGroupID
-        sdkConfig.moeDataCenter = DATA_CENTER_01
+        sdkConfig.moeDataCenter = MODataCenter.data_center_01
         
         DispatchQueue.main.async {
             #if DEBUG
-            MoEngage.sharedInstance().initializeTest(with: sdkConfig, andLaunchOptions: launchOptions)
+            MoEngage.sharedInstance().initializeDefaultTestInstance(with: sdkConfig, andLaunchOptions: launchOptions)
             #else
-            MoEngage.sharedInstance().initializeLive(with: sdkConfig, andLaunchOptions: launchOptions)
+            MoEngage.sharedInstance().initializeDefaultLiveInstance(with: sdkConfig, andLaunchOptions: launchOptions)
             #endif
         }
         
@@ -101,21 +101,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         completionHandler(.newData)
     }
     
-    func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, forRemoteNotification userInfo: [AnyHashable : Any], completionHandler: @escaping () -> Void) {
-        if let identifier = identifier {
-            MoEngage.sharedInstance().handleAction(withIdentifier: identifier, forRemoteNotification: userInfo)
-        }
-    }
-        
     // MARK:- Send app status to MoEngage
     func sendAppStatusToMoEngage () {
         if((UserDefaults.standard.object(forKey: "app version") == nil)){
-            MoEngage.sharedInstance().appStatus(INSTALL)
+            MoEngage.sharedInstance().appStatus(.install)
             return
         }
         
         if(self.getAppVersion().floatValue > (UserDefaults.standard.object(forKey: "app version") as AnyObject).floatValue){
-            MoEngage.sharedInstance().appStatus(UPDATE)
+            MoEngage.sharedInstance().appStatus(.update)
         }
     }
     

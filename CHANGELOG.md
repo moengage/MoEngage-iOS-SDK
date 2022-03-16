@@ -2,6 +2,10 @@
 =================================
 
 ## Changelog:
+### Version 8.0.0  *(16th March, 2022)*
+-------------------------------------------
+* Renamed the module to MoEngageSDK.
+
 ### Version 7.2.1  *(11th February, 2022)*
 -------------------------------------------
 * Handled SDK initialization from background thread.

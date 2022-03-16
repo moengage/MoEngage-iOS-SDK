@@ -1,0 +1,362 @@
+{
+  "warnings": [
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 13,
+      "symbol": "MoEngage",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 17,
+      "symbol": "MoEngage.+sharedInstance",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 32,
+      "symbol": "MoEngage.-initializeTestInstanceWithConfig:andLaunchOptions:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 34,
+      "symbol": "MoEngage.-initializeDefaultTestInstanceWithConfig:andLaunchOptions:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 44,
+      "symbol": "MoEngage.-initializeLiveInstanceWithConfig:andLaunchOptions:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 46,
+      "symbol": "MoEngage.-initializeDefaultLiveInstanceWithConfig:andLaunchOptions:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 114,
+      "symbol": "MoEngage.-appStatus:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 126,
+      "symbol": "MoEngage.-trackEvent:withProperties:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 137,
+      "symbol": "MoEngage.-setUserAttribute:forKey:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 145,
+      "symbol": "MoEngage.-setUserAttributeEpochTime:forKey:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 147,
+      "symbol": "MoEngage.-setUserAttributeEpochTime:forKey:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 155,
+      "symbol": "MoEngage.-setUserAttributeDate:forKey:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 163,
+      "symbol": "MoEngage.-setUserAttributeISODate:forKey:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 165,
+      "symbol": "MoEngage.-setUserAttributeISODate:forKey:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 173,
+      "symbol": "MoEngage.-setLocation:forKey:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 175,
+      "symbol": "MoEngage.-setLocation:forKey:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 186,
+      "symbol": "MoEngage.-setUniqueID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 188,
+      "symbol": "MoEngage.-setUniqueID:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 197,
+      "symbol": "MoEngage.-setAlias:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 206,
+      "symbol": "MoEngage.-setEmailID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 208,
+      "symbol": "MoEngage.-setEmailID:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 217,
+      "symbol": "MoEngage.-setName:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 219,
+      "symbol": "MoEngage.-setName:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 227,
+      "symbol": "MoEngage.-setFirstName:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 229,
+      "symbol": "MoEngage.-setFirstName:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 238,
+      "symbol": "MoEngage.-setLastName:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 240,
+      "symbol": "MoEngage.-setLastName:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 249,
+      "symbol": "MoEngage.-setMobileNo:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 251,
+      "symbol": "MoEngage.-setMobileNo:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 260,
+      "symbol": "MoEngage.-setGender:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 262,
+      "symbol": "MoEngage.-setGender:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 271,
+      "symbol": "MoEngage.-setDateOfBirth:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 273,
+      "symbol": "MoEngage.-setDateOfBirth:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 282,
+      "symbol": "MoEngage.-setLocation:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 284,
+      "symbol": "MoEngage.-setLocation:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 294,
+      "symbol": "MoEngage.-trackUserPushPreference:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 301,
+      "symbol": "MoEngage.-trackLocaleForAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 317,
+      "symbol": "MoEngage.-flushForAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 319,
+      "symbol": "MoEngage.-flushForAppID:withCompletionBlock:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 328,
+      "symbol": "MoEngage.-resetUserForAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 337,
+      "symbol": "MoEngage.-resetUserForAppID:withCompletionBlock:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 355,
+      "symbol": "MoEngage.+enableSDKLogs:forAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 357,
+      "symbol": "MoEngage.+enableDefaultConsoleLogger:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 364,
+      "symbol": "MoEngage.+clearSDKLogs:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 380,
+      "symbol": "MoEngage.-enableDataTrackingForAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 382,
+      "symbol": "MoEngage.-disableDataTracking",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 384,
+      "symbol": "MoEngage.-disableDataTrackingForAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 391,
+      "symbol": "MoEngage.-enableSDKForAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngage.h",
+      "line": 410,
+      "symbol": "MoEngage.-disableSDKForAppID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngageSDK.h",
+      "line": 12,
+      "symbol": "MoEngageVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "MoEngageSDK/MoEngageSDK.h",
+      "line": 15,
+      "symbol": "MoEngageVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/rakshitha/Documents/MoEngage-iPhone-SDK/MoEFramework/MoEngage"
+}

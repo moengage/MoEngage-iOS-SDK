@@ -15,7 +15,6 @@
 		AF1C7246250750FD004DDCE3 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1C7245250750FD004DDCE3 /* NotificationViewController.swift */; };
 		AF1C7249250750FD004DDCE3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1C7247250750FD004DDCE3 /* MainInterface.storyboard */; };
 		AF1C724D250750FD004DDCE3 /* PushTemplates.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AF1C7240250750FD004DDCE3 /* PushTemplates.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		AF2C1442207E223300C7E041 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C1441207E223300C7E041 /* InboxViewController.swift */; };
 		AF315F111F5007A900E3246B /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF315F101F5007A900E3246B /* NotificationService.swift */; };
 		AF6621E420F5B60200EEFFF0 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AF315F0E1F5007A900E3246B /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AF758AA9240292400048880D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF758AA8240292400048880D /* AdSupport.framework */; };
@@ -71,7 +70,6 @@
 		AF1C7248250750FD004DDCE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		AF1C724A250750FD004DDCE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF1C725125075104004DDCE3 /* PushTemplates.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushTemplates.entitlements; sourceTree = "<group>"; };
-		AF2C1441207E223300C7E041 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
 		AF315F0E1F5007A900E3246B /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF315F101F5007A900E3246B /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		AF315F121F5007A900E3246B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -207,7 +205,6 @@
 				C71D9B9D1C8061BD00FBBD03 /* Main.storyboard */,
 				C71D9BA01C8061BD00FBBD03 /* Assets.xcassets */,
 				C71D9BA51C8061BD00FBBD03 /* Info.plist */,
-				AF2C1441207E223300C7E041 /* InboxViewController.swift */,
 				AF94A5E426FBA42300D82F39 /* LaunchScreen.storyboard */,
 			);
 			path = MoESwiftSample;
@@ -489,25 +486,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MoESwiftSample/Pods-MoESwiftSample-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MOGeofence/MOGeofence.framework/MOGeofence",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MORichNotification/MORichNotification.framework/MORichNotification",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MoEngage.framework/MoEngage",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MoEngageSDK.framework/MoEngageSDK",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MoEngageCore.framework/MoEngageCore",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MOAnalytics.framework/MOAnalytics",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MOMessaging.framework/MOMessaging",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngageCards/MOCards.framework/MOCards",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngageInApp/MOInApp.framework/MOInApp",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MoEngageAnalytics.framework/MoEngageAnalytics",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MoEngageMessaging.framework/MoEngageMessaging",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MoEngageObjCUtils.framework/MoEngageObjCUtils",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOGeofence.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MORichNotification.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoEngage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoEngageSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoEngageCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOAnalytics.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOMessaging.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOCards.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOInApp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoEngageAnalytics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoEngageMessaging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoEngageObjCUtils.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -538,7 +529,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C71D9B9C1C8061BD00FBBD03 /* ViewController.swift in Sources */,
-				AF2C1442207E223300C7E041 /* InboxViewController.swift in Sources */,
 				C71D9B9A1C8061BD00FBBD03 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
