@@ -7,11 +7,9 @@
 //
 
 #import "ViewController.h"
-#import <MoEngage/MoEngage.h>
-#import <MOGeofence/MOGeofence.h>
-#import <MOCards/MOCards-Swift.h>
+#import <MoEngageSDK/MoEngageSDK.h>
 
-@interface ViewController () <MOInAppNativDelegate>
+@interface ViewController ()
 
 @end
 
@@ -26,26 +24,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [MOInApp sharedInstance].inAppDelegate = self;
-    
-    // Geofence Monitoring
-    [[MOGeofenceHandler sharedInstance] startGeofenceMonitoring];
-    
-    // Track User Attributes
-    [self trackUserAttributes];
-    
-    // Track Event
     [self trackEvents];
-    
-    // Show InApp
-    [[MOInApp sharedInstance] showInApp];
-    [MoEngageCards.sharedInstance presentCardsViewControllerWithUIConfiguration:nil];
+    [self trackUserAttributes];
 }
 
 
 -(void)trackEvents{
     // track event example
+    [MoEngage enableSDKLogs:true];
     NSMutableDictionary* eventAttrDict = [NSMutableDictionary dictionary];
     eventAttrDict[@"Product"] = @"iPhone XS Max";
     eventAttrDict[@"BrandName"] = @"Apple";
@@ -70,50 +56,21 @@
 
 -(void)trackUserAttributes{
     //Default Attributes
-    [[MoEngage sharedInstance] setUserName:@"MoE Test User"];
-    [[MoEngage sharedInstance] setUserLastName:@"Test User"];
-    [[MoEngage sharedInstance] setUserFirstName:@"MoE"];
-    [[MoEngage sharedInstance] setUserEmailID:@"test@moengage.com"];
-    [[MoEngage sharedInstance] setUserMobileNo:@"+91-9799799799"];
-    [[MoEngage sharedInstance] setUserGender:MALE]; // Use UserGender enumerator for this
-    [[MoEngage sharedInstance] setUserDateOfBirth:[NSDate date]];//userBirthdate should be a NSDate instance
-    [[MoEngage sharedInstance] setUserLocationLatitude:12.98675 andLongitude:73.456666];
-    
+    [[MoEngage sharedInstance] setName:@"MoE Test User"];
+    [[MoEngage sharedInstance] setLastName:@"Test User"];
+    [[MoEngage sharedInstance] setFirstName:@"MoE"];
+    [[MoEngage sharedInstance] setEmailID:@"test@moengage.com"];
+    [[MoEngage sharedInstance] setMobileNo:@"+91-9799799799"];
+    [[MoEngage sharedInstance] setGender:UserGenderMale]; // Use UserGender enumerator for this
+    [[MoEngage sharedInstance] setDateOfBirth:[NSDate date]];//userBirthdate should be a NSDate instance
+    [[MoEngage sharedInstance] setLocation:[[MOGeoLocation alloc] initWithLatitude:12.22 andLongitude:34.44]];
+
     //Custom User Attribute tracking examples
     [[MoEngage sharedInstance]setUserAttribute:@"Bengaluru" forKey:@"Current_City"];
     double timestampEpochValue = [[NSDate date] timeIntervalSince1970];
-    [[MoEngage sharedInstance] setUserAttributeTimestamp:timestampEpochValue forKey:@"LastPurchaseDate"];
-    [[MoEngage sharedInstance] setUserAttributeLocationLatitude:13.23 longitude:23.43 forKey:@"location_attribute"];
+    [[MoEngage sharedInstance] setUserAttributeEpochTime:timestampEpochValue forKey:@"LastPurchaseDate"];
+    [[MoEngage sharedInstance] setLocation:[[MOGeoLocation alloc] initWithLatitude:23.33 andLongitude:26.22] forKey:@"attribute name"];
+
 }
-
-
-#pragma mark- MOInAppNativDelegate Methods
-// Called when an inApp is shown on the screen
--(void)inAppShownWithCampaignInfo:(MOInAppCampaign *)inappCampaign{
-    NSLog(@"InApp Shown with Campaign ID %@",inappCampaign.campaign_id);
-}
-
-// Called when an inApp is dismissed by the user
--(void)inAppDismissedWithCampaignInfo:(MOInAppCampaign *)inappCampaign{
-    NSLog(@"InApp Dismissed with Campaign ID %@",inappCampaign.campaign_id);
-}
-
-// Called when an inApp is clicked by the user, and it has been configured with a custom action
--(void)inAppClickedWithCampaignInfo:(MOInAppCampaign *)inappCampaign andCustomActionInfo:(MOInAppAction *)customAction{
-    NSLog(@"InApp Clicked with Campaign ID %@",inappCampaign.campaign_id);
-    NSLog(@"Custom Action Key Value Pairs: %@", customAction.screenName);
-}
-
-// Called when an inApp is clicked by the user, and it has been configured with a navigation action
--(void)inAppClickedWithCampaignInfo:(MOInAppCampaign *)inappCampaign andNavigationActionInfo:(MOInAppAction *)navigationAction{
-    NSLog(@"InApp Clicked with Campaign ID %@",inappCampaign.campaign_id);
-    NSLog(@"Navigation Action Screen Name %@\n Key Value Pairs: %@", navigationAction.screenName,navigationAction.keyValuePairs);
-}
-
-// This method is called when an event triggers an in-app from the server, which is of type self handled.
--(void)selfHandledInAppTriggeredWithInfo:(MOInAppSelfHandledCampaign *)inappCampaign{
-    NSLog(@"Self Handled InApp Triggered with info:\nCampaign ID: %@ \nContent: %@",inappCampaign.campaign_id, inappCampaign.campaignContent);
-}
-
 
 @end

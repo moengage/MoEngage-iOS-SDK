@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <MoEngage/MoEngage.h>
+#import <MoEngageSDK/MoEngageSDK.h>
 
 
 @interface AppDelegate () <UNUserNotificationCenterDelegate, MOMessagingDelegate>
@@ -29,15 +29,15 @@
     NSString* yourMoEngageAppID = @"Your App ID";
     
     MOSDKConfig* sdkConfig = [[MOSDKConfig alloc] initWithAppID:yourMoEngageAppID];
-    sdkConfig.moeDataCenter = DATA_CENTER_01;
+    sdkConfig.moeDataCenter = MODataCenterData_center_01;
     //TODO: Add your App Group ID
     sdkConfig.appGroupID = @"appGroupID"; //appGroupID configured in capabilities
     // MoEngage SDK Initialization
     
     #ifdef DEBUG
-        [[MoEngage sharedInstance] initializeTestWithConfig:sdkConfig andLaunchOptions:launchOptions];
+    [[MoEngage sharedInstance] initializeDefaultTestInstanceWithConfig:sdkConfig andLaunchOptions:launchOptions];
     #else
-        [[MoEngage sharedInstance] initializeLiveWithConfig:sdkConfig andLaunchOptions:launchOptions];
+    [[MoEngage sharedInstance] initializeDefaultLiveInstanceWithConfig:sdkConfig andLaunchOptions:launchOptions];
     #endif
     
     // Register For Push Notification
@@ -157,14 +157,14 @@ didReceiveNotificationResponse:(UNNotificationResponse *)response
     
     // check install. if app version does not exist in defaults, it means it is an install for sure.
     if(![[NSUserDefaults standardUserDefaults]objectForKey:@"app_version"]){
-        [[MoEngage sharedInstance]appStatus: INSTALL];
+        [[MoEngage sharedInstance]appStatus: AppStatusInstall];
         [self saveAppVersionToDefaults];
         return;
     }
     
     // It is an update. Check if the latest app version is greater than that saved in the user defaults
     if(![[self getAppVersion] isEqualToString:[[NSUserDefaults standardUserDefaults]objectForKey:@"app_version"]]){
-        [[MoEngage sharedInstance]appStatus: UPDATE];
+        [[MoEngage sharedInstance]appStatus: AppStatusUpdate];
         [self saveAppVersionToDefaults];
     }
 }

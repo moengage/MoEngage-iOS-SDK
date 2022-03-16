@@ -1,0 +1,245 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageMessaging
+import Foundation
+import MoEngageAnalytics
+import MoEngageCore
+@_exported import MoEngageMessaging
+import MoEngageObjCUtils
+import Swift
+import UIKit
+import UserNotifications
+import _Concurrency
+@_inheritsConvenienceInitializers @objc public class MOMessagingUtils : ObjectiveC.NSObject {
+  public static func getStatsAttributes(fromPayloadDict payloadDict: Swift.Dictionary<Swift.AnyHashable, Any>) -> Swift.Dictionary<Swift.String, Any>
+  @objc public static func getAppID(fromNotificationPayload userInfo: Foundation.NSDictionary) -> Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum MOPushTemplateType {
+  case StylizedBasic
+  case ImageCarousel
+  case Default
+  public static func == (a: MoEngageMessaging.MOPushTemplateType, b: MoEngageMessaging.MOPushTemplateType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class MORichExpandedMode {
+  public var templateType: MoEngageMessaging.MOPushTemplateType?
+  public var autoStart: Swift.Bool
+  public var backgroundColor: UIKit.UIColor
+  public var cards: [MoEngageMessaging.MOPushCard]
+  public init?(_ pushModeDict: [Swift.String : Any]) throws
+  @objc deinit
+}
+public class MOPushCard {
+  public var id: Swift.Int?
+  public var widgets: [MoEngageMessaging.MOPushWidget]
+  public init(_ pushCardDict: [Swift.String : Any]) throws
+  @objc deinit
+}
+public enum MOPushWidgetType {
+  case Text
+  case Button
+  case Image
+  case Unknown
+  public static func == (a: MoEngageMessaging.MOPushWidgetType, b: MoEngageMessaging.MOPushWidgetType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class MOPushWidget {
+  public var type: MoEngageMessaging.MOPushWidgetType?
+  public var content: Swift.String?
+  public init(_ widgetDict: [Swift.String : Any]) throws
+  @objc deinit
+}
+public struct MOMessagingConstant {
+  public struct EventNames {
+    public static let notificationReceived: Swift.String
+    public static let notificationClicked: Swift.String
+    public static let notificationShown: Swift.String
+    public static let notificationScheduleFailed: Swift.String
+    public static let notificationScheduleSuccess: Swift.String
+    public static let notificationShownInOffline: Swift.String
+  }
+  public struct PushPayloadKeys {
+    public static let aps: Swift.String
+    public static let moengage: Swift.String
+    public static let appExtra: Swift.String
+    public struct ApsKeys {
+      public static let alert: Swift.String
+      public static let alertTitle: Swift.String
+      public static let alertSubTitle: Swift.String
+      public static let alertBody: Swift.String
+      public static let sound: Swift.String
+      public static let category: Swift.String
+    }
+    public struct MoEngageKeys {
+      public static let silentPush: Swift.String
+      public static let cid: Swift.String
+      public static let appID: Swift.String
+      public static let webUrl: Swift.String
+      public static let couponCode: Swift.String
+      public static let inboxExpiry: Swift.String
+      public static let inAppDict: Swift.String
+      public static let inAppV2: Swift.String
+      public static let mediaType: Swift.String
+      public static let mediaAttachment: Swift.String
+      public static let isRead: Swift.String
+      public static let receivedDate: Swift.String
+      public static let clickedDate: Swift.String
+    }
+    public struct AppExtraKeys {
+      public static let deeplink: Swift.String
+      public static let screenName: Swift.String
+      public static let customKVPairs: Swift.String
+    }
+    public struct MoEFeatureKeys {
+      public static let id: Swift.String
+      public static let actions: Swift.String
+      public static let widgets: Swift.String
+      public static let displayName: Swift.String
+      public static let defaultActions: Swift.String
+      public static let name: Swift.String
+      public static let value: Swift.String
+      public static let kvPairs: Swift.String
+      public static let content: Swift.String
+      public static let stylizedBasic: Swift.String
+      public static let imageCarousel: Swift.String
+      public static let moeFeatures: Swift.String
+      public static let richPush: Swift.String
+      public static let navigate: Swift.String
+      public static let coupon: Swift.String
+      public static let expanded: Swift.String
+      public static let autoStart: Swift.String
+      public static let cards: Swift.String
+      public static let type: Swift.String
+      public static let style: Swift.String
+      public static let bgColor: Swift.String
+    }
+    public struct iOSDictKeys {
+      public static let ios: Swift.String
+      public static let category: Swift.String
+      public static let sound: Swift.String
+    }
+    public struct ActionKeys {
+      public static let deepLink: Swift.String
+      public static let richLanding: Swift.String
+      public static let screenName: Swift.String
+    }
+    public struct WidgetTypeKeys {
+      public static let image: Swift.String
+      public static let text: Swift.String
+      public static let button: Swift.String
+    }
+  }
+}
+@objc public protocol MOMessagingDelegate {
+  @objc optional func notificationRegistered(withDeviceToken deviceToken: Swift.String)
+  @objc optional func notificationClicked(withScreenName screenName: Swift.String?, andKVPairs kvPairs: [Swift.AnyHashable : Any]?)
+  @objc optional func notificationClicked(withScreenName screenName: Swift.String?, kvPairs: [Swift.AnyHashable : Any]?, andPushPayload userInfo: [Swift.AnyHashable : Any])
+  @objc optional func notificationClicked(withPushPayload userInfo: [Swift.AnyHashable : Any])
+  @objc optional func notificationReceived(withPushPayload userInfo: [Swift.AnyHashable : Any])
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MOMessaging : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: MoEngageMessaging.MOMessaging
+  @objc public func initializeMessaging(withLaunchOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]? = nil, forInstanceID instanceID: Swift.String)
+  @objc public func setMessagingDelegate(_ delegate: MoEngageMessaging.MOMessagingDelegate?, forAppID appID: Swift.String?)
+  public func setInternalInboxDelegate(_ delegate: MoEngageMessaging.MOMessagingDelegate?, forInstanceID instanceID: Swift.String?)
+  public func trackNotificationReceived(_ payload: MoEngageMessaging.MOPushPayload)
+  public func trackNotificationShown(_ payload: MoEngageMessaging.MOPushPayload)
+  @objc public func registerForRemoteNotification(withCategories categories: Swift.Set<UserNotifications.UNNotificationCategory>? = nil, andUserNotificationCenterDelegate delegate: UserNotifications.UNUserNotificationCenterDelegate? = nil)
+  @objc public func setUserNotificationCategories(_ categories: Swift.Set<UserNotifications.UNNotificationCategory>? = nil)
+  @objc public func setPushToken(_ deviceToken: Foundation.Data?)
+  @objc public func didFailToRegisterForPush()
+  @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification)
+  @objc public func didReceieveNotification(inApplication application: UIKit.UIApplication? = nil, withInfo pushPayload: [Swift.AnyHashable : Any])
+  @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse)
+  @objc public func process(notificationPayload pushPayload: [Swift.AnyHashable : Any], forInstanceID instanceID: Swift.String)
+  @objc public func disableBadgeReset()
+  @objc public static func isMoEngageSilentPushAppLaunch(withLaunchOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?) -> Swift.Bool
+  @objc public func getPushToken() -> Swift.String?
+  @objc deinit
+}
+extension MoEngageMessaging.MOMessaging : UserNotifications.UNUserNotificationCenterDelegate {
+  @objc dynamic public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
+  @objc dynamic public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
+}
+extension MoEngageMessaging.MOMessaging : MoEngageObjCUtils.MOAppDelegateMessagingProxyProtocol {
+  @objc dynamic public func applicationDidRegisterForRemoteNotifications(withDeviceToken deviceToken: Foundation.Data?)
+  @objc dynamic public func applicationDidFailToRegisterForRemoteNotificationsWithError(_ error: Swift.Error?)
+  @objc dynamic public func applicationDidReceiveRemoteNotification(_ userInfo: [Swift.AnyHashable : Any]?)
+  @objc dynamic public func userNotificationCenterWillPresent(_ notification: UserNotifications.UNNotification?)
+  @objc dynamic public func userNotificationCenterDidReceive(_ response: UserNotifications.UNNotificationResponse?)
+}
+public class MORichPush {
+  public var title: Swift.String?
+  public var subTitle: Swift.String?
+  public var body: Swift.String?
+  public var templateDisplayName: Swift.String?
+  public var category: Swift.String?
+  public var sound: Swift.String?
+  public var expandedMode: MoEngageMessaging.MORichExpandedMode?
+  public var defaultActions: [MoEngageMessaging.MOPushAction]
+  public init(_ richPushDict: [Swift.String : Any]) throws
+  @objc deinit
+}
+public class MOPushPayload {
+  public var pushPayload: [Swift.AnyHashable : Any]
+  public var moengageDict: Swift.Dictionary<Swift.String, Any>
+  public var mediaAttachment: Swift.String?
+  public var mediaType: Swift.String?
+  public var richPush: MoEngageMessaging.MORichPush?
+  public var appID: Swift.String
+  public var formattedCID: Swift.String
+  public var deeplinkUrl: Swift.String?
+  public var screenName: Swift.String?
+  public var richLandingUrl: Swift.String?
+  public var couponCode: Swift.String?
+  public var inAppV2CID: Swift.String?
+  public var inAppV3Dict: Swift.Dictionary<Swift.String, Any>?
+  public var customKVPair: Swift.Dictionary<Swift.String, Any>?
+  public init(withPushPayload payload: [Swift.AnyHashable : Any]) throws
+  @objc deinit
+}
+public enum MOActionName {
+  case Navigate
+  case Coupon
+  case Unknown
+  public static func == (a: MoEngageMessaging.MOActionName, b: MoEngageMessaging.MOActionName) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum MOActionType {
+  case RichLanding
+  case DeepLinking
+  case NavigateToScreen
+  case Unknown
+  public static func == (a: MoEngageMessaging.MOActionType, b: MoEngageMessaging.MOActionType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class MOPushAction {
+  public var actionName: MoEngageMessaging.MOActionName?
+  public var actionType: MoEngageMessaging.MOActionType?
+  public var value: Swift.String?
+  public var kvPairs: Swift.Dictionary<Swift.String, Any>?
+  public init(_ actionDict: [Swift.String : Any]) throws
+  @objc deinit
+}
+extension MoEngageMessaging.MOPushTemplateType : Swift.Equatable {}
+extension MoEngageMessaging.MOPushTemplateType : Swift.Hashable {}
+extension MoEngageMessaging.MOPushWidgetType : Swift.Equatable {}
+extension MoEngageMessaging.MOPushWidgetType : Swift.Hashable {}
+extension MoEngageMessaging.MOActionName : Swift.Equatable {}
+extension MoEngageMessaging.MOActionName : Swift.Hashable {}
+extension MoEngageMessaging.MOActionType : Swift.Equatable {}
+extension MoEngageMessaging.MOActionType : Swift.Hashable {}

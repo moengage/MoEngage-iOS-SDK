@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Classes  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Section/Classes" class="dashAnchor"></a>
+    <a title="Classes  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (46% documented)</p>
+        <div class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" alt=""/>
+        Classes  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/MoEngage.html">MoEngage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@MoEngageVersionNumber">MoEngageVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@MoEngageVersionString">MoEngageVersionString</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Classes</h1>
+            <p>The following classes are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MoEngage"></a>
+                    <a name="//apple_ref/objc/Class/MoEngage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MoEngage">MoEngage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Classes/MoEngage.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">MoEngage</span> <span class="p">:</span> <span class="nc">NSObject</span>
+
+
+<span class="cp">#pragma mark - Shared instance
+</span><span class="k">+</span><span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">sharedInstance</span><span class="p">;</span>
+
+<span class="c1">/// Making the init method private as this Class has Singleton implementation</span>
+<span class="k">-</span><span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">init</span> <span class="n">NS_UNAVAILABLE</span><span class="p">;</span>
+
+<span class="cp">#pragma mark - Initialization Methods
+</span>
+<span class="cm">/**
+ Call this method in the AppDelegate in application:didFinishLaunchingWithOptions: to initialize the SDK for Test Environment with MOSDKConfig instance
+ @param sdkConfig MOSDKConfig instance with the required config to initialize SDK
+ @param launchOptions Launch Options obtained application:didFinishLaunching: method
+ @version 7.0.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">initializeTestWithConfig</span><span class="p">:(</span><span class="n">MOSDKConfig</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">sdkConfig</span> <span class="nf">andLaunchOptions</span><span class="p">:(</span><span class="n">NSDictionary</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">launchOptions</span> <span class="n">__deprecated_msg</span><span class="p">(</span><span class="s">"Use initializeDefaultTestInstanceWithConfig:andLaunchOptions instead."</span><span class="p">);</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">initializeTestInstanceWithConfig</span><span class="p">:(</span><span class="n">MOSDKConfig</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">sdkConfig</span> <span class="nf">andLaunchOptions</span><span class="p">:(</span><span class="n">NSDictionary</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">launchOptions</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">initializeDefaultTestInstanceWithConfig</span><span class="p">:(</span><span class="n">MOSDKConfig</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">sdkConfig</span> <span class="nf">andLaunchOptions</span><span class="p">:(</span><span class="n">NSDictionary</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">launchOptions</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method in the AppDelegate in application:didFinishLaunchingWithOptions: to initialize the SDK for Live Environment with MOSDKConfig instance
+ @param sdkConfig MOSDKConfig instance with the required config to initialize SDK
+ @param launchOptions Launch Options obtained application:didFinishLaunching: method
+ @version 7.0.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">initializeLiveWithConfig</span><span class="p">:(</span><span class="n">MOSDKConfig</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">sdkConfig</span> <span class="nf">andLaunchOptions</span><span class="p">:(</span><span class="n">NSDictionary</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">launchOptions</span> <span class="n">__deprecated_msg</span><span class="p">(</span><span class="s">"Use initializeDefaultLiveInstanceWithConfig:andLaunchOptions instead."</span><span class="p">);</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">initializeLiveInstanceWithConfig</span><span class="p">:(</span><span class="n">MOSDKConfig</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">sdkConfig</span> <span class="nf">andLaunchOptions</span><span class="p">:(</span><span class="n">NSDictionary</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">launchOptions</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">initializeDefaultLiveInstanceWithConfig</span><span class="p">:(</span><span class="n">MOSDKConfig</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">sdkConfig</span> <span class="nf">andLaunchOptions</span><span class="p">:(</span><span class="n">NSDictionary</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">launchOptions</span><span class="p">;</span>
+
+<span class="cm">/**
+ Method to update SDK Configuration
+ @param sdkConfig MOSDKConfig instance with the required config to initialize SDK
+ @version 7.0.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateSDKConfig</span><span class="p">:(</span><span class="n">MOSDKConfig</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">sdkConfig</span><span class="p">;</span>
+
+<span class="cp">#pragma mark - Messaging Module
+#pragma mark Push Notification
+</span><span class="cm">/**
+ Method to register your app for push notification with APNS for iOS10 and above.
+ @param categories to set categories for supporting Notification Actions (iOS10 and above)
+ @param delegate to set the delegate for UNUserNotificationCenter.
+ @version 4.0.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">registerForRemoteNotificationWithCategories</span><span class="p">:(</span><span class="n">NSSet</span><span class="o">&lt;</span><span class="n">UNNotificationCategory</span><span class="o">*&gt;*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">categories</span> <span class="nf">withUserNotificationCenterDelegate</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span> <span class="p">)</span><span class="nv">delegate</span><span class="p">;</span>
+
+<span class="cm">/**
+ * Method to send notification categories to SDK to support Notification Action in iOS10 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserNotificationCategories</span><span class="p">:(</span><span class="n">NSSet</span><span class="o">&lt;</span><span class="n">UNNotificationCategory</span><span class="o">*&gt;*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">categories</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to pass the device token/push token generated by APNS for your app to MoEngage SDK which can be later used for sending push notification to your app users.
+ 
+ Call this method in AppDelegate in application:didRegisterForRemoteNotificationsWithDeviceToken:.
+ @param deviceToken The token of the device for push notifications
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setPushToken</span><span class="p">:(</span><span class="n">NSData</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">deviceToken</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method in AppDelegate in didReceiveRemoteNotification
+ @param application The application instance
+ @param userInfo The info dict with the push
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didReceieveNotificationinApplication</span><span class="p">:(</span><span class="n">UIApplication</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">application</span> <span class="nf">withInfo</span><span class="p">:(</span><span class="n">NSDictionary</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">userInfo</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method in AppDelegate in didFailToRegisterForRemoteNotificationsWithError
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didFailToRegisterForPush</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method in AppDelegate in userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:
+ @since iOS 10
+ @version 3.0.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">userNotificationCenter</span><span class="p">:(</span><span class="n">UNUserNotificationCenter</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">center</span> <span class="nf">didReceiveNotificationResponse</span><span class="p">:(</span><span class="n">UNNotificationResponse</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">response</span><span class="p">;</span>
+
+<span class="cm">/**
+ Method to detect App Launches due to MoEngage Silent Push Notifications
+ @param launchOptions Launch Options obtained from application:didFinishLaunching: method
+ @version 7.1.0 and above
+*/</span>
+<span class="k">+</span><span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">isMoEngageSilentPushAppLaunchWithLaunchOptions</span><span class="p">:(</span><span class="n">NSDictionary</span><span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">launchOptions</span><span class="p">;</span>
+
+
+<span class="cp">#pragma mark- Analytics Module
+#pragma mark Install/Update tracking
+</span>
+<span class="cm">/**
+ Use this method to set the app status.
+ @param appStatus - Two possible enum values - APP_UDPATE (for app updates) and APP_INSTALL (for new installs)
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">appStatus</span><span class="p">:(</span><span class="n">AppStatus</span><span class="p">)</span><span class="nv">appStatus</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">appStatus</span><span class="p">:(</span><span class="n">AppStatus</span><span class="p">)</span><span class="nv">appStatus</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cp">#pragma mark Track Event
+</span>
+<span class="cm">/**
+Call this method to track events.
+@param name Event name to be tracked
+@param properties of type MOProperties. See MOProperties for more details.
+@version Available from SDK version 6.0.0 and above
+*/</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">trackEvent</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">name</span> <span class="nf">withProperties</span><span class="p">:(</span><span class="n">MOProperties</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">properties</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">trackEvent</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">name</span> <span class="nf">withProperties</span><span class="p">:(</span><span class="n">MOProperties</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">properties</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cp">#pragma mark Track UserAttributes
+</span><span class="cm">/**
+ Use this method to set unique attributes to identify the app user. For eg. username, email, age, gender etc.
+ @param value The value/attribute
+ @warning value can of be type string, integer or bool
+ @param key The key, which is the kind of attribute
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserAttribute</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span> <span class="p">)</span><span class="nv">value</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserAttribute</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span> <span class="p">)</span><span class="nv">value</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">key</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to set a user attribute which is datetime or time.
+ @param timestamp The timestamp in epoch format.
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserAttributeTimestamp</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">timestamp</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">key</span> <span class="n">__deprecated_msg</span><span class="p">(</span><span class="s">"Use setUserAttributeEpochTime:forKey instead."</span><span class="p">);</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserAttributeEpochTime</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">timestamp</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserAttributeEpochTime</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">timestamp</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">key</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to set a user attribute which is NSDate instance.
+ @param date The NSDate instance value to track.
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserAttributeDate</span><span class="p">:(</span><span class="n">NSDate</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">date</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserAttributeDate</span><span class="p">:(</span><span class="n">NSDate</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">date</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">key</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to set a user attribute which is NSDate instance.
+ @param dateStr Date String in ISO date format [yyyy-MM-dd'T'HH:mm:ss'Z'].
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserAttributeISODateString</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">dateStr</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">key</span> <span class="n">__deprecated_msg</span><span class="p">(</span><span class="s">"Use setUserAttributeISODate:forKey instead."</span><span class="p">);</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserAttributeISODate</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">dateStr</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserAttributeISODate</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">dateStr</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">key</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;;</span>
+
+<span class="cm">/**
+ Use this method to set user attribute location.
+ @param location MOGeoLocation instance for location coordinates
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserAttributeLocation</span><span class="p">:(</span><span class="n">MOGeoLocation</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">location</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">key</span> <span class="n">__deprecated_msg</span><span class="p">(</span><span class="s">"Use setLocation:forKey instead."</span><span class="p">);</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setLocation</span><span class="p">:(</span><span class="n">MOGeoLocation</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">location</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setLocation</span><span class="p">:(</span><span class="n">MOGeoLocation</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">location</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">key</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cp">#pragma mark Default User Attributes
+</span><span class="cm">/**
+ Use this method to set a unique Identifier(ID) for a user. Please make sure you use this method wisely to only set the unique ID and not use it to update the unique ID, make use of `setAlias:` method for updating the unique ID for a user.
+ @param uniqueID A Unique ID to filter the specific user from your user base. Please make sure this value is not hardcoded.
+ @attention Please make sure not to use this method to update the unique ID of a logged in user, use setAlias: instead
+ @version 3.3.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserUniqueID</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span> <span class="p">)</span><span class="nv">uniqueID</span> <span class="n">__deprecated_msg</span><span class="p">(</span><span class="s">"Use setUniqueID: instead."</span><span class="p">);</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUniqueID</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span> <span class="p">)</span><span class="nv">uniqueID</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUniqueID</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span> <span class="p">)</span><span class="nv">uniqueID</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to update the Unique ID(ID) value of a user.
+ @param uniqueID Unique ID to filter the specific user from your user base. Please make sure this value is not hardcoded.
+ @version 3.8.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setAlias</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span> <span class="p">)</span><span class="nv">uniqueID</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setAlias</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span> <span class="p">)</span><span class="nv">uniqueID</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to track Email ID of a user.
+ @param emailID Email ID value to be tracked.
+ @version 3.3.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserEmailID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">emailID</span> <span class="n">__deprecated_msg</span><span class="p">(</span><span class="s">"Use setEmailID: instead."</span><span class="p">);</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setEmailID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">emailID</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setEmailID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">emailID</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to track User Name of a user.
+ @param name User Name value to be tracked for the user.
+ @version 3.3.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserName</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">name</span> <span class="n">__deprecated_msg</span><span class="p">(</span><span class="s">"Use setName: instead."</span><span class="p">);</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setName</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">name</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setName</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">name</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+<span class="cm">/**
+ Use this method to track First Name of a user.
+ @param firstName User First Name value to be tracked for the user.
+ @version 3.3.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserFirstName</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">firstName</span> <span class="n">__deprecated_msg</span><span class="p">(</span><span class="s">"Use setFirstName: instead."</span><span class="p">);</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setFirstName</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">firstName</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setFirstName</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">firstName</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to track Last Name of a user.
+ @param lastName User last name value to be tracked for the user.
+ @version 3.3.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserLastName</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">lastName</span> <span class="n">__deprecated_msg</span><span class="p">(</span><span class="s">"Use setLastName: instead."</span><span class="p">);</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setLastName</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">lastName</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setLastName</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">lastName</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to track Phone Number of a user.
+ @param phNumber Phone Number of user to be tracked.
+ @version 3.3.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserMobileNo</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span> <span class="p">)</span><span class="nv">phNumber</span> <span class="n">__deprecated_msg</span><span class="p">(</span><span class="s">"Use setMobileNo: instead."</span><span class="p">);</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setMobileNo</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span> <span class="p">)</span><span class="nv">phNumber</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setMobileNo</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span> <span class="p">)</span><span class="nv">phNumber</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to track gender of a user.
+ @param gender UserGender value indicating if user is MALE or FEMALE.
+ @version 3.3.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserGender</span><span class="p">:(</span><span class="n">UserGender</span><span class="p">)</span><span class="nv">gender</span> <span class="n">__deprecated_msg</span><span class="p">(</span><span class="s">"Use setGender: instead."</span><span class="p">);</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setGender</span><span class="p">:(</span><span class="n">UserGender</span><span class="p">)</span><span class="nv">gender</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setGender</span><span class="p">:(</span><span class="n">UserGender</span><span class="p">)</span><span class="nv">gender</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to track Date of birth of a user.
+ @param date NSDate instance of birthdate of user.
+ @version 3.3.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserDateOfBirth</span><span class="p">:(</span><span class="n">NSDate</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">date</span> <span class="n">__deprecated_msg</span><span class="p">(</span><span class="s">"Use setDateOfBirth: instead."</span><span class="p">);</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDateOfBirth</span><span class="p">:(</span><span class="n">NSDate</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">date</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDateOfBirth</span><span class="p">:(</span><span class="n">NSDate</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">date</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+
+<span class="cm">/**
+ Use this method to track location of a user.
+@param location MOGeoLocation instance for location coordinates
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUserLocation</span><span class="p">:(</span><span class="n">MOGeoLocation</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">location</span> <span class="n">__deprecated_msg</span><span class="p">(</span><span class="s">"Use setLocation: instead."</span><span class="p">);</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setLocation</span><span class="p">:(</span><span class="n">MOGeoLocation</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">location</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setLocation</span><span class="p">:(</span><span class="n">MOGeoLocation</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">location</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+
+<span class="cm">/**
+ Use this method to track push preference set by a user.
+ @param isPushEnabled A Bool value indicating if the user has enabled push preference in the app.
+ @version 3.8.1 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">trackUserPushPreference</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">isPushEnabled</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">trackUserPushPreference</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">isPushEnabled</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to track device locale settings of user.
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">trackLocale</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">trackLocaleForAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cp">#pragma mark Sync Methods
+</span><span class="cm">/**
+ Use this method to forcefully sync events to server right now. Useful for testing and to send data in realtime when you don't wish to wait for when the user goes to background or terminates the app.
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">flush</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to forcefully sync events to server right now. Useful for testing and to send data in realtime when you don't wish to wait for when the user goes to background or terminates the app.
+ 
+ @param completionBlock : Completion block called after data sync is completed
+ @version 4.1.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">flushWithCompletionBlock</span><span class="p">:(</span><span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="n">BOOL</span> <span class="n">syncSuccessful</span><span class="p">))</span><span class="nv">completionBlock</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">flushForAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">flushForAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span> <span class="nf">withCompletionBlock</span><span class="p">:(</span><span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="n">BOOL</span> <span class="n">syncSuccessful</span><span class="p">))</span><span class="nv">completionBlock</span><span class="p">;</span>
+
+<span class="cp">#pragma mark Reset Method
+</span>
+<span class="cm">/**
+ Call this method to clear the unique attributes of the current user, and add him as a new user. One of the use cases is when a user logs out
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">resetUser</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">resetUserForAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Call this method to clear the unique attributes of the current user, and add him as a new user. One of the use cases is when a user logs out
+ @param completionBlock : Completion block called after the User Reset is done
+ @version 4.1.0 and above
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">resetUserWithCompletionBlock</span><span class="p">:(</span><span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="n">BOOL</span> <span class="n">userResetSuccessfully</span><span class="p">))</span><span class="nv">completionBlock</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">resetUserForAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span> <span class="nf">withCompletionBlock</span><span class="p">:(</span><span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="n">BOOL</span> <span class="n">userResetSuccessfully</span><span class="p">))</span><span class="nv">completionBlock</span><span class="p">;</span>
+
+
+<span class="cp">#pragma mark Process URL Method
+</span>
+<span class="cm">/**
+ Method to process URL for Analytics module source tracking
+ @param url Deeplink URL to be processes
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">processURL</span><span class="p">:(</span><span class="n">NSURL</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">url</span><span class="p">;</span>
+
+<span class="cp">#pragma mark- Utility Methods
+</span>
+<span class="cm">/**
+ Use this method to enable logs for the MoEngage SDK.
+ */</span>
+<span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">enableSDKLogs</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">enable</span><span class="p">;</span>
+
+<span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">enableSDKLogs</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">enable</span> <span class="nf">forAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">enableDefaultConsoleLogger</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">enable</span><span class="p">;</span>
+
+<span class="cm">/**
+ Use this method to clear logs for the MoEngage SDK.
+ */</span>
+<span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">clearSDKLogs</span><span class="p">;</span>
+
+<span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">clearSDKLogs</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Method to dismiss the RichLanding Controller manually
+ @param animate Bool value indicating if the dismissing the controller should be with animation
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">dismissRichLandingWebViewControllerWithAnimation</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">animate</span><span class="p">;</span>
+
+<span class="cp">#pragma mark- Opt Out methods
+</span>
+<span class="cm">/**
+ Methods to enable/disable Data Tracking in SDK
+ */</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">enableDataTracking</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">enableDataTrackingForAppID</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">disableDataTracking</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">disableDataTrackingForAppID</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Method to enable all the SDK features
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">enableSDK</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">enableSDKForAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cm">/**
+ Method to enable all the SDK features for Segment. Dont call this method.
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">enableSDKForSegment</span><span class="p">:(</span><span class="n">MOSDKConfig</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">sdkConfig</span><span class="p">;</span>
+
+<span class="cm">/**
+ Method to disable all the SDK features for Segment. Dont call this method.
+ */</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">disableSDKForSegment</span><span class="p">:(</span><span class="n">MOSDKConfig</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">sdkConfig</span><span class="p">;</span>
+
+
+<span class="cm">/**
+ Method to disable all the SDK features
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">disableSDK</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">disableSDKForAppID</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">appID</span><span class="p">;</span>
+
+<span class="cp">#pragma mark- Default Config
+</span><span class="c1">///Method to obtain the default config</span>
+<span class="k">-</span><span class="p">(</span><span class="n">MOSDKConfig</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="n">getDefaultSDKConfiguration</span><span class="p">;</span>
+
+<span class="k">@end</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2022-02-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

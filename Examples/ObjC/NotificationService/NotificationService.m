@@ -7,7 +7,6 @@
 //
 
 #import "NotificationService.h"
-#import <MORichNotification/MORichNotification.h>
 
 @interface NotificationService ()
 @property (nonatomic, strong) void (^contentHandler)(UNNotificationContent *contentToDeliver);
@@ -19,14 +18,10 @@
 - (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler {
     @try {
         
-        //TODO: Add your App Group ID
-        [MORichNotification setAppGroupID:@"Your App Group ID"];
-        
         self.contentHandler = contentHandler;
         self.bestAttemptContent = [request.content mutableCopy];
         
         // Handle Rich Notification
-        [MORichNotification handleRichNotificationRequest:request withContentHandler:contentHandler];
         
     } @catch (NSException *exception) {
         NSLog(@"MoEngage : exception : %@",exception);

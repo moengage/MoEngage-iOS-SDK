@@ -1,6 +1,0 @@
-framework module MOInApp {
-  umbrella header "MOInApp.h"
-
-  export *
-  module * { export * }
-}

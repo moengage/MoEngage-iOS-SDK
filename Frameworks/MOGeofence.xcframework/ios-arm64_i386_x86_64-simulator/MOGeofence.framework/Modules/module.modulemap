@@ -1,6 +1,0 @@
-framework module MOGeofence {
-  umbrella header "MOGeofence.h"
-
-  export *
-  module * { export * }
-}

@@ -7,7 +7,6 @@
 //
 
 import UserNotifications
-import MORichNotification
 
 class NotificationService: UNNotificationServiceExtension {
 
@@ -17,12 +16,10 @@ class NotificationService: UNNotificationServiceExtension {
     override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
         
         //TODO: Add your App Group ID
-        MORichNotification.setAppGroupID("Your App Group ID")
         
         //Handle Rich Notification
         self.contentHandler = contentHandler
         bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
-        MORichNotification.handle(request, withContentHandler: contentHandler)
     }
     
     override func serviceExtensionTimeWillExpire() {
