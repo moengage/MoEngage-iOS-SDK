@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)applicationDidFailToRegisterForRemoteNotificationsWithError:(nullable NSError*)error;
 - (void)applicationDidReceiveRemoteNotification:(nullable NSDictionary*)userInfo;
 - (void)userNotificationCenterWillPresentNotification:(nullable UNNotification*)notification;
-- (void)userNotificationCenterDidReceiveNotificationResponse:(nullable UNNotificationResponse*)response;
+- (void)userNotificationCenterDidReceiveNotificationResponse:(nullable UNNotificationResponse*)response API_UNAVAILABLE(tvos);
 @end
 
 @interface MOAppDelegateProxy : NSObject

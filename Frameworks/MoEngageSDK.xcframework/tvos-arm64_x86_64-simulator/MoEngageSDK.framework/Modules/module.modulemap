@@ -1,0 +1,6 @@
+framework module MoEngageSDK {
+  umbrella header "MoEngageSDK.h"
+
+  export *
+  module * { export * }
+}

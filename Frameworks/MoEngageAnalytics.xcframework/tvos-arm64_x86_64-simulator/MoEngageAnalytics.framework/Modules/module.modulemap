@@ -1,0 +1,4 @@
+framework module MoEngageAnalytics {
+  header "MoEngageAnalytics-Swift.h"
+  requires objc
+}

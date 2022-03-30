@@ -1,0 +1,6 @@
+framework module MoEngageObjCUtils {
+  umbrella header "MoEngageObjCUtils.h"
+
+  export *
+  module * { export * }
+}

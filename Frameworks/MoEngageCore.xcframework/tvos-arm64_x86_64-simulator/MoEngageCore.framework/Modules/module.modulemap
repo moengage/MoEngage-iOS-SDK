@@ -1,0 +1,4 @@
+framework module MoEngageCore {
+  header "MoEngageCore-Swift.h"
+  requires objc
+}
