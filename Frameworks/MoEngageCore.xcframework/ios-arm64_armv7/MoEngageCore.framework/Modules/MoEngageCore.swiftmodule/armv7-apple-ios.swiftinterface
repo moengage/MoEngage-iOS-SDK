@@ -117,6 +117,7 @@ public class MoEnagageGifManager {
   @objc public var isTestEnvironment: Swift.Bool {
     get
   }
+  @objc public var enableLogs: Swift.Bool
   @objc public init(withAppID appID: Swift.String)
   @objc public func updateConfigForTestEnvironment()
   @objc public func encode(with encoder: Foundation.NSCoder)
@@ -174,7 +175,7 @@ public enum MoEngageExceptions : Swift.Error {
   @objc deinit
 }
 extension UIKit.UIColor {
-  convenience public init?(hex: Swift.String)
+  convenience public init(hex: Swift.String)
   convenience public init?(hex: Swift.String, alpha: Swift.Float)
 }
 extension UIKit.UIDevice {

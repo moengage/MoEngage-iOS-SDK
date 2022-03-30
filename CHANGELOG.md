@@ -2,6 +2,10 @@
 =================================
 
 ## Changelog:
+### Version 8.1.0  *(30th March, 2022)*
+-------------------------------------------
+* Added tvOS support for MoEngage-iOS-SDK.
+
 ### Version 8.0.0  *(16th March, 2022)*
 -------------------------------------------
 * Renamed the module to MoEngageSDK.

@@ -231,38 +231,182 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 + (MOAnalytics * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Method to Initialize Analytics module
+/// \param instanceID account identifier
+///
 - (void)initializeAnalyticsForInstanceID:(NSString * _Nonnull)instanceID;
+/// Method to update periodic timer for segment
+/// note:
+/// Dont call this method explicitly
+/// \param sdkConfig MOSDKConfig
+///
 - (void)updateTimerForSegmentForSDKConfig:(MOSDKConfig * _Nonnull)sdkConfig;
+/// Method to update SDK version
 - (void)trackSDKVersion;
 - (void)updateSessionSourceWithPushPayload:(NSDictionary * _Nonnull)payload fromMoEngage:(BOOL)isMoEngagePush;
 - (void)updateSessionSourceWithURL:(NSURL * _Nonnull)url;
 - (void)processURL:(NSURL * _Nullable)url;
 - (void)pushTokenUpdated;
+/// Method to set app status
+/// \param appStatus AppStatus
+///
+/// \param appID optional account identifier.
+///
 - (void)appStatus:(enum AppStatus)appStatus forAppID:(NSString * _Nullable)appID;
+/// Method to track Event for account
+/// \param name event name
+///
+/// \param properties MOProperties
+///
+/// \param appID optional account identifier.
+///
 - (void)trackEvent:(NSString * _Nonnull)name withProperties:(MOProperties * _Nullable)properties forAppID:(NSString * _Nullable)appID;
+/// Method to flush events for account
+/// \param appID optional account identifier.
+///
+/// \param completionBlock completion block to be called after events are flushed out
+///
 - (void)flushForAppID:(NSString * _Nullable)appID withCompletionBlock:(void (^ _Nullable)(BOOL))completionBlock;
+/// Method to flush  richnotification events for account
+/// note:
+/// Dont call this method explicitly
+/// \param appID optional account identifier.
+///
+/// \param completionBlock completion block to be called after events are flushed out
+///
 - (void)flushRichNotificationEventsForAppID:(NSString * _Nullable)appID withCompletionBlock:(void (^ _Nullable)(BOOL))completionBlock;
+/// Method to set custom user attribute
+/// \param value attribute value
+///
+/// \param attributeName attribute name
+///
+/// \param appID optional account identifier.
+///
 - (void)setUserAttribute:(id _Nullable)value withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+/// Method to set epoch time.
+/// \param dateEpoch attribute value
+///
+/// \param attributeName attribute name
+///
+/// \param appID optional account identifier.
+///
 - (void)setUserAttributeEpochTime:(double)dateEpoch withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+/// Method to set User attribute date
+/// \param date attribute value as Date
+///
+/// \param attributeName attribute name
+///
+/// \param appID optional account identifier.
+///
 - (void)setUserAttributeDate:(NSDate * _Nonnull)date withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+/// Method to set User attribute ISO date
+/// \param dateStr attribute value
+///
+/// \param attributeName attribute name
+///
+/// \param appID optional account identifier.
+///
 - (void)setUserAttributeISODate:(NSString * _Nonnull)dateStr withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+/// Method to set custom user location
+/// \param location MOGeoLocation instance
+///
+/// \param attributeName attribute name
+///
+/// \param appID optional account identifier.
+///
 - (void)setLocation:(MOGeoLocation * _Nonnull)location withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+/// Method to set alias
+/// \param alias alias value
+///
+/// \param appID optional account identifier.
+///
 - (void)setAlias:(NSString * _Nonnull)alias forAppID:(NSString * _Nullable)appID;
+/// Method to set unique ID
+/// \param uniqueID Unique ID
+///
+/// \param appID optional account identifier.
+///
 - (void)setUniqueID:(NSString * _Nonnull)uniqueID forAppID:(NSString * _Nullable)appID;
+/// Method to set Email ID
+/// \param emailID emailID value.
+///
+/// \param appID optional account identifier.
+///
 - (void)setEmailID:(NSString * _Nonnull)emailID forAppID:(NSString * _Nullable)appID;
+/// Method to set user name
+/// \param userName userName value
+///
+/// \param appID optional account identifier.
+///
 - (void)setName:(NSString * _Nonnull)userName forAppID:(NSString * _Nullable)appID;
+/// Method to set first name
+/// \param firstName firstName value
+///
+/// \param appID optional account identifier.
+///
 - (void)setFirstName:(NSString * _Nonnull)firstName forAppID:(NSString * _Nullable)appID;
+/// Method to set last name
+/// \param lastName lastName value
+///
+/// \param appID optional account identifier.
+///
 - (void)setLastName:(NSString * _Nonnull)lastName forAppID:(NSString * _Nullable)appID;
+/// Method to set mobile name
+/// \param mobileNum mobileNum value
+///
+/// \param appID optional account identifier.
+///
 - (void)setMobileNumber:(NSString * _Nonnull)mobileNum forAppID:(NSString * _Nullable)appID;
+/// Method to set gender
+/// \param gender UserGender value
+///
+/// \param appID optional account identifier.
+///
 - (void)setGender:(enum UserGender)gender forAppID:(NSString * _Nullable)appID;
+/// Method to set user date of birth
+/// \param dob Date
+///
+/// \param appID optional account identifier.
+///
 - (void)setDateOfBirth:(NSDate * _Nonnull)dob forAppID:(NSString * _Nullable)appID;
+/// Method to set user location
+/// \param location MOGeoLocation instance
+///
+/// \param appID optional account identifier.
+///
 - (void)setLocation:(MOGeoLocation * _Nonnull)location forAppID:(NSString * _Nullable)appID;
+/// Method to track user attribute push preference
+/// \param isPushEnabled Bool
+///
+/// \param appID optional account identifier.
+///
 - (void)trackUserPushPreference:(BOOL)isPushEnabled forAppID:(NSString * _Nullable)appID;
 - (void)trackLocaleForAppID:(NSString * _Nullable)appID;
+/// Method to reset user
+/// \param appID optional account identifier.
+///
+/// \param completionBlock completion handler to be returned after resetting
+///
 - (void)resetUserForAppID:(NSString * _Nullable)appID withCompletionBlock:(void (^ _Nullable)(BOOL))completionBlock;
+/// Method to enable data tracking
+/// \param appID optional account identifier.
+///
 - (void)enableDataTrackingForAppID:(NSString * _Nullable)appID;
+/// Method to disable data tracking
+/// \param appID optional account identifier.
+///
 - (void)disableDataTrackingForAppID:(NSString * _Nullable)appID;
+/// Method to opt out data  IDFA tracking
+/// \param isOptedOut Bool
+///
+/// \param appID optional account identifier.
+///
 - (void)optOutOfIDFATracking:(BOOL)isOptedOut forAppID:(NSString * _Nullable)appID;
+/// Method to opt out data  IDFV tracking
+/// \param isOptedOut Bool
+///
+/// \param appID optional account identifier.
+///
 - (void)optOutOfIDFVTracking:(BOOL)isOptedOut forAppID:(NSString * _Nullable)appID;
 - (void)updateSDKWhitelistedEvents:(NSArray<NSString *> * _Nonnull)eventsArray;
 - (void)moengageSDKStateUpdatedForInstanceID:(NSString * _Nonnull)instanceID;
@@ -610,38 +754,182 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 + (MOAnalytics * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Method to Initialize Analytics module
+/// \param instanceID account identifier
+///
 - (void)initializeAnalyticsForInstanceID:(NSString * _Nonnull)instanceID;
+/// Method to update periodic timer for segment
+/// note:
+/// Dont call this method explicitly
+/// \param sdkConfig MOSDKConfig
+///
 - (void)updateTimerForSegmentForSDKConfig:(MOSDKConfig * _Nonnull)sdkConfig;
+/// Method to update SDK version
 - (void)trackSDKVersion;
 - (void)updateSessionSourceWithPushPayload:(NSDictionary * _Nonnull)payload fromMoEngage:(BOOL)isMoEngagePush;
 - (void)updateSessionSourceWithURL:(NSURL * _Nonnull)url;
 - (void)processURL:(NSURL * _Nullable)url;
 - (void)pushTokenUpdated;
+/// Method to set app status
+/// \param appStatus AppStatus
+///
+/// \param appID optional account identifier.
+///
 - (void)appStatus:(enum AppStatus)appStatus forAppID:(NSString * _Nullable)appID;
+/// Method to track Event for account
+/// \param name event name
+///
+/// \param properties MOProperties
+///
+/// \param appID optional account identifier.
+///
 - (void)trackEvent:(NSString * _Nonnull)name withProperties:(MOProperties * _Nullable)properties forAppID:(NSString * _Nullable)appID;
+/// Method to flush events for account
+/// \param appID optional account identifier.
+///
+/// \param completionBlock completion block to be called after events are flushed out
+///
 - (void)flushForAppID:(NSString * _Nullable)appID withCompletionBlock:(void (^ _Nullable)(BOOL))completionBlock;
+/// Method to flush  richnotification events for account
+/// note:
+/// Dont call this method explicitly
+/// \param appID optional account identifier.
+///
+/// \param completionBlock completion block to be called after events are flushed out
+///
 - (void)flushRichNotificationEventsForAppID:(NSString * _Nullable)appID withCompletionBlock:(void (^ _Nullable)(BOOL))completionBlock;
+/// Method to set custom user attribute
+/// \param value attribute value
+///
+/// \param attributeName attribute name
+///
+/// \param appID optional account identifier.
+///
 - (void)setUserAttribute:(id _Nullable)value withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+/// Method to set epoch time.
+/// \param dateEpoch attribute value
+///
+/// \param attributeName attribute name
+///
+/// \param appID optional account identifier.
+///
 - (void)setUserAttributeEpochTime:(double)dateEpoch withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+/// Method to set User attribute date
+/// \param date attribute value as Date
+///
+/// \param attributeName attribute name
+///
+/// \param appID optional account identifier.
+///
 - (void)setUserAttributeDate:(NSDate * _Nonnull)date withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+/// Method to set User attribute ISO date
+/// \param dateStr attribute value
+///
+/// \param attributeName attribute name
+///
+/// \param appID optional account identifier.
+///
 - (void)setUserAttributeISODate:(NSString * _Nonnull)dateStr withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+/// Method to set custom user location
+/// \param location MOGeoLocation instance
+///
+/// \param attributeName attribute name
+///
+/// \param appID optional account identifier.
+///
 - (void)setLocation:(MOGeoLocation * _Nonnull)location withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+/// Method to set alias
+/// \param alias alias value
+///
+/// \param appID optional account identifier.
+///
 - (void)setAlias:(NSString * _Nonnull)alias forAppID:(NSString * _Nullable)appID;
+/// Method to set unique ID
+/// \param uniqueID Unique ID
+///
+/// \param appID optional account identifier.
+///
 - (void)setUniqueID:(NSString * _Nonnull)uniqueID forAppID:(NSString * _Nullable)appID;
+/// Method to set Email ID
+/// \param emailID emailID value.
+///
+/// \param appID optional account identifier.
+///
 - (void)setEmailID:(NSString * _Nonnull)emailID forAppID:(NSString * _Nullable)appID;
+/// Method to set user name
+/// \param userName userName value
+///
+/// \param appID optional account identifier.
+///
 - (void)setName:(NSString * _Nonnull)userName forAppID:(NSString * _Nullable)appID;
+/// Method to set first name
+/// \param firstName firstName value
+///
+/// \param appID optional account identifier.
+///
 - (void)setFirstName:(NSString * _Nonnull)firstName forAppID:(NSString * _Nullable)appID;
+/// Method to set last name
+/// \param lastName lastName value
+///
+/// \param appID optional account identifier.
+///
 - (void)setLastName:(NSString * _Nonnull)lastName forAppID:(NSString * _Nullable)appID;
+/// Method to set mobile name
+/// \param mobileNum mobileNum value
+///
+/// \param appID optional account identifier.
+///
 - (void)setMobileNumber:(NSString * _Nonnull)mobileNum forAppID:(NSString * _Nullable)appID;
+/// Method to set gender
+/// \param gender UserGender value
+///
+/// \param appID optional account identifier.
+///
 - (void)setGender:(enum UserGender)gender forAppID:(NSString * _Nullable)appID;
+/// Method to set user date of birth
+/// \param dob Date
+///
+/// \param appID optional account identifier.
+///
 - (void)setDateOfBirth:(NSDate * _Nonnull)dob forAppID:(NSString * _Nullable)appID;
+/// Method to set user location
+/// \param location MOGeoLocation instance
+///
+/// \param appID optional account identifier.
+///
 - (void)setLocation:(MOGeoLocation * _Nonnull)location forAppID:(NSString * _Nullable)appID;
+/// Method to track user attribute push preference
+/// \param isPushEnabled Bool
+///
+/// \param appID optional account identifier.
+///
 - (void)trackUserPushPreference:(BOOL)isPushEnabled forAppID:(NSString * _Nullable)appID;
 - (void)trackLocaleForAppID:(NSString * _Nullable)appID;
+/// Method to reset user
+/// \param appID optional account identifier.
+///
+/// \param completionBlock completion handler to be returned after resetting
+///
 - (void)resetUserForAppID:(NSString * _Nullable)appID withCompletionBlock:(void (^ _Nullable)(BOOL))completionBlock;
+/// Method to enable data tracking
+/// \param appID optional account identifier.
+///
 - (void)enableDataTrackingForAppID:(NSString * _Nullable)appID;
+/// Method to disable data tracking
+/// \param appID optional account identifier.
+///
 - (void)disableDataTrackingForAppID:(NSString * _Nullable)appID;
+/// Method to opt out data  IDFA tracking
+/// \param isOptedOut Bool
+///
+/// \param appID optional account identifier.
+///
 - (void)optOutOfIDFATracking:(BOOL)isOptedOut forAppID:(NSString * _Nullable)appID;
+/// Method to opt out data  IDFV tracking
+/// \param isOptedOut Bool
+///
+/// \param appID optional account identifier.
+///
 - (void)optOutOfIDFVTracking:(BOOL)isOptedOut forAppID:(NSString * _Nullable)appID;
 - (void)updateSDKWhitelistedEvents:(NSArray<NSString *> * _Nonnull)eventsArray;
 - (void)moengageSDKStateUpdatedForInstanceID:(NSString * _Nonnull)instanceID;
@@ -989,38 +1277,182 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 + (MOAnalytics * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Method to Initialize Analytics module
+/// \param instanceID account identifier
+///
 - (void)initializeAnalyticsForInstanceID:(NSString * _Nonnull)instanceID;
+/// Method to update periodic timer for segment
+/// note:
+/// Dont call this method explicitly
+/// \param sdkConfig MOSDKConfig
+///
 - (void)updateTimerForSegmentForSDKConfig:(MOSDKConfig * _Nonnull)sdkConfig;
+/// Method to update SDK version
 - (void)trackSDKVersion;
 - (void)updateSessionSourceWithPushPayload:(NSDictionary * _Nonnull)payload fromMoEngage:(BOOL)isMoEngagePush;
 - (void)updateSessionSourceWithURL:(NSURL * _Nonnull)url;
 - (void)processURL:(NSURL * _Nullable)url;
 - (void)pushTokenUpdated;
+/// Method to set app status
+/// \param appStatus AppStatus
+///
+/// \param appID optional account identifier.
+///
 - (void)appStatus:(enum AppStatus)appStatus forAppID:(NSString * _Nullable)appID;
+/// Method to track Event for account
+/// \param name event name
+///
+/// \param properties MOProperties
+///
+/// \param appID optional account identifier.
+///
 - (void)trackEvent:(NSString * _Nonnull)name withProperties:(MOProperties * _Nullable)properties forAppID:(NSString * _Nullable)appID;
+/// Method to flush events for account
+/// \param appID optional account identifier.
+///
+/// \param completionBlock completion block to be called after events are flushed out
+///
 - (void)flushForAppID:(NSString * _Nullable)appID withCompletionBlock:(void (^ _Nullable)(BOOL))completionBlock;
+/// Method to flush  richnotification events for account
+/// note:
+/// Dont call this method explicitly
+/// \param appID optional account identifier.
+///
+/// \param completionBlock completion block to be called after events are flushed out
+///
 - (void)flushRichNotificationEventsForAppID:(NSString * _Nullable)appID withCompletionBlock:(void (^ _Nullable)(BOOL))completionBlock;
+/// Method to set custom user attribute
+/// \param value attribute value
+///
+/// \param attributeName attribute name
+///
+/// \param appID optional account identifier.
+///
 - (void)setUserAttribute:(id _Nullable)value withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+/// Method to set epoch time.
+/// \param dateEpoch attribute value
+///
+/// \param attributeName attribute name
+///
+/// \param appID optional account identifier.
+///
 - (void)setUserAttributeEpochTime:(double)dateEpoch withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+/// Method to set User attribute date
+/// \param date attribute value as Date
+///
+/// \param attributeName attribute name
+///
+/// \param appID optional account identifier.
+///
 - (void)setUserAttributeDate:(NSDate * _Nonnull)date withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+/// Method to set User attribute ISO date
+/// \param dateStr attribute value
+///
+/// \param attributeName attribute name
+///
+/// \param appID optional account identifier.
+///
 - (void)setUserAttributeISODate:(NSString * _Nonnull)dateStr withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+/// Method to set custom user location
+/// \param location MOGeoLocation instance
+///
+/// \param attributeName attribute name
+///
+/// \param appID optional account identifier.
+///
 - (void)setLocation:(MOGeoLocation * _Nonnull)location withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+/// Method to set alias
+/// \param alias alias value
+///
+/// \param appID optional account identifier.
+///
 - (void)setAlias:(NSString * _Nonnull)alias forAppID:(NSString * _Nullable)appID;
+/// Method to set unique ID
+/// \param uniqueID Unique ID
+///
+/// \param appID optional account identifier.
+///
 - (void)setUniqueID:(NSString * _Nonnull)uniqueID forAppID:(NSString * _Nullable)appID;
+/// Method to set Email ID
+/// \param emailID emailID value.
+///
+/// \param appID optional account identifier.
+///
 - (void)setEmailID:(NSString * _Nonnull)emailID forAppID:(NSString * _Nullable)appID;
+/// Method to set user name
+/// \param userName userName value
+///
+/// \param appID optional account identifier.
+///
 - (void)setName:(NSString * _Nonnull)userName forAppID:(NSString * _Nullable)appID;
+/// Method to set first name
+/// \param firstName firstName value
+///
+/// \param appID optional account identifier.
+///
 - (void)setFirstName:(NSString * _Nonnull)firstName forAppID:(NSString * _Nullable)appID;
+/// Method to set last name
+/// \param lastName lastName value
+///
+/// \param appID optional account identifier.
+///
 - (void)setLastName:(NSString * _Nonnull)lastName forAppID:(NSString * _Nullable)appID;
+/// Method to set mobile name
+/// \param mobileNum mobileNum value
+///
+/// \param appID optional account identifier.
+///
 - (void)setMobileNumber:(NSString * _Nonnull)mobileNum forAppID:(NSString * _Nullable)appID;
+/// Method to set gender
+/// \param gender UserGender value
+///
+/// \param appID optional account identifier.
+///
 - (void)setGender:(enum UserGender)gender forAppID:(NSString * _Nullable)appID;
+/// Method to set user date of birth
+/// \param dob Date
+///
+/// \param appID optional account identifier.
+///
 - (void)setDateOfBirth:(NSDate * _Nonnull)dob forAppID:(NSString * _Nullable)appID;
+/// Method to set user location
+/// \param location MOGeoLocation instance
+///
+/// \param appID optional account identifier.
+///
 - (void)setLocation:(MOGeoLocation * _Nonnull)location forAppID:(NSString * _Nullable)appID;
+/// Method to track user attribute push preference
+/// \param isPushEnabled Bool
+///
+/// \param appID optional account identifier.
+///
 - (void)trackUserPushPreference:(BOOL)isPushEnabled forAppID:(NSString * _Nullable)appID;
 - (void)trackLocaleForAppID:(NSString * _Nullable)appID;
+/// Method to reset user
+/// \param appID optional account identifier.
+///
+/// \param completionBlock completion handler to be returned after resetting
+///
 - (void)resetUserForAppID:(NSString * _Nullable)appID withCompletionBlock:(void (^ _Nullable)(BOOL))completionBlock;
+/// Method to enable data tracking
+/// \param appID optional account identifier.
+///
 - (void)enableDataTrackingForAppID:(NSString * _Nullable)appID;
+/// Method to disable data tracking
+/// \param appID optional account identifier.
+///
 - (void)disableDataTrackingForAppID:(NSString * _Nullable)appID;
+/// Method to opt out data  IDFA tracking
+/// \param isOptedOut Bool
+///
+/// \param appID optional account identifier.
+///
 - (void)optOutOfIDFATracking:(BOOL)isOptedOut forAppID:(NSString * _Nullable)appID;
+/// Method to opt out data  IDFV tracking
+/// \param isOptedOut Bool
+///
+/// \param appID optional account identifier.
+///
 - (void)optOutOfIDFVTracking:(BOOL)isOptedOut forAppID:(NSString * _Nullable)appID;
 - (void)updateSDKWhitelistedEvents:(NSArray<NSString *> * _Nonnull)eventsArray;
 - (void)moengageSDKStateUpdatedForInstanceID:(NSString * _Nonnull)instanceID;

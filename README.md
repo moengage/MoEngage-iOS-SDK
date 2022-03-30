@@ -28,7 +28,7 @@ CocoaPods is a dependency manager for Objective C & Swift projects and makes int
 
 ## SDK Initialization
 
-Login to your MoEngage account, go to **Settings** in the left panel of the dashboard. Under App Settings, you will find your **APP ID**. Provide this APP ID while initializing the SDK with **initializeTestWithConfig:** and **initializeLiveWithConfig:** methods as shown below.
+Login to your MoEngage account, go to **Settings** in the left panel of the dashboard. Under App Settings, you will find your **APP ID**. Provide this APP ID while initializing the SDK with **initializeDefaultTestInstanceWithConfig:** and **initializeDefaultLiveInstanceWithConfig:** methods as shown below.
 
 ### In Objective-C:
 
@@ -39,9 +39,9 @@ Login to your MoEngage account, go to **Settings** in the left panel of the dash
         
         // Separate initialization methods for Test and Live Environments
         #ifdef DEBUG
-            [[MoEngage sharedInstance] initializeTestWithConfig:sdkConfig andLaunchOptions:launchOptions];
+           [[MoEngage sharedInstance] initializeDefaultTestInstanceWithConfig:sdkConfig andLaunchOptions:nil];
         #else
-            [[MoEngage sharedInstance] initializeLiveWithConfig:sdkConfig andLaunchOptions:launchOptions];
+           [[MoEngage sharedInstance] initializeDefaultLiveInstanceWithConfig:sdkConfig andLaunchOptions:nil];
         #endif
         
         //Rest of the implementation of method
@@ -53,13 +53,13 @@ Login to your MoEngage account, go to **Settings** in the left panel of the dash
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:     [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
         //Create a config object
-        let sdkConfig = MOSDKConfig.init(appID: "Your APP ID")
+        let sdkConfig = MOSDKConfig(withAppID: "Your App ID")
         
         // Separate initialization methods for Test and Live Environments
         #if DEBUG
-            MoEngage.sharedInstance().initializeTest(with: sdkConfig, andLaunchOptions: launchOptions)
+            MoEngage.sharedInstance().initializeDefaultTestInstance(with: sdkConfig, andLaunchOptions: launchOptions)
         #else
-            MoEngage.sharedInstance().initializeLive(with: sdkConfig, andLaunchOptions: launchOptions)
+            MoEngage.sharedInstance().initializeDefaultLiveInstance(with: sdkConfig, andLaunchOptions: launchOptions)
         #endif
         
         //Rest of the implementation of method

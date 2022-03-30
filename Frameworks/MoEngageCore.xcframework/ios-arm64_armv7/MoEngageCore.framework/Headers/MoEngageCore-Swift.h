@@ -514,6 +514,7 @@ SWIFT_CLASS("_TtC12MoEngageCore11MOSDKConfig")
 @property (nonatomic, readonly, copy) NSString * _Nonnull identifier;
 @property (nonatomic, readonly) BOOL isDefaultInstance;
 @property (nonatomic, readonly) BOOL isTestEnvironment;
+@property (nonatomic) BOOL enableLogs;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID OBJC_DESIGNATED_INITIALIZER;
@@ -1096,6 +1097,7 @@ SWIFT_CLASS("_TtC12MoEngageCore11MOSDKConfig")
 @property (nonatomic, readonly, copy) NSString * _Nonnull identifier;
 @property (nonatomic, readonly) BOOL isDefaultInstance;
 @property (nonatomic, readonly) BOOL isTestEnvironment;
+@property (nonatomic) BOOL enableLogs;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID OBJC_DESIGNATED_INITIALIZER;
