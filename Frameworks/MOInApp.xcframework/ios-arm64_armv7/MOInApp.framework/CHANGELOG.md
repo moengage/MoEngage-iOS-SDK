@@ -2,7 +2,11 @@
 =====================
 ## Change Log:
 
-### Version 2.2.0  *(31st January, 2022)*
+### Version 2.2.1  *(14th April, 2022)*
+-------------------------------------------
+*  BugFix: Handled the appearance of thin grey line above the label in larger screen device.
+
+### Version 2.2.0  *(29th December, 2021)*
 -------------------------------------------
 *  Added `Capacitor` integration type.
 
