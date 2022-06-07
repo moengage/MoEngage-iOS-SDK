@@ -2,13 +2,13 @@
 =================================
 
 ## Changelog:
-### Version 8.1.0  *(30th March, 2022)*
--------------------------------------------
-* Added tvOS support for MoEngage-iOS-SDK.
 
-### Version 8.0.0  *(16th March, 2022)*
+### Version 8.2.0  *(7th June, 2022)*
 -------------------------------------------
-* Renamed the module to MoEngageSDK.
+* Updated the framework name from MoEngage to MoEngageSDK.
+* RealTimeTrigger and Inbox feature is separated from MoEngageSDK. Hence these modules must be integrated explicitly.
+* Deprecated existing UserAttribute methods.
+* Provided Swift Package manager support to install the SDK
 
 ### Version 7.2.1  *(11th February, 2022)*
 -------------------------------------------

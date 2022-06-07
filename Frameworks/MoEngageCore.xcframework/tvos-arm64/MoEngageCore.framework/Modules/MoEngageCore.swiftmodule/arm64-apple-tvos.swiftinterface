@@ -1,20 +1,29 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-tvos10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageCore
 import CommonCrypto
 import Foundation
+@_exported import MoEngageCore
 import Security
 import Swift
 import SystemConfiguration
 import UIKit
 import _Concurrency
 @objc public class MONetworkRequest : ObjectiveC.NSObject {
-  @objc public init(_ sdkConfig: MoEngageCore.MOSDKConfig, configController: MoEngageCore.MOConfigController, serviceType: MoEngageCore.NetworkService, params: Swift.Dictionary<Swift.String, Any>? = nil, additionalHeaders: Swift.Dictionary<Swift.String, Any>? = nil, requestBody: Swift.Dictionary<Swift.String, Any>?, additionalPathComponent: Swift.String? = nil)
+  @objc public init(_ sdkConfig: MoEngageCore.MOSDKConfig, configController: MoEngageCore.SdkInstance, serviceType: MoEngageCore.NetworkService, params: Swift.Dictionary<Swift.String, Any>? = nil, additionalHeaders: Swift.Dictionary<Swift.String, Any>? = nil, requestBody: Swift.Dictionary<Swift.String, Any>?, additionalPathComponent: Swift.String? = nil)
   @objc public init(withSDKConfig sdkConfig: MoEngageCore.MOSDKConfig)
   @objc public func execute(completionHandler: @escaping MoEngageCore.completionHandler)
   @objc public func execute(withCompletionBlockWithResponseCode completionBlock: @escaping MoEngageCore.completionHandlerWithResponseCode)
   public func downloadResources(_ resourceURL: Foundation.URL, completionHandler: @escaping MoEngageCore.richNotificationCompletionHandler)
   @objc deinit
+}
+@objc public enum PartnerIntegrationType : Swift.Int {
+  case segment
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 public enum MONetworkReachabilityError : Swift.Error {
   case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
@@ -97,6 +106,15 @@ extension MoEngageCore.MONetworkReachability {
     get
   }
 }
+@objc @_inheritsConvenienceInitializers open class InboxDelegate : ObjectiveC.NSObject {
+  @objc required override dynamic public init()
+  open func logout(sdkInstance: MoEngageCore.SdkInstance, onCompleted: @escaping () -> ())
+  open func updateModule(sdkInstance: MoEngageCore.SdkInstance)
+  open func initializeInbox(sdkInstance: MoEngageCore.SdkInstance)
+  open func applicationDidEnterForeground(sdkInstance: MoEngageCore.SdkInstance)
+  @objc deinit
+}
+public func integrationInfoToDictionary(_ integrationInfo: Swift.Array<MoEngageCore.MOIntegrationInfo>) -> [[Swift.String : Swift.String]]?
 @objc public enum MODataCenter : Swift.Int {
   case data_center_default
   case data_center_01
@@ -109,34 +127,15 @@ extension MoEngageCore.MONetworkReachability {
     get
   }
 }
-@objc public enum MOPluginType : Swift.Int {
-  case native
-  case segment
-  case cordova
-  case reactNative
-  case flutter
-  case unity
-  case xamarin
-  case capacitor
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MOSDKConfig : ObjectiveC.NSObject, Foundation.NSCoding {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MOSDKConfig : ObjectiveC.NSObject {
   @objc public var moeAppID: Swift.String {
     get
   }
   @objc public var moeDataCenter: MoEngageCore.MODataCenter
   @objc public var appGroupID: Swift.String
-  @objc public var integrationInfoArray: [MoEngageCore.MOIntegrationInfo]
   @objc public var analyticsPeriodicFlushDuration: Swift.Int
   @objc public var analyticsDisablePeriodicFlush: Swift.Bool
   @objc public var encryptNetworkRequests: Swift.Bool
-  @objc public var optOutDataTracking: Swift.Bool
-  @objc public var optOutIDFATracking: Swift.Bool
-  @objc public var optOutIDFVTracking: Swift.Bool
   @objc public var identifier: Swift.String {
     get
   }
@@ -147,12 +146,13 @@ extension MoEngageCore.MONetworkReachability {
     get
   }
   @objc public var enableLogs: Swift.Bool
+  public var partnerIntegrationType: MoEngageCore.PartnerIntegrationType?
   @objc public init(withAppID appID: Swift.String)
   @objc public func updateConfigForTestEnvironment()
-  @objc public func encode(with encoder: Foundation.NSCoder)
-  @objc required public init(coder decoder: Foundation.NSCoder)
-  public func getIntegrationInfoDictArray() -> [[Swift.String : Swift.String]]?
-  @objc public func appendIntegrationTypeInfo(_ integrationInfo: MoEngageCore.MOIntegrationInfo)
+  @objc public func setPartnerIntegrationType(integrationType: MoEngageCore.PartnerIntegrationType)
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MONetworkClient : ObjectiveC.NSObject {
@@ -160,61 +160,44 @@ extension MoEngageCore.MONetworkReachability {
   @objc deinit
 }
 extension MoEngageCore.MONetworkClient : MoEngageCore.NetworkRequestProtocol {
-  @objc dynamic public func executeRequest(_ request: Foundation.URLRequest, forSdkConfig sdkConfig: MoEngageCore.MOSDKConfig, withConfigController configController: MoEngageCore.MOConfigController, completionHandler: @escaping (MoEngageCore.completionHandlerWithResponseCode))
+  @objc dynamic public func executeRequest(_ request: Foundation.URLRequest, forSdkConfig sdkConfig: MoEngageCore.MOSDKConfig, withConfigController configController: MoEngageCore.SdkInstance, completionHandler: @escaping (MoEngageCore.completionHandlerWithResponseCode))
   @objc dynamic public func downloadImageURL(_ imageURL: Foundation.URL, forSdkConfig sdkConfig: MoEngageCore.MOSDKConfig, dataCompletionHandler: @escaping (MoEngageCore.dataCompletionHandler))
   public func downloadResource(_ resourceURL: Foundation.URL, completionHandler: @escaping MoEngageCore.richNotificationCompletionHandler)
 }
-@_hasMissingDesignatedInitializers @objc public class MOConfigController : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers public class RemoteModuleStatus : ObjectiveC.NSObject {
+  @objc final public let isInAppEnabled: Swift.Bool
+  final public let isInboxEnabled: Swift.Bool
+  final public let isGeofenceEnabled: Swift.Bool
+  final public let isRttEnabled: Swift.Bool
+  final public let isCardEnabled: Swift.Bool
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MOCoreIntegrator : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: MoEngageCore.MOCoreIntegrator
+  @objc public func addIntergrationInfo(info: MoEngageCore.MOIntegrationInfo, appId: Swift.String? = nil)
+  @objc public func getCoreCache(_ sdkInstance: MoEngageCore.SdkInstance, completionHandler: @escaping ((MoEngageCore.CoreCache) -> Swift.Void))
+  @objc public func enableSDKForSegment(instanceID: Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class SdkInstance : ObjectiveC.NSObject {
   @objc public var sdkConfig: MoEngageCore.MOSDKConfig {
     get
   }
-  public func persistSDKConfig()
-  @objc public func isAccountActive() -> Swift.Bool
-  @objc public func isInAppServiceActive() -> Swift.Bool
-  @objc public func isInAppStatsServiceActive() -> Swift.Bool
-  @objc public func isGeofenceServiceActive() -> Swift.Bool
-  @objc public func isInboxServiceActive() -> Swift.Bool
-  @objc public func isRealTimeTriggerServiceActive() -> Swift.Bool
-  @objc public func isCardsServiceActive() -> Swift.Bool
-  @objc public func isRemoteLoggingServiceActive() -> Swift.Bool
-  @objc public func isPeriodicSyncEnabled() -> Swift.Bool
-  @objc public func minimumPeriodicFlushDurationLimit() -> Swift.Int
-  @objc public func periodicFlushDuration() -> Swift.Int
-  @objc public func getEventBatchCount() -> Swift.Int
-  @objc public func getSourceExtraKeys() -> [Swift.String]
-  @objc public func getBlackListedEvents() -> [Swift.String]
-  @objc public func isEventBlackListed(_ eventName: Swift.String) -> Swift.Bool
-  @objc public func getBlackListedUserAttribute() -> [Swift.String]
-  @objc public func isUserAttributeBlackListed(_ userAttrName: Swift.String) -> Swift.Bool
-  @objc public func getInstantFlushEvents() -> [Swift.String]
-  @objc public func isEventInstantFlushEvent(_ eventName: Swift.String) -> Swift.Bool
-  @objc public func getWhitelistedEvents() -> [Swift.String]
-  @objc public func isEventWhitelistedEvent(_ eventName: Swift.String) -> Swift.Bool
-  @objc public func getRealTimeTriggerSyncInterval() -> Swift.Int
-  @objc public func getUserAttributeCachingDuration() -> Swift.Int
-  @objc public func getSessionInActiveDuration() -> Swift.Int
-  @objc public func isDataTrackingEnabled() -> Swift.Bool
-  @objc public func isPushNotificationEnabled() -> Swift.Bool
-  @objc public func isInAppEnabled() -> Swift.Bool
-  @objc public func setDataTrackingOptOutStatus(_ optOutStatus: Swift.Bool)
-  @objc public func isIDFATrackingEnabled() -> Swift.Bool
-  @objc public func isIDFVTrackingEnabled() -> Swift.Bool
-  @objc public func setNetworkEncryptionStatus(_ status: Swift.Bool)
-  @objc public func isNetworkEncryptionEnabled() -> Swift.Bool
-  @objc public func getDefaultEncryptionKey() -> Swift.String
-  @objc public func getAppEncryptionKey() -> Swift.String?
-  @objc public func getAppGroupID() -> Swift.String
-  @objc public func getDataCenter() -> MoEngageCore.MODataCenter
-  @objc public func setDataCenter(_ dataCenter: MoEngageCore.MODataCenter)
-  @objc public func setAppGroupID(_ appGroupID: Swift.String)
-  @objc public func getRemoteMinLogLevel() -> MoEngageCore.MOLoggerType
-  @objc public func getRestrictedUniqueIDRegex() -> [Swift.String]
-  @objc public func isUniqueIDRestricted(_ uniqueID: Swift.String?) -> Swift.Bool
+  @objc public var remoteConfig: MoEngageCore.RemoteConfig {
+    get
+  }
+  @objc final public let sdkQueue: Dispatch.DispatchQueue
+  public func updateRemoteConfig(_ config: MoEngageCore.RemoteConfig)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MOConfigCoordinator : ObjectiveC.NSObject {
-  @objc public static var sharedInstance: MoEngageCore.MOConfigCoordinator
-  @objc public func getConfigController(forSDKConfig sdkConfig: MoEngageCore.MOSDKConfig, withCompletionHandler completionHandler: @escaping ((MoEngageCore.MOConfigController?) -> Swift.Void))
+  @objc public static let sharedInstance: MoEngageCore.MOConfigCoordinator
+  @objc public func getSdkInstance(forSDKConfig sdkConfig: MoEngageCore.MOSDKConfig, withCompletionHandler completionHandler: @escaping ((MoEngageCore.SdkInstance?) -> Swift.Void))
+  @objc public func getSdkInstance(_ instanceId: Swift.String?, completionHandler: @escaping ((MoEngageCore.SdkInstance?) -> Swift.Void))
+  @objc public func getDefaultSdkInstance(_ completionHandler: @escaping ((MoEngageCore.SdkInstance?) -> Swift.Void))
   @objc deinit
 }
 @objc public enum MOLoggerType : Swift.Int {
@@ -230,9 +213,53 @@ extension MoEngageCore.MONetworkClient : MoEngageCore.NetworkRequestProtocol {
   }
 }
 @_hasMissingDesignatedInitializers public class MOLoggerCoordinator {
-  public static var sharedInstance: MoEngageCore.MOLoggerCoordinator
+  public static let sharedInstance: MoEngageCore.MOLoggerCoordinator
   public var defaultConsoleLogger: MoEngageCore.MOLoggerController
   public func getLoggerInstance(forSDKConfig sdkConfig: MoEngageCore.MOSDKConfig) -> MoEngageCore.MOLoggerController
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MessagingManager : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: MoEngageCore.MessagingManager
+  @objc open func initializeMessaging(launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]? = nil, sdkInstance: MoEngageCore.SdkInstance)
+  @objc open func applicationDidEnterForeground(sdkInstance: MoEngageCore.SdkInstance)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ConfigDelegateHandler : MoEngageCore.ConfigDelegate {
+  override public func logout(sdkInstance: MoEngageCore.SdkInstance, onCompleted: @escaping () -> ())
+  override public func updateModule(sdkInstance: MoEngageCore.SdkInstance)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AnalyticsManager : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: MoEngageCore.AnalyticsManager
+  @objc open func initializeAnalytics(sdkInstance: MoEngageCore.SdkInstance)
+  @objc open func moengageSDKStateUpdated(sdkInstance: MoEngageCore.SdkInstance)
+  @objc open func applicationDidBecomeActive(sdkInstance: MoEngageCore.SdkInstance)
+  @objc open func applicationWillResignActive(sdkInstance: MoEngageCore.SdkInstance)
+  @objc open func applicationDidEnterForeground(sdkInstance: MoEngageCore.SdkInstance)
+  @objc open func applicationDidEnterBackground(sdkInstance: MoEngageCore.SdkInstance)
+  @objc open func flush(sdkInstance: MoEngageCore.SdkInstance)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class CardsManager : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: MoEngageCore.CardsManager
+  public func logout(sdkInstance: MoEngageCore.SdkInstance, onCompleted: @escaping () -> ())
+  public func updateModule(sdkInstance: MoEngageCore.SdkInstance)
+  @objc public func initializeCards(sdkInstance: MoEngageCore.SdkInstance)
+  @objc open func applicationDidEnterForeground(sdkInstance: MoEngageCore.SdkInstance)
+  @objc open func applicationWillBecomeInActive(sdkInstance: MoEngageCore.SdkInstance)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class RemoteRttConfig : ObjectiveC.NSObject {
+  final public let syncInterval: Swift.Int
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class MessagingDelegate : ObjectiveC.NSObject {
+  @objc required override dynamic public init()
+  open func initializeMessaging(launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]? = nil, sdkInstance: MoEngageCore.SdkInstance)
+  open func applicationDidEnterForeground(sdkInstance: MoEngageCore.SdkInstance)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MOLogger : ObjectiveC.NSObject {
@@ -242,6 +269,40 @@ extension MoEngageCore.MONetworkClient : MoEngageCore.NetworkRequestProtocol {
   @objc public static func warning(_ msg: Swift.String?, label: Swift.String? = nil, sdkConfig: MoEngageCore.MOSDKConfig? = nil, fileName: Swift.String = #fileID, functionName: Swift.String = #function, lineNumber: Swift.Int = #line, columnNumber: Swift.Int = #column)
   @objc public static func error(_ msg: Swift.String?, stackTrace: [Swift.String]? = nil, label: Swift.String? = nil, sdkConfig: MoEngageCore.MOSDKConfig? = nil, fileName: Swift.String = #fileID, functionName: Swift.String = #function, lineNumber: Swift.Int = #line, columnNumber: Swift.Int = #column)
   @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class RTTDelegate : ObjectiveC.NSObject {
+  @objc required override dynamic public init()
+  open func trackEvent(eventName: Swift.String, eventAttribute: [Swift.String : Any], sdkInstance: MoEngageCore.SdkInstance)
+  open func logout(sdkInstance: MoEngageCore.SdkInstance, onCompleted: @escaping () -> ())
+  open func updateModule(sdkInstance: MoEngageCore.SdkInstance)
+  open func initializeRTT(sdkInstance: MoEngageCore.SdkInstance)
+  open func applicationDidEnterForeground(sdkInstance: MoEngageCore.SdkInstance)
+  open func applicationWillBecomeInActive(sdkInstance: MoEngageCore.SdkInstance)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class GeofenceManager : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: MoEngageCore.GeofenceManager
+  @objc open func initializeGeofence(sdkInstance: MoEngageCore.SdkInstance)
+  @objc open func moengageSDKStateUpdated(sdkInstance: MoEngageCore.SdkInstance)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RTTManager : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: MoEngageCore.RTTManager
+  public func trackEvent(eventName: Swift.String, eventAttribute: [Swift.String : Any], sdkInstance: MoEngageCore.SdkInstance)
+  public func logout(sdkInstance: MoEngageCore.SdkInstance, onCompleted: @escaping () -> ())
+  public func updateModule(sdkInstance: MoEngageCore.SdkInstance)
+  @objc open func initializeRTT(sdkInstance: MoEngageCore.SdkInstance)
+  @objc open func applicationDidEnterForeground(sdkInstance: MoEngageCore.SdkInstance)
+  @objc open func applicationWillBecomeInActive(sdkInstance: MoEngageCore.SdkInstance)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class InboxManager : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: MoEngageCore.InboxManager
+  public func logout(sdkInstance: MoEngageCore.SdkInstance, onCompleted: @escaping () -> ())
+  public func updateModule(sdkInstance: MoEngageCore.SdkInstance)
+  @objc public func initializeInbox(sdkInstance: MoEngageCore.SdkInstance)
+  @objc open func applicationDidEnterForeground(sdkInstance: MoEngageCore.SdkInstance)
   @objc deinit
 }
 public struct MOCoreConstants {
@@ -278,8 +339,22 @@ public struct MOCoreConstants {
   public struct RequestPayloadKeys {
   }
 }
+@objc public class EventConditionEvaluator : ObjectiveC.NSObject {
+  @objc public init(withEventName name: Swift.String, andConditionDict conditionDict: Swift.Dictionary<Swift.String, Any>)
+  @objc public func checkConditionSatisfied(forEvent event: Swift.String, andAttributesPayload attributesPayload: Swift.Dictionary<Swift.String, Any>) -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CoreCache : ObjectiveC.NSObject {
+  public var integrationInfo: [MoEngageCore.MOIntegrationInfo] {
+    get
+  }
+  @objc public var isSegmentInitialized: Swift.Bool
+  public func addIntegrationInfo(_ info: MoEngageCore.MOIntegrationInfo)
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class MONetworkUtils : ObjectiveC.NSObject {
-  @objc public static func getQueryParamsDictionary(forService service: MoEngageCore.NetworkService, withSDKConfig sdkConfig: MoEngageCore.MOSDKConfig, withConfigController configController: MoEngageCore.MOConfigController) -> Swift.Dictionary<Swift.String, Any>
+  @objc public static func getQueryParams(sdkConfig: MoEngageCore.MOSDKConfig, isV1ParamsRequired: Swift.Bool = false) -> Swift.Dictionary<Swift.String, Any>
   @objc public static func getDeviceUniqueID() -> Swift.String?
   @objc public static func isDeviceUniqueIDPresentInKeyChain() -> Swift.Bool
   @objc override dynamic public init()
@@ -295,12 +370,24 @@ public struct MOCoreConstants {
   public func saveLogsInDocumentDirectory(enable: Swift.Bool)
   @objc deinit
 }
-@objc public class MOIntegrationInfo : ObjectiveC.NSObject, Foundation.NSCoding {
-  @objc public var integrationType: MoEngageCore.MOPluginType
-  @objc public var integrationVersion: Swift.String
-  @objc public init(withPluginType pluginType: MoEngageCore.MOPluginType, andVersion version: Swift.String)
-  @objc public func encode(with encoder: Foundation.NSCoder)
-  @objc required public init(coder decoder: Foundation.NSCoder)
+@objc @_hasMissingDesignatedInitializers public class RemoteSecurityConfig : ObjectiveC.NSObject {
+  final public let encryptionKey: Swift.String
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public class MOIntegrationInfo : ObjectiveC.NSObject {
+  @objc final public let integrationType: Swift.String
+  @objc final public let integrationVersion: Swift.String
+  @objc public init(pluginType: Swift.String, version: Swift.String)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class RemoteInAppConfig : ObjectiveC.NSObject {
+  @objc final public let isStatsEnabled: Swift.Bool
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MONetworkConfiguration : ObjectiveC.NSObject {
@@ -314,15 +401,14 @@ public struct MOCoreConstants {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MOCore : ObjectiveC.NSObject {
   @objc public static let sharedInstance: MoEngageCore.MOCore
-  @objc public func initializeInstanceWithSDKConfig(_ sdkConfig: MoEngageCore.MOSDKConfig, isDefaultInstance: Swift.Bool, withCompletionBlock completion: @escaping (() -> ()))
-  @objc public func updateDefaultInstanceSDKConfig(_ sdkConfig: MoEngageCore.MOSDKConfig, withCompletionBlock completion: @escaping (() -> ()))
+  @objc public static let globalQueue: Dispatch.DispatchQueue
+  @objc public func initializeModule(sdkInstance: MoEngageCore.SdkInstance)
+  @objc public func initializeInstanceWithSDKConfig(_ sdkConfig: MoEngageCore.MOSDKConfig, isDefaultInstance: Swift.Bool, withCompletionBlock completion: @escaping ((MoEngageCore.SdkInstance?) -> ()))
   @objc public func getDefaultSDKConfiguration() -> MoEngageCore.MOSDKConfig?
   @objc public func getSDKConfig(forAppID appID: Swift.String) -> MoEngageCore.MOSDKConfig?
-  @objc public func enableSDK()
-  @objc public func disableSDK()
   @objc public func isSDKEnabled() -> Swift.Bool
-  @objc public func enableSDKForInstance(forAppID appID: Swift.String)
-  @objc public func disableSDKForInstance(forAppID appID: Swift.String)
+  @objc public func enableSDK(forConfig sdkConfig: MoEngageCore.MOSDKConfig)
+  @objc public func disableSDK(forConfig sdkConfig: MoEngageCore.MOSDKConfig)
   @objc public func isSDKEnabledForInstance(forAppID appID: Swift.String) -> Swift.Bool
   @objc public func isDeviceUniqueIDPresentInKeyChain() -> Swift.Bool
   @objc public func dismissRichLandingWebViewControllerWithAnimation(_ animate: Swift.Bool)
@@ -352,6 +438,46 @@ public struct MOCoreConstants {
   @objc public static func getStringInDeviceLocale(forDate date: Foundation.Date?, withFormat format: Swift.String?, andForGMTTimeZone isGMTtz: Swift.Bool) -> Swift.String?
   @objc public static func getDate(forString str: Swift.String?, withFormat format: Swift.String?, andForGMTTimeZone isGMTtz: Swift.Bool) -> Foundation.Date?
   @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class AnalyticsDelegate : ObjectiveC.NSObject {
+  @objc required override dynamic public init()
+  open func initializeAnalytics(sdkInstance: MoEngageCore.SdkInstance)
+  open func moengageSDKStateUpdated(sdkInstance: MoEngageCore.SdkInstance)
+  open func flush(sdkInstance: MoEngageCore.SdkInstance)
+  open func applicationDidBecomeActive(sdkInstance: MoEngageCore.SdkInstance)
+  open func applicationWillResignActive(sdkInstance: MoEngageCore.SdkInstance)
+  open func applicationDidEnterForeground(sdkInstance: MoEngageCore.SdkInstance)
+  open func applicationDidEnterBackground(sdkInstance: MoEngageCore.SdkInstance)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class CardsDelegate : ObjectiveC.NSObject {
+  @objc required override dynamic public init()
+  open func logout(sdkInstance: MoEngageCore.SdkInstance, onCompleted: @escaping () -> ())
+  open func updateModule(sdkInstance: MoEngageCore.SdkInstance)
+  open func initializeCards(sdkInstance: MoEngageCore.SdkInstance)
+  open func applicationDidEnterForeground(sdkInstance: MoEngageCore.SdkInstance)
+  open func applicationWillBecomeInActive(sdkInstance: MoEngageCore.SdkInstance)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class InAppManager : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: MoEngageCore.InAppManager
+  public func trackEvent(eventName: Swift.String, eventAttribute: [Swift.String : Any], sdkInstance: MoEngageCore.SdkInstance)
+  public func logout(sdkInstance: MoEngageCore.SdkInstance, onCompleted: @escaping () -> ())
+  public func updateModule(sdkInstance: MoEngageCore.SdkInstance)
+  @objc public func initializeInApp(sdkInstance: MoEngageCore.SdkInstance)
+  public func applicationEnteredForeground(sdkInstance: MoEngageCore.SdkInstance)
+  public func applicationWillResignActive(sdkInstance: MoEngageCore.SdkInstance)
+  public func keyboardWillShow(sdkInstance: MoEngageCore.SdkInstance)
+  public func keyboardDidHide(sdkInstance: MoEngageCore.SdkInstance)
+  public func statusBarOrientationChanged(sdkInstance: MoEngageCore.SdkInstance)
+  public func showInApp(notification: Foundation.Notification)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class GeofenceDelegate : ObjectiveC.NSObject {
+  @objc required override dynamic public init()
+  open func initializeGeofence(sdkInstance: MoEngageCore.SdkInstance)
+  open func moengageSDKStateUpdated(sdkInstance: MoEngageCore.SdkInstance)
   @objc deinit
 }
 public enum MoEngageExceptions : Swift.Error {
@@ -394,11 +520,16 @@ public enum MoEngageExceptions : Swift.Error {
   @objc public static func generateSDKUniqueID() -> Swift.String
   @objc public static func isSdkEnabledForInstance(withConfig sdkConfig: MoEngageCore.MOSDKConfig) -> Swift.Bool
   @objc public static func updateUserDefault(withSDKState isSDKEnabled: Swift.Bool, forSDKConfig sdkConfig: MoEngageCore.MOSDKConfig)
-  @objc public static func enableSDKForInstance(withConfig sdkConfig: MoEngageCore.MOSDKConfig)
-  @objc public static func disableSDKForInstance(withConfig sdkConfig: MoEngageCore.MOSDKConfig)
+  @objc public static func updateSDKState(_ isEnabled: Swift.Bool, withConfig sdkConfig: MoEngageCore.MOSDKConfig)
+  @objc public static func isDataTrackingEnabled(forSDKConfig sdkConfig: MoEngageCore.MOSDKConfig) -> Swift.Bool
+  @objc public static func setDataTrackingOptOutStatus(forSDKConfig sdkConfig: MoEngageCore.MOSDKConfig, optOutStatus: Swift.Bool)
   @objc public static func MD5Hash(_ string: Swift.String) -> Swift.String?
   @objc public static func sharedUIApplication() -> UIKit.UIApplication?
   @objc public static func getAppIDForNetworkAPICalls(sdkConfig: MoEngageCore.MOSDKConfig) -> Swift.String
+  @objc public static func setIDFAOptOutStatus(forSDKConfig sdkConfig: MoEngageCore.MOSDKConfig, optOutStatus: Swift.Bool)
+  @objc public static func setIDFVOptOutStatus(forSDKConfig sdkConfig: MoEngageCore.MOSDKConfig, optOutStatus: Swift.Bool)
+  @objc public static func isIDFATrackingEnabled(forSDKConfig sdkConfig: MoEngageCore.MOSDKConfig) -> Swift.Bool
+  @objc public static func isIDFVTrackingEnabled(forSDKConfig sdkConfig: MoEngageCore.MOSDKConfig) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
@@ -411,6 +542,59 @@ extension UIKit.UIDevice {
 }
 @_hasMissingDesignatedInitializers public class ValidateExtension {
   public static func isFromExtension() -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class RemoteConfig : ObjectiveC.NSObject {
+  @objc final public let isAppEnabled: Swift.Bool
+  @objc final public let moduleStatus: MoEngageCore.RemoteModuleStatus
+  final public let dataTrackingConfig: MoEngageCore.RemoteDataTrackingConfig
+  final public let analyticsConfig: MoEngageCore.RemoteAnalyticsConfig
+  final public let rttConfig: MoEngageCore.RemoteRttConfig
+  @objc final public let inAppConfig: MoEngageCore.RemoteInAppConfig
+  final public let securityConfig: MoEngageCore.RemoteSecurityConfig
+  final public let logConfig: MoEngageCore.RemoteLogConfig
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ConfigManager {
+  public static let sharedInstance: MoEngageCore.ConfigManager
+  public func logout(sdkInstance: MoEngageCore.SdkInstance, onCompleted: @escaping () -> ())
+  public func updateModule(sdkInstance: MoEngageCore.SdkInstance)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class RemoteDataTrackingConfig : ObjectiveC.NSObject {
+  final public let isPeriodicSyncEnabled: Swift.Bool
+  final public let periodicSyncInterval: Swift.Int
+  final public let blackListedEvents: Swift.Set<Swift.String>
+  final public let blackListedUserAttributes: Swift.Set<Swift.String>
+  final public let flushEvents: Swift.Set<Swift.String>
+  final public let gdprWhitelistedEvents: Swift.Set<Swift.String>
+  final public let blackListedUniqueIds: Swift.Set<Swift.String>
+  final public let eventBatchCount: Swift.Int
+  final public let userAttributeCacheDuration: Swift.Int
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DataTrackingUtils {
+  public static func getPeriodicFlushDuration(sdkInstance: MoEngageCore.SdkInstance) -> Swift.Int
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class ConfigDelegate : ObjectiveC.NSObject {
+  @objc required override dynamic public init()
+  open func logout(sdkInstance: MoEngageCore.SdkInstance, onCompleted: @escaping () -> ())
+  open func updateModule(sdkInstance: MoEngageCore.SdkInstance)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class RemoteLogConfig : ObjectiveC.NSObject {
+  final public let isRemoteLoggingEnabled: Swift.Bool
+  final public let loglevel: MoEngageCore.MOLoggerType
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
   @objc deinit
 }
 @objc public enum NetworkService : Swift.Int {
@@ -442,9 +626,20 @@ public typealias completionHandlerWithResponseCode = ((Swift.Bool, Swift.Int, [S
 public typealias dataCompletionHandler = ((Swift.Bool, Foundation.Data?) -> Swift.Void)
 public typealias richNotificationCompletionHandler = ((Foundation.URL?) -> Swift.Void)
 @objc public protocol NetworkRequestProtocol {
-  @objc func executeRequest(_ request: Foundation.URLRequest, forSdkConfig sdkConfig: MoEngageCore.MOSDKConfig, withConfigController configController: MoEngageCore.MOConfigController, completionHandler: @escaping (MoEngageCore.completionHandlerWithResponseCode))
+  @objc func executeRequest(_ request: Foundation.URLRequest, forSdkConfig sdkConfig: MoEngageCore.MOSDKConfig, withConfigController configController: MoEngageCore.SdkInstance, completionHandler: @escaping (MoEngageCore.completionHandlerWithResponseCode))
   @objc func downloadImageURL(_ imageURL: Foundation.URL, forSdkConfig sdkConfig: MoEngageCore.MOSDKConfig, dataCompletionHandler: @escaping (MoEngageCore.dataCompletionHandler))
 }
+@objc @_hasMissingDesignatedInitializers public class RemoteAnalyticsConfig : ObjectiveC.NSObject {
+  final public let sessionInActiveDuration: Swift.Int
+  final public let sourceIdentifiers: Swift.Set<Swift.String>
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+extension MoEngageCore.PartnerIntegrationType : Swift.Equatable {}
+extension MoEngageCore.PartnerIntegrationType : Swift.Hashable {}
+extension MoEngageCore.PartnerIntegrationType : Swift.RawRepresentable {}
 @available(*, unavailable, renamed: "Connection")
 extension MoEngageCore.MONetworkReachability.NetworkStatus : Swift.Equatable {}
 @available(*, unavailable, renamed: "Connection")
@@ -454,9 +649,6 @@ extension MoEngageCore.MONetworkReachability.Connection : Swift.Hashable {}
 extension MoEngageCore.MODataCenter : Swift.Equatable {}
 extension MoEngageCore.MODataCenter : Swift.Hashable {}
 extension MoEngageCore.MODataCenter : Swift.RawRepresentable {}
-extension MoEngageCore.MOPluginType : Swift.Equatable {}
-extension MoEngageCore.MOPluginType : Swift.Hashable {}
-extension MoEngageCore.MOPluginType : Swift.RawRepresentable {}
 extension MoEngageCore.MOLoggerType : Swift.Equatable {}
 extension MoEngageCore.MOLoggerType : Swift.Hashable {}
 extension MoEngageCore.MOLoggerType : Swift.RawRepresentable {}

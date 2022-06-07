@@ -45,13 +45,6 @@
 
 -(void)initializeDefaultLiveInstanceWithConfig:(MOSDKConfig* _Nonnull)sdkConfig andLaunchOptions:(NSDictionary* _Nullable)launchOptions;
 
-/**
- Method to update SDK Configuration
- @param sdkConfig MOSDKConfig instance with the required config to initialize SDK
- @version 7.0.0 and above
- */
--(void)updateSDKConfig:(MOSDKConfig* _Nonnull)sdkConfig;
-
 #pragma mark - Messaging Module
 #pragma mark Push Notification
 /**
@@ -122,35 +115,10 @@
 #pragma mark Track Event
 
 /**
-Call this method to track events.
-@param name Event name to be tracked
-@param properties of type MOProperties. See MOProperties for more details.
-@version Available from SDK version 6.0.0 and above
-*/
--(void)trackEvent:(NSString *_Nonnull)name withProperties:(MOProperties *_Nullable)properties;
-
--(void)trackEvent:(NSString *_Nonnull)name withProperties:(MOProperties *_Nullable)properties forAppID:(NSString* _Nullable)appID;
-
-#pragma mark Track UserAttributes
-/**
- Use this method to set unique attributes to identify the app user. For eg. username, email, age, gender etc.
- @param value The value/attribute
- @warning value can of be type string, integer or bool
- @param key The key, which is the kind of attribute
- */
--(void)setUserAttribute:(id _Nullable )value forKey:(NSString *_Nonnull)key;
-
--(void)setUserAttribute:(id _Nullable )value forKey:(NSString *_Nonnull)key forAppID:(NSString* _Nullable)appID;
-
-/**
  Use this method to set a user attribute which is datetime or time.
  @param timestamp The timestamp in epoch format.
  */
--(void)setUserAttributeTimestamp:(double)timestamp forKey:(NSString *_Nonnull)key __deprecated_msg("Use setUserAttributeEpochTime:forKey instead.");
-
--(void)setUserAttributeEpochTime:(double)timestamp forKey:(NSString *_Nonnull)key;
-
--(void)setUserAttributeEpochTime:(double)timestamp forKey:(NSString *_Nonnull)key forAppID:(NSString* _Nullable)appID;
+-(void)setUserAttributeTimestamp:(double)timestamp forKey:(NSString *_Nonnull)key __deprecated_msg("Use setUserAttributeEpochTime:forKey of MOAnalytics instead.");
 
 /**
  Use this method to set a user attribute which is NSDate instance.
@@ -158,27 +126,17 @@ Call this method to track events.
  */
 -(void)setUserAttributeDate:(NSDate* _Nonnull)date forKey:(NSString *_Nonnull)key;
 
--(void)setUserAttributeDate:(NSDate* _Nonnull)date forKey:(NSString *_Nonnull)key forAppID:(NSString* _Nullable)appID;
-
 /**
  Use this method to set a user attribute which is NSDate instance.
  @param dateStr Date String in ISO date format [yyyy-MM-dd'T'HH:mm:ss'Z'].
  */
--(void)setUserAttributeISODateString:(NSString* _Nonnull)dateStr forKey:(NSString *_Nonnull)key __deprecated_msg("Use setUserAttributeISODate:forKey instead.");
-
--(void)setUserAttributeISODate:(NSString* _Nonnull)dateStr forKey:(NSString *_Nonnull)key;
-
--(void)setUserAttributeISODate:(NSString* _Nonnull)dateStr forKey:(NSString *_Nonnull)key forAppID:(NSString* _Nullable)appID;;
+-(void)setUserAttributeISODateString:(NSString* _Nonnull)dateStr forKey:(NSString *_Nonnull)key __deprecated_msg("Use setUserAttributeISODate:forKey of MOAnalytics instead.");
 
 /**
  Use this method to set user attribute location.
  @param location MOGeoLocation instance for location coordinates
  */
--(void)setUserAttributeLocation:(MOGeoLocation* _Nonnull)location forKey:(NSString *_Nonnull)key __deprecated_msg("Use setLocation:forKey instead.");
-
--(void)setLocation:(MOGeoLocation* _Nonnull)location forKey:(NSString *_Nonnull)key;
-
--(void)setLocation:(MOGeoLocation* _Nonnull)location forKey:(NSString *_Nonnull)key forAppID:(NSString* _Nullable)appID;
+-(void)setUserAttributeLocation:(MOGeoLocation* _Nonnull)location forKey:(NSString *_Nonnull)key __deprecated_msg("Use setLocation:forKey of MOAnalytics instead.");
 
 #pragma mark Default User Attributes
 /**
@@ -187,108 +145,65 @@ Call this method to track events.
  @attention Please make sure not to use this method to update the unique ID of a logged in user, use setAlias: instead
  @version 3.3.0 and above
  */
--(void)setUserUniqueID:(id _Nullable )uniqueID __deprecated_msg("Use setUniqueID: instead.");
-
--(void)setUniqueID:(id _Nullable )uniqueID;
-
--(void)setUniqueID:(id _Nullable )uniqueID forAppID:(NSString* _Nullable)appID;
-
-/**
- Use this method to update the Unique ID(ID) value of a user.
- @param uniqueID Unique ID to filter the specific user from your user base. Please make sure this value is not hardcoded.
- @version 3.8.0 and above
- */
--(void)setAlias:(id _Nullable )uniqueID;
-
--(void)setAlias:(id _Nullable )uniqueID forAppID:(NSString* _Nullable)appID;
+-(void)setUserUniqueID:(id _Nullable )uniqueID __deprecated_msg("Use setUniqueID: of MOAnalytics instead.");
 
 /**
  Use this method to track Email ID of a user.
  @param emailID Email ID value to be tracked.
  @version 3.3.0 and above
  */
--(void)setUserEmailID:(NSString*_Nullable)emailID __deprecated_msg("Use setEmailID: instead.");
-
--(void)setEmailID:(NSString*_Nullable)emailID;
-
--(void)setEmailID:(NSString*_Nullable)emailID forAppID:(NSString* _Nullable)appID;
+-(void)setUserEmailID:(NSString*_Nullable)emailID __deprecated_msg("Use setEmailID: of MOAnalytics instead.");
 
 /**
  Use this method to track User Name of a user.
  @param name User Name value to be tracked for the user.
  @version 3.3.0 and above
  */
--(void)setUserName:(NSString*_Nullable)name __deprecated_msg("Use setName: instead.");
+-(void)setUserName:(NSString*_Nullable)name __deprecated_msg("Use setName: of MOAnalytics instead");
 
--(void)setName:(NSString*_Nullable)name;
-
--(void)setName:(NSString*_Nullable)name forAppID:(NSString* _Nullable)appID;
 /**
  Use this method to track First Name of a user.
  @param firstName User First Name value to be tracked for the user.
  @version 3.3.0 and above
  */
--(void)setUserFirstName:(NSString*_Nullable)firstName __deprecated_msg("Use setFirstName: instead.");
+-(void)setUserFirstName:(NSString*_Nullable)firstName __deprecated_msg("Use setFirstName: of MOAnalytics instead.");
 
--(void)setFirstName:(NSString*_Nullable)firstName;
-
--(void)setFirstName:(NSString*_Nullable)firstName forAppID:(NSString* _Nullable)appID;
 
 /**
  Use this method to track Last Name of a user.
  @param lastName User last name value to be tracked for the user.
  @version 3.3.0 and above
  */
--(void)setUserLastName:(NSString*_Nullable)lastName __deprecated_msg("Use setLastName: instead.");
+-(void)setUserLastName:(NSString*_Nullable)lastName __deprecated_msg("Use setLastName: of MOAnalytics instead.");
 
--(void)setLastName:(NSString*_Nullable)lastName;
-
--(void)setLastName:(NSString*_Nullable)lastName forAppID:(NSString* _Nullable)appID;
 
 /**
  Use this method to track Phone Number of a user.
  @param phNumber Phone Number of user to be tracked.
  @version 3.3.0 and above
  */
--(void)setUserMobileNo:(id _Nullable )phNumber __deprecated_msg("Use setMobileNo: instead.");
+-(void)setUserMobileNo:(id _Nullable )phNumber __deprecated_msg("Use setMobileNo: of MOAnalytics instead.");
 
--(void)setMobileNo:(id _Nullable )phNumber;
-
--(void)setMobileNo:(id _Nullable )phNumber forAppID:(NSString* _Nullable)appID;
 
 /**
  Use this method to track gender of a user.
  @param gender UserGender value indicating if user is MALE or FEMALE.
  @version 3.3.0 and above
  */
--(void)setUserGender:(UserGender)gender __deprecated_msg("Use setGender: instead.");
-
--(void)setGender:(UserGender)gender;
-
--(void)setGender:(UserGender)gender forAppID:(NSString* _Nullable)appID;
+-(void)setUserGender:(UserGender)gender __deprecated_msg("Use setGender: of MOAnalytics instead.");
 
 /**
  Use this method to track Date of birth of a user.
  @param date NSDate instance of birthdate of user.
  @version 3.3.0 and above
  */
--(void)setUserDateOfBirth:(NSDate*_Nullable)date __deprecated_msg("Use setDateOfBirth: instead.");
-
--(void)setDateOfBirth:(NSDate*_Nullable)date;
-
--(void)setDateOfBirth:(NSDate*_Nullable)date forAppID:(NSString* _Nullable)appID;
-
+-(void)setUserDateOfBirth:(NSDate*_Nullable)date __deprecated_msg("Use setDateOfBirth: of MOAnalytics instead.");
 
 /**
  Use this method to track location of a user.
 @param location MOGeoLocation instance for location coordinates
  */
--(void)setUserLocation:(MOGeoLocation* _Nonnull)location __deprecated_msg("Use setLocation: instead.");
-
--(void)setLocation:(MOGeoLocation* _Nonnull)location;
-
--(void)setLocation:(MOGeoLocation* _Nonnull)location forAppID:(NSString* _Nullable)appID;
-
+-(void)setUserLocation:(MOGeoLocation* _Nonnull)location __deprecated_msg("Use setLocation: of MOAnalytics instead.");
 
 /**
  Use this method to track push preference set by a user.
@@ -298,50 +213,6 @@ Call this method to track events.
 -(void)trackUserPushPreference:(BOOL)isPushEnabled;
 
 -(void)trackUserPushPreference:(BOOL)isPushEnabled forAppID:(NSString* _Nullable)appID;
-
-/**
- Use this method to track device locale settings of user.
- */
--(void)trackLocale;
-
--(void)trackLocaleForAppID:(NSString* _Nullable)appID;
-
-#pragma mark Sync Methods
-/**
- Use this method to forcefully sync events to server right now. Useful for testing and to send data in realtime when you don't wish to wait for when the user goes to background or terminates the app.
- */
--(void)flush;
-
-/**
- Use this method to forcefully sync events to server right now. Useful for testing and to send data in realtime when you don't wish to wait for when the user goes to background or terminates the app.
- 
- @param completionBlock : Completion block called after data sync is completed
- @version 4.1.0 and above
- */
--(void)flushWithCompletionBlock:(void(^_Nullable)(BOOL syncSuccessful))completionBlock;
-
--(void)flushForAppID:(NSString* _Nullable)appID;
-
--(void)flushForAppID:(NSString* _Nullable)appID withCompletionBlock:(void(^_Nullable)(BOOL syncSuccessful))completionBlock;
-
-#pragma mark Reset Method
-
-/**
- Call this method to clear the unique attributes of the current user, and add him as a new user. One of the use cases is when a user logs out
- */
--(void)resetUser;
-
--(void)resetUserForAppID:(NSString* _Nullable)appID;
-
-/**
- Call this method to clear the unique attributes of the current user, and add him as a new user. One of the use cases is when a user logs out
- @param completionBlock : Completion block called after the User Reset is done
- @version 4.1.0 and above
- */
--(void)resetUserWithCompletionBlock:(void(^_Nullable)(BOOL userResetSuccessfully))completionBlock;
-
--(void)resetUserForAppID:(NSString* _Nullable)appID withCompletionBlock:(void(^_Nullable)(BOOL userResetSuccessfully))completionBlock;
-
 
 #pragma mark Process URL Method
 
@@ -375,38 +246,12 @@ Call this method to track events.
  */
 -(void)dismissRichLandingWebViewControllerWithAnimation:(BOOL)animate;
 
-#pragma mark- Opt Out methods
-
-/**
- Methods to enable/disable Data Tracking in SDK
- */
-
--(void)enableDataTracking;
-
--(void)enableDataTrackingForAppID:(NSString * _Nullable)appID;
-
--(void)disableDataTracking;
-
--(void)disableDataTrackingForAppID:(NSString * _Nullable)appID;
-
 /**
  Method to enable all the SDK features
  */
 -(void)enableSDK;
 
 -(void)enableSDKForAppID:(NSString* _Nonnull)appID;
-
-/**
- Method to enable all the SDK features for Segment. Dont call this method.
- */
--(void)enableSDKForSegment:(MOSDKConfig*_Nullable)sdkConfig;
-
-/**
- Method to disable all the SDK features for Segment. Dont call this method.
- */
-
--(void)disableSDKForSegment:(MOSDKConfig*_Nullable)sdkConfig;
-
 
 /**
  Method to disable all the SDK features
@@ -418,7 +263,8 @@ Call this method to track events.
 #pragma mark- Default Config
 ///Method to obtain the default config
 -(MOSDKConfig* _Nullable)getDefaultSDKConfiguration;
-
+///Method to obtain the config for given appID
+-(MOSDKConfig* _Nullable)getSDKConfigurationForAppID:(NSString* _Nullable)appID;
 @end
 
 
