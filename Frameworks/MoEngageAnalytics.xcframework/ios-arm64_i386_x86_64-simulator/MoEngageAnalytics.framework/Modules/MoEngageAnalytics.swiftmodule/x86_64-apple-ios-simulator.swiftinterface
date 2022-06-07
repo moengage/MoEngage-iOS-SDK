@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageAnalytics
 import AdSupport
 import AppTrackingTransparency
@@ -34,12 +34,8 @@ import _Concurrency
   public class func getIDFA() -> Swift.String?
   @objc deinit
 }
-@objc public protocol MOEventTrackDelegate {
-  @objc func eventTracked(withEventName event: Swift.String, andAttributes attrDict: [Swift.String : Any])
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MOAnalytics : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc public class MOAnalytics : ObjectiveC.NSObject {
   @objc public static let sharedInstance: MoEngageAnalytics.MOAnalytics
-  @objc public func initializeAnalytics(forInstanceID instanceID: Swift.String)
   @objc public func updateTimerForSegment(forSDKConfig sdkConfig: MoEngageCore.MOSDKConfig)
   @objc public func trackSDKVersion()
   @objc public func updateSessionSource(withPushPayload payload: [Swift.AnyHashable : Any], fromMoEngage isMoEngagePush: Swift.Bool)
@@ -48,38 +44,75 @@ import _Concurrency
   @objc public func pushTokenUpdated()
   @objc public func appStatus(_ appStatus: MoEngageAnalytics.AppStatus, forAppID appID: Swift.String? = nil)
   @objc public func trackEvent(_ name: Swift.String, withProperties properties: MoEngageAnalytics.MOProperties? = nil, forAppID appID: Swift.String? = nil)
+  @objc public func trackEvent(_ name: Swift.String, withProperties properties: MoEngageAnalytics.MOProperties? = nil)
   @objc public func flush(forAppID appID: Swift.String? = nil, withCompletionBlock completionBlock: ((Swift.Bool) -> Swift.Void)? = nil)
+  @objc public func flush()
+  @objc public func flush(forAppID appID: Swift.String? = nil)
+  @objc public func flush(withCompletionBlock completionBlock: ((Swift.Bool) -> Swift.Void)? = nil)
   @objc public func flushRichNotificationEvents(forAppID appID: Swift.String? = nil, withCompletionBlock completionBlock: ((Swift.Bool) -> Swift.Void)? = nil)
   @objc public func setUserAttribute(_ value: Any?, withAttributeName attributeName: Swift.String, forAppID appID: Swift.String? = nil)
+  @objc public func setUserAttribute(_ value: Any?, withAttributeName attributeName: Swift.String)
   @objc public func setUserAttributeEpochTime(_ dateEpoch: Swift.Double, withAttributeName attributeName: Swift.String, forAppID appID: Swift.String? = nil)
+  @objc public func setUserAttributeEpochTime(_ dateEpoch: Swift.Double, withAttributeName attributeName: Swift.String)
   @objc public func setUserAttributeDate(_ date: Foundation.Date, withAttributeName attributeName: Swift.String, forAppID appID: Swift.String? = nil)
+  @objc public func setUserAttributeDate(_ date: Foundation.Date, withAttributeName attributeName: Swift.String)
   @objc public func setUserAttributeISODate(_ dateStr: Swift.String, withAttributeName attributeName: Swift.String, forAppID appID: Swift.String? = nil)
+  @objc public func setUserAttributeISODate(_ dateStr: Swift.String, withAttributeName attributeName: Swift.String)
   @objc public func setLocation(_ location: MoEngageAnalytics.MOGeoLocation, withAttributeName attributeName: Swift.String, forAppID appID: Swift.String? = nil)
+  @objc public func setLocation(_ location: MoEngageAnalytics.MOGeoLocation, withAttributeName attributeName: Swift.String)
   @objc public func setAlias(_ alias: Swift.String, forAppID appID: Swift.String? = nil)
+  @objc public func setAlias(_ alias: Swift.String)
   @objc public func setUniqueID(_ uniqueID: Swift.String, forAppID appID: Swift.String? = nil)
+  @objc public func setUniqueID(_ uniqueID: Swift.String)
   @objc public func setEmailID(_ emailID: Swift.String, forAppID appID: Swift.String? = nil)
+  @objc public func setEmailID(_ emailID: Swift.String)
   @objc public func setName(_ userName: Swift.String, forAppID appID: Swift.String? = nil)
+  @objc public func setName(_ userName: Swift.String)
   @objc public func setFirstName(_ firstName: Swift.String, forAppID appID: Swift.String? = nil)
+  @objc public func setFirstName(_ firstName: Swift.String)
   @objc public func setLastName(_ lastName: Swift.String, forAppID appID: Swift.String? = nil)
+  @objc public func setLastName(_ lastName: Swift.String)
   @objc public func setMobileNumber(_ mobileNum: Swift.String, forAppID appID: Swift.String? = nil)
+  @objc public func setMobileNumber(_ mobileNum: Swift.String)
   @objc public func setGender(_ gender: MoEngageAnalytics.UserGender, forAppID appID: Swift.String? = nil)
+  @objc public func setGender(_ gender: MoEngageAnalytics.UserGender)
   @objc public func setDateOfBirth(_ dob: Foundation.Date, forAppID appID: Swift.String? = nil)
+  @objc public func setDateOfBirth(_ dob: Foundation.Date)
   @objc public func setLocation(_ location: MoEngageAnalytics.MOGeoLocation, forAppID appID: Swift.String? = nil)
+  @objc public func setLocation(_ location: MoEngageAnalytics.MOGeoLocation)
   @objc public func trackUserPushPreference(_ isPushEnabled: Swift.Bool, forAppID appID: Swift.String? = nil)
+  @objc public func trackLocale()
   @objc public func trackLocale(forAppID appID: Swift.String? = nil)
   @objc public func resetUser(forAppID appID: Swift.String? = nil, withCompletionBlock completionBlock: ((Swift.Bool) -> Swift.Void)? = nil)
+  @objc public func resetUser()
+  @objc public func resetUser(withCompletionBlock completionBlock: ((Swift.Bool) -> Swift.Void)? = nil)
+  @objc public func resetUser(forAppID appID: Swift.String? = nil)
   @objc public func enableDataTracking(forAppID appID: Swift.String? = nil)
+  @objc public func enableDataTracking()
   @objc public func disableDataTracking(forAppID appID: Swift.String? = nil)
-  @objc public func optOutOfIDFATracking(_ isOptedOut: Swift.Bool, forAppID appID: Swift.String? = nil)
-  @objc public func optOutOfIDFVTracking(_ isOptedOut: Swift.Bool, forAppID appID: Swift.String? = nil)
+  @objc public func disableDataTracking()
+  @objc public func enableIDFATracking(forAppID appID: Swift.String? = nil)
+  @objc public func enableIDFATracking()
+  @objc public func disableIDFATracking(forAppID appID: Swift.String? = nil)
+  @objc public func disableIDFATracking()
+  @objc public func enableIDFVTracking(forAppID appID: Swift.String? = nil)
+  @objc public func enableIDFVTracking()
+  @objc public func disableIDFVTracking(forAppID appID: Swift.String? = nil)
+  @objc public func disableIDFVTracking()
   @objc public func updateSDKWhitelistedEvents(_ eventsArray: Swift.Array<Swift.String>)
-  @objc public func moengageSDKStateUpdated(forInstanceID instanceID: Swift.String)
-  public func setRTTEventDelegate(_ delegate: MoEngageAnalytics.MOEventTrackDelegate, forInstanceID instanceID: Swift.String)
-  @objc public func setInAppEventDelegate(_ delegate: MoEngageAnalytics.MOEventTrackDelegate, forInstanceID instanceID: Swift.String)
+  @objc override dynamic public init()
   @objc deinit
 }
-extension MoEngageAnalytics.MOAnalytics : MoEngageObjCUtils.MOAppDelegateAnalyticsProxyProtocol {
-  @objc dynamic public func handleOpen(_ url: Foundation.URL)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AnalyticsDelegateHandler : MoEngageCore.AnalyticsDelegate, MoEngageObjCUtils.MOAppDelegateAnalyticsProxyProtocol {
+  override public func initializeAnalytics(sdkInstance: MoEngageCore.SdkInstance)
+  @objc public func handleOpen(_ url: Foundation.URL)
+  override public func moengageSDKStateUpdated(sdkInstance: MoEngageCore.SdkInstance)
+  override public func applicationDidBecomeActive(sdkInstance: MoEngageCore.SdkInstance)
+  override public func applicationWillResignActive(sdkInstance: MoEngageCore.SdkInstance)
+  override public func applicationDidEnterForeground(sdkInstance: MoEngageCore.SdkInstance)
+  override public func applicationDidEnterBackground(sdkInstance: MoEngageCore.SdkInstance)
+  override public func flush(sdkInstance: MoEngageCore.SdkInstance)
+  @objc deinit
 }
 @objc public class MOProperties : ObjectiveC.NSObject {
   @objc public init(withAttributes attributesDict: Swift.Dictionary<Swift.String, Any>? = nil)
@@ -92,16 +125,11 @@ extension MoEngageAnalytics.MOAnalytics : MoEngageObjCUtils.MOAppDelegateAnalyti
   @objc public func setNonInteractive()
   @objc deinit
 }
-@objc public class MOEventCondition : ObjectiveC.NSObject {
-  @objc public init(withEventName name: Swift.String, andConditionDict conditionDict: Swift.Dictionary<Swift.String, Any>)
-  @objc public func checkConditionSatisfied(forEvent event: Swift.String, andAttributesPayload attributesPayload: Swift.Dictionary<Swift.String, Any>) -> Swift.Bool
-  @objc deinit
-}
 @objc public class MOSource : ObjectiveC.NSObject, Foundation.NSCoding {
   @objc public func encode(with aCoder: Foundation.NSCoder)
   @objc required public init(coder aDecoder: Foundation.NSCoder)
-  public init(withSourceInfoDict infoDict: [Swift.AnyHashable : Any], andInstanceID instanceID: Swift.String, withConfigController configController: MoEngageCore.MOConfigController)
-  public init(withURL urlStr: Swift.String, andInstanceID instanceID: Swift.String, withConfigController configController: MoEngageCore.MOConfigController)
+  public init(withSourceInfoDict infoDict: [Swift.AnyHashable : Any], andInstanceID instanceID: Swift.String, withConfigController configController: MoEngageCore.SdkInstance)
+  public init(withURL urlStr: Swift.String, andInstanceID instanceID: Swift.String, withConfigController configController: MoEngageCore.SdkInstance)
   public func isValidSource() -> Swift.Bool
   @objc deinit
 }

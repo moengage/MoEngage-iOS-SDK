@@ -15,5 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)removeValidObjectForKey:(NSString * _Nullable)key;
 
+-(BOOL)containsKeyInDict:(NSString * _Nullable)key;
+
 @end
 NS_ASSUME_NONNULL_END

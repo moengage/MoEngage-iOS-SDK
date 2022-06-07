@@ -18,3 +18,4 @@ FOUNDATION_EXPORT const unsigned char MoEngageCoreVersionString[];
 
 
 
+#import <MoEngageCore/InAppDelegate.h>

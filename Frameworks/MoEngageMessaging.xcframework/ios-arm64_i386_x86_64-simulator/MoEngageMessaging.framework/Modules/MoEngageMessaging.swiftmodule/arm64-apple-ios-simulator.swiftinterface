@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageMessaging
 import Foundation
 import MoEngageAnalytics
@@ -14,6 +14,18 @@ import _Concurrency
   public static func getStatsAttributes(fromPayloadDict payloadDict: Swift.Dictionary<Swift.AnyHashable, Any>) -> Swift.Dictionary<Swift.String, Any>
   @objc public static func getAppID(fromNotificationPayload userInfo: Foundation.NSDictionary) -> Swift.String?
   @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MessageDelegateHandler : MoEngageCore.MessagingDelegate, MoEngageObjCUtils.MOAppDelegateMessagingProxyProtocol, UserNotifications.UNUserNotificationCenterDelegate {
+  override public func initializeMessaging(launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]? = nil, sdkInstance: MoEngageCore.SdkInstance)
+  @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
+  @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
+  @objc public func applicationDidRegisterForRemoteNotifications(withDeviceToken deviceToken: Foundation.Data?)
+  @objc public func applicationDidFailToRegisterForRemoteNotificationsWithError(_ error: Swift.Error?)
+  @objc public func applicationDidReceiveRemoteNotification(_ userInfo: [Swift.AnyHashable : Any]?)
+  @objc public func userNotificationCenterWillPresent(_ notification: UserNotifications.UNNotification?)
+  @objc public func userNotificationCenterDidReceive(_ response: UserNotifications.UNNotificationResponse?)
+  override public func applicationDidEnterForeground(sdkInstance: MoEngageCore.SdkInstance)
   @objc deinit
 }
 public enum MOPushTemplateType {
@@ -147,7 +159,6 @@ public struct MOMessagingConstant {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MOMessaging : ObjectiveC.NSObject {
   @objc public static let sharedInstance: MoEngageMessaging.MOMessaging
-  @objc public func initializeMessaging(withLaunchOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]? = nil, forInstanceID instanceID: Swift.String)
   @objc public func setMessagingDelegate(_ delegate: MoEngageMessaging.MOMessagingDelegate?, forAppID appID: Swift.String? = nil)
   public func setInternalInboxDelegate(_ delegate: MoEngageMessaging.MOMessagingDelegate?, forInstanceID instanceID: Swift.String?)
   public func trackNotificationReceived(_ payload: MoEngageMessaging.MOPushPayload)
@@ -167,17 +178,6 @@ public struct MOMessagingConstant {
   @objc public static func isMoEngageSilentPushAppLaunch(withLaunchOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?) -> Swift.Bool
   @objc public func getPushToken() -> Swift.String?
   @objc deinit
-}
-extension MoEngageMessaging.MOMessaging : UserNotifications.UNUserNotificationCenterDelegate {
-  @objc dynamic public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
-  @objc dynamic public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
-}
-extension MoEngageMessaging.MOMessaging : MoEngageObjCUtils.MOAppDelegateMessagingProxyProtocol {
-  @objc dynamic public func applicationDidRegisterForRemoteNotifications(withDeviceToken deviceToken: Foundation.Data?)
-  @objc dynamic public func applicationDidFailToRegisterForRemoteNotificationsWithError(_ error: Swift.Error?)
-  @objc dynamic public func applicationDidReceiveRemoteNotification(_ userInfo: [Swift.AnyHashable : Any]?)
-  @objc dynamic public func userNotificationCenterWillPresent(_ notification: UserNotifications.UNNotification?)
-  @objc dynamic public func userNotificationCenterDidReceive(_ response: UserNotifications.UNNotificationResponse?)
 }
 public class MORichPush {
   public var title: Swift.String?
