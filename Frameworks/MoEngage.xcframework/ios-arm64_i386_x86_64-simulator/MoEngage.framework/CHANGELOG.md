@@ -2,9 +2,13 @@
 =================================
 
 ## Changelog:
+### Version 7.2.2  *(15th June, 2022)*
+-------------------------------------------
+* BugFix - Handled removing of UniqueID from storage on resetting the user.
+
 ### Version 7.2.1  *(11th February, 2022)*
 -------------------------------------------
-* BugFix - Handled SDK initialization from background thread.
+* BugFix SUP-8691 - Handled notification registering in the main thread.
 
 ### Version 7.2.0  *(31st January, 2022)*
 -------------------------------------------
