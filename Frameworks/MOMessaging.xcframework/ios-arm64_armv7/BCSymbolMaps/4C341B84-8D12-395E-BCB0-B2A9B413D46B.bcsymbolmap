@@ -1,7 +1,7 @@
 BCSymbolMap Version: 2.0
-Apple clang version 13.0.0 (clang-1300.0.29.3)
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk
-iPhoneOS15.0.sdk
+Apple clang version 13.1.6 (clang-1316.0.21.2.5)
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
+iPhoneOS15.5.sdk
 /Users/rakshitha/Library/Developer/Xcode/DerivedData/MoEngage-agkiherlqdmvaeakrqtfvsowceuq/Build/Intermediates.noindex/ArchiveIntermediates/MOMessaging/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MOMessaging.build/DerivedSources/MOMessaging_vers.c
 /Users/rakshitha/Documents/MoEngage-iPhone-SDK/MoEFramework/MoEngage
 +[MOInbox initializeInboxOnController:]
@@ -245,6 +245,8 @@ MOMessaging/MOInbox/MOInboxUI/MOInboxViewController.h
 __destroy_helper_block_e8_32s40s48s
 __copy_helper_block_e8_32s40s48s
 __59-[MOInboxViewController tableView:didSelectRowAtIndexPath:]_block_invoke
+dispatch_get_main_queue
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/usr/include/dispatch/queue.h
 -[MODeviceTriggerCampaign encodeWithCoder:]
 -[MODeviceTriggerCampaign initWithCoder:]
 -[MODeviceTriggerCampaign initWithDictionary:]
@@ -666,7 +668,7 @@ __destroy_helper_block_e8_32s40s
 __copy_helper_block_e8_32s40b
 __65-[MODeviceTriggersHandler syncDeviceTriggersWithCompletionBlock:]_block_invoke
 __41+[MODeviceTriggersHandler sharedInstance]_block_invoke
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/dispatch/once.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/usr/include/dispatch/once.h
 +[MOAppDelegateMessagingProxy canSwizzleMethods]
 +[MOAppDelegateMessagingProxy sharedProxy]
 ___42+[MOAppDelegateMessagingProxy sharedProxy]_block_invoke
@@ -1195,8 +1197,8 @@ __OBJC_$_PROP_LIST_MONotificationHandler
 __OBJC_CLASS_RO_$_MONotificationHandler
 /Users/rakshitha/Documents/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MOMessaging/NotificationHandler/MONotificationHandler.m
 MOMessaging/NotificationHandler/MONotificationHandler.h
-__75-[MONotificationHandler checkPushNotificationsSettingsWithCompletionBlock:]_block_invoke
 MOMessaging/NotificationHandler/MONotificationHandler.m
+__75-[MONotificationHandler checkPushNotificationsSettingsWithCompletionBlock:]_block_invoke
 __49-[MONotificationHandler sendCategoriesWithArray:]_block_invoke
 __57-[MONotificationHandler showCouponAlertView:andUserInfo:]_block_invoke.284
 __57-[MONotificationHandler showCouponAlertView:andUserInfo:]_block_invoke_2
