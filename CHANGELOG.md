@@ -2,6 +2,9 @@
 =================================
 
 ## Changelog:
+### Version 8.2.1  *(22nd June, 2022)*
+-------------------------------------------
+* Fixed the lldb issue when integrating MoEngage-iOS-SDK to Swift application.
 
 ### Version 8.2.0  *(7th June, 2022)*
 -------------------------------------------

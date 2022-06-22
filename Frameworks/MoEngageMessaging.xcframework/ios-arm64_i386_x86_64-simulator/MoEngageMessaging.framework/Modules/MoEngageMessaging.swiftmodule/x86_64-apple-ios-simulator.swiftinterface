@@ -2,8 +2,8 @@
 // swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageMessaging
 import Foundation
+import MOCore
 import MoEngageAnalytics
-import MoEngageCore
 @_exported import MoEngageMessaging
 import MoEngageObjCUtils
 import Swift
@@ -16,8 +16,8 @@ import _Concurrency
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MessageDelegateHandler : MoEngageCore.MessagingDelegate, MoEngageObjCUtils.MOAppDelegateMessagingProxyProtocol, UserNotifications.UNUserNotificationCenterDelegate {
-  override public func initializeMessaging(launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]? = nil, sdkInstance: MoEngageCore.SdkInstance)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MessageDelegateHandler : MOCore.MessagingDelegate, MoEngageObjCUtils.MOAppDelegateMessagingProxyProtocol, UserNotifications.UNUserNotificationCenterDelegate {
+  override public func initializeMessaging(launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]? = nil, sdkInstance: MOCore.SdkInstance)
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
   @objc public func applicationDidRegisterForRemoteNotifications(withDeviceToken deviceToken: Foundation.Data?)
@@ -25,7 +25,7 @@ import _Concurrency
   @objc public func applicationDidReceiveRemoteNotification(_ userInfo: [Swift.AnyHashable : Any]?)
   @objc public func userNotificationCenterWillPresent(_ notification: UserNotifications.UNNotification?)
   @objc public func userNotificationCenterDidReceive(_ response: UserNotifications.UNNotificationResponse?)
-  override public func applicationDidEnterForeground(sdkInstance: MoEngageCore.SdkInstance)
+  override public func applicationDidEnterForeground(sdkInstance: MOCore.SdkInstance)
   @objc deinit
 }
 public enum MOPushTemplateType {

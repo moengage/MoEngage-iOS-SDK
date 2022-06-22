@@ -1,0 +1,11 @@
+framework module MOCore {
+  umbrella header "MOCore.h"
+
+  export *
+  module * { export * }
+}
+
+module MOCore.Swift {
+    header "MOCore-Swift.h"
+    requires objc
+}
