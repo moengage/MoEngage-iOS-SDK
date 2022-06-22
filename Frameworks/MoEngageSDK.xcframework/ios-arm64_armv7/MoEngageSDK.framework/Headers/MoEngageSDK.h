@@ -17,7 +17,7 @@ FOUNDATION_EXPORT const unsigned char MoEngageVersionString[];
 #if !defined(__has_include)
 #error "MoEngage.h won't be able to import all the modules if your compiler doesn't support __has_include. Please import the headers individually."
 #else
-    #import <MoEngageCore/MoEngageCore-Swift.h>
+    #import <MOCore/MOCore-Swift.h>
     
     #if __has_include(<MoEngageAnalytics/MoEngageAnalytics-Swift.h>)
         #import <MoEngageAnalytics/MoEngageAnalytics-Swift.h>

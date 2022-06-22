@@ -5,7 +5,7 @@ import AdSupport
 import AppTrackingTransparency
 import CommonCrypto
 import Foundation
-import MoEngageCore
+import MOCore
 import MoEngageObjCUtils
 import Swift
 import UIKit
@@ -33,20 +33,20 @@ import _Concurrency
   public class func getIDFA() -> Swift.String?
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AnalyticsDelegateHandler : MoEngageCore.AnalyticsDelegate, MoEngageObjCUtils.MOAppDelegateAnalyticsProxyProtocol {
-  override public func initializeAnalytics(sdkInstance: MoEngageCore.SdkInstance)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AnalyticsDelegateHandler : MOCore.AnalyticsDelegate, MoEngageObjCUtils.MOAppDelegateAnalyticsProxyProtocol {
+  override public func initializeAnalytics(sdkInstance: MOCore.SdkInstance)
   @objc public func handleOpen(_ url: Foundation.URL)
-  override public func moengageSDKStateUpdated(sdkInstance: MoEngageCore.SdkInstance)
-  override public func applicationDidBecomeActive(sdkInstance: MoEngageCore.SdkInstance)
-  override public func applicationWillResignActive(sdkInstance: MoEngageCore.SdkInstance)
-  override public func applicationDidEnterForeground(sdkInstance: MoEngageCore.SdkInstance)
-  override public func applicationDidEnterBackground(sdkInstance: MoEngageCore.SdkInstance)
-  override public func flush(sdkInstance: MoEngageCore.SdkInstance)
+  override public func moengageSDKStateUpdated(sdkInstance: MOCore.SdkInstance)
+  override public func applicationDidBecomeActive(sdkInstance: MOCore.SdkInstance)
+  override public func applicationWillResignActive(sdkInstance: MOCore.SdkInstance)
+  override public func applicationDidEnterForeground(sdkInstance: MOCore.SdkInstance)
+  override public func applicationDidEnterBackground(sdkInstance: MOCore.SdkInstance)
+  override public func flush(sdkInstance: MOCore.SdkInstance)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MOAnalytics : ObjectiveC.NSObject {
   @objc public static let sharedInstance: MoEngageAnalytics.MOAnalytics
-  @objc public func updateTimerForSegment(forSDKConfig sdkConfig: MoEngageCore.MOSDKConfig)
+  @objc public func updateTimerForSegment(forSDKConfig sdkConfig: MOCore.MOSDKConfig)
   @objc public func trackSDKVersion()
   @objc public func updateSessionSource(withPushPayload payload: [Swift.AnyHashable : Any], fromMoEngage isMoEngagePush: Swift.Bool)
   @objc public func updateSessionSource(withURL url: Foundation.URL)
@@ -116,8 +116,8 @@ import _Concurrency
 @objc public class MOSource : ObjectiveC.NSObject, Foundation.NSCoding {
   @objc public func encode(with aCoder: Foundation.NSCoder)
   @objc required public init(coder aDecoder: Foundation.NSCoder)
-  public init(withSourceInfoDict infoDict: [Swift.AnyHashable : Any], andInstanceID instanceID: Swift.String, withConfigController configController: MoEngageCore.SdkInstance)
-  public init(withURL urlStr: Swift.String, andInstanceID instanceID: Swift.String, withConfigController configController: MoEngageCore.SdkInstance)
+  public init(withSourceInfoDict infoDict: [Swift.AnyHashable : Any], andInstanceID instanceID: Swift.String, withConfigController configController: MOCore.SdkInstance)
+  public init(withURL urlStr: Swift.String, andInstanceID instanceID: Swift.String, withConfigController configController: MOCore.SdkInstance)
   public func isValidSource() -> Swift.Bool
   @objc deinit
 }

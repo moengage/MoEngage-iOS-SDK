@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MoEngageCore/MoEngageCore-Swift.h>
+#import <MOCore/MOCore-Swift.h>
 
 #define MOLogError(config, st, f, ... )          [MOLogger error:[NSString stringWithFormat:(f), ##__VA_ARGS__] stackTrace:st label:nil sdkConfig:config fileName:[[NSString stringWithUTF8String:__FILE__] lastPathComponent] functionName:NSStringFromSelector(_cmd) lineNumber:__LINE__ columnNumber:0]
 
