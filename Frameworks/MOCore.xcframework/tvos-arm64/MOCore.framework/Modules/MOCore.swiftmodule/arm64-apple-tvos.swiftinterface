@@ -186,11 +186,9 @@ extension MOCore.MONetworkClient : MOCore.NetworkRequestProtocol {
   @objc public var sdkConfig: MOCore.MOSDKConfig {
     get
   }
-  @objc public var remoteConfig: MOCore.RemoteConfig {
-    get
-  }
   @objc final public let sdkQueue: Dispatch.DispatchQueue
-  public func updateRemoteConfig(_ config: MOCore.RemoteConfig)
+  @objc public func updateRemoteConfig(_ config: MOCore.RemoteConfig)
+  @objc public func getRemoteConfig() -> MOCore.RemoteConfig
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MOConfigCoordinator : ObjectiveC.NSObject {
@@ -215,7 +213,7 @@ extension MOCore.MONetworkClient : MOCore.NetworkRequestProtocol {
 @_hasMissingDesignatedInitializers public class MOLoggerCoordinator {
   public static let sharedInstance: MOCore.MOLoggerCoordinator
   public var defaultConsoleLogger: MOCore.MOLoggerController
-  public func getLoggerInstance(forSDKConfig sdkConfig: MOCore.MOSDKConfig) -> MOCore.MOLoggerController
+  public func getLoggerInstance(forSDKInstance sdkInstance: MOCore.SdkInstance) -> MOCore.MOLoggerController
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MessagingManager : ObjectiveC.NSObject {
@@ -263,11 +261,11 @@ extension MOCore.MONetworkClient : MOCore.NetworkRequestProtocol {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MOLogger : ObjectiveC.NSObject {
-  @objc public static func verbose(_ msg: Swift.String?, label: Swift.String? = nil, sdkConfig: MOCore.MOSDKConfig? = nil)
-  @objc public static func debug(_ msg: Swift.String?, label: Swift.String? = nil, sdkConfig: MOCore.MOSDKConfig? = nil)
-  @objc public static func info(_ msg: Swift.String?, label: Swift.String? = nil, sdkConfig: MOCore.MOSDKConfig? = nil, fileName: Swift.String = #fileID, functionName: Swift.String = #function, lineNumber: Swift.Int = #line, columnNumber: Swift.Int = #column)
-  @objc public static func warning(_ msg: Swift.String?, label: Swift.String? = nil, sdkConfig: MOCore.MOSDKConfig? = nil, fileName: Swift.String = #fileID, functionName: Swift.String = #function, lineNumber: Swift.Int = #line, columnNumber: Swift.Int = #column)
-  @objc public static func error(_ msg: Swift.String?, stackTrace: [Swift.String]? = nil, label: Swift.String? = nil, sdkConfig: MOCore.MOSDKConfig? = nil, fileName: Swift.String = #fileID, functionName: Swift.String = #function, lineNumber: Swift.Int = #line, columnNumber: Swift.Int = #column)
+  @objc public static func verbose(_ msg: Swift.String?, label: Swift.String? = nil, sdkInstance: MOCore.SdkInstance? = nil)
+  @objc public static func debug(_ msg: Swift.String?, label: Swift.String? = nil, sdkInstance: MOCore.SdkInstance? = nil)
+  @objc public static func info(_ msg: Swift.String?, label: Swift.String? = nil, sdkInstance: MOCore.SdkInstance? = nil, fileName: Swift.String = #fileID, functionName: Swift.String = #function, lineNumber: Swift.Int = #line, columnNumber: Swift.Int = #column)
+  @objc public static func warning(_ msg: Swift.String?, label: Swift.String? = nil, sdkInstance: MOCore.SdkInstance? = nil, fileName: Swift.String = #fileID, functionName: Swift.String = #function, lineNumber: Swift.Int = #line, columnNumber: Swift.Int = #column)
+  @objc public static func error(_ msg: Swift.String?, stackTrace: [Swift.String]? = nil, label: Swift.String? = nil, sdkInstance: MOCore.SdkInstance? = nil, fileName: Swift.String = #fileID, functionName: Swift.String = #function, lineNumber: Swift.Int = #line, columnNumber: Swift.Int = #column)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -310,6 +308,7 @@ public struct MOCoreConstants {
     public struct Keys {
       public static let sdkVersion: Swift.String
       public static let sdkUniqueID: Swift.String
+      public static let sdkEnabled: Swift.String
       public static let trackReInstall: Swift.String
     }
   }
@@ -361,13 +360,8 @@ public struct MOCoreConstants {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class MOLoggerController {
-  @objc public func setMinLogDuration(duration: Swift.Int)
-  @objc public func setMaxLogDuration(duration: Swift.Int)
-  @objc public func setLogDuration(duration: Swift.Int)
-  @objc public func clearSavedLogs() -> Swift.Bool
   public func enableLogs(enable: Swift.Bool)
   public func setTag(tag: Swift.String)
-  public func saveLogsInDocumentDirectory(enable: Swift.Bool)
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers public class RemoteSecurityConfig : ObjectiveC.NSObject {
@@ -414,8 +408,6 @@ public struct MOCoreConstants {
   @objc public func dismissRichLandingWebViewControllerWithAnimation(_ animate: Swift.Bool)
   @objc public func enableLogs(_ enable: Swift.Bool)
   @objc public func enableLogs(_ enable: Swift.Bool, forAppID appID: Swift.String?)
-  @objc public func clearLogs()
-  @objc public func clearLogs(forAppID appID: Swift.String?)
   @objc public func enableDefaultConsoleLogger(_ enable: Swift.Bool)
   @objc deinit
 }
@@ -478,6 +470,11 @@ public struct MOCoreConstants {
   @objc required override dynamic public init()
   open func initializeGeofence(sdkInstance: MOCore.SdkInstance)
   open func moengageSDKStateUpdated(sdkInstance: MOCore.SdkInstance)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MoESdkStateHelper : ObjectiveC.NSObject {
+  @objc public static func isSDKEnabled(appID: Swift.String? = nil, completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ColorUtils {
@@ -569,11 +566,11 @@ extension UIKit.UIDevice {
   final public let periodicSyncInterval: Swift.Int
   final public let blackListedEvents: Swift.Set<Swift.String>
   final public let blackListedUserAttributes: Swift.Set<Swift.String>
-  final public let flushEvents: Swift.Set<Swift.String>
   final public let gdprWhitelistedEvents: Swift.Set<Swift.String>
   final public let blackListedUniqueIds: Swift.Set<Swift.String>
   final public let eventBatchCount: Swift.Int
   final public let userAttributeCacheDuration: Swift.Int
+  public var flushEvents: Swift.Set<Swift.String>
   @objc override dynamic public var description: Swift.String {
     @objc get
   }

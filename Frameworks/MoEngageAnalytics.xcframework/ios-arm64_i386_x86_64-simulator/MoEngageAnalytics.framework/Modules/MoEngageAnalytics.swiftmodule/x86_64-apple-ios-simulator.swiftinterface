@@ -104,6 +104,7 @@ import _Concurrency
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AnalyticsDelegateHandler : MOCore.AnalyticsDelegate, MoEngageObjCUtils.MOAppDelegateAnalyticsProxyProtocol {
+  public static var sharedInstance: MoEngageAnalytics.AnalyticsDelegateHandler?
   override public func initializeAnalytics(sdkInstance: MOCore.SdkInstance)
   @objc public func handleOpen(_ url: Foundation.URL)
   override public func moengageSDKStateUpdated(sdkInstance: MOCore.SdkInstance)
@@ -112,6 +113,7 @@ import _Concurrency
   override public func applicationDidEnterForeground(sdkInstance: MOCore.SdkInstance)
   override public func applicationDidEnterBackground(sdkInstance: MOCore.SdkInstance)
   override public func flush(sdkInstance: MOCore.SdkInstance)
+  public static func trackEventForRichNotification(name: Swift.String, properties: MoEngageAnalytics.MOProperties? = nil, appID: Swift.String? = nil, completionBlock: (() -> Swift.Void)? = nil)
   @objc deinit
 }
 @objc public class MOProperties : ObjectiveC.NSObject {
