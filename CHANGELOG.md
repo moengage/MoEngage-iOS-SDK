@@ -2,6 +2,11 @@
 =================================
 
 ## Changelog:
+### Version 8.3.0 *(20th July, 2022)*
+-------------------------------------------
+* Fixed multithreading issue in SDK, which led to crashes in few cases.
+* Added API `MoESdkStateHelper.isSDKEnabled` to fetch current state of the SDK. 
+
 ### Version 8.2.1  *(22nd June, 2022)*
 -------------------------------------------
 * Fixed the lldb issue when integrating MoEngage-iOS-SDK to Swift application.

@@ -111,8 +111,6 @@ public struct MOMessagingConstant {
   @objc public static let sharedInstance: MoEngageMessaging.MOMessaging
   @objc public func setMessagingDelegate(_ delegate: MoEngageMessaging.MOMessagingDelegate?, forAppID appID: Swift.String? = nil)
   public func setInternalInboxDelegate(_ delegate: MoEngageMessaging.MOMessagingDelegate?, forInstanceID instanceID: Swift.String?)
-  public func trackNotificationReceived(_ payload: MoEngageMessaging.MOPushPayload)
-  public func trackNotificationShown(_ payload: MoEngageMessaging.MOPushPayload)
   @available(tvOS, unavailable)
   @objc public func registerForRemoteNotification(withCategories categories: Swift.Set<UserNotifications.UNNotificationCategory>? = nil, andUserNotificationCenterDelegate delegate: UserNotifications.UNUserNotificationCenterDelegate? = nil)
   @available(tvOS, unavailable)
@@ -144,6 +142,11 @@ public class MORichExpandedMode {
   public var backgroundColor: UIKit.UIColor
   public var cards: [MoEngageMessaging.MOPushCard]
   public init?(_ pushModeDict: [Swift.String : Any]) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class RichNotificationEventHandler {
+  public static func trackNotificationReceived(payload: MoEngageMessaging.MOPushPayload, completionBlock: (() -> Swift.Void)? = nil)
+  public static func trackNotificationShown(payload: MoEngageMessaging.MOPushPayload, completionBlock: (() -> Swift.Void)? = nil)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MOMessagingUtils : ObjectiveC.NSObject {

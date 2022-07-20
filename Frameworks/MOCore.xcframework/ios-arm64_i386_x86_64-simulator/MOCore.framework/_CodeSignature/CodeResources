@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/MOCore-Swift.h</key>
 		<data>
-		likkLwx5P6Sw59epq4zSJp1mY0k=
+		uuSW5s3pvN5/AbXSxEBmHE+21h0=
 		</data>
 		<key>Headers/MOCore.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LyH0Xsczx5/NnVuS0U/H/OJT+F4=
+		7Fq5yAcCJDyKLJJGp3FD5XggllQ=
 		</data>
 		<key>Modules/MOCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/MOCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		BYMpY2+DypFXmQr3JK+fdLADrMo=
+		WoxUJo4sM1MOLeb1twZY17zyDWg=
 		</data>
 		<key>Modules/MOCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Mn4KJlyVI1q3mlNqU6Foamtt4jE=
+		pgGYJoXUPG1syVJww3TsHDm0TpI=
 		</data>
 		<key>Modules/MOCore.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/MOCore.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+Ge368g+sexgnyk7S68LCd6KN7c=
+		DNTy8H50ZGjfAYyo6sObtf00LEc=
 		</data>
 		<key>Modules/MOCore.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		asbLm19SL7CvyYqrHkzLxlT3H9k=
+		Jb92pQRBU7ZvTVkhm0lm0rQu/rg=
 		</data>
 		<key>Modules/MOCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/MOCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		U1mEqYfJMUaisWkv1lm17ufjkSc=
+		prA3b7k+uQLsD25445FNJ56kfxM=
 		</data>
 		<key>Modules/MOCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NWukGsPL7udMWXDvAvFPnyrba7w=
+		nqMkj0QlCEdLbU8H6zkCaAoQUIg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,11 +78,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			likkLwx5P6Sw59epq4zSJp1mY0k=
+			uuSW5s3pvN5/AbXSxEBmHE+21h0=
 			</data>
 			<key>hash2</key>
 			<data>
-			LjuURKoE9ENknuE6hD/50rJjcy5J0O62m0y5GNhy218=
+			nG70sz4NZY9IjNiyxmPHFmRIBkmTulcv9ZxEyOboJIQ=
 			</data>
 		</dict>
 		<key>Headers/MOCore.h</key>
@@ -111,22 +111,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BYMpY2+DypFXmQr3JK+fdLADrMo=
+			WoxUJo4sM1MOLeb1twZY17zyDWg=
 			</data>
 			<key>hash2</key>
 			<data>
-			wOPlHUWVAmkeDp1zfYyp5xTMOsatVHePqlIrmWZsdbc=
+			1bXKoS8umHceoHKmcDXmvfz9SBU7TbkVIzh6HNLISyg=
 			</data>
 		</dict>
 		<key>Modules/MOCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Mn4KJlyVI1q3mlNqU6Foamtt4jE=
+			pgGYJoXUPG1syVJww3TsHDm0TpI=
 			</data>
 			<key>hash2</key>
 			<data>
-			0p2yVu5Ek1YjY1HzXbhE+X1T06FHTE2AG2NdbrkEdcQ=
+			+e1Y7uKTeyhX01fpk8RW1GQ9i/kw5h2kD4rqZWjcoxk=
 			</data>
 		</dict>
 		<key>Modules/MOCore.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -144,22 +144,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+Ge368g+sexgnyk7S68LCd6KN7c=
+			DNTy8H50ZGjfAYyo6sObtf00LEc=
 			</data>
 			<key>hash2</key>
 			<data>
-			1fosbFtOVMXwzmAqlgKYJ++8RmpxsxIrxCBs7wwU29Q=
+			U0N2Zce5ClihTUqG7lUx7WtrKmTGLi7NrR0VVOX62XA=
 			</data>
 		</dict>
 		<key>Modules/MOCore.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			asbLm19SL7CvyYqrHkzLxlT3H9k=
+			Jb92pQRBU7ZvTVkhm0lm0rQu/rg=
 			</data>
 			<key>hash2</key>
 			<data>
-			t7ijdvjVoPzA6NrilfFWyqELEiAj47GCNpM/akIIyvY=
+			wP1Q6gamZ21Yh58AKXW7MuVV6ZQIfPb/di9T4juj4SA=
 			</data>
 		</dict>
 		<key>Modules/MOCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -177,22 +177,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			U1mEqYfJMUaisWkv1lm17ufjkSc=
+			prA3b7k+uQLsD25445FNJ56kfxM=
 			</data>
 			<key>hash2</key>
 			<data>
-			A74vWAA1j4Z4V7XVoi6jf5opy0U/SG+szzzCV7GcFMg=
+			513slXxgv+pHld7iVsC22UoDgBDGh/A2Ht8p/0D4cNU=
 			</data>
 		</dict>
 		<key>Modules/MOCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NWukGsPL7udMWXDvAvFPnyrba7w=
+			nqMkj0QlCEdLbU8H6zkCaAoQUIg=
 			</data>
 			<key>hash2</key>
 			<data>
-			7xLz5AzlVLu6fw2/bDHTwbDIwT1KvagmuNkyBy0iGXM=
+			UazE50aSMDZUmBv9gXSzet+2hOgHsXHxr3eTBVkbi/U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

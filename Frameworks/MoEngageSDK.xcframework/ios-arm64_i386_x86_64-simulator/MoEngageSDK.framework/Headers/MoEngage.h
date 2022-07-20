@@ -234,13 +234,6 @@
 + (void)enableDefaultConsoleLogger:(BOOL)enable;
 
 /**
- Use this method to clear logs for the MoEngage SDK.
- */
-+ (void)clearSDKLogs;
-
-+ (void)clearSDKLogs:(NSString*_Nullable)appID;
-
-/**
  Method to dismiss the RichLanding Controller manually
  @param animate Bool value indicating if the dismissing the controller should be with animation
  */

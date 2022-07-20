@@ -307,8 +307,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) dispatch_que
 - (void)dismissRichLandingWebViewControllerWithAnimation:(BOOL)animate;
 - (void)enableLogs:(BOOL)enable;
 - (void)enableLogs:(BOOL)enable forAppID:(NSString * _Nullable)appID;
-- (void)clearLogs;
-- (void)clearLogsForAppID:(NSString * _Nullable)appID;
 - (void)enableDefaultConsoleLogger:(BOOL)enable;
 @end
 
@@ -499,11 +497,11 @@ SWIFT_CLASS("_TtC6MOCore17MOIntegrationInfo")
 
 SWIFT_CLASS("_TtC6MOCore8MOLogger")
 @interface MOLogger : NSObject
-+ (void)verbose:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkConfig:(MOSDKConfig * _Nullable)sdkConfig;
-+ (void)debug:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkConfig:(MOSDKConfig * _Nullable)sdkConfig;
-+ (void)info:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkConfig:(MOSDKConfig * _Nullable)sdkConfig fileName:(NSString * _Nonnull)fileName functionName:(NSString * _Nonnull)functionName lineNumber:(NSInteger)lineNumber columnNumber:(NSInteger)columnNumber;
-+ (void)warning:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkConfig:(MOSDKConfig * _Nullable)sdkConfig fileName:(NSString * _Nonnull)fileName functionName:(NSString * _Nonnull)functionName lineNumber:(NSInteger)lineNumber columnNumber:(NSInteger)columnNumber;
-+ (void)error:(NSString * _Nullable)msg stackTrace:(NSArray<NSString *> * _Nullable)stackTrace label:(NSString * _Nullable)label sdkConfig:(MOSDKConfig * _Nullable)sdkConfig fileName:(NSString * _Nonnull)fileName functionName:(NSString * _Nonnull)functionName lineNumber:(NSInteger)lineNumber columnNumber:(NSInteger)columnNumber;
++ (void)verbose:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkInstance:(SdkInstance * _Nullable)sdkInstance;
++ (void)debug:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkInstance:(SdkInstance * _Nullable)sdkInstance;
++ (void)info:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkInstance:(SdkInstance * _Nullable)sdkInstance fileName:(NSString * _Nonnull)fileName functionName:(NSString * _Nonnull)functionName lineNumber:(NSInteger)lineNumber columnNumber:(NSInteger)columnNumber;
++ (void)warning:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkInstance:(SdkInstance * _Nullable)sdkInstance fileName:(NSString * _Nonnull)fileName functionName:(NSString * _Nonnull)functionName lineNumber:(NSInteger)lineNumber columnNumber:(NSInteger)columnNumber;
++ (void)error:(NSString * _Nullable)msg stackTrace:(NSArray<NSString *> * _Nullable)stackTrace label:(NSString * _Nullable)label sdkInstance:(SdkInstance * _Nullable)sdkInstance fileName:(NSString * _Nonnull)fileName functionName:(NSString * _Nonnull)functionName lineNumber:(NSInteger)lineNumber columnNumber:(NSInteger)columnNumber;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -601,6 +599,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MessagingMan
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)initializeMessagingWithLaunchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions sdkInstance:(SdkInstance * _Nonnull)sdkInstance;
 - (void)applicationDidEnterForegroundWithSdkInstance:(SdkInstance * _Nonnull)sdkInstance;
+@end
+
+
+SWIFT_CLASS("_TtC6MOCore17MoESdkStateHelper")
+@interface MoESdkStateHelper : NSObject
++ (void)isSDKEnabledWithAppID:(NSString * _Nullable)appID completion:(void (^ _Nonnull)(BOOL))completion;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -724,8 +729,9 @@ SWIFT_CLASS("_TtC6MOCore20RemoteSecurityConfig")
 SWIFT_CLASS("_TtC6MOCore11SdkInstance")
 @interface SdkInstance : NSObject
 @property (nonatomic, readonly, strong) MOSDKConfig * _Nonnull sdkConfig;
-@property (nonatomic, readonly, strong) RemoteConfig * _Nonnull remoteConfig;
 @property (nonatomic, readonly, strong) dispatch_queue_t _Nonnull sdkQueue;
+- (void)updateRemoteConfig:(RemoteConfig * _Nonnull)config;
+- (RemoteConfig * _Nonnull)getRemoteConfig SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1045,8 +1051,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) dispatch_que
 - (void)dismissRichLandingWebViewControllerWithAnimation:(BOOL)animate;
 - (void)enableLogs:(BOOL)enable;
 - (void)enableLogs:(BOOL)enable forAppID:(NSString * _Nullable)appID;
-- (void)clearLogs;
-- (void)clearLogsForAppID:(NSString * _Nullable)appID;
 - (void)enableDefaultConsoleLogger:(BOOL)enable;
 @end
 
@@ -1237,11 +1241,11 @@ SWIFT_CLASS("_TtC6MOCore17MOIntegrationInfo")
 
 SWIFT_CLASS("_TtC6MOCore8MOLogger")
 @interface MOLogger : NSObject
-+ (void)verbose:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkConfig:(MOSDKConfig * _Nullable)sdkConfig;
-+ (void)debug:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkConfig:(MOSDKConfig * _Nullable)sdkConfig;
-+ (void)info:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkConfig:(MOSDKConfig * _Nullable)sdkConfig fileName:(NSString * _Nonnull)fileName functionName:(NSString * _Nonnull)functionName lineNumber:(NSInteger)lineNumber columnNumber:(NSInteger)columnNumber;
-+ (void)warning:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkConfig:(MOSDKConfig * _Nullable)sdkConfig fileName:(NSString * _Nonnull)fileName functionName:(NSString * _Nonnull)functionName lineNumber:(NSInteger)lineNumber columnNumber:(NSInteger)columnNumber;
-+ (void)error:(NSString * _Nullable)msg stackTrace:(NSArray<NSString *> * _Nullable)stackTrace label:(NSString * _Nullable)label sdkConfig:(MOSDKConfig * _Nullable)sdkConfig fileName:(NSString * _Nonnull)fileName functionName:(NSString * _Nonnull)functionName lineNumber:(NSInteger)lineNumber columnNumber:(NSInteger)columnNumber;
++ (void)verbose:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkInstance:(SdkInstance * _Nullable)sdkInstance;
++ (void)debug:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkInstance:(SdkInstance * _Nullable)sdkInstance;
++ (void)info:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkInstance:(SdkInstance * _Nullable)sdkInstance fileName:(NSString * _Nonnull)fileName functionName:(NSString * _Nonnull)functionName lineNumber:(NSInteger)lineNumber columnNumber:(NSInteger)columnNumber;
++ (void)warning:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkInstance:(SdkInstance * _Nullable)sdkInstance fileName:(NSString * _Nonnull)fileName functionName:(NSString * _Nonnull)functionName lineNumber:(NSInteger)lineNumber columnNumber:(NSInteger)columnNumber;
++ (void)error:(NSString * _Nullable)msg stackTrace:(NSArray<NSString *> * _Nullable)stackTrace label:(NSString * _Nullable)label sdkInstance:(SdkInstance * _Nullable)sdkInstance fileName:(NSString * _Nonnull)fileName functionName:(NSString * _Nonnull)functionName lineNumber:(NSInteger)lineNumber columnNumber:(NSInteger)columnNumber;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1339,6 +1343,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MessagingMan
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)initializeMessagingWithLaunchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions sdkInstance:(SdkInstance * _Nonnull)sdkInstance;
 - (void)applicationDidEnterForegroundWithSdkInstance:(SdkInstance * _Nonnull)sdkInstance;
+@end
+
+
+SWIFT_CLASS("_TtC6MOCore17MoESdkStateHelper")
+@interface MoESdkStateHelper : NSObject
++ (void)isSDKEnabledWithAppID:(NSString * _Nullable)appID completion:(void (^ _Nonnull)(BOOL))completion;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -1462,8 +1473,9 @@ SWIFT_CLASS("_TtC6MOCore20RemoteSecurityConfig")
 SWIFT_CLASS("_TtC6MOCore11SdkInstance")
 @interface SdkInstance : NSObject
 @property (nonatomic, readonly, strong) MOSDKConfig * _Nonnull sdkConfig;
-@property (nonatomic, readonly, strong) RemoteConfig * _Nonnull remoteConfig;
 @property (nonatomic, readonly, strong) dispatch_queue_t _Nonnull sdkQueue;
+- (void)updateRemoteConfig:(RemoteConfig * _Nonnull)config;
+- (RemoteConfig * _Nonnull)getRemoteConfig SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
