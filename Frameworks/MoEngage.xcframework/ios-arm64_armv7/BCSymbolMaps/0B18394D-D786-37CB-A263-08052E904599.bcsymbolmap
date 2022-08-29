@@ -2,8 +2,8 @@ BCSymbolMap Version: 2.0
 Apple clang version 13.1.6 (clang-1316.0.21.2.5)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
 iPhoneOS15.5.sdk
-/Users/rakshitha/Library/Developer/Xcode/DerivedData/MoEngage-agkiherlqdmvaeakrqtfvsowceuq/Build/Intermediates.noindex/ArchiveIntermediates/MoEngage/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MoEngage.build/DerivedSources/MoEngage_vers.c
-/Users/rakshitha/Documents/MoEngage-iPhone-SDK/MoEFramework/MoEngage
+/Users/deepa/Library/Developer/Xcode/DerivedData/MoEngage-ddoehuamaaipxyddvinbjltvhjaz/Build/Intermediates.noindex/ArchiveIntermediates/MoEngage/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MoEngage.build/DerivedSources/MoEngage_vers.c
+/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage
 +[MoEngage sharedInstance]
 ___26+[MoEngage sharedInstance]_block_invoke
 -[MoEngage initializeWithConfig:andLaunchOptions:]
@@ -11,8 +11,8 @@ ___26+[MoEngage sharedInstance]_block_invoke
 -[MoEngage initializeLiveWithConfig:andLaunchOptions:]
 -[MoEngage setupSDKWithConfig:andLaunchOptions:]
 ___48-[MoEngage setupSDKWithConfig:andLaunchOptions:]_block_invoke
-___copy_helper_block_e4_20s
-___destroy_helper_block_e4_20s
+___copy_helper_block_e8_32s
+___destroy_helper_block_e8_32s
 -[MoEngage updateSDKConfig:]
 ___28-[MoEngage updateSDKConfig:]_block_invoke
 -[MoEngage initializeDevWithAppID:withLaunchOptions:]
@@ -69,7 +69,7 @@ ___28-[MoEngage updateSDKConfig:]_block_invoke
 -[MoEngage disableBadgeReset]
 _sharedInstance.onceToken
 _sharedInstance.instance
-___block_descriptor_20_e5_v4?0l
+___block_descriptor_32_e5_v8?0l
 ___block_literal_global
 _OBJC_CLASSLIST_REFERENCES_$_
 _OBJC_SELECTOR_REFERENCES_
@@ -100,7 +100,7 @@ _OBJC_SELECTOR_REFERENCES_.46
 _OBJC_SELECTOR_REFERENCES_.50
 _OBJC_SELECTOR_REFERENCES_.56
 _OBJC_SELECTOR_REFERENCES_.62
-___block_descriptor_24_e4_20s_e5_v4?0l
+___block_descriptor_40_e8_32s_e5_v8?0l
 _OBJC_SELECTOR_REFERENCES_.66
 _OBJC_SELECTOR_REFERENCES_.70
 _OBJC_SELECTOR_REFERENCES_.72
@@ -155,12 +155,12 @@ _OBJC_IVAR_$_MoEngage._disableBadgeReset
 __OBJC_$_INSTANCE_VARIABLES_MoEngage
 __OBJC_$_PROP_LIST_MoEngage
 __OBJC_CLASS_RO_$_MoEngage
-/Users/rakshitha/Documents/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngage/MoEngage.m
+/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngage/MoEngage.m
 MoEngage/MoEngage.h
 MoEngage/MoEngage.m
 __28-[MoEngage updateSDKConfig:]_block_invoke
-__destroy_helper_block_e4_20s
-__copy_helper_block_e4_20s
+__destroy_helper_block_e8_32s
+__copy_helper_block_e8_32s
 __48-[MoEngage setupSDKWithConfig:andLaunchOptions:]_block_invoke
 __26+[MoEngage sharedInstance]_block_invoke
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/usr/include/dispatch/once.h

@@ -2,6 +2,11 @@
 =================================
 
 ## Changelog:
+
+### Version 7.2.3  *(29th August, 2022)*
+-------------------------------------------
+* BugFix - Fixed a crash in MOInboxViewController.
+
 ### Version 7.2.2  *(15th June, 2022)*
 -------------------------------------------
 * BugFix - Handled removing of UniqueID from storage on resetting the user.
