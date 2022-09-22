@@ -603,6 +603,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MessagingMan
 SWIFT_CLASS("_TtC6MOCore17MoESdkStateHelper")
 @interface MoESdkStateHelper : NSObject
 + (void)isSDKEnabledWithAppID:(NSString * _Nullable)appID completion:(void (^ _Nonnull)(BOOL))completion;
++ (void)isSDKInitializedWithAppID:(NSString * _Nullable)appID completion:(void (^ _Nonnull)(BOOL))completion;
++ (void)isSDKInitialized:(void (^ _Nonnull)(BOOL))completion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

@@ -2,6 +2,12 @@
 =================================
 
 ## Changelog:
+### Version 8.3.1 *(22nd September, 2022)*
+-------------------------------------------
+* Added support for `setUserAttributeISODate` in the following ISO format `yyyy-MM-dd'T'HH:mm:ss.SSS'Z'`
+* Added API `setDateOfBirthInISO` to track Date of birth in ISO format.
+* Added API `MoESdkStateHelper.isSDKInitialized` to check if SDK is initialized.
+
 ### Version 8.3.0 *(20th July, 2022)*
 -------------------------------------------
 * Fixed multithreading issue in SDK, which led to crashes in few cases.
