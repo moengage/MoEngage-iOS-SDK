@@ -48,7 +48,6 @@ import _Concurrency
 }
 @_inheritsConvenienceInitializers @objc public class MOAnalytics : ObjectiveC.NSObject {
   @objc public static let sharedInstance: MoEngageAnalytics.MOAnalytics
-  @objc public func updateTimerForSegment(forSDKConfig sdkConfig: MOCore.MOSDKConfig)
   @objc public func trackSDKVersion()
   @objc public func updateSessionSource(withPushPayload payload: [Swift.AnyHashable : Any], fromMoEngage isMoEngagePush: Swift.Bool)
   @objc public func updateSessionSource(withURL url: Foundation.URL)
@@ -68,8 +67,8 @@ import _Concurrency
   @objc public func setUserAttributeEpochTime(_ dateEpoch: Swift.Double, withAttributeName attributeName: Swift.String)
   @objc public func setUserAttributeDate(_ date: Foundation.Date, withAttributeName attributeName: Swift.String, forAppID appID: Swift.String? = nil)
   @objc public func setUserAttributeDate(_ date: Foundation.Date, withAttributeName attributeName: Swift.String)
-  @objc public func setUserAttributeISODate(_ dateStr: Swift.String, withAttributeName attributeName: Swift.String, forAppID appID: Swift.String? = nil)
-  @objc public func setUserAttributeISODate(_ dateStr: Swift.String, withAttributeName attributeName: Swift.String)
+  @objc public func setUserAttributeISODate(_ dateString: Swift.String, withAttributeName attributeName: Swift.String, forAppID appID: Swift.String? = nil)
+  @objc public func setUserAttributeISODate(_ dateString: Swift.String, withAttributeName attributeName: Swift.String)
   @objc public func setLocation(_ location: MoEngageAnalytics.MOGeoLocation, withAttributeName attributeName: Swift.String, forAppID appID: Swift.String? = nil)
   @objc public func setLocation(_ location: MoEngageAnalytics.MOGeoLocation, withAttributeName attributeName: Swift.String)
   @objc public func setAlias(_ alias: Swift.String, forAppID appID: Swift.String? = nil)
@@ -90,6 +89,8 @@ import _Concurrency
   @objc public func setGender(_ gender: MoEngageAnalytics.UserGender)
   @objc public func setDateOfBirth(_ dob: Foundation.Date, forAppID appID: Swift.String? = nil)
   @objc public func setDateOfBirth(_ dob: Foundation.Date)
+  @objc public func setDateOfBirthInISO(_ dateString: Swift.String, forAppID appID: Swift.String? = nil)
+  @objc public func setDateOfBirthInISO(_ dateString: Swift.String)
   @objc public func setLocation(_ location: MoEngageAnalytics.MOGeoLocation, forAppID appID: Swift.String? = nil)
   @objc public func setLocation(_ location: MoEngageAnalytics.MOGeoLocation)
   @objc public func trackUserPushPreference(_ isPushEnabled: Swift.Bool, forAppID appID: Swift.String? = nil)
@@ -129,7 +130,7 @@ import _Concurrency
   @objc public func addAttribute(_ attrVal: Any?, withName attrName: Swift.String)
   @objc public func addLocationAttribute(_ attrVal: MoEngageAnalytics.MOGeoLocation, withName attrName: Swift.String)
   @objc public func addDateAttribute(_ attrVal: Foundation.Date, withName attrName: Swift.String)
-  @objc public func addDateISOStringAttribute(_ dateStr: Swift.String, withName attrName: Swift.String)
+  @objc public func addDateISOStringAttribute(_ dateString: Swift.String, withName attrName: Swift.String)
   @objc public func addDateEpochAttribute(_ epoch: Swift.Double, withName attrName: Swift.String)
   @objc public func setNonInteractive()
   @objc deinit

@@ -252,6 +252,7 @@ extension UIKit.UIDevice {
   @objc public static func getString(forDate date: Foundation.Date?, withFormat format: Swift.String?, andForGMTTimeZone isGMTtz: Swift.Bool) -> Swift.String?
   @objc public static func getStringInDeviceLocale(forDate date: Foundation.Date?, withFormat format: Swift.String?, andForGMTTimeZone isGMTtz: Swift.Bool) -> Swift.String?
   @objc public static func getDate(forString str: Swift.String?, withFormat format: Swift.String?, andForGMTTimeZone isGMTtz: Swift.Bool) -> Foundation.Date?
+  public static func getDateFromISOString(_ dateString: Swift.String?) -> Foundation.Date?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -378,6 +379,8 @@ extension UIKit.UIImage {
 }
 @_inheritsConvenienceInitializers @objc public class MoESdkStateHelper : ObjectiveC.NSObject {
   @objc public static func isSDKEnabled(appID: Swift.String? = nil, completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc public static func isSDKInitialized(appID: Swift.String? = nil, completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc public static func isSDKInitialized(_ completion: @escaping (Swift.Bool) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
 }

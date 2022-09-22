@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MoEngageAnalytics-Swift.h</key>
 		<data>
-		26DhSTWCBjUkfLi4eC3JKYLOXwQ=
+		qYgG6Jcux9f4MwZGyTVnU+cSkrI=
 		</data>
 		<key>Headers/MoEngageAnalyticsTvOS.h</key>
 		<data>
@@ -14,19 +14,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		U8gl/9bJW7Y44X1iT4b/8T/GqWc=
+		WEhcLVvfZUfncXhnwyobgOBMvdY=
 		</data>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
-		nkarh9oXWxyjubGCgR98abnclgM=
+		7T83UJ+8vnXeDqiQTyg7Z0YqE2o=
 		</data>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<data>
-		Bx1AwIdedUOgm/xK26gwN8tWQrM=
+		fHC894e+Bl/rjeofvaKD7gVLHEw=
 		</data>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		66FAtig1LIBpx/b6IGMj3JS2UpI=
+		6mtpYPlNwktY9EQiqej16Y+QkFQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,11 +39,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			26DhSTWCBjUkfLi4eC3JKYLOXwQ=
+			qYgG6Jcux9f4MwZGyTVnU+cSkrI=
 			</data>
 			<key>hash2</key>
 			<data>
-			4Gwv8HA1z+Tl8Q/xjSwxD30yRWwWigQPyuWthG0+q68=
+			SWz+g1rrQD/JPy/jkSjZ98YEqj6wyw4Jag7Lj/5dvSM=
 			</data>
 		</dict>
 		<key>Headers/MoEngageAnalyticsTvOS.h</key>
@@ -61,33 +61,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nkarh9oXWxyjubGCgR98abnclgM=
+			7T83UJ+8vnXeDqiQTyg7Z0YqE2o=
 			</data>
 			<key>hash2</key>
 			<data>
-			UK4H0IKhSAqJnbVdPzE08rDAUlOhBqzM/I4zeVIdbf4=
+			yboovZF0P2XvmuxcUkquHw9HkYCvXUSfmqBG1p99c9U=
 			</data>
 		</dict>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Bx1AwIdedUOgm/xK26gwN8tWQrM=
+			fHC894e+Bl/rjeofvaKD7gVLHEw=
 			</data>
 			<key>hash2</key>
 			<data>
-			NLUbcnzR4HKLtcz6NGlSerAb1MGRayRwiYpBJPo8TDo=
+			TXeepxw++bjf6AKeo52zVSBhAEFbpbx5eAOvpHaJSUU=
 			</data>
 		</dict>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			66FAtig1LIBpx/b6IGMj3JS2UpI=
+			6mtpYPlNwktY9EQiqej16Y+QkFQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			5rgN/zbLJRfkMZNFKBYwU+kXxBcBHSjQnT1bdjua2jQ=
+			mJx4KHsbBJHjaMTVOxKQ+FiSfxkdD7pGMLg1XubopY8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -219,7 +219,6 @@ typedef SWIFT_ENUM(NSInteger, AppStatus, open) {
   AppStatusUpdate = 1,
 };
 
-@class MOSDKConfig;
 @class NSURL;
 @class NSString;
 @class MOProperties;
@@ -231,12 +230,6 @@ SWIFT_CLASS("_TtC17MoEngageAnalytics11MOAnalytics")
 @interface MOAnalytics : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics * _Nonnull sharedInstance;)
 + (MOAnalytics * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
-/// Method to update periodic timer for segment
-/// note:
-/// Dont call this method explicitly
-/// \param sdkConfig MOSDKConfig
-///
-- (void)updateTimerForSegmentForSDKConfig:(MOSDKConfig * _Nonnull)sdkConfig;
 /// Method to update SDK version
 - (void)trackSDKVersion;
 - (void)updateSessionSourceWithPushPayload:(NSDictionary * _Nonnull)payload fromMoEngage:(BOOL)isMoEngagePush;
@@ -309,8 +302,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 ///
 /// \param appID optional account identifier.
 ///
-- (void)setUserAttributeISODate:(NSString * _Nonnull)dateStr withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
-- (void)setUserAttributeISODate:(NSString * _Nonnull)dateStr withAttributeName:(NSString * _Nonnull)attributeName;
+- (void)setUserAttributeISODate:(NSString * _Nonnull)dateString withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+- (void)setUserAttributeISODate:(NSString * _Nonnull)dateString withAttributeName:(NSString * _Nonnull)attributeName;
 /// Method to set custom user location
 /// \param location MOGeoLocation instance
 ///
@@ -383,6 +376,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 ///
 - (void)setDateOfBirth:(NSDate * _Nonnull)dob forAppID:(NSString * _Nullable)appID;
 - (void)setDateOfBirth:(NSDate * _Nonnull)dob;
+/// Method to set user date of birth ISO date
+/// \param dateString attribute value in the format yyyy-MM-dd’T’HH:mm:ss.SSS’Z’ /  yyyy-MM-dd’T’HH:mm:ss’Z’
+///
+/// \param appID optional account identifier.
+///
+- (void)setDateOfBirthInISO:(NSString * _Nonnull)dateString forAppID:(NSString * _Nullable)appID;
+/// Method to set user date of birth ISO date
+/// \param dateString attribute value in the format yyyy-MM-dd’T’HH:mm:ss.SSS’Z’ /  yyyy-MM-dd’T’HH:mm:ss’Z’
+///
+- (void)setDateOfBirthInISO:(NSString * _Nonnull)dateString;
 /// Method to set user location
 /// \param location MOGeoLocation instance
 ///
@@ -459,7 +462,7 @@ SWIFT_CLASS("_TtC17MoEngageAnalytics12MOProperties")
 - (void)addAttribute:(id _Nullable)attrVal withName:(NSString * _Nonnull)attrName;
 - (void)addLocationAttribute:(MOGeoLocation * _Nonnull)attrVal withName:(NSString * _Nonnull)attrName;
 - (void)addDateAttribute:(NSDate * _Nonnull)attrVal withName:(NSString * _Nonnull)attrName;
-- (void)addDateISOStringAttribute:(NSString * _Nonnull)dateStr withName:(NSString * _Nonnull)attrName;
+- (void)addDateISOStringAttribute:(NSString * _Nonnull)dateString withName:(NSString * _Nonnull)attrName;
 - (void)addDateEpochAttribute:(double)epoch withName:(NSString * _Nonnull)attrName;
 - (void)setNonInteractive;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
