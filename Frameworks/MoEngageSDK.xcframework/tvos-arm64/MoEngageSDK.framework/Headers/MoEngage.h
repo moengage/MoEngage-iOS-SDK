@@ -31,8 +31,11 @@
 
 -(void)initializeTestInstanceWithConfig:(MOSDKConfig* _Nonnull)sdkConfig andLaunchOptions:(NSDictionary* _Nullable)launchOptions;
 
+-(void)initializeTestInstanceWithConfig:(MOSDKConfig* _Nonnull)sdkConfig andSDKState:(MoEngageSDKState)sdkState;
+
 -(void)initializeDefaultTestInstanceWithConfig:(MOSDKConfig* _Nonnull)sdkConfig andLaunchOptions:(NSDictionary* _Nullable)launchOptions;
 
+-(void)initializeDefaultTestInstanceWithConfig:(MOSDKConfig* _Nonnull)sdkConfig  andSDKState:(MoEngageSDKState)sdkState;
 /**
  Call this method in the AppDelegate in application:didFinishLaunchingWithOptions: to initialize the SDK for Live Environment with MOSDKConfig instance
  @param sdkConfig MOSDKConfig instance with the required config to initialize SDK
@@ -43,7 +46,11 @@
 
 -(void)initializeLiveInstanceWithConfig:(MOSDKConfig* _Nonnull)sdkConfig andLaunchOptions:(NSDictionary* _Nullable)launchOptions;
 
+-(void)initializeLiveInstanceWithConfig:(MOSDKConfig* _Nonnull)sdkConfig andSDKState:(MoEngageSDKState)sdkState;
+
 -(void)initializeDefaultLiveInstanceWithConfig:(MOSDKConfig* _Nonnull)sdkConfig andLaunchOptions:(NSDictionary* _Nullable)launchOptions;
+
+-(void)initializeDefaultLiveInstanceWithConfig:(MOSDKConfig* _Nonnull)sdkConfig andSDKState:(MoEngageSDKState)sdkState;
 
 #pragma mark - Messaging Module
 #pragma mark Push Notification
@@ -244,14 +251,14 @@
  */
 -(void)enableSDK;
 
--(void)enableSDKForAppID:(NSString* _Nonnull)appID;
+-(void)enableSDKForAppID:(NSString* _Nullable)appID;
 
 /**
  Method to disable all the SDK features
  */
 -(void)disableSDK;
 
--(void)disableSDKForAppID:(NSString* _Nonnull)appID;
+-(void)disableSDKForAppID:(NSString* _Nullable)appID;
 
 #pragma mark- Default Config
 ///Method to obtain the default config
