@@ -197,6 +197,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
 @import Dispatch;
 @import Foundation;
 @import ObjectiveC;
@@ -427,12 +428,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOCoreIntegr
 @class UIViewController;
 @class NSURL;
 @class NSUserDefaults;
+enum MoEngageSDKState : NSInteger;
 @class UIApplication;
 
 SWIFT_CLASS("_TtC6MOCore11MOCoreUtils")
 @interface MOCoreUtils : NSObject
 + (NSInteger)getMaxParallelInstancesSupported SWIFT_WARN_UNUSED_RESULT;
 + (MOSDKConfig * _Nullable)getSDKInstanceForInstanceID:(NSString * _Nullable)instanceID SWIFT_WARN_UNUSED_RESULT;
++ (CGFloat)safeAreaInset SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getSDKLibraryDirectoryPath SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getInstanceRootDirectoryPathForIdentifier:(NSString * _Nonnull)identifier SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getDocumentsDirectoryPath SWIFT_WARN_UNUSED_RESULT;
@@ -460,6 +463,7 @@ SWIFT_CLASS("_TtC6MOCore11MOCoreUtils")
 + (NSString * _Nonnull)getSDKUniqueIdForInstanceWithConfig:(MOSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)generateSDKUniqueID SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isSdkEnabledForInstanceWithConfig:(MOSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
++ (enum MoEngageSDKState)fetchMoEngageSDKState:(MOSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
 + (void)updateUserDefaultWithSDKState:(BOOL)isSDKEnabled forSDKConfig:(MOSDKConfig * _Nonnull)sdkConfig;
 + (void)updateSDKState:(BOOL)isEnabled withConfig:(MOSDKConfig * _Nonnull)sdkConfig;
 + (BOOL)isDataTrackingEnabledForSDKConfig:(MOSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
@@ -593,6 +597,7 @@ SWIFT_CLASS("_TtC6MOCore14MORemoteConfig")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class MoEngageInAppConfig;
 enum PartnerIntegrationType : NSInteger;
 
 SWIFT_CLASS("_TtC6MOCore11MOSDKConfig")
@@ -607,6 +612,7 @@ SWIFT_CLASS("_TtC6MOCore11MOSDKConfig")
 @property (nonatomic, readonly) BOOL isDefaultInstance;
 @property (nonatomic, readonly) BOOL isTestEnvironment;
 @property (nonatomic) BOOL enableLogs;
+@property (nonatomic, strong) MoEngageInAppConfig * _Nonnull inAppConfig;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID OBJC_DESIGNATED_INITIALIZER;
@@ -649,6 +655,23 @@ SWIFT_CLASS("_TtC6MOCore17MoESdkStateHelper")
 + (void)isSDKInitialized:(void (^ _Nonnull)(BOOL))completion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+/// This class is used to set safe area inset for inapp nudge.
+SWIFT_CLASS("_TtC6MOCore19MoEngageInAppConfig")
+@interface MoEngageInAppConfig : NSObject
+@property (nonatomic, readonly) CGFloat safeAreaInset;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Enum to set the SDK State
+typedef SWIFT_ENUM(NSInteger, MoEngageSDKState, open) {
+/// To enable the SDK
+  MoEngageSDKStateEnabled = 0,
+/// To disable the SDK
+  MoEngageSDKStateDisabled = 1,
+};
 
 
 /// NetworkService is Enumerator which is used for different API calls in the SDK
@@ -1012,6 +1035,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
 @import Dispatch;
 @import Foundation;
 @import ObjectiveC;
@@ -1242,12 +1266,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOCoreIntegr
 @class UIViewController;
 @class NSURL;
 @class NSUserDefaults;
+enum MoEngageSDKState : NSInteger;
 @class UIApplication;
 
 SWIFT_CLASS("_TtC6MOCore11MOCoreUtils")
 @interface MOCoreUtils : NSObject
 + (NSInteger)getMaxParallelInstancesSupported SWIFT_WARN_UNUSED_RESULT;
 + (MOSDKConfig * _Nullable)getSDKInstanceForInstanceID:(NSString * _Nullable)instanceID SWIFT_WARN_UNUSED_RESULT;
++ (CGFloat)safeAreaInset SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getSDKLibraryDirectoryPath SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getInstanceRootDirectoryPathForIdentifier:(NSString * _Nonnull)identifier SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getDocumentsDirectoryPath SWIFT_WARN_UNUSED_RESULT;
@@ -1275,6 +1301,7 @@ SWIFT_CLASS("_TtC6MOCore11MOCoreUtils")
 + (NSString * _Nonnull)getSDKUniqueIdForInstanceWithConfig:(MOSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)generateSDKUniqueID SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isSdkEnabledForInstanceWithConfig:(MOSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
++ (enum MoEngageSDKState)fetchMoEngageSDKState:(MOSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
 + (void)updateUserDefaultWithSDKState:(BOOL)isSDKEnabled forSDKConfig:(MOSDKConfig * _Nonnull)sdkConfig;
 + (void)updateSDKState:(BOOL)isEnabled withConfig:(MOSDKConfig * _Nonnull)sdkConfig;
 + (BOOL)isDataTrackingEnabledForSDKConfig:(MOSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
@@ -1408,6 +1435,7 @@ SWIFT_CLASS("_TtC6MOCore14MORemoteConfig")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class MoEngageInAppConfig;
 enum PartnerIntegrationType : NSInteger;
 
 SWIFT_CLASS("_TtC6MOCore11MOSDKConfig")
@@ -1422,6 +1450,7 @@ SWIFT_CLASS("_TtC6MOCore11MOSDKConfig")
 @property (nonatomic, readonly) BOOL isDefaultInstance;
 @property (nonatomic, readonly) BOOL isTestEnvironment;
 @property (nonatomic) BOOL enableLogs;
+@property (nonatomic, strong) MoEngageInAppConfig * _Nonnull inAppConfig;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID OBJC_DESIGNATED_INITIALIZER;
@@ -1464,6 +1493,23 @@ SWIFT_CLASS("_TtC6MOCore17MoESdkStateHelper")
 + (void)isSDKInitialized:(void (^ _Nonnull)(BOOL))completion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+/// This class is used to set safe area inset for inapp nudge.
+SWIFT_CLASS("_TtC6MOCore19MoEngageInAppConfig")
+@interface MoEngageInAppConfig : NSObject
+@property (nonatomic, readonly) CGFloat safeAreaInset;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Enum to set the SDK State
+typedef SWIFT_ENUM(NSInteger, MoEngageSDKState, open) {
+/// To enable the SDK
+  MoEngageSDKStateEnabled = 0,
+/// To disable the SDK
+  MoEngageSDKStateDisabled = 1,
+};
 
 
 /// NetworkService is Enumerator which is used for different API calls in the SDK
@@ -1827,6 +1873,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
 @import Dispatch;
 @import Foundation;
 @import ObjectiveC;
@@ -2057,12 +2104,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOCoreIntegr
 @class UIViewController;
 @class NSURL;
 @class NSUserDefaults;
+enum MoEngageSDKState : NSInteger;
 @class UIApplication;
 
 SWIFT_CLASS("_TtC6MOCore11MOCoreUtils")
 @interface MOCoreUtils : NSObject
 + (NSInteger)getMaxParallelInstancesSupported SWIFT_WARN_UNUSED_RESULT;
 + (MOSDKConfig * _Nullable)getSDKInstanceForInstanceID:(NSString * _Nullable)instanceID SWIFT_WARN_UNUSED_RESULT;
++ (CGFloat)safeAreaInset SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getSDKLibraryDirectoryPath SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getInstanceRootDirectoryPathForIdentifier:(NSString * _Nonnull)identifier SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getDocumentsDirectoryPath SWIFT_WARN_UNUSED_RESULT;
@@ -2090,6 +2139,7 @@ SWIFT_CLASS("_TtC6MOCore11MOCoreUtils")
 + (NSString * _Nonnull)getSDKUniqueIdForInstanceWithConfig:(MOSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)generateSDKUniqueID SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isSdkEnabledForInstanceWithConfig:(MOSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
++ (enum MoEngageSDKState)fetchMoEngageSDKState:(MOSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
 + (void)updateUserDefaultWithSDKState:(BOOL)isSDKEnabled forSDKConfig:(MOSDKConfig * _Nonnull)sdkConfig;
 + (void)updateSDKState:(BOOL)isEnabled withConfig:(MOSDKConfig * _Nonnull)sdkConfig;
 + (BOOL)isDataTrackingEnabledForSDKConfig:(MOSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
@@ -2223,6 +2273,7 @@ SWIFT_CLASS("_TtC6MOCore14MORemoteConfig")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class MoEngageInAppConfig;
 enum PartnerIntegrationType : NSInteger;
 
 SWIFT_CLASS("_TtC6MOCore11MOSDKConfig")
@@ -2237,6 +2288,7 @@ SWIFT_CLASS("_TtC6MOCore11MOSDKConfig")
 @property (nonatomic, readonly) BOOL isDefaultInstance;
 @property (nonatomic, readonly) BOOL isTestEnvironment;
 @property (nonatomic) BOOL enableLogs;
+@property (nonatomic, strong) MoEngageInAppConfig * _Nonnull inAppConfig;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID OBJC_DESIGNATED_INITIALIZER;
@@ -2279,6 +2331,23 @@ SWIFT_CLASS("_TtC6MOCore17MoESdkStateHelper")
 + (void)isSDKInitialized:(void (^ _Nonnull)(BOOL))completion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+/// This class is used to set safe area inset for inapp nudge.
+SWIFT_CLASS("_TtC6MOCore19MoEngageInAppConfig")
+@interface MoEngageInAppConfig : NSObject
+@property (nonatomic, readonly) CGFloat safeAreaInset;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Enum to set the SDK State
+typedef SWIFT_ENUM(NSInteger, MoEngageSDKState, open) {
+/// To enable the SDK
+  MoEngageSDKStateEnabled = 0,
+/// To disable the SDK
+  MoEngageSDKStateDisabled = 1,
+};
 
 
 /// NetworkService is Enumerator which is used for different API calls in the SDK

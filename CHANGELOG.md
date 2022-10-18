@@ -2,6 +2,12 @@
 =================================
 
 ## Changelog:
+### Version 8.4.0 *(18th October, 2022)*
+-------------------------------------------
+* Added MoEngageSDK Initialization method with SDK State.
+* Fixed handling of notification observers to avoid runtime crashes.
+* Added exception handling to fix the crashes in a few scenarios.
+
 ### Version 8.3.1 *(22nd September, 2022)*
 -------------------------------------------
 * Added support for `setUserAttributeISODate` in the following ISO format `yyyy-MM-dd'T'HH:mm:ss.SSS'Z'`
