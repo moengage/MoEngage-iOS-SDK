@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7eLFklBG28RxMx6UmyNufH8WtBg=
+		7nPbL3H6RFaLyhVIuOeN+abrL2w=
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZRcYfYvHkTtf2KelEVi36r8LpUU=
+		HiZslCLYePOk07A1NC82OTFuE8w=
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xhto6bLWutw+k7GGnK0IMwSCXdo=
+		GYhWtixaR4wS7hExeAd6mBCyU5I=
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3XMOFlzVdD5ZmJa4/rbPq+bBmis=
+		uvp5/rC4KxigHarOsBLo3+tahlE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,11 +107,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZRcYfYvHkTtf2KelEVi36r8LpUU=
+			HiZslCLYePOk07A1NC82OTFuE8w=
 			</data>
 			<key>hash2</key>
 			<data>
-			LCw0c/D2is/jcKeJ7YHXMa+u48lW+KAbVVDBr9+rB/4=
+			8r0Mf2W9MAkPFpmDgwSnSj9vWZRvgLm+ucWAZLfXDAc=
 			</data>
 		</dict>
 		<key>Modules/MoEngageMessaging.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -140,11 +140,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xhto6bLWutw+k7GGnK0IMwSCXdo=
+			GYhWtixaR4wS7hExeAd6mBCyU5I=
 			</data>
 			<key>hash2</key>
 			<data>
-			YGKH7TYbgFmUe6INHoZRRocgyUI3YfOG5zji5dLMMRE=
+			GQ1jZ0YbBR3ws020NRBSM5iOIRNqXOvfZuaKIE7iE9Y=
 			</data>
 		</dict>
 		<key>Modules/MoEngageMessaging.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -173,11 +173,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3XMOFlzVdD5ZmJa4/rbPq+bBmis=
+			uvp5/rC4KxigHarOsBLo3+tahlE=
 			</data>
 			<key>hash2</key>
 			<data>
-			qVjOl3jTkSW+XWDkO+sXlZKaFdD131Yq4om72ED0Ucw=
+			8vMK7hWSzeUd67du3qsGk1ziKrKW9AyW5fan/DuunF8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

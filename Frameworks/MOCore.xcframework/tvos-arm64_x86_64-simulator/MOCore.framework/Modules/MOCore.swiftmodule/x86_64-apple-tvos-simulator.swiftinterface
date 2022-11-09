@@ -550,6 +550,7 @@ public enum MoEngageExceptions : Swift.Error {
   @objc public static func setIDFVOptOutStatus(forSDKConfig sdkConfig: MOCore.MOSDKConfig, optOutStatus: Swift.Bool)
   @objc public static func isIDFATrackingEnabled(forSDKConfig sdkConfig: MOCore.MOSDKConfig) -> Swift.Bool
   @objc public static func isIDFVTrackingEnabled(forSDKConfig sdkConfig: MOCore.MOSDKConfig) -> Swift.Bool
+  public static func isValidNumber<T>(number: T) -> Swift.Bool where T : Swift.ExpressibleByFloatLiteral, T : Swift.FloatingPoint
   @objc override dynamic public init()
   @objc deinit
 }
