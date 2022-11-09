@@ -2,6 +2,11 @@
 =================================
 
 ## Changelog:
+### Version 8.4.1 *(09th November, 2022)*
+-------------------------------------------
+* CrashFix - Fixed Crash while passing `infinity` or `NaN` to SDK via user attributes and track event properties.
+* BugFix - Added support to track userAttribute of type `Float`.
+
 ### Version 8.4.0 *(18th October, 2022)*
 -------------------------------------------
 * Added MoEngageSDK Initialization method with SDK State.
