@@ -16,6 +16,10 @@
 		<data>
 		4368jP+k1wEA6iiunGcHHjpRuYY=
 		</data>
+		<key>Headers/MoEngageMutableDictionary.h</key>
+		<data>
+		kWHkRuKvJIe4m1vwjZ365dWeYaM=
+		</data>
 		<key>Headers/MoEngageObjCUtils.h</key>
 		<data>
 		L++9V5W70zIm1ygEs8P4IynYTcs=
@@ -30,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		K2WnDyl5mTb3MoivMnvUwIfMLBg=
+		QcuOW3bI6qjRgcrnmvEIBDmaWoo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,6 +74,17 @@
 			<key>hash2</key>
 			<data>
 			QjJw+jbwK3REIHC2VqjQDoD0hbNIdPDeszHNqrLN38Y=
+			</data>
+		</dict>
+		<key>Headers/MoEngageMutableDictionary.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kWHkRuKvJIe4m1vwjZ365dWeYaM=
+			</data>
+			<key>hash2</key>
+			<data>
+			4tx9AWcCxohfno+VKJQg9G/x064HvJb/ZfxMtne6AKQ=
 			</data>
 		</dict>
 		<key>Headers/MoEngageObjCUtils.h</key>

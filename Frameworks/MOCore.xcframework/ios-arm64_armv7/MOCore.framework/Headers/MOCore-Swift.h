@@ -831,6 +831,13 @@ SWIFT_PROTOCOL("_TtP6MOCore17SwiftyGifDelegate_")
 
 
 
+
+SWIFT_CLASS("_TtC6MOCore17ValidateExtension")
+@interface ValidateExtension : NSObject
++ (BOOL)isFromExtension SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
@@ -1668,6 +1675,13 @@ SWIFT_PROTOCOL("_TtP6MOCore17SwiftyGifDelegate_")
 
 
 
+
+
+SWIFT_CLASS("_TtC6MOCore17ValidateExtension")
+@interface ValidateExtension : NSObject
++ (BOOL)isFromExtension SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
