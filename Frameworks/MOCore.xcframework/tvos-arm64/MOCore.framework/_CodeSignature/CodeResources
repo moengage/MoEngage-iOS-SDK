@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KRPQmONF+JtmQJCJZF9sKubgdcw=
+		DnLgFcyOo2YkkWMbxBjTf2DMuOY=
 		</data>
 		<key>Modules/MOCore.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/MOCore.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		Qkg5fUVQFEi3isJBhOFz2aovzsw=
+		haJG9b/ZhuhuXvrvXAhdE1FOWvY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,11 +98,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Qkg5fUVQFEi3isJBhOFz2aovzsw=
+			haJG9b/ZhuhuXvrvXAhdE1FOWvY=
 			</data>
 			<key>hash2</key>
 			<data>
-			1sS9z6tRWFBiyM3d3yK8R0blpW9+/MTdk++ENVIFX70=
+			vCypHyUlFx3U39/O+pFNUdQlpHQ/dAmXeU6rkc1G/a0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
