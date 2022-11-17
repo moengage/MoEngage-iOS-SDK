@@ -3,6 +3,11 @@
 
 ## Changelog:
 
+### Version 8.4.2 *(17th November, 2022)*
+-------------------------------------------
+* CrashFix - Updated Appdelegate swizzler to handle crash while registering for remote notifications.
+* CrashFix - Handled removing of `infinity` or `NaN` from the payload on migration. 
+
 ### Version 8.4.1 *(09th November, 2022)*
 -------------------------------------------
 * CrashFix - Fixed Crash while passing `infinity` or `NaN` to SDK via user attributes and track event properties.

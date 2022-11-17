@@ -759,6 +759,13 @@ SWIFT_CLASS("_TtC6MOCore11SdkInstance")
 @end
 
 
+
+SWIFT_CLASS("_TtC6MOCore17ValidateExtension")
+@interface ValidateExtension : NSObject
++ (BOOL)isFromExtension SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
@@ -1524,6 +1531,13 @@ SWIFT_CLASS("_TtC6MOCore11SdkInstance")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+
+SWIFT_CLASS("_TtC6MOCore17ValidateExtension")
+@interface ValidateExtension : NSObject
++ (BOOL)isFromExtension SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

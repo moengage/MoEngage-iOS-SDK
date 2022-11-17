@@ -16,9 +16,13 @@
 		<data>
 		4368jP+k1wEA6iiunGcHHjpRuYY=
 		</data>
+		<key>Headers/MoEngageMutableDictionary.h</key>
+		<data>
+		kWHkRuKvJIe4m1vwjZ365dWeYaM=
+		</data>
 		<key>Headers/MoEngageObjCUtils.h</key>
 		<data>
-		L++9V5W70zIm1ygEs8P4IynYTcs=
+		JSWGaSh3ryH+rOP8hOHEAWo0/9k=
 		</data>
 		<key>Headers/NSDictionary+MOExtension.h</key>
 		<data>
@@ -30,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		K2WnDyl5mTb3MoivMnvUwIfMLBg=
+		WvKGbw6/yQCOKH5YvPhqsrG2/1g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -72,15 +76,26 @@
 			QjJw+jbwK3REIHC2VqjQDoD0hbNIdPDeszHNqrLN38Y=
 			</data>
 		</dict>
+		<key>Headers/MoEngageMutableDictionary.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kWHkRuKvJIe4m1vwjZ365dWeYaM=
+			</data>
+			<key>hash2</key>
+			<data>
+			4tx9AWcCxohfno+VKJQg9G/x064HvJb/ZfxMtne6AKQ=
+			</data>
+		</dict>
 		<key>Headers/MoEngageObjCUtils.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			L++9V5W70zIm1ygEs8P4IynYTcs=
+			JSWGaSh3ryH+rOP8hOHEAWo0/9k=
 			</data>
 			<key>hash2</key>
 			<data>
-			//EjkIkjoNm+owl2qbrkTJvbvEKEdnQQAWpMnHtPNjs=
+			5fYkC0ElvZ0u8YHtwDH0yIeY4HI7spmii5G4qRvDW/0=
 			</data>
 		</dict>
 		<key>Headers/NSDictionary+MOExtension.h</key>

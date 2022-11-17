@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zABSCcbe//ShjOGDd6esF4fFXf8=
+		kFaSj2ZsfTQ1rNymm0niaO4M9iE=
 		</data>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		XuVrzqheoVx68fGQgbAzb+RC8tQ=
+		RNpN3lyirPOLSTo4Pbk0+GF00mU=
 		</data>
 		<key>Modules/MoEngageAnalytics.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/MoEngageAnalytics.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		2QOJiyhq4oC3bJqZ27/9YL9VOmQ=
+		Axwj5LOMXGQh9YGtuM73rGEZwFM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -95,11 +95,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XuVrzqheoVx68fGQgbAzb+RC8tQ=
+			RNpN3lyirPOLSTo4Pbk0+GF00mU=
 			</data>
 			<key>hash2</key>
 			<data>
-			drT/bwrJB2G72R8TKrX0h0v4A/7YxDnRiohVuDbM0Gc=
+			MwFbjlyAe4D7h2bGGMEGDtqSh6CF3IG/zqBai/23nlI=
 			</data>
 		</dict>
 		<key>Modules/MoEngageAnalytics.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
@@ -128,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2QOJiyhq4oC3bJqZ27/9YL9VOmQ=
+			Axwj5LOMXGQh9YGtuM73rGEZwFM=
 			</data>
 			<key>hash2</key>
 			<data>
-			PZ5gOlL7eAT8sDdFF2OYptuKlOgjWJgXMC6gCXRfvPI=
+			p3eMM7BvNF1L7b0X3iXKjo9LcR4GcATumBA7s6o1f4M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

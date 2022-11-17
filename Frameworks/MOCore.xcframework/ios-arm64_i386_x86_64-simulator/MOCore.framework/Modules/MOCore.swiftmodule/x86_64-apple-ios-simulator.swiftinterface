@@ -201,8 +201,9 @@ public enum MoEngageExceptions : Swift.Error {
 extension UIKit.UIDevice {
   @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
 }
-@_hasMissingDesignatedInitializers public class ValidateExtension {
-  public static func isFromExtension() -> Swift.Bool
+@_inheritsConvenienceInitializers @objc public class ValidateExtension : ObjectiveC.NSObject {
+  @objc public static func isFromExtension() -> Swift.Bool
+  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class CardsManager : ObjectiveC.NSObject {
