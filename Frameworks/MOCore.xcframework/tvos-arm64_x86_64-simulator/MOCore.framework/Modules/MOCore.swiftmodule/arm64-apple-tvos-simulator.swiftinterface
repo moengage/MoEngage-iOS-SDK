@@ -120,6 +120,7 @@ public func integrationInfoToDictionary(_ integrationInfo: Swift.Array<MOCore.MO
   case data_center_01
   case data_center_02
   case data_center_03
+  case data_center_04
   public static func getDataCenter(dataCenter: Swift.String) -> MOCore.MODataCenter
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
