@@ -458,6 +458,7 @@ typedef SWIFT_ENUM(NSInteger, MODataCenter, open) {
   MODataCenterData_center_01 = 1,
   MODataCenterData_center_02 = 2,
   MODataCenterData_center_03 = 3,
+  MODataCenterData_center_04 = 4,
 };
 
 @class NSDateFormatter;
@@ -1231,6 +1232,7 @@ typedef SWIFT_ENUM(NSInteger, MODataCenter, open) {
   MODataCenterData_center_01 = 1,
   MODataCenterData_center_02 = 2,
   MODataCenterData_center_03 = 3,
+  MODataCenterData_center_04 = 4,
 };
 
 @class NSDateFormatter;

@@ -2,6 +2,10 @@
 =================================
 
 ## Changelog:
+### Version 8.4.3 *(1st December, 2022)*
+-------------------------------------------
+* Added DC-04 support.
+
 ### Version 8.4.2 *(17th November, 2022)*
 -------------------------------------------
 * CrashFix - Updated Appdelegate swizzler to handle crash while registering for remote notifications.
