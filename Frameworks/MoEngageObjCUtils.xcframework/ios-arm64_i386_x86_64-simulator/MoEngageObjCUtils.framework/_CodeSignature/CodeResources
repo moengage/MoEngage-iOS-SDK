@@ -4,17 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/MOAppDelegateProxy.h</key>
+		<key>Headers/MoEngageAppDelegateProxy.h</key>
 		<data>
-		pwEOp4hsl3Nddhjs7yWKHAxuY5Y=
+		2XhzXqVxL2tfEOACA11mLE/DYgE=
 		</data>
-		<key>Headers/MOAppDelegateSwizzler.h</key>
+		<key>Headers/MoEngageAppDelegateSwizzler.h</key>
 		<data>
-		5B8Mvxi4z8mhPaFX1aQRxi1zV8w=
-		</data>
-		<key>Headers/MOObjCUtils.h</key>
-		<data>
-		4368jP+k1wEA6iiunGcHHjpRuYY=
+		tq9GnEceURkSQ3GdfANGZHNQ2CY=
 		</data>
 		<key>Headers/MoEngageMutableDictionary.h</key>
 		<data>
@@ -22,19 +18,23 @@
 		</data>
 		<key>Headers/MoEngageObjCUtils.h</key>
 		<data>
-		JSWGaSh3ryH+rOP8hOHEAWo0/9k=
+		E8KLB7M/SP42eUsSs23BL7xmTYQ=
 		</data>
-		<key>Headers/NSDictionary+MOExtension.h</key>
+		<key>Headers/MoEngageProxyUtils.h</key>
 		<data>
-		DWKeebQ//RaPQ3bUOLpXadqVkZ8=
+		MPLstj6+UbOF9XTpX+id+B3ohBM=
 		</data>
-		<key>Headers/NSMutableDictionary+MOExtension.h</key>
+		<key>Headers/NSDictionary+MoEngageExtension.h</key>
 		<data>
-		foFaDIfSWbG7Jmz3XBhgrs79NGc=
+		ufin3Z6+JadN4mWH9PHfdResk8k=
+		</data>
+		<key>Headers/NSMutableDictionary+MoEngageExtension.h</key>
+		<data>
+		0tN82hrhlMGIcul7EDCBs4kMZlE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		J4sH8dVBR51AoKY1mbBv3xbtmsU=
+		mKovCzec98bkUnoL/4vkoAJM7+U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,37 +43,26 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/MOAppDelegateProxy.h</key>
+		<key>Headers/MoEngageAppDelegateProxy.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pwEOp4hsl3Nddhjs7yWKHAxuY5Y=
+			2XhzXqVxL2tfEOACA11mLE/DYgE=
 			</data>
 			<key>hash2</key>
 			<data>
-			dIxthksoCSQmlxyJtudX8ryNhne6fp39oLdqZqxCPr4=
+			NzVeRwCJ33NDHmB0YF9jF0e7pC+wNVnGwZz5cTmjuAw=
 			</data>
 		</dict>
-		<key>Headers/MOAppDelegateSwizzler.h</key>
+		<key>Headers/MoEngageAppDelegateSwizzler.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5B8Mvxi4z8mhPaFX1aQRxi1zV8w=
+			tq9GnEceURkSQ3GdfANGZHNQ2CY=
 			</data>
 			<key>hash2</key>
 			<data>
-			bjf4ZQlLGIDVn5w7ZtMTgiC0JPHCdmMV/zEu1FBTNgE=
-			</data>
-		</dict>
-		<key>Headers/MOObjCUtils.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4368jP+k1wEA6iiunGcHHjpRuYY=
-			</data>
-			<key>hash2</key>
-			<data>
-			QjJw+jbwK3REIHC2VqjQDoD0hbNIdPDeszHNqrLN38Y=
+			xPhNpduJJ8neaDBwGNoBFVGnfMY85URHUJtgpRCRbvk=
 			</data>
 		</dict>
 		<key>Headers/MoEngageMutableDictionary.h</key>
@@ -91,33 +80,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JSWGaSh3ryH+rOP8hOHEAWo0/9k=
+			E8KLB7M/SP42eUsSs23BL7xmTYQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			5fYkC0ElvZ0u8YHtwDH0yIeY4HI7spmii5G4qRvDW/0=
+			AJmiSjiIb9vm5cJ8rVwFcWAfmkPD6/Cde0uMv7X2veA=
 			</data>
 		</dict>
-		<key>Headers/NSDictionary+MOExtension.h</key>
+		<key>Headers/MoEngageProxyUtils.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DWKeebQ//RaPQ3bUOLpXadqVkZ8=
+			MPLstj6+UbOF9XTpX+id+B3ohBM=
 			</data>
 			<key>hash2</key>
 			<data>
-			4OZoKE9CgzMtnsPYl6NQ5DxcfDPdF0DAnwwpESMOuwU=
+			uhkB1wLt/pRCUKRgj+BMysJ2JNybjZiNMtOHCsqAGes=
 			</data>
 		</dict>
-		<key>Headers/NSMutableDictionary+MOExtension.h</key>
+		<key>Headers/NSDictionary+MoEngageExtension.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			foFaDIfSWbG7Jmz3XBhgrs79NGc=
+			ufin3Z6+JadN4mWH9PHfdResk8k=
 			</data>
 			<key>hash2</key>
 			<data>
-			m6OffhLj0UFNbPSCK7E+/P4ic2BU0O4NysAGMC2o9r0=
+			PAuoroyNo8eNurP7Tx1eSHYm5XN5H6aR0qh+86A/vhI=
+			</data>
+		</dict>
+		<key>Headers/NSMutableDictionary+MoEngageExtension.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0tN82hrhlMGIcul7EDCBs4kMZlE=
+			</data>
+			<key>hash2</key>
+			<data>
+			2iKSlBG1NL/UqYrfl4TIU7YRyDQdiqnz2YY0pzoz59g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

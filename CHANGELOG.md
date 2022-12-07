@@ -2,6 +2,18 @@
 =================================
 
 ## Changelog:
+### Version 9.0.0 *(7th December, 2022)*
+-------------------------------------------
+* Migrated MoEngageSDK from Objective-C to Swift
+* Removed other modules interface method from MoEngage class
+* Removed optional modules from MoEngageSDK target.
+* Updated `disableBadgeReset` method of `MoEngageSDKMessaging` to take Bool as its parameter.
+* Added API documentation
+* All the classes and modules are prefixed with `MoEngage`.
+* Renamed `MOCore` to `MoEngageCore` for iphone SDK and TVOS SDK.
+* BugFix - Badge is not getting reset when the disableBadgeReset is set as false.
+* BugFix - Fixed test inapp api getting called multiple times on clicking the test inapp Pushnotification.
+
 ### Version 8.4.3 *(1st December, 2022)*
 -------------------------------------------
 * Added DC-04 support.

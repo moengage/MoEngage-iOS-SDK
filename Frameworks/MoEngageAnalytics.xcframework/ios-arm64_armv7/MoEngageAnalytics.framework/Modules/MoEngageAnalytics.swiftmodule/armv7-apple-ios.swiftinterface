@@ -5,13 +5,13 @@ import AdSupport
 import AppTrackingTransparency
 import CommonCrypto
 import Foundation
-import MOCore
 @_exported import MoEngageAnalytics
+import MoEngageCore
 import MoEngageObjCUtils
 import Swift
 import UIKit
 import _Concurrency
-@objc public enum UserGender : Swift.Int {
+@objc public enum MoEngageUserGender : Swift.Int {
   case male = 0
   case female
   case others
@@ -21,7 +21,7 @@ import _Concurrency
     get
   }
 }
-@objc public enum AppStatus : Swift.Int {
+@objc public enum MoEngageAppStatus : Swift.Int {
   case install = 0
   case update
   public init?(rawValue: Swift.Int)
@@ -30,20 +30,20 @@ import _Concurrency
     get
   }
 }
-@_hasMissingDesignatedInitializers public class MOAnalyticsUtils {
+@_hasMissingDesignatedInitializers public class MoEngageAnalyticsUtils {
   public class func getIDFA() -> Swift.String?
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class MOAnalytics : ObjectiveC.NSObject {
-  @objc public static let sharedInstance: MoEngageAnalytics.MOAnalytics
+@_inheritsConvenienceInitializers @objc public class MoEngageSDKAnalytics : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: MoEngageAnalytics.MoEngageSDKAnalytics
   @objc public func trackSDKVersion()
   @objc public func updateSessionSource(withPushPayload payload: [Swift.AnyHashable : Any], fromMoEngage isMoEngagePush: Swift.Bool)
   @objc public func updateSessionSource(withURL url: Foundation.URL)
   @objc public func processURL(_ url: Foundation.URL?)
   @objc public func pushTokenUpdated()
-  @objc public func appStatus(_ appStatus: MoEngageAnalytics.AppStatus, forAppID appID: Swift.String? = nil)
-  @objc public func trackEvent(_ name: Swift.String, withProperties properties: MoEngageAnalytics.MOProperties? = nil, forAppID appID: Swift.String? = nil)
-  @objc public func trackEvent(_ name: Swift.String, withProperties properties: MoEngageAnalytics.MOProperties? = nil)
+  @objc public func appStatus(_ appStatus: MoEngageAnalytics.MoEngageAppStatus, forAppID appID: Swift.String? = nil)
+  @objc public func trackEvent(_ name: Swift.String, withProperties properties: MoEngageAnalytics.MoEngageProperties? = nil, forAppID appID: Swift.String? = nil)
+  @objc public func trackEvent(_ name: Swift.String, withProperties properties: MoEngageAnalytics.MoEngageProperties? = nil)
   @objc public func flush(forAppID appID: Swift.String? = nil, withCompletionBlock completionBlock: ((Swift.Bool) -> Swift.Void)? = nil)
   @objc public func flush()
   @objc public func flush(forAppID appID: Swift.String? = nil)
@@ -57,8 +57,8 @@ import _Concurrency
   @objc public func setUserAttributeDate(_ date: Foundation.Date, withAttributeName attributeName: Swift.String)
   @objc public func setUserAttributeISODate(_ dateString: Swift.String, withAttributeName attributeName: Swift.String, forAppID appID: Swift.String? = nil)
   @objc public func setUserAttributeISODate(_ dateString: Swift.String, withAttributeName attributeName: Swift.String)
-  @objc public func setLocation(_ location: MoEngageAnalytics.MOGeoLocation, withAttributeName attributeName: Swift.String, forAppID appID: Swift.String? = nil)
-  @objc public func setLocation(_ location: MoEngageAnalytics.MOGeoLocation, withAttributeName attributeName: Swift.String)
+  @objc public func setLocation(_ location: MoEngageAnalytics.MoEngageGeoLocation, withAttributeName attributeName: Swift.String, forAppID appID: Swift.String? = nil)
+  @objc public func setLocation(_ location: MoEngageAnalytics.MoEngageGeoLocation, withAttributeName attributeName: Swift.String)
   @objc public func setAlias(_ alias: Swift.String, forAppID appID: Swift.String? = nil)
   @objc public func setAlias(_ alias: Swift.String)
   @objc public func setUniqueID(_ uniqueID: Swift.String, forAppID appID: Swift.String? = nil)
@@ -73,14 +73,14 @@ import _Concurrency
   @objc public func setLastName(_ lastName: Swift.String)
   @objc public func setMobileNumber(_ mobileNum: Swift.String, forAppID appID: Swift.String? = nil)
   @objc public func setMobileNumber(_ mobileNum: Swift.String)
-  @objc public func setGender(_ gender: MoEngageAnalytics.UserGender, forAppID appID: Swift.String? = nil)
-  @objc public func setGender(_ gender: MoEngageAnalytics.UserGender)
+  @objc public func setGender(_ gender: MoEngageAnalytics.MoEngageUserGender, forAppID appID: Swift.String? = nil)
+  @objc public func setGender(_ gender: MoEngageAnalytics.MoEngageUserGender)
   @objc public func setDateOfBirth(_ dob: Foundation.Date, forAppID appID: Swift.String? = nil)
   @objc public func setDateOfBirth(_ dob: Foundation.Date)
   @objc public func setDateOfBirthInISO(_ dateString: Swift.String, forAppID appID: Swift.String? = nil)
   @objc public func setDateOfBirthInISO(_ dateString: Swift.String)
-  @objc public func setLocation(_ location: MoEngageAnalytics.MOGeoLocation, forAppID appID: Swift.String? = nil)
-  @objc public func setLocation(_ location: MoEngageAnalytics.MOGeoLocation)
+  @objc public func setLocation(_ location: MoEngageAnalytics.MoEngageGeoLocation, forAppID appID: Swift.String? = nil)
+  @objc public func setLocation(_ location: MoEngageAnalytics.MoEngageGeoLocation)
   @objc public func trackUserPushPreference(_ isPushEnabled: Swift.Bool, forAppID appID: Swift.String? = nil)
   @objc public func trackLocale()
   @objc public func trackLocale(forAppID appID: Swift.String? = nil)
@@ -104,47 +104,47 @@ import _Concurrency
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AnalyticsDelegateHandler : MOCore.AnalyticsDelegate, MoEngageObjCUtils.MOAppDelegateAnalyticsProxyProtocol {
-  public static var sharedInstance: MoEngageAnalytics.AnalyticsDelegateHandler?
-  override public func initializeAnalytics(sdkInstance: MOCore.SdkInstance)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MoEngageAnalyticsDelegateHandler : MoEngageCore.MoEngageAnalyticsDelegate, MoEngageObjCUtils.MoEngageAppDelegateAnalyticsProxyProtocol {
+  public static var sharedInstance: MoEngageAnalytics.MoEngageAnalyticsDelegateHandler?
+  override public func initializeAnalytics(sdkInstance: MoEngageCore.MoEngageSDKInstance)
   @objc public func handleOpen(_ url: Foundation.URL)
-  override public func moengageSDKStateUpdated(sdkInstance: MOCore.SdkInstance)
-  override public func applicationDidBecomeActive(sdkInstance: MOCore.SdkInstance)
-  override public func applicationWillResignActive(sdkInstance: MOCore.SdkInstance)
-  override public func applicationDidEnterForeground(sdkInstance: MOCore.SdkInstance)
-  override public func applicationDidEnterBackground(sdkInstance: MOCore.SdkInstance)
-  override public func flush(sdkInstance: MOCore.SdkInstance)
-  public static func trackEventForRichNotification(name: Swift.String, properties: MoEngageAnalytics.MOProperties? = nil, appID: Swift.String? = nil, completionBlock: (() -> Swift.Void)? = nil)
+  override public func moengageSDKStateUpdated(sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  override public func applicationDidBecomeActive(sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  override public func applicationWillResignActive(sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  override public func applicationDidEnterForeground(sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  override public func applicationDidEnterBackground(sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  override public func flush(sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  public static func trackEventForRichNotification(name: Swift.String, properties: MoEngageAnalytics.MoEngageProperties? = nil, appID: Swift.String? = nil, completionBlock: (() -> Swift.Void)? = nil)
   @objc deinit
 }
-@objc public class MOProperties : ObjectiveC.NSObject {
+@objc public class MoEngageProperties : ObjectiveC.NSObject {
   @objc public init(withAttributes attributesDict: Swift.Dictionary<Swift.String, Any>? = nil)
   @objc public func updateAttributes(withPluginPayload payloadDict: Swift.Dictionary<Swift.String, Any>?)
   @objc public func addAttribute(_ attrVal: Any?, withName attrName: Swift.String)
-  @objc public func addLocationAttribute(_ attrVal: MoEngageAnalytics.MOGeoLocation, withName attrName: Swift.String)
+  @objc public func addLocationAttribute(_ attrVal: MoEngageAnalytics.MoEngageGeoLocation, withName attrName: Swift.String)
   @objc public func addDateAttribute(_ attrVal: Foundation.Date, withName attrName: Swift.String)
   @objc public func addDateISOStringAttribute(_ dateString: Swift.String, withName attrName: Swift.String)
   @objc public func addDateEpochAttribute(_ epoch: Swift.Double, withName attrName: Swift.String)
   @objc public func setNonInteractive()
   @objc deinit
 }
-@objc public class MOSource : ObjectiveC.NSObject, Foundation.NSCoding {
+@objc public class MoEngageSource : ObjectiveC.NSObject, Foundation.NSCoding {
   @objc public func encode(with aCoder: Foundation.NSCoder)
   @objc required public init(coder aDecoder: Foundation.NSCoder)
-  public init(withSourceInfoDict infoDict: [Swift.AnyHashable : Any], andInstanceID instanceID: Swift.String, withConfigController configController: MOCore.SdkInstance)
-  public init(withURL urlStr: Swift.String, andInstanceID instanceID: Swift.String, withConfigController configController: MOCore.SdkInstance)
+  public init(withSourceInfoDict infoDict: [Swift.AnyHashable : Any], andInstanceID instanceID: Swift.String, withConfigController configController: MoEngageCore.MoEngageSDKInstance)
+  public init(withURL urlStr: Swift.String, andInstanceID instanceID: Swift.String, withConfigController configController: MoEngageCore.MoEngageSDKInstance)
   public func isValidSource() -> Swift.Bool
   @objc deinit
 }
-@objc public class MOGeoLocation : ObjectiveC.NSObject {
+@objc public class MoEngageGeoLocation : ObjectiveC.NSObject {
   @objc public var latitude: Swift.Double
   @objc public var longitude: Swift.Double
   @objc public init(withLatitude lat: Swift.Double, andLongitude lng: Swift.Double)
   @objc deinit
 }
-extension MoEngageAnalytics.UserGender : Swift.Equatable {}
-extension MoEngageAnalytics.UserGender : Swift.Hashable {}
-extension MoEngageAnalytics.UserGender : Swift.RawRepresentable {}
-extension MoEngageAnalytics.AppStatus : Swift.Equatable {}
-extension MoEngageAnalytics.AppStatus : Swift.Hashable {}
-extension MoEngageAnalytics.AppStatus : Swift.RawRepresentable {}
+extension MoEngageAnalytics.MoEngageUserGender : Swift.Equatable {}
+extension MoEngageAnalytics.MoEngageUserGender : Swift.Hashable {}
+extension MoEngageAnalytics.MoEngageUserGender : Swift.RawRepresentable {}
+extension MoEngageAnalytics.MoEngageAppStatus : Swift.Equatable {}
+extension MoEngageAnalytics.MoEngageAppStatus : Swift.Hashable {}
+extension MoEngageAnalytics.MoEngageAppStatus : Swift.RawRepresentable {}

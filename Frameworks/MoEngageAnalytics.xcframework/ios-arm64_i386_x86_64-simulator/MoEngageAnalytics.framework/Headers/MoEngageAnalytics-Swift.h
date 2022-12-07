@@ -216,22 +216,54 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-typedef SWIFT_ENUM(NSInteger, AppStatus, open) {
-  AppStatusInstall = 0,
-  AppStatusUpdate = 1,
+@class NSCoder;
+
+SWIFT_CLASS("_TtC17MoEngageAnalytics21MoEngageAnalyticsData")
+@interface MoEngageAnalyticsData : NSObject <NSCoding>
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+typedef SWIFT_ENUM(NSInteger, MoEngageAppStatus, open) {
+  MoEngageAppStatusInstall = 0,
+  MoEngageAppStatusUpdate = 1,
 };
 
-@class NSURL;
-@class NSString;
-@class MOProperties;
-@class NSDate;
-@class MOGeoLocation;
-enum UserGender : NSInteger;
 
-SWIFT_CLASS("_TtC17MoEngageAnalytics11MOAnalytics")
-@interface MOAnalytics : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics * _Nonnull sharedInstance;)
-+ (MOAnalytics * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS("_TtC17MoEngageAnalytics19MoEngageGeoLocation")
+@interface MoEngageGeoLocation : NSObject
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
+- (nonnull instancetype)initWithLatitude:(double)lat andLongitude:(double)lng OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSString;
+@class NSDate;
+
+SWIFT_CLASS("_TtC17MoEngageAnalytics18MoEngageProperties")
+@interface MoEngageProperties : NSObject
+- (nonnull instancetype)initWithAttributes:(NSDictionary<NSString *, id> * _Nullable)attributesDict OBJC_DESIGNATED_INITIALIZER;
+- (void)updateAttributesWithPluginPayload:(NSDictionary<NSString *, id> * _Nullable)payloadDict;
+- (void)addAttribute:(id _Nullable)attrVal withName:(NSString * _Nonnull)attrName;
+- (void)addLocationAttribute:(MoEngageGeoLocation * _Nonnull)attrVal withName:(NSString * _Nonnull)attrName;
+- (void)addDateAttribute:(NSDate * _Nonnull)attrVal withName:(NSString * _Nonnull)attrName;
+- (void)addDateISOStringAttribute:(NSString * _Nonnull)dateString withName:(NSString * _Nonnull)attrName;
+- (void)addDateEpochAttribute:(double)epoch withName:(NSString * _Nonnull)attrName;
+- (void)setNonInteractive;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSURL;
+enum MoEngageUserGender : NSInteger;
+
+SWIFT_CLASS("_TtC17MoEngageAnalytics20MoEngageSDKAnalytics")
+@interface MoEngageSDKAnalytics : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKAnalytics * _Nonnull sharedInstance;)
++ (MoEngageSDKAnalytics * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 /// Method to update SDK version
 - (void)trackSDKVersion;
 - (void)updateSessionSourceWithPushPayload:(NSDictionary * _Nonnull)payload fromMoEngage:(BOOL)isMoEngagePush;
@@ -239,20 +271,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 - (void)processURL:(NSURL * _Nullable)url;
 - (void)pushTokenUpdated;
 /// Method to set app status
-/// \param appStatus AppStatus
+/// \param appStatus MoEngageAppStatus
 ///
 /// \param appID optional account identifier.
 ///
-- (void)appStatus:(enum AppStatus)appStatus forAppID:(NSString * _Nullable)appID;
+- (void)appStatus:(enum MoEngageAppStatus)appStatus forAppID:(NSString * _Nullable)appID;
 /// Method to track Event for account
 /// \param name event name
 ///
-/// \param properties MOProperties
+/// \param properties MoEngageProperties
 ///
 /// \param appID optional account identifier.
 ///
-- (void)trackEvent:(NSString * _Nonnull)name withProperties:(MOProperties * _Nullable)properties forAppID:(NSString * _Nullable)appID;
-- (void)trackEvent:(NSString * _Nonnull)name withProperties:(MOProperties * _Nullable)properties;
+- (void)trackEvent:(NSString * _Nonnull)name withProperties:(MoEngageProperties * _Nullable)properties forAppID:(NSString * _Nullable)appID;
+- (void)trackEvent:(NSString * _Nonnull)name withProperties:(MoEngageProperties * _Nullable)properties;
 /// Method to flush events for account
 /// \param appID optional account identifier.
 ///
@@ -307,14 +339,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 - (void)setUserAttributeISODate:(NSString * _Nonnull)dateString withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
 - (void)setUserAttributeISODate:(NSString * _Nonnull)dateString withAttributeName:(NSString * _Nonnull)attributeName;
 /// Method to set custom user location
-/// \param location MOGeoLocation instance
+/// \param location MoEngageGeoLocation instance
 ///
 /// \param attributeName attribute name
 ///
 /// \param appID optional account identifier.
 ///
-- (void)setLocation:(MOGeoLocation * _Nonnull)location withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
-- (void)setLocation:(MOGeoLocation * _Nonnull)location withAttributeName:(NSString * _Nonnull)attributeName;
+- (void)setLocation:(MoEngageGeoLocation * _Nonnull)location withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+- (void)setLocation:(MoEngageGeoLocation * _Nonnull)location withAttributeName:(NSString * _Nonnull)attributeName;
 /// Method to set alias
 /// \param alias alias value
 ///
@@ -365,12 +397,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 - (void)setMobileNumber:(NSString * _Nonnull)mobileNum forAppID:(NSString * _Nullable)appID;
 - (void)setMobileNumber:(NSString * _Nonnull)mobileNum;
 /// Method to set gender
-/// \param gender UserGender value
+/// \param gender MoEngageUserGender value
 ///
 /// \param appID optional account identifier.
 ///
-- (void)setGender:(enum UserGender)gender forAppID:(NSString * _Nullable)appID;
-- (void)setGender:(enum UserGender)gender;
+- (void)setGender:(enum MoEngageUserGender)gender forAppID:(NSString * _Nullable)appID;
+- (void)setGender:(enum MoEngageUserGender)gender;
 /// Method to set user date of birth
 /// \param dob Date
 ///
@@ -389,12 +421,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 ///
 - (void)setDateOfBirthInISO:(NSString * _Nonnull)dateString;
 /// Method to set user location
-/// \param location MOGeoLocation instance
+/// \param location MoEngageGeoLocation instance
 ///
 /// \param appID optional account identifier.
 ///
-- (void)setLocation:(MOGeoLocation * _Nonnull)location forAppID:(NSString * _Nullable)appID;
-- (void)setLocation:(MOGeoLocation * _Nonnull)location;
+- (void)setLocation:(MoEngageGeoLocation * _Nonnull)location forAppID:(NSString * _Nullable)appID;
+- (void)setLocation:(MoEngageGeoLocation * _Nonnull)location;
 /// Method to track user attribute push preference
 /// \param isPushEnabled Bool
 ///
@@ -446,43 +478,26 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSCoder;
 
-SWIFT_CLASS("_TtC17MoEngageAnalytics15MOAnalyticsData")
-@interface MOAnalyticsData : NSObject <NSCoding>
+SWIFT_CLASS("_TtC17MoEngageAnalytics15MoEngageSession")
+@interface MoEngageSession : NSObject <NSCoding>
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC17MoEngageAnalytics19MoEngageSessionInfo")
+@interface MoEngageSessionInfo : NSObject <NSCoding>
 - (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-SWIFT_CLASS("_TtC17MoEngageAnalytics13MOGeoLocation")
-@interface MOGeoLocation : NSObject
-@property (nonatomic) double latitude;
-@property (nonatomic) double longitude;
-- (nonnull instancetype)initWithLatitude:(double)lat andLongitude:(double)lng OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC17MoEngageAnalytics12MOProperties")
-@interface MOProperties : NSObject
-- (nonnull instancetype)initWithAttributes:(NSDictionary<NSString *, id> * _Nullable)attributesDict OBJC_DESIGNATED_INITIALIZER;
-- (void)updateAttributesWithPluginPayload:(NSDictionary<NSString *, id> * _Nullable)payloadDict;
-- (void)addAttribute:(id _Nullable)attrVal withName:(NSString * _Nonnull)attrName;
-- (void)addLocationAttribute:(MOGeoLocation * _Nonnull)attrVal withName:(NSString * _Nonnull)attrName;
-- (void)addDateAttribute:(NSDate * _Nonnull)attrVal withName:(NSString * _Nonnull)attrName;
-- (void)addDateISOStringAttribute:(NSString * _Nonnull)dateString withName:(NSString * _Nonnull)attrName;
-- (void)addDateEpochAttribute:(double)epoch withName:(NSString * _Nonnull)attrName;
-- (void)setNonInteractive;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC17MoEngageAnalytics9MOSession")
-@interface MOSession : NSObject <NSCoding>
+SWIFT_CLASS("_TtC17MoEngageAnalytics14MoEngageSource")
+@interface MoEngageSource : NSObject <NSCoding>
 - (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -490,25 +505,8 @@ SWIFT_CLASS("_TtC17MoEngageAnalytics9MOSession")
 @end
 
 
-SWIFT_CLASS("_TtC17MoEngageAnalytics13MOSessionInfo")
-@interface MOSessionInfo : NSObject <NSCoding>
-- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC17MoEngageAnalytics8MOSource")
-@interface MOSource : NSObject <NSCoding>
-- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC17MoEngageAnalytics15MOUserAttribute")
-@interface MOUserAttribute : NSObject <NSCoding>
+SWIFT_CLASS("_TtC17MoEngageAnalytics21MoEngageUserAttribute")
+@interface MoEngageUserAttribute : NSObject <NSCoding>
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)decoder OBJC_DESIGNATED_INITIALIZER;
 - (void)encodeWithCoder:(NSCoder * _Nonnull)encoder;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -516,26 +514,26 @@ SWIFT_CLASS("_TtC17MoEngageAnalytics15MOUserAttribute")
 @end
 
 
-SWIFT_CLASS("_TtC17MoEngageAnalytics20MOUserAttributesData")
-@interface MOUserAttributesData : NSObject <NSCoding>
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)decoder OBJC_DESIGNATED_INITIALIZER;
-- (void)encodeWithCoder:(NSCoder * _Nonnull)encoder;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC17MoEngageAnalytics19UserAttributeEntity")
-@interface UserAttributeEntity : NSObject <NSCoding>
+SWIFT_CLASS("_TtC17MoEngageAnalytics27MoEngageUserAttributeEntity")
+@interface MoEngageUserAttributeEntity : NSObject <NSCoding>
 - (void)encodeWithCoder:(NSCoder * _Nonnull)coder;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, UserGender, open) {
-  UserGenderMale = 0,
-  UserGenderFemale = 1,
-  UserGenderOthers = 2,
+
+SWIFT_CLASS("_TtC17MoEngageAnalytics26MoEngageUserAttributesData")
+@interface MoEngageUserAttributesData : NSObject <NSCoding>
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)decoder OBJC_DESIGNATED_INITIALIZER;
+- (void)encodeWithCoder:(NSCoder * _Nonnull)encoder;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+typedef SWIFT_ENUM(NSInteger, MoEngageUserGender, open) {
+  MoEngageUserGenderMale = 0,
+  MoEngageUserGenderFemale = 1,
+  MoEngageUserGenderOthers = 2,
 };
 
 #if __has_attribute(external_source_symbol)
@@ -761,22 +759,54 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-typedef SWIFT_ENUM(NSInteger, AppStatus, open) {
-  AppStatusInstall = 0,
-  AppStatusUpdate = 1,
+@class NSCoder;
+
+SWIFT_CLASS("_TtC17MoEngageAnalytics21MoEngageAnalyticsData")
+@interface MoEngageAnalyticsData : NSObject <NSCoding>
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+typedef SWIFT_ENUM(NSInteger, MoEngageAppStatus, open) {
+  MoEngageAppStatusInstall = 0,
+  MoEngageAppStatusUpdate = 1,
 };
 
-@class NSURL;
-@class NSString;
-@class MOProperties;
-@class NSDate;
-@class MOGeoLocation;
-enum UserGender : NSInteger;
 
-SWIFT_CLASS("_TtC17MoEngageAnalytics11MOAnalytics")
-@interface MOAnalytics : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics * _Nonnull sharedInstance;)
-+ (MOAnalytics * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS("_TtC17MoEngageAnalytics19MoEngageGeoLocation")
+@interface MoEngageGeoLocation : NSObject
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
+- (nonnull instancetype)initWithLatitude:(double)lat andLongitude:(double)lng OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSString;
+@class NSDate;
+
+SWIFT_CLASS("_TtC17MoEngageAnalytics18MoEngageProperties")
+@interface MoEngageProperties : NSObject
+- (nonnull instancetype)initWithAttributes:(NSDictionary<NSString *, id> * _Nullable)attributesDict OBJC_DESIGNATED_INITIALIZER;
+- (void)updateAttributesWithPluginPayload:(NSDictionary<NSString *, id> * _Nullable)payloadDict;
+- (void)addAttribute:(id _Nullable)attrVal withName:(NSString * _Nonnull)attrName;
+- (void)addLocationAttribute:(MoEngageGeoLocation * _Nonnull)attrVal withName:(NSString * _Nonnull)attrName;
+- (void)addDateAttribute:(NSDate * _Nonnull)attrVal withName:(NSString * _Nonnull)attrName;
+- (void)addDateISOStringAttribute:(NSString * _Nonnull)dateString withName:(NSString * _Nonnull)attrName;
+- (void)addDateEpochAttribute:(double)epoch withName:(NSString * _Nonnull)attrName;
+- (void)setNonInteractive;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSURL;
+enum MoEngageUserGender : NSInteger;
+
+SWIFT_CLASS("_TtC17MoEngageAnalytics20MoEngageSDKAnalytics")
+@interface MoEngageSDKAnalytics : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKAnalytics * _Nonnull sharedInstance;)
++ (MoEngageSDKAnalytics * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 /// Method to update SDK version
 - (void)trackSDKVersion;
 - (void)updateSessionSourceWithPushPayload:(NSDictionary * _Nonnull)payload fromMoEngage:(BOOL)isMoEngagePush;
@@ -784,20 +814,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 - (void)processURL:(NSURL * _Nullable)url;
 - (void)pushTokenUpdated;
 /// Method to set app status
-/// \param appStatus AppStatus
+/// \param appStatus MoEngageAppStatus
 ///
 /// \param appID optional account identifier.
 ///
-- (void)appStatus:(enum AppStatus)appStatus forAppID:(NSString * _Nullable)appID;
+- (void)appStatus:(enum MoEngageAppStatus)appStatus forAppID:(NSString * _Nullable)appID;
 /// Method to track Event for account
 /// \param name event name
 ///
-/// \param properties MOProperties
+/// \param properties MoEngageProperties
 ///
 /// \param appID optional account identifier.
 ///
-- (void)trackEvent:(NSString * _Nonnull)name withProperties:(MOProperties * _Nullable)properties forAppID:(NSString * _Nullable)appID;
-- (void)trackEvent:(NSString * _Nonnull)name withProperties:(MOProperties * _Nullable)properties;
+- (void)trackEvent:(NSString * _Nonnull)name withProperties:(MoEngageProperties * _Nullable)properties forAppID:(NSString * _Nullable)appID;
+- (void)trackEvent:(NSString * _Nonnull)name withProperties:(MoEngageProperties * _Nullable)properties;
 /// Method to flush events for account
 /// \param appID optional account identifier.
 ///
@@ -852,14 +882,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 - (void)setUserAttributeISODate:(NSString * _Nonnull)dateString withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
 - (void)setUserAttributeISODate:(NSString * _Nonnull)dateString withAttributeName:(NSString * _Nonnull)attributeName;
 /// Method to set custom user location
-/// \param location MOGeoLocation instance
+/// \param location MoEngageGeoLocation instance
 ///
 /// \param attributeName attribute name
 ///
 /// \param appID optional account identifier.
 ///
-- (void)setLocation:(MOGeoLocation * _Nonnull)location withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
-- (void)setLocation:(MOGeoLocation * _Nonnull)location withAttributeName:(NSString * _Nonnull)attributeName;
+- (void)setLocation:(MoEngageGeoLocation * _Nonnull)location withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+- (void)setLocation:(MoEngageGeoLocation * _Nonnull)location withAttributeName:(NSString * _Nonnull)attributeName;
 /// Method to set alias
 /// \param alias alias value
 ///
@@ -910,12 +940,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 - (void)setMobileNumber:(NSString * _Nonnull)mobileNum forAppID:(NSString * _Nullable)appID;
 - (void)setMobileNumber:(NSString * _Nonnull)mobileNum;
 /// Method to set gender
-/// \param gender UserGender value
+/// \param gender MoEngageUserGender value
 ///
 /// \param appID optional account identifier.
 ///
-- (void)setGender:(enum UserGender)gender forAppID:(NSString * _Nullable)appID;
-- (void)setGender:(enum UserGender)gender;
+- (void)setGender:(enum MoEngageUserGender)gender forAppID:(NSString * _Nullable)appID;
+- (void)setGender:(enum MoEngageUserGender)gender;
 /// Method to set user date of birth
 /// \param dob Date
 ///
@@ -934,12 +964,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 ///
 - (void)setDateOfBirthInISO:(NSString * _Nonnull)dateString;
 /// Method to set user location
-/// \param location MOGeoLocation instance
+/// \param location MoEngageGeoLocation instance
 ///
 /// \param appID optional account identifier.
 ///
-- (void)setLocation:(MOGeoLocation * _Nonnull)location forAppID:(NSString * _Nullable)appID;
-- (void)setLocation:(MOGeoLocation * _Nonnull)location;
+- (void)setLocation:(MoEngageGeoLocation * _Nonnull)location forAppID:(NSString * _Nullable)appID;
+- (void)setLocation:(MoEngageGeoLocation * _Nonnull)location;
 /// Method to track user attribute push preference
 /// \param isPushEnabled Bool
 ///
@@ -991,43 +1021,26 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSCoder;
 
-SWIFT_CLASS("_TtC17MoEngageAnalytics15MOAnalyticsData")
-@interface MOAnalyticsData : NSObject <NSCoding>
+SWIFT_CLASS("_TtC17MoEngageAnalytics15MoEngageSession")
+@interface MoEngageSession : NSObject <NSCoding>
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC17MoEngageAnalytics19MoEngageSessionInfo")
+@interface MoEngageSessionInfo : NSObject <NSCoding>
 - (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-SWIFT_CLASS("_TtC17MoEngageAnalytics13MOGeoLocation")
-@interface MOGeoLocation : NSObject
-@property (nonatomic) double latitude;
-@property (nonatomic) double longitude;
-- (nonnull instancetype)initWithLatitude:(double)lat andLongitude:(double)lng OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC17MoEngageAnalytics12MOProperties")
-@interface MOProperties : NSObject
-- (nonnull instancetype)initWithAttributes:(NSDictionary<NSString *, id> * _Nullable)attributesDict OBJC_DESIGNATED_INITIALIZER;
-- (void)updateAttributesWithPluginPayload:(NSDictionary<NSString *, id> * _Nullable)payloadDict;
-- (void)addAttribute:(id _Nullable)attrVal withName:(NSString * _Nonnull)attrName;
-- (void)addLocationAttribute:(MOGeoLocation * _Nonnull)attrVal withName:(NSString * _Nonnull)attrName;
-- (void)addDateAttribute:(NSDate * _Nonnull)attrVal withName:(NSString * _Nonnull)attrName;
-- (void)addDateISOStringAttribute:(NSString * _Nonnull)dateString withName:(NSString * _Nonnull)attrName;
-- (void)addDateEpochAttribute:(double)epoch withName:(NSString * _Nonnull)attrName;
-- (void)setNonInteractive;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC17MoEngageAnalytics9MOSession")
-@interface MOSession : NSObject <NSCoding>
+SWIFT_CLASS("_TtC17MoEngageAnalytics14MoEngageSource")
+@interface MoEngageSource : NSObject <NSCoding>
 - (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1035,25 +1048,8 @@ SWIFT_CLASS("_TtC17MoEngageAnalytics9MOSession")
 @end
 
 
-SWIFT_CLASS("_TtC17MoEngageAnalytics13MOSessionInfo")
-@interface MOSessionInfo : NSObject <NSCoding>
-- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC17MoEngageAnalytics8MOSource")
-@interface MOSource : NSObject <NSCoding>
-- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC17MoEngageAnalytics15MOUserAttribute")
-@interface MOUserAttribute : NSObject <NSCoding>
+SWIFT_CLASS("_TtC17MoEngageAnalytics21MoEngageUserAttribute")
+@interface MoEngageUserAttribute : NSObject <NSCoding>
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)decoder OBJC_DESIGNATED_INITIALIZER;
 - (void)encodeWithCoder:(NSCoder * _Nonnull)encoder;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1061,26 +1057,26 @@ SWIFT_CLASS("_TtC17MoEngageAnalytics15MOUserAttribute")
 @end
 
 
-SWIFT_CLASS("_TtC17MoEngageAnalytics20MOUserAttributesData")
-@interface MOUserAttributesData : NSObject <NSCoding>
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)decoder OBJC_DESIGNATED_INITIALIZER;
-- (void)encodeWithCoder:(NSCoder * _Nonnull)encoder;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC17MoEngageAnalytics19UserAttributeEntity")
-@interface UserAttributeEntity : NSObject <NSCoding>
+SWIFT_CLASS("_TtC17MoEngageAnalytics27MoEngageUserAttributeEntity")
+@interface MoEngageUserAttributeEntity : NSObject <NSCoding>
 - (void)encodeWithCoder:(NSCoder * _Nonnull)coder;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, UserGender, open) {
-  UserGenderMale = 0,
-  UserGenderFemale = 1,
-  UserGenderOthers = 2,
+
+SWIFT_CLASS("_TtC17MoEngageAnalytics26MoEngageUserAttributesData")
+@interface MoEngageUserAttributesData : NSObject <NSCoding>
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)decoder OBJC_DESIGNATED_INITIALIZER;
+- (void)encodeWithCoder:(NSCoder * _Nonnull)encoder;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+typedef SWIFT_ENUM(NSInteger, MoEngageUserGender, open) {
+  MoEngageUserGenderMale = 0,
+  MoEngageUserGenderFemale = 1,
+  MoEngageUserGenderOthers = 2,
 };
 
 #if __has_attribute(external_source_symbol)
@@ -1306,22 +1302,54 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-typedef SWIFT_ENUM(NSInteger, AppStatus, open) {
-  AppStatusInstall = 0,
-  AppStatusUpdate = 1,
+@class NSCoder;
+
+SWIFT_CLASS("_TtC17MoEngageAnalytics21MoEngageAnalyticsData")
+@interface MoEngageAnalyticsData : NSObject <NSCoding>
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+typedef SWIFT_ENUM(NSInteger, MoEngageAppStatus, open) {
+  MoEngageAppStatusInstall = 0,
+  MoEngageAppStatusUpdate = 1,
 };
 
-@class NSURL;
-@class NSString;
-@class MOProperties;
-@class NSDate;
-@class MOGeoLocation;
-enum UserGender : NSInteger;
 
-SWIFT_CLASS("_TtC17MoEngageAnalytics11MOAnalytics")
-@interface MOAnalytics : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics * _Nonnull sharedInstance;)
-+ (MOAnalytics * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS("_TtC17MoEngageAnalytics19MoEngageGeoLocation")
+@interface MoEngageGeoLocation : NSObject
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
+- (nonnull instancetype)initWithLatitude:(double)lat andLongitude:(double)lng OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSString;
+@class NSDate;
+
+SWIFT_CLASS("_TtC17MoEngageAnalytics18MoEngageProperties")
+@interface MoEngageProperties : NSObject
+- (nonnull instancetype)initWithAttributes:(NSDictionary<NSString *, id> * _Nullable)attributesDict OBJC_DESIGNATED_INITIALIZER;
+- (void)updateAttributesWithPluginPayload:(NSDictionary<NSString *, id> * _Nullable)payloadDict;
+- (void)addAttribute:(id _Nullable)attrVal withName:(NSString * _Nonnull)attrName;
+- (void)addLocationAttribute:(MoEngageGeoLocation * _Nonnull)attrVal withName:(NSString * _Nonnull)attrName;
+- (void)addDateAttribute:(NSDate * _Nonnull)attrVal withName:(NSString * _Nonnull)attrName;
+- (void)addDateISOStringAttribute:(NSString * _Nonnull)dateString withName:(NSString * _Nonnull)attrName;
+- (void)addDateEpochAttribute:(double)epoch withName:(NSString * _Nonnull)attrName;
+- (void)setNonInteractive;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSURL;
+enum MoEngageUserGender : NSInteger;
+
+SWIFT_CLASS("_TtC17MoEngageAnalytics20MoEngageSDKAnalytics")
+@interface MoEngageSDKAnalytics : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKAnalytics * _Nonnull sharedInstance;)
++ (MoEngageSDKAnalytics * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 /// Method to update SDK version
 - (void)trackSDKVersion;
 - (void)updateSessionSourceWithPushPayload:(NSDictionary * _Nonnull)payload fromMoEngage:(BOOL)isMoEngagePush;
@@ -1329,20 +1357,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 - (void)processURL:(NSURL * _Nullable)url;
 - (void)pushTokenUpdated;
 /// Method to set app status
-/// \param appStatus AppStatus
+/// \param appStatus MoEngageAppStatus
 ///
 /// \param appID optional account identifier.
 ///
-- (void)appStatus:(enum AppStatus)appStatus forAppID:(NSString * _Nullable)appID;
+- (void)appStatus:(enum MoEngageAppStatus)appStatus forAppID:(NSString * _Nullable)appID;
 /// Method to track Event for account
 /// \param name event name
 ///
-/// \param properties MOProperties
+/// \param properties MoEngageProperties
 ///
 /// \param appID optional account identifier.
 ///
-- (void)trackEvent:(NSString * _Nonnull)name withProperties:(MOProperties * _Nullable)properties forAppID:(NSString * _Nullable)appID;
-- (void)trackEvent:(NSString * _Nonnull)name withProperties:(MOProperties * _Nullable)properties;
+- (void)trackEvent:(NSString * _Nonnull)name withProperties:(MoEngageProperties * _Nullable)properties forAppID:(NSString * _Nullable)appID;
+- (void)trackEvent:(NSString * _Nonnull)name withProperties:(MoEngageProperties * _Nullable)properties;
 /// Method to flush events for account
 /// \param appID optional account identifier.
 ///
@@ -1397,14 +1425,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 - (void)setUserAttributeISODate:(NSString * _Nonnull)dateString withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
 - (void)setUserAttributeISODate:(NSString * _Nonnull)dateString withAttributeName:(NSString * _Nonnull)attributeName;
 /// Method to set custom user location
-/// \param location MOGeoLocation instance
+/// \param location MoEngageGeoLocation instance
 ///
 /// \param attributeName attribute name
 ///
 /// \param appID optional account identifier.
 ///
-- (void)setLocation:(MOGeoLocation * _Nonnull)location withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
-- (void)setLocation:(MOGeoLocation * _Nonnull)location withAttributeName:(NSString * _Nonnull)attributeName;
+- (void)setLocation:(MoEngageGeoLocation * _Nonnull)location withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+- (void)setLocation:(MoEngageGeoLocation * _Nonnull)location withAttributeName:(NSString * _Nonnull)attributeName;
 /// Method to set alias
 /// \param alias alias value
 ///
@@ -1455,12 +1483,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 - (void)setMobileNumber:(NSString * _Nonnull)mobileNum forAppID:(NSString * _Nullable)appID;
 - (void)setMobileNumber:(NSString * _Nonnull)mobileNum;
 /// Method to set gender
-/// \param gender UserGender value
+/// \param gender MoEngageUserGender value
 ///
 /// \param appID optional account identifier.
 ///
-- (void)setGender:(enum UserGender)gender forAppID:(NSString * _Nullable)appID;
-- (void)setGender:(enum UserGender)gender;
+- (void)setGender:(enum MoEngageUserGender)gender forAppID:(NSString * _Nullable)appID;
+- (void)setGender:(enum MoEngageUserGender)gender;
 /// Method to set user date of birth
 /// \param dob Date
 ///
@@ -1479,12 +1507,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 ///
 - (void)setDateOfBirthInISO:(NSString * _Nonnull)dateString;
 /// Method to set user location
-/// \param location MOGeoLocation instance
+/// \param location MoEngageGeoLocation instance
 ///
 /// \param appID optional account identifier.
 ///
-- (void)setLocation:(MOGeoLocation * _Nonnull)location forAppID:(NSString * _Nullable)appID;
-- (void)setLocation:(MOGeoLocation * _Nonnull)location;
+- (void)setLocation:(MoEngageGeoLocation * _Nonnull)location forAppID:(NSString * _Nullable)appID;
+- (void)setLocation:(MoEngageGeoLocation * _Nonnull)location;
 /// Method to track user attribute push preference
 /// \param isPushEnabled Bool
 ///
@@ -1536,43 +1564,26 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOAnalytics 
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSCoder;
 
-SWIFT_CLASS("_TtC17MoEngageAnalytics15MOAnalyticsData")
-@interface MOAnalyticsData : NSObject <NSCoding>
+SWIFT_CLASS("_TtC17MoEngageAnalytics15MoEngageSession")
+@interface MoEngageSession : NSObject <NSCoding>
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC17MoEngageAnalytics19MoEngageSessionInfo")
+@interface MoEngageSessionInfo : NSObject <NSCoding>
 - (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-SWIFT_CLASS("_TtC17MoEngageAnalytics13MOGeoLocation")
-@interface MOGeoLocation : NSObject
-@property (nonatomic) double latitude;
-@property (nonatomic) double longitude;
-- (nonnull instancetype)initWithLatitude:(double)lat andLongitude:(double)lng OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC17MoEngageAnalytics12MOProperties")
-@interface MOProperties : NSObject
-- (nonnull instancetype)initWithAttributes:(NSDictionary<NSString *, id> * _Nullable)attributesDict OBJC_DESIGNATED_INITIALIZER;
-- (void)updateAttributesWithPluginPayload:(NSDictionary<NSString *, id> * _Nullable)payloadDict;
-- (void)addAttribute:(id _Nullable)attrVal withName:(NSString * _Nonnull)attrName;
-- (void)addLocationAttribute:(MOGeoLocation * _Nonnull)attrVal withName:(NSString * _Nonnull)attrName;
-- (void)addDateAttribute:(NSDate * _Nonnull)attrVal withName:(NSString * _Nonnull)attrName;
-- (void)addDateISOStringAttribute:(NSString * _Nonnull)dateString withName:(NSString * _Nonnull)attrName;
-- (void)addDateEpochAttribute:(double)epoch withName:(NSString * _Nonnull)attrName;
-- (void)setNonInteractive;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC17MoEngageAnalytics9MOSession")
-@interface MOSession : NSObject <NSCoding>
+SWIFT_CLASS("_TtC17MoEngageAnalytics14MoEngageSource")
+@interface MoEngageSource : NSObject <NSCoding>
 - (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1580,25 +1591,8 @@ SWIFT_CLASS("_TtC17MoEngageAnalytics9MOSession")
 @end
 
 
-SWIFT_CLASS("_TtC17MoEngageAnalytics13MOSessionInfo")
-@interface MOSessionInfo : NSObject <NSCoding>
-- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC17MoEngageAnalytics8MOSource")
-@interface MOSource : NSObject <NSCoding>
-- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC17MoEngageAnalytics15MOUserAttribute")
-@interface MOUserAttribute : NSObject <NSCoding>
+SWIFT_CLASS("_TtC17MoEngageAnalytics21MoEngageUserAttribute")
+@interface MoEngageUserAttribute : NSObject <NSCoding>
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)decoder OBJC_DESIGNATED_INITIALIZER;
 - (void)encodeWithCoder:(NSCoder * _Nonnull)encoder;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1606,26 +1600,26 @@ SWIFT_CLASS("_TtC17MoEngageAnalytics15MOUserAttribute")
 @end
 
 
-SWIFT_CLASS("_TtC17MoEngageAnalytics20MOUserAttributesData")
-@interface MOUserAttributesData : NSObject <NSCoding>
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)decoder OBJC_DESIGNATED_INITIALIZER;
-- (void)encodeWithCoder:(NSCoder * _Nonnull)encoder;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC17MoEngageAnalytics19UserAttributeEntity")
-@interface UserAttributeEntity : NSObject <NSCoding>
+SWIFT_CLASS("_TtC17MoEngageAnalytics27MoEngageUserAttributeEntity")
+@interface MoEngageUserAttributeEntity : NSObject <NSCoding>
 - (void)encodeWithCoder:(NSCoder * _Nonnull)coder;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, UserGender, open) {
-  UserGenderMale = 0,
-  UserGenderFemale = 1,
-  UserGenderOthers = 2,
+
+SWIFT_CLASS("_TtC17MoEngageAnalytics26MoEngageUserAttributesData")
+@interface MoEngageUserAttributesData : NSObject <NSCoding>
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)decoder OBJC_DESIGNATED_INITIALIZER;
+- (void)encodeWithCoder:(NSCoder * _Nonnull)encoder;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+typedef SWIFT_ENUM(NSInteger, MoEngageUserGender, open) {
+  MoEngageUserGenderMale = 0,
+  MoEngageUserGenderFemale = 1,
+  MoEngageUserGenderOthers = 2,
 };
 
 #if __has_attribute(external_source_symbol)
