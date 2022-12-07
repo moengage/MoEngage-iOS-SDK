@@ -17,8 +17,9 @@ FOUNDATION_EXPORT const unsigned char MoEngageObjCUtilsTvOSVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <MoEngageObjCUtilsTvOS/PublicHeader.h>
 
 
-#import <MoEngageObjCUtils/MOAppDelegateSwizzler.h>
-#import <MoEngageObjCUtils/MOAppDelegateProxy.h>
-#import <MoEngageObjCUtils/MOObjCUtils.h>
-#import <MoEngageObjCUtils/NSDictionary+MOExtension.h>
-#import <MoEngageObjCUtils/NSMutableDictionary+MOExtension.h>
+#import <MoEngageObjCUtils/MoEngageAppDelegateSwizzler.h>
+#import <MoEngageObjCUtils/MoEngageAppDelegateProxy.h>
+#import <MoEngageObjCUtils/MoEngageObjCUtils.h>
+#import <MoEngageObjCUtils/MoEngageProxyUtils.h>
+#import <MoEngageObjCUtils/NSDictionary+MoEngageExtension.h>
+#import <MoEngageObjCUtils/NSMutableDictionary+MoEngageExtension.h>

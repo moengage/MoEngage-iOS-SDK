@@ -14,9 +14,9 @@ FOUNDATION_EXPORT double MoEngageObjCUtilsVersionNumber;
 //! Project version string for MoEngageObjCUtils.
 FOUNDATION_EXPORT const unsigned char MoEngageObjCUtilsVersionString[];
 
-#import <MoEngageObjCUtils/MOAppDelegateSwizzler.h>
-#import <MoEngageObjCUtils/MOAppDelegateProxy.h>
-#import <MoEngageObjCUtils/MOObjCUtils.h>
-#import <MoEngageObjCUtils/NSDictionary+MOExtension.h>
-#import <MoEngageObjCUtils/NSMutableDictionary+MOExtension.h>
+#import <MoEngageObjCUtils/MoEngageAppDelegateSwizzler.h>
+#import <MoEngageObjCUtils/MoEngageAppDelegateProxy.h>
+#import <MoEngageObjCUtils/MoEngageProxyUtils.h>
+#import <MoEngageObjCUtils/NSDictionary+MoEngageExtension.h>
+#import <MoEngageObjCUtils/NSMutableDictionary+MoEngageExtension.h>
 #import <MoEngageObjCUtils/MoEngageMutableDictionary.h>

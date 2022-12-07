@@ -215,37 +215,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-@protocol MOMessagingDelegate;
 @class NSString;
-@class UNNotificationCategory;
-@protocol UNUserNotificationCenterDelegate;
-@class NSData;
-@class UNUserNotificationCenter;
-@class UNNotification;
-@class UIApplication;
+@class NSObject;
 
-SWIFT_CLASS("_TtC17MoEngageMessaging11MOMessaging")
-@interface MOMessaging : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MOMessaging * _Nonnull sharedInstance;)
-+ (MOMessaging * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)setMessagingDelegate:(id <MOMessagingDelegate> _Nullable)delegate forAppID:(NSString * _Nullable)appID;
-- (void)registerForRemoteNotificationWithCategories:(NSSet<UNNotificationCategory *> * _Nullable)categories andUserNotificationCenterDelegate:(id <UNUserNotificationCenterDelegate> _Nullable)delegate SWIFT_AVAILABILITY(tvos,unavailable);
-- (void)setUserNotificationCategories:(NSSet<UNNotificationCategory *> * _Nullable)categories SWIFT_AVAILABILITY(tvos,unavailable);
-- (void)setPushToken:(NSData * _Nullable)deviceToken;
-- (void)didFailToRegisterForPush;
-- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresent:(UNNotification * _Nonnull)notification;
-- (void)didReceieveNotificationInApplication:(UIApplication * _Nullable)application withInfo:(NSDictionary * _Nonnull)pushPayload;
-- (void)processWithNotificationPayload:(NSDictionary * _Nonnull)pushPayload forInstanceID:(NSString * _Nonnull)instanceID;
-- (void)disableBadgeReset;
-+ (BOOL)isMoEngageSilentPushAppLaunchWithLaunchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(tvos,unavailable);
-- (NSString * _Nullable)getPushToken SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-SWIFT_PROTOCOL("_TtP17MoEngageMessaging19MOMessagingDelegate_")
-@protocol MOMessagingDelegate
+SWIFT_PROTOCOL("_TtP17MoEngageMessaging25MoEngageMessagingDelegate_")
+@protocol MoEngageMessagingDelegate
 @optional
 - (void)notificationRegisteredWithDeviceToken:(NSString * _Nonnull)deviceToken;
 - (void)notificationClickedWithScreenName:(NSString * _Nullable)screenName andKVPairs:(NSDictionary * _Nullable)kvPairs;
@@ -255,10 +229,36 @@ SWIFT_PROTOCOL("_TtP17MoEngageMessaging19MOMessagingDelegate_")
 @end
 
 
-SWIFT_CLASS("_TtC17MoEngageMessaging16MOMessagingUtils")
-@interface MOMessagingUtils : NSObject
+SWIFT_CLASS("_TtC17MoEngageMessaging22MoEngageMessagingUtils")
+@interface MoEngageMessagingUtils : NSObject
 + (NSString * _Nullable)getAppIDFromNotificationPayload:(NSDictionary * _Nonnull)userInfo SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UNNotificationCategory;
+@protocol UNUserNotificationCenterDelegate;
+@class NSData;
+@class UNUserNotificationCenter;
+@class UNNotification;
+@class UIApplication;
+
+SWIFT_CLASS("_TtC17MoEngageMessaging20MoEngageSDKMessaging")
+@interface MoEngageSDKMessaging : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKMessaging * _Nonnull sharedInstance;)
++ (MoEngageSDKMessaging * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setMessagingDelegate:(id <MoEngageMessagingDelegate> _Nullable)delegate forAppID:(NSString * _Nullable)appID;
+- (void)registerForRemoteNotificationWithCategories:(NSSet<UNNotificationCategory *> * _Nullable)categories andUserNotificationCenterDelegate:(id <UNUserNotificationCenterDelegate> _Nullable)delegate SWIFT_AVAILABILITY(tvos,unavailable);
+- (void)setUserNotificationCategories:(NSSet<UNNotificationCategory *> * _Nullable)categories SWIFT_AVAILABILITY(tvos,unavailable);
+- (void)setPushToken:(NSData * _Nullable)deviceToken;
+- (void)didFailToRegisterForPush;
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresent:(UNNotification * _Nonnull)notification;
+- (void)didReceieveNotificationInApplication:(UIApplication * _Nullable)application withInfo:(NSDictionary * _Nonnull)pushPayload;
+- (void)processWithNotificationPayload:(NSDictionary * _Nonnull)pushPayload forInstanceID:(NSString * _Nonnull)instanceID;
+- (void)disableBadgeReset:(BOOL)disable;
++ (BOOL)isMoEngageSilentPushAppLaunchWithLaunchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(tvos,unavailable);
+- (NSString * _Nullable)getPushToken SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #if __has_attribute(external_source_symbol)

@@ -35,7 +35,7 @@ Login to your MoEngage account, go to **Settings** in the left panel of the dash
     - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
         //Create a config object
-        MOSDKConfig *sdkConfig = [[MOSDKConfig alloc] initWithAppID:@"Your APP ID"];
+        MoEngageSDKConfig *sdkConfig = [[MoEngageSDKConfig alloc] initWithAppID:@"Your APP ID"];
         
         // Separate initialization methods for Test and Live Environments
         #ifdef DEBUG
@@ -53,7 +53,7 @@ Login to your MoEngage account, go to **Settings** in the left panel of the dash
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:     [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
         //Create a config object
-        let sdkConfig = MOSDKConfig.init(appID: "Your APP ID")
+        let sdkConfig = MoEngageSDKConfig.init(appID: "Your APP ID")
         
         // Separate initialization methods for Test and Live Environments
         #if DEBUG

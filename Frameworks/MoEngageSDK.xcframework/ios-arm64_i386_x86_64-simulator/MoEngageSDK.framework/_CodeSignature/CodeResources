@@ -6,31 +6,67 @@
 	<dict>
 		<key>CHANGELOG.md</key>
 		<data>
-		KX/YpUY5wmsIQtez7dWNecX3IWw=
+		VAX6nMSdZbQITkVkj+Pi7rpWWDE=
 		</data>
-		<key>Headers/MoEngage.h</key>
+		<key>Headers/MoEngageSDK-Swift.h</key>
 		<data>
-		P1i1AP2eBDODEcPrRY4VRyZ9xng=
+		6zQm2CBEK6RP2LX8F5pIJcSH8Mg=
 		</data>
 		<key>Headers/MoEngageSDK.h</key>
 		<data>
-		mCffm1bNR3e8hVSbzDyI5/9i5Sg=
+		2ae+xcZKdceh8D7f1CL33GO7FrI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GbsIAIKvxPR80pGWX0J26MngnmA=
+		NIxrV7xBROrJw4a6KKDu/J73KCM=
 		</data>
 		<key>LICENSE</key>
 		<data>
 		ih5AQhHYR6MqQ2cinlT1HtiVYGQ=
 		</data>
+		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		cG33RlYfqtSlt/UR3U8/9G6sjuM=
+		</data>
+		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		iDlsnbS2BY8P9VAqt8z2lcMULGY=
+		</data>
+		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		lrL3JfEli5Uo/eAHYrTdrCwDWH8=
+		</data>
+		<key>Modules/MoEngageSDK.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
+		<data>
+		oy11cjRDzmESdHDn0FmAzIS6KEI=
+		</data>
+		<key>Modules/MoEngageSDK.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
+		<data>
+		VGNIDpWJWBEUNayFXmAAdBq5GnY=
+		</data>
+		<key>Modules/MoEngageSDK.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
+		<data>
+		XIPPvLulvcnU/cfUMAo7pFtVZ7Q=
+		</data>
+		<key>Modules/MoEngageSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		7zz0RHSCRIO1KHNr5QyUmISwBe8=
+		</data>
+		<key>Modules/MoEngageSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		3JUTdnN1bYc7zyxeQ9/clUuDOM8=
+		</data>
+		<key>Modules/MoEngageSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		S4bK9Uek4NIK+0DrisMMW3ieO0o=
+		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		H3DIX+WJo5dE7sOrhhIGNQuCc0k=
+		+/pPdtzCi5nob/jB3qdRYy61s0o=
 		</data>
 		<key>README.md</key>
 		<data>
-		aecQGyeuKip8hO7filrV5CNXgYM=
+		sw/jOj41AqrocG11p4UuIman+04=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -39,33 +75,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KX/YpUY5wmsIQtez7dWNecX3IWw=
+			VAX6nMSdZbQITkVkj+Pi7rpWWDE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ofVcaAbvRu2ON/JXfTJkzzJn1j67oP4nTt2IkOXC7Ps=
+			1Kh/DQLy7XfQJTccRjOQHtzfXCOin5jOQOvWmEBT944=
 			</data>
 		</dict>
-		<key>Headers/MoEngage.h</key>
+		<key>Headers/MoEngageSDK-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			P1i1AP2eBDODEcPrRY4VRyZ9xng=
+			6zQm2CBEK6RP2LX8F5pIJcSH8Mg=
 			</data>
 			<key>hash2</key>
 			<data>
-			cLBmKOSPX9dTjD39fEsrweHKSRUNOYhJ1QsgCqgbuiA=
+			43wn2SiA27zdRCzyJMNRTOhKgwxwL+PzLO9B6XlmHWc=
 			</data>
 		</dict>
 		<key>Headers/MoEngageSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mCffm1bNR3e8hVSbzDyI5/9i5Sg=
+			2ae+xcZKdceh8D7f1CL33GO7FrI=
 			</data>
 			<key>hash2</key>
 			<data>
-			dKdEIoA5qBDci4cHFKib06KzDAD9hgQ39czbkq1fOxM=
+			M+p/EKCTUZFTrtPEEvtL9etQ2awnkHGwoFw7IjKAXHc=
 			</data>
 		</dict>
 		<key>LICENSE</key>
@@ -79,26 +115,125 @@
 			DHxoqa3SWsSeiRWX4o3nIP0kO6sTBMPVanytCdzu7ME=
 			</data>
 		</dict>
+		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cG33RlYfqtSlt/UR3U8/9G6sjuM=
+			</data>
+			<key>hash2</key>
+			<data>
+			3C5IUUbOpv4JIjtVB8saQoUHq2SXvn4V61fGVhUJtF8=
+			</data>
+		</dict>
+		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iDlsnbS2BY8P9VAqt8z2lcMULGY=
+			</data>
+			<key>hash2</key>
+			<data>
+			HiuzpTm684aJBPMpXyv6DtJeufn9GzGybFzoSe1Vs3c=
+			</data>
+		</dict>
+		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lrL3JfEli5Uo/eAHYrTdrCwDWH8=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ia5nM7kOtdrdjjrMUurhexBxVSDuFhiiuNggog2Bfso=
+			</data>
+		</dict>
+		<key>Modules/MoEngageSDK.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oy11cjRDzmESdHDn0FmAzIS6KEI=
+			</data>
+			<key>hash2</key>
+			<data>
+			rMOg4Mb5udDWULd+iK9+shTIAcMM1jPoJ2fiaQsTADk=
+			</data>
+		</dict>
+		<key>Modules/MoEngageSDK.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VGNIDpWJWBEUNayFXmAAdBq5GnY=
+			</data>
+			<key>hash2</key>
+			<data>
+			HBk8wO/Ze/Xhwq9U5MVO6BpkrI1OhaTEI+xpgOyA3gg=
+			</data>
+		</dict>
+		<key>Modules/MoEngageSDK.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XIPPvLulvcnU/cfUMAo7pFtVZ7Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			kB+6DfUjIh6UaHATieicQwMjbb0YnvvWNXeAGq/jQt8=
+			</data>
+		</dict>
+		<key>Modules/MoEngageSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7zz0RHSCRIO1KHNr5QyUmISwBe8=
+			</data>
+			<key>hash2</key>
+			<data>
+			XRiz5hhKJZthYxF4mzu7zA94qQcRFvmg5NEm6rNNgYo=
+			</data>
+		</dict>
+		<key>Modules/MoEngageSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3JUTdnN1bYc7zyxeQ9/clUuDOM8=
+			</data>
+			<key>hash2</key>
+			<data>
+			9IJDPHUQrPLQbXXDuuYhW6m4dsQEa1LiaoHiIi5u/js=
+			</data>
+		</dict>
+		<key>Modules/MoEngageSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S4bK9Uek4NIK+0DrisMMW3ieO0o=
+			</data>
+			<key>hash2</key>
+			<data>
+			r2ji4uwCFrUmdFs6J/2N74xTh1M6JXlGc2cNFhl/N1Q=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			H3DIX+WJo5dE7sOrhhIGNQuCc0k=
+			+/pPdtzCi5nob/jB3qdRYy61s0o=
 			</data>
 			<key>hash2</key>
 			<data>
-			RxqOA6logKvxr2Y71mFaXMEE5bh4G9JPhP+TOoYB0q4=
+			pZGNcI4DKeyntMP2H8UefNKrax7bbbsi3Sr8SpYdYmg=
 			</data>
 		</dict>
 		<key>README.md</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aecQGyeuKip8hO7filrV5CNXgYM=
+			sw/jOj41AqrocG11p4UuIman+04=
 			</data>
 			<key>hash2</key>
 			<data>
-			dRgEK9wFxSTJ158UU9tmYjn2v2W4uf6bC8dx1172cz4=
+			+GfcHl+vd38PDoTBpMsK6dFtA47vd4FdPIPP4/EWiZg=
 			</data>
 		</dict>
 	</dict>
