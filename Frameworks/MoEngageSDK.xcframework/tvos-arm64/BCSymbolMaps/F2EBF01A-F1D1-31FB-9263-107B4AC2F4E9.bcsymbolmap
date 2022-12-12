@@ -1,0 +1,143 @@
+BCSymbolMap Version: 2.0
+Apple clang version 13.1.6 (clang-1316.0.21.2.5)
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk
+AppleTVOS15.4.sdk
+/Users/deepa/Library/Developer/Xcode/DerivedData/MoEngage-ddoehuamaaipxyddvinbjltvhjaz/Build/Intermediates.noindex/ArchiveIntermediates/MoEngageSDKTvOS/IntermediateBuildFilesPath/MoEngage.build/Release-appletvos/MoEngageSDKTvOS.build/DerivedSources/MoEngageSDK_vers.c
+/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage
++[MoEngage sharedInstance]
+___26+[MoEngage sharedInstance]_block_invoke
+-[MoEngage initializeTestWithConfig:andLaunchOptions:]
+-[MoEngage initializeDefaultTestInstanceWithConfig:andSDKState:]
+-[MoEngage initializeDefaultTestInstanceWithConfig:andLaunchOptions:]
+-[MoEngage initializeTestInstanceWithConfig:andLaunchOptions:]
+-[MoEngage initializeTestInstanceWithConfig:andSDKState:]
+-[MoEngage initializeLiveWithConfig:andLaunchOptions:]
+-[MoEngage initializeDefaultLiveInstanceWithConfig:andLaunchOptions:]
+-[MoEngage initializeDefaultLiveInstanceWithConfig:andSDKState:]
+-[MoEngage initializeLiveInstanceWithConfig:andLaunchOptions:]
+-[MoEngage initializeLiveInstanceWithConfig:andSDKState:]
+-[MoEngage setupSDKWithConfig:isDefaultInstance:withSDKState:andLaunchOptions:]
+___79-[MoEngage setupSDKWithConfig:isDefaultInstance:withSDKState:andLaunchOptions:]_block_invoke
+___79-[MoEngage setupSDKWithConfig:isDefaultInstance:withSDKState:andLaunchOptions:]_block_invoke_2
+___copy_helper_block_e8_32s
+___destroy_helper_block_e8_32s
+___copy_helper_block_e8_32s40s
+___destroy_helper_block_e8_32s40s
+-[MoEngage setUserUniqueID:]
+-[MoEngage setUserEmailID:]
+-[MoEngage setUserName:]
+-[MoEngage setUserFirstName:]
+-[MoEngage setUserLastName:]
+-[MoEngage setUserMobileNo:]
+-[MoEngage setUserGender:]
+-[MoEngage setUserDateOfBirth:]
+-[MoEngage setUserLocation:]
+-[MoEngage setUserAttributeTimestamp:forKey:]
+-[MoEngage setUserAttributeDate:forKey:]
+-[MoEngage setUserAttributeISODateString:forKey:]
+-[MoEngage setUserAttributeLocation:forKey:]
+-[MoEngage trackUserPushPreference:]
+-[MoEngage trackUserPushPreference:forAppID:]
+-[MoEngage appStatus:]
+-[MoEngage appStatus:forAppID:]
+-[MoEngage processURL:]
++[MoEngage enableSDKLogs:]
++[MoEngage enableSDKLogs:forAppID:]
++[MoEngage enableDefaultConsoleLogger:]
+-[MoEngage dismissRichLandingWebViewControllerWithAnimation:]
+-[MoEngage enableSDK]
+-[MoEngage disableSDK]
+-[MoEngage enableSDKForAppID:]
+___30-[MoEngage enableSDKForAppID:]_block_invoke
+-[MoEngage disableSDKForAppID:]
+___31-[MoEngage disableSDKForAppID:]_block_invoke
+-[MoEngage disableSDK:]
+-[MoEngage enableSDK:]
+-[MoEngage handleDisableSDK:]
+-[MoEngage handleEnableSDK:]
+-[MoEngage updateModulesOnSDKStatusChangeforInstanceID:]
+___56-[MoEngage updateModulesOnSDKStatusChangeforInstanceID:]_block_invoke
+-[MoEngage getDefaultSDKConfiguration]
+-[MoEngage getSDKConfigurationForAppID:]
+_sharedInstance.onceToken
+_sharedInstance.instance
+___block_descriptor_32_e5_v8?0l
+___block_literal_global
+_OBJC_CLASSLIST_REFERENCES_$_
+_OBJC_SELECTOR_REFERENCES_
+_OBJC_SELECTOR_REFERENCES_.2
+_OBJC_SELECTOR_REFERENCES_.4
+_OBJC_SELECTOR_REFERENCES_.6
+_OBJC_CLASSLIST_REFERENCES_$_.7
+_OBJC_SELECTOR_REFERENCES_.9
+_OBJC_CLASSLIST_REFERENCES_$_.10
+_OBJC_SELECTOR_REFERENCES_.12
+_OBJC_SELECTOR_REFERENCES_.14
+_OBJC_CLASSLIST_REFERENCES_$_.15
+_OBJC_SELECTOR_REFERENCES_.17
+_OBJC_SELECTOR_REFERENCES_.19
+_OBJC_SELECTOR_REFERENCES_.21
+_OBJC_SELECTOR_REFERENCES_.23
+___block_descriptor_48_e8_32s_e34_v16?0"_TtC6MOCore11SdkInstance"8l
+_OBJC_SELECTOR_REFERENCES_.26
+___block_descriptor_57_e8_32s40s_e5_v8?0l
+_OBJC_CLASSLIST_REFERENCES_$_.27
+_OBJC_SELECTOR_REFERENCES_.30
+_OBJC_SELECTOR_REFERENCES_.34
+_OBJC_SELECTOR_REFERENCES_.36
+_OBJC_SELECTOR_REFERENCES_.38
+_OBJC_SELECTOR_REFERENCES_.40
+_OBJC_SELECTOR_REFERENCES_.42
+_OBJC_SELECTOR_REFERENCES_.44
+_OBJC_SELECTOR_REFERENCES_.46
+_OBJC_SELECTOR_REFERENCES_.48
+_OBJC_SELECTOR_REFERENCES_.50
+_OBJC_SELECTOR_REFERENCES_.52
+_OBJC_SELECTOR_REFERENCES_.54
+_OBJC_SELECTOR_REFERENCES_.56
+_OBJC_SELECTOR_REFERENCES_.58
+_OBJC_SELECTOR_REFERENCES_.60
+_OBJC_SELECTOR_REFERENCES_.62
+_OBJC_SELECTOR_REFERENCES_.64
+_OBJC_SELECTOR_REFERENCES_.66
+_OBJC_SELECTOR_REFERENCES_.68
+_OBJC_SELECTOR_REFERENCES_.70
+_OBJC_SELECTOR_REFERENCES_.72
+_OBJC_SELECTOR_REFERENCES_.74
+_OBJC_SELECTOR_REFERENCES_.76
+_OBJC_SELECTOR_REFERENCES_.78
+_OBJC_CLASSLIST_REFERENCES_$_.79
+_OBJC_SELECTOR_REFERENCES_.81
+___block_descriptor_40_e8_32s_e34_v16?0"_TtC6MOCore11SdkInstance"8l
+_OBJC_SELECTOR_REFERENCES_.83
+_OBJC_SELECTOR_REFERENCES_.85
+_OBJC_SELECTOR_REFERENCES_.87
+_OBJC_SELECTOR_REFERENCES_.89
+_OBJC_SELECTOR_REFERENCES_.91
+_OBJC_SELECTOR_REFERENCES_.93
+_OBJC_SELECTOR_REFERENCES_.95
+_OBJC_SELECTOR_REFERENCES_.97
+___block_descriptor_32_e34_v16?0"_TtC6MOCore11SdkInstance"8l
+___block_literal_global.98
+_OBJC_CLASSLIST_REFERENCES_$_.99
+_OBJC_SELECTOR_REFERENCES_.101
+_OBJC_CLASSLIST_REFERENCES_$_.102
+_OBJC_SELECTOR_REFERENCES_.104
+_OBJC_SELECTOR_REFERENCES_.106
+__OBJC_$_CLASS_METHODS_MoEngage
+__OBJC_METACLASS_RO_$_MoEngage
+__OBJC_$_INSTANCE_METHODS_MoEngage
+__OBJC_CLASS_RO_$_MoEngage
+/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageSDK/MoEngage.m
+MoEngageSDK/MoEngage.m
+__56-[MoEngage updateModulesOnSDKStatusChangeforInstanceID:]_block_invoke
+__31-[MoEngage disableSDKForAppID:]_block_invoke
+__30-[MoEngage enableSDKForAppID:]_block_invoke
+__destroy_helper_block_e8_32s40s
+__copy_helper_block_e8_32s40s
+__destroy_helper_block_e8_32s
+__copy_helper_block_e8_32s
+__79-[MoEngage setupSDKWithConfig:isDefaultInstance:withSDKState:andLaunchOptions:]_block_invoke_2
+__79-[MoEngage setupSDKWithConfig:isDefaultInstance:withSDKState:andLaunchOptions:]_block_invoke
+__26+[MoEngage sharedInstance]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk/usr/include/dispatch/once.h
