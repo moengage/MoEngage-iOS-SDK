@@ -20,7 +20,7 @@ import _Concurrency
   @objc public init(withSDKConfig sdkConfig: MOCore.MOSDKConfig)
   @objc public func execute(completionHandler: @escaping MOCore.completionHandler)
   @objc public func execute(withCompletionBlockWithResponseCode completionBlock: @escaping MOCore.completionHandlerWithResponseCode)
-  public func downloadResources(_ resourceURL: Foundation.URL, completionHandler: @escaping MOCore.richNotificationCompletionHandler)
+  public func downloadResources(resource: MOCore.MoEngageRichNotificationResource, completionHandler: @escaping MOCore.richNotificationCompletionHandler)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class InboxManager : ObjectiveC.NSObject {
@@ -486,7 +486,7 @@ extension MOCore.MONetworkReachability {
 extension MOCore.MONetworkClient : MOCore.NetworkRequestProtocol {
   @objc dynamic public func executeRequest(_ request: Foundation.URLRequest, forSdkConfig sdkConfig: MOCore.MOSDKConfig, withConfigController configController: MOCore.SdkInstance, completionHandler: @escaping (MOCore.completionHandlerWithResponseCode))
   @objc dynamic public func downloadImageURL(_ imageURL: Foundation.URL, forSdkConfig sdkConfig: MOCore.MOSDKConfig, dataCompletionHandler: @escaping (MOCore.dataCompletionHandler))
-  public func downloadResource(_ resourceURL: Foundation.URL, completionHandler: @escaping MOCore.richNotificationCompletionHandler)
+  public func downloadResource(resource: MOCore.MoEngageRichNotificationResource, completionHandler: @escaping MOCore.richNotificationCompletionHandler)
 }
 @_hasMissingDesignatedInitializers public class MOLoggerCoordinator {
   public static let sharedInstance: MOCore.MOLoggerCoordinator
@@ -517,6 +517,11 @@ extension MOCore.MONetworkClient : MOCore.NetworkRequestProtocol {
   @objc public init(withEventName name: Swift.String, andConditionDict conditionDict: Swift.Dictionary<Swift.String, Any>)
   @objc public func checkConditionSatisfied(forEvent event: Swift.String, andAttributesPayload attributesPayload: Swift.Dictionary<Swift.String, Any>) -> Swift.Bool
   @objc deinit
+}
+public struct MoEngageRichNotificationResource {
+  public var resourceURL: Foundation.URL
+  public var id: Swift.Int
+  public init(resourceURL: Foundation.URL, id: Swift.Int? = nil)
 }
 @_hasMissingDesignatedInitializers @objc public class SdkInstance : ObjectiveC.NSObject {
   @objc public var sdkConfig: MOCore.MOSDKConfig {
@@ -698,7 +703,7 @@ extension UIKit.UIImageView {
 public typealias completionHandler = ((Swift.Bool, [Swift.AnyHashable : Any]?) -> Swift.Void)
 public typealias completionHandlerWithResponseCode = ((Swift.Bool, Swift.Int, [Swift.AnyHashable : Any]?) -> Swift.Void)
 public typealias dataCompletionHandler = ((Swift.Bool, Foundation.Data?) -> Swift.Void)
-public typealias richNotificationCompletionHandler = ((Foundation.URL?) -> Swift.Void)
+public typealias richNotificationCompletionHandler = ((_ tempURL: Foundation.URL?, _ resource: MOCore.MoEngageRichNotificationResource?) -> Swift.Void)
 @objc public protocol NetworkRequestProtocol {
   @objc func executeRequest(_ request: Foundation.URLRequest, forSdkConfig sdkConfig: MOCore.MOSDKConfig, withConfigController configController: MOCore.SdkInstance, completionHandler: @escaping (MOCore.completionHandlerWithResponseCode))
   @objc func downloadImageURL(_ imageURL: Foundation.URL, forSdkConfig sdkConfig: MOCore.MOSDKConfig, dataCompletionHandler: @escaping (MOCore.dataCompletionHandler))

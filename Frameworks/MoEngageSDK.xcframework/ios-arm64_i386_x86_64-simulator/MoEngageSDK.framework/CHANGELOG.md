@@ -2,6 +2,10 @@
 =================================
 
 ## Changelog:
+### Version 8.5.0 *(12th December, 2022)*
+-------------------------------------------
+* BugFix - Carousel Image Order Mismatch in collapsed mode for rich notifications.
+
 ### Version 8.4.3 *(1st December, 2022)*
 -------------------------------------------
 * Added DC-04 support.
