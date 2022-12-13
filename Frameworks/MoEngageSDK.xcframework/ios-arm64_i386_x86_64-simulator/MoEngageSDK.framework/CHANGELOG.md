@@ -2,6 +2,11 @@
 =================================
 
 ## Changelog:
+### Version 9.1.0 *(13th December, 2022)*
+-------------------------------------------
+* BugFix - Handling the logic to discard RichLanding action if the url does not start with `http:` or `https:`.
+* CrashFix - Carousel Image Order Mismatch in collapsed mode for rich notifications.
+
 ### Version 9.0.0 *(7th December, 2022)*
 -------------------------------------------
 * Migrated MoEngageSDK from Objective-C to Swift
