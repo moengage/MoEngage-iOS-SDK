@@ -14,7 +14,7 @@ import _Concurrency
   @objc public init(withSDKConfig sdkConfig: MoEngageCore.MoEngageSDKConfig)
   @objc public func execute(completionHandler: @escaping MoEngageCore.completionHandler)
   @objc public func execute(withCompletionBlockWithResponseCode completionBlock: @escaping MoEngageCore.completionHandlerWithResponseCode)
-  public func downloadResources(_ resourceURL: Foundation.URL, completionHandler: @escaping MoEngageCore.richNotificationCompletionHandler)
+  public func downloadResources(resource: MoEngageCore.MoEngageRichNotificationResource, completionHandler: @escaping MoEngageCore.richNotificationCompletionHandler)
   @objc deinit
 }
 @objc public enum MoEngagePartnerIntegrationType : Swift.Int {
@@ -164,7 +164,7 @@ public func integrationInfoToDictionary(_ integrationInfo: Swift.Array<MoEngageC
 extension MoEngageCore.MoEngageNetworkClient : MoEngageCore.MoEngageNetworkRequestProtocol {
   @objc dynamic public func executeRequest(_ request: Foundation.URLRequest, forSdkConfig sdkConfig: MoEngageCore.MoEngageSDKConfig, withConfigController configController: MoEngageCore.MoEngageSDKInstance, completionHandler: @escaping (MoEngageCore.completionHandlerWithResponseCode))
   @objc dynamic public func downloadImageURL(_ imageURL: Foundation.URL, forSdkConfig sdkConfig: MoEngageCore.MoEngageSDKConfig, dataCompletionHandler: @escaping (MoEngageCore.dataCompletionHandler))
-  public func downloadResource(_ resourceURL: Foundation.URL, completionHandler: @escaping MoEngageCore.richNotificationCompletionHandler)
+  public func downloadResource(resource: MoEngageCore.MoEngageRichNotificationResource, completionHandler: @escaping MoEngageCore.richNotificationCompletionHandler)
 }
 @objc @_hasMissingDesignatedInitializers public class MoEngageRemoteModuleStatus : ObjectiveC.NSObject {
   @objc final public let isInAppEnabled: Swift.Bool
@@ -617,7 +617,7 @@ extension UIKit.UIDevice {
 public typealias completionHandler = ((Swift.Bool, [Swift.AnyHashable : Any]?) -> Swift.Void)
 public typealias completionHandlerWithResponseCode = ((Swift.Bool, Swift.Int, [Swift.AnyHashable : Any]?) -> Swift.Void)
 public typealias dataCompletionHandler = ((Swift.Bool, Foundation.Data?) -> Swift.Void)
-public typealias richNotificationCompletionHandler = ((Foundation.URL?) -> Swift.Void)
+public typealias richNotificationCompletionHandler = ((_ tempURL: Foundation.URL?, _ resource: MoEngageCore.MoEngageRichNotificationResource?) -> Swift.Void)
 @objc public protocol MoEngageNetworkRequestProtocol {
   @objc func executeRequest(_ request: Foundation.URLRequest, forSdkConfig sdkConfig: MoEngageCore.MoEngageSDKConfig, withConfigController configController: MoEngageCore.MoEngageSDKInstance, completionHandler: @escaping (MoEngageCore.completionHandlerWithResponseCode))
   @objc func downloadImageURL(_ imageURL: Foundation.URL, forSdkConfig sdkConfig: MoEngageCore.MoEngageSDKConfig, dataCompletionHandler: @escaping (MoEngageCore.dataCompletionHandler))
@@ -635,6 +635,11 @@ public typealias richNotificationCompletionHandler = ((Foundation.URL?) -> Swift
   public var rawValue: Swift.Int {
     get
   }
+}
+public struct MoEngageRichNotificationResource {
+  public var resourceURL: Foundation.URL
+  public var id: Swift.Int
+  public init(resourceURL: Foundation.URL, id: Swift.Int? = nil)
 }
 @objc @_hasMissingDesignatedInitializers public class MoEngageRemoteAnalyticsConfig : ObjectiveC.NSObject {
   final public let sessionInActiveDuration: Swift.Int
