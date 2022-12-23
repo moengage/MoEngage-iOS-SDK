@@ -2,8 +2,8 @@ BCSymbolMap Version: 2.0
 Apple clang version 13.1.6 (clang-1316.0.21.2.5)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
 iPhoneOS15.5.sdk
-/Users/deepa/Library/Developer/Xcode/DerivedData/MoEngage-ddoehuamaaipxyddvinbjltvhjaz/Build/Intermediates.noindex/ArchiveIntermediates/MoEngageSDK/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MoEngageSDK.build/DerivedSources/MoEngageSDK_vers.c
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage
+/Users/rakshitha/Library/Developer/Xcode/DerivedData/MoEngage-cmmkomvfnirhvydwlmcpvafliotx/Build/Intermediates.noindex/ArchiveIntermediates/MoEngageSDK/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MoEngageSDK.build/DerivedSources/MoEngageSDK_vers.c
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage
 +[MoEngage sharedInstance]
 ___26+[MoEngage sharedInstance]_block_invoke
 -[MoEngage initializeTestWithConfig:andLaunchOptions:]
@@ -145,7 +145,7 @@ __OBJC_$_CLASS_METHODS_MoEngage
 __OBJC_METACLASS_RO_$_MoEngage
 __OBJC_$_INSTANCE_METHODS_MoEngage
 __OBJC_CLASS_RO_$_MoEngage
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageSDK/MoEngage.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageSDK/MoEngage.m
 MoEngageSDK/MoEngage.m
 __56-[MoEngage updateModulesOnSDKStatusChangeforInstanceID:]_block_invoke
 __31-[MoEngage disableSDKForAppID:]_block_invoke
