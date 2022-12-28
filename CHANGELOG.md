@@ -2,6 +2,11 @@
 =================================
 
 ## Changelog:
+### Version 9.2.0 *(28th December, 2022)*
+-------------------------------------------
+* BugFix - Fixed Carousel image not displaying multiple images.
+* CrashFix - Fixed the crash when migrating from 8.2.0 to 9.1.0.
+
 ### Version 9.1.0 *(13th December, 2022)*
 -------------------------------------------
 * BugFix - Handling the logic to discard RichLanding action if the url does not start with `http:` or `https:`.
