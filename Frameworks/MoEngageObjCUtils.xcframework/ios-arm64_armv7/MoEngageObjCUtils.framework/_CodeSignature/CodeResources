@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MoEngageAppDelegateProxy.h</key>
 		<data>
-		2XhzXqVxL2tfEOACA11mLE/DYgE=
+		g6xcKj4JeV61zzn8eW/sLY+0FfM=
 		</data>
 		<key>Headers/MoEngageAppDelegateSwizzler.h</key>
 		<data>
@@ -15,6 +15,10 @@
 		<key>Headers/MoEngageMutableDictionary.h</key>
 		<data>
 		kWHkRuKvJIe4m1vwjZ365dWeYaM=
+		</data>
+		<key>Headers/MoEngageObjCUtils-Swift.h</key>
+		<data>
+		wxNZFMZzgtI5h+iMIu/gZ3BICdI=
 		</data>
 		<key>Headers/MoEngageObjCUtils.h</key>
 		<data>
@@ -34,11 +38,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zRjQNReO3LWQwlq/IjgAuOvHn/k=
+		d2pJdTCI6iAPirwV0+FQ6aREb2s=
+		</data>
+		<key>Modules/MoEngageObjCUtils.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<data>
+		YNnRzE6rlK/p+Hzbl6W2ZSvY9HQ=
+		</data>
+		<key>Modules/MoEngageObjCUtils.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<data>
+		alfTynXwef/31KgXg9L6p6990Eo=
+		</data>
+		<key>Modules/MoEngageObjCUtils.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<data>
+		n0bS0IrKd06y4FqB870CmBQwY/Q=
+		</data>
+		<key>Modules/MoEngageObjCUtils.swiftmodule/armv7-apple-ios.swiftdoc</key>
+		<data>
+		b05A0vMb26D0wvIAqlvW1ESZFjY=
+		</data>
+		<key>Modules/MoEngageObjCUtils.swiftmodule/armv7-apple-ios.swiftinterface</key>
+		<data>
+		8SoGiDCHlv/N50BmAU9b0lKGAC4=
+		</data>
+		<key>Modules/MoEngageObjCUtils.swiftmodule/armv7-apple-ios.swiftmodule</key>
+		<data>
+		E5mCu4Y/Xjcm1ce6hnidUZySVb8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		VZxFChn0padlYqtDceKGzY1OHNk=
+		eJHmOyxvBSnZGiME5xSOrKt6Tis=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -47,11 +75,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2XhzXqVxL2tfEOACA11mLE/DYgE=
+			g6xcKj4JeV61zzn8eW/sLY+0FfM=
 			</data>
 			<key>hash2</key>
 			<data>
-			NzVeRwCJ33NDHmB0YF9jF0e7pC+wNVnGwZz5cTmjuAw=
+			w7sN6sXWVBQ6+VjbTfePa2CReppH/LslCeQhUjp6fXM=
 			</data>
 		</dict>
 		<key>Headers/MoEngageAppDelegateSwizzler.h</key>
@@ -74,6 +102,17 @@
 			<key>hash2</key>
 			<data>
 			4tx9AWcCxohfno+VKJQg9G/x064HvJb/ZfxMtne6AKQ=
+			</data>
+		</dict>
+		<key>Headers/MoEngageObjCUtils-Swift.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wxNZFMZzgtI5h+iMIu/gZ3BICdI=
+			</data>
+			<key>hash2</key>
+			<data>
+			YzrOMzq8IQhLPJZba+cyn5JRz0ZlRyqWAkfDe+7PTJA=
 			</data>
 		</dict>
 		<key>Headers/MoEngageObjCUtils.h</key>
@@ -120,15 +159,81 @@
 			2iKSlBG1NL/UqYrfl4TIU7YRyDQdiqnz2YY0pzoz59g=
 			</data>
 		</dict>
+		<key>Modules/MoEngageObjCUtils.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YNnRzE6rlK/p+Hzbl6W2ZSvY9HQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			ugvkPc0RFdgYQwhOPVk0i9z05jOTTWE/95rqzXXFkNI=
+			</data>
+		</dict>
+		<key>Modules/MoEngageObjCUtils.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			alfTynXwef/31KgXg9L6p6990Eo=
+			</data>
+			<key>hash2</key>
+			<data>
+			WRc3wKeCBJ7r4n/5/d4GJagqULUaVkWe3v4j5n5i3Kc=
+			</data>
+		</dict>
+		<key>Modules/MoEngageObjCUtils.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n0bS0IrKd06y4FqB870CmBQwY/Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			w9CNFtIEsZ/02/ArTXAxcATYBvT1q8CojFXpVPSrW18=
+			</data>
+		</dict>
+		<key>Modules/MoEngageObjCUtils.swiftmodule/armv7-apple-ios.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b05A0vMb26D0wvIAqlvW1ESZFjY=
+			</data>
+			<key>hash2</key>
+			<data>
+			40VSbdc5pjxjafhzc4+uAgci8MjgnlZbgYsEyemGKE8=
+			</data>
+		</dict>
+		<key>Modules/MoEngageObjCUtils.swiftmodule/armv7-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8SoGiDCHlv/N50BmAU9b0lKGAC4=
+			</data>
+			<key>hash2</key>
+			<data>
+			WBT8eZQ642E1ZKIUo0Qvfni+HNaw8YFfnaOHB+S5aig=
+			</data>
+		</dict>
+		<key>Modules/MoEngageObjCUtils.swiftmodule/armv7-apple-ios.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E5mCu4Y/Xjcm1ce6hnidUZySVb8=
+			</data>
+			<key>hash2</key>
+			<data>
+			2etHXNjSqxOHXxxGmPG1DyqzmwtOf06U9NGRq1AY028=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VZxFChn0padlYqtDceKGzY1OHNk=
+			eJHmOyxvBSnZGiME5xSOrKt6Tis=
 			</data>
 			<key>hash2</key>
 			<data>
-			wXpE2gMdJjFib9lzm11mrHgox4GMthWDq4Z6c8+D40k=
+			JnfxOfwstZyvjSnx7U8TwZ+qgWz2AHBJFKaThk+NT/U=
 			</data>
 		</dict>
 	</dict>

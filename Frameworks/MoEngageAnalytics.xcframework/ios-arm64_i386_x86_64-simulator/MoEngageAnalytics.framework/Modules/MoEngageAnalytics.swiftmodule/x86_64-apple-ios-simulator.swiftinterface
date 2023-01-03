@@ -107,7 +107,7 @@ import _Concurrency
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MoEngageAnalyticsDelegateHandler : MoEngageCore.MoEngageAnalyticsDelegate, MoEngageObjCUtils.MoEngageAppDelegateAnalyticsProxyProtocol {
   public static var sharedInstance: MoEngageAnalytics.MoEngageAnalyticsDelegateHandler?
   override public func initializeAnalytics(sdkInstance: MoEngageCore.MoEngageSDKInstance)
-  @objc public func handleOpen(_ url: Foundation.URL)
+  @objc public func handleOpenURL(_ url: Foundation.URL)
   override public func moengageSDKStateUpdated(sdkInstance: MoEngageCore.MoEngageSDKInstance)
   override public func applicationDidBecomeActive(sdkInstance: MoEngageCore.MoEngageSDKInstance)
   override public func applicationWillResignActive(sdkInstance: MoEngageCore.MoEngageSDKInstance)

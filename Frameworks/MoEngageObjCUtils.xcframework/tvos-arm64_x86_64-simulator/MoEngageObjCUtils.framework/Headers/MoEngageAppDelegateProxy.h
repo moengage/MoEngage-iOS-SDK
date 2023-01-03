@@ -10,19 +10,11 @@
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UserNotifications.h>
 
+@protocol MoEngageAppDelegateAnalyticsProxyProtocol;
+@protocol MoEngageAppDelegateMessagingProxyProtocol;
+
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol MoEngageAppDelegateAnalyticsProxyProtocol <NSObject>
--(void)handleOpenURL:(NSURL*)url;
-@end
-
-@protocol MoEngageAppDelegateMessagingProxyProtocol <NSObject>
-- (void)applicationDidRegisterForRemoteNotificationsWithDeviceToken:(nullable NSData*)deviceToken;
-- (void)applicationDidFailToRegisterForRemoteNotificationsWithError:(nullable NSError*)error;
-- (void)applicationDidReceiveRemoteNotification:(nullable NSDictionary*)userInfo;
-- (void)userNotificationCenterWillPresentNotification:(nullable UNNotification*)notification;
-- (void)userNotificationCenterDidReceiveNotificationResponse:(nullable UNNotificationResponse*)response API_UNAVAILABLE(tvos);
-@end
 
 @interface MoEngageAppDelegateProxy : NSObject
 /*

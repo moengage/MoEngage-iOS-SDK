@@ -1,0 +1,18 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageObjCUtils
+import Foundation
+@_exported import MoEngageObjCUtils
+import Swift
+import _Concurrency
+@objc public protocol MoEngageAppDelegateAnalyticsProxyProtocol {
+  @objc func handleOpenURL(_ url: Foundation.URL)
+}
+@objc public protocol MoEngageAppDelegateMessagingProxyProtocol {
+  @objc func applicationDidRegisterForRemoteNotifications(withDeviceToken deviceToken: Foundation.Data?)
+  @objc func applicationDidFailToRegisterForRemoteNotificationsWithError(_ error: Swift.Error?)
+  @objc func applicationDidReceiveRemoteNotification(_ userInfo: [Swift.AnyHashable : Any]?)
+  @objc func userNotificationCenterWillPresent(_ notification: UserNotifications.UNNotification?)
+  @objc @available(tvOS, unavailable)
+  func userNotificationCenterDidReceive(_ response: UserNotifications.UNNotificationResponse?)
+}

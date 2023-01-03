@@ -1,0 +1,581 @@
+BCSymbolMap Version: 2.0
+Apple clang version 13.1.6 (clang-1316.0.21.2.5)
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk
+AppleTVOS15.4.sdk
+/Users/rakshitha/Library/Developer/Xcode/DerivedData/MoEngage-cmmkomvfnirhvydwlmcpvafliotx/Build/Intermediates.noindex/ArchiveIntermediates/MoEngageObjCUtilsTvOS/IntermediateBuildFilesPath/MoEngage.build/Release-appletvos/MoEngageObjCUtilsTvOS.build/DerivedSources/MoEngageObjCUtils_vers.c
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage
+-[NSDictionary(MoEngageExtension) validObjectForKey:]
+-[NSDictionary(MoEngageExtension) validObjectForKeyPath:]
+-[NSDictionary(MoEngageExtension) containsKey:]
+-[NSDictionary(MoEngageExtension) getIntegerForKey:]
+-[NSDictionary(MoEngageExtension) getStringForKey:]
+-[NSDictionary(MoEngageExtension) getDateForKey:dateFormat:]
+-[NSDictionary(MoEngageExtension) getBooleanForKey:]
+-[NSDictionary(MoEngageExtension) stringForkey:]
+-[NSDictionary(MoEngageExtension) checkIfKeyExists:]
+-[NSDictionary(MoEngageExtension) validDictionaryFromKey:]
+_OBJC_SELECTOR_REFERENCES_
+_OBJC_SELECTOR_REFERENCES_.2
+_OBJC_CLASSLIST_REFERENCES_$_
+_OBJC_SELECTOR_REFERENCES_.4
+_OBJC_SELECTOR_REFERENCES_.6
+_OBJC_SELECTOR_REFERENCES_.8
+_OBJC_SELECTOR_REFERENCES_.10
+_OBJC_SELECTOR_REFERENCES_.12
+_OBJC_SELECTOR_REFERENCES_.14
+_OBJC_SELECTOR_REFERENCES_.16
+_OBJC_CLASSLIST_REFERENCES_$_.17
+_OBJC_SELECTOR_REFERENCES_.21
+_OBJC_CLASSLIST_REFERENCES_$_.22
+_OBJC_SELECTOR_REFERENCES_.24
+_OBJC_SELECTOR_REFERENCES_.26
+_OBJC_SELECTOR_REFERENCES_.28
+_OBJC_SELECTOR_REFERENCES_.30
+_OBJC_CLASSLIST_REFERENCES_$_.31
+_OBJC_SELECTOR_REFERENCES_.33
+_OBJC_SELECTOR_REFERENCES_.35
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSDictionary_$_MoEngageExtension
+__OBJC_$_CATEGORY_NSDictionary_$_MoEngageExtension
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/NSDictionary+MoEngageExtension.m
+MoEngageObjCUtils/NSDictionary+MoEngageExtension.m
+-[NSMutableDictionary(MoEngageExtension) setObjectNilHandled:forKey:]
+-[NSMutableDictionary(MoEngageExtension) removeValidObjectForKey:]
+-[NSMutableDictionary(MoEngageExtension) containsKeyInDict:]
+-[NSMutableDictionary(MoEngageExtension) checkIfKeyExists:]
+_OBJC_CLASSLIST_REFERENCES_$_.1
+_OBJC_SELECTOR_REFERENCES_.5
+_OBJC_SELECTOR_REFERENCES_.7
+_OBJC_SELECTOR_REFERENCES_.9
+_OBJC_SELECTOR_REFERENCES_.11
+_OBJC_SELECTOR_REFERENCES_.13
+_OBJC_SELECTOR_REFERENCES_.15
+_OBJC_SELECTOR_REFERENCES_.17
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSMutableDictionary_$_MoEngageExtension
+__OBJC_$_CATEGORY_NSMutableDictionary_$_MoEngageExtension
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/NSMutableDictionary+MoEngageExtension.m
+MoEngageObjCUtils/NSMutableDictionary+MoEngageExtension.m
+-[MOZeroingWeakContainer object]
+-[MOZeroingWeakContainer setObject:]
+-[MOZeroingWeakContainer .cxx_destruct]
++[MOAppDelegateObserver sharedInstance]
+___39+[MOAppDelegateObserver sharedInstance]_block_invoke
+-[MOAppDelegateObserver observeUIApplication]
+-[MOAppDelegateObserver observeValueForKeyPath:ofObject:change:context:]
++[MoEngageAppDelegateSwizzler isAppDelegateProxyEnabled]
++[MoEngageAppDelegateSwizzler registerAppDelegateInterceptor:]
++[MoEngageAppDelegateSwizzler unregisterAppDelegateInterceptorWithID:]
++[MoEngageAppDelegateSwizzler proxyOriginalDelegate]
+___52+[MoEngageAppDelegateSwizzler proxyOriginalDelegate]_block_invoke
++[MoEngageAppDelegateSwizzler proxyOriginalDelegateIncludingAPNSMethods]
+___72+[MoEngageAppDelegateSwizzler proxyOriginalDelegateIncludingAPNSMethods]_block_invoke
+___copy_helper_block_e8_
+___destroy_helper_block_e8_
++[MoEngageAppDelegateSwizzler sharedApplication]
++[MoEngageAppDelegateSwizzler createSubclassWithObject:]
++[MoEngageAppDelegateSwizzler proxyRemoteNotificationsMethodsWithAppDelegateSubClass:realClass:appDelegate:realImplementationsBySelector:]
++[MoEngageAppDelegateSwizzler reassignAppDelegate]
++[MoEngageAppDelegateSwizzler interceptors]
+___43+[MoEngageAppDelegateSwizzler interceptors]_block_invoke
++[MoEngageAppDelegateSwizzler originalImplementationForSelector:object:]
++[MoEngageAppDelegateSwizzler proxyDestinationSelector:implementationsFromSourceSelector:fromClass:toClass:realClass:storeDestinationImplementationTo:]
++[MoEngageAppDelegateSwizzler addInstanceMethodWithSelector:fromClass:toClass:]
++[MoEngageAppDelegateSwizzler addInstanceMethodWithDestinationSelector:withImplementationFromSourceSelector:fromClass:toClass:]
++[MoEngageAppDelegateSwizzler implementationOfMethodSelector:fromClass:]
++[MoEngageAppDelegateSwizzler notifyInterceptorsWithMethodSelector:callback:]
+___77+[MoEngageAppDelegateSwizzler notifyInterceptorsWithMethodSelector:callback:]_block_invoke
+___copy_helper_block_e8_32b
+___destroy_helper_block_e8_32s
+-[MoEngageAppDelegateSwizzler fakeDescription]
+-[MoEngageAppDelegateSwizzler application:openURL:options:]
+___59-[MoEngageAppDelegateSwizzler application:openURL:options:]_block_invoke
+___copy_helper_block_e8_32s40s48s56r
+___destroy_helper_block_e8_32s40s48s56r
+-[MoEngageAppDelegateSwizzler application:openURL:sourceApplication:annotation:]
+___80-[MoEngageAppDelegateSwizzler application:openURL:sourceApplication:annotation:]_block_invoke
+-[MoEngageAppDelegateSwizzler application:handleEventsForBackgroundURLSession:completionHandler:]
+___97-[MoEngageAppDelegateSwizzler application:handleEventsForBackgroundURLSession:completionHandler:]_block_invoke
+___copy_helper_block_e8_32s40s48b
+___destroy_helper_block_e8_32s40s48s
+-[MoEngageAppDelegateSwizzler application:continueUserActivity:restorationHandler:]
+___83-[MoEngageAppDelegateSwizzler application:continueUserActivity:restorationHandler:]_block_invoke
+___copy_helper_block_e8_32s40s48b56r
+-[MoEngageAppDelegateSwizzler application:donor_didRegisterForRemoteNotificationsWithDeviceToken:]
+___98-[MoEngageAppDelegateSwizzler application:donor_didRegisterForRemoteNotificationsWithDeviceToken:]_block_invoke
+___copy_helper_block_e8_32s40s
+___destroy_helper_block_e8_32s40s
+-[MoEngageAppDelegateSwizzler application:donor_didFailToRegisterForRemoteNotificationsWithError:]
+___98-[MoEngageAppDelegateSwizzler application:donor_didFailToRegisterForRemoteNotificationsWithError:]_block_invoke
+-[MoEngageAppDelegateSwizzler application:donor_didReceiveRemoteNotification:fetchCompletionHandler:]
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___101-[MoEngageAppDelegateSwizzler application:donor_didReceiveRemoteNotification:fetchCompletionHandler:]_block_invoke
+___copy_helper_block_e8_32r40r
+___destroy_helper_block_e8_32r40r
+___101-[MoEngageAppDelegateSwizzler application:donor_didReceiveRemoteNotification:fetchCompletionHandler:]_block_invoke.341
+___101-[MoEngageAppDelegateSwizzler application:donor_didReceiveRemoteNotification:fetchCompletionHandler:]_block_invoke.342
+___copy_helper_block_e8_32b40r
+___destroy_helper_block_e8_32s40r
+-[MoEngageAppDelegateSwizzler application:donor_didReceiveRemoteNotification:]
+___78-[MoEngageAppDelegateSwizzler application:donor_didReceiveRemoteNotification:]_block_invoke
++[MoEngageAppDelegateSwizzler appDelegateInvocationForSelector:]
++[MoEngageAppDelegateSwizzler proxyAppDelegate:]
++[MoEngageAppDelegateSwizzler clearInterceptors]
++[MoEngageAppDelegateSwizzler resetProxyOriginalDelegateOnceToken]
++[MoEngageAppDelegateSwizzler originalDelegate]
+__OBJC_METACLASS_RO_$_MOZeroingWeakContainer
+__OBJC_$_INSTANCE_METHODS_MOZeroingWeakContainer
+_OBJC_IVAR_$_MOZeroingWeakContainer._object
+__OBJC_$_INSTANCE_VARIABLES_MOZeroingWeakContainer
+__OBJC_$_PROP_LIST_MOZeroingWeakContainer
+__OBJC_CLASS_RO_$_MOZeroingWeakContainer
+_sharedInstance.instance
+_sharedInstance.once
+___block_descriptor_32_e5_v8?0l
+___block_literal_global
+_OBJC_CLASSLIST_REFERENCES_$_.19
+_OBJC_SELECTOR_REFERENCES_.25
+_OBJC_SELECTOR_REFERENCES_.27
+_OBJC_SELECTOR_REFERENCES_.29
+_MOEOriginalAppDelegate
+_OBJC_SELECTOR_REFERENCES_.31
+__OBJC_$_CLASS_METHODS_MOAppDelegateObserver
+__OBJC_METACLASS_RO_$_MOAppDelegateObserver
+__OBJC_$_INSTANCE_METHODS_MOAppDelegateObserver
+_OBJC_IVAR_$_MOAppDelegateObserver._isObserving
+__OBJC_$_INSTANCE_VARIABLES_MOAppDelegateObserver
+__OBJC_CLASS_RO_$_MOAppDelegateObserver
+_OBJC_CLASSLIST_REFERENCES_$_.39
+_OBJC_SELECTOR_REFERENCES_.41
+_OBJC_CLASSLIST_REFERENCES_$_.42
+_OBJC_CLASSLIST_REFERENCES_$_.43
+_OBJC_SELECTOR_REFERENCES_.47
+_OBJC_SELECTOR_REFERENCES_.49
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+__OBJC_$_PROP_LIST_NSObject
+__OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+__OBJC_PROTOCOL_$_NSObject
+__OBJC_LABEL_PROTOCOL_$_NSObject
+__OBJC_$_PROTOCOL_REFS_UIApplicationDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIApplicationDelegate
+__OBJC_$_PROP_LIST_UIApplicationDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UIApplicationDelegate
+__OBJC_PROTOCOL_$_UIApplicationDelegate
+__OBJC_LABEL_PROTOCOL_$_UIApplicationDelegate
+__OBJC_PROTOCOL_REFERENCE_$_UIApplicationDelegate
+_OBJC_SELECTOR_REFERENCES_.202
+_OBJC_SELECTOR_REFERENCES_.208
+_OBJC_CLASSLIST_REFERENCES_$_.211
+_OBJC_SELECTOR_REFERENCES_.212
+_OBJC_SELECTOR_REFERENCES_.214
+_OBJC_SELECTOR_REFERENCES_.216
+_OBJC_SELECTOR_REFERENCES_.219
+_OBJC_SELECTOR_REFERENCES_.223
+_OBJC_CLASSLIST_REFERENCES_$_.224
+_OBJC_SELECTOR_REFERENCES_.226
+_sProxyAppDelegateOnceToken
+___block_literal_global.227
+_OBJC_SELECTOR_REFERENCES_.229
+_OBJC_SELECTOR_REFERENCES_.231
+_OBJC_SELECTOR_REFERENCES_.233
+_sProxyAppDelegateRemoteNotificationOnceToken
+_kMOERealIMPBySelectorKey
+_OBJC_SELECTOR_REFERENCES_.235
+_MOEAppDelegateSubclass
+_MOEOriginalAppDelegateClass
+_OBJC_SELECTOR_REFERENCES_.237
+_OBJC_SELECTOR_REFERENCES_.239
+_OBJC_SELECTOR_REFERENCES_.241
+___block_descriptor_40_e8__e5_v8?0l
+_OBJC_SELECTOR_REFERENCES_.247
+_OBJC_SELECTOR_REFERENCES_.248
+_OBJC_SELECTOR_REFERENCES_.250
+_OBJC_CLASSLIST_REFERENCES_$_.253
+_OBJC_SELECTOR_REFERENCES_.255
+_OBJC_SELECTOR_REFERENCES_.257
+_OBJC_SELECTOR_REFERENCES_.261
+_OBJC_CLASSLIST_REFERENCES_$_.264
+_OBJC_SELECTOR_REFERENCES_.265
+_OBJC_SELECTOR_REFERENCES_.267
+_OBJC_SELECTOR_REFERENCES_.268
+_OBJC_SELECTOR_REFERENCES_.269
+_OBJC_SELECTOR_REFERENCES_.270
+_OBJC_SELECTOR_REFERENCES_.272
+_OBJC_SELECTOR_REFERENCES_.274
+_kMOERealClassKey
+_OBJC_SELECTOR_REFERENCES_.280
+_OBJC_SELECTOR_REFERENCES_.282
+_OBJC_SELECTOR_REFERENCES_.284
+_OBJC_SELECTOR_REFERENCES_.286
+_OBJC_SELECTOR_REFERENCES_.288
+_OBJC_SELECTOR_REFERENCES_.290
+_OBJC_SELECTOR_REFERENCES_.291
+_OBJC_SELECTOR_REFERENCES_.292
+_interceptors.onceToken
+_interceptors.sInterceptors
+___block_literal_global.293
+_OBJC_CLASSLIST_REFERENCES_$_.294
+_OBJC_SELECTOR_REFERENCES_.296
+_OBJC_CLASSLIST_REFERENCES_$_.297
+_OBJC_SELECTOR_REFERENCES_.299
+_OBJC_SELECTOR_REFERENCES_.303
+___block_descriptor_48_e8_32bs_e15_v32?0816^B24l
+_OBJC_SELECTOR_REFERENCES_.308
+_OBJC_SELECTOR_REFERENCES_.314
+_OBJC_SELECTOR_REFERENCES_.316
+___block_descriptor_64_e8_32s40s48s56r_e33_v16?0"<UIApplicationDelegate>"8l
+_OBJC_SELECTOR_REFERENCES_.319
+_OBJC_SELECTOR_REFERENCES_.320
+___block_descriptor_32_e33_v16?0"<UIApplicationDelegate>"8l
+___block_literal_global.321
+___block_descriptor_56_e8_32s40s48bs_e33_v16?0"<UIApplicationDelegate>"8l
+___block_descriptor_64_e8_32s40s48bs56r_e33_v16?0"<UIApplicationDelegate>"8l
+_OBJC_SELECTOR_REFERENCES_.323
+_OBJC_SELECTOR_REFERENCES_.325
+_OBJC_SELECTOR_REFERENCES_.327
+_OBJC_SELECTOR_REFERENCES_.329
+_OBJC_SELECTOR_REFERENCES_.331
+___block_descriptor_56_e8_32s40s_e33_v16?0"<UIApplicationDelegate>"8l
+_OBJC_CLASSLIST_REFERENCES_$_.332
+_OBJC_SELECTOR_REFERENCES_.334
+_OBJC_CLASSLIST_REFERENCES_$_.335
+_OBJC_SELECTOR_REFERENCES_.337
+_OBJC_SELECTOR_REFERENCES_.339
+___block_descriptor_48_e8_32r40r_e8_v16?0Q8l
+___block_descriptor_72_e8_32s40s48bs56r_e33_v16?0"<UIApplicationDelegate>"8l
+_OBJC_SELECTOR_REFERENCES_.344
+_OBJC_SELECTOR_REFERENCES_.346
+___block_descriptor_48_e8_32bs40r_e5_v8?0l
+_OBJC_CLASSLIST_REFERENCES_$_.347
+_OBJC_SELECTOR_REFERENCES_.349
+_OBJC_CLASSLIST_REFERENCES_$_.350
+_OBJC_SELECTOR_REFERENCES_.352
+_OBJC_SELECTOR_REFERENCES_.360
+_OBJC_SELECTOR_REFERENCES_.364
+__OBJC_$_CLASS_METHODS_MoEngageAppDelegateSwizzler
+__OBJC_METACLASS_RO_$_MoEngageAppDelegateSwizzler
+__OBJC_$_INSTANCE_METHODS_MoEngageAppDelegateSwizzler
+__OBJC_CLASS_RO_$_MoEngageAppDelegateSwizzler
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/MoEngageAppDelegateSwizzler.m
+MoEngageObjCUtils/MoEngageAppDelegateSwizzler.m
+__78-[MoEngageAppDelegateSwizzler application:donor_didReceiveRemoteNotification:]_block_invoke
+__destroy_helper_block_e8_32s40r
+__copy_helper_block_e8_32b40r
+__101-[MoEngageAppDelegateSwizzler application:donor_didReceiveRemoteNotification:fetchCompletionHandler:]_block_invoke.342
+__101-[MoEngageAppDelegateSwizzler application:donor_didReceiveRemoteNotification:fetchCompletionHandler:]_block_invoke.341
+__destroy_helper_block_e8_32r40r
+__copy_helper_block_e8_32r40r
+__101-[MoEngageAppDelegateSwizzler application:donor_didReceiveRemoteNotification:fetchCompletionHandler:]_block_invoke
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
+dispatch_get_main_queue
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk/usr/include/dispatch/queue.h
+__98-[MoEngageAppDelegateSwizzler application:donor_didFailToRegisterForRemoteNotificationsWithError:]_block_invoke
+__destroy_helper_block_e8_32s40s
+__copy_helper_block_e8_32s40s
+__98-[MoEngageAppDelegateSwizzler application:donor_didRegisterForRemoteNotificationsWithDeviceToken:]_block_invoke
+__copy_helper_block_e8_32s40s48b56r
+__83-[MoEngageAppDelegateSwizzler application:continueUserActivity:restorationHandler:]_block_invoke
+__destroy_helper_block_e8_32s40s48s
+__copy_helper_block_e8_32s40s48b
+__97-[MoEngageAppDelegateSwizzler application:handleEventsForBackgroundURLSession:completionHandler:]_block_invoke
+__80-[MoEngageAppDelegateSwizzler application:openURL:sourceApplication:annotation:]_block_invoke
+__destroy_helper_block_e8_32s40s48s56r
+__copy_helper_block_e8_32s40s48s56r
+__59-[MoEngageAppDelegateSwizzler application:openURL:options:]_block_invoke
+__destroy_helper_block_e8_32s
+__copy_helper_block_e8_32b
+__77+[MoEngageAppDelegateSwizzler notifyInterceptorsWithMethodSelector:callback:]_block_invoke
+__43+[MoEngageAppDelegateSwizzler interceptors]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk/usr/include/dispatch/once.h
+__destroy_helper_block_e8_
+__copy_helper_block_e8_
+__72+[MoEngageAppDelegateSwizzler proxyOriginalDelegateIncludingAPNSMethods]_block_invoke
+__52+[MoEngageAppDelegateSwizzler proxyOriginalDelegate]_block_invoke
+__39+[MOAppDelegateObserver sharedInstance]_block_invoke
++[MoEngageAppDelegateProxy canSwizzleMethods]
++[MoEngageAppDelegateProxy sharedProxy]
+___39+[MoEngageAppDelegateProxy sharedProxy]_block_invoke
+-[MoEngageAppDelegateProxy init]
+-[MoEngageAppDelegateProxy dealloc]
+-[MoEngageAppDelegateProxy swizzleMethodsIfPossible]
+-[MoEngageAppDelegateProxy unswizzleAllMethods]
+-[MoEngageAppDelegateProxy listenForDelegateChangesInUserNotificationCenter:]
+-[MoEngageAppDelegateProxy swizzleUserNotificationCenterDelegate:]
+-[MoEngageAppDelegateProxy unswizzleUserNotificationCenterDelegate:]
+-[MoEngageAppDelegateProxy addDelegateObserverToUserNotificationCenter:]
+-[MoEngageAppDelegateProxy removeUserNotificationCenterDelegateObserver]
+-[MoEngageAppDelegateProxy observeValueForKeyPath:ofObject:change:context:]
+-[MoEngageAppDelegateProxy saveOriginalImplementation:forSelector:]
+-[MoEngageAppDelegateProxy originalImplementationForSelector:]
+-[MoEngageAppDelegateProxy trackSwizzledSelector:ofClass:]
+-[MoEngageAppDelegateProxy removeImplementationForSelector:]
+-[MoEngageAppDelegateProxy swizzleSelector:inClass:withImplementation:inProtocol:]
+-[MoEngageAppDelegateProxy unswizzleSelector:inClass:]
+-[MoEngageAppDelegateProxy nonExistantMethodImplementationForClass:]
+-[MoEngageAppDelegateProxy application:openURL:sourceApplication:annotation:]
+-[MoEngageAppDelegateProxy application:openURL:options:]
+-[MoEngageAppDelegateProxy application:continueUserActivity:restorationHandler:]
+-[MoEngageAppDelegateProxy application:didReceiveRemoteNotification:]
+-[MoEngageAppDelegateProxy application:didReceiveRemoteNotification:fetchCompletionHandler:]
+-[MoEngageAppDelegateProxy application:didFailToRegisterForRemoteNotificationsWithError:]
+-[MoEngageAppDelegateProxy application:didRegisterForRemoteNotificationsWithDeviceToken:]
+___moe_swizzle_willPresentNotificationWithHandler_block_invoke
+___copy_helper_block_e8_32s40s48s56b
+___destroy_helper_block_e8_32s40s48s56s
+___moe_swizzle_didReceiveNotificationResponseWithHandler_block_invoke
+-[MoEngageAppDelegateProxy messagingProxyDelegate]
+-[MoEngageAppDelegateProxy setMessagingProxyDelegate:]
+-[MoEngageAppDelegateProxy analyticsProxyDelegate]
+-[MoEngageAppDelegateProxy setAnalyticsProxyDelegate:]
+-[MoEngageAppDelegateProxy originalAppDelegateImps]
+-[MoEngageAppDelegateProxy setOriginalAppDelegateImps:]
+-[MoEngageAppDelegateProxy swizzledSelectorsByClass]
+-[MoEngageAppDelegateProxy setSwizzledSelectorsByClass:]
+-[MoEngageAppDelegateProxy didSwizzleMethods]
+-[MoEngageAppDelegateProxy setDidSwizzleMethods:]
+-[MoEngageAppDelegateProxy hasSwizzledUserNotificationDelegate]
+-[MoEngageAppDelegateProxy setHasSwizzledUserNotificationDelegate:]
+-[MoEngageAppDelegateProxy isObservingUserNotificationDelegateChanges]
+-[MoEngageAppDelegateProxy setIsObservingUserNotificationDelegateChanges:]
+-[MoEngageAppDelegateProxy userNotificationCenter]
+-[MoEngageAppDelegateProxy setUserNotificationCenter:]
+-[MoEngageAppDelegateProxy currentUserNotificationCenterDelegate]
+-[MoEngageAppDelegateProxy setCurrentUserNotificationCenterDelegate:]
+-[MoEngageAppDelegateProxy appDelegateInterceptorID]
+-[MoEngageAppDelegateProxy setAppDelegateInterceptorID:]
+-[MoEngageAppDelegateProxy .cxx_destruct]
+_sharedProxy.proxy
+_sharedProxy.onceToken
+_OBJC_CLASSLIST_REFERENCES_$_.4
+_OBJC_CLASSLIST_REFERENCES_$_.7
+_OBJC_SELECTOR_REFERENCES_.19
+_OBJC_SELECTOR_REFERENCES_.23
+_OBJC_SELECTOR_REFERENCES_.37
+_OBJC_CLASSLIST_REFERENCES_$_.38
+_OBJC_SELECTOR_REFERENCES_.40
+_OBJC_SELECTOR_REFERENCES_.42
+_OBJC_SELECTOR_REFERENCES_.44
+_OBJC_SELECTOR_REFERENCES_.46
+_OBJC_SELECTOR_REFERENCES_.48
+_OBJC_SELECTOR_REFERENCES_.50
+_OBJC_SELECTOR_REFERENCES_.52
+_OBJC_SELECTOR_REFERENCES_.54
+_OBJC_SELECTOR_REFERENCES_.60
+_OBJC_SELECTOR_REFERENCES_.62
+_OBJC_SELECTOR_REFERENCES_.64
+_OBJC_SELECTOR_REFERENCES_.66
+_OBJC_SELECTOR_REFERENCES_.68
+_OBJC_SELECTOR_REFERENCES_.70
+_OBJC_SELECTOR_REFERENCES_.72
+_OBJC_SELECTOR_REFERENCES_.74
+_OBJC_SELECTOR_REFERENCES_.76
+_OBJC_SELECTOR_REFERENCES_.78
+_UserNotificationObserverContext
+_OBJC_SELECTOR_REFERENCES_.80
+_OBJC_SELECTOR_REFERENCES_.82
+_OBJC_SELECTOR_REFERENCES_.84
+_OBJC_CLASSLIST_REFERENCES_$_.85
+_OBJC_CLASSLIST_REFERENCES_$_.86
+_OBJC_SELECTOR_REFERENCES_.90
+_OBJC_SELECTOR_REFERENCES_.92
+_OBJC_SELECTOR_REFERENCES_.95
+_OBJC_SELECTOR_REFERENCES_.97
+_OBJC_SELECTOR_REFERENCES_.99
+_OBJC_SELECTOR_REFERENCES_.101
+_OBJC_SELECTOR_REFERENCES_.103
+_OBJC_SELECTOR_REFERENCES_.107
+_OBJC_CLASSLIST_REFERENCES_$_.108
+_OBJC_SELECTOR_REFERENCES_.110
+_OBJC_SELECTOR_REFERENCES_.112
+_OBJC_SELECTOR_REFERENCES_.114
+_OBJC_CLASSLIST_REFERENCES_$_.115
+_OBJC_SELECTOR_REFERENCES_.117
+_OBJC_SELECTOR_REFERENCES_.119
+_OBJC_SELECTOR_REFERENCES_.121
+_OBJC_SELECTOR_REFERENCES_.123
+_OBJC_CLASSLIST_REFERENCES_$_.124
+_OBJC_SELECTOR_REFERENCES_.126
+_OBJC_SELECTOR_REFERENCES_.128
+_OBJC_SELECTOR_REFERENCES_.130
+_OBJC_SELECTOR_REFERENCES_.132
+_OBJC_SELECTOR_REFERENCES_.136
+_OBJC_SELECTOR_REFERENCES_.138
+_OBJC_SELECTOR_REFERENCES_.140
+_OBJC_SELECTOR_REFERENCES_.142
+_OBJC_CLASSLIST_REFERENCES_$_.145
+_OBJC_SELECTOR_REFERENCES_.147
+_OBJC_SELECTOR_REFERENCES_.149
+_OBJC_SELECTOR_REFERENCES_.151
+_OBJC_SELECTOR_REFERENCES_.153
+_OBJC_SELECTOR_REFERENCES_.155
+_OBJC_SELECTOR_REFERENCES_.157
+_OBJC_SELECTOR_REFERENCES_.159
+_OBJC_SELECTOR_REFERENCES_.161
+_OBJC_SELECTOR_REFERENCES_.163
+_OBJC_SELECTOR_REFERENCES_.165
+___block_descriptor_80_e8_32s40s48s56bs_e5_v8?0l
+_OBJC_SELECTOR_REFERENCES_.167
+__OBJC_$_CLASS_METHODS_MoEngageAppDelegateProxy
+__OBJC_CLASS_PROTOCOLS_$_MoEngageAppDelegateProxy
+__OBJC_METACLASS_RO_$_MoEngageAppDelegateProxy
+__OBJC_$_INSTANCE_METHODS_MoEngageAppDelegateProxy
+_OBJC_IVAR_$_MoEngageAppDelegateProxy._didSwizzleMethods
+_OBJC_IVAR_$_MoEngageAppDelegateProxy._hasSwizzledUserNotificationDelegate
+_OBJC_IVAR_$_MoEngageAppDelegateProxy._isObservingUserNotificationDelegateChanges
+_OBJC_IVAR_$_MoEngageAppDelegateProxy._messagingProxyDelegate
+_OBJC_IVAR_$_MoEngageAppDelegateProxy._analyticsProxyDelegate
+_OBJC_IVAR_$_MoEngageAppDelegateProxy._originalAppDelegateImps
+_OBJC_IVAR_$_MoEngageAppDelegateProxy._swizzledSelectorsByClass
+_OBJC_IVAR_$_MoEngageAppDelegateProxy._userNotificationCenter
+_OBJC_IVAR_$_MoEngageAppDelegateProxy._currentUserNotificationCenterDelegate
+_OBJC_IVAR_$_MoEngageAppDelegateProxy._appDelegateInterceptorID
+__OBJC_$_INSTANCE_VARIABLES_MoEngageAppDelegateProxy
+__OBJC_$_PROP_LIST_MoEngageAppDelegateProxy
+__OBJC_CLASS_RO_$_MoEngageAppDelegateProxy
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/MoEngageAppDelegateProxy.m
+MoEngageObjCUtils/MoEngageAppDelegateProxy.m
+MoEngageObjCUtils/MoEngageAppDelegateProxy.h
+__moe_swizzle_didReceiveNotificationResponseWithHandler_block_invoke
+__destroy_helper_block_e8_32s40s48s56s
+__copy_helper_block_e8_32s40s48s56b
+__moe_swizzle_willPresentNotificationWithHandler_block_invoke
+moe_swizzle_didReceiveNotificationResponseWithHandler
+moe_swizzle_willPresentNotificationWithHandler
+getNamedPropertyFromObject
+__39+[MoEngageAppDelegateProxy sharedProxy]_block_invoke
++[MoEngageProxyUtils getAppDelegateProxyInfoPlistKey]
++[MoEngageProxyUtils isAppDelegateProxyEnabled]
++[MoEngageProxyUtils isAppDelegateProxyConfigured]
++[MoEngageProxyUtils setAppDelegateProxyConfigured]
+_OBJC_CLASSLIST_REFERENCES_$_.5
+_moAppDelegateProxyConfigured
+__OBJC_$_CLASS_METHODS_MoEngageProxyUtils
+__OBJC_METACLASS_RO_$_MoEngageProxyUtils
+__OBJC_CLASS_RO_$_MoEngageProxyUtils
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/MoEngageProxyUtils.m
+MoEngageObjCUtils/MoEngageProxyUtils.m
+-[MoEngageMutableDictionary init]
+-[MoEngageMutableDictionary description]
+___40-[MoEngageMutableDictionary description]_block_invoke
+___copy_helper_block_e8_32s40r
+-[MoEngageMutableDictionary objectForKey:]
+___42-[MoEngageMutableDictionary objectForKey:]_block_invoke
+___copy_helper_block_e8_32s40s48r
+___destroy_helper_block_e8_32s40s48r
+-[MoEngageMutableDictionary setObject:forKey:]
+___46-[MoEngageMutableDictionary setObject:forKey:]_block_invoke
+___copy_helper_block_e8_32s40s48s
+-[MoEngageMutableDictionary removeObjectForKey:]
+___48-[MoEngageMutableDictionary removeObjectForKey:]_block_invoke
+-[MoEngageMutableDictionary removeAllObjects]
+___45-[MoEngageMutableDictionary removeAllObjects]_block_invoke
+___copy_helper_block_e8_32s
+-[MoEngageMutableDictionary count]
+___34-[MoEngageMutableDictionary count]_block_invoke
+-[MoEngageMutableDictionary objectForKeyedSubscript:]
+___53-[MoEngageMutableDictionary objectForKeyedSubscript:]_block_invoke
+-[MoEngageMutableDictionary setObject:forKeyedSubscript:]
+___57-[MoEngageMutableDictionary setObject:forKeyedSubscript:]_block_invoke
+-[MoEngageMutableDictionary dictionary]
+___39-[MoEngageMutableDictionary dictionary]_block_invoke
+-[MoEngageMutableDictionary .cxx_destruct]
+___block_descriptor_48_e8_32s40r_e5_v8?0l
+___block_descriptor_56_e8_32s40s48r_e5_v8?0l
+___block_descriptor_56_e8_32s40s48s_e5_v8?0l
+___block_descriptor_48_e8_32s40s_e5_v8?0l
+___block_descriptor_40_e8_32s_e5_v8?0l
+__OBJC_METACLASS_RO_$_MoEngageMutableDictionary
+__OBJC_$_INSTANCE_METHODS_MoEngageMutableDictionary
+_OBJC_IVAR_$_MoEngageMutableDictionary._objects
+_OBJC_IVAR_$_MoEngageMutableDictionary._queue
+__OBJC_$_INSTANCE_VARIABLES_MoEngageMutableDictionary
+__OBJC_CLASS_RO_$_MoEngageMutableDictionary
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/MoEngageMutableDictionary.m
+MoEngageObjCUtils/MoEngageMutableDictionary.m
+__39-[MoEngageMutableDictionary dictionary]_block_invoke
+__57-[MoEngageMutableDictionary setObject:forKeyedSubscript:]_block_invoke
+__53-[MoEngageMutableDictionary objectForKeyedSubscript:]_block_invoke
+__34-[MoEngageMutableDictionary count]_block_invoke
+__copy_helper_block_e8_32s
+__45-[MoEngageMutableDictionary removeAllObjects]_block_invoke
+__48-[MoEngageMutableDictionary removeObjectForKey:]_block_invoke
+__copy_helper_block_e8_32s40s48s
+__46-[MoEngageMutableDictionary setObject:forKey:]_block_invoke
+__destroy_helper_block_e8_32s40s48r
+__copy_helper_block_e8_32s40s48r
+__42-[MoEngageMutableDictionary objectForKey:]_block_invoke
+__copy_helper_block_e8_32s40r
+__40-[MoEngageMutableDictionary description]_block_invoke
+__swift_FORCE_LOAD_$_swiftCompatibility50
+__swift_FORCE_LOAD_$_swiftCompatibility51
+__swift_FORCE_LOAD_$_swiftCompatibilityDynamicReplacements
+__swift_FORCE_LOAD_$_swiftCompatibilityConcurrency
+_symbolic $s17MoEngageObjCUtils0aB33AppDelegateAnalyticsProxyProtocolP
+_$s17MoEngageObjCUtils0aB33AppDelegateAnalyticsProxyProtocol_pMF
+__PROTOCOL__TtP17MoEngageObjCUtils41MoEngageAppDelegateAnalyticsProxyProtocol_
+l_OBJC_LABEL_PROTOCOL_$__TtP17MoEngageObjCUtils41MoEngageAppDelegateAnalyticsProxyProtocol_
+l_OBJC_PROTOCOL_REFERENCE_$__TtP17MoEngageObjCUtils41MoEngageAppDelegateAnalyticsProxyProtocol_
+__swift_FORCE_LOAD_$_swiftFoundation_$_MoEngageObjCUtils
+__swift_FORCE_LOAD_$_swiftObjectiveC_$_MoEngageObjCUtils
+__swift_FORCE_LOAD_$_swiftDarwin_$_MoEngageObjCUtils
+__swift_FORCE_LOAD_$_swiftCoreFoundation_$_MoEngageObjCUtils
+__swift_FORCE_LOAD_$_swiftDispatch_$_MoEngageObjCUtils
+__swift_FORCE_LOAD_$_swiftCoreGraphics_$_MoEngageObjCUtils
+__swift_FORCE_LOAD_$_swiftUIKit_$_MoEngageObjCUtils
+__swift_FORCE_LOAD_$_swiftCoreImage_$_MoEngageObjCUtils
+__swift_FORCE_LOAD_$_swiftMetal_$_MoEngageObjCUtils
+__swift_FORCE_LOAD_$_swiftQuartzCore_$_MoEngageObjCUtils
+__swift_FORCE_LOAD_$_swiftCompatibility50_$_MoEngageObjCUtils
+__swift_FORCE_LOAD_$_swiftCompatibility51_$_MoEngageObjCUtils
+__swift_FORCE_LOAD_$_swiftCompatibilityDynamicReplacements_$_MoEngageObjCUtils
+__swift_FORCE_LOAD_$_swiftCompatibilityConcurrency_$_MoEngageObjCUtils
+___swift_reflection_version
+__PROTOCOL_INSTANCE_METHODS__TtP17MoEngageObjCUtils41MoEngageAppDelegateAnalyticsProxyProtocol_
+__PROTOCOL_METHOD_TYPES__TtP17MoEngageObjCUtils41MoEngageAppDelegateAnalyticsProxyProtocol_
+Apple clang version 13.1.6 (clang-1316.0.20.12)
+<swift-imported-modules>
+Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/MoEngageAppDelegateAnalyticsProxyProtocol.swift
+_symbolic $s17MoEngageObjCUtils0aB33AppDelegateMessagingProxyProtocolP
+_$s17MoEngageObjCUtils0aB33AppDelegateMessagingProxyProtocol_pMF
+__PROTOCOL__TtP17MoEngageObjCUtils41MoEngageAppDelegateMessagingProxyProtocol_
+l_OBJC_LABEL_PROTOCOL_$__TtP17MoEngageObjCUtils41MoEngageAppDelegateMessagingProxyProtocol_
+l_OBJC_PROTOCOL_REFERENCE_$__TtP17MoEngageObjCUtils41MoEngageAppDelegateMessagingProxyProtocol_
+__PROTOCOL_INSTANCE_METHODS__TtP17MoEngageObjCUtils41MoEngageAppDelegateMessagingProxyProtocol_
+__PROTOCOL_METHOD_TYPES__TtP17MoEngageObjCUtils41MoEngageAppDelegateMessagingProxyProtocol_
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/MoEngageAppDelegateMessagingProxyProtocol.swift
+_swift_getFunctionTypeMetadataGlobalActorBackDeploy
+___swift_getFunctionTypeMetadataGlobalActorBackDeploy_block_invoke
+__ZZ50swift_getFunctionTypeMetadataGlobalActorBackDeployE9builderFn
+__ZZ50swift_getFunctionTypeMetadataGlobalActorBackDeployE12builderToken
+___block_descriptor_tmp
+Apple clang version 13.1.6 (clang-1316.0.21.2.3)
+/AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang --driver-mode=g++ -D CMARK_STATIC_DEFINE -D GTEST_HAS_RTTI=0 -D SWIFT_INLINE_NAMESPACE=__runtime -D __STDC_CONSTANT_MACROS -D __STDC_FORMAT_MACROS -D __STDC_LIMIT_MACROS -I stdlib/toolchain/CompatibilityConcurrency -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/toolchain/CompatibilityConcurrency -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/include -I include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/llvm-project/llvm/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Binaries/swiftlang/install/TempContent/Objects/BNI_Xcode/llvm-macosx-x86_64/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/llvm-project/clang/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Binaries/swiftlang/install/TempContent/Objects/BNI_Xcode/llvm-macosx-x86_64/tools/clang/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/cmark/src -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Binaries/swiftlang/install/TempContent/Objects/BNI_Xcode/cmark-macosx-x86_64/src -Wno-unknown-warning-option -Werror=unguarded-availability-new -fno-stack-protector -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wno-class-memaccess -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -fdiagnostics-color -Werror=switch -Wdocumentation -Wimplicit-fallthrough -Wunreachable-code -Woverloaded-virtual -D OBJC_OLD_DISPATCH_PROTOTYPES=0 -O2 -D NDEBUG -arch arm64 -isysroot /AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fno-exceptions -funwind-tables -fno-rtti -Werror=gnu -Werror=c++98-compat-extra-semi -Wall -Wglobal-constructors -Wexit-time-destructors -D SWIFT_COMPATIBILITY_LIBRARY=1 -D SWIFT_TARGET_LIBRARY_NAME=swiftCompatibilityConcurrency -fembed-bitcode=all -D SWIFT_RUNTIME --target=arm64-apple-tvos9.0 -isysroot /AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk -arch arm64 -F/AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk/../../../Developer/Library/Frameworks -F/AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk/../../../Developer/AppleInternal/Library/Frameworks -O2 -g -D NDEBUG -D SWIFT_LIBRARY_EVOLUTION=0 -D SWIFT_STDLIB_HAS_DLADDR -D SWIFT_STDLIB_HAS_DARWIN_LIBMALLOC=1 -D SWIFT_STDLIB_HAS_STDIN -D SWIFT_STDLIB_HAS_ENVIRON -D SWIFT_RUNTIME_OS_VERSIONING -D SWIFT_STDLIB_SHORT_MANGLING_LOOKUPS -std=c++14 -MD -MT stdlib/toolchain/CompatibilityConcurrency/CMakeFiles/swiftCompatibilityConcurrency-appletvos-arm64.dir/CompatibilityConcurrency.cpp.o -MF stdlib/toolchain/CompatibilityConcurrency/CMakeFiles/swiftCompatibilityConcurrency-appletvos-arm64.dir/CompatibilityConcurrency.cpp.o.d -o stdlib/toolchain/CompatibilityConcurrency/CMakeFiles/swiftCompatibilityConcurrency-appletvos-arm64.dir/CompatibilityConcurrency.cpp.o -c /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/toolchain/CompatibilityConcurrency/CompatibilityConcurrency.cpp -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -Xclang -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -Xclang -clang-vendor-feature=+disableInferNewAvailabilityFromInit -Xclang -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -Xclang -fno-odr-hash-protocols -Xclang -clang-vendor-feature=+enableAggressiveVLAFolding -Xclang -clang-vendor-feature=+revert09abecef7bbf -Xclang -clang-vendor-feature=+thisNoAlignAttr -Xclang -clang-vendor-feature=+thisNoNullAttr -mlinker-version=762 -stdlib=libc++
+/AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk
+/AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/toolchain/CompatibilityConcurrency/CompatibilityConcurrency.cpp
+/AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Binaries/swiftlang/install/TempContent/Objects/BNI_Xcode/swift-macosx-x86_64
+__swift_getFunctionTypeMetadataGlobalActorBackDeploy_block_invoke
+Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/toolchain/CompatibilityConcurrency/CompatibilityConcurrency.cpp
+/AppleInternal/BuildRoot/Library/Caches/com.apple.xbs
+swift_getFunctionTypeMetadataGlobalActorBackDeploy
+Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk/usr/include/dispatch/once.h
+/AppleInternal/BuildRoot
+_swift_getFunctionReplacement50
+_swift_getOrigOfReplaceable50
+/AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang --driver-mode=g++ -D CMARK_STATIC_DEFINE -D GTEST_HAS_RTTI=0 -D SWIFT_INLINE_NAMESPACE=__runtime -D __STDC_CONSTANT_MACROS -D __STDC_FORMAT_MACROS -D __STDC_LIMIT_MACROS -I stdlib/toolchain/CompatibilityDynamicReplacements -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/toolchain/CompatibilityDynamicReplacements -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/include -I include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/llvm-project/llvm/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Binaries/swiftlang/install/TempContent/Objects/BNI_Xcode/llvm-macosx-x86_64/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/llvm-project/clang/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Binaries/swiftlang/install/TempContent/Objects/BNI_Xcode/llvm-macosx-x86_64/tools/clang/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/cmark/src -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Binaries/swiftlang/install/TempContent/Objects/BNI_Xcode/cmark-macosx-x86_64/src -Wno-unknown-warning-option -Werror=unguarded-availability-new -fno-stack-protector -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wno-class-memaccess -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -fdiagnostics-color -Werror=switch -Wdocumentation -Wimplicit-fallthrough -Wunreachable-code -Woverloaded-virtual -D OBJC_OLD_DISPATCH_PROTOTYPES=0 -O2 -D NDEBUG -arch arm64 -isysroot /AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fno-exceptions -funwind-tables -fno-rtti -Werror=gnu -Werror=c++98-compat-extra-semi -Wall -Wglobal-constructors -Wexit-time-destructors -D SWIFT_COMPATIBILITY_LIBRARY=1 -D SWIFT_TARGET_LIBRARY_NAME=swiftCompatibilityDynamicReplacements -fembed-bitcode=all -D SWIFT_RUNTIME --target=arm64-apple-tvos9.0 -isysroot /AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk -arch arm64 -F/AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk/../../../Developer/Library/Frameworks -F/AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk/../../../Developer/AppleInternal/Library/Frameworks -O2 -g -D NDEBUG -D SWIFT_LIBRARY_EVOLUTION=0 -D SWIFT_STDLIB_HAS_DLADDR -D SWIFT_STDLIB_HAS_DARWIN_LIBMALLOC=1 -D SWIFT_STDLIB_HAS_STDIN -D SWIFT_STDLIB_HAS_ENVIRON -D SWIFT_RUNTIME_OS_VERSIONING -D SWIFT_STDLIB_SHORT_MANGLING_LOOKUPS -std=c++14 -MD -MT stdlib/toolchain/CompatibilityDynamicReplacements/CMakeFiles/swiftCompatibilityDynamicReplacements-appletvos-arm64.dir/DynamicReplaceable.cpp.o -MF stdlib/toolchain/CompatibilityDynamicReplacements/CMakeFiles/swiftCompatibilityDynamicReplacements-appletvos-arm64.dir/DynamicReplaceable.cpp.o.d -o stdlib/toolchain/CompatibilityDynamicReplacements/CMakeFiles/swiftCompatibilityDynamicReplacements-appletvos-arm64.dir/DynamicReplaceable.cpp.o -c /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/toolchain/CompatibilityDynamicReplacements/DynamicReplaceable.cpp -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -Xclang -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -Xclang -clang-vendor-feature=+disableInferNewAvailabilityFromInit -Xclang -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -Xclang -fno-odr-hash-protocols -Xclang -clang-vendor-feature=+enableAggressiveVLAFolding -Xclang -clang-vendor-feature=+revert09abecef7bbf -Xclang -clang-vendor-feature=+thisNoAlignAttr -Xclang -clang-vendor-feature=+thisNoNullAttr -mlinker-version=762 -stdlib=libc++
+/AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/toolchain/CompatibilityDynamicReplacements/DynamicReplaceable.cpp
+swift_getOrigOfReplaceable50
+Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/toolchain/CompatibilityDynamicReplacements/DynamicReplaceable.cpp
+swift_getFunctionReplacement50
+__ZL29installGetClassHook_untrustedv
+__ZL35getObjCClassByMangledName_untrustedPKcPP10objc_class
+__ZL15OldGetClassHook
+/AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang --driver-mode=g++ -D CMARK_STATIC_DEFINE -D GTEST_HAS_RTTI=0 -D SWIFT_INLINE_NAMESPACE=__runtime -D __STDC_CONSTANT_MACROS -D __STDC_FORMAT_MACROS -D __STDC_LIMIT_MACROS -I stdlib/toolchain/Compatibility50 -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/toolchain/Compatibility50 -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/include -I include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/llvm-project/llvm/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Binaries/swiftlang/install/TempContent/Objects/BNI_Xcode/llvm-macosx-x86_64/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/llvm-project/clang/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Binaries/swiftlang/install/TempContent/Objects/BNI_Xcode/llvm-macosx-x86_64/tools/clang/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/cmark/src -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Binaries/swiftlang/install/TempContent/Objects/BNI_Xcode/cmark-macosx-x86_64/src -Wno-unknown-warning-option -Werror=unguarded-availability-new -fno-stack-protector -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wno-class-memaccess -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -fdiagnostics-color -Werror=switch -Wdocumentation -Wimplicit-fallthrough -Wunreachable-code -Woverloaded-virtual -D OBJC_OLD_DISPATCH_PROTOTYPES=0 -O2 -D NDEBUG -arch arm64 -isysroot /AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fno-exceptions -funwind-tables -fno-rtti -Werror=gnu -Werror=c++98-compat-extra-semi -Wall -Wglobal-constructors -Wexit-time-destructors -D SWIFT_COMPATIBILITY_LIBRARY=1 -D SWIFT_TARGET_LIBRARY_NAME=swiftCompatibility50 -fembed-bitcode=all -D SWIFT_RUNTIME --target=arm64-apple-tvos9.0 -isysroot /AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk -arch arm64 -F/AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk/../../../Developer/Library/Frameworks -F/AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk/../../../Developer/AppleInternal/Library/Frameworks -O2 -g -D NDEBUG -D SWIFT_LIBRARY_EVOLUTION=0 -D SWIFT_STDLIB_HAS_DLADDR -D SWIFT_STDLIB_HAS_DARWIN_LIBMALLOC=1 -D SWIFT_STDLIB_HAS_STDIN -D SWIFT_STDLIB_HAS_ENVIRON -D SWIFT_RUNTIME_OS_VERSIONING -D SWIFT_STDLIB_SHORT_MANGLING_LOOKUPS -std=c++14 -MD -MT stdlib/toolchain/Compatibility50/CMakeFiles/swiftCompatibility50-appletvos-arm64.dir/Overrides.cpp.o -MF stdlib/toolchain/Compatibility50/CMakeFiles/swiftCompatibility50-appletvos-arm64.dir/Overrides.cpp.o.d -o stdlib/toolchain/Compatibility50/CMakeFiles/swiftCompatibility50-appletvos-arm64.dir/Overrides.cpp.o -c /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/toolchain/Compatibility50/Overrides.cpp -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -Xclang -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -Xclang -clang-vendor-feature=+disableInferNewAvailabilityFromInit -Xclang -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -Xclang -fno-odr-hash-protocols -Xclang -clang-vendor-feature=+enableAggressiveVLAFolding -Xclang -clang-vendor-feature=+revert09abecef7bbf -Xclang -clang-vendor-feature=+thisNoAlignAttr -Xclang -clang-vendor-feature=+thisNoNullAttr -mlinker-version=762 -stdlib=libc++
+/AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/toolchain/Compatibility50/Overrides.cpp
+getObjCClassByMangledName_untrusted
+Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/toolchain/Compatibility50/Overrides.cpp
+llvm.loop.mustprogress
+installGetClassHook_untrusted
+/AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang --driver-mode=g++ -D CMARK_STATIC_DEFINE -D GTEST_HAS_RTTI=0 -D SWIFT_INLINE_NAMESPACE=__runtime -D __STDC_CONSTANT_MACROS -D __STDC_FORMAT_MACROS -D __STDC_LIMIT_MACROS -I stdlib/toolchain/Compatibility51 -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/toolchain/Compatibility51 -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/include -I include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/llvm-project/llvm/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Binaries/swiftlang/install/TempContent/Objects/BNI_Xcode/llvm-macosx-x86_64/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/llvm-project/clang/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Binaries/swiftlang/install/TempContent/Objects/BNI_Xcode/llvm-macosx-x86_64/tools/clang/include -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/cmark/src -I /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Binaries/swiftlang/install/TempContent/Objects/BNI_Xcode/cmark-macosx-x86_64/src -Wno-unknown-warning-option -Werror=unguarded-availability-new -fno-stack-protector -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wimplicit-fallthrough -Wcovered-switch-default -Wno-class-memaccess -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wsuggest-override -Wstring-conversion -Wmisleading-indentation -fdiagnostics-color -Werror=switch -Wdocumentation -Wimplicit-fallthrough -Wunreachable-code -Woverloaded-virtual -D OBJC_OLD_DISPATCH_PROTOTYPES=0 -O2 -D NDEBUG -arch arm64 -isysroot /AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fno-exceptions -funwind-tables -fno-rtti -Werror=gnu -Werror=c++98-compat-extra-semi -Wall -Wglobal-constructors -Wexit-time-destructors -D SWIFT_COMPATIBILITY_LIBRARY=1 -D SWIFT_TARGET_LIBRARY_NAME=swiftCompatibility51 -fembed-bitcode=all -D SWIFT_RUNTIME --target=arm64-apple-tvos9.0 -isysroot /AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk -arch arm64 -F/AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk/../../../Developer/Library/Frameworks -F/AppleInternal/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk/../../../Developer/AppleInternal/Library/Frameworks -O2 -g -D NDEBUG -D SWIFT_LIBRARY_EVOLUTION=0 -D SWIFT_STDLIB_HAS_DLADDR -D SWIFT_STDLIB_HAS_DARWIN_LIBMALLOC=1 -D SWIFT_STDLIB_HAS_STDIN -D SWIFT_STDLIB_HAS_ENVIRON -D SWIFT_RUNTIME_OS_VERSIONING -D SWIFT_STDLIB_SHORT_MANGLING_LOOKUPS -std=c++14 -MD -MT stdlib/toolchain/Compatibility51/CMakeFiles/swiftCompatibility51-appletvos-arm64.dir/Overrides.cpp.o -MF stdlib/toolchain/Compatibility51/CMakeFiles/swiftCompatibility51-appletvos-arm64.dir/Overrides.cpp.o.d -o stdlib/toolchain/Compatibility51/CMakeFiles/swiftCompatibility51-appletvos-arm64.dir/Overrides.cpp.o -c /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/toolchain/Compatibility51/Overrides.cpp -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -Xclang -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -Xclang -clang-vendor-feature=+disableInferNewAvailabilityFromInit -Xclang -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -Xclang -fno-odr-hash-protocols -Xclang -clang-vendor-feature=+enableAggressiveVLAFolding -Xclang -clang-vendor-feature=+revert09abecef7bbf -Xclang -clang-vendor-feature=+thisNoAlignAttr -Xclang -clang-vendor-feature=+thisNoNullAttr -mlinker-version=762 -stdlib=libc++
+/AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/swiftlang/swiftlang-5.6.0.323.66/swift/stdlib/toolchain/Compatibility51/Overrides.cpp
