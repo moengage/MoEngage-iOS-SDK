@@ -4,3 +4,8 @@ framework module MoEngageObjCUtils {
   export *
   module * { export * }
 }
+
+module MoEngageObjCUtils.Swift {
+    header "MoEngageObjCUtils-Swift.h"
+    requires objc
+}

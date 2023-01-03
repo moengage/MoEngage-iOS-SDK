@@ -2,6 +2,11 @@
 =================================
 
 ## Changelog:
+### Version 9.2.1 *(03rd January, 2023)*
+-------------------------------------------
+* BugFix - Fixed the delay in deeplink callback for custom URL scheme. 
+* CrashFix - Handled the crash when registering for remote notifications.
+
 ### Version 9.2.0 *(28th December, 2022)*
 -------------------------------------------
 * BugFix - Fixed Carousel image not displaying multiple images.
