@@ -6,7 +6,7 @@
 	<dict>
 		<key>CHANGELOG.md</key>
 		<data>
-		vVQfkUrcVWTQY+wEDSBdzO3wgTE=
+		AtHhlAfy3Mf77jwhtQk3pT2e0LU=
 		</data>
 		<key>Headers/MoEngageSDK-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jFKprMMJAzwHdBBPXIC50+C4qnw=
+		O/4+Pr9/MdhtRwGzw2RFAbhK6aA=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		r6od/uC4YPCAaKp6eoRVRpGCVgg=
+		OIKtcv7IORMHAp2kLToju9r1wHw=
 		</data>
 		<key>Modules/MoEngageSDK.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/MoEngageSDK.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		ZUUNeAZXkC5qdjZYmmx4knoGKuA=
+		iNrSb6nbLiYoei0Gv9mCJsukHCo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,11 +63,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vVQfkUrcVWTQY+wEDSBdzO3wgTE=
+			AtHhlAfy3Mf77jwhtQk3pT2e0LU=
 			</data>
 			<key>hash2</key>
 			<data>
-			PHNdLBrvwL4NZJUMmdCOUo5funFGl6cNk39zNkFAf2U=
+			qyCamfr3oyEPwF2FlXD7sT15DQVnwrg+B4dDW990VKY=
 			</data>
 		</dict>
 		<key>Headers/MoEngageSDK-Swift.h</key>
@@ -129,11 +129,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			r6od/uC4YPCAaKp6eoRVRpGCVgg=
+			OIKtcv7IORMHAp2kLToju9r1wHw=
 			</data>
 			<key>hash2</key>
 			<data>
-			sBYYwBlDnlvqOAOQ3MO4ekKz2TgTMLXxKg8zzMLVSUE=
+			3uyCzgrCWFDgRH3qaL86aqQqqT9qiiZXgvzDLkhJ8bk=
 			</data>
 		</dict>
 		<key>Modules/MoEngageSDK.swiftmodule/armv7-apple-ios.swiftdoc</key>
@@ -162,11 +162,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZUUNeAZXkC5qdjZYmmx4knoGKuA=
+			iNrSb6nbLiYoei0Gv9mCJsukHCo=
 			</data>
 			<key>hash2</key>
 			<data>
-			a4siNbVK6Tp9M5xS6lo3pcIW4NOhsEXQLZf7n2WZ9KQ=
+			AjxJu0C/CexgeHlINnc2RggV8c2XtQzJyL/eJCE2cls=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -2,8 +2,8 @@ BCSymbolMap Version: 2.0
 Apple clang version 13.1.6 (clang-1316.0.21.2.5)
 /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS15.4.sdk
 AppleTVOS15.4.sdk
-/Users/rakshitha/Library/Developer/Xcode/DerivedData/MoEngage-cmmkomvfnirhvydwlmcpvafliotx/Build/Intermediates.noindex/ArchiveIntermediates/MoEngageSDKTvOS/IntermediateBuildFilesPath/MoEngage.build/Release-appletvos/MoEngageSDKTvOS.build/DerivedSources/MoEngageSDK_vers.c
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage
+/Users/deepa/Library/Developer/Xcode/DerivedData/MoEngage-ddoehuamaaipxyddvinbjltvhjaz/Build/Intermediates.noindex/ArchiveIntermediates/MoEngageSDKTvOS/IntermediateBuildFilesPath/MoEngage.build/Release-appletvos/MoEngageSDKTvOS.build/DerivedSources/MoEngageSDK_vers.c
+/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage
 _$s11MoEngageSDK0aB0C14sharedInstance_WZ
 _$s11MoEngageSDK0aB0C14sharedInstanceACvgZTo
 _$s11MoEngageSDK0aB0CACyc33_B0FA01D6E5EF84AE4FCDF7C6DFD641B4LlfcTo
@@ -91,7 +91,7 @@ Apple clang version 13.1.6 (clang-1316.0.20.12)
 -private-discriminator _B0FA01D6E5EF84AE4FCDF7C6DFD641B4
 <swift-imported-modules>
 Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
-/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageSDK/MoEngage.swift
+/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageSDK/MoEngage.swift
 $s11MoEngageSDK0aB0CfETo
 $s11MoEngageSDK0aB0CMa
 <compiler-generated>
