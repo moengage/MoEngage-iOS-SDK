@@ -2,6 +2,10 @@
 =================================
 
 ## Changelog:
+### Version 9.2.2 *(11th January, 2023)*
+-------------------------------------------
+* BugFix - Added DC-04 support.
+
 ### Version 9.2.1 *(03rd January, 2023)*
 -------------------------------------------
 * BugFix - Fixed the delay in deeplink callback for custom URL scheme. 
