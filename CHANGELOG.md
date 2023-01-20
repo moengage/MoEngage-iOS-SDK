@@ -2,6 +2,10 @@
 =================================
 
 ## Changelog:
+### Version 9.2.3 *(20th January, 2023)*
+-------------------------------------------
+* CrashFix - Fixed migration crash for session and source.
+
 ### Version 9.2.2 *(11th January, 2023)*
 -------------------------------------------
 * BugFix - Added DC-04 support.
