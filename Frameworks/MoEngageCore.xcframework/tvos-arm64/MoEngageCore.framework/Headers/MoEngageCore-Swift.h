@@ -318,6 +318,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) dispatch_que
 - (void)initializeInstanceWithSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig isDefaultInstance:(BOOL)isDefaultInstance withCompletionBlock:(void (^ _Nonnull)(MoEngageSDKInstance * _Nullable))completion;
 - (MoEngageSDKConfig * _Nullable)getDefaultSDKConfiguration SWIFT_WARN_UNUSED_RESULT;
 - (MoEngageSDKConfig * _Nullable)getSDKConfigForAppID:(NSString * _Nonnull)appID SWIFT_WARN_UNUSED_RESULT;
+- (NSArray<MoEngageSDKConfig *> * _Nonnull)getAllSDKConfigs SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)isSDKEnabled SWIFT_WARN_UNUSED_RESULT;
 - (void)updateSDKStateWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance sdkState:(BOOL)sdkState;
 - (void)enableSDKWithAppId:(NSString * _Nullable)appId;

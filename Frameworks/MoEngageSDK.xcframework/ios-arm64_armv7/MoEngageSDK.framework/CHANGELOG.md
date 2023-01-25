@@ -2,6 +2,10 @@
 =================================
 
 ## Changelog:
+### Version 9.3.0 *(25th January 2023)*
+-------------------------------------------
+* Support for `stopGeofenceMonitoring` API in Geofence module.
+
 ### Version 9.2.3 *(20th January, 2023)*
 -------------------------------------------
 * CrashFix - Fixed migration crash for session and source.

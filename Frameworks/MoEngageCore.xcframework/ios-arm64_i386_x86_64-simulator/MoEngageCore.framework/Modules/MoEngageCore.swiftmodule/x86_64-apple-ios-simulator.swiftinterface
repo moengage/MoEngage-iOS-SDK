@@ -40,6 +40,7 @@ public struct MoEngageCoreConstants {
       public static let sdkUniqueID: Swift.String
       public static let sdkEnabled: Swift.String
       public static let trackReInstall: Swift.String
+      public static let geoFenceEnabled: Swift.String
     }
   }
   public struct DateTimeFormats {
@@ -607,6 +608,7 @@ extension MoEngageCore.MoEngageNetworkClient : MoEngageCore.MoEngageNetworkReque
   @objc public func initializeInstanceWithSDKConfig(_ sdkConfig: MoEngageCore.MoEngageSDKConfig, isDefaultInstance: Swift.Bool, withCompletionBlock completion: @escaping ((MoEngageCore.MoEngageSDKInstance?) -> ()))
   @objc public func getDefaultSDKConfiguration() -> MoEngageCore.MoEngageSDKConfig?
   @objc public func getSDKConfig(forAppID appID: Swift.String) -> MoEngageCore.MoEngageSDKConfig?
+  @objc public func getAllSDKConfigs() -> [MoEngageCore.MoEngageSDKConfig]
   @objc public func isSDKEnabled() -> Swift.Bool
   @objc public func updateSDKState(sdkInstance: MoEngageCore.MoEngageSDKInstance, sdkState: Swift.Bool)
   @objc public func enableSDK(appId: Swift.String? = nil)
