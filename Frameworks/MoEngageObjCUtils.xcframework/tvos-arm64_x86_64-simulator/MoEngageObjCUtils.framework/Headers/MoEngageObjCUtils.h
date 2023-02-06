@@ -21,5 +21,3 @@ FOUNDATION_EXPORT const unsigned char MoEngageObjCUtilsTvOSVersionString[];
 #import <MoEngageObjCUtils/MoEngageAppDelegateProxy.h>
 #import <MoEngageObjCUtils/MoEngageObjCUtils.h>
 #import <MoEngageObjCUtils/MoEngageProxyUtils.h>
-#import <MoEngageObjCUtils/NSDictionary+MoEngageExtension.h>
-#import <MoEngageObjCUtils/NSMutableDictionary+MoEngageExtension.h>

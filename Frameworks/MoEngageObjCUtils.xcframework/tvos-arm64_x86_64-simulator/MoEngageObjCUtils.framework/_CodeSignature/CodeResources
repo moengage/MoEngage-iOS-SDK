@@ -18,23 +18,15 @@
 		</data>
 		<key>Headers/MoEngageObjCUtils.h</key>
 		<data>
-		Ae0mixmDkd6z3gG6j1C1I13cSEw=
+		YbQVLwrgQnOV+lTHbY0fGrX6mf4=
 		</data>
 		<key>Headers/MoEngageProxyUtils.h</key>
 		<data>
 		MPLstj6+UbOF9XTpX+id+B3ohBM=
 		</data>
-		<key>Headers/NSDictionary+MoEngageExtension.h</key>
-		<data>
-		ufin3Z6+JadN4mWH9PHfdResk8k=
-		</data>
-		<key>Headers/NSMutableDictionary+MoEngageExtension.h</key>
-		<data>
-		0tN82hrhlMGIcul7EDCBs4kMZlE=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		YtiCnjvyc4q0E9rajTpKpCeZyak=
+		Y4BoAB2oeDuksedMvQ9rhCxvdds=
 		</data>
 		<key>Modules/MoEngageObjCUtils.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
@@ -46,7 +38,7 @@
 		</data>
 		<key>Modules/MoEngageObjCUtils.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		TIUd2+50P0ah25MnQAsdhYIYLag=
+		K8A/zljzVl9rcXlS42cB7xT9D3Q=
 		</data>
 		<key>Modules/MoEngageObjCUtils.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
@@ -58,7 +50,7 @@
 		</data>
 		<key>Modules/MoEngageObjCUtils.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		p+njM+N/6Cbtt64IC6AzlBBI6SI=
+		l3XZxuXPt0NIBdaWFJd+lh9Gw1c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -104,11 +96,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ae0mixmDkd6z3gG6j1C1I13cSEw=
+			YbQVLwrgQnOV+lTHbY0fGrX6mf4=
 			</data>
 			<key>hash2</key>
 			<data>
-			4+slstWk4ncV5eEj0p0YVhHZhw8mxusElmR2V+SIgGQ=
+			IMk0XYoP76f+XNroQCOg/CCBEltq2E+tE3zMUUjqfyA=
 			</data>
 		</dict>
 		<key>Headers/MoEngageProxyUtils.h</key>
@@ -120,28 +112,6 @@
 			<key>hash2</key>
 			<data>
 			uhkB1wLt/pRCUKRgj+BMysJ2JNybjZiNMtOHCsqAGes=
-			</data>
-		</dict>
-		<key>Headers/NSDictionary+MoEngageExtension.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ufin3Z6+JadN4mWH9PHfdResk8k=
-			</data>
-			<key>hash2</key>
-			<data>
-			PAuoroyNo8eNurP7Tx1eSHYm5XN5H6aR0qh+86A/vhI=
-			</data>
-		</dict>
-		<key>Headers/NSMutableDictionary+MoEngageExtension.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0tN82hrhlMGIcul7EDCBs4kMZlE=
-			</data>
-			<key>hash2</key>
-			<data>
-			2iKSlBG1NL/UqYrfl4TIU7YRyDQdiqnz2YY0pzoz59g=
 			</data>
 		</dict>
 		<key>Modules/MoEngageObjCUtils.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
@@ -170,11 +140,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TIUd2+50P0ah25MnQAsdhYIYLag=
+			K8A/zljzVl9rcXlS42cB7xT9D3Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			7IzI0euuBSqdg43QEhZUk5UJt38neCpseqfvIpoMs6w=
+			bm2Rhv0+aT67ViOCDJ4IQn900ft7QwofBBqA+dE4Hss=
 			</data>
 		</dict>
 		<key>Modules/MoEngageObjCUtils.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
@@ -203,11 +173,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			p+njM+N/6Cbtt64IC6AzlBBI6SI=
+			l3XZxuXPt0NIBdaWFJd+lh9Gw1c=
 			</data>
 			<key>hash2</key>
 			<data>
-			gSrhW6FGcLTvFR7qn6CFwRDomnpxB2ew/Pwo5LskEXU=
+			1b9HuR5No+qG1V8MrWiXxgoG5XlsM3BffR3toDXpQS8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
