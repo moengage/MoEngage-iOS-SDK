@@ -18,23 +18,15 @@
 		</data>
 		<key>Headers/MoEngageObjCUtils.h</key>
 		<data>
-		Ae0mixmDkd6z3gG6j1C1I13cSEw=
+		YbQVLwrgQnOV+lTHbY0fGrX6mf4=
 		</data>
 		<key>Headers/MoEngageProxyUtils.h</key>
 		<data>
 		MPLstj6+UbOF9XTpX+id+B3ohBM=
 		</data>
-		<key>Headers/NSDictionary+MoEngageExtension.h</key>
-		<data>
-		ufin3Z6+JadN4mWH9PHfdResk8k=
-		</data>
-		<key>Headers/NSMutableDictionary+MoEngageExtension.h</key>
-		<data>
-		0tN82hrhlMGIcul7EDCBs4kMZlE=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		9Q41ceAzWjz3x08rWUAr6auIuWU=
+		A+Y56pXknY1bHbXDxc+jlhPZdQ4=
 		</data>
 		<key>Modules/MoEngageObjCUtils.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
@@ -46,7 +38,7 @@
 		</data>
 		<key>Modules/MoEngageObjCUtils.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		a9wTTeiLkqetwfJUufkyC2Tz7zM=
+		rbQi+2uGQ+01nGry4marKFUyeK8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -92,11 +84,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ae0mixmDkd6z3gG6j1C1I13cSEw=
+			YbQVLwrgQnOV+lTHbY0fGrX6mf4=
 			</data>
 			<key>hash2</key>
 			<data>
-			4+slstWk4ncV5eEj0p0YVhHZhw8mxusElmR2V+SIgGQ=
+			IMk0XYoP76f+XNroQCOg/CCBEltq2E+tE3zMUUjqfyA=
 			</data>
 		</dict>
 		<key>Headers/MoEngageProxyUtils.h</key>
@@ -108,28 +100,6 @@
 			<key>hash2</key>
 			<data>
 			uhkB1wLt/pRCUKRgj+BMysJ2JNybjZiNMtOHCsqAGes=
-			</data>
-		</dict>
-		<key>Headers/NSDictionary+MoEngageExtension.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ufin3Z6+JadN4mWH9PHfdResk8k=
-			</data>
-			<key>hash2</key>
-			<data>
-			PAuoroyNo8eNurP7Tx1eSHYm5XN5H6aR0qh+86A/vhI=
-			</data>
-		</dict>
-		<key>Headers/NSMutableDictionary+MoEngageExtension.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0tN82hrhlMGIcul7EDCBs4kMZlE=
-			</data>
-			<key>hash2</key>
-			<data>
-			2iKSlBG1NL/UqYrfl4TIU7YRyDQdiqnz2YY0pzoz59g=
 			</data>
 		</dict>
 		<key>Modules/MoEngageObjCUtils.swiftmodule/arm64-apple-tvos.swiftdoc</key>
@@ -158,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a9wTTeiLkqetwfJUufkyC2Tz7zM=
+			rbQi+2uGQ+01nGry4marKFUyeK8=
 			</data>
 			<key>hash2</key>
 			<data>
-			wVWzts+bHP/rgtOOF/v2sh4FrLZ95HVqAtOCeFt6CUo=
+			On8Sq1mdBxGI2s7vBYTnPgOfKt/yQVUZEXxaLhvEF0U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

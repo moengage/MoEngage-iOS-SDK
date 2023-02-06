@@ -17,6 +17,4 @@ FOUNDATION_EXPORT const unsigned char MoEngageObjCUtilsVersionString[];
 #import <MoEngageObjCUtils/MoEngageAppDelegateSwizzler.h>
 #import <MoEngageObjCUtils/MoEngageAppDelegateProxy.h>
 #import <MoEngageObjCUtils/MoEngageProxyUtils.h>
-#import <MoEngageObjCUtils/NSDictionary+MoEngageExtension.h>
-#import <MoEngageObjCUtils/NSMutableDictionary+MoEngageExtension.h>
 #import <MoEngageObjCUtils/MoEngageMutableDictionary.h>

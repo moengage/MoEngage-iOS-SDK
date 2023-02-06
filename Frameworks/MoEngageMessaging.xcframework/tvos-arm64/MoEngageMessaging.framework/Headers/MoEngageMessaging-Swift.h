@@ -231,7 +231,6 @@ SWIFT_PROTOCOL("_TtP17MoEngageMessaging25MoEngageMessagingDelegate_")
 
 SWIFT_CLASS("_TtC17MoEngageMessaging22MoEngageMessagingUtils")
 @interface MoEngageMessagingUtils : NSObject
-+ (NSString * _Nullable)getAppIDFromNotificationPayload:(NSDictionary * _Nonnull)userInfo SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

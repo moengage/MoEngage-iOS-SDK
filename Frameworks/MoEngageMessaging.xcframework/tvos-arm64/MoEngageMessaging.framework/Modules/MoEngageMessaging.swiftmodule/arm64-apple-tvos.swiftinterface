@@ -151,7 +151,6 @@ public class MoEngagePushRichExpandedMode {
 }
 @_inheritsConvenienceInitializers @objc public class MoEngageMessagingUtils : ObjectiveC.NSObject {
   public static func getStatsAttributes(fromPayloadDict payloadDict: Swift.Dictionary<Swift.AnyHashable, Any>) -> Swift.Dictionary<Swift.String, Any>
-  @objc public static func getAppID(fromNotificationPayload userInfo: Foundation.NSDictionary) -> Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }

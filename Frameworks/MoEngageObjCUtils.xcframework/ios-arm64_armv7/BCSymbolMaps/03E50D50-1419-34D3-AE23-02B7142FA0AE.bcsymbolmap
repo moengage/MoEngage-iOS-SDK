@@ -2,58 +2,8 @@ BCSymbolMap Version: 2.0
 Apple clang version 13.1.6 (clang-1316.0.21.2.5)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
 iPhoneOS15.5.sdk
-/Users/deepa/Library/Developer/Xcode/DerivedData/MoEngage-ddoehuamaaipxyddvinbjltvhjaz/Build/Intermediates.noindex/ArchiveIntermediates/MoEngageObjCUtils/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MoEngageObjCUtils.build/DerivedSources/MoEngageObjCUtils_vers.c
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage
--[NSDictionary(MoEngageExtension) validObjectForKey:]
--[NSDictionary(MoEngageExtension) validObjectForKeyPath:]
--[NSDictionary(MoEngageExtension) containsKey:]
--[NSDictionary(MoEngageExtension) getIntegerForKey:]
--[NSDictionary(MoEngageExtension) getStringForKey:]
--[NSDictionary(MoEngageExtension) getDateForKey:dateFormat:]
--[NSDictionary(MoEngageExtension) getBooleanForKey:]
--[NSDictionary(MoEngageExtension) stringForkey:]
--[NSDictionary(MoEngageExtension) checkIfKeyExists:]
--[NSDictionary(MoEngageExtension) validDictionaryFromKey:]
-_OBJC_SELECTOR_REFERENCES_
-_OBJC_SELECTOR_REFERENCES_.2
-_OBJC_CLASSLIST_REFERENCES_$_
-_OBJC_SELECTOR_REFERENCES_.4
-_OBJC_SELECTOR_REFERENCES_.6
-_OBJC_SELECTOR_REFERENCES_.8
-_OBJC_SELECTOR_REFERENCES_.10
-_OBJC_SELECTOR_REFERENCES_.12
-_OBJC_SELECTOR_REFERENCES_.14
-_OBJC_SELECTOR_REFERENCES_.16
-_OBJC_CLASSLIST_REFERENCES_$_.17
-_OBJC_SELECTOR_REFERENCES_.21
-_OBJC_CLASSLIST_REFERENCES_$_.22
-_OBJC_SELECTOR_REFERENCES_.24
-_OBJC_SELECTOR_REFERENCES_.26
-_OBJC_SELECTOR_REFERENCES_.28
-_OBJC_SELECTOR_REFERENCES_.30
-_OBJC_CLASSLIST_REFERENCES_$_.31
-_OBJC_SELECTOR_REFERENCES_.33
-_OBJC_SELECTOR_REFERENCES_.35
-__OBJC_$_CATEGORY_INSTANCE_METHODS_NSDictionary_$_MoEngageExtension
-__OBJC_$_CATEGORY_NSDictionary_$_MoEngageExtension
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/NSDictionary+MoEngageExtension.m
-MoEngageObjCUtils/NSDictionary+MoEngageExtension.m
--[NSMutableDictionary(MoEngageExtension) setObjectNilHandled:forKey:]
--[NSMutableDictionary(MoEngageExtension) removeValidObjectForKey:]
--[NSMutableDictionary(MoEngageExtension) containsKeyInDict:]
--[NSMutableDictionary(MoEngageExtension) checkIfKeyExists:]
-_OBJC_CLASSLIST_REFERENCES_$_.1
-_OBJC_SELECTOR_REFERENCES_.5
-_OBJC_SELECTOR_REFERENCES_.7
-_OBJC_SELECTOR_REFERENCES_.9
-_OBJC_SELECTOR_REFERENCES_.11
-_OBJC_SELECTOR_REFERENCES_.13
-_OBJC_SELECTOR_REFERENCES_.15
-_OBJC_SELECTOR_REFERENCES_.17
-__OBJC_$_CATEGORY_INSTANCE_METHODS_NSMutableDictionary_$_MoEngageExtension
-__OBJC_$_CATEGORY_NSMutableDictionary_$_MoEngageExtension
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/NSMutableDictionary+MoEngageExtension.m
-MoEngageObjCUtils/NSMutableDictionary+MoEngageExtension.m
+/Users/rakshitha/Library/Developer/Xcode/DerivedData/MoEngage-cnobpkmsqmaefpeplvsvpecxdigk/Build/Intermediates.noindex/ArchiveIntermediates/MoEngageObjCUtils/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MoEngageObjCUtils.build/DerivedSources/MoEngageObjCUtils_vers.c
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage
 -[MOZeroingWeakContainer object]
 -[MOZeroingWeakContainer setObject:]
 -[MOZeroingWeakContainer .cxx_destruct]
@@ -134,7 +84,10 @@ _sharedInstance.instance
 _sharedInstance.once
 ___block_descriptor_20_e5_v4?0l
 ___block_literal_global
+_OBJC_CLASSLIST_REFERENCES_$_
+_OBJC_SELECTOR_REFERENCES_
 _OBJC_CLASSLIST_REFERENCES_$_.19
+_OBJC_SELECTOR_REFERENCES_.21
 _OBJC_SELECTOR_REFERENCES_.25
 _OBJC_SELECTOR_REFERENCES_.27
 _OBJC_SELECTOR_REFERENCES_.29
@@ -257,7 +210,7 @@ __OBJC_$_CLASS_METHODS_MoEngageAppDelegateSwizzler
 __OBJC_METACLASS_RO_$_MoEngageAppDelegateSwizzler
 __OBJC_$_INSTANCE_METHODS_MoEngageAppDelegateSwizzler
 __OBJC_CLASS_RO_$_MoEngageAppDelegateSwizzler
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/MoEngageAppDelegateSwizzler.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/MoEngageAppDelegateSwizzler.m
 MoEngageObjCUtils/MoEngageAppDelegateSwizzler.m
 __78-[MoEngageAppDelegateSwizzler application:donor_didReceiveRemoteNotification:]_block_invoke
 __destroy_helper_block_e4_20s24r
@@ -298,12 +251,17 @@ __39+[MOAppDelegateObserver sharedInstance]_block_invoke
 +[MoEngageProxyUtils isAppDelegateProxyEnabled]
 +[MoEngageProxyUtils isAppDelegateProxyConfigured]
 +[MoEngageProxyUtils setAppDelegateProxyConfigured]
+_OBJC_SELECTOR_REFERENCES_.2
+_OBJC_SELECTOR_REFERENCES_.4
 _OBJC_CLASSLIST_REFERENCES_$_.5
+_OBJC_SELECTOR_REFERENCES_.7
+_OBJC_SELECTOR_REFERENCES_.9
+_OBJC_SELECTOR_REFERENCES_.11
 _moAppDelegateProxyConfigured
 __OBJC_$_CLASS_METHODS_MoEngageProxyUtils
 __OBJC_METACLASS_RO_$_MoEngageProxyUtils
 __OBJC_CLASS_RO_$_MoEngageProxyUtils
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/MoEngageProxyUtils.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/MoEngageProxyUtils.m
 MoEngageObjCUtils/MoEngageProxyUtils.m
 +[MoEngageAppDelegateProxy canSwizzleMethods]
 +[MoEngageAppDelegateProxy sharedProxy]
@@ -360,9 +318,14 @@ ___moe_swizzle_didReceiveNotificationResponseWithHandler_block_invoke
 _sharedProxy.proxy
 _sharedProxy.onceToken
 _OBJC_CLASSLIST_REFERENCES_$_.4
+_OBJC_SELECTOR_REFERENCES_.6
 _OBJC_CLASSLIST_REFERENCES_$_.7
+_OBJC_SELECTOR_REFERENCES_.13
+_OBJC_SELECTOR_REFERENCES_.15
+_OBJC_SELECTOR_REFERENCES_.17
 _OBJC_SELECTOR_REFERENCES_.19
 _OBJC_SELECTOR_REFERENCES_.23
+_OBJC_SELECTOR_REFERENCES_.35
 _OBJC_SELECTOR_REFERENCES_.37
 _OBJC_CLASSLIST_REFERENCES_$_.38
 _OBJC_SELECTOR_REFERENCES_.40
@@ -446,7 +409,7 @@ _OBJC_IVAR_$_MoEngageAppDelegateProxy._appDelegateInterceptorID
 __OBJC_$_INSTANCE_VARIABLES_MoEngageAppDelegateProxy
 __OBJC_$_PROP_LIST_MoEngageAppDelegateProxy
 __OBJC_CLASS_RO_$_MoEngageAppDelegateProxy
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/MoEngageAppDelegateProxy.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/MoEngageAppDelegateProxy.m
 MoEngageObjCUtils/MoEngageAppDelegateProxy.m
 MoEngageObjCUtils/MoEngageAppDelegateProxy.h
 __moe_swizzle_didReceiveNotificationResponseWithHandler_block_invoke
@@ -483,6 +446,7 @@ ___57-[MoEngageMutableDictionary setObject:forKeyedSubscript:]_block_invoke
 ___39-[MoEngageMutableDictionary dictionary]_block_invoke
 -[MoEngageMutableDictionary .cxx_destruct]
 ___block_descriptor_28_e4_20s24r_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.5
 ___block_descriptor_32_e4_20s24s28r_e5_v4?0l
 ___block_descriptor_32_e4_20s24s28s_e5_v4?0l
 ___block_descriptor_28_e4_20s24s_e5_v4?0l
@@ -493,7 +457,7 @@ _OBJC_IVAR_$_MoEngageMutableDictionary._objects
 _OBJC_IVAR_$_MoEngageMutableDictionary._queue
 __OBJC_$_INSTANCE_VARIABLES_MoEngageMutableDictionary
 __OBJC_CLASS_RO_$_MoEngageMutableDictionary
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/MoEngageMutableDictionary.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/MoEngageMutableDictionary.m
 MoEngageObjCUtils/MoEngageMutableDictionary.m
 __39-[MoEngageMutableDictionary dictionary]_block_invoke
 __57-[MoEngageMutableDictionary setObject:forKeyedSubscript:]_block_invoke
@@ -540,7 +504,7 @@ __PROTOCOL_METHOD_TYPES__TtP17MoEngageObjCUtils41MoEngageAppDelegateAnalyticsPro
 Apple clang version 13.1.6 (clang-1316.0.20.12)
 <swift-imported-modules>
 Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/MoEngageAppDelegateAnalyticsProxyProtocol.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/MoEngageAppDelegateAnalyticsProxyProtocol.swift
 _symbolic $s17MoEngageObjCUtils0aB33AppDelegateMessagingProxyProtocolP
 _$s17MoEngageObjCUtils0aB33AppDelegateMessagingProxyProtocol_pMF
 __PROTOCOL__TtP17MoEngageObjCUtils41MoEngageAppDelegateMessagingProxyProtocol_
@@ -548,7 +512,7 @@ l_OBJC_LABEL_PROTOCOL_$__TtP17MoEngageObjCUtils41MoEngageAppDelegateMessagingPro
 l_OBJC_PROTOCOL_REFERENCE_$__TtP17MoEngageObjCUtils41MoEngageAppDelegateMessagingProxyProtocol_
 __PROTOCOL_INSTANCE_METHODS__TtP17MoEngageObjCUtils41MoEngageAppDelegateMessagingProxyProtocol_
 __PROTOCOL_METHOD_TYPES__TtP17MoEngageObjCUtils41MoEngageAppDelegateMessagingProxyProtocol_
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/MoEngageAppDelegateMessagingProxyProtocol.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageObjCUtils/MoEngageAppDelegateMessagingProxyProtocol.swift
 _swift_getFunctionTypeMetadataGlobalActorBackDeploy
 ___swift_getFunctionTypeMetadataGlobalActorBackDeploy_block_invoke
 __ZZ50swift_getFunctionTypeMetadataGlobalActorBackDeployE9builderFn

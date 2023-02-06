@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MoEngageMessaging-Swift.h</key>
 		<data>
-		iIefMeTqngP99IDVzs4boygn3mA=
+		OfIrPP6JeE1oogqeaNoMZkx83bs=
 		</data>
 		<key>Headers/MoEngageMessaging.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GWLqzi0Er1QCTvAqGkYpKTPpAAo=
+		KdOn5t18n6ajz8e6bQNLhE1pBSU=
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		BCBEMQ22W3bF74if6I0HynCXTGI=
+		av22c+DqdlNqdnXZu1g6FrecEl8=
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6MUa9Ncsg2KTmtLj5I6SjOibzl0=
+		3eyodcxxLiAL6/ECmoUjqemZjGA=
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		32taxfr13AIXkdlJEet/Ntqx4N8=
+		UaJSCWNmdg8sCz/O4UhqPTBtlSg=
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		v5Jn71KXG9bA8Czp51o68gP9N+M=
+		vHwhls4Ki8LEYfxW3fc0DlzpH5s=
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		e7mhy9t9OqCX1buQsnldB2gQQq4=
+		RlRrlvnoQKqTECMnzVZup+nhb0o=
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lvvRrsO2JQC/SLq/Qhy5j8KeLxY=
+		8m7fM0uT0tjDAsKslstc988e2F0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,11 +63,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iIefMeTqngP99IDVzs4boygn3mA=
+			OfIrPP6JeE1oogqeaNoMZkx83bs=
 			</data>
 			<key>hash2</key>
 			<data>
-			7U5/WDo1UtxVI0lgiwEvbmte6BVXBONukndZzuisYBY=
+			z+hU6OHtVLejouPYlisXvLzNA7Ryb9pa6gd0k/FZlns=
 			</data>
 		</dict>
 		<key>Headers/MoEngageMessaging.h</key>
@@ -96,22 +96,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BCBEMQ22W3bF74if6I0HynCXTGI=
+			av22c+DqdlNqdnXZu1g6FrecEl8=
 			</data>
 			<key>hash2</key>
 			<data>
-			X6GYspYb0ExeTuVn83PYrCZq1+RRV+zTn75wgO6k2uI=
+			JEF4u9b0+RFQiYssFKtIwN2XnEuVvXp13ceUDfFXmaM=
 			</data>
 		</dict>
 		<key>Modules/MoEngageMessaging.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6MUa9Ncsg2KTmtLj5I6SjOibzl0=
+			3eyodcxxLiAL6/ECmoUjqemZjGA=
 			</data>
 			<key>hash2</key>
 			<data>
-			QEuPw2E8oH2Y82h1FDEaImIxiw57GxQoOezO0dur1fo=
+			kCPf8U/DJ5lzrJ9BUSqGKrMeknbpbOn0Hy8s4m9ifUM=
 			</data>
 		</dict>
 		<key>Modules/MoEngageMessaging.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -129,22 +129,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			32taxfr13AIXkdlJEet/Ntqx4N8=
+			UaJSCWNmdg8sCz/O4UhqPTBtlSg=
 			</data>
 			<key>hash2</key>
 			<data>
-			V0dp00rmDU/UlUndThXdO68W8zpfugbM4+8CWjLSiEM=
+			qwPmum3jD5eyv14tB/Y6OjDKAkpkqN+uCDOtozvAma4=
 			</data>
 		</dict>
 		<key>Modules/MoEngageMessaging.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			v5Jn71KXG9bA8Czp51o68gP9N+M=
+			vHwhls4Ki8LEYfxW3fc0DlzpH5s=
 			</data>
 			<key>hash2</key>
 			<data>
-			M0k7rrzE6BPTsixHHGeGH9bI29mia7trbmWO1Vvty98=
+			Pk9ESM8myqJg54gPbJ3EOdrsR4eUIsfQuoTebscpzYo=
 			</data>
 		</dict>
 		<key>Modules/MoEngageMessaging.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -162,22 +162,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e7mhy9t9OqCX1buQsnldB2gQQq4=
+			RlRrlvnoQKqTECMnzVZup+nhb0o=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z3ydvWoLAVuFslRoqPVEM8IkW3L2vVq6vTqlkP3XP/s=
+			J8TCmbU6K4ydvtr289L61WFD6RAgd6744oJTbUOAbIM=
 			</data>
 		</dict>
 		<key>Modules/MoEngageMessaging.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lvvRrsO2JQC/SLq/Qhy5j8KeLxY=
+			8m7fM0uT0tjDAsKslstc988e2F0=
 			</data>
 			<key>hash2</key>
 			<data>
-			eLtSezDh1/g6DXKfYLBoaJRxPqBGz5YE9esw44kim9w=
+			9Oa84lGv4c9BbmADVl3h/JdRuI1MIA1QEKAr6AEXcIc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

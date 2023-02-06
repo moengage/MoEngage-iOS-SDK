@@ -2,6 +2,12 @@
 =================================
 
 ## Changelog:
+### Version 9.4.0 *(6th February 2023)*
+-------------------------------------------
+* CrashFix - Fixed the crash by handling data race condition in Messaging module
+* BugFix - Handled the logic to open url in external browser.
+* Code optimization
+
 ### Version 9.3.0 *(25th January 2023)*
 -------------------------------------------
 * Support for `stopGeofenceMonitoring` API in Geofence module.
