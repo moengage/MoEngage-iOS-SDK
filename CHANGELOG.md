@@ -5,8 +5,6 @@
 ### Version 9.5.0 *(22nd February 2023)*
 -------------------------------------------
 * Code optimization
-* BugFix - Fixed the validation of blacklisted Unique ID.
-* BugFix - Fixed the issue for parsing Loglevel.
 
 ### Version 9.4.1 *(7th February 2023)*
 -------------------------------------------
