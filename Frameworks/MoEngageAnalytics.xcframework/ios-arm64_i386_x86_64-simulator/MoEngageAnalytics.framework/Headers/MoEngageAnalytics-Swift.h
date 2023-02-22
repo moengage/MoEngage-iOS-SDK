@@ -269,7 +269,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKA
 - (void)updateSessionSourceWithPushPayload:(NSDictionary * _Nonnull)payload fromMoEngage:(BOOL)isMoEngagePush;
 - (void)updateSessionSourceWithURL:(NSURL * _Nonnull)url;
 - (void)processURL:(NSURL * _Nullable)url;
-- (void)pushTokenUpdated;
+- (void)pushTokenUpdatedWithAppId:(NSString * _Nonnull)appId;
 /// Method to set app status
 /// \param appStatus MoEngageAppStatus
 ///
@@ -474,7 +474,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKA
 ///
 - (void)disableIDFVTrackingForAppID:(NSString * _Nullable)appID;
 - (void)disableIDFVTracking;
-- (void)updateSDKWhitelistedEvents:(NSArray<NSString *> * _Nonnull)eventsArray;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -812,7 +811,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKA
 - (void)updateSessionSourceWithPushPayload:(NSDictionary * _Nonnull)payload fromMoEngage:(BOOL)isMoEngagePush;
 - (void)updateSessionSourceWithURL:(NSURL * _Nonnull)url;
 - (void)processURL:(NSURL * _Nullable)url;
-- (void)pushTokenUpdated;
+- (void)pushTokenUpdatedWithAppId:(NSString * _Nonnull)appId;
 /// Method to set app status
 /// \param appStatus MoEngageAppStatus
 ///
@@ -1017,7 +1016,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKA
 ///
 - (void)disableIDFVTrackingForAppID:(NSString * _Nullable)appID;
 - (void)disableIDFVTracking;
-- (void)updateSDKWhitelistedEvents:(NSArray<NSString *> * _Nonnull)eventsArray;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1355,7 +1353,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKA
 - (void)updateSessionSourceWithPushPayload:(NSDictionary * _Nonnull)payload fromMoEngage:(BOOL)isMoEngagePush;
 - (void)updateSessionSourceWithURL:(NSURL * _Nonnull)url;
 - (void)processURL:(NSURL * _Nullable)url;
-- (void)pushTokenUpdated;
+- (void)pushTokenUpdatedWithAppId:(NSString * _Nonnull)appId;
 /// Method to set app status
 /// \param appStatus MoEngageAppStatus
 ///
@@ -1560,7 +1558,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKA
 ///
 - (void)disableIDFVTrackingForAppID:(NSString * _Nullable)appID;
 - (void)disableIDFVTracking;
-- (void)updateSDKWhitelistedEvents:(NSArray<NSString *> * _Nonnull)eventsArray;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

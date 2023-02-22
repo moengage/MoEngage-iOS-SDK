@@ -2,6 +2,10 @@
 =================================
 
 ## Changelog:
+### Version 9.5.0 *(22nd February 2023)*
+-------------------------------------------
+* Code optimization
+
 ### Version 9.4.1 *(7th February 2023)*
 -------------------------------------------
 * CrashFix - Fixed the crash when migrating from 8.2.0 to 9.x.x

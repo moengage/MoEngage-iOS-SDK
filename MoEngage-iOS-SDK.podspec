@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'MoEngage-iOS-SDK'
-  s.version      = '9.4.1'
+  s.version      = '9.5.0'
   s.summary      = 'MoEngage for iOS'
   s.description  = <<-DESC
                    MoEngage is a mobile marketing automation company. This framework acts like a umbrella framework to include MoEngageCore, MoEngageAnalytics and MoEngageMessaging frameworks.

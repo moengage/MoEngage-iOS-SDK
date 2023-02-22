@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MoEngageMessaging-Swift.h</key>
 		<data>
-		aLUCINnCXBfBdA3u2LwcJo/PmUE=
+		53MBjt2cKNDrttpp3nszurvYnPU=
 		</data>
 		<key>Headers/MoEngageMessaging.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		orjg/1g4Br9/7fjRj7osOADudKM=
+		Jlml42oB492Ckb08MFp8AWU8MFM=
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		gHIVXbyNJ97lg/fqJkoQh/9m/Pk=
+		brsoJVi9RhztUw7gT4zjUFXHdEY=
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		PWTgUhbNL8hs0/Ira6nAf/x23iM=
+		ulkiXhR27oxgdnRrsTCkzlKRTfs=
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/armv7-apple-ios.swiftinterface</key>
 		<data>
-		jSzsU/Ol7iSdYRhBcj5JvmoIqds=
+		hZ1VNBPAP3mzQvsR4qivd0dIYuI=
 		</data>
 		<key>Modules/MoEngageMessaging.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		yI0TEnEzZmpTdBlJNRS5tOSfC/M=
+		BfbwLptt5hJokxRw5tNi2Wkxduo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,11 +51,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aLUCINnCXBfBdA3u2LwcJo/PmUE=
+			53MBjt2cKNDrttpp3nszurvYnPU=
 			</data>
 			<key>hash2</key>
 			<data>
-			tN2N+uPr7TO/LDDjXPrmAlw8cx8mG2RQr2iMj3Asz6M=
+			YzwHCXkKNsR3c5h8eH6zl0l+WAzveekK9a8LTguM+7k=
 			</data>
 		</dict>
 		<key>Headers/MoEngageMessaging.h</key>
@@ -84,22 +84,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gHIVXbyNJ97lg/fqJkoQh/9m/Pk=
+			brsoJVi9RhztUw7gT4zjUFXHdEY=
 			</data>
 			<key>hash2</key>
 			<data>
-			TtXnhkDKrY1XbW3Lzwkqas3JhtMzrK75KpHGbUQDKGM=
+			fJUjfF6Db7q2iO+wrqYpOvYroJVNrmIWxOsMuPYrkTc=
 			</data>
 		</dict>
 		<key>Modules/MoEngageMessaging.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PWTgUhbNL8hs0/Ira6nAf/x23iM=
+			ulkiXhR27oxgdnRrsTCkzlKRTfs=
 			</data>
 			<key>hash2</key>
 			<data>
-			T62n5tx40/L5kWioYarQjh2ItzJBxeX0ruCUar3KrUU=
+			mFeuNy1eun6dNpxWR22ftzFsHS/T6XUmVB8jmYtFu1Q=
 			</data>
 		</dict>
 		<key>Modules/MoEngageMessaging.swiftmodule/armv7-apple-ios.swiftdoc</key>
@@ -117,22 +117,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jSzsU/Ol7iSdYRhBcj5JvmoIqds=
+			hZ1VNBPAP3mzQvsR4qivd0dIYuI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z7YmJ8zq1FOpeYoEy8GGEMBS1d458Q6I9BJPYyQqzgQ=
+			6RTrkG9pbmrML+Eng/vbn93hCp7UROI+8kxWSe7KKQw=
 			</data>
 		</dict>
 		<key>Modules/MoEngageMessaging.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yI0TEnEzZmpTdBlJNRS5tOSfC/M=
+			BfbwLptt5hJokxRw5tNi2Wkxduo=
 			</data>
 			<key>hash2</key>
 			<data>
-			jIaK9M9Aaz/bVxnbfayTppOuAyYEPr6OwBncJ3Bb2W4=
+			kFuw+qoycqfTocjpLOgsHUFug2MDCCY+szuhrLc+uBU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
