@@ -11,8 +11,6 @@ import UserNotifications
 import _Concurrency
 public struct MoEngageMessagingConstants {
   public struct EventNames {
-    public static let notificationReceived: Swift.String
-    public static let notificationClicked: Swift.String
     public static let notificationShown: Swift.String
     public static let notificationScheduleFailed: Swift.String
     public static let notificationScheduleSuccess: Swift.String
@@ -123,7 +121,6 @@ public struct MoEngageMessagingConstants {
   @objc public func disableBadgeReset(_ disable: Swift.Bool)
   @available(tvOS, unavailable)
   @objc public static func isMoEngageSilentPushAppLaunch(withLaunchOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?) -> Swift.Bool
-  @objc public func getPushToken() -> Swift.String?
   @objc deinit
 }
 public enum MoEngagePushTemplateType {

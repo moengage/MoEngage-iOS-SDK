@@ -261,7 +261,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKM
 - (void)processWithNotificationPayload:(NSDictionary * _Nonnull)pushPayload forInstanceID:(NSString * _Nonnull)instanceID;
 - (void)disableBadgeReset:(BOOL)disable;
 + (BOOL)isMoEngageSilentPushAppLaunchWithLaunchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(tvos,unavailable);
-- (NSString * _Nullable)getPushToken SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #if __has_attribute(external_source_symbol)
@@ -532,7 +531,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKM
 - (void)processWithNotificationPayload:(NSDictionary * _Nonnull)pushPayload forInstanceID:(NSString * _Nonnull)instanceID;
 - (void)disableBadgeReset:(BOOL)disable;
 + (BOOL)isMoEngageSilentPushAppLaunchWithLaunchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(tvos,unavailable);
-- (NSString * _Nullable)getPushToken SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #if __has_attribute(external_source_symbol)
@@ -803,7 +801,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKM
 - (void)processWithNotificationPayload:(NSDictionary * _Nonnull)pushPayload forInstanceID:(NSString * _Nonnull)instanceID;
 - (void)disableBadgeReset:(BOOL)disable;
 + (BOOL)isMoEngageSilentPushAppLaunchWithLaunchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(tvos,unavailable);
-- (NSString * _Nullable)getPushToken SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #if __has_attribute(external_source_symbol)

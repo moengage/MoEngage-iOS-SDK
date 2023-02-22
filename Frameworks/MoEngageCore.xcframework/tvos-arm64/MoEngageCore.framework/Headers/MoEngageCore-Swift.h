@@ -323,7 +323,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) dispatch_que
 - (void)updateSDKStateWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance sdkState:(BOOL)sdkState;
 - (void)enableSDKWithAppId:(NSString * _Nullable)appId;
 - (void)disableSDKWithAppId:(NSString * _Nullable)appId;
-- (BOOL)isSDKEnabledForInstanceForAppID:(NSString * _Nonnull)appID SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isSDKEnabledForInstanceWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)isDeviceUniqueIDPresentInKeyChain SWIFT_WARN_UNUSED_RESULT;
 - (void)dismissRichLandingWebViewControllerWithAnimation:(BOOL)animate;
 - (void)enableLogs:(BOOL)enable;
@@ -346,9 +346,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageCore
 
 @class UIViewController;
 @class NSURL;
-@class NSUserDefaults;
 enum MoEngageSDKState : NSInteger;
 @class UIApplication;
+enum MoEngageInAppWhiteList : NSInteger;
 
 SWIFT_CLASS("_TtC12MoEngageCore17MoEngageCoreUtils")
 @interface MoEngageCoreUtils : NSObject
@@ -357,7 +357,7 @@ SWIFT_CLASS("_TtC12MoEngageCore17MoEngageCoreUtils")
 + (NSString * _Nullable)getSDKLibraryDirectoryPath SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getInstanceRootDirectoryPathForIdentifier:(NSString * _Nonnull)identifier SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getDocumentsDirectoryPath SWIFT_WARN_UNUSED_RESULT;
-+ (BOOL)removeFileAtPath:(NSString * _Nonnull)path SWIFT_WARN_UNUSED_RESULT;
++ (void)removeFileAtPath:(NSString * _Nonnull)path sdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 + (UIViewController * _Nullable)getTopMostViewController SWIFT_WARN_UNUSED_RESULT;
 + (void)showAlertViewWithMessage:(NSString * _Nonnull)msg andTitle:(NSString * _Nonnull)title;
 + (void)openDeeplinkWithUrlString:(NSString * _Nullable)urlStr;
@@ -374,10 +374,8 @@ SWIFT_CLASS("_TtC12MoEngageCore17MoEngageCoreUtils")
 + (NSString * _Nonnull)getDeviceOSVersion SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getDeviceModelName SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getDeviceModelType SWIFT_WARN_UNUSED_RESULT;
-+ (NSUserDefaults * _Nullable)getCommonSDKUserDefault SWIFT_WARN_UNUSED_RESULT;
-+ (NSUserDefaults * _Nullable)getSDKUserDefaultInstanceWithConfig:(MoEngageSDKConfig * _Nullable)sdkConfig SWIFT_WARN_UNUSED_RESULT;
-+ (void)savePushToken:(NSString * _Nonnull)token;
-+ (NSString * _Nullable)getPushToken SWIFT_WARN_UNUSED_RESULT;
++ (void)savePushTokenWithToken:(NSString * _Nonnull)token sdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig;
++ (NSString * _Nullable)getPushTokenWithSdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getSDKUniqueIdForInstanceWithConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)generateSDKUniqueID SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isSdkEnabledForInstanceWithConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
@@ -388,11 +386,11 @@ SWIFT_CLASS("_TtC12MoEngageCore17MoEngageCoreUtils")
 + (void)setDataTrackingOptOutStatusForSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig optOutStatus:(BOOL)optOutStatus;
 + (NSString * _Nullable)MD5Hash:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 + (UIApplication * _Nullable)sharedUIApplication SWIFT_WARN_UNUSED_RESULT;
-+ (NSString * _Nonnull)getAppIDForNetworkAPICallsWithSdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
 + (void)setIDFAOptOutStatusForSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig optOutStatus:(BOOL)optOutStatus;
 + (void)setIDFVOptOutStatusForSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig optOutStatus:(BOOL)optOutStatus;
 + (BOOL)isIDFATrackingEnabledForSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isIDFVTrackingEnabledForSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)getStringRepresentationWithEvent:(enum MoEngageInAppWhiteList)event SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -476,6 +474,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageInAp
 - (void)initializeInAppWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 @end
 
+typedef SWIFT_ENUM(NSInteger, MoEngageInAppWhiteList, open) {
+  MoEngageInAppWhiteListInAppShown = 0,
+  MoEngageInAppWhiteListInAppClicked = 1,
+  MoEngageInAppWhiteListInAppDismissed = 2,
+  MoEngageInAppWhiteListInAppAutoDismissed = 3,
+  MoEngageInAppWhiteListInAppRating = 4,
+};
+
 
 /// This class is used for internal purpose. Do not use any of the methods explicitly.
 SWIFT_CLASS("_TtC12MoEngageCore21MoEngageInboxDelegate")
@@ -553,13 +559,13 @@ SWIFT_CLASS("_TtC12MoEngageCore21MoEngageNetworkClient")
 
 SWIFT_PROTOCOL("_TtP12MoEngageCore30MoEngageNetworkRequestProtocol_")
 @protocol MoEngageNetworkRequestProtocol
-- (void)executeRequest:(NSURLRequest * _Nonnull)request forSdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig withConfigController:(MoEngageSDKInstance * _Nonnull)configController completionHandler:(void (^ _Nonnull)(BOOL, NSInteger, NSDictionary * _Nullable))completionHandler;
+- (void)executeRequest:(NSURLRequest * _Nonnull)request withConfigController:(MoEngageSDKInstance * _Nonnull)configController completionHandler:(void (^ _Nonnull)(BOOL, NSInteger, NSDictionary * _Nullable))completionHandler;
 - (void)downloadImageURL:(NSURL * _Nonnull)imageURL forSdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig dataCompletionHandler:(void (^ _Nonnull)(BOOL, NSData * _Nullable))dataCompletionHandler;
 @end
 
 
 @interface MoEngageNetworkClient (SWIFT_EXTENSION(MoEngageCore)) <MoEngageNetworkRequestProtocol>
-- (void)executeRequest:(NSURLRequest * _Nonnull)request forSdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig withConfigController:(MoEngageSDKInstance * _Nonnull)configController completionHandler:(void (^ _Nonnull)(BOOL, NSInteger, NSDictionary * _Nullable))completionHandler;
+- (void)executeRequest:(NSURLRequest * _Nonnull)request withConfigController:(MoEngageSDKInstance * _Nonnull)configController completionHandler:(void (^ _Nonnull)(BOOL, NSInteger, NSDictionary * _Nullable))completionHandler;
 - (void)downloadImageURL:(NSURL * _Nonnull)imageURL forSdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig dataCompletionHandler:(void (^ _Nonnull)(BOOL, NSData * _Nullable))dataCompletionHandler;
 @end
 
@@ -710,13 +716,13 @@ SWIFT_CLASS("_TtC12MoEngageCore28MoEngageRemoteSecurityConfig")
 
 SWIFT_CLASS("_TtC12MoEngageCore17MoEngageSDKConfig")
 @interface MoEngageSDKConfig : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull moeAppID;
+@property (nonatomic, readonly, copy) NSString * _Nonnull appId;
 @property (nonatomic) enum MoEngageDataCenter moeDataCenter;
 @property (nonatomic, copy) NSString * _Nonnull appGroupID;
 @property (nonatomic) NSInteger analyticsPeriodicFlushDuration;
 @property (nonatomic) BOOL analyticsDisablePeriodicFlush;
 @property (nonatomic) BOOL encryptNetworkRequests;
-@property (nonatomic, readonly, copy) NSString * _Nonnull identifier;
+@property (nonatomic, readonly, copy) NSString * _Nonnull formattedAppId;
 @property (nonatomic, readonly) BOOL isDefaultInstance;
 @property (nonatomic, readonly) BOOL isTestEnvironment;
 @property (nonatomic) BOOL enableLogs;
@@ -756,6 +762,152 @@ SWIFT_CLASS("_TtC12MoEngageCore22MoEngageSDKStateHelper")
 + (void)isSDKInitialized:(void (^ _Nonnull)(BOOL))completion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+/// Protocol to implement user default
+/// note:
+/// This class is used for internal purpose.
+SWIFT_PROTOCOL("_TtP12MoEngageCore20MoEngageUserDefaults_")
+@protocol MoEngageUserDefaults
+/// Set string to UserDefaults
+/// \param key The key with which to associate the value.
+///
+/// \param value The object to store in the defaults database.
+///
+- (void)setStringWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
+/// Fetch string from UserDefaults
+/// \param key A key in the current user‘s defaults database.
+///
+/// \param defaultValue default value if key is not present
+///
+///
+/// returns:
+/// Returns the string associated with the specified key.
+- (NSString * _Nullable)getStringWithKey:(NSString * _Nonnull)key defaultValue:(NSString * _Nullable)defaultValue SWIFT_WARN_UNUSED_RESULT;
+/// Set Integer to UserDefaults
+/// \param key The key with which to associate the value.
+///
+/// \param value The object to store in the defaults database.
+///
+- (void)setIntegerWithKey:(NSString * _Nonnull)key value:(NSInteger)value;
+/// Fetch Int from UserDefaults
+/// \param key A key in the current user‘s defaults database.
+///
+/// \param defaultValue default value if key is not present
+///
+///
+/// returns:
+/// Returns the string associated with the specified key.
+- (NSInteger)getIntegerWithKey:(NSString * _Nonnull)key defaultValue:(NSInteger)defaultValue SWIFT_WARN_UNUSED_RESULT;
+/// Set boolean to UserDefaults
+/// \param key The key with which to associate the value.
+///
+/// \param value The object to store in the defaults database.
+///
+- (void)setBooleanWithKey:(NSString * _Nonnull)key value:(BOOL)value;
+/// Fetch Boolean from UserDefaults
+/// \param key A key in the current user‘s defaults database.
+///
+/// \param defaultValue default value if key is not present
+///
+///
+/// returns:
+/// Returns the boolean associated with the specified key.
+- (BOOL)getBooleanWithKey:(NSString * _Nonnull)key defaultValue:(BOOL)defaultValue SWIFT_WARN_UNUSED_RESULT;
+/// Set double to UserDefaults
+/// \param key The key with which to associate the value.
+///
+/// \param value The object to store in the defaults database.
+///
+- (void)setDoubleWithKey:(NSString * _Nonnull)key value:(double)value;
+/// Fetch double from UserDefaults
+/// \param key A key in the current user‘s defaults database.
+///
+/// \param defaultValue default value if key is not present
+///
+///
+/// returns:
+/// Returns the double associated with the specified key.
+- (double)getDoubleWithKey:(NSString * _Nonnull)key defaultValue:(double)defaultValue SWIFT_WARN_UNUSED_RESULT;
+/// Set float to UserDefaults
+/// \param key The key with which to associate the value.
+///
+/// \param value The object to store in the defaults database.
+///
+- (void)setFloatWithKey:(NSString * _Nonnull)key value:(float)value;
+/// Fetch float from UserDefaults
+/// \param key A key in the current user‘s defaults database.
+///
+/// \param defaultValue default value if key is not present
+///
+///
+/// returns:
+/// Returns the float associated with the specified key.
+- (float)getFloatWithKey:(NSString * _Nonnull)key defaultValue:(float)defaultValue SWIFT_WARN_UNUSED_RESULT;
+/// Check if the specified key present in UserDefaults
+/// \param key A key in the current user‘s defaults database.
+///
+///
+/// returns:
+/// true if key is present else false
+- (BOOL)hasKeyWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+/// Remove the entry from database
+/// \param key The key with which to associate the value.
+///
+- (void)removeKeyWithKey:(NSString * _Nonnull)key;
+/// Method to synchronize UserDefault.
+/// note:
+/// Donot use this method as it might be deprecated in future.
+- (void)synchronise;
+@end
+
+
+/// Class that implements userdefault functionality.
+/// note:
+/// This class is used for internal purpose.
+SWIFT_CLASS("_TtC12MoEngageCore28MoEngageStandardUserDefaults")
+@interface MoEngageStandardUserDefaults : NSObject <MoEngageUserDefaults>
+- (void)setStringWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
+- (NSString * _Nullable)getStringWithKey:(NSString * _Nonnull)key defaultValue:(NSString * _Nullable)defaultValue SWIFT_WARN_UNUSED_RESULT;
+- (void)setIntegerWithKey:(NSString * _Nonnull)key value:(NSInteger)value;
+- (NSInteger)getIntegerWithKey:(NSString * _Nonnull)key defaultValue:(NSInteger)defaultValue SWIFT_WARN_UNUSED_RESULT;
+- (void)setBooleanWithKey:(NSString * _Nonnull)key value:(BOOL)value;
+- (BOOL)getBooleanWithKey:(NSString * _Nonnull)key defaultValue:(BOOL)defaultValue SWIFT_WARN_UNUSED_RESULT;
+- (void)setDoubleWithKey:(NSString * _Nonnull)key value:(double)value;
+- (double)getDoubleWithKey:(NSString * _Nonnull)key defaultValue:(double)defaultValue SWIFT_WARN_UNUSED_RESULT;
+- (void)setFloatWithKey:(NSString * _Nonnull)key value:(float)value;
+- (float)getFloatWithKey:(NSString * _Nonnull)key defaultValue:(float)defaultValue SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)hasKeyWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (void)removeKeyWithKey:(NSString * _Nonnull)key;
+- (void)synchronise;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Class to provide MoEngageStandardUserDefaults instance
+/// note:
+/// This class is used for internal purpose.
+SWIFT_CLASS("_TtC12MoEngageCore23MoEngageStorageProvider")
+@interface MoEngageStorageProvider : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageStorageProvider * _Nonnull sharedInstance;)
++ (MoEngageStorageProvider * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// creates common UserDefaults
+///
+/// returns:
+/// instance of type <code>MoEngageStandardUserDefaults</code>.
+@property (nonatomic, strong) MoEngageStandardUserDefaults * _Nonnull commonUserDefault;
+/// creates instance specific userdefault based on encryption status
+/// \param sdkConfig <code>MoEngageSDKConfig</code> instance
+///
+///
+/// returns:
+/// UserDefault instance of type <code>MoEngageStandardUserDefaults</code>
+- (MoEngageStandardUserDefaults * _Nonnull)getUserDefaultWithSdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
+@end
+
 
 
 
