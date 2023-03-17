@@ -371,10 +371,10 @@ SWIFT_CLASS("_TtC12MoEngageCore17MoEngageCoreUtils")
 + (void)removeFileAtPath:(NSString * _Nonnull)path sdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 + (UIViewController * _Nullable)getTopMostViewController SWIFT_WARN_UNUSED_RESULT;
 + (void)showAlertViewWithMessage:(NSString * _Nonnull)msg andTitle:(NSString * _Nonnull)title;
-+ (void)openDeeplinkWithUrlString:(NSString * _Nullable)urlStr;
++ (void)openDeeplinkWithUrlString:(NSString * _Nullable)urlStr SWIFT_AVAILABILITY(ios_app_extension,unavailable);
 + (void)openExternalBrowserWithUrlString:(NSString * _Nullable)urlStr;
 + (NSURL * _Nullable)getUrlFromString:(NSString * _Nullable)urlStr SWIFT_WARN_UNUSED_RESULT;
-+ (void)openDeeplinkWithUrl:(NSURL * _Nullable)url;
++ (void)openDeeplinkWithUrl:(NSURL * _Nullable)url SWIFT_AVAILABILITY(ios_app_extension,unavailable);
 + (void)openRichLandingWithUrlString:(NSString * _Nullable)urlStr;
 + (void)openRichLandingWithUrl:(NSURL * _Nullable)url;
 + (NSString * _Nonnull)getMoEngageSDKVersion SWIFT_WARN_UNUSED_RESULT;
@@ -1369,10 +1369,10 @@ SWIFT_CLASS("_TtC12MoEngageCore17MoEngageCoreUtils")
 + (void)removeFileAtPath:(NSString * _Nonnull)path sdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 + (UIViewController * _Nullable)getTopMostViewController SWIFT_WARN_UNUSED_RESULT;
 + (void)showAlertViewWithMessage:(NSString * _Nonnull)msg andTitle:(NSString * _Nonnull)title;
-+ (void)openDeeplinkWithUrlString:(NSString * _Nullable)urlStr;
++ (void)openDeeplinkWithUrlString:(NSString * _Nullable)urlStr SWIFT_AVAILABILITY(ios_app_extension,unavailable);
 + (void)openExternalBrowserWithUrlString:(NSString * _Nullable)urlStr;
 + (NSURL * _Nullable)getUrlFromString:(NSString * _Nullable)urlStr SWIFT_WARN_UNUSED_RESULT;
-+ (void)openDeeplinkWithUrl:(NSURL * _Nullable)url;
++ (void)openDeeplinkWithUrl:(NSURL * _Nullable)url SWIFT_AVAILABILITY(ios_app_extension,unavailable);
 + (void)openRichLandingWithUrlString:(NSString * _Nullable)urlStr;
 + (void)openRichLandingWithUrl:(NSURL * _Nullable)url;
 + (NSString * _Nonnull)getMoEngageSDKVersion SWIFT_WARN_UNUSED_RESULT;
@@ -2367,10 +2367,10 @@ SWIFT_CLASS("_TtC12MoEngageCore17MoEngageCoreUtils")
 + (void)removeFileAtPath:(NSString * _Nonnull)path sdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 + (UIViewController * _Nullable)getTopMostViewController SWIFT_WARN_UNUSED_RESULT;
 + (void)showAlertViewWithMessage:(NSString * _Nonnull)msg andTitle:(NSString * _Nonnull)title;
-+ (void)openDeeplinkWithUrlString:(NSString * _Nullable)urlStr;
++ (void)openDeeplinkWithUrlString:(NSString * _Nullable)urlStr SWIFT_AVAILABILITY(ios_app_extension,unavailable);
 + (void)openExternalBrowserWithUrlString:(NSString * _Nullable)urlStr;
 + (NSURL * _Nullable)getUrlFromString:(NSString * _Nullable)urlStr SWIFT_WARN_UNUSED_RESULT;
-+ (void)openDeeplinkWithUrl:(NSURL * _Nullable)url;
++ (void)openDeeplinkWithUrl:(NSURL * _Nullable)url SWIFT_AVAILABILITY(ios_app_extension,unavailable);
 + (void)openRichLandingWithUrlString:(NSString * _Nullable)urlStr;
 + (void)openRichLandingWithUrl:(NSURL * _Nullable)url;
 + (NSString * _Nonnull)getMoEngageSDKVersion SWIFT_WARN_UNUSED_RESULT;

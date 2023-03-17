@@ -88,7 +88,8 @@ public struct MoEngageMessagingConstants {
     }
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MoEngageMessageDelegateHandler : MoEngageCore.MoEngageMessagingHandler, MoEngageObjCUtils.MoEngageAppDelegateMessagingProxyProtocol, UserNotifications.UNUserNotificationCenterDelegate {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOSApplicationExtension, unavailable)
+public class MoEngageMessageDelegateHandler : MoEngageCore.MoEngageMessagingHandler, MoEngageObjCUtils.MoEngageAppDelegateMessagingProxyProtocol, UserNotifications.UNUserNotificationCenterDelegate {
   override public func initializeMessaging(launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]? = nil, sdkInstance: MoEngageCore.MoEngageSDKInstance)
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
   @objc public func applicationDidRegisterForRemoteNotifications(withDeviceToken deviceToken: Foundation.Data?)
@@ -105,7 +106,8 @@ public struct MoEngageMessagingConstants {
   @objc optional func notificationClicked(withPushPayload userInfo: [Swift.AnyHashable : Any])
   @objc optional func notificationReceived(withPushPayload userInfo: [Swift.AnyHashable : Any])
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MoEngageSDKMessaging : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOSApplicationExtension, unavailable)
+@objc public class MoEngageSDKMessaging : ObjectiveC.NSObject {
   @objc public static let sharedInstance: MoEngageMessaging.MoEngageSDKMessaging
   @objc public func setMessagingDelegate(_ delegate: MoEngageMessaging.MoEngageMessagingDelegate?, forAppID appID: Swift.String? = nil)
   public func setInternalInboxDelegate(_ delegate: MoEngageMessaging.MoEngageMessagingDelegate?, forInstanceID instanceID: Swift.String?)
