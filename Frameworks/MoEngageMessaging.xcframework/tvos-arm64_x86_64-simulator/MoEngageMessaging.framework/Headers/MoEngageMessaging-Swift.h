@@ -243,7 +243,7 @@ SWIFT_CLASS("_TtC17MoEngageMessaging22MoEngageMessagingUtils")
 @class UNNotification;
 @class UIApplication;
 
-SWIFT_CLASS("_TtC17MoEngageMessaging20MoEngageSDKMessaging")
+SWIFT_CLASS("_TtC17MoEngageMessaging20MoEngageSDKMessaging") SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface MoEngageSDKMessaging : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKMessaging * _Nonnull sharedInstance;)
 + (MoEngageSDKMessaging * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
@@ -511,7 +511,7 @@ SWIFT_CLASS("_TtC17MoEngageMessaging22MoEngageMessagingUtils")
 @class UNNotification;
 @class UIApplication;
 
-SWIFT_CLASS("_TtC17MoEngageMessaging20MoEngageSDKMessaging")
+SWIFT_CLASS("_TtC17MoEngageMessaging20MoEngageSDKMessaging") SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface MoEngageSDKMessaging : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKMessaging * _Nonnull sharedInstance;)
 + (MoEngageSDKMessaging * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;

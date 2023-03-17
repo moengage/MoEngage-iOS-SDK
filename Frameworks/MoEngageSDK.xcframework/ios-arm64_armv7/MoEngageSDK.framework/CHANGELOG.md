@@ -2,6 +2,11 @@
 =================================
 
 ## Changelog:
+### Version 9.5.1 *(17th March 2023)*
+-------------------------------------------
+* BugFix - Handled the deeplink callback to `SceneDelegate` class.
+* CrashFix - Fixed crash due to data race condition in core module.
+
 ### Version 9.5.0 *(22nd February 2023)*
 -------------------------------------------
 * Code optimization

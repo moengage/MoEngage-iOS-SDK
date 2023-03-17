@@ -591,9 +591,11 @@ public enum MoEngageExceptions : Swift.Error {
   public static func getFolderPathForInstanceId(folderPath: Swift.String, identifier: Swift.String) -> Swift.String?
   @objc public static func getTopMostViewController() -> UIKit.UIViewController?
   @objc public static func showAlertView(withMessage msg: Swift.String, andTitle title: Swift.String)
+  @available(iOSApplicationExtension, unavailable)
   @objc public static func openDeeplink(withUrlString urlStr: Swift.String?)
   @objc public static func openExternalBrowser(withUrlString urlStr: Swift.String?)
   @objc public static func getUrlFromString(_ urlStr: Swift.String?) -> Foundation.URL?
+  @available(iOSApplicationExtension, unavailable)
   @objc public static func openDeeplink(withUrl url: Foundation.URL?)
   @objc public static func openRichLanding(withUrlString urlStr: Swift.String?)
   @objc public static func openRichLanding(withUrl url: Foundation.URL?)
