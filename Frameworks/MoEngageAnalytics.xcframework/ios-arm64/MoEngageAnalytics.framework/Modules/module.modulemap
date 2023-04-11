@@ -1,0 +1,11 @@
+framework module MoEngageAnalytics {
+  umbrella header "MoEngageAnalytics.h"
+
+  export *
+  module * { export * }
+}
+
+module MoEngageAnalytics.Swift {
+  header "MoEngageAnalytics-Swift.h"
+  requires objc
+}

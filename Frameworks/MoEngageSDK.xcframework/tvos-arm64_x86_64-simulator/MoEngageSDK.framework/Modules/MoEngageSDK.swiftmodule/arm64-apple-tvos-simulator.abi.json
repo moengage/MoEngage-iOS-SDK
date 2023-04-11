@@ -1,0 +1,566 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoEngageSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MoEngageCore",
+        "printedName": "MoEngageCore",
+        "declKind": "Import",
+        "moduleName": "MoEngageSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "MoEngageAnalytics",
+        "printedName": "MoEngageAnalytics",
+        "declKind": "Import",
+        "moduleName": "MoEngageSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MoEngage",
+        "printedName": "MoEngage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sharedInstance",
+            "printedName": "sharedInstance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngage",
+                "printedName": "MoEngageSDK.MoEngage",
+                "usr": "c:@M@MoEngageSDK@objc(cs)MoEngage"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MoEngageSDK@objc(cs)MoEngage(cpy)sharedInstance",
+            "mangledName": "$s11MoEngageSDK0aB0C14sharedInstanceACvpZ",
+            "moduleName": "MoEngageSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MoEngage",
+                    "printedName": "MoEngageSDK.MoEngage",
+                    "usr": "c:@M@MoEngageSDK@objc(cs)MoEngage"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MoEngageSDK@objc(cs)MoEngage(cm)sharedInstance",
+                "mangledName": "$s11MoEngageSDK0aB0C14sharedInstanceACvgZ",
+                "moduleName": "MoEngageSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initializeDefaultTestInstance",
+            "printedName": "initializeDefaultTestInstance(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKConfig",
+                "printedName": "MoEngageCore.MoEngageSDKConfig",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKConfig"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageSDK@objc(cs)MoEngage(im)initializeDefaultTestInstance:",
+            "mangledName": "$s11MoEngageSDK0aB0C29initializeDefaultTestInstanceyy0aB4Core0aB9SDKConfigCF",
+            "moduleName": "MoEngageSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializeDefaultTestInstance",
+            "printedName": "initializeDefaultTestInstance(_:sdkState:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKConfig",
+                "printedName": "MoEngageCore.MoEngageSDKConfig",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKState",
+                "printedName": "MoEngageCore.MoEngageSDKState",
+                "usr": "c:@M@MoEngageCore@E@MoEngageSDKState"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageSDK@objc(cs)MoEngage(im)initializeDefaultTestInstance:sdkState:",
+            "mangledName": "$s11MoEngageSDK0aB0C29initializeDefaultTestInstance_8sdkStatey0aB4Core0aB9SDKConfigC_AF0aB8SDKStateOtF",
+            "moduleName": "MoEngageSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializeDefaultLiveInstance",
+            "printedName": "initializeDefaultLiveInstance(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKConfig",
+                "printedName": "MoEngageCore.MoEngageSDKConfig",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKConfig"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageSDK@objc(cs)MoEngage(im)initializeDefaultLiveInstance:",
+            "mangledName": "$s11MoEngageSDK0aB0C29initializeDefaultLiveInstanceyy0aB4Core0aB9SDKConfigCF",
+            "moduleName": "MoEngageSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializeDefaultLiveInstance",
+            "printedName": "initializeDefaultLiveInstance(_:sdkState:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKConfig",
+                "printedName": "MoEngageCore.MoEngageSDKConfig",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKState",
+                "printedName": "MoEngageCore.MoEngageSDKState",
+                "usr": "c:@M@MoEngageCore@E@MoEngageSDKState"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageSDK@objc(cs)MoEngage(im)initializeDefaultLiveInstance:sdkState:",
+            "mangledName": "$s11MoEngageSDK0aB0C29initializeDefaultLiveInstance_8sdkStatey0aB4Core0aB9SDKConfigC_AF0aB8SDKStateOtF",
+            "moduleName": "MoEngageSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializeTestInstance",
+            "printedName": "initializeTestInstance(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKConfig",
+                "printedName": "MoEngageCore.MoEngageSDKConfig",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKConfig"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageSDK@objc(cs)MoEngage(im)initializeTestInstance:",
+            "mangledName": "$s11MoEngageSDK0aB0C22initializeTestInstanceyy0aB4Core0aB9SDKConfigCF",
+            "moduleName": "MoEngageSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializeTestInstance",
+            "printedName": "initializeTestInstance(_:sdkState:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKConfig",
+                "printedName": "MoEngageCore.MoEngageSDKConfig",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKState",
+                "printedName": "MoEngageCore.MoEngageSDKState",
+                "usr": "c:@M@MoEngageCore@E@MoEngageSDKState"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageSDK@objc(cs)MoEngage(im)initializeTestInstance:sdkState:",
+            "mangledName": "$s11MoEngageSDK0aB0C22initializeTestInstance_8sdkStatey0aB4Core0aB9SDKConfigC_AF0aB8SDKStateOtF",
+            "moduleName": "MoEngageSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializeLiveInstance",
+            "printedName": "initializeLiveInstance(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKConfig",
+                "printedName": "MoEngageCore.MoEngageSDKConfig",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKConfig"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageSDK@objc(cs)MoEngage(im)initializeLiveInstance:",
+            "mangledName": "$s11MoEngageSDK0aB0C22initializeLiveInstanceyy0aB4Core0aB9SDKConfigCF",
+            "moduleName": "MoEngageSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializeLiveInstance",
+            "printedName": "initializeLiveInstance(_:sdkState:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKConfig",
+                "printedName": "MoEngageCore.MoEngageSDKConfig",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKState",
+                "printedName": "MoEngageCore.MoEngageSDKState",
+                "usr": "c:@M@MoEngageCore@E@MoEngageSDKState"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageSDK@objc(cs)MoEngage(im)initializeLiveInstance:sdkState:",
+            "mangledName": "$s11MoEngageSDK0aB0C22initializeLiveInstance_8sdkStatey0aB4Core0aB9SDKConfigC_AF0aB8SDKStateOtF",
+            "moduleName": "MoEngageSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableSDK",
+            "printedName": "enableSDK()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageSDK@objc(cs)MoEngage(im)enableSDK",
+            "mangledName": "$s11MoEngageSDK0aB0C06enableC0yyF",
+            "moduleName": "MoEngageSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableSDK",
+            "printedName": "enableSDK(appId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageSDK@objc(cs)MoEngage(im)enableSDKWithAppId:",
+            "mangledName": "$s11MoEngageSDK0aB0C06enableC05appIdySSSg_tF",
+            "moduleName": "MoEngageSDK",
+            "objc_name": "enableSDKWithAppId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disableSDK",
+            "printedName": "disableSDK()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageSDK@objc(cs)MoEngage(im)disableSDK",
+            "mangledName": "$s11MoEngageSDK0aB0C07disableC0yyF",
+            "moduleName": "MoEngageSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disableSDK",
+            "printedName": "disableSDK(appId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageSDK@objc(cs)MoEngage(im)disableSDKWithAppId:",
+            "mangledName": "$s11MoEngageSDK0aB0C07disableC05appIdySSSg_tF",
+            "moduleName": "MoEngageSDK",
+            "objc_name": "disableSDKWithAppId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dismissRichLandingWebViewController",
+            "printedName": "dismissRichLandingWebViewController(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageSDK@objc(cs)MoEngage(im)dismissRichLandingWebViewController:",
+            "mangledName": "$s11MoEngageSDK0aB0C35dismissRichLandingWebViewControlleryySbF",
+            "moduleName": "MoEngageSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MoEngageSDK@objc(cs)MoEngage",
+        "mangledName": "$s11MoEngageSDK0aB0C",
+        "moduleName": "MoEngageSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageSDK\/MoEngage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4078,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

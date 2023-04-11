@@ -6,6 +6,6 @@ framework module MoEngageCore {
 }
 
 module MoEngageCore.Swift {
-    header "MoEngageCore-Swift.h"
-    requires objc
+  header "MoEngageCore-Swift.h"
+  requires objc
 }
