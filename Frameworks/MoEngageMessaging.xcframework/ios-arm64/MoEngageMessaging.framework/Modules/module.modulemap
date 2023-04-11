@@ -1,0 +1,11 @@
+framework module MoEngageMessaging {
+  umbrella header "MoEngageMessaging.h"
+
+  export *
+  module * { export * }
+}
+
+module MoEngageMessaging.Swift {
+  header "MoEngageMessaging-Swift.h"
+  requires objc
+}

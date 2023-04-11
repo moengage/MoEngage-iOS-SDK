@@ -2,6 +2,11 @@
 =================================
 
 ## Changelog:
+### Version 9.6.0 *(11th April 2023)*
+-------------------------------------------
+* Added support to track `deviceType`.
+* Internal Code optimizations
+
 ### Version 9.5.1 *(17th March 2023)*
 -------------------------------------------
 * BugFix - Handled the deeplink callback to `SceneDelegate` class.

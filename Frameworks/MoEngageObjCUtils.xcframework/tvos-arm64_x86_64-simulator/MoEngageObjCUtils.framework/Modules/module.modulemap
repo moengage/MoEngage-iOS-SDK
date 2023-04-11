@@ -6,6 +6,6 @@ framework module MoEngageObjCUtils {
 }
 
 module MoEngageObjCUtils.Swift {
-    header "MoEngageObjCUtils-Swift.h"
-    requires objc
+  header "MoEngageObjCUtils-Swift.h"
+  requires objc
 }

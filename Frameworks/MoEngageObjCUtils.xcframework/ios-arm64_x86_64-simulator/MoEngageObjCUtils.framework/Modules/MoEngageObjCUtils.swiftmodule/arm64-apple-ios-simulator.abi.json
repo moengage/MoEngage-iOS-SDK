@@ -1,0 +1,299 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoEngageObjCUtils",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MoEngageAppDelegateAnalyticsProxyProtocol",
+        "printedName": "MoEngageAppDelegateAnalyticsProxyProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "handleOpenURL",
+            "printedName": "handleOpenURL(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageObjCUtils@objc(pl)MoEngageAppDelegateAnalyticsProxyProtocol(im)handleOpenURL:",
+            "mangledName": "$s17MoEngageObjCUtils0aB33AppDelegateAnalyticsProxyProtocolP13handleOpenURLyy10Foundation0L0VF",
+            "moduleName": "MoEngageObjCUtils",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoEngageObjCUtils.MoEngageAppDelegateAnalyticsProxyProtocol>",
+            "sugared_genericSig": "<Self where Self : MoEngageObjCUtils.MoEngageAppDelegateAnalyticsProxyProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@MoEngageObjCUtils@objc(pl)MoEngageAppDelegateAnalyticsProxyProtocol",
+        "mangledName": "$s17MoEngageObjCUtils0aB33AppDelegateAnalyticsProxyProtocolP",
+        "moduleName": "MoEngageObjCUtils",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoEngageObjCUtils",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MoEngageAppDelegateMessagingProxyProtocol",
+        "printedName": "MoEngageAppDelegateMessagingProxyProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "applicationDidRegisterForRemoteNotifications",
+            "printedName": "applicationDidRegisterForRemoteNotifications(withDeviceToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageObjCUtils@objc(pl)MoEngageAppDelegateMessagingProxyProtocol(im)applicationDidRegisterForRemoteNotificationsWithDeviceToken:",
+            "mangledName": "$s17MoEngageObjCUtils0aB33AppDelegateMessagingProxyProtocolP44applicationDidRegisterForRemoteNotifications15withDeviceTokeny10Foundation4DataVSg_tF",
+            "moduleName": "MoEngageObjCUtils",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoEngageObjCUtils.MoEngageAppDelegateMessagingProxyProtocol>",
+            "sugared_genericSig": "<Self where Self : MoEngageObjCUtils.MoEngageAppDelegateMessagingProxyProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "applicationDidFailToRegisterForRemoteNotificationsWithError",
+            "printedName": "applicationDidFailToRegisterForRemoteNotificationsWithError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageObjCUtils@objc(pl)MoEngageAppDelegateMessagingProxyProtocol(im)applicationDidFailToRegisterForRemoteNotificationsWithError:",
+            "mangledName": "$s17MoEngageObjCUtils0aB33AppDelegateMessagingProxyProtocolP59applicationDidFailToRegisterForRemoteNotificationsWithErroryys0S0_pSgF",
+            "moduleName": "MoEngageObjCUtils",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoEngageObjCUtils.MoEngageAppDelegateMessagingProxyProtocol>",
+            "sugared_genericSig": "<Self where Self : MoEngageObjCUtils.MoEngageAppDelegateMessagingProxyProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "applicationDidReceiveRemoteNotification",
+            "printedName": "applicationDidReceiveRemoteNotification(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageObjCUtils@objc(pl)MoEngageAppDelegateMessagingProxyProtocol(im)applicationDidReceiveRemoteNotification:",
+            "mangledName": "$s17MoEngageObjCUtils0aB33AppDelegateMessagingProxyProtocolP39applicationDidReceiveRemoteNotificationyySDys11AnyHashableVypGSgF",
+            "moduleName": "MoEngageObjCUtils",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoEngageObjCUtils.MoEngageAppDelegateMessagingProxyProtocol>",
+            "sugared_genericSig": "<Self where Self : MoEngageObjCUtils.MoEngageAppDelegateMessagingProxyProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "userNotificationCenterWillPresent",
+            "printedName": "userNotificationCenterWillPresent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UserNotifications.UNNotification?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UNNotification",
+                    "printedName": "UserNotifications.UNNotification",
+                    "usr": "c:objc(cs)UNNotification"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageObjCUtils@objc(pl)MoEngageAppDelegateMessagingProxyProtocol(im)userNotificationCenterWillPresent:",
+            "mangledName": "$s17MoEngageObjCUtils0aB33AppDelegateMessagingProxyProtocolP33userNotificationCenterWillPresentyySo14UNNotificationCSgF",
+            "moduleName": "MoEngageObjCUtils",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoEngageObjCUtils.MoEngageAppDelegateMessagingProxyProtocol>",
+            "sugared_genericSig": "<Self where Self : MoEngageObjCUtils.MoEngageAppDelegateMessagingProxyProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "userNotificationCenterDidReceive",
+            "printedName": "userNotificationCenterDidReceive(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UserNotifications.UNNotificationResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UNNotificationResponse",
+                    "printedName": "UserNotifications.UNNotificationResponse",
+                    "usr": "c:objc(cs)UNNotificationResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageObjCUtils@objc(pl)MoEngageAppDelegateMessagingProxyProtocol(im)userNotificationCenterDidReceive:",
+            "mangledName": "$s17MoEngageObjCUtils0aB33AppDelegateMessagingProxyProtocolP32userNotificationCenterDidReceiveyySo22UNNotificationResponseCSgF",
+            "moduleName": "MoEngageObjCUtils",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoEngageObjCUtils.MoEngageAppDelegateMessagingProxyProtocol>",
+            "sugared_genericSig": "<Self where Self : MoEngageObjCUtils.MoEngageAppDelegateMessagingProxyProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Available",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@MoEngageObjCUtils@objc(pl)MoEngageAppDelegateMessagingProxyProtocol",
+        "mangledName": "$s17MoEngageObjCUtils0aB33AppDelegateMessagingProxyProtocolP",
+        "moduleName": "MoEngageObjCUtils",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
