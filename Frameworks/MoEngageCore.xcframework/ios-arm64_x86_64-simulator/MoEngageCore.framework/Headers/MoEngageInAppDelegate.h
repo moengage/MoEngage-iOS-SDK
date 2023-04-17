@@ -24,5 +24,7 @@
 -(void)keyboardDidHide:(MoEngageSDKInstance*)sdkInstance;
 -(void)StatusBarOrientationChanged:(MoEngageSDKInstance*)sdkInstance;
 -(void)showInAppViaPush:(NSNotification*)notification;
+-(void)syncInAppStatsDataForSDKInstance:(MoEngageSDKInstance*)sdkInstance withCompletionHandler:(void(^)(void))completionHandler;
+-(void)removeInAppStorageDataForSDKInstance:(MoEngageSDKInstance*)sdkInstance withCompletionHandler:(void(^)(void))completionHandler;
 @end
 
