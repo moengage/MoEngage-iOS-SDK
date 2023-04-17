@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NLDTlRobAKCr87yKLGgNuGLa5SE=
+		YLh+rSNcOd1yfqptDOctRWmJLgg=
 		</data>
 		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<data>
-		52u9TWd2X5C3vf80fa81TuLyrTc=
+		BnZG4HUIucsH6KHeb6WeJdnKi9U=
 		</data>
 		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		BevLc//hltyD+wPD+lSJAQngXd8=
+		42lWXJXbEAPFFINwE7UVTPfX5KM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -69,11 +69,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			52u9TWd2X5C3vf80fa81TuLyrTc=
+			BnZG4HUIucsH6KHeb6WeJdnKi9U=
 			</data>
 			<key>hash2</key>
 			<data>
-			GLi4YKFMonm7VMDBt75jUOIGnx+Cx2h1gXCKrikuJLo=
+			0AN0imkc6zKxRrX+hI8PfyGKcKbhItuHF4lPnaN4bx4=
 			</data>
 		</dict>
 		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
@@ -113,11 +113,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BevLc//hltyD+wPD+lSJAQngXd8=
+			42lWXJXbEAPFFINwE7UVTPfX5KM=
 			</data>
 			<key>hash2</key>
 			<data>
-			0vgW06knqWhQcngiyYZG4iJTCrVyV7sYr4yYIkbyXl8=
+			gOsinAwyllL/lU9yfWTdqWqOsrZOjumvl1rYhm/q9i4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

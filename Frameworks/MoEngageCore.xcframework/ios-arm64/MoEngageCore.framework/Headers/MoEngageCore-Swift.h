@@ -294,6 +294,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageAnal
 - (void)applicationDidEnterForegroundWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 - (void)applicationDidEnterBackgroundWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 - (void)flushWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
+- (void)resetDataAfterUnRegistrationWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
+- (void)syncExistingDataBeforeUnRegisterationWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance withCompletionBlock:(void (^ _Nullable)(BOOL))completionBlock;
 @end
 
 
@@ -395,6 +397,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageCore
 enum MoEngageSDKState : NSInteger;
 @class UIApplication;
 enum MoEngageInAppWhiteList : NSInteger;
+enum MoEngageRegistrationResult : NSInteger;
 
 SWIFT_CLASS("_TtC12MoEngageCore17MoEngageCoreUtils")
 @interface MoEngageCoreUtils : NSObject
@@ -437,7 +440,10 @@ SWIFT_CLASS("_TtC12MoEngageCore17MoEngageCoreUtils")
 + (void)setIDFVOptOutStatusForSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig optOutStatus:(BOOL)optOutStatus;
 + (BOOL)isIDFATrackingEnabledForSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isIDFVTrackingEnabledForSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
++ (MoEngageAccountMeta * _Nonnull)getAccountMetaWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getStringRepresentationWithEvent:(enum MoEngageInAppWhiteList)event SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)isUserRegisteredWithSdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
++ (void)updateUserRegisterStateWithState:(enum MoEngageRegistrationResult)state sdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -447,6 +453,7 @@ typedef SWIFT_ENUM(NSInteger, MoEngageDataCenter, open) {
   MoEngageDataCenterData_center_02 = 2,
   MoEngageDataCenterData_center_03 = 3,
   MoEngageDataCenterData_center_04 = 4,
+  MoEngageDataCenterData_center_05 = 5,
 };
 
 @class NSDateFormatter;
@@ -671,6 +678,8 @@ typedef SWIFT_ENUM(NSInteger, MoEngageNetworkService, open) {
   MoEngageNetworkServiceCardsDelete = 14,
   MoEngageNetworkServiceCardsUserActivity = 15,
   MoEngageNetworkServiceCrashLake = 16,
+  MoEngageNetworkServiceRegister = 17,
+  MoEngageNetworkServiceUnregister = 18,
 };
 
 
@@ -705,6 +714,39 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageReal
 - (void)applicationDidEnterForegroundWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 - (void)applicationWillBecomeInActiveWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 @end
+
+enum MoEngageRegistrationType : NSInteger;
+
+SWIFT_CLASS("_TtC12MoEngageCore24MoEngageRegistrationData")
+@interface MoEngageRegistrationData : NSObject
+@property (nonatomic, readonly, strong) MoEngageAccountMeta * _Nonnull accountMeta;
+@property (nonatomic, readonly) enum MoEngageRegistrationType type;
+@property (nonatomic, readonly) enum MoEngageRegistrationResult result;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// User Registration Result states
+typedef SWIFT_ENUM(NSInteger, MoEngageRegistrationResult, open) {
+/// User is Registered
+  MoEngageRegistrationResultRegistered = 0,
+/// User is Unregistered
+  MoEngageRegistrationResultUnregistered = 1,
+/// The User Registration flow has to be enabled at the time of MoEngage SDK initialization to register the user. Use  <code>MoEngageUserRegistrationConfig</code> to enable user registration
+  MoEngageRegistrationResultFlowNotEnabled = 2,
+/// State when <code>MoEngageSDKCore.unregisterUser</code> is called without successfully registering the user using <code>MoEngageSDKCore.registerUser</code>.
+  MoEngageRegistrationResultUserNotRegistered = 3,
+/// State when passed data is invalid
+  MoEngageRegistrationResultInvalidData = 4,
+};
+
+/// User registration type
+typedef SWIFT_ENUM(NSInteger, MoEngageRegistrationType, open) {
+/// Register the user
+  MoEngageRegistrationTypeRegister = 0,
+/// UnRegister the user.
+  MoEngageRegistrationTypeUnregister = 1,
+};
 
 
 SWIFT_CLASS("_TtC12MoEngageCore29MoEngageRemoteAnalyticsConfig")
@@ -786,6 +828,7 @@ SWIFT_CLASS("_TtC12MoEngageCore28MoEngageRemoteSecurityConfig")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class MoEngageUserRegistrationConfig;
 
 SWIFT_CLASS("_TtC12MoEngageCore17MoEngageSDKConfig")
 @interface MoEngageSDKConfig : NSObject
@@ -800,6 +843,7 @@ SWIFT_CLASS("_TtC12MoEngageCore17MoEngageSDKConfig")
 @property (nonatomic, readonly) BOOL isTestEnvironment;
 @property (nonatomic) BOOL enableLogs;
 @property (nonatomic, strong) MoEngageInAppConfig * _Nonnull inAppConfig;
+@property (nonatomic, strong) MoEngageUserRegistrationConfig * _Nonnull userRegistrationConfig;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID OBJC_DESIGNATED_INITIALIZER;
@@ -815,6 +859,38 @@ SWIFT_CLASS("_TtC12MoEngageCore23MoEngageSDKConfigEntity")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)decoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class MoEngageUserRegistrationStatus;
+@class MoEngageUserInformation;
+
+SWIFT_CLASS("_TtC12MoEngageCore15MoEngageSDKCore")
+@interface MoEngageSDKCore : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKCore * _Nonnull sharedInstance;)
++ (MoEngageSDKCore * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Register the user
+/// \param data JWT token
+///
+/// \param completionHandler returns the status of registration
+///
+- (void)registerUserWithData:(NSString * _Nonnull)data completionHandler:(void (^ _Nonnull)(MoEngageRegistrationData * _Nonnull))completionHandler;
+- (void)registerUserWithData:(NSString * _Nonnull)data appId:(NSString * _Nullable)appId completionHandler:(void (^ _Nonnull)(MoEngageRegistrationData * _Nonnull))completionHandler;
+/// UnRegister the User
+/// \param data JWT token
+///
+/// \param completionHandler returns the status of Unregistration
+///
+- (void)unregisterUserWithData:(NSString * _Nonnull)data completionHandler:(void (^ _Nonnull)(MoEngageRegistrationData * _Nonnull))completionHandler;
+- (void)unregisterUserWithData:(NSString * _Nonnull)data appId:(NSString * _Nullable)appId completionHandler:(void (^ _Nonnull)(MoEngageRegistrationData * _Nonnull))completionHandler;
+/// Check if User has enrolled
+/// \param completionHandler true if registered else false
+///
+- (void)getUserRegistrationStatusWithCompletionHandler:(void (^ _Nonnull)(MoEngageUserRegistrationStatus * _Nonnull))completionHandler;
+- (void)getUserRegistrationStatusForAppId:(NSString * _Nullable)appId completionHandler:(void (^ _Nonnull)(MoEngageUserRegistrationStatus * _Nonnull))completionHandler;
+- (void)getMoEngageDeviceIdWithCompletionHandler:(void (^ _Nonnull)(MoEngageUserInformation * _Nonnull))completionHandler;
+- (void)getMoEngageDeviceIdWithAppId:(NSString * _Nullable)appId completionHandler:(void (^ _Nonnull)(MoEngageUserInformation * _Nonnull))completionHandler;
 @end
 
 
@@ -990,6 +1066,44 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageStor
 - (MoEngageStandardUserDefaults * _Nonnull)getUserDefaultWithSdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+
+/// Model that returns User related information
+SWIFT_CLASS("_TtC12MoEngageCore23MoEngageUserInformation")
+@interface MoEngageUserInformation : NSObject
+/// User account related information
+@property (nonatomic, readonly, strong) MoEngageAccountMeta * _Nonnull accountMeta;
+/// Unique id of the user.
+@property (nonatomic, readonly, copy) NSString * _Nullable uniqueId;
+- (nonnull instancetype)initWithAccountMeta:(MoEngageAccountMeta * _Nonnull)accountMeta uniqueId:(NSString * _Nullable)uniqueId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Registration Flow Configuration
+SWIFT_CLASS("_TtC12MoEngageCore30MoEngageUserRegistrationConfig")
+@interface MoEngageUserRegistrationConfig : NSObject
+/// Pass true to enable the registration flow.
+@property (nonatomic) BOOL isUserRegistrationEnabled;
++ (MoEngageUserRegistrationConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithIsUserRegistrationEnabled:(BOOL)isUserRegistrationEnabled OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Model responsible for User registration status
+SWIFT_CLASS("_TtC12MoEngageCore30MoEngageUserRegistrationStatus")
+@interface MoEngageUserRegistrationStatus : NSObject
+/// User account related information
+@property (nonatomic, readonly, strong) MoEngageAccountMeta * _Nonnull accountMeta;
+/// true if user is registered else false.
+@property (nonatomic) BOOL isUserRegistered;
+- (nonnull instancetype)initWithAccountMeta:(MoEngageAccountMeta * _Nonnull)accountMeta isUserRegistered:(BOOL)isUserRegistered OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 @class SFSafariViewController;
 

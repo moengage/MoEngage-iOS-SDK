@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iiaov8lpvbS64npQZNIqyyic6p8=
+		hw3bRIfASx3/qAZrI3A4u4/Oeqc=
 		</data>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<data>
-		ed6AfHFwAXkO0ZEvBbx9snJGWsk=
+		xsOyEMKUAL/V9D8DG3JYwnzFyVA=
 		</data>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<data>
-		SIm/5WPXDap1OwTQbUK7cEdEXZU=
+		yeAyZwTOB+H9fpuYJ9IO5gC7wf0=
 		</data>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<data>
-		SIm/5WPXDap1OwTQbUK7cEdEXZU=
+		yeAyZwTOB+H9fpuYJ9IO5gC7wf0=
 		</data>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		S4RIjEkS5tz1ChztFCTwKfd5t0k=
+		j2gc7Q53UsZ0it+sfHDdLpthoC0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -69,22 +69,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ed6AfHFwAXkO0ZEvBbx9snJGWsk=
+			xsOyEMKUAL/V9D8DG3JYwnzFyVA=
 			</data>
 			<key>hash2</key>
 			<data>
-			BK5lI9XtV0voN13vw89YfehFdxeIeUUZwblM2nRuW74=
+			qeMhf9Re9RkSbSC5JaRFnrVVNHUAYm+WOPZkezYp10s=
 			</data>
 		</dict>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SIm/5WPXDap1OwTQbUK7cEdEXZU=
+			yeAyZwTOB+H9fpuYJ9IO5gC7wf0=
 			</data>
 			<key>hash2</key>
 			<data>
-			rRONWXudvQ4lGAwMlc2UpqFU7eyMUaGoiGGNMLsj0bk=
+			/YvFCBLgO9X0gcQXsYAG6NBrNWRp4ZlHyCkBdejkC5c=
 			</data>
 		</dict>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos.swiftdoc</key>
@@ -102,22 +102,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SIm/5WPXDap1OwTQbUK7cEdEXZU=
+			yeAyZwTOB+H9fpuYJ9IO5gC7wf0=
 			</data>
 			<key>hash2</key>
 			<data>
-			rRONWXudvQ4lGAwMlc2UpqFU7eyMUaGoiGGNMLsj0bk=
+			/YvFCBLgO9X0gcQXsYAG6NBrNWRp4ZlHyCkBdejkC5c=
 			</data>
 		</dict>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			S4RIjEkS5tz1ChztFCTwKfd5t0k=
+			j2gc7Q53UsZ0it+sfHDdLpthoC0=
 			</data>
 			<key>hash2</key>
 			<data>
-			8QOXR8TJsZ+XP9zDlETUnQcJbvLDI1vRw57avM4f46c=
+			mGisIZCsHSeNWofeEN/vhIl+GrnquLxcbeDOg3ei7zQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
