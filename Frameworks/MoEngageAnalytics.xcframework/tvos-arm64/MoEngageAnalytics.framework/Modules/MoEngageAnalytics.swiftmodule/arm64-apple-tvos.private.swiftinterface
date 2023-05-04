@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-tvos10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageAnalytics
+// swift-module-flags: -target arm64-apple-tvos11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageAnalytics
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AdSupport
 import AppTrackingTransparency
@@ -46,6 +46,9 @@ import _StringProcessing
   override public func applicationDidEnterBackground(sdkInstance: MoEngageCore.MoEngageSDKInstance)
   override public func flush(sdkInstance: MoEngageCore.MoEngageSDKInstance)
   public static func trackEventForRichNotification(name: Swift.String, properties: MoEngageAnalytics.MoEngageProperties? = nil, appID: Swift.String? = nil, completionBlock: (() -> Swift.Void)? = nil)
+  override public func migrateDataFromPreviousVersions(sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  override public func migrateDataFromNoNEncryptionToEncryption(sdkInstance: MoEngageCore.MoEngageSDKInstance, currentSDKInstance: MoEngageCore.MoEngageSDKInstance)
+  override public func removeEncryptedFolder(sdkInstance: MoEngageCore.MoEngageSDKInstance)
   override public func resetDataAfterUnRegistration(sdkInstance: MoEngageCore.MoEngageSDKInstance)
   override public func syncExistingDataBeforeUnRegisteration(sdkInstance: MoEngageCore.MoEngageSDKInstance, withCompletionBlock completionBlock: ((Swift.Bool) -> Swift.Void)? = nil)
   @objc deinit

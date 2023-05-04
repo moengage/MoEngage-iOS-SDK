@@ -1,0 +1,11 @@
+framework module MoEngageSecurity {
+  umbrella header "MoEngageSecurity.h"
+
+  export *
+  module * { export * }
+}
+
+module MoEngageSecurity.Swift {
+  header "MoEngageSecurity-Swift.h"
+  requires objc
+}

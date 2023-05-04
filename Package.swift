@@ -9,13 +9,15 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "MoEngage-iOS-SDK",
-            targets: ["MoEngageCore","MoEngageSDK","MoEngageAnalytics","MoEngageMessaging","MoEngageObjCUtils"])
+            targets: ["MoEngageCore","MoEngageSDK","MoEngageAnalytics","MoEngageMessaging","MoEngageObjCUtils", "MoEngageSecurity"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
     ],
     targets: [
+        .binaryTarget(name: "MoEngageSecurity", path: "./Frameworks/MoEngageSecurity.xcframework"),
+        
         .binaryTarget(name: "MoEngageCore", path: "./Frameworks/MoEngageCore.xcframework"),
         
         .binaryTarget(name: "MoEngageAnalytics", path: "./Frameworks/MoEngageAnalytics.xcframework"),

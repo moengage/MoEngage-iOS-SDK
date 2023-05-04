@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MoEngageCore-Swift.h</key>
 		<data>
-		c18MWy8OhznbrUlmuzQiFONFP38=
+		wFb9Sx0t0hakTL0YSJIF5y48D3w=
 		</data>
 		<key>Headers/MoEngageCore.h</key>
 		<data>
@@ -14,31 +14,31 @@
 		</data>
 		<key>Headers/MoEngageInAppDelegate.h</key>
 		<data>
-		nGl3CgTfZpuI6NxSAvt/aXF9Pso=
+		tiNIn8AU25FtONrlCYz1zo8DLD8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1X3PGEF7oykmAq1p30J7FHB/1x4=
+		3oZLKBOhLSQ71NjBTfd0jRZR884=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<data>
-		O3PggdZylDodN5PJSBklZZb3JL4=
+		38fkNGtODWtB7TLeqM7s+1FDemk=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<data>
-		/z9cZG0lgOAf9fvl6d07jJA+lCE=
+		Aehj/QFU9+WpRCG8w67FT++mfWI=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
-		5yec/Hc36PN+Y74jC4qbSYh0g58=
+		8EN+AWaAwWQj5pCegyFU09BNkJE=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<data>
-		/z9cZG0lgOAf9fvl6d07jJA+lCE=
+		Aehj/QFU9+WpRCG8w67FT++mfWI=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		B93heG5YkCmH1XdJN2buNvbL8G0=
+		AE3iUv6RpkevDwTriBBGDzh6v1s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -49,21 +49,13 @@
 	<dict>
 		<key>Headers/MoEngageCore-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			c18MWy8OhznbrUlmuzQiFONFP38=
-			</data>
 			<key>hash2</key>
 			<data>
-			oc0/3Hrnk+4sJg3H9QAF0c2KAb/fm2BqCz5MwmtrEqs=
+			NKfK3iCpvZ0sh5xJMBbjHMJYAnxZAUFsrFtsPYomF68=
 			</data>
 		</dict>
 		<key>Headers/MoEngageCore.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6BHENMCsFlQNx5VKOdvQK7UAy2k=
-			</data>
 			<key>hash2</key>
 			<data>
 			GEGK/0di4BwQ+NXe/COg4R3YJrg/Kf40ceGdiXz/JJs=
@@ -71,76 +63,48 @@
 		</dict>
 		<key>Headers/MoEngageInAppDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			nGl3CgTfZpuI6NxSAvt/aXF9Pso=
-			</data>
 			<key>hash2</key>
 			<data>
-			MRrSy9Dhb9RyUM5pxUMkRsEohPTVG3XCw1KpcCHK7ms=
+			liZzPTR8Gs/vNoVMrGvfj2wYMeOlZ5f3WJIrYPfoxMU=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			O3PggdZylDodN5PJSBklZZb3JL4=
-			</data>
 			<key>hash2</key>
 			<data>
-			1ZxvpTOpWLswja2CPIM/GoyoZ+l2IsaOXs/I3/3BBOk=
+			E71mBnfLzSWdSNBUOgu1taE3x8VihgHBr/+TesJ3MSo=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/z9cZG0lgOAf9fvl6d07jJA+lCE=
-			</data>
 			<key>hash2</key>
 			<data>
-			EHONDYDNNkOF1P0zk+4s9nrOOKpLG5Zba5Aw3j//cWo=
+			R941+PxMOjomwgEiWGlJ5xpj+8T0lvhnu280bcfj4nY=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5yec/Hc36PN+Y74jC4qbSYh0g58=
-			</data>
 			<key>hash2</key>
 			<data>
-			8cEntWBC1CQgOcQ19OEPL0dT0WSPjt0uBA1vnCuvGGc=
+			1E8gjGtXJ0J+dJ4MKVfE7QKGxuaTR9zhaqNQs9JWX5E=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/z9cZG0lgOAf9fvl6d07jJA+lCE=
-			</data>
 			<key>hash2</key>
 			<data>
-			EHONDYDNNkOF1P0zk+4s9nrOOKpLG5Zba5Aw3j//cWo=
+			R941+PxMOjomwgEiWGlJ5xpj+8T0lvhnu280bcfj4nY=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			B93heG5YkCmH1XdJN2buNvbL8G0=
-			</data>
 			<key>hash2</key>
 			<data>
-			x1I2IB592RzLNpXB50GenB0kJV62cTgwefc+pz1yzq4=
+			APupU7EQvZ/vRjUwXgRXsAephGjqYGqG3sQkJIcZ5OI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			EgUhSq0+WtP3qPs9AnBR0DOHP9U=
-			</data>
 			<key>hash2</key>
 			<data>
 			0qqNe4WQs7v7ACihESrAmMjcF10r64odTkFP6xCT3/8=

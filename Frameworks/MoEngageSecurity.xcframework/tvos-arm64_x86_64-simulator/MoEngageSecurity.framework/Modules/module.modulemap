@@ -1,0 +1,4 @@
+framework module MoEngageSecurity {
+  header "MoEngageSecurity-Swift.h"
+  requires objc
+}
