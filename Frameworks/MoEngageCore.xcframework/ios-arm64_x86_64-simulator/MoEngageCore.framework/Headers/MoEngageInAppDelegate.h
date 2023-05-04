@@ -24,6 +24,9 @@
 -(void)keyboardDidHide:(MoEngageSDKInstance*)sdkInstance;
 -(void)StatusBarOrientationChanged:(MoEngageSDKInstance*)sdkInstance;
 -(void)showInAppViaPush:(NSNotification*)notification;
+-(void)migrateDataFromPreviousVersionsForSDKInstance:(MoEngageSDKInstance*)sdkInstance;
+-(void)migrateDataFromNoNEncryptionToEncryptionForSDKInstance:(MoEngageSDKInstance*)sdkInstance currentSDKInstance:(MoEngageSDKInstance*) sdkInstance;
+-(void)removeEncryptedFolder:(MoEngageSDKInstance*)sdkInstance;
 -(void)syncInAppStatsDataForSDKInstance:(MoEngageSDKInstance*)sdkInstance withCompletionHandler:(void(^)(void))completionHandler;
 -(void)removeInAppStorageDataForSDKInstance:(MoEngageSDKInstance*)sdkInstance withCompletionHandler:(void(^)(void))completionHandler;
 @end

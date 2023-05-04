@@ -2,6 +2,12 @@
 =================================
 
 ## Changelog:
+### Version 9.8.0 *(4th May 2023)*
+-------------------------------------------
+* Updated the deployment target to 11.0.
+* Added support for API and Storage Encryption.
+* Added MoEngageSecurity framework.
+
 ### Version 9.7.0 *(17th April 2023)*
 -------------------------------------------
 * Added DC-05 support.
