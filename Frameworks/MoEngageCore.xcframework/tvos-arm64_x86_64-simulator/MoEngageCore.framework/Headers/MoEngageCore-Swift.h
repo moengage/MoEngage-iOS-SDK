@@ -444,6 +444,7 @@ SWIFT_CLASS("_TtC12MoEngageCore17MoEngageCoreUtils")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+/// Data-center to which the moengage data should flow.
 typedef SWIFT_ENUM(NSInteger, MoEngageDataCenter, open) {
   MoEngageDataCenterData_center_default = 0,
   MoEngageDataCenterData_center_01 = 1,
@@ -696,7 +697,14 @@ SWIFT_CLASS("_TtC12MoEngageCore22MoEngageKeyChainConfig")
 @interface MoEngageKeyChainConfig : NSObject
 /// Keychain group name to support encryption
 @property (nonatomic, readonly, copy) NSString * _Nonnull groupName;
+/// Returns the instance of type <code>MoEngageKeyChainConfig</code> with default configuration
+///
+/// returns:
+/// Instance of type <code>MoEngageKeyChainConfig</code>
 + (MoEngageKeyChainConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
+/// Initialize the instance of <code>MoEngageKeyChainConfig</code>
+/// \param groupName Keychain sharing name
+///
 - (nonnull instancetype)initWithGroupName:(NSString * _Nonnull)groupName OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -740,11 +748,21 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageMess
 @end
 
 
+/// Configuration Related to Network Request Authorization.
 SWIFT_CLASS("_TtC12MoEngageCore34MoEngageNetworkAuthorizationConfig")
 @interface MoEngageNetworkAuthorizationConfig : NSObject
+/// Jwt Configuration, if true all Network Request will be authenticated with jwt token
 @property (nonatomic, readonly) BOOL isJwtEnbaled;
+/// Initialize the instance of type <code>MoEngageNetworkAuthorizationConfig</code>
+/// \param isJwtEnbaled Pass true to enable to authenticate all API calls with jwt token
+///
 - (nonnull instancetype)initWithIsJwtEnbaled:(BOOL)isJwtEnbaled OBJC_DESIGNATED_INITIALIZER;
+/// Returns the instance of MoEngageNetworkAuthorizationConfig with default configuration
+///
+/// returns:
+/// Instance of MoEngageNetworkAuthorizationConfig with jwt disabled
 + (MoEngageNetworkAuthorizationConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
+/// Prints the description of <code>MoEngageNetworkAuthorizationConfig</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -787,8 +805,20 @@ SWIFT_CLASS("_TtC12MoEngageCore33MoEngageNetworkDataSecurityConfig")
 @property (nonatomic, copy) NSString * _Nonnull encryptionKeyDebug;
 /// Encryption Key which will be use to encrypt/decrypt data in Release mode
 @property (nonatomic, copy) NSString * _Nonnull encryptionKeyRelease;
+/// Initialize the instance of MoEngageNetworkDataSecurityConfig
+/// \param isEncryptionEnabled Pass true to enable the API encryption
+///
+/// \param encryptionKeyDebug Encryption Key which will be use to encrypt/decrypt data in Debug mode
+///
+/// \param encryptionKeyRelease Encryption Key which will be use to encrypt/decrypt data in Release mode
+///
 - (nonnull instancetype)initWithIsEncryptionEnabled:(BOOL)isEncryptionEnabled encryptionKeyDebug:(NSString * _Nonnull)encryptionKeyDebug encryptionKeyRelease:(NSString * _Nonnull)encryptionKeyRelease OBJC_DESIGNATED_INITIALIZER;
+/// Prints the description of MoEngageNetworkDataSecurityConfig
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// Returns the instance of MoEngageNetworkDataSecurityConfig with default configuration
+///
+/// returns:
+/// Instance of MoEngageNetworkDataSecurityConfig with encryption disabled
 + (MoEngageNetworkDataSecurityConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -807,14 +837,33 @@ SWIFT_CLASS("_TtC12MoEngageCore22MoEngageNetworkRequest")
 @end
 
 
+/// Configuration for Network Request
 SWIFT_CLASS("_TtC12MoEngageCore28MoEngageNetworkRequestConfig")
 @interface MoEngageNetworkRequestConfig : NSObject
+/// Configuration Related to Network Request Data Security.
 @property (nonatomic, readonly, strong) MoEngageNetworkDataSecurityConfig * _Nonnull dataSecurityConfig;
+/// Configuration Related to Network Request Authorization.
 @property (nonatomic, readonly, strong) MoEngageNetworkAuthorizationConfig * _Nonnull authorizationConfig;
+/// Returns instance of type <code>MoEngageNetworkRequestConfig</code> with default configuration
+///
+/// returns:
+/// Instance of type <code>MoEngageNetworkRequestConfig</code> with all feature disabled.
 + (MoEngageNetworkRequestConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
+/// Initialize the instance of type <code>MoEngageNetworkRequestConfig</code>
+/// \param authorizationConfig Instance of type <code>MoEngageNetworkAuthorizationConfig</code>
+///
+/// \param dataSecurityConfig Instance of type <code>MoEngageNetworkDataSecurityConfig</code>
+///
 - (nonnull instancetype)initWithAuthorizationConfig:(MoEngageNetworkAuthorizationConfig * _Nonnull)authorizationConfig dataSecurityConfig:(MoEngageNetworkDataSecurityConfig * _Nonnull)dataSecurityConfig OBJC_DESIGNATED_INITIALIZER;
+/// Convinience initializer to create the instance of type <code>MoEngageNetworkRequestConfig</code>
+/// \param authorizationConfig Instance of type <code>MoEngageNetworkAuthorizationConfig</code>
+///
 - (nonnull instancetype)initWithAuthorizationConfig:(MoEngageNetworkAuthorizationConfig * _Nonnull)authorizationConfig;
+/// Convinience initializer to create the instance of type <code>MoEngageNetworkRequestConfig</code>
+/// \param dataSecurityConfig Instance of type <code>MoEngageNetworkDataSecurityConfig</code>
+///
 - (nonnull instancetype)initWithDataSecurityConfig:(MoEngageNetworkDataSecurityConfig * _Nonnull)dataSecurityConfig;
+/// Prints the description of MoEngageNetworkRequestConfig instance
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -987,27 +1036,56 @@ SWIFT_CLASS("_TtC12MoEngageCore28MoEngageRemoteSecurityConfig")
 @class MoEngageStorageConfig;
 @class MoEngageUserRegistrationConfig;
 
+/// MoEngage SDK Configuration class
 SWIFT_CLASS("_TtC12MoEngageCore17MoEngageSDKConfig")
 @interface MoEngageSDKConfig : NSObject
+/// Account identifier
 @property (nonatomic, readonly, copy) NSString * _Nonnull appId;
+/// Optionally set the data-center to which the data should flow.
 @property (nonatomic) enum MoEngageDataCenter moeDataCenter;
+/// Set the App group id to share the data between app target and extensions
 @property (nonatomic, copy) NSString * _Nonnull appGroupID;
+/// Interval at which events are flushed to MoEngage backend. Minimum value is 60.
 @property (nonatomic) NSInteger analyticsPeriodicFlushDuration;
+/// Bool to disable to periodic flush of events.
 @property (nonatomic) BOOL analyticsDisablePeriodicFlush;
+/// Use formattedAppId to differentiate appId in debug/live build
 @property (nonatomic, readonly, copy) NSString * _Nonnull formattedAppId;
+/// True if instance is default/primary instance else false
 @property (nonatomic, readonly) BOOL isDefaultInstance;
+/// True if instance in running in Debug environment else false
 @property (nonatomic, readonly) BOOL isTestEnvironment;
+/// Pass true to show the sdk logs in Xcode console
 @property (nonatomic) BOOL enableLogs;
+/// Configuration for InApp Campaigns.
 @property (nonatomic, strong) MoEngageInAppConfig * _Nonnull inAppConfig;
+/// Configuration for SDK Storage
 @property (nonatomic, strong) MoEngageStorageConfig * _Nonnull storageConfig;
+/// Set the keychain group name to save the encryption key in keychain
 @property (nonatomic, strong) MoEngageKeyChainConfig * _Nonnull keyChainConfig;
+/// Configuration for User Registration
 @property (nonatomic, strong) MoEngageUserRegistrationConfig * _Nonnull userRegistrationConfig;
+/// Configuration for Network Request.
 @property (nonatomic, strong) MoEngageNetworkRequestConfig * _Nonnull networkConfig;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID OBJC_DESIGNATED_INITIALIZER;
+/// Initialize instance of MoEngageSDKConfig
+/// \param appId Account identifier, APP ID on the MoEngage Dashboard.
+///
+/// \param dataCenter The dashboard on which you have created your account.
+///
+- (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId dataCenter:(enum MoEngageDataCenter)dataCenter OBJC_DESIGNATED_INITIALIZER;
+/// Initialize instance of MoEngageSDKConfig
+/// \param appID Account identifier
+///
+- (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID SWIFT_DEPRECATED_MSG("This method is deprecated in favour of constructor with data center parameter. This constructor would be removed in version 11.0.0 version of the SDK.");
+/// Update the MoEngageSDKConfig properties if it belongs to test environment
 - (void)updateConfigForTestEnvironment;
+/// Set the partner integration type
+/// \param integrationType Enum of type <code>MoEngagePartnerIntegrationType</code>
+///
 - (void)setPartnerIntegrationTypeWithIntegrationType:(enum MoEngagePartnerIntegrationType)integrationType;
+/// Print the description of MoEngageSDKConfig
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
@@ -1103,8 +1181,16 @@ SWIFT_CLASS("_TtC12MoEngageCore21MoEngageStorageConfig")
 @interface MoEngageStorageConfig : NSObject
 /// Model responsible to enable storage encryption
 @property (nonatomic, readonly, strong) MoEngageStorageEncryptionConfig * _Nonnull encryptionConfig;
+/// Returns the instance of type <code>MoEngageStorageConfig</code> with default configuration
+///
+/// returns:
+/// Instance of type <code>MoEngageStorageConfig</code>
 + (MoEngageStorageConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
+/// Initialize  the instance of MoEngageStorageConfig
+/// \param encryptionConfig instance of type <code>MoEngageStorageEncryptionConfig</code>
+///
 - (nonnull instancetype)initWithEncryptionConfig:(MoEngageStorageEncryptionConfig * _Nonnull)encryptionConfig OBJC_DESIGNATED_INITIALIZER;
+/// Print the description of <code>MoEngageStorageConfig</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1116,8 +1202,16 @@ SWIFT_CLASS("_TtC12MoEngageCore31MoEngageStorageEncryptionConfig")
 @interface MoEngageStorageEncryptionConfig : NSObject
 /// Set the value as true to enable storage encryption
 @property (nonatomic) BOOL isEncryptionEnabled;
+/// Initialize the instance of type <code>MoEngageStorageEncryptionConfig</code>
+/// \param isEncryptionEnabled Pass true to enable storage encryption
+///
 - (nonnull instancetype)initWithIsEncryptionEnabled:(BOOL)isEncryptionEnabled OBJC_DESIGNATED_INITIALIZER;
+/// Returns the instance of MoEngageStorageEncryptionConfig with default configuration
+///
+/// returns:
+/// Instance of MoEngageStorageEncryptionConfig  where encryption is disabled
 + (MoEngageStorageEncryptionConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
+/// Prints the description of MoEngageStorageEncryptionConfig
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1168,8 +1262,16 @@ SWIFT_CLASS("_TtC12MoEngageCore30MoEngageUserRegistrationConfig")
 @interface MoEngageUserRegistrationConfig : NSObject
 /// Pass true to enable the registration flow.
 @property (nonatomic) BOOL isUserRegistrationEnabled;
+/// Returns the instance of type <code>MoEngageUserRegistrationConfig</code> with default configuration
+///
+/// returns:
+/// Instance of type <code>MoEngageUserRegistrationConfig</code>
 + (MoEngageUserRegistrationConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
+/// Initialize the instance of <code>MoEngageUserRegistrationConfig</code>
+/// \param isUserRegistrationEnabled Pass true to enable the user registration flow else false.
+///
 - (nonnull instancetype)initWithIsUserRegistrationEnabled:(BOOL)isUserRegistrationEnabled OBJC_DESIGNATED_INITIALIZER;
+/// Prints the description of MoEngageUserRegistrationConfig
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1650,6 +1752,7 @@ SWIFT_CLASS("_TtC12MoEngageCore17MoEngageCoreUtils")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+/// Data-center to which the moengage data should flow.
 typedef SWIFT_ENUM(NSInteger, MoEngageDataCenter, open) {
   MoEngageDataCenterData_center_default = 0,
   MoEngageDataCenterData_center_01 = 1,
@@ -1902,7 +2005,14 @@ SWIFT_CLASS("_TtC12MoEngageCore22MoEngageKeyChainConfig")
 @interface MoEngageKeyChainConfig : NSObject
 /// Keychain group name to support encryption
 @property (nonatomic, readonly, copy) NSString * _Nonnull groupName;
+/// Returns the instance of type <code>MoEngageKeyChainConfig</code> with default configuration
+///
+/// returns:
+/// Instance of type <code>MoEngageKeyChainConfig</code>
 + (MoEngageKeyChainConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
+/// Initialize the instance of <code>MoEngageKeyChainConfig</code>
+/// \param groupName Keychain sharing name
+///
 - (nonnull instancetype)initWithGroupName:(NSString * _Nonnull)groupName OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1946,11 +2056,21 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageMess
 @end
 
 
+/// Configuration Related to Network Request Authorization.
 SWIFT_CLASS("_TtC12MoEngageCore34MoEngageNetworkAuthorizationConfig")
 @interface MoEngageNetworkAuthorizationConfig : NSObject
+/// Jwt Configuration, if true all Network Request will be authenticated with jwt token
 @property (nonatomic, readonly) BOOL isJwtEnbaled;
+/// Initialize the instance of type <code>MoEngageNetworkAuthorizationConfig</code>
+/// \param isJwtEnbaled Pass true to enable to authenticate all API calls with jwt token
+///
 - (nonnull instancetype)initWithIsJwtEnbaled:(BOOL)isJwtEnbaled OBJC_DESIGNATED_INITIALIZER;
+/// Returns the instance of MoEngageNetworkAuthorizationConfig with default configuration
+///
+/// returns:
+/// Instance of MoEngageNetworkAuthorizationConfig with jwt disabled
 + (MoEngageNetworkAuthorizationConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
+/// Prints the description of <code>MoEngageNetworkAuthorizationConfig</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1993,8 +2113,20 @@ SWIFT_CLASS("_TtC12MoEngageCore33MoEngageNetworkDataSecurityConfig")
 @property (nonatomic, copy) NSString * _Nonnull encryptionKeyDebug;
 /// Encryption Key which will be use to encrypt/decrypt data in Release mode
 @property (nonatomic, copy) NSString * _Nonnull encryptionKeyRelease;
+/// Initialize the instance of MoEngageNetworkDataSecurityConfig
+/// \param isEncryptionEnabled Pass true to enable the API encryption
+///
+/// \param encryptionKeyDebug Encryption Key which will be use to encrypt/decrypt data in Debug mode
+///
+/// \param encryptionKeyRelease Encryption Key which will be use to encrypt/decrypt data in Release mode
+///
 - (nonnull instancetype)initWithIsEncryptionEnabled:(BOOL)isEncryptionEnabled encryptionKeyDebug:(NSString * _Nonnull)encryptionKeyDebug encryptionKeyRelease:(NSString * _Nonnull)encryptionKeyRelease OBJC_DESIGNATED_INITIALIZER;
+/// Prints the description of MoEngageNetworkDataSecurityConfig
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// Returns the instance of MoEngageNetworkDataSecurityConfig with default configuration
+///
+/// returns:
+/// Instance of MoEngageNetworkDataSecurityConfig with encryption disabled
 + (MoEngageNetworkDataSecurityConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -2013,14 +2145,33 @@ SWIFT_CLASS("_TtC12MoEngageCore22MoEngageNetworkRequest")
 @end
 
 
+/// Configuration for Network Request
 SWIFT_CLASS("_TtC12MoEngageCore28MoEngageNetworkRequestConfig")
 @interface MoEngageNetworkRequestConfig : NSObject
+/// Configuration Related to Network Request Data Security.
 @property (nonatomic, readonly, strong) MoEngageNetworkDataSecurityConfig * _Nonnull dataSecurityConfig;
+/// Configuration Related to Network Request Authorization.
 @property (nonatomic, readonly, strong) MoEngageNetworkAuthorizationConfig * _Nonnull authorizationConfig;
+/// Returns instance of type <code>MoEngageNetworkRequestConfig</code> with default configuration
+///
+/// returns:
+/// Instance of type <code>MoEngageNetworkRequestConfig</code> with all feature disabled.
 + (MoEngageNetworkRequestConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
+/// Initialize the instance of type <code>MoEngageNetworkRequestConfig</code>
+/// \param authorizationConfig Instance of type <code>MoEngageNetworkAuthorizationConfig</code>
+///
+/// \param dataSecurityConfig Instance of type <code>MoEngageNetworkDataSecurityConfig</code>
+///
 - (nonnull instancetype)initWithAuthorizationConfig:(MoEngageNetworkAuthorizationConfig * _Nonnull)authorizationConfig dataSecurityConfig:(MoEngageNetworkDataSecurityConfig * _Nonnull)dataSecurityConfig OBJC_DESIGNATED_INITIALIZER;
+/// Convinience initializer to create the instance of type <code>MoEngageNetworkRequestConfig</code>
+/// \param authorizationConfig Instance of type <code>MoEngageNetworkAuthorizationConfig</code>
+///
 - (nonnull instancetype)initWithAuthorizationConfig:(MoEngageNetworkAuthorizationConfig * _Nonnull)authorizationConfig;
+/// Convinience initializer to create the instance of type <code>MoEngageNetworkRequestConfig</code>
+/// \param dataSecurityConfig Instance of type <code>MoEngageNetworkDataSecurityConfig</code>
+///
 - (nonnull instancetype)initWithDataSecurityConfig:(MoEngageNetworkDataSecurityConfig * _Nonnull)dataSecurityConfig;
+/// Prints the description of MoEngageNetworkRequestConfig instance
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -2193,27 +2344,56 @@ SWIFT_CLASS("_TtC12MoEngageCore28MoEngageRemoteSecurityConfig")
 @class MoEngageStorageConfig;
 @class MoEngageUserRegistrationConfig;
 
+/// MoEngage SDK Configuration class
 SWIFT_CLASS("_TtC12MoEngageCore17MoEngageSDKConfig")
 @interface MoEngageSDKConfig : NSObject
+/// Account identifier
 @property (nonatomic, readonly, copy) NSString * _Nonnull appId;
+/// Optionally set the data-center to which the data should flow.
 @property (nonatomic) enum MoEngageDataCenter moeDataCenter;
+/// Set the App group id to share the data between app target and extensions
 @property (nonatomic, copy) NSString * _Nonnull appGroupID;
+/// Interval at which events are flushed to MoEngage backend. Minimum value is 60.
 @property (nonatomic) NSInteger analyticsPeriodicFlushDuration;
+/// Bool to disable to periodic flush of events.
 @property (nonatomic) BOOL analyticsDisablePeriodicFlush;
+/// Use formattedAppId to differentiate appId in debug/live build
 @property (nonatomic, readonly, copy) NSString * _Nonnull formattedAppId;
+/// True if instance is default/primary instance else false
 @property (nonatomic, readonly) BOOL isDefaultInstance;
+/// True if instance in running in Debug environment else false
 @property (nonatomic, readonly) BOOL isTestEnvironment;
+/// Pass true to show the sdk logs in Xcode console
 @property (nonatomic) BOOL enableLogs;
+/// Configuration for InApp Campaigns.
 @property (nonatomic, strong) MoEngageInAppConfig * _Nonnull inAppConfig;
+/// Configuration for SDK Storage
 @property (nonatomic, strong) MoEngageStorageConfig * _Nonnull storageConfig;
+/// Set the keychain group name to save the encryption key in keychain
 @property (nonatomic, strong) MoEngageKeyChainConfig * _Nonnull keyChainConfig;
+/// Configuration for User Registration
 @property (nonatomic, strong) MoEngageUserRegistrationConfig * _Nonnull userRegistrationConfig;
+/// Configuration for Network Request.
 @property (nonatomic, strong) MoEngageNetworkRequestConfig * _Nonnull networkConfig;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID OBJC_DESIGNATED_INITIALIZER;
+/// Initialize instance of MoEngageSDKConfig
+/// \param appId Account identifier, APP ID on the MoEngage Dashboard.
+///
+/// \param dataCenter The dashboard on which you have created your account.
+///
+- (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId dataCenter:(enum MoEngageDataCenter)dataCenter OBJC_DESIGNATED_INITIALIZER;
+/// Initialize instance of MoEngageSDKConfig
+/// \param appID Account identifier
+///
+- (nonnull instancetype)initWithAppID:(NSString * _Nonnull)appID SWIFT_DEPRECATED_MSG("This method is deprecated in favour of constructor with data center parameter. This constructor would be removed in version 11.0.0 version of the SDK.");
+/// Update the MoEngageSDKConfig properties if it belongs to test environment
 - (void)updateConfigForTestEnvironment;
+/// Set the partner integration type
+/// \param integrationType Enum of type <code>MoEngagePartnerIntegrationType</code>
+///
 - (void)setPartnerIntegrationTypeWithIntegrationType:(enum MoEngagePartnerIntegrationType)integrationType;
+/// Print the description of MoEngageSDKConfig
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
@@ -2309,8 +2489,16 @@ SWIFT_CLASS("_TtC12MoEngageCore21MoEngageStorageConfig")
 @interface MoEngageStorageConfig : NSObject
 /// Model responsible to enable storage encryption
 @property (nonatomic, readonly, strong) MoEngageStorageEncryptionConfig * _Nonnull encryptionConfig;
+/// Returns the instance of type <code>MoEngageStorageConfig</code> with default configuration
+///
+/// returns:
+/// Instance of type <code>MoEngageStorageConfig</code>
 + (MoEngageStorageConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
+/// Initialize  the instance of MoEngageStorageConfig
+/// \param encryptionConfig instance of type <code>MoEngageStorageEncryptionConfig</code>
+///
 - (nonnull instancetype)initWithEncryptionConfig:(MoEngageStorageEncryptionConfig * _Nonnull)encryptionConfig OBJC_DESIGNATED_INITIALIZER;
+/// Print the description of <code>MoEngageStorageConfig</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -2322,8 +2510,16 @@ SWIFT_CLASS("_TtC12MoEngageCore31MoEngageStorageEncryptionConfig")
 @interface MoEngageStorageEncryptionConfig : NSObject
 /// Set the value as true to enable storage encryption
 @property (nonatomic) BOOL isEncryptionEnabled;
+/// Initialize the instance of type <code>MoEngageStorageEncryptionConfig</code>
+/// \param isEncryptionEnabled Pass true to enable storage encryption
+///
 - (nonnull instancetype)initWithIsEncryptionEnabled:(BOOL)isEncryptionEnabled OBJC_DESIGNATED_INITIALIZER;
+/// Returns the instance of MoEngageStorageEncryptionConfig with default configuration
+///
+/// returns:
+/// Instance of MoEngageStorageEncryptionConfig  where encryption is disabled
 + (MoEngageStorageEncryptionConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
+/// Prints the description of MoEngageStorageEncryptionConfig
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -2374,8 +2570,16 @@ SWIFT_CLASS("_TtC12MoEngageCore30MoEngageUserRegistrationConfig")
 @interface MoEngageUserRegistrationConfig : NSObject
 /// Pass true to enable the registration flow.
 @property (nonatomic) BOOL isUserRegistrationEnabled;
+/// Returns the instance of type <code>MoEngageUserRegistrationConfig</code> with default configuration
+///
+/// returns:
+/// Instance of type <code>MoEngageUserRegistrationConfig</code>
 + (MoEngageUserRegistrationConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
+/// Initialize the instance of <code>MoEngageUserRegistrationConfig</code>
+/// \param isUserRegistrationEnabled Pass true to enable the user registration flow else false.
+///
 - (nonnull instancetype)initWithIsUserRegistrationEnabled:(BOOL)isUserRegistrationEnabled OBJC_DESIGNATED_INITIALIZER;
+/// Prints the description of MoEngageUserRegistrationConfig
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

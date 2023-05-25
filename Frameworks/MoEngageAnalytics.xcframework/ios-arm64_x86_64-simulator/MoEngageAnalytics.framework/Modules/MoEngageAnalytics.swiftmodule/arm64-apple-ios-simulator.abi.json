@@ -5104,980 +5104,980 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageUserAttributeEntity.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageUserAttributeEntity.swift",
       "kind": "StringLiteral",
       "offset": 255,
       "length": 27,
       "value": "\"MoEngageAnalytics.MoEngageUserAttributeEntity\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageSessionManager.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageSessionManager.swift",
       "kind": "BooleanLiteral",
       "offset": 387,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageSessionInfo.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageSessionInfo.swift",
       "kind": "StringLiteral",
       "offset": 391,
       "length": 29,
       "value": "\"com.moengage.currentSession\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 407,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 418,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 434,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 407,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 418,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 434,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 823,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 834,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 823,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 834,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageSession.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageSession.swift",
       "kind": "Array",
       "offset": 372,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageSession.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageSession.swift",
       "kind": "StringLiteral",
       "offset": 263,
       "length": 15,
       "value": "\"MoEngageAnalytics.MoEngageSession\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsSession.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsSession.swift",
       "kind": "Array",
       "offset": 310,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsCache.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsCache.swift",
       "kind": "BooleanLiteral",
       "offset": 247,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsTimerHandler.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsTimerHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 354,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsSessionInfo.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsSessionInfo.swift",
       "kind": "StringLiteral",
       "offset": 326,
       "length": 33,
       "value": "\"com.moengage.currentSessionInfo\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUserAttributeData.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUserAttributeData.swift",
       "kind": "StringLiteral",
       "offset": 309,
       "length": 32,
       "value": "\"com.moengage.userAttributedata\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUserAttributeData.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUserAttributeData.swift",
       "kind": "Dictionary",
       "offset": 414,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageUserAttributesData.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageUserAttributesData.swift",
       "kind": "StringLiteral",
       "offset": 357,
       "length": 29,
       "value": "\"com.moengage.userAttributes\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageUserAttributesData.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageUserAttributesData.swift",
       "kind": "Dictionary",
       "offset": 450,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsData.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsData.swift",
       "kind": "Dictionary",
       "offset": 338,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsFileStorage.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsFileStorage.swift",
       "kind": "StringLiteral",
       "offset": 289,
       "length": 11,
       "value": "\"Analytics\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsFileStorage.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsFileStorage.swift",
       "kind": "StringLiteral",
       "offset": 343,
       "length": 52,
       "value": "\"Analytics\/\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsFileStorage.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsFileStorage.swift",
       "kind": "StringLiteral",
       "offset": 394,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsFileStorage.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsFileStorage.swift",
       "kind": "StringLiteral",
       "offset": 428,
       "length": 15,
       "value": "\"AnalyticsData\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsFileStorage.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsFileStorage.swift",
       "kind": "StringLiteral",
       "offset": 473,
       "length": 13,
       "value": "\"SessionInfo\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsFileStorage.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsFileStorage.swift",
       "kind": "StringLiteral",
       "offset": 522,
       "length": 19,
       "value": "\"UserAttributeData\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsFileStorage.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsFileStorage.swift",
       "kind": "StringLiteral",
       "offset": 594,
       "length": 9,
       "value": "\"MoEData\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsFileStorage.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsFileStorage.swift",
       "kind": "StringLiteral",
       "offset": 647,
       "length": 15,
       "value": "\"MOSessionInfo\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsFileStorage.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsFileStorage.swift",
       "kind": "StringLiteral",
       "offset": 712,
       "length": 18,
       "value": "\"MOUserAttributes\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsParser.swift",
       "kind": "StringLiteral",
       "offset": 272,
       "length": 9,
       "value": "\"batches\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsParser.swift",
       "kind": "StringLiteral",
       "offset": 311,
       "length": 14,
       "value": "\"request_time\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsParser.swift",
       "kind": "StringLiteral",
       "offset": 393,
       "length": 21,
       "value": "\"moe_current_session\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsParser.swift",
       "kind": "StringLiteral",
       "offset": 446,
       "length": 12,
       "value": "\"session_id\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsParser.swift",
       "kind": "StringLiteral",
       "offset": 490,
       "length": 12,
       "value": "\"start_time\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsParser.swift",
       "kind": "StringLiteral",
       "offset": 544,
       "length": 23,
       "value": "\"last_interaction_time\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsParser.swift",
       "kind": "StringLiteral",
       "offset": 597,
       "length": 9,
       "value": "\"sources\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsParser.swift",
       "kind": "StringLiteral",
       "offset": 635,
       "length": 8,
       "value": "\"source\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsParser.swift",
       "kind": "StringLiteral",
       "offset": 673,
       "length": 9,
       "value": "\"session\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageProperties.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageProperties.swift",
       "kind": "BooleanLiteral",
       "offset": 457,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageProperties.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageProperties.swift",
       "kind": "StringLiteral",
       "offset": 214,
       "length": 18,
       "value": "\"MoEngageAnalytics.MoEngageProperties\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 265,
       "length": 6,
       "value": "\"male\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 300,
       "length": 8,
       "value": "\"female\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 336,
       "length": 7,
       "value": "\"other\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 420,
       "length": 26,
       "value": "\"USER_ATTRIBUTE_UNIQUE_ID\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 481,
       "length": 27,
       "value": "\"USER_ATTRIBUTE_USER_EMAIL\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 543,
       "length": 28,
       "value": "\"USER_ATTRIBUTE_USER_MOBILE\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 606,
       "length": 26,
       "value": "\"USER_ATTRIBUTE_USER_NAME\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 667,
       "length": 32,
       "value": "\"USER_ATTRIBUTE_USER_FIRST_NAME\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 734,
       "length": 31,
       "value": "\"USER_ATTRIBUTE_USER_LAST_NAME\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 800,
       "length": 26,
       "value": "\"USER_ATTRIBUTE_USER_BDAY\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 861,
       "length": 30,
       "value": "\"USER_ATTRIBUTE_USER_LOCATION\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 926,
       "length": 28,
       "value": "\"USER_ATTRIBUTE_USER_GENDER\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 995,
       "length": 22,
       "value": "\"USER_PUSH_PREFERENCE\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 1053,
       "length": 24,
       "value": "\"ADVERTISING_IDENTIFIER\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 1118,
       "length": 27,
       "value": "\"USER_ATTRIBUTE_SEGMENT_ID\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 1224,
       "length": 14,
       "value": "\"device_model\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 1273,
       "length": 19,
       "value": "\"device_model_name\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 1327,
       "length": 12,
       "value": "\"os_version\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 1374,
       "length": 13,
       "value": "\"device_IDFV\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 1422,
       "length": 12,
       "value": "\"deviceType\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 1517,
       "length": 16,
       "value": "\"LOCALE_COUNTRY\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 1572,
       "length": 24,
       "value": "\"LOCALE_COUNTRY_DISPLAY\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 1635,
       "length": 17,
       "value": "\"LOCALE_LANGUAGE\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 1691,
       "length": 25,
       "value": "\"LOCALE_LANGUAGE_DISPLAY\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 1755,
       "length": 19,
       "value": "\"LOCALE_IDENTIFIER\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 1813,
       "length": 16,
       "value": "\"LOCALE_DISPLAY\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 1915,
       "length": 13,
       "value": "\"identifiers\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 1963,
       "length": 13,
       "value": "\"moe_user_id\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 2011,
       "length": 6,
       "value": "\"meta\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 2057,
       "length": 7,
       "value": "\"e_t_p\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 2102,
       "length": 13,
       "value": "\"dev_add_res\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 2150,
       "length": 9,
       "value": "\"session\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 2194,
       "length": 12,
       "value": "\"session_id\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 2245,
       "length": 12,
       "value": "\"start_time\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 2292,
       "length": 8,
       "value": "\"source\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 2335,
       "length": 11,
       "value": "\"viewsInfo\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 2383,
       "length": 12,
       "value": "\"viewsCount\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 2430,
       "length": 14,
       "value": "\"EVENT_ACTION\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 2483,
       "length": 13,
       "value": "\"EVENT_ATTRS\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 2541,
       "length": 18,
       "value": "\"EVENT_ATTRS_CUST\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 2612,
       "length": 10,
       "value": "\"location\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 2676,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 2726,
       "length": 14,
       "value": "\"EVENT_L_TIME\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 2779,
       "length": 14,
       "value": "\"EVENT_G_TIME\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 2835,
       "length": 7,
       "value": "\"N_I_E\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 2929,
       "length": 27,
       "value": "\"MOE_HAS_DEVICE_ADD_FAILED\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 3003,
       "length": 28,
       "value": "\"MOE_APP_VERSION_APP_STATUS\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 3078,
       "length": 24,
       "value": "\"MOE_INSTALL_REGISTERED\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 3149,
       "length": 17,
       "value": "\"moe_identifiers\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 3213,
       "length": 6,
       "value": "\"meta\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 3266,
       "length": 12,
       "value": "\"deviceType\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 3325,
       "length": 6,
       "value": "\"idfa\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 3421,
       "length": 12,
       "value": "\"utm_source\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 3471,
       "length": 8,
       "value": "\"utm_id\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 3519,
       "length": 14,
       "value": "\"utm_campaign\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 3565,
       "length": 10,
       "value": "\"utm_term\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 3609,
       "length": 12,
       "value": "\"utm_medium\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 3656,
       "length": 13,
       "value": "\"utm_content\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 3747,
       "length": 8,
       "value": "\"source\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 3795,
       "length": 10,
       "value": "\"campaign\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 3837,
       "length": 6,
       "value": "\"term\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 3877,
       "length": 8,
       "value": "\"medium\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 3920,
       "length": 9,
       "value": "\"content\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 4006,
       "length": 8,
       "value": "\"source\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 4051,
       "length": 13,
       "value": "\"campaign_id\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 4103,
       "length": 15,
       "value": "\"campaign_name\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 4151,
       "length": 8,
       "value": "\"medium\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 4190,
       "length": 6,
       "value": "\"term\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 4230,
       "length": 9,
       "value": "\"content\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 4275,
       "length": 12,
       "value": "\"source_url\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 4320,
       "length": 8,
       "value": "\"extras\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 4420,
       "length": 31,
       "value": "\"EVENT_ACTION_DEVICE_ATTRIBUTE\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 4536,
       "length": 19,
       "value": "\"generalAttributes\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 4598,
       "length": 20,
       "value": "\"locationAttributes\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 4661,
       "length": 20,
       "value": "\"dateTimeAttributes\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 4724,
       "length": 18,
       "value": "\"isNonInteractive\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 4785,
       "length": 10,
       "value": "\"latitude\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 4838,
       "length": 11,
       "value": "\"longitude\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 4921,
       "length": 19,
       "value": "\"moe_usr_attr_name\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 4968,
       "length": 18,
       "value": "\"moe_usr_attr_val\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 5024,
       "length": 27,
       "value": "\"moe_usr_attr_tracked_date\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 5092,
       "length": 20,
       "value": "\"userAttributesDict\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsConstants.swift",
       "kind": "StringLiteral",
       "offset": 5184,
       "length": 8,
       "value": "\"events\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUserAttribute.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsUserAttribute.swift",
       "kind": "StringLiteral",
       "offset": 254,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsController.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsController.swift",
       "kind": "BooleanLiteral",
       "offset": 611,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsController.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsController.swift",
       "kind": "BooleanLiteral",
       "offset": 651,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsController.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsController.swift",
       "kind": "BooleanLiteral",
       "offset": 16772,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsController.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsController.swift",
       "kind": "BooleanLiteral",
       "offset": 16807,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsController.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsController.swift",
       "kind": "BooleanLiteral",
       "offset": 35603,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsController.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsController.swift",
       "kind": "BooleanLiteral",
       "offset": 37995,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsController.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsController.swift",
       "kind": "BooleanLiteral",
       "offset": 38674,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageSource.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageSource.swift",
       "kind": "StringLiteral",
       "offset": 261,
       "length": 14,
       "value": "\"MoEngageAnalytics.MoEngageSource\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageGeoLocation.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageGeoLocation.swift",
       "kind": "StringLiteral",
       "offset": 215,
       "length": 19,
       "value": "\"MoEngageAnalytics.MoEngageGeoLocation\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageUserAttribute.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageUserAttribute.swift",
       "kind": "StringLiteral",
       "offset": 330,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageUserAttribute.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageUserAttribute.swift",
       "kind": "StringLiteral",
       "offset": 254,
       "length": 21,
       "value": "\"MoEngageAnalytics.MoEngageUserAttribute\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsBatchHandler.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageAnalytics\/MoEngageAnalyticsBatchHandler.swift",
       "kind": "StringLiteral",
       "offset": 271,
       "length": 2,

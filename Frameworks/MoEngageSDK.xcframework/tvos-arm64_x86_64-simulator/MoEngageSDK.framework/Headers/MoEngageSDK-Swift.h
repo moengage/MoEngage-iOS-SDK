@@ -305,13 +305,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngage * _
 - (void)initializeLiveInstance:(MoEngageSDKConfig * _Nonnull)sdkConfig sdkState:(enum MoEngageSDKState)sdkState;
 /// Enable SDK for default instance
 - (void)enableSDK;
-/// Enable SDK for default/secondary instance
+/// Enable SDK for Secondary instance
 /// \param appId MoEngage Account Identifier
 ///
 - (void)enableSDKWithAppId:(NSString * _Nullable)appId;
 /// Disable SDK for default instance
 - (void)disableSDK;
-/// Disable SDK for default/secondary instance
+/// Disable SDK for Secondary instance
 /// \param appId MoEngage Account Identifier
 ///
 - (void)disableSDKWithAppId:(NSString * _Nullable)appId;
@@ -636,13 +636,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngage * _
 - (void)initializeLiveInstance:(MoEngageSDKConfig * _Nonnull)sdkConfig sdkState:(enum MoEngageSDKState)sdkState;
 /// Enable SDK for default instance
 - (void)enableSDK;
-/// Enable SDK for default/secondary instance
+/// Enable SDK for Secondary instance
 /// \param appId MoEngage Account Identifier
 ///
 - (void)enableSDKWithAppId:(NSString * _Nullable)appId;
 /// Disable SDK for default instance
 - (void)disableSDK;
-/// Disable SDK for default/secondary instance
+/// Disable SDK for Secondary instance
 /// \param appId MoEngage Account Identifier
 ///
 - (void)disableSDKWithAppId:(NSString * _Nullable)appId;

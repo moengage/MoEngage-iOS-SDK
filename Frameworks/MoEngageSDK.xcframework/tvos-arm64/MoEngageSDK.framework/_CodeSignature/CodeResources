@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MoEngageSDK-Swift.h</key>
 		<data>
-		vVWeqK0Lvx68whUEA4rRnYjB23k=
+		knWLqFDtGxiPdVMZs/SmJxFwe14=
 		</data>
 		<key>Headers/MoEngageSDK.h</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		BHKHYFiMxjItdJoWuK4UbXZOZfc=
+		XX9cEL8fpYpe6fU5riQKn9DybgY=
 		</data>
 		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<data>
-		52u9TWd2X5C3vf80fa81TuLyrTc=
+		Mu0/1Az5/LLlKhPWEm4KnwF4KiM=
 		</data>
 		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
-		JAXn/0hkoKSURJJngso7sx4JjZI=
+		uMKQecOecC1TTs509utFsroCt2w=
 		</data>
 		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		VMnPo1HcfuJxngtdtri5TWALiVw=
+		H0B50p5GLe0/5FO/Dl1YNE+LMIU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hj4lEiOPDJrd9ytZ0lspi4cDgOjTiug7xA8ejwlJ5E0=
+			cPVEq3XarA/4FTVVgWrUxkH4AL8ROoJkIQG571gT+r0=
 			</data>
 		</dict>
 		<key>Headers/MoEngageSDK.h</key>
@@ -61,7 +61,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GLi4YKFMonm7VMDBt75jUOIGnx+Cx2h1gXCKrikuJLo=
+			F9rCUjJDS/+ZDfl22RxVqJwLNFCotGWFRIQ77hXfj6c=
 			</data>
 		</dict>
 		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W6hRiaGtLPo5flG2pT59/wIoqJKjbxL6Vcz1Qa1WJGE=
+			BXiiY3y72aPaLVcZAftz6dkSPTRzEtyyH6xlYvr7eCM=
 			</data>
 		</dict>
 		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-tvos.swiftinterface</key>
@@ -89,7 +89,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B8Ivs6u7ZyDbY6w6gF3VSuOnSA208HWFmb1S1LUr5Jc=
+			0ShjISm1vk49p2TwYkerXF2b7wvy5AFVjUtfoltID+M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
