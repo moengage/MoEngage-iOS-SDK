@@ -177,20 +177,6 @@ public class MoEngageGifManager {
   open func containsImageView(_ imageView: UIKit.UIImageView) -> Swift.Bool
   open func hasCache(_ imageView: UIKit.UIImageView) -> Swift.Bool
 }
-@objc public enum MoEngageDataCenter : Swift.Int {
-  case data_center_default
-  case data_center_01
-  case data_center_02
-  case data_center_03
-  case data_center_04
-  case data_center_05
-  public static func getDataCenter(dataCenter: Swift.String) -> MoEngageCore.MoEngageDataCenter
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MoEngageSDKConfig : ObjectiveC.NSObject {
   @objc public var appId: Swift.String {
     get
@@ -215,7 +201,9 @@ public class MoEngageGifManager {
   @objc public var keyChainConfig: MoEngageCore.MoEngageKeyChainConfig
   @objc public var userRegistrationConfig: MoEngageCore.MoEngageUserRegistrationConfig
   @objc public var networkConfig: MoEngageCore.MoEngageNetworkRequestConfig
-  @objc public init(withAppID appID: Swift.String)
+  @objc public init(appId: Swift.String, dataCenter: MoEngageCore.MoEngageDataCenter)
+  @available(*, deprecated, message: "This method is deprecated in favour of constructor with data center parameter. This constructor would be removed in version 11.0.0 version of the SDK.")
+  @objc convenience public init(withAppID appID: Swift.String)
   @objc public func updateConfigForTestEnvironment()
   @objc public func setPartnerIntegrationType(integrationType: MoEngageCore.MoEngagePartnerIntegrationType)
   @objc override dynamic public var description: Swift.String {
@@ -795,6 +783,20 @@ extension MoEngageCore.MoEngageNetworkClient : MoEngageCore.MoEngageNetworkReque
   }
   @objc deinit
 }
+@objc public enum MoEngageDataCenter : Swift.Int {
+  case data_center_default
+  case data_center_01
+  case data_center_02
+  case data_center_03
+  case data_center_04
+  case data_center_05
+  public static func getDataCenter(dataCenter: Swift.String) -> MoEngageCore.MoEngageDataCenter
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers @objc public class MoEngageSDKInstance : ObjectiveC.NSObject {
   @objc public var sdkConfig: MoEngageCore.MoEngageSDKConfig {
     get
@@ -1062,9 +1064,6 @@ extension MoEngageCore.MoEngageInAppWhiteList : Swift.RawRepresentable {}
 extension MoEngageCore.MoEngageRegistrationType : Swift.Equatable {}
 extension MoEngageCore.MoEngageRegistrationType : Swift.Hashable {}
 extension MoEngageCore.MoEngageRegistrationType : Swift.RawRepresentable {}
-extension MoEngageCore.MoEngageDataCenter : Swift.Equatable {}
-extension MoEngageCore.MoEngageDataCenter : Swift.Hashable {}
-extension MoEngageCore.MoEngageDataCenter : Swift.RawRepresentable {}
 extension MoEngageCore.MoEngagePartnerIntegrationType : Swift.Equatable {}
 extension MoEngageCore.MoEngagePartnerIntegrationType : Swift.Hashable {}
 extension MoEngageCore.MoEngagePartnerIntegrationType : Swift.RawRepresentable {}
@@ -1082,6 +1081,9 @@ extension MoEngageCore.MoEngageNetworkReachability.NetworkStatus : Swift.Equatab
 extension MoEngageCore.MoEngageNetworkReachability.NetworkStatus : Swift.Hashable {}
 extension MoEngageCore.MoEngageNetworkReachability.Connection : Swift.Equatable {}
 extension MoEngageCore.MoEngageNetworkReachability.Connection : Swift.Hashable {}
+extension MoEngageCore.MoEngageDataCenter : Swift.Equatable {}
+extension MoEngageCore.MoEngageDataCenter : Swift.Hashable {}
+extension MoEngageCore.MoEngageDataCenter : Swift.RawRepresentable {}
 extension MoEngageCore.MoEngageSDKState : Swift.Equatable {}
 extension MoEngageCore.MoEngageSDKState : Swift.Hashable {}
 extension MoEngageCore.MoEngageSDKState : Swift.RawRepresentable {}

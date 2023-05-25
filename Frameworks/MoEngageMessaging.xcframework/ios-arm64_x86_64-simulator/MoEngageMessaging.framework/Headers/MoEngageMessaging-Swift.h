@@ -256,14 +256,36 @@ using UInt = size_t;
 @class NSString;
 @class NSObject;
 
+/// An interface for processing  various notification actions.
 SWIFT_PROTOCOL("_TtP17MoEngageMessaging25MoEngageMessagingDelegate_")
 @protocol MoEngageMessagingDelegate
 @optional
+/// Callback received when device token is generated on successful Push registration
+/// \param deviceToken Identifier for the Apple Push Notification System
+///
 - (void)notificationRegisteredWithDeviceToken:(NSString * _Nonnull)deviceToken;
-- (void)notificationClickedWithScreenName:(NSString * _Nullable)screenName andKVPairs:(NSDictionary * _Nullable)kvPairs;
-- (void)notificationClickedWithScreenName:(NSString * _Nullable)screenName kvPairs:(NSDictionary * _Nullable)kvPairs andPushPayload:(NSDictionary * _Nonnull)userInfo;
-- (void)notificationClickedWithPushPayload:(NSDictionary * _Nonnull)userInfo;
+/// Callback received when notification is received.
+/// \param userInfo Dictionary that contains the entire push payload
+///
 - (void)notificationReceivedWithPushPayload:(NSDictionary * _Nonnull)userInfo;
+/// Callback received when notification is clicked.
+/// \param userInfo Dictionary that contains the entire push payload
+///
+- (void)notificationClickedWithPushPayload:(NSDictionary * _Nonnull)userInfo;
+/// Callback received when notification is clicked.
+/// \param screenName If the action type is Navigation then the <code>screenName</code> indicates the name of the screen to which  navigation has to be performed
+///
+/// \param kvPairs Custom key-value pairs entered while creating the campaign for the action.
+///
+- (void)notificationClickedWithScreenName:(NSString * _Nullable)screenName andKVPairs:(NSDictionary * _Nullable)kvPairs;
+/// Callback received when notification is clicked.
+/// \param screenName If the action type is Navigation then the <code>screenName</code> indicates the name of the screen to which  navigation has to be performed
+///
+/// \param kvPairs Custom key-value pairs entered while creating the campaign for the action.
+///
+/// \param userInfo Dictionary that contains the entire push payload
+///
+- (void)notificationClickedWithScreenName:(NSString * _Nullable)screenName kvPairs:(NSDictionary * _Nullable)kvPairs andPushPayload:(NSDictionary * _Nonnull)userInfo;
 @end
 
 
@@ -277,8 +299,8 @@ SWIFT_CLASS("_TtC17MoEngageMessaging22MoEngageMessagingUtils")
 @class NSData;
 @class UNUserNotificationCenter;
 @class UNNotification;
-@class UIApplication;
 @class UNNotificationResponse;
+@class UIApplication;
 
 SWIFT_CLASS("_TtC17MoEngageMessaging20MoEngageSDKMessaging") SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface MoEngageSDKMessaging : NSObject
@@ -286,15 +308,53 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKM
 + (MoEngageSDKMessaging * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)setMessagingDelegate:(id <MoEngageMessagingDelegate> _Nullable)delegate forAppID:(NSString * _Nullable)appID;
+/// Requests the user’s authorization to allow local and remote notifications for your app.
+/// \param categories A type of notification your app supports and the custom actions that the system displays.
+///
+/// \param delegate The interface for handling incoming notifications and notification-related actions.
+///
 - (void)registerForRemoteNotificationWithCategories:(NSSet<UNNotificationCategory *> * _Nullable)categories andUserNotificationCenterDelegate:(id <UNUserNotificationCenterDelegate> _Nullable)delegate SWIFT_AVAILABILITY(tvos,unavailable);
 - (void)setUserNotificationCategories:(NSSet<UNNotificationCategory *> * _Nullable)categories SWIFT_AVAILABILITY(tvos,unavailable);
+/// Method to disable the badge reset by SDK.
+- (void)disableBadgeReset;
+/// Method to set the delegate inorder to receive the callback for <code>MoEngageMessagingDelegate</code> methods for Default MoEngage Instance.
+/// \param delegate Instance that conforms to <code>MoEngageMessagingDelegate</code> protocol.
+///
+- (void)setMessagingDelegate:(id <MoEngageMessagingDelegate> _Nullable)delegate;
+/// Method to set the delegate inorder to receive the callback for <code>MoEngageMessagingDelegate</code> methods for Secondary MoEngage Instance.
+/// \param delegate Instance that conforms to <code>MoEngageMessagingDelegate</code> protocol.
+///
+/// \param appID MoEngage Account Identifier
+///
+- (void)setMessagingDelegate:(id <MoEngageMessagingDelegate> _Nullable)delegate forAppID:(NSString * _Nullable)appID;
+/// In case you have disabled swizzling,  call this method to pass the device token to MoEngage SDK
+/// \param deviceToken Identifier for the Apple Push Notification System
+///
 - (void)setPushToken:(NSData * _Nullable)deviceToken;
+/// In case you have disabled swizzling, call this method when notification registration fails
 - (void)didFailToRegisterForPush;
+/// In case you have disabled swizzling, call this method on receiving the notification
+/// \param center The central object for managing notification-related activities for your app or app extension.
+///
+/// \param notification The data for a local or remote notification the system delivers to your app.
+///
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresent:(UNNotification * _Nonnull)notification;
-- (void)didReceieveNotificationInApplication:(UIApplication * _Nullable)application withInfo:(NSDictionary * _Nonnull)pushPayload;
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceive:(UNNotificationResponse * _Nonnull)response;
+/// In case you have disabled swizzling, call this method when remote notification is received in iOS 9 and below.
+/// \param application The centralized point of control and coordination for apps running in iOS.
+///
+/// \param pushPayload Dictionary that contains entire Push payload
+///
+- (void)didReceieveNotificationInApplication:(UIApplication * _Nullable)application withInfo:(NSDictionary * _Nonnull)pushPayload;
+/// Method to process inbox notification and handle the action associated with  it.
+/// \param pushPayload Dictionary that  represents entire push payload
+///
+/// \param instanceID MoEngage Account Identifier.
+///
 - (void)processWithNotificationPayload:(NSDictionary * _Nonnull)pushPayload forInstanceID:(NSString * _Nonnull)instanceID;
+/// Method to disable badge reset by SDK
+/// \param disable Pass true to disable badge reset
+///
 - (void)disableBadgeReset:(BOOL)disable;
 + (BOOL)isMoEngageSilentPushAppLaunchWithLaunchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(tvos,unavailable);
 @end
@@ -565,14 +625,36 @@ using UInt = size_t;
 @class NSString;
 @class NSObject;
 
+/// An interface for processing  various notification actions.
 SWIFT_PROTOCOL("_TtP17MoEngageMessaging25MoEngageMessagingDelegate_")
 @protocol MoEngageMessagingDelegate
 @optional
+/// Callback received when device token is generated on successful Push registration
+/// \param deviceToken Identifier for the Apple Push Notification System
+///
 - (void)notificationRegisteredWithDeviceToken:(NSString * _Nonnull)deviceToken;
-- (void)notificationClickedWithScreenName:(NSString * _Nullable)screenName andKVPairs:(NSDictionary * _Nullable)kvPairs;
-- (void)notificationClickedWithScreenName:(NSString * _Nullable)screenName kvPairs:(NSDictionary * _Nullable)kvPairs andPushPayload:(NSDictionary * _Nonnull)userInfo;
-- (void)notificationClickedWithPushPayload:(NSDictionary * _Nonnull)userInfo;
+/// Callback received when notification is received.
+/// \param userInfo Dictionary that contains the entire push payload
+///
 - (void)notificationReceivedWithPushPayload:(NSDictionary * _Nonnull)userInfo;
+/// Callback received when notification is clicked.
+/// \param userInfo Dictionary that contains the entire push payload
+///
+- (void)notificationClickedWithPushPayload:(NSDictionary * _Nonnull)userInfo;
+/// Callback received when notification is clicked.
+/// \param screenName If the action type is Navigation then the <code>screenName</code> indicates the name of the screen to which  navigation has to be performed
+///
+/// \param kvPairs Custom key-value pairs entered while creating the campaign for the action.
+///
+- (void)notificationClickedWithScreenName:(NSString * _Nullable)screenName andKVPairs:(NSDictionary * _Nullable)kvPairs;
+/// Callback received when notification is clicked.
+/// \param screenName If the action type is Navigation then the <code>screenName</code> indicates the name of the screen to which  navigation has to be performed
+///
+/// \param kvPairs Custom key-value pairs entered while creating the campaign for the action.
+///
+/// \param userInfo Dictionary that contains the entire push payload
+///
+- (void)notificationClickedWithScreenName:(NSString * _Nullable)screenName kvPairs:(NSDictionary * _Nullable)kvPairs andPushPayload:(NSDictionary * _Nonnull)userInfo;
 @end
 
 
@@ -586,8 +668,8 @@ SWIFT_CLASS("_TtC17MoEngageMessaging22MoEngageMessagingUtils")
 @class NSData;
 @class UNUserNotificationCenter;
 @class UNNotification;
-@class UIApplication;
 @class UNNotificationResponse;
+@class UIApplication;
 
 SWIFT_CLASS("_TtC17MoEngageMessaging20MoEngageSDKMessaging") SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface MoEngageSDKMessaging : NSObject
@@ -595,15 +677,53 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKM
 + (MoEngageSDKMessaging * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)setMessagingDelegate:(id <MoEngageMessagingDelegate> _Nullable)delegate forAppID:(NSString * _Nullable)appID;
+/// Requests the user’s authorization to allow local and remote notifications for your app.
+/// \param categories A type of notification your app supports and the custom actions that the system displays.
+///
+/// \param delegate The interface for handling incoming notifications and notification-related actions.
+///
 - (void)registerForRemoteNotificationWithCategories:(NSSet<UNNotificationCategory *> * _Nullable)categories andUserNotificationCenterDelegate:(id <UNUserNotificationCenterDelegate> _Nullable)delegate SWIFT_AVAILABILITY(tvos,unavailable);
 - (void)setUserNotificationCategories:(NSSet<UNNotificationCategory *> * _Nullable)categories SWIFT_AVAILABILITY(tvos,unavailable);
+/// Method to disable the badge reset by SDK.
+- (void)disableBadgeReset;
+/// Method to set the delegate inorder to receive the callback for <code>MoEngageMessagingDelegate</code> methods for Default MoEngage Instance.
+/// \param delegate Instance that conforms to <code>MoEngageMessagingDelegate</code> protocol.
+///
+- (void)setMessagingDelegate:(id <MoEngageMessagingDelegate> _Nullable)delegate;
+/// Method to set the delegate inorder to receive the callback for <code>MoEngageMessagingDelegate</code> methods for Secondary MoEngage Instance.
+/// \param delegate Instance that conforms to <code>MoEngageMessagingDelegate</code> protocol.
+///
+/// \param appID MoEngage Account Identifier
+///
+- (void)setMessagingDelegate:(id <MoEngageMessagingDelegate> _Nullable)delegate forAppID:(NSString * _Nullable)appID;
+/// In case you have disabled swizzling,  call this method to pass the device token to MoEngage SDK
+/// \param deviceToken Identifier for the Apple Push Notification System
+///
 - (void)setPushToken:(NSData * _Nullable)deviceToken;
+/// In case you have disabled swizzling, call this method when notification registration fails
 - (void)didFailToRegisterForPush;
+/// In case you have disabled swizzling, call this method on receiving the notification
+/// \param center The central object for managing notification-related activities for your app or app extension.
+///
+/// \param notification The data for a local or remote notification the system delivers to your app.
+///
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresent:(UNNotification * _Nonnull)notification;
-- (void)didReceieveNotificationInApplication:(UIApplication * _Nullable)application withInfo:(NSDictionary * _Nonnull)pushPayload;
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceive:(UNNotificationResponse * _Nonnull)response;
+/// In case you have disabled swizzling, call this method when remote notification is received in iOS 9 and below.
+/// \param application The centralized point of control and coordination for apps running in iOS.
+///
+/// \param pushPayload Dictionary that contains entire Push payload
+///
+- (void)didReceieveNotificationInApplication:(UIApplication * _Nullable)application withInfo:(NSDictionary * _Nonnull)pushPayload;
+/// Method to process inbox notification and handle the action associated with  it.
+/// \param pushPayload Dictionary that  represents entire push payload
+///
+/// \param instanceID MoEngage Account Identifier.
+///
 - (void)processWithNotificationPayload:(NSDictionary * _Nonnull)pushPayload forInstanceID:(NSString * _Nonnull)instanceID;
+/// Method to disable badge reset by SDK
+/// \param disable Pass true to disable badge reset
+///
 - (void)disableBadgeReset:(BOOL)disable;
 + (BOOL)isMoEngageSilentPushAppLaunchWithLaunchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(tvos,unavailable);
 @end

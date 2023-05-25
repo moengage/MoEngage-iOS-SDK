@@ -121,6 +121,20 @@ public struct MoEngageFileData {
   public var data: [Swift.String : Any]
   public init(data: [Swift.String : Any] = [:])
 }
+@objc public enum MoEngageDataCenter : Swift.Int {
+  case data_center_default
+  case data_center_01
+  case data_center_02
+  case data_center_03
+  case data_center_04
+  case data_center_05
+  public static func getDataCenter(dataCenter: Swift.String) -> MoEngageCore.MoEngageDataCenter
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers open class MoEngageInboxDelegate : ObjectiveC.NSObject {
   @objc required override dynamic public init()
   open func logout(sdkInstance: MoEngageCore.MoEngageSDKInstance, onCompleted: @escaping () -> ())
@@ -187,20 +201,6 @@ public struct MoEngageDefaultStates {
   @objc deinit
 }
 public func integrationInfoToDictionary(_ integrationInfo: Swift.Array<MoEngageCore.MoEngageIntegrationInfo>) -> [[Swift.String : Swift.String]]?
-@objc public enum MoEngageDataCenter : Swift.Int {
-  case data_center_default
-  case data_center_01
-  case data_center_02
-  case data_center_03
-  case data_center_04
-  case data_center_05
-  public static func getDataCenter(dataCenter: Swift.String) -> MoEngageCore.MoEngageDataCenter
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MoEngageSDKConfig : ObjectiveC.NSObject {
   @objc public var appId: Swift.String {
     get
@@ -225,7 +225,9 @@ public func integrationInfoToDictionary(_ integrationInfo: Swift.Array<MoEngageC
   @objc public var keyChainConfig: MoEngageCore.MoEngageKeyChainConfig
   @objc public var userRegistrationConfig: MoEngageCore.MoEngageUserRegistrationConfig
   @objc public var networkConfig: MoEngageCore.MoEngageNetworkRequestConfig
-  @objc public init(withAppID appID: Swift.String)
+  @objc public init(appId: Swift.String, dataCenter: MoEngageCore.MoEngageDataCenter)
+  @available(*, deprecated, message: "This method is deprecated in favour of constructor with data center parameter. This constructor would be removed in version 11.0.0 version of the SDK.")
+  @objc convenience public init(withAppID appID: Swift.String)
   @objc public func updateConfigForTestEnvironment()
   @objc public func setPartnerIntegrationType(integrationType: MoEngageCore.MoEngagePartnerIntegrationType)
   @objc override dynamic public var description: Swift.String {

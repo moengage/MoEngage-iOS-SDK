@@ -12,6 +12,13 @@ import UIKit
 import UserNotifications
 import _Concurrency
 import _StringProcessing
+@objc public protocol MoEngageMessagingDelegate {
+  @objc optional func notificationRegistered(withDeviceToken deviceToken: Swift.String)
+  @objc optional func notificationReceived(withPushPayload userInfo: [Swift.AnyHashable : Any])
+  @objc optional func notificationClicked(withPushPayload userInfo: [Swift.AnyHashable : Any])
+  @objc optional func notificationClicked(withScreenName screenName: Swift.String?, andKVPairs kvPairs: [Swift.AnyHashable : Any]?)
+  @objc optional func notificationClicked(withScreenName screenName: Swift.String?, kvPairs: [Swift.AnyHashable : Any]?, andPushPayload userInfo: [Swift.AnyHashable : Any])
+}
 @_inheritsConvenienceInitializers @objc public class MoEngageMessagingUtils : ObjectiveC.NSObject {
   public static func getStatsAttributes(fromPayloadDict payloadDict: Swift.Dictionary<Swift.AnyHashable, Any>) -> Swift.Dictionary<Swift.String, Any>
   @objc override dynamic public init()
@@ -155,27 +162,22 @@ public struct MoEngageMessagingConstants {
     }
   }
 }
-@objc public protocol MoEngageMessagingDelegate {
-  @objc optional func notificationRegistered(withDeviceToken deviceToken: Swift.String)
-  @objc optional func notificationClicked(withScreenName screenName: Swift.String?, andKVPairs kvPairs: [Swift.AnyHashable : Any]?)
-  @objc optional func notificationClicked(withScreenName screenName: Swift.String?, kvPairs: [Swift.AnyHashable : Any]?, andPushPayload userInfo: [Swift.AnyHashable : Any])
-  @objc optional func notificationClicked(withPushPayload userInfo: [Swift.AnyHashable : Any])
-  @objc optional func notificationReceived(withPushPayload userInfo: [Swift.AnyHashable : Any])
-}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOSApplicationExtension, unavailable)
 @objc public class MoEngageSDKMessaging : ObjectiveC.NSObject {
   @objc public static let sharedInstance: MoEngageMessaging.MoEngageSDKMessaging
-  @objc public func setMessagingDelegate(_ delegate: MoEngageMessaging.MoEngageMessagingDelegate?, forAppID appID: Swift.String? = nil)
-  public func setInternalInboxDelegate(_ delegate: MoEngageMessaging.MoEngageMessagingDelegate?, forInstanceID instanceID: Swift.String?)
   @available(tvOS, unavailable)
   @objc public func registerForRemoteNotification(withCategories categories: Swift.Set<UserNotifications.UNNotificationCategory>? = nil, andUserNotificationCenterDelegate delegate: UserNotifications.UNUserNotificationCenterDelegate? = nil)
   @available(tvOS, unavailable)
   @objc public func setUserNotificationCategories(_ categories: Swift.Set<UserNotifications.UNNotificationCategory>? = nil)
+  @objc public func disableBadgeReset()
+  @objc public func setMessagingDelegate(_ delegate: MoEngageMessaging.MoEngageMessagingDelegate?)
+  @objc public func setMessagingDelegate(_ delegate: MoEngageMessaging.MoEngageMessagingDelegate?, forAppID appID: Swift.String? = nil)
   @objc public func setPushToken(_ deviceToken: Foundation.Data?)
   @objc public func didFailToRegisterForPush()
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification)
-  @objc public func didReceieveNotification(inApplication application: UIKit.UIApplication? = nil, withInfo pushPayload: [Swift.AnyHashable : Any])
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse)
+  @objc public func didReceieveNotification(inApplication application: UIKit.UIApplication? = nil, withInfo pushPayload: [Swift.AnyHashable : Any])
+  public func setInternalInboxDelegate(_ delegate: MoEngageMessaging.MoEngageMessagingDelegate?, forInstanceID instanceID: Swift.String?)
   @objc public func process(notificationPayload pushPayload: [Swift.AnyHashable : Any], forInstanceID instanceID: Swift.String)
   @objc public func disableBadgeReset(_ disable: Swift.Bool)
   @available(tvOS, unavailable)

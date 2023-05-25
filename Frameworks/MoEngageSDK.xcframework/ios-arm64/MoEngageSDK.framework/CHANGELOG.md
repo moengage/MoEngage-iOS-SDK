@@ -2,6 +2,11 @@
 =================================
 
 ## Changelog:
+### Version 9.8.1 *(25th May 2023)*
+-------------------------------------------
+* Adding support to track primitive arrays in UserAttributes
+* Additional Constructor with Data Center Support.
+
 ### Version 9.8.0 *(4th May 2023)*
 -------------------------------------------
 * Updated the deployment target to 11.0.
