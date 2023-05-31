@@ -824,6 +824,7 @@ public enum MoEngageExceptions : Swift.Error {
   public static func mapAnyObjectToDict(data: Any?) -> [Swift.String : Any]?
   public static func mapStringToJSON(str: Swift.String) -> [Swift.String : Any]?
   public static func mapBase64ToJSON(str: Swift.String) -> [Swift.String : Any]?
+  public static func getIntegrationInfoFromAppGroupId(sdkConfig: MoEngageCore.MoEngageSDKConfig) -> [[Swift.String : Any]]?
   @objc override dynamic public init()
   @objc deinit
 }

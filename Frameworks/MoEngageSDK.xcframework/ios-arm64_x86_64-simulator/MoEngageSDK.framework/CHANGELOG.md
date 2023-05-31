@@ -2,6 +2,10 @@
 =================================
 
 ## Changelog:
+### Version 9.8.2 *(31st May 2023)*
+-------------------------------------------
+* BugFix - Added integration details in Extension API call.
+
 ### Version 9.8.1 *(25th May 2023)*
 -------------------------------------------
 * Adding support to track primitive arrays in UserAttributes
