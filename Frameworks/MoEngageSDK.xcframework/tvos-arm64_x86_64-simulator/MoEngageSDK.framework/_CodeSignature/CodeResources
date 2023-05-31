@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		MZ5+++AQY/Ut3iOmRLSXTd0F468=
+		CUt1jATxlVKn2534Wr3Cub89B14=
 		</data>
 		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		Mu0/1Az5/LLlKhPWEm4KnwF4KiM=
+		52u9TWd2X5C3vf80fa81TuLyrTc=
 		</data>
 		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		wOkqgND4vZgBMQ3O/q1Xbr43xh8=
+		ZZnZxE/1hhKLIY5AvF8zi65uZQg=
 		</data>
 		<key>Modules/MoEngageSDK.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		Mu0/1Az5/LLlKhPWEm4KnwF4KiM=
+		52u9TWd2X5C3vf80fa81TuLyrTc=
 		</data>
 		<key>Modules/MoEngageSDK.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/MoEngageSDK.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		v9uDm7WwSl5D+RgXo8J2l17EKiI=
+		i5ZC9w1Wy26ne96MYsPTCcGO3Pk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F9rCUjJDS/+ZDfl22RxVqJwLNFCotGWFRIQ77hXfj6c=
+			GLi4YKFMonm7VMDBt75jUOIGnx+Cx2h1gXCKrikuJLo=
 			</data>
 		</dict>
 		<key>Modules/MoEngageSDK.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
@@ -109,14 +109,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rmK+IpudPy+yWuIKAsjuxM5fJQ4WOseQ5w++HVYLGnA=
+			1KUfugJpKZdRjzjeaZ+LAkz0tHCCK6PaJr8hzE9vztQ=
 			</data>
 		</dict>
 		<key>Modules/MoEngageSDK.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F9rCUjJDS/+ZDfl22RxVqJwLNFCotGWFRIQ77hXfj6c=
+			GLi4YKFMonm7VMDBt75jUOIGnx+Cx2h1gXCKrikuJLo=
 			</data>
 		</dict>
 		<key>Modules/MoEngageSDK.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dVBINx/N/7sdx6ZGBrTkBR2b6F0tc1A9DnmbAl0ZCJs=
+			ueex7HH3QWNprqkUSYWcSbfyJ0aj+zaP9AF/46mgkts=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
