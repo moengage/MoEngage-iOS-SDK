@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-tvos11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageSecurity
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -8,8 +8,8 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 public protocol MoEngageAESCryptors : AnyObject {
-  func makeEncryptor() throws -> MoEngageSecurity.MoEngageAESCryptor & MoEngageSecurity.MoEngageAESUpdatable
-  func makeDecryptor() throws -> MoEngageSecurity.MoEngageAESCryptor & MoEngageSecurity.MoEngageAESUpdatable
+  func makeEncryptor() throws -> any MoEngageSecurity.MoEngageAESCryptor & MoEngageSecurity.MoEngageAESUpdatable
+  func makeDecryptor() throws -> any MoEngageSecurity.MoEngageAESCryptor & MoEngageSecurity.MoEngageAESUpdatable
 }
 public protocol MoEngageAESCryptor {
   mutating func seek(to: Swift.Int) throws
@@ -42,7 +42,7 @@ public protocol MoEngageAESCipherModeWorker {
 }
 public protocol MoEngageAESBlockMode {
   var options: MoEngageSecurity.MoEngageAESBlockModeOption { get }
-  @inlinable func worker(blockSize: Swift.Int, cipherOperation: @escaping MoEngageSecurity.MoEngageAESCipherOperationOnBlock, encryptionOperation: @escaping MoEngageSecurity.MoEngageAESCipherOperationOnBlock) throws -> MoEngageSecurity.MoEngageAESCipherModeWorker
+  @inlinable func worker(blockSize: Swift.Int, cipherOperation: @escaping MoEngageSecurity.MoEngageAESCipherOperationOnBlock, encryptionOperation: @escaping MoEngageSecurity.MoEngageAESCipherOperationOnBlock) throws -> any MoEngageSecurity.MoEngageAESCipherModeWorker
   var customBlockSize: Swift.Int? { get }
 }
 public protocol MoEngageAESBlockModeWorker : MoEngageSecurity.MoEngageAESCipherModeWorker {
@@ -82,7 +82,7 @@ final public class MoEngageGCM : MoEngageSecurity.MoEngageAESBlockMode {
   final public var authenticationTag: Swift.Array<Swift.UInt8>?
   public init(iv: Swift.Array<Swift.UInt8>, additionalAuthenticatedData: Swift.Array<Swift.UInt8>? = nil, tagLength: Swift.Int = 16, mode: MoEngageSecurity.MoEngageGCM.Mode = .detached)
   convenience public init(iv: Swift.Array<Swift.UInt8>, authenticationTag: Swift.Array<Swift.UInt8>, additionalAuthenticatedData: Swift.Array<Swift.UInt8>? = nil, mode: MoEngageSecurity.MoEngageGCM.Mode = .detached)
-  final public func worker(blockSize: Swift.Int, cipherOperation: @escaping MoEngageSecurity.MoEngageAESCipherOperationOnBlock, encryptionOperation: @escaping MoEngageSecurity.MoEngageAESCipherOperationOnBlock) throws -> MoEngageSecurity.MoEngageAESCipherModeWorker
+  final public func worker(blockSize: Swift.Int, cipherOperation: @escaping MoEngageSecurity.MoEngageAESCipherOperationOnBlock, encryptionOperation: @escaping MoEngageSecurity.MoEngageAESCipherOperationOnBlock) throws -> any MoEngageSecurity.MoEngageAESCipherModeWorker
   @objc deinit
 }
 final public class MoEngageAES {
@@ -114,7 +114,7 @@ final public class MoEngageAES {
   final public let keySize: Swift.Int
   final public let variant: MoEngageSecurity.MoEngageAES.Variant
   @usableFromInline
-  final internal let blockMode: MoEngageSecurity.MoEngageAESBlockMode
+  final internal let blockMode: any MoEngageSecurity.MoEngageAESBlockMode
   @usableFromInline
   final internal let padding: MoEngageSecurity.MoEngageAESPadding
   @usableFromInline
@@ -151,7 +151,7 @@ final public class MoEngageAES {
   internal static let U3: [Swift.UInt32]
   @usableFromInline
   internal static let U4: [Swift.UInt32]
-  public init(key: Swift.Array<Swift.UInt8>, blockMode: MoEngageSecurity.MoEngageAESBlockMode, padding: MoEngageSecurity.MoEngageAESPadding = .pkcs7) throws
+  public init(key: Swift.Array<Swift.UInt8>, blockMode: any MoEngageSecurity.MoEngageAESBlockMode, padding: MoEngageSecurity.MoEngageAESPadding = .pkcs7) throws
   @inlinable final internal func encrypt(block: Swift.ArraySlice<Swift.UInt8>) -> Swift.Array<Swift.UInt8>? {
         if self.blockMode.options.contains(.paddingRequired) && block.count != MoEngageAES.blockSize {
             return Array(block)
@@ -256,13 +256,13 @@ final internal class MoEngageAESStreamEncryptor : MoEngageSecurity.MoEngageAESCr
   @usableFromInline
   final internal let blockSize: Swift.Int
   @usableFromInline
-  final internal var worker: MoEngageSecurity.MoEngageAESCipherModeWorker
+  final internal var worker: any MoEngageSecurity.MoEngageAESCipherModeWorker
   @usableFromInline
   final internal let padding: MoEngageSecurity.MoEngageAESPadding
   @usableFromInline
   final internal var lastBlockRemainder: Swift.Int
   @usableFromInline
-  internal init(blockSize: Swift.Int, padding: MoEngageSecurity.MoEngageAESPadding, _ worker: MoEngageSecurity.MoEngageAESCipherModeWorker) throws
+  internal init(blockSize: Swift.Int, padding: MoEngageSecurity.MoEngageAESPadding, _ worker: any MoEngageSecurity.MoEngageAESCipherModeWorker) throws
   @inlinable final public func update(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool) throws -> Swift.Array<Swift.UInt8> {
         var accumulated = Array(bytes)
         if isLast {
@@ -294,7 +294,7 @@ final internal class MoEngageAESStreamEncryptor : MoEngageSecurity.MoEngageAESCr
 @usableFromInline
 final internal class MoEngageAESBlockEncryptor : MoEngageSecurity.MoEngageAESCryptor, MoEngageSecurity.MoEngageAESUpdatable {
   @usableFromInline
-  internal init(blockSize: Swift.Int, padding: MoEngageSecurity.MoEngageAESPadding, _ worker: MoEngageSecurity.MoEngageAESCipherModeWorker) throws
+  internal init(blockSize: Swift.Int, padding: MoEngageSecurity.MoEngageAESPadding, _ worker: any MoEngageSecurity.MoEngageAESCipherModeWorker) throws
   final public func update(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool) throws -> Swift.Array<Swift.UInt8>
   @usableFromInline
   final internal func seek(to: Swift.Int) throws
@@ -302,7 +302,7 @@ final internal class MoEngageAESBlockEncryptor : MoEngageSecurity.MoEngageAESCry
   deinit
 }
 extension MoEngageSecurity.MoEngageAES : MoEngageSecurity.MoEngageAESCryptors {
-  @inlinable final public func makeEncryptor() throws -> MoEngageSecurity.MoEngageAESCryptor & MoEngageSecurity.MoEngageAESUpdatable {
+  @inlinable final public func makeEncryptor() throws -> any MoEngageSecurity.MoEngageAESCryptor & MoEngageSecurity.MoEngageAESUpdatable {
         let blockSize = blockMode.customBlockSize ?? MoEngageAES.blockSize
         let worker = try blockMode.worker(blockSize: blockSize, cipherOperation: encrypt, encryptionOperation: encrypt)
         if worker is MoEngageAESStreamModeWorker {
@@ -310,7 +310,7 @@ extension MoEngageSecurity.MoEngageAES : MoEngageSecurity.MoEngageAESCryptors {
         }
         return try MoEngageAESBlockEncryptor(blockSize: blockSize, padding: padding, worker)
     }
-  @inlinable final public func makeDecryptor() throws -> MoEngageSecurity.MoEngageAESCryptor & MoEngageSecurity.MoEngageAESUpdatable {
+  @inlinable final public func makeDecryptor() throws -> any MoEngageSecurity.MoEngageAESCryptor & MoEngageSecurity.MoEngageAESUpdatable {
         let blockSize = blockMode.customBlockSize ?? MoEngageAES.blockSize
         let cipherOperation: MoEngageAESCipherOperationOnBlock = blockMode.options.contains(.useEncryptToDecrypt) == true ? encrypt : decrypt
         let worker = try blockMode.worker(blockSize: blockSize, cipherOperation: cipherOperation, encryptionOperation: encrypt)
@@ -368,7 +368,7 @@ final internal class MoEngageAESStreamDecryptor : MoEngageSecurity.MoEngageAESCr
   @usableFromInline
   final internal let blockSize: Swift.Int
   @usableFromInline
-  final internal var worker: MoEngageSecurity.MoEngageAESCipherModeWorker
+  final internal var worker: any MoEngageSecurity.MoEngageAESCipherModeWorker
   @usableFromInline
   final internal let padding: MoEngageSecurity.MoEngageAESPadding
   @usableFromInline
@@ -376,7 +376,7 @@ final internal class MoEngageAESStreamDecryptor : MoEngageSecurity.MoEngageAESCr
   @usableFromInline
   final internal var lastBlockRemainder: Swift.Int
   @usableFromInline
-  internal init(blockSize: Swift.Int, padding: MoEngageSecurity.MoEngageAESPadding, _ worker: MoEngageSecurity.MoEngageAESCipherModeWorker) throws
+  internal init(blockSize: Swift.Int, padding: MoEngageSecurity.MoEngageAESPadding, _ worker: any MoEngageSecurity.MoEngageAESCipherModeWorker) throws
   @inlinable final public func update(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool) throws -> Swift.Array<Swift.UInt8> {
         self.accumulated += bytes
         
@@ -433,11 +433,11 @@ public class MoEngageAESBlockDecryptor : MoEngageSecurity.MoEngageAESCryptor, Mo
   @usableFromInline
   final internal let padding: MoEngageSecurity.MoEngageAESPadding
   @usableFromInline
-  internal var worker: MoEngageSecurity.MoEngageAESCipherModeWorker
+  internal var worker: any MoEngageSecurity.MoEngageAESCipherModeWorker
   @usableFromInline
   internal var accumulated: [Swift.UInt8]
   @usableFromInline
-  internal init(blockSize: Swift.Int, padding: MoEngageSecurity.MoEngageAESPadding, _ worker: MoEngageSecurity.MoEngageAESCipherModeWorker) throws
+  internal init(blockSize: Swift.Int, padding: MoEngageSecurity.MoEngageAESPadding, _ worker: any MoEngageSecurity.MoEngageAESCipherModeWorker) throws
   @inlinable public func update(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool = false) throws -> Swift.Array<Swift.UInt8> {
         self.accumulated += bytes
         

@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageCore
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AdSupport
@@ -640,8 +640,8 @@ public struct MoEngageFileDataHandler {
     @objc get
     @objc set
   }
-  @objc public func getUserDefault(sdkConfig: MoEngageCore.MoEngageSDKConfig) -> MoEngageCore.MoEngageUserDefaults
-  @objc public func getUserDefaultForAppGroupId(sdkConfig: MoEngageCore.MoEngageSDKConfig) -> MoEngageCore.MoEngageUserDefaults
+  @objc public func getUserDefault(sdkConfig: MoEngageCore.MoEngageSDKConfig) -> any MoEngageCore.MoEngageUserDefaults
+  @objc public func getUserDefaultForAppGroupId(sdkConfig: MoEngageCore.MoEngageSDKConfig) -> any MoEngageCore.MoEngageUserDefaults
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MoEngageSDKStateHelper : ObjectiveC.NSObject {
@@ -981,7 +981,7 @@ public struct MoEngageDefaultStates {
   @objc optional func gifDidLoop(sender: UIKit.UIImageView)
   @objc optional func gifDidStop(sender: UIKit.UIImageView)
   @objc optional func gifURLDidFinish(sender: UIKit.UIImageView)
-  @objc optional func gifURLDidFail(sender: UIKit.UIImageView, url: Foundation.URL, error: Swift.Error?)
+  @objc optional func gifURLDidFail(sender: UIKit.UIImageView, url: Foundation.URL, error: (any Swift.Error)?)
 }
 extension UIKit.UIImageView {
   @_Concurrency.MainActor(unsafe) public func setImage(_ image: UIKit.UIImage, manager: MoEngageCore.MoEngageGifManager = .defaultManager, loopCount: Swift.Int = -1)

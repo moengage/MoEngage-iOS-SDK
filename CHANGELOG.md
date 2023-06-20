@@ -2,6 +2,11 @@
 =================================
 
 ## Changelog:
+
+### Version 9.9.0 *(20th June 2023)*
+-------------------------------------------
+* iOS breakpoint issue fix by creating framework from Xcode 14.3.1.
+
 ### Version 9.8.2 *(31st May 2023)*
 -------------------------------------------
 * BugFix - Added integration details in Extension API call.

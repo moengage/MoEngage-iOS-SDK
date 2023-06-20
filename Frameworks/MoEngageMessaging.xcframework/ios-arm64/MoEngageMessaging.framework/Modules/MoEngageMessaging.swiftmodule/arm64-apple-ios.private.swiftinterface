@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageMessaging
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -30,7 +30,7 @@ public class MoEngageMessageDelegateHandler : MoEngageCore.MoEngageMessagingHand
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
   @objc public func applicationDidRegisterForRemoteNotifications(withDeviceToken deviceToken: Foundation.Data?)
-  @objc public func applicationDidFailToRegisterForRemoteNotificationsWithError(_ error: Swift.Error?)
+  @objc public func applicationDidFailToRegisterForRemoteNotificationsWithError(_ error: (any Swift.Error)?)
   @objc public func applicationDidReceiveRemoteNotification(_ userInfo: [Swift.AnyHashable : Any]?)
   @objc public func userNotificationCenterWillPresent(_ notification: UserNotifications.UNNotification?)
   @objc public func userNotificationCenterDidReceive(_ response: UserNotifications.UNNotificationResponse?)
@@ -166,18 +166,18 @@ public struct MoEngageMessagingConstants {
 @objc public class MoEngageSDKMessaging : ObjectiveC.NSObject {
   @objc public static let sharedInstance: MoEngageMessaging.MoEngageSDKMessaging
   @available(tvOS, unavailable)
-  @objc public func registerForRemoteNotification(withCategories categories: Swift.Set<UserNotifications.UNNotificationCategory>? = nil, andUserNotificationCenterDelegate delegate: UserNotifications.UNUserNotificationCenterDelegate? = nil)
+  @objc public func registerForRemoteNotification(withCategories categories: Swift.Set<UserNotifications.UNNotificationCategory>? = nil, andUserNotificationCenterDelegate delegate: (any UserNotifications.UNUserNotificationCenterDelegate)? = nil)
   @available(tvOS, unavailable)
   @objc public func setUserNotificationCategories(_ categories: Swift.Set<UserNotifications.UNNotificationCategory>? = nil)
   @objc public func disableBadgeReset()
-  @objc public func setMessagingDelegate(_ delegate: MoEngageMessaging.MoEngageMessagingDelegate?)
-  @objc public func setMessagingDelegate(_ delegate: MoEngageMessaging.MoEngageMessagingDelegate?, forAppID appID: Swift.String? = nil)
+  @objc public func setMessagingDelegate(_ delegate: (any MoEngageMessaging.MoEngageMessagingDelegate)?)
+  @objc public func setMessagingDelegate(_ delegate: (any MoEngageMessaging.MoEngageMessagingDelegate)?, forAppID appID: Swift.String? = nil)
   @objc public func setPushToken(_ deviceToken: Foundation.Data?)
   @objc public func didFailToRegisterForPush()
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification)
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse)
   @objc public func didReceieveNotification(inApplication application: UIKit.UIApplication? = nil, withInfo pushPayload: [Swift.AnyHashable : Any])
-  public func setInternalInboxDelegate(_ delegate: MoEngageMessaging.MoEngageMessagingDelegate?, forInstanceID instanceID: Swift.String?)
+  public func setInternalInboxDelegate(_ delegate: (any MoEngageMessaging.MoEngageMessagingDelegate)?, forInstanceID instanceID: Swift.String?)
   @objc public func process(notificationPayload pushPayload: [Swift.AnyHashable : Any], forInstanceID instanceID: Swift.String)
   @objc public func disableBadgeReset(_ disable: Swift.Bool)
   @available(tvOS, unavailable)
