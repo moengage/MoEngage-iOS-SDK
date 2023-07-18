@@ -284,6 +284,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
 @class NSString;
 
 SWIFT_CLASS("_TtC12MoEngageCore19MoEngageAccountMeta")
@@ -482,6 +483,7 @@ typedef SWIFT_ENUM(NSInteger, MoEngageDataCenter, open) {
   MoEngageDataCenterData_center_03 = 3,
   MoEngageDataCenterData_center_04 = 4,
   MoEngageDataCenterData_center_05 = 5,
+  MoEngageDataCenterData_center_100 = 6,
 };
 
 @class NSDateFormatter;
@@ -1319,6 +1321,7 @@ SWIFT_CLASS("_TtC12MoEngageCore30MoEngageUserRegistrationStatus")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 
