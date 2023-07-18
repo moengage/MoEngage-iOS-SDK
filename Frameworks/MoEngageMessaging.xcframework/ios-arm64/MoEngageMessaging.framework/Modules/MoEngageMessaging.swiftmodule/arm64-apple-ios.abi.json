@@ -9723,400 +9723,393 @@
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1502,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 2533,
+      "offset": 2385,
       "length": 26,
       "value": "\"Messaging Module Blocked\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 2650,
+      "offset": 2502,
       "length": 26,
       "value": "\"Push Registration Failed\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2770,
+      "offset": 2622,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 3152,
+      "offset": 3004,
       "length": 26,
       "value": "\"Messaging Module Blocked\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 4443,
+      "offset": 4295,
       "length": 33,
       "value": "\"Categories Request successfull.\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 4903,
+      "offset": 4755,
       "length": 43,
       "value": "\"Categories Request Failed -- Server Error\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 5072,
+      "offset": 4924,
       "length": 58,
       "value": "\"Categories Request not made due to error in Request Body\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 5787,
+      "offset": 5639,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5863,
+      "offset": 5715,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 5896,
+      "offset": 5748,
       "length": 9,
       "value": "\"actions\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 5951,
+      "offset": 5803,
       "length": 19,
       "value": "\"actionsIdentifier\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 6390,
+      "offset": 6242,
       "length": 14,
       "value": "\"query_params\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 6437,
+      "offset": 6289,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7192,
+      "offset": 7044,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7354,
+      "offset": 7206,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7411,
+      "offset": 7263,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7488,
+      "offset": 7340,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7926,
+      "offset": 7778,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8081,
+      "offset": 7933,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8139,
+      "offset": 7991,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8226,
+      "offset": 8078,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 9464,
+      "offset": 9316,
       "length": 26,
       "value": "\"Messaging Module Blocked\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11450,
+      "offset": 11302,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 11621,
+      "offset": 11473,
       "length": 30,
       "value": "\"moe_push_template_click_info\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 11719,
+      "offset": 11571,
       "length": 13,
       "value": "\"campaign_id\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 11834,
+      "offset": 11686,
       "length": 9,
       "value": "\"card_id\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 12004,
+      "offset": 11856,
       "length": 30,
       "value": "\"moe_push_template_click_info\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 12354,
+      "offset": 12206,
       "length": 54,
       "value": "\"Push - Card Actions is Empty, perform default action\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 12417,
+      "offset": 12269,
       "length": 11,
       "value": "\"Messaging\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 13006,
+      "offset": 12858,
       "length": 9,
       "value": "\"card_id\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15574,
+      "offset": 15426,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "BooleanLiteral",
-      "offset": 17726,
+      "offset": 17578,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 18046,
+      "offset": 17898,
       "length": 8,
       "value": "\"Coupon\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 18065,
+      "offset": 17917,
       "length": 50,
       "value": "\"Coupon code : \""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 18093,
+      "offset": 17945,
       "length": 1,
       "value": "\" \n Copy coupon code?\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 18196,
+      "offset": 18048,
       "length": 6,
       "value": "\"COPY\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 18610,
+      "offset": 18462,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "BooleanLiteral",
-      "offset": 19001,
+      "offset": 18853,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 20117,
+      "offset": 19969,
       "length": 5,
       "value": "\"cid\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 20163,
+      "offset": 20015,
       "length": 8,
       "value": "\"isTest\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "BooleanLiteral",
-      "offset": 20175,
+      "offset": 20027,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 20747,
+      "offset": 20599,
       "length": 20,
       "value": "\"Push - Card Action\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 20776,
+      "offset": 20628,
       "length": 11,
       "value": "\"Messaging\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "IntegerLiteral",
-      "offset": 21288,
+      "offset": 21140,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 22395,
+      "offset": 22247,
       "length": 94,
       "value": "\"Push - Card Screen Navigation Actions with screen name\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 22468,
+      "offset": 22320,
       "length": 6,
       "value": "\"-NA-\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 22475,
+      "offset": 22327,
       "length": 3,
       "value": "\" and KV Pairs\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 22498,
+      "offset": 22350,
       "length": 11,
       "value": "\"Messaging\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 22774,
+      "offset": 22626,
       "length": 21,
       "value": "\"Card Action Invalid\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 22804,
+      "offset": 22656,
       "length": 11,
       "value": "\"Messaging\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22937,
+      "offset": 22789,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22990,
+      "offset": 22842,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "BooleanLiteral",
-      "offset": 24023,
+      "offset": 23875,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "BooleanLiteral",
-      "offset": 24053,
+      "offset": 23905,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 24590,
+      "offset": 24442,
       "length": 15,
       "value": "\"template_name\""
     },
     {
       "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
       "kind": "StringLiteral",
-      "offset": 25387,
+      "offset": 25239,
       "length": 15,
       "value": "\"template_name\""
     }

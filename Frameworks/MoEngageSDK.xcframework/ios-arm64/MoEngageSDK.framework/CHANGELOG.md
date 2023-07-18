@@ -3,6 +3,13 @@
 
 ## Changelog:
 
+### Version 9.10.0 *(18th July 2023)*
+-------------------------------------------
+* Added DC-100 data center.
+* BugFix - Handled duplicate tracking of Push-Preference.
+* BugFix - Fixed API connection timeout. 
+* iOS breakpoint issue fix by changing the config settings.
+
 ### Version 9.9.0 *(20th June 2023)*
 -------------------------------------------
 * iOS breakpoint issue fix by creating framework from Xcode 14.3.1.

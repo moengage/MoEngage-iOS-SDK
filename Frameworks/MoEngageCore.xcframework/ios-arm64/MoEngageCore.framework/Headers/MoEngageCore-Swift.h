@@ -292,6 +292,7 @@ SWIFT_PROTOCOL("_TtP12MoEngageCore28ApplicationLifeCycleProtocol_")
 - (void)applicationEnteredBackground;
 @end
 
+
 @class NSString;
 
 SWIFT_CLASS("_TtC12MoEngageCore19MoEngageAccountMeta")
@@ -490,6 +491,7 @@ typedef SWIFT_ENUM(NSInteger, MoEngageDataCenter, open) {
   MoEngageDataCenterData_center_03 = 3,
   MoEngageDataCenterData_center_04 = 4,
   MoEngageDataCenterData_center_05 = 5,
+  MoEngageDataCenterData_center_100 = 6,
 };
 
 @class NSDateFormatter;
@@ -1382,6 +1384,7 @@ SWIFT_PROTOCOL("_TtP12MoEngageCore17SwiftyGifDelegate_")
 - (void)gifURLDidFinishWithSender:(UIImageView * _Nonnull)sender;
 - (void)gifURLDidFailWithSender:(UIImageView * _Nonnull)sender url:(NSURL * _Nonnull)url error:(NSError * _Nullable)error;
 @end
+
 
 
 
