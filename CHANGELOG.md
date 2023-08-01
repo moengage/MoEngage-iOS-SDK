@@ -3,6 +3,10 @@
 
 ## Changelog:
 
+### Version 9.10.1 *(1st August 2023)*
+-------------------------------------------
+* Added SSL pinning support for network requests.
+
 ### Version 9.10.0 *(18th July 2023)*
 -------------------------------------------
 * Added DC-100 data center.

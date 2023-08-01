@@ -11,6 +11,7 @@
 @class MoEngageSDKInstance;
 
 /// This class is used for internal purpose. Do not call any of the methods explicitly.
+///  :nodoc:
 @interface MoEngageInAppDelegate: NSObject
 
 -(void)trackEvent:(NSString*)eventName withEventAttribute:(NSDictionary*)eventAttribute forSDKInstance:(MoEngageSDKInstance*)sdkInstance;

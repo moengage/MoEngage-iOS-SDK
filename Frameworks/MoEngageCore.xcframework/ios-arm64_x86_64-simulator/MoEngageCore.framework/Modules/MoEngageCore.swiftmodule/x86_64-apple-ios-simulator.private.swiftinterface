@@ -153,10 +153,12 @@ public struct MoEngageCoreConstants {
 @objc public class MoEngageNetworkRequestConfig : ObjectiveC.NSObject {
   @objc final public let dataSecurityConfig: MoEngageCore.MoEngageNetworkDataSecurityConfig
   @objc final public let authorizationConfig: MoEngageCore.MoEngageNetworkAuthorizationConfig
+  @objc final public let sslVerificationConfig: MoEngageCore.MoEngageSSLVerificationConfig
   @objc public static func defaultConfig() -> MoEngageCore.MoEngageNetworkRequestConfig
-  @objc public init(authorizationConfig: MoEngageCore.MoEngageNetworkAuthorizationConfig, dataSecurityConfig: MoEngageCore.MoEngageNetworkDataSecurityConfig)
+  @objc public init(authorizationConfig: MoEngageCore.MoEngageNetworkAuthorizationConfig, dataSecurityConfig: MoEngageCore.MoEngageNetworkDataSecurityConfig, sslVerificationConfig: MoEngageCore.MoEngageSSLVerificationConfig)
   @objc convenience public init(authorizationConfig: MoEngageCore.MoEngageNetworkAuthorizationConfig)
   @objc convenience public init(dataSecurityConfig: MoEngageCore.MoEngageNetworkDataSecurityConfig)
+  @objc convenience public init(sslVerificationConfig: MoEngageCore.MoEngageSSLVerificationConfig)
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -346,6 +348,14 @@ public struct MoEngageFileData {
   public var rawValue: Swift.Int {
     get
   }
+}
+@objc @objcMembers public class MoEngageSSLVerificationConfig : ObjectiveC.NSObject {
+  @objc final public let isEnabled: Swift.Bool
+  @objc final public let certificateData: Foundation.Data
+  @objc public init(isEnabled: Swift.Bool = true, certificateData: Foundation.Data)
+  @objc public static func defaultConfig() -> MoEngageCore.MoEngageSSLVerificationConfig
+  @objc public static func storedConfig(forSDKConfig sdkConfig: MoEngageCore.MoEngageSDKConfig) -> MoEngageCore.MoEngageSSLVerificationConfig
+  @objc deinit
 }
 public typealias UserRegistrationHandler = (MoEngageCore.MoEngageRegistrationData) -> Swift.Void
 public typealias UserRegistrationStatusHandler = (MoEngageCore.MoEngageUserRegistrationStatus) -> Swift.Void
@@ -739,7 +749,10 @@ extension MoEngageCore.MoEngageNetworkReachability {
 extension MoEngageCore.MoEngageNetworkClient : MoEngageCore.MoEngageNetworkRequestProtocol {
   @objc dynamic public func executeRequest(_ request: Foundation.URLRequest, withConfigController configController: MoEngageCore.MoEngageSDKInstance, completionHandler: @escaping (MoEngageCore.completionHandlerWithResponseCode))
   @objc dynamic public func downloadImageURL(_ imageURL: Foundation.URL, forSdkConfig sdkConfig: MoEngageCore.MoEngageSDKConfig, dataCompletionHandler: @escaping (MoEngageCore.dataCompletionHandler))
-  public func downloadResource(resource: Foundation.URL, completionHandler: @escaping MoEngageCore.richNotificationCompletionHandler)
+  public func downloadResource(resource: Foundation.URL, forSdkConfig sdkConfig: MoEngageCore.MoEngageSDKConfig, completionHandler: @escaping MoEngageCore.richNotificationCompletionHandler)
+}
+extension MoEngageCore.MoEngageNetworkClient : Foundation.URLSessionDelegate {
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
 }
 @_hasMissingDesignatedInitializers public class MoEngageLoggerCoordinator {
   public static let sharedInstance: MoEngageCore.MoEngageLoggerCoordinator

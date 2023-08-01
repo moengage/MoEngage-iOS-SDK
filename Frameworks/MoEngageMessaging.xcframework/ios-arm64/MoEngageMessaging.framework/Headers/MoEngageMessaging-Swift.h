@@ -319,6 +319,7 @@ SWIFT_PROTOCOL("_TtP17MoEngageMessaging25MoEngageMessagingDelegate_")
 @end
 
 
+/// :nodoc:
 SWIFT_CLASS("_TtC17MoEngageMessaging22MoEngageMessagingUtils")
 @interface MoEngageMessagingUtils : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -334,6 +335,7 @@ SWIFT_CLASS("_TtC17MoEngageMessaging22MoEngageMessagingUtils")
 
 SWIFT_CLASS("_TtC17MoEngageMessaging20MoEngageSDKMessaging") SWIFT_AVAILABILITY(ios_app_extension,unavailable)
 @interface MoEngageSDKMessaging : NSObject
+/// Singleton instance
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKMessaging * _Nonnull sharedInstance;)
 + (MoEngageSDKMessaging * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -346,12 +348,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKM
 - (void)registerForRemoteNotificationWithCategories:(NSSet<UNNotificationCategory *> * _Nullable)categories andUserNotificationCenterDelegate:(id <UNUserNotificationCenterDelegate> _Nullable)delegate SWIFT_AVAILABILITY(tvos,unavailable);
 - (void)setUserNotificationCategories:(NSSet<UNNotificationCategory *> * _Nullable)categories SWIFT_AVAILABILITY(tvos,unavailable);
 /// Method to disable the badge reset by SDK.
+/// :nodoc:
 - (void)disableBadgeReset;
-/// Method to set the delegate inorder to receive the callback for <code>MoEngageMessagingDelegate</code> methods for Default MoEngage Instance.
+/// Set the delegate inorder to receive the notification related callbacks
 /// \param delegate Instance that conforms to <code>MoEngageMessagingDelegate</code> protocol.
 ///
 - (void)setMessagingDelegate:(id <MoEngageMessagingDelegate> _Nullable)delegate;
-/// Method to set the delegate inorder to receive the callback for <code>MoEngageMessagingDelegate</code> methods for Secondary MoEngage Instance.
+/// Set the delegate inorder to receive the notification related callbacksfor Secondary MoEngage Instance.
 /// \param delegate Instance that conforms to <code>MoEngageMessagingDelegate</code> protocol.
 ///
 /// \param appID MoEngage Account Identifier
@@ -374,12 +377,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKM
 /// \param application The centralized point of control and coordination for apps running in iOS.
 ///
 /// \param pushPayload Dictionary that contains entire Push payload
+/// :nodoc:
 ///
 - (void)didReceieveNotificationInApplication:(UIApplication * _Nullable)application withInfo:(NSDictionary * _Nonnull)pushPayload;
 /// Method to process inbox notification and handle the action associated with  it.
 /// \param pushPayload Dictionary that  represents entire push payload
 ///
 /// \param instanceID MoEngage Account Identifier.
+/// :nodoc:
 ///
 - (void)processWithNotificationPayload:(NSDictionary * _Nonnull)pushPayload forInstanceID:(NSString * _Nonnull)instanceID;
 /// Method to disable badge reset by SDK

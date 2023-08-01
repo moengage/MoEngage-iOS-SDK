@@ -282,16 +282,27 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+/// Enum to set app status
 typedef SWIFT_ENUM(NSInteger, MoEngageAppStatus, open) {
+/// App Status to indicate fresh install
   MoEngageAppStatusInstall = 0,
+/// App Status to indicate Update.
   MoEngageAppStatusUpdate = 1,
 };
 
 
+/// Class responsible to create location instance
 SWIFT_CLASS("_TtC17MoEngageAnalytics19MoEngageGeoLocation")
 @interface MoEngageGeoLocation : NSObject
+/// Latitude of the location
 @property (nonatomic) double latitude;
+/// Longitude of the location
 @property (nonatomic) double longitude;
+/// Initialize method to create an instance of <code>MoEngageGeoLocation</code>
+/// \param lat Latitude of the location
+///
+/// \param lng Longitude of the location
+///
 - (nonnull instancetype)initWithLatitude:(double)lat andLongitude:(double)lng OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -300,15 +311,50 @@ SWIFT_CLASS("_TtC17MoEngageAnalytics19MoEngageGeoLocation")
 @class NSString;
 @class NSDate;
 
+/// Class responsible to build attributes for event
 SWIFT_CLASS("_TtC17MoEngageAnalytics18MoEngageProperties")
 @interface MoEngageProperties : NSObject
+/// Create <code>MoEngageProperties</code> instance with given attributedDict
+/// \param attributesDict attributes dict for the event
+///
 - (nonnull instancetype)initWithAttributes:(NSDictionary<NSString *, id> * _Nullable)attributesDict OBJC_DESIGNATED_INITIALIZER;
+/// :nodoc:
 - (void)updateAttributesWithPluginPayload:(NSDictionary<NSString *, id> * _Nullable)payloadDict;
+/// Add an attribute to <code>MoEngageProperties</code>
+/// \param attrVal attribute value
+///
+/// \param attrName attribute name
+///
 - (void)addAttribute:(id _Nullable)attrVal withName:(NSString * _Nonnull)attrName;
+/// Add Location attribute to <code>MoEngageProperties</code>
+/// \param attrVal location attribute of type <code>MoEngageGeoLocation</code>
+///
+/// \param attrVal location attribute of type <code>MoEngageGeoLocation</code>
+///
+/// \param attrName attribute name
+///
 - (void)addLocationAttribute:(MoEngageGeoLocation * _Nonnull)attrVal withName:(NSString * _Nonnull)attrName;
+/// Add date attribute to  <code>MoEngageProperties</code>
+/// \param attrVal value of type <code>Date</code>
+///
+/// \param attrName attribute name
+///
 - (void)addDateAttribute:(NSDate * _Nonnull)attrVal withName:(NSString * _Nonnull)attrName;
+/// Add ISO date attribute to  <code>MoEngageProperties</code>
+/// note:
+/// ISO format accepted  yyyy-MM-dd’T’HH:mm:ss.SSS’Z’ /  yyyy-MM-dd’T’HH:mm:ss’Z’
+/// \param dateString ISO date string
+///
+/// \param attrName attribute value
+///
 - (void)addDateISOStringAttribute:(NSString * _Nonnull)dateString withName:(NSString * _Nonnull)attrName;
+/// Add Epoch Date attribute to <code>MoEngageProperties</code>
+/// \param epoch Date attribute of type Double
+///
+/// \param attrName attribute name
+///
 - (void)addDateEpochAttribute:(double)epoch withName:(NSString * _Nonnull)attrName;
+/// Set the event as non-interactive.
 - (void)setNonInteractive;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -317,226 +363,332 @@ SWIFT_CLASS("_TtC17MoEngageAnalytics18MoEngageProperties")
 @class NSURL;
 enum MoEngageUserGender : NSInteger;
 
+/// Class to track data on the MoEngage Platform.
 SWIFT_CLASS("_TtC17MoEngageAnalytics20MoEngageSDKAnalytics")
 @interface MoEngageSDKAnalytics : NSObject
+/// Singleton class instance
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKAnalytics * _Nonnull sharedInstance;)
 + (MoEngageSDKAnalytics * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 /// Method to update SDK version
+/// :nodoc:
 - (void)trackSDKVersion;
+/// :nodoc:
 - (void)updateSessionSourceWithPushPayload:(NSDictionary * _Nonnull)payload fromMoEngage:(BOOL)isMoEngagePush;
+/// :nodoc:
 - (void)updateSessionSourceWithURL:(NSURL * _Nonnull)url;
-- (void)processURL:(NSURL * _Nullable)url;
+/// :nodoc:
 - (void)pushTokenUpdatedWithAppId:(NSString * _Nonnull)appId;
-/// Method to set app status
-/// \param appStatus MoEngageAppStatus
+/// This method tells the SDK whether it is a fresh install or an existing application was updated.
+/// \param appStatus Enum of type <code>MoEngageAppStatus</code>
 ///
-/// \param appID optional account identifier.
+/// \param appID MoEngage Account Identifier.
 ///
 - (void)appStatus:(enum MoEngageAppStatus)appStatus forAppID:(NSString * _Nullable)appID;
-/// Method to track Event for account
+/// Track Event for Default MoEngage Instance.
+/// \param name name of the event
+///
+/// \param properties instance of type <code>MoEngageProperties</code> that contains attributes related to event
+///
+- (void)trackEvent:(NSString * _Nonnull)name withProperties:(MoEngageProperties * _Nullable)properties;
+/// Track Event  for Secondary instance
 /// \param name event name
 ///
-/// \param properties MoEngageProperties
+/// \param properties instance of type <code>MoEngageProperties</code> that contains attributes related to event
 ///
-/// \param appID optional account identifier.
+/// \param appID MoEngage Account Identifier.
 ///
 - (void)trackEvent:(NSString * _Nonnull)name withProperties:(MoEngageProperties * _Nullable)properties forAppID:(NSString * _Nullable)appID;
-- (void)trackEvent:(NSString * _Nonnull)name withProperties:(MoEngageProperties * _Nullable)properties;
-/// Method to flush events for account
-/// \param appID optional account identifier.
+/// Sync the tracked events instantaneously for Secondary instance
+/// \param appID MoEngage Account Identifier.
 ///
 /// \param completionBlock completion block to be called after events are flushed out
 ///
 - (void)flushForAppID:(NSString * _Nullable)appID withCompletionBlock:(void (^ _Nullable)(BOOL))completionBlock;
+/// Sync the tracked events instantaneously for Default instance
 - (void)flush;
+/// Sync the tracked events instantaneously for Secondary instance
+/// \param appID MoEngage Account identifier
+///
 - (void)flushForAppID:(NSString * _Nullable)appID;
+/// Sync the tracked events instantaneously for Default instance
+/// \param completionBlock completion block to be called after events are flushed out
+///
 - (void)flushWithCompletionBlock:(void (^ _Nullable)(BOOL))completionBlock;
 /// Method to flush  richnotification events for account
 /// note:
 /// Dont call this method explicitly
+/// :nodoc:
 /// \param appID optional account identifier.
 ///
 /// \param completionBlock completion block to be called after events are flushed out
 ///
 - (void)flushRichNotificationEventsForAppID:(NSString * _Nullable)appID withCompletionBlock:(void (^ _Nullable)(BOOL))completionBlock;
-/// Method to set custom user attribute
+/// Set custom user attribute for Secondary instance
 /// \param value attribute value
 ///
 /// \param attributeName attribute name
 ///
-/// \param appID optional account identifier.
+/// \param appID MoEngage account identifier
 ///
 - (void)setUserAttribute:(id _Nullable)value withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
-- (void)setUserAttribute:(id _Nullable)value withAttributeName:(NSString * _Nonnull)attributeName;
-/// Method to set epoch time.
-/// \param dateEpoch attribute value
+/// Set custom user attribute for Default instance
+/// \param value attribute value
 ///
 /// \param attributeName attribute name
 ///
-/// \param appID optional account identifier.
+- (void)setUserAttribute:(id _Nullable)value withAttributeName:(NSString * _Nonnull)attributeName;
+/// Set epoch time for Secondary instance
+/// \param dateEpoch Epoch date of type double
+///
+/// \param attributeName attribute name of type String
+///
+/// \param appID MoEngage account identifier
 ///
 - (void)setUserAttributeEpochTime:(double)dateEpoch withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+/// Set epoch time for Default instance
+/// \param dateEpoch Epoch date of type double
+///
+/// \param attributeName attribute name of type String
+///
 - (void)setUserAttributeEpochTime:(double)dateEpoch withAttributeName:(NSString * _Nonnull)attributeName;
-/// Method to set User attribute date
+/// Set User attribute date for Secondary instance
 /// \param date attribute value as Date
 ///
 /// \param attributeName attribute name
 ///
-/// \param appID optional account identifier.
+/// \param appID MoEngage account identifier
 ///
 - (void)setUserAttributeDate:(NSDate * _Nonnull)date withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
-- (void)setUserAttributeDate:(NSDate * _Nonnull)date withAttributeName:(NSString * _Nonnull)attributeName;
-/// Method to set User attribute ISO date
-/// \param dateStr attribute value
+/// Set User attribute date for Default instance
+/// \param date attribute value as Date
 ///
 /// \param attributeName attribute name
 ///
-/// \param appID optional account identifier.
+- (void)setUserAttributeDate:(NSDate * _Nonnull)date withAttributeName:(NSString * _Nonnull)attributeName;
+/// Set User attribute ISO date for Secondary instance
+/// note:
+/// ISO accepted formats are yyyy-MM-dd’T’HH:mm:ss’Z’/yyyy-MM-dd’T’HH:mm:ss.SSS’Z’
+/// \param dateStr ISO date  of type  string
+///
+/// \param attributeName attribute name
+///
+/// \param appID MoEngage account identifier
 ///
 - (void)setUserAttributeISODate:(NSString * _Nonnull)dateString withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
-- (void)setUserAttributeISODate:(NSString * _Nonnull)dateString withAttributeName:(NSString * _Nonnull)attributeName;
-/// Method to set custom user location
-/// \param location MoEngageGeoLocation instance
+/// Set User attribute ISO date
+/// note:
+/// ISO accepted formats are yyyy-MM-dd’T’HH:mm:ss’Z’/yyyy-MM-dd’T’HH:mm:ss.SSS’Z’
+/// \param dateString ISO date  of type  string
 ///
 /// \param attributeName attribute name
 ///
-/// \param appID optional account identifier.
+- (void)setUserAttributeISODate:(NSString * _Nonnull)dateString withAttributeName:(NSString * _Nonnull)attributeName;
+/// Set custom user location for Secondary instance
+/// \param location <code>MoEngageGeoLocation</code> instance
+///
+/// \param attributeName attribute name
+///
+/// \param appID MoEngage Account Identifier
 ///
 - (void)setLocation:(MoEngageGeoLocation * _Nonnull)location withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
-- (void)setLocation:(MoEngageGeoLocation * _Nonnull)location withAttributeName:(NSString * _Nonnull)attributeName;
-/// Method to set alias
-/// \param alias alias value
+/// Set custom user location
+/// \param location <code>MoEngageGeoLocation</code> instance
 ///
-/// \param appID optional account identifier.
+/// \param attributeName attribute name
+///
+- (void)setLocation:(MoEngageGeoLocation * _Nonnull)location withAttributeName:(NSString * _Nonnull)attributeName;
+/// Set an Alias to update the existing Unique Id for Secondary instance
+/// \param alias identifier
+///
+/// \param appID MoEngage Account Identifier
 ///
 - (void)setAlias:(NSString * _Nonnull)alias forAppID:(NSString * _Nullable)appID;
+/// Set an Alias to update the existing Unique Id for Default instance
+/// \param alias identifier
+///
 - (void)setAlias:(NSString * _Nonnull)alias;
-/// Method to set unique ID
+/// Set unique ID for Secondary instance
 /// \param uniqueID Unique ID
 ///
-/// \param appID optional account identifier.
+/// \param appID MoEngage Account identifier
 ///
 - (void)setUniqueID:(NSString * _Nonnull)uniqueID forAppID:(NSString * _Nullable)appID;
+/// Set unique ID for Default instance
+/// \param uniqueID Unique ID
+///
 - (void)setUniqueID:(NSString * _Nonnull)uniqueID;
-/// Method to set Email ID
+/// Set Email ID for Secondary instance
 /// \param emailID emailID value.
 ///
-/// \param appID optional account identifier.
+/// \param appID MoEngage Account identifier
 ///
 - (void)setEmailID:(NSString * _Nonnull)emailID forAppID:(NSString * _Nullable)appID;
-- (void)setEmailID:(NSString * _Nonnull)emailID;
-/// Method to set user name
-/// \param userName userName value
+/// Set Email ID
+/// \param emailID emailID value.
 ///
-/// \param appID optional account identifier.
+- (void)setEmailID:(NSString * _Nonnull)emailID;
+/// Set user name for Secondary instance
+/// \param userName User Name value passed by user
+///
+/// \param appID MoEngage Account identifier
 ///
 - (void)setName:(NSString * _Nonnull)userName forAppID:(NSString * _Nullable)appID;
-- (void)setName:(NSString * _Nonnull)userName;
-/// Method to set first name
-/// \param firstName firstName value
+/// Set user name
+/// \param userName User Name value passed by user
 ///
-/// \param appID optional account identifier.
+- (void)setName:(NSString * _Nonnull)userName;
+/// Set User first name for Secondary instance
+/// \param firstName First Name value passed by user
+///
+/// \param appID MoEngage Account identifier
 ///
 - (void)setFirstName:(NSString * _Nonnull)firstName forAppID:(NSString * _Nullable)appID;
-- (void)setFirstName:(NSString * _Nonnull)firstName;
-/// Method to set last name
-/// \param lastName lastName value
+/// Set User first name
+/// \param firstName First Name value passed by user
 ///
-/// \param appID optional account identifier.
+- (void)setFirstName:(NSString * _Nonnull)firstName;
+/// Set User last name for Secondary instance
+/// \param lastName Last Name value passed by user
+///
+/// \param appID MoEngage Account identifier
 ///
 - (void)setLastName:(NSString * _Nonnull)lastName forAppID:(NSString * _Nullable)appID;
-- (void)setLastName:(NSString * _Nonnull)lastName;
-/// Method to set mobile name
-/// \param mobileNum mobileNum value
+/// Set User last name
+/// \param lastName Last Name value passed by user
 ///
-/// \param appID optional account identifier.
+- (void)setLastName:(NSString * _Nonnull)lastName;
+/// Set mobile number for Secondary instance
+/// \param mobileNum Mobile Number value passed by user
+///
+/// \param appID MoEngage Account identifier
 ///
 - (void)setMobileNumber:(NSString * _Nonnull)mobileNum forAppID:(NSString * _Nullable)appID;
-- (void)setMobileNumber:(NSString * _Nonnull)mobileNum;
-/// Method to set gender
-/// \param gender MoEngageUserGender value
+/// Set mobile number
+/// \param mobileNum Mobile Number value passed by user
 ///
-/// \param appID optional account identifier.
+- (void)setMobileNumber:(NSString * _Nonnull)mobileNum;
+/// Set User gender for Secondary instance
+/// \param gender Gender value passed by user
+///
+/// \param appID MoEngage Account identifier
 ///
 - (void)setGender:(enum MoEngageUserGender)gender forAppID:(NSString * _Nullable)appID;
-- (void)setGender:(enum MoEngageUserGender)gender;
-/// Method to set user date of birth
-/// \param dob Date
+/// Set User gender
+/// \param gender Gender value passed by user
 ///
-/// \param appID optional account identifier.
+- (void)setGender:(enum MoEngageUserGender)gender;
+/// Set User Date of Birth for Secondary instance
+/// \param dob Date of Birth passed by user
+///
+/// \param appID MoEngage Account identifier
 ///
 - (void)setDateOfBirth:(NSDate * _Nonnull)dob forAppID:(NSString * _Nullable)appID;
-- (void)setDateOfBirth:(NSDate * _Nonnull)dob;
-/// Method to set user date of birth ISO date
-/// \param dateString attribute value in the format yyyy-MM-dd’T’HH:mm:ss.SSS’Z’ /  yyyy-MM-dd’T’HH:mm:ss’Z’
+/// Set User Date of Birth
+/// \param dob Date of Birth passed by user
 ///
-/// \param appID optional account identifier.
+- (void)setDateOfBirth:(NSDate * _Nonnull)dob;
+/// Set user Date of Birth ISO format for Secondary instance
+/// note:
+/// ISO format accepted  yyyy-MM-dd’T’HH:mm:ss.SSS’Z’ /  yyyy-MM-dd’T’HH:mm:ss’Z’
+/// \param dateString attribute value accepted in ISO format
+///
+/// \param appID MoEngage Account identifier
 ///
 - (void)setDateOfBirthInISO:(NSString * _Nonnull)dateString forAppID:(NSString * _Nullable)appID;
-/// Method to set user date of birth ISO date
-/// \param dateString attribute value in the format yyyy-MM-dd’T’HH:mm:ss.SSS’Z’ /  yyyy-MM-dd’T’HH:mm:ss’Z’
+/// Method to set user date of birth ISO format
+/// note:
+/// ISO format accepted  yyyy-MM-dd’T’HH:mm:ss.SSS’Z’ /  yyyy-MM-dd’T’HH:mm:ss’Z’
+/// \param dateString attribute value accepted in ISO format
 ///
 - (void)setDateOfBirthInISO:(NSString * _Nonnull)dateString;
-/// Method to set user location
-/// \param location MoEngageGeoLocation instance
+/// Set user location for Secondary instance
+/// \param location Location passed by user
 ///
-/// \param appID optional account identifier.
+/// \param appID MoEngage Account identifier
 ///
 - (void)setLocation:(MoEngageGeoLocation * _Nonnull)location forAppID:(NSString * _Nullable)appID;
-- (void)setLocation:(MoEngageGeoLocation * _Nonnull)location;
-/// Method to track user attribute push preference
-/// \param isPushEnabled Bool
+/// Set user location
+/// \param location Location passed by user
 ///
-/// \param appID optional account identifier.
+- (void)setLocation:(MoEngageGeoLocation * _Nonnull)location;
+/// Track user attribute push preference
+/// \param isPushEnabled true if Push is enabled else false.
+///
+/// \param appID MoEngage Account identifier
 ///
 - (void)trackUserPushPreference:(BOOL)isPushEnabled forAppID:(NSString * _Nullable)appID;
+/// Tracks device locale.
 - (void)trackLocale;
+/// Tracks device locale.
+/// \param appID MoEngage Account identifier
+///
 - (void)trackLocaleForAppID:(NSString * _Nullable)appID;
-/// Method to reset user
+/// Invalidates the existing sessions and user attributes and treats all actions performed by the user as a new user after this method is called
 /// \param appID optional account identifier.
 ///
-/// \param completionBlock completion handler to be returned after resetting
+/// \param completionBlock Returns true if reset is successful else false
 ///
 - (void)resetUserForAppID:(NSString * _Nullable)appID withCompletionBlock:(void (^ _Nullable)(BOOL))completionBlock;
+/// Invalidates the existing sessions and user attributes and treats all actions performed by the user as a new user after this method is called
 - (void)resetUser;
+/// Invalidates the existing sessions and user attributes and treats all actions performed by the user as a new user after this method is called
+/// \param completionBlock Returns true if reset is successful else false
+///
 - (void)resetUserWithCompletionBlock:(void (^ _Nullable)(BOOL))completionBlock;
+/// Invalidates the existing sessions and user attributes and treats all actions performed by the user as a new user after this method is called
+/// \param appID MoEngage Account identifier
+///
 - (void)resetUserForAppID:(NSString * _Nullable)appID;
-/// Method to enable data tracking
-/// \param appID optional account identifier.
+/// API to enable data tracking.
+/// \param appID MoEngage Account identifier
 ///
 - (void)enableDataTrackingForAppID:(NSString * _Nullable)appID;
+/// API to enable data tracking.
 - (void)enableDataTracking;
-/// Method to disable data tracking
-/// \param appID optional account identifier.
+/// Optionally opt-out of data tracking. When data tracking is opted out no custom event or user attribute is tracked on MoEngage Platform.
+/// \param appID MoEngage Account identifier
 ///
 - (void)disableDataTrackingForAppID:(NSString * _Nullable)appID;
+/// Optionally opt-out of data tracking. When data tracking is opted out no custom event or user attribute is tracked on MoEngage Platform.
 - (void)disableDataTracking;
-/// Method to opt out data  IDFA tracking
-/// \param appID optional account identifier.
+/// Enable IDFA tracking
+/// \param appID MoEngage Account identifier
 ///
 - (void)enableIDFATrackingForAppID:(NSString * _Nullable)appID;
+/// Enable IDFA tracking
 - (void)enableIDFATracking;
-/// Method to opt out data  IDFA tracking
-/// \param appID optional account identifier.
+/// Disable IDFA tracking
+/// \param appID MoEngage Account identifier
 ///
 - (void)disableIDFATrackingForAppID:(NSString * _Nullable)appID;
+/// Disable IDFA tracking
 - (void)disableIDFATracking;
-/// Method to opt out data  IDFV tracking
-/// \param appID optional account identifier.
+/// Enable  IDFV tracking
+/// \param appID MoEngage Account identifier
 ///
 - (void)enableIDFVTrackingForAppID:(NSString * _Nullable)appID;
+/// Enable  IDFV tracking
 - (void)enableIDFVTracking;
-/// Method to opt out data  IDFV tracking
-/// \param appID optional account identifier.
+/// Disable IDFV tracking
+/// \param appID MoEngage Account identifier
 ///
 - (void)disableIDFVTrackingForAppID:(NSString * _Nullable)appID;
+/// Disable IDFV tracking
 - (void)disableIDFVTracking;
+/// Update  source  based on  query params of the URL
+/// \param url URL that contains source information in query params
+///
+- (void)processURL:(NSURL * _Nullable)url;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+/// Enum to set the user gender
 typedef SWIFT_ENUM(NSInteger, MoEngageUserGender, open) {
+/// User gender male
   MoEngageUserGenderMale = 0,
+/// User gender female
   MoEngageUserGenderFemale = 1,
+/// User gender others
   MoEngageUserGenderOthers = 2,
 };
 
