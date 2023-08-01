@@ -58,11 +58,10 @@ import _StringProcessing
   @objc public func trackSDKVersion()
   @objc public func updateSessionSource(withPushPayload payload: [Swift.AnyHashable : Any], fromMoEngage isMoEngagePush: Swift.Bool)
   @objc public func updateSessionSource(withURL url: Foundation.URL)
-  @objc public func processURL(_ url: Foundation.URL?)
   @objc public func pushTokenUpdated(appId: Swift.String)
   @objc public func appStatus(_ appStatus: MoEngageAnalytics.MoEngageAppStatus, forAppID appID: Swift.String? = nil)
-  @objc public func trackEvent(_ name: Swift.String, withProperties properties: MoEngageAnalytics.MoEngageProperties? = nil, forAppID appID: Swift.String? = nil)
   @objc public func trackEvent(_ name: Swift.String, withProperties properties: MoEngageAnalytics.MoEngageProperties? = nil)
+  @objc public func trackEvent(_ name: Swift.String, withProperties properties: MoEngageAnalytics.MoEngageProperties? = nil, forAppID appID: Swift.String? = nil)
   @objc public func flush(forAppID appID: Swift.String? = nil, withCompletionBlock completionBlock: ((Swift.Bool) -> Swift.Void)? = nil)
   @objc public func flush()
   @objc public func flush(forAppID appID: Swift.String? = nil)
@@ -119,6 +118,7 @@ import _StringProcessing
   @objc public func enableIDFVTracking()
   @objc public func disableIDFVTracking(forAppID appID: Swift.String? = nil)
   @objc public func disableIDFVTracking()
+  @objc public func processURL(_ url: Foundation.URL?)
   @objc override dynamic public init()
   @objc deinit
 }

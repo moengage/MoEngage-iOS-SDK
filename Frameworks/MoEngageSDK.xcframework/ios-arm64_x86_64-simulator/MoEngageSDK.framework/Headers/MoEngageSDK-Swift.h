@@ -288,65 +288,66 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// This class handles MoEngage Initialization
 SWIFT_CLASS("_TtC11MoEngageSDK8MoEngage")
 @interface MoEngage : NSObject
-/// shared instance of MoEngage class
+/// Shared instance of MoEngage class
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngage * _Nonnull sharedInstance;)
 + (MoEngage * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// Initialize Default instance in Debug environment
-/// \param sdkConfig Instance of  MoEngageSDKConfig
+/// \param sdkConfig Instance of  <code>MoEngageSDKConfig</code>
 ///
 - (void)initializeDefaultTestInstance:(MoEngageSDKConfig * _Nonnull)sdkConfig;
 /// Initialize Default instance in Debug environment with SDK state
-/// \param sdkConfig Instance of  MoEngageSDKConfig
+/// \param sdkConfig Instance of  <code>MoEngageSDKConfig</code>
 ///
-/// \param sdkState MoEngageSDKState  enum that indicates if SDK must be enabled/disabled.
+/// \param sdkState <code>MoEngageSDKState</code>  enum that indicates if SDK must be enabled/disabled.
 ///
 - (void)initializeDefaultTestInstance:(MoEngageSDKConfig * _Nonnull)sdkConfig sdkState:(enum MoEngageSDKState)sdkState;
 /// Initialize Default Instance in Live environment
-/// \param sdkConfig Instance of  MoEngageSDKConfig
+/// \param sdkConfig Instance of  <code>MoEngageSDKConfig</code>
 ///
 - (void)initializeDefaultLiveInstance:(MoEngageSDKConfig * _Nonnull)sdkConfig;
 /// Initialize Default Instance in Live environment with SDK state
-/// \param sdkConfig Instance of  MoEngageSDKConfig
+/// \param sdkConfig Instance of  <code>MoEngageSDKConfig</code>
 ///
-/// \param sdkState MoEngageSDKState  enum that indicates if SDK must be enabled/disabled.
+/// \param sdkState <code>MoEngageSDKState</code>  enum that indicates if SDK must be enabled/disabled.
 ///
 - (void)initializeDefaultLiveInstance:(MoEngageSDKConfig * _Nonnull)sdkConfig sdkState:(enum MoEngageSDKState)sdkState;
 /// Initialize Secondary instance in debug environment
-/// \param sdkConfig Instance of  MoEngageSDKConfig
+/// \param sdkConfig Instance of  <code>MoEngageSDKConfig</code>
 ///
 - (void)initializeTestInstance:(MoEngageSDKConfig * _Nonnull)sdkConfig;
 /// Initialize Secondary instance in debug environment with SDK state
-/// \param sdkConfig Instance of  MoEngageSDKConfig
+/// \param sdkConfig Instance of  <code>MoEngageSDKConfig</code>
 ///
-/// \param sdkState MoEngageSDKState  enum that indicates if SDK must be enabled/disabled.
+/// \param sdkState <code>MoEngageSDKState</code>  enum that indicates if SDK must be enabled/disabled.
 ///
 - (void)initializeTestInstance:(MoEngageSDKConfig * _Nonnull)sdkConfig sdkState:(enum MoEngageSDKState)sdkState;
 /// Initialize Secondary Instance in Live environment
-/// \param sdkConfig Instance of  MoEngageSDKConfig
+/// \param sdkConfig Instance of  <code>MoEngageSDKConfig</code>
 ///
 - (void)initializeLiveInstance:(MoEngageSDKConfig * _Nonnull)sdkConfig;
 /// Initialize Secondary instance in Live environment with SDK state
-/// \param sdkConfig Instance of  MoEngageSDKConfig
+/// \param sdkConfig Instance of  <code>MoEngageSDKConfig</code>
 ///
-/// \param sdkState MoEngageSDKState  enum that indicates if SDK must be enabled/disabled.
+/// \param sdkState <code>MoEngageSDKState</code>  enum that indicates if SDK must be enabled/disabled.
 ///
 - (void)initializeLiveInstance:(MoEngageSDKConfig * _Nonnull)sdkConfig sdkState:(enum MoEngageSDKState)sdkState;
-/// Enable SDK for default instance
+/// API to enable SDK usage for the account configured as default.
 - (void)enableSDK;
-/// Enable SDK for Secondary instance
+/// API to enable SDK usage for the account for Secondary instance
 /// \param appId MoEngage Account Identifier
 ///
 - (void)enableSDKWithAppId:(NSString * _Nullable)appId;
-/// Disable SDK for default instance
+/// API to disable all features of the SDK for the account configured as default.
 - (void)disableSDK;
-/// Disable SDK for Secondary instance
+/// API to disable all features of the SDK for   Secondary instance
 /// \param appId MoEngage Account Identifier
 ///
 - (void)disableSDKWithAppId:(NSString * _Nullable)appId;
 /// Method to dismiss the RichLanding Controller manually
 /// \param shouldAnimate Bool value indicating if the dismissing the controller should be with animation
+/// :nodoc:
 ///
 - (void)dismissRichLandingWebViewController:(BOOL)shouldAnimate;
 @end
@@ -649,65 +650,66 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// This class handles MoEngage Initialization
 SWIFT_CLASS("_TtC11MoEngageSDK8MoEngage")
 @interface MoEngage : NSObject
-/// shared instance of MoEngage class
+/// Shared instance of MoEngage class
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngage * _Nonnull sharedInstance;)
 + (MoEngage * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// Initialize Default instance in Debug environment
-/// \param sdkConfig Instance of  MoEngageSDKConfig
+/// \param sdkConfig Instance of  <code>MoEngageSDKConfig</code>
 ///
 - (void)initializeDefaultTestInstance:(MoEngageSDKConfig * _Nonnull)sdkConfig;
 /// Initialize Default instance in Debug environment with SDK state
-/// \param sdkConfig Instance of  MoEngageSDKConfig
+/// \param sdkConfig Instance of  <code>MoEngageSDKConfig</code>
 ///
-/// \param sdkState MoEngageSDKState  enum that indicates if SDK must be enabled/disabled.
+/// \param sdkState <code>MoEngageSDKState</code>  enum that indicates if SDK must be enabled/disabled.
 ///
 - (void)initializeDefaultTestInstance:(MoEngageSDKConfig * _Nonnull)sdkConfig sdkState:(enum MoEngageSDKState)sdkState;
 /// Initialize Default Instance in Live environment
-/// \param sdkConfig Instance of  MoEngageSDKConfig
+/// \param sdkConfig Instance of  <code>MoEngageSDKConfig</code>
 ///
 - (void)initializeDefaultLiveInstance:(MoEngageSDKConfig * _Nonnull)sdkConfig;
 /// Initialize Default Instance in Live environment with SDK state
-/// \param sdkConfig Instance of  MoEngageSDKConfig
+/// \param sdkConfig Instance of  <code>MoEngageSDKConfig</code>
 ///
-/// \param sdkState MoEngageSDKState  enum that indicates if SDK must be enabled/disabled.
+/// \param sdkState <code>MoEngageSDKState</code>  enum that indicates if SDK must be enabled/disabled.
 ///
 - (void)initializeDefaultLiveInstance:(MoEngageSDKConfig * _Nonnull)sdkConfig sdkState:(enum MoEngageSDKState)sdkState;
 /// Initialize Secondary instance in debug environment
-/// \param sdkConfig Instance of  MoEngageSDKConfig
+/// \param sdkConfig Instance of  <code>MoEngageSDKConfig</code>
 ///
 - (void)initializeTestInstance:(MoEngageSDKConfig * _Nonnull)sdkConfig;
 /// Initialize Secondary instance in debug environment with SDK state
-/// \param sdkConfig Instance of  MoEngageSDKConfig
+/// \param sdkConfig Instance of  <code>MoEngageSDKConfig</code>
 ///
-/// \param sdkState MoEngageSDKState  enum that indicates if SDK must be enabled/disabled.
+/// \param sdkState <code>MoEngageSDKState</code>  enum that indicates if SDK must be enabled/disabled.
 ///
 - (void)initializeTestInstance:(MoEngageSDKConfig * _Nonnull)sdkConfig sdkState:(enum MoEngageSDKState)sdkState;
 /// Initialize Secondary Instance in Live environment
-/// \param sdkConfig Instance of  MoEngageSDKConfig
+/// \param sdkConfig Instance of  <code>MoEngageSDKConfig</code>
 ///
 - (void)initializeLiveInstance:(MoEngageSDKConfig * _Nonnull)sdkConfig;
 /// Initialize Secondary instance in Live environment with SDK state
-/// \param sdkConfig Instance of  MoEngageSDKConfig
+/// \param sdkConfig Instance of  <code>MoEngageSDKConfig</code>
 ///
-/// \param sdkState MoEngageSDKState  enum that indicates if SDK must be enabled/disabled.
+/// \param sdkState <code>MoEngageSDKState</code>  enum that indicates if SDK must be enabled/disabled.
 ///
 - (void)initializeLiveInstance:(MoEngageSDKConfig * _Nonnull)sdkConfig sdkState:(enum MoEngageSDKState)sdkState;
-/// Enable SDK for default instance
+/// API to enable SDK usage for the account configured as default.
 - (void)enableSDK;
-/// Enable SDK for Secondary instance
+/// API to enable SDK usage for the account for Secondary instance
 /// \param appId MoEngage Account Identifier
 ///
 - (void)enableSDKWithAppId:(NSString * _Nullable)appId;
-/// Disable SDK for default instance
+/// API to disable all features of the SDK for the account configured as default.
 - (void)disableSDK;
-/// Disable SDK for Secondary instance
+/// API to disable all features of the SDK for   Secondary instance
 /// \param appId MoEngage Account Identifier
 ///
 - (void)disableSDKWithAppId:(NSString * _Nullable)appId;
 /// Method to dismiss the RichLanding Controller manually
 /// \param shouldAnimate Bool value indicating if the dismissing the controller should be with animation
+/// :nodoc:
 ///
 - (void)dismissRichLandingWebViewController:(BOOL)shouldAnimate;
 @end
