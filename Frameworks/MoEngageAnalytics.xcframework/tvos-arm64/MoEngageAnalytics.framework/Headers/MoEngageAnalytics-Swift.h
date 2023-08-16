@@ -282,6 +282,22 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
+
+/// :nodoc:
+SWIFT_CLASS("_TtC17MoEngageAnalytics24MoEngageAnalyticsHandler")
+@interface MoEngageAnalyticsHandler : NSObject
+/// Set boolean user attribute
+/// \param value Boolean value i.e True/False
+///
+/// \param attributeName attribute name
+///
+/// \param appID MoEngage Account Identifier
+///
++ (void)setUserAttributeBool:(BOOL)value withAttributeName:(NSString * _Nonnull)attributeName forAppID:(NSString * _Nullable)appID;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 /// Enum to set app status
 typedef SWIFT_ENUM(NSInteger, MoEngageAppStatus, open) {
 /// App Status to indicate fresh install
@@ -308,7 +324,6 @@ SWIFT_CLASS("_TtC17MoEngageAnalytics19MoEngageGeoLocation")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSString;
 @class NSDate;
 
 /// Class responsible to build attributes for event

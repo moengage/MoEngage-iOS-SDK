@@ -128,6 +128,11 @@ import _StringProcessing
   public func isValidSource() -> Swift.Bool
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class MoEngageAnalyticsHandler : ObjectiveC.NSObject {
+  @objc public static func setUserAttributeBool(_ value: Swift.Bool, withAttributeName attributeName: Swift.String, forAppID appID: Swift.String? = nil)
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public class MoEngageProperties : ObjectiveC.NSObject {
   @objc public init(withAttributes attributesDict: Swift.Dictionary<Swift.String, Any>? = nil)
   @objc public func updateAttributes(withPluginPayload payloadDict: Swift.Dictionary<Swift.String, Any>?)

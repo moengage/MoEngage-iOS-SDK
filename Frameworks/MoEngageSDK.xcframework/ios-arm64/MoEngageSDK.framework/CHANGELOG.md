@@ -3,6 +3,10 @@
 
 ## Changelog:
 
+### Version 9.10.2 *(16th August 2023)*
+-------------------------------------------
+* CrashFix - Fixed crash while serializing the JSON by removing invalid values on migration.
+
 ### Version 9.10.1 *(1st August 2023)*
 -------------------------------------------
 * Added SSL pinning support for network requests.
