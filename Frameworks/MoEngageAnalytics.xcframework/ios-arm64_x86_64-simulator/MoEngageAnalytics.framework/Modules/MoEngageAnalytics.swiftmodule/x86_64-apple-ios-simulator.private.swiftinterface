@@ -140,6 +140,11 @@ import _StringProcessing
   @objc public func setNonInteractive()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class MoEngageAnalyticsHandler : ObjectiveC.NSObject {
+  @objc public static func setUserAttributeBool(_ value: Swift.Bool, withAttributeName attributeName: Swift.String, forAppID appID: Swift.String? = nil)
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public class MoEngageGeoLocation : ObjectiveC.NSObject {
   @objc public var latitude: Swift.Double
   @objc public var longitude: Swift.Double
