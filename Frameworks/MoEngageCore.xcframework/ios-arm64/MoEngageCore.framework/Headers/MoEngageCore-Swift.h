@@ -489,6 +489,9 @@ SWIFT_CLASS("_TtC12MoEngageCore17MoEngageCoreUtils")
 + (void)setDataTrackingOptOutStatusForSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig optOutStatus:(BOOL)optOutStatus;
 + (NSString * _Nullable)MD5Hash:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 + (UIApplication * _Nullable)sharedUIApplication SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isAppInBackground;)
++ (BOOL)isAppInBackground SWIFT_WARN_UNUSED_RESULT;
++ (void)setIsAppInBackground:(BOOL)value;
 + (void)setIDFAOptOutStatusForSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig optOutStatus:(BOOL)optOutStatus;
 + (void)setIDFVOptOutStatusForSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig optOutStatus:(BOOL)optOutStatus;
 + (BOOL)isIDFATrackingEnabledForSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
@@ -938,8 +941,8 @@ SWIFT_CLASS("_TtC12MoEngageCore22MoEngageNetworkRequest")
 @interface MoEngageNetworkRequest : NSObject
 - (nonnull instancetype)init:(MoEngageSDKConfig * _Nonnull)sdkConfig configController:(MoEngageSDKInstance * _Nonnull)configController serviceType:(enum MoEngageNetworkService)serviceType params:(NSDictionary<NSString *, id> * _Nullable)params additionalHeaders:(NSDictionary<NSString *, id> * _Nullable)additionalHeaders requestBody:(NSDictionary<NSString *, id> * _Nullable)requestBody additionalPathComponent:(NSString * _Nullable)additionalPathComponent OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig OBJC_DESIGNATED_INITIALIZER;
-- (void)executeWithCompletionHandler:(void (^ _Nonnull)(BOOL, NSDictionary * _Nullable))completionHandler;
-- (void)executeWithCompletionBlockWithResponseCode:(void (^ _Nonnull)(BOOL, NSInteger, NSDictionary * _Nullable))completionBlock;
+- (void)executeWithShouldAddJWT:(BOOL)shouldAddJWT completionHandler:(void (^ _Nonnull)(BOOL, NSDictionary * _Nullable))completionHandler;
+- (void)executeWithShouldAddJWT:(BOOL)shouldAddJWT withCompletionBlockWithResponseCode:(void (^ _Nonnull)(BOOL, NSInteger, NSDictionary * _Nullable))completionBlock;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
