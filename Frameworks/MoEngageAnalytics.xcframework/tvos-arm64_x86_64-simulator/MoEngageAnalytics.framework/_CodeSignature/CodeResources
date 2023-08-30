@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5uniUHl7tAEbjuKFq3bhO2Wej48=
+		Acb/R7M70Gj+xHu/lernh/7lPmM=
 		</data>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		G98DxRDxmQwhxH/9ViG+FSfKRRM=
+		Dp0uybqwxeqAfygEA956iR9pAdA=
 		</data>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		epNkeLC+wy/EoOfJA0+XyeqyE/c=
+		UHt4ktvEl2nC9R4b/22q3Ip9Nok=
 		</data>
 		<key>Modules/MoEngageAnalytics.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		G98DxRDxmQwhxH/9ViG+FSfKRRM=
+		Dp0uybqwxeqAfygEA956iR9pAdA=
 		</data>
 		<key>Modules/MoEngageAnalytics.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/MoEngageAnalytics.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		Y+nTBjXM/5/KN4xqVIWCwjnF70o=
+		rBs1GvEhtF5aOs14d+yYidz4rfk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mAuUGJTpjX1iS/O35iv0bY+GB9ILZlIleIGtr9XzMrY=
+			rLueuY5WQtTOimuC8lQofDJdSxNy3JcCSq5GWa3KX/8=
 			</data>
 		</dict>
 		<key>Modules/MoEngageAnalytics.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
@@ -109,14 +109,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LOINMxUdhS3QHWCmOv8Kvi26R6e8tlh+BIfuu8tNc2I=
+			XE/9eXV8K/03kp46ZJnfb2U7kyWaUsg7xJcmMc+L6w4=
 			</data>
 		</dict>
 		<key>Modules/MoEngageAnalytics.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mAuUGJTpjX1iS/O35iv0bY+GB9ILZlIleIGtr9XzMrY=
+			rLueuY5WQtTOimuC8lQofDJdSxNy3JcCSq5GWa3KX/8=
 			</data>
 		</dict>
 		<key>Modules/MoEngageAnalytics.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			c5tT3xMIOf1oWGc5KRytQGEJgt0ocmfcfhzco5FrEqc=
+			feTG4DgwJmrWR0wYz3yKhmWhRcBWlrddfzDqQhIrkTc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

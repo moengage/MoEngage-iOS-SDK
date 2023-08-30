@@ -3,6 +3,11 @@
 
 ## Changelog:
 
+### Version 9.11.0 *(30th August 2023)*
+-------------------------------------------
+* Added Gzip support for API calls.
+* Internal Code optimizations
+
 ### Version 9.10.2 *(16th August 2023)*
 -------------------------------------------
 * CrashFix - Fixed crash while serializing the JSON by removing invalid values on migration.
