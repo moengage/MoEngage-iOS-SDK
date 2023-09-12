@@ -3,6 +3,10 @@
 
 ## Changelog:
 
+### Version 9.11.1 *(12th September 2023)*
+-------------------------------------------
+* Added delayed InApps support.
+
 ### Version 9.11.0 *(30th August 2023)*
 -------------------------------------------
 * Added Gzip support for API calls.
