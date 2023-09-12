@@ -534,6 +534,43 @@ SWIFT_CLASS("_TtC12MoEngageCore17MoEngageDateUtils")
 @end
 
 
+SWIFT_CLASS("_TtC12MoEngageCore24MoEngageDelayedOperation")
+@interface MoEngageDelayedOperation : NSOperation
+@property (nonatomic, readonly, getter=isAsynchronous) BOOL asynchronous;
+@property (nonatomic, readonly, getter=isConcurrent) BOOL concurrent;
+@property (nonatomic, readonly, getter=isExecuting) BOOL executing;
+@property (nonatomic, readonly, getter=isFinished) BOOL finished;
+- (void)start;
+- (void)main;
+- (void)cancel;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface MoEngageDelayedOperation (SWIFT_EXTENSION(MoEngageCore))
+@end
+
+
+SWIFT_CLASS_NAMED("Continuation")
+@interface MoEngageDelayedOperationContinuation : NSObject
+- (void)fulfill;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC12MoEngageCore31MoEngageDelayedOperationManager")
+@interface MoEngageDelayedOperationManager : NSObject
+- (nonnull instancetype)initWithNamed:(NSString * _Nonnull)name forInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance OBJC_DESIGNATED_INITIALIZER;
+- (void)scheduleWithId:(NSString * _Nonnull)id withDelay:(double)delay performingAction:(void (^ _Nonnull)(MoEngageDelayedOperationContinuation * _Nonnull))action cancellation:(void (^ _Nonnull)(void))cancellation;
+- (BOOL)isAlreadyScheduledForId:(NSString * _Nonnull)id SWIFT_WARN_UNUSED_RESULT;
+- (void)cancelAll;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 /// Protocol to implement user default
 /// note:
 /// This class is used for internal purpose.
