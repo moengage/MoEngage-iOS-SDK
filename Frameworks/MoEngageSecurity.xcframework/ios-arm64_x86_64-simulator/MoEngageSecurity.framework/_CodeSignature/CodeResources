@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Fm81x9pqBNUquyN63ypoKFuY3r4=
+		eoLuLryzP3RnU3wI9f2s5TW79lc=
 		</data>
 		<key>Modules/MoEngageSecurity.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		suWMj7q0A9hviAbcTT8Z6mp7oU8=
+		uDb4/pZF6bnF0Z8/HNX08DoRMEc=
 		</data>
 		<key>Modules/MoEngageSecurity.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/MoEngageSecurity.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		suWMj7q0A9hviAbcTT8Z6mp7oU8=
+		uDb4/pZF6bnF0Z8/HNX08DoRMEc=
 		</data>
 		<key>Modules/MoEngageSecurity.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f0dMVbGpveuwyfXQD2g/mAmFtml7LBqsrdlP3DV5NMA=
+			qI8Aywb87/6BW0M9nB+gdToB7h01AfHC8pw+RA4VFp0=
 			</data>
 		</dict>
 		<key>Modules/MoEngageSecurity.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -116,7 +116,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f0dMVbGpveuwyfXQD2g/mAmFtml7LBqsrdlP3DV5NMA=
+			qI8Aywb87/6BW0M9nB+gdToB7h01AfHC8pw+RA4VFp0=
 			</data>
 		</dict>
 		<key>Modules/MoEngageSecurity.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>

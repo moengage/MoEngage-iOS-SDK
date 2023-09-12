@@ -442,6 +442,13 @@ public struct MoEngageDeviceEntryUtils {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
+@objc @objcMembers final public class MoEngageDelayedOperationManager : ObjectiveC.NSObject {
+  @objc public init(named name: Swift.String, forInstance sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  @objc final public func schedule(id: Swift.String, withDelay delay: Swift.Double, performingAction action: @escaping (MoEngageCore.MoEngageDelayedOperation.Continuation) -> Swift.Void, cancellation: @escaping () -> Swift.Void)
+  @objc final public func isAlreadyScheduled(forId id: Swift.String) -> Swift.Bool
+  @objc final public func cancelAll()
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class MoEngageEncryptionUtils {
   public static func shouldMigrateFromNoNEncryptionToEncryption(sdkConfig: MoEngageCore.MoEngageSDKConfig) -> Swift.Bool
   public static func getCurrentEncryptionStateFromAppGroupId(sdkConfig: MoEngageCore.MoEngageSDKConfig) -> Swift.Bool
@@ -802,6 +809,30 @@ extension MoEngageCore.MoEngageStringConvertibleModel {
   open func resetDataAfterUnRegistration(sdkInstance: MoEngageCore.MoEngageSDKInstance)
   open func syncExistingDataBeforeUnRegisteration(sdkInstance: MoEngageCore.MoEngageSDKInstance, withCompletionBlock completionBlock: ((Swift.Bool) -> Swift.Void)? = nil)
   @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers final public class MoEngageDelayedOperation : Foundation.Operation {
+  @objc override final public var isAsynchronous: Swift.Bool {
+    @objc get
+  }
+  @objc override final public var isConcurrent: Swift.Bool {
+    @objc get
+  }
+  @objc override final public var isExecuting: Swift.Bool {
+    @objc get
+  }
+  @objc override final public var isFinished: Swift.Bool {
+    @objc get
+  }
+  @objc override final public func start()
+  @objc override final public func main()
+  @objc override final public func cancel()
+  @objc deinit
+}
+extension MoEngageCore.MoEngageDelayedOperation {
+  @_hasMissingDesignatedInitializers @objcMembers @objc(MoEngageDelayedOperationContinuation) final public class Continuation : ObjectiveC.NSObject {
+    @objc final public func fulfill()
+    @objc deinit
+  }
 }
 @objc @_inheritsConvenienceInitializers open class MoEngageCardsHandler : ObjectiveC.NSObject {
   @objc required override dynamic public init()

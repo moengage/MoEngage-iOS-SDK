@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MoEngageCore-Swift.h</key>
 		<data>
-		7voWINXkSZc1bZ/TT1XAQaMyJe4=
+		vRVvzM28BasuhjUTQSG1VzfpFH0=
 		</data>
 		<key>Headers/MoEngageCore.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EBUqXdc003DGsAglbUu9EvaHFCQ=
+		4F0qGCiW6YbJG1XbogcHns6M8hg=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		/iwkaQnCDHupQs9KBwxQZpDEUMA=
+		HUTO/Sca06idmDh0lMR+Lui1ngg=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		LdH5V9E1sNVcFE/NgohxUdgoKsE=
+		N4hGw6ggbEYtWymntoPUJkLv0i4=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		LdH5V9E1sNVcFE/NgohxUdgoKsE=
+		N4hGw6ggbEYtWymntoPUJkLv0i4=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		n3pyNUrS8D5ntsvi6CHX4t80nlA=
+		ZvpuBLnUwStAIv5zCZPrSv0II70=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		/iwkaQnCDHupQs9KBwxQZpDEUMA=
+		HUTO/Sca06idmDh0lMR+Lui1ngg=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		p04nylUIVPIIShfRCUsYq+exT6g=
+		ztSxV94k2zzo4XY7Vide0OARSjk=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		p04nylUIVPIIShfRCUsYq+exT6g=
+		ztSxV94k2zzo4XY7Vide0OARSjk=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		kG0+ylhtfcIlTIP5d1PfoIYOTrs=
+		3FcSNPvnkzUp81+DWz7p/hJoxhk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CwrquFlaQ8UVlWmuacvbpzSTqR44pEcQP3kiPVTMXsA=
+			Q0CXNN9XGduYKMoLY2ekOdU+bqdZxkiYxXG3qvDprXg=
 			</data>
 		</dict>
 		<key>Headers/MoEngageCore.h</key>
@@ -92,14 +92,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/38mr2J3zeXX9bz/yncrlp4Mw3BsHq5AySY9dqz3Ojs=
+			GTG6jynSODIuFFyFA1qwWH2vbJyBcKXdXJ0ufhnDVDI=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mufUm8jzSVRL58CN/LYoibzK9Fye30UvCzRXI14tnr8=
+			K4OEGkxvApYY16rlTB40Ok6ZgXfIf6HFL3TiMRykGFQ=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
@@ -113,28 +113,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mufUm8jzSVRL58CN/LYoibzK9Fye30UvCzRXI14tnr8=
+			K4OEGkxvApYY16rlTB40Ok6ZgXfIf6HFL3TiMRykGFQ=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zVXwe8fiWgW4TgfhQwj9lpM/iZp3GePoxjellU/Tyrg=
+			3nctH+QQ+sOKUB+Y7hjyW/ja0lxjvzVUW1nSZLhCdEs=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/38mr2J3zeXX9bz/yncrlp4Mw3BsHq5AySY9dqz3Ojs=
+			GTG6jynSODIuFFyFA1qwWH2vbJyBcKXdXJ0ufhnDVDI=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8Mvhj8PNxcOIBQ2MvkjV9zv4bG0BXCBRiOu5EXTQ8Go=
+			Jdi9u93mOcXzu/ICkwHL6olVcr+1qNFC9zvRJcZhSEM=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
@@ -148,14 +148,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8Mvhj8PNxcOIBQ2MvkjV9zv4bG0BXCBRiOu5EXTQ8Go=
+			Jdi9u93mOcXzu/ICkwHL6olVcr+1qNFC9zvRJcZhSEM=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XiMwGKjI2GPrtTw7JdXHk4/UdKNID62ZpP1dle7WYmw=
+			7D3jWJcmgwWmA2Zdsf/NL6VCy/brJBuWGaWQEV7sgDc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
