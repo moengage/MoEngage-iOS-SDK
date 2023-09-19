@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ggayXfdbpOVpZCb7/mio6tQvE0w=
+		s9KzIhqzMGVh9IM2r1yyv4QMmJU=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		GQsIL7JGdbEDdNkG2UlGx9g9g9Q=
+		NV484ECzIarWnQ6YkZvf51sUaAw=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jsH3ySGayEggYx5mZrW4Pu3rSd4=
+		owXdZhxnMiC85sI2R471QbUrtrI=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		GQsIL7JGdbEDdNkG2UlGx9g9g9Q=
+		NV484ECzIarWnQ6YkZvf51sUaAw=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TmByPzvfj/WdRNd4Efq2ws6ii1w=
+		PZ+rgwjLf7SnWVvzhpaebsOIlh4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -92,7 +92,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+V8NQ5Hk/QztwBGYHnhcGrDvb+56zdoOHZN/o9L5cv8=
+			qW3csJRWblnz6yT3939yAz6j0CzDwYIZuknWa5mqWM0=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -120,14 +120,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BRApcyYFxrP0znQTPXRP19TtpVmVrad7nLG0Wi6GUu4=
+			Ajqsed+o6fxZLwX+xCwpeX2pN2m8Sfq7zkYqxzGk52g=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+V8NQ5Hk/QztwBGYHnhcGrDvb+56zdoOHZN/o9L5cv8=
+			qW3csJRWblnz6yT3939yAz6j0CzDwYIZuknWa5mqWM0=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -155,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0AE+5nlf0/xjtGOgCXiLuxgkbV9JZnt6vERQRopLZTo=
+			+3DPF6uX+x1tGrS835/1edAJ0zLZ4vfG3RntTqraPoI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

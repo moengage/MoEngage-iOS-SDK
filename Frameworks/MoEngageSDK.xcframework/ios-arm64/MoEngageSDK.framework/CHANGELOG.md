@@ -2,6 +2,10 @@
 =================================
 
 ## Changelog:
+### Version 9.11.3 *(19th September 2023)*
+-------------------------------------------
+* Internal Code optimizations.
+
 ### Version 9.11.2 *(14th September 2023)*
 -------------------------------------------
 * Updated the default Gzip state.
