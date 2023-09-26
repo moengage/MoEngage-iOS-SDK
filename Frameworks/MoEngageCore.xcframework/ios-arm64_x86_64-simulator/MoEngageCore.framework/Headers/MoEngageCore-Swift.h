@@ -1610,7 +1610,6 @@ SWIFT_PROTOCOL("_TtP12MoEngageCore17SwiftyGifDelegate_")
 
 
 
-
 /// :nodoc:
 SWIFT_CLASS("_TtC12MoEngageCore17ValidateExtension")
 @interface ValidateExtension : NSObject
@@ -3227,7 +3226,6 @@ SWIFT_PROTOCOL("_TtP12MoEngageCore17SwiftyGifDelegate_")
 - (void)gifURLDidFinishWithSender:(UIImageView * _Nonnull)sender;
 - (void)gifURLDidFailWithSender:(UIImageView * _Nonnull)sender url:(NSURL * _Nonnull)url error:(NSError * _Nullable)error;
 @end
-
 
 
 
