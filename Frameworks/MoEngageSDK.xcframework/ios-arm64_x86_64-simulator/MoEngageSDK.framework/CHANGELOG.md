@@ -2,6 +2,11 @@
 =================================
 
 ## Changelog:
+
+### Version 9.12.0 *(26th September 2023)*
+-------------------------------------------
+* BugFix - Fixed `setImage` and `setGIF*` extension methods name collision.
+
 ### Version 9.11.3 *(19th September 2023)*
 -------------------------------------------
 * Internal Code optimizations.

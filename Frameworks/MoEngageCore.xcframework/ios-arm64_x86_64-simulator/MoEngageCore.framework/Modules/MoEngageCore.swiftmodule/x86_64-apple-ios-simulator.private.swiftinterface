@@ -212,6 +212,8 @@ public class MoEngageGifManager {
   open func clear()
   open func containsImageView(_ imageView: UIKit.UIImageView) -> Swift.Bool
   open func hasCache(_ imageView: UIKit.UIImageView) -> Swift.Bool
+  public func setImage(_ image: UIKit.UIImage, inView view: UIKit.UIImageView, loopCount: Swift.Int = -1)
+  public func setGifImage(_ gifImage: UIKit.UIImage, inView view: UIKit.UIImageView, loopCount: Swift.Int = -1)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MoEngageSDKConfig : ObjectiveC.NSObject {
   @objc public var appId: Swift.String {
@@ -1101,12 +1103,6 @@ public struct MoEngageDefaultStates {
   @objc optional func gifDidStop(sender: UIKit.UIImageView)
   @objc optional func gifURLDidFinish(sender: UIKit.UIImageView)
   @objc optional func gifURLDidFail(sender: UIKit.UIImageView, url: Foundation.URL, error: (any Swift.Error)?)
-}
-extension UIKit.UIImageView {
-  @_Concurrency.MainActor(unsafe) public func setImage(_ image: UIKit.UIImage, manager: MoEngageCore.MoEngageGifManager = .defaultManager, loopCount: Swift.Int = -1)
-}
-extension UIKit.UIImageView {
-  @_Concurrency.MainActor(unsafe) public func setGifImage(_ gifImage: UIKit.UIImage, manager: MoEngageCore.MoEngageGifManager = .defaultManager, loopCount: Swift.Int = -1)
 }
 extension UIKit.UIImageView {
   @_Concurrency.MainActor(unsafe) public func startAnimatingGif()
