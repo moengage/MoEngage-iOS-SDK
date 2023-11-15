@@ -330,9 +330,11 @@ SWIFT_CLASS("_TtC17MoEngageMessaging22MoEngageMessagingUtils")
 @class NSData;
 @class UNUserNotificationCenter;
 @class UNNotification;
+@class UNNotificationResponse;
 @class UIApplication;
 
-SWIFT_CLASS("_TtC17MoEngageMessaging20MoEngageSDKMessaging") SWIFT_AVAILABILITY(ios_app_extension,unavailable)
+/// Class responsible for Push integration
+SWIFT_CLASS("_TtC17MoEngageMessaging20MoEngageSDKMessaging")
 @interface MoEngageSDKMessaging : NSObject
 /// Singleton instance
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKMessaging * _Nonnull sharedInstance;)
@@ -345,51 +347,82 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKM
 /// \param delegate The interface for handling incoming notifications and notification-related actions.
 ///
 - (void)registerForRemoteNotificationWithCategories:(NSSet<UNNotificationCategory *> * _Nullable)categories andUserNotificationCenterDelegate:(id <UNUserNotificationCenterDelegate> _Nullable)delegate SWIFT_AVAILABILITY(tvos,unavailable);
+/// Method to add the notification categories to the existing list of <code>MOE_DISMISS_CATEGORY</code> and <code>MOE_PUSH_TEMPLATE</code> category.
+/// \param categories Set of categories.
+///
 - (void)setUserNotificationCategories:(NSSet<UNNotificationCategory *> * _Nullable)categories SWIFT_AVAILABILITY(tvos,unavailable);
 /// Method to disable the badge reset by SDK.
 /// :nodoc:
-- (void)disableBadgeReset;
+- (void)disableBadgeReset SWIFT_AVAILABILITY(tvos,unavailable);
 /// Set the delegate inorder to receive the notification related callbacks
 /// \param delegate Instance that conforms to <code>MoEngageMessagingDelegate</code> protocol.
 ///
-- (void)setMessagingDelegate:(id <MoEngageMessagingDelegate> _Nullable)delegate;
+- (void)setMessagingDelegate:(id <MoEngageMessagingDelegate> _Nullable)delegate SWIFT_AVAILABILITY(tvos,unavailable);
 /// Set the delegate inorder to receive the notification related callbacksfor Secondary MoEngage Instance.
 /// \param delegate Instance that conforms to <code>MoEngageMessagingDelegate</code> protocol.
 ///
 /// \param appID MoEngage Account Identifier
 ///
-- (void)setMessagingDelegate:(id <MoEngageMessagingDelegate> _Nullable)delegate forAppID:(NSString * _Nullable)appID;
+- (void)setMessagingDelegate:(id <MoEngageMessagingDelegate> _Nullable)delegate forAppID:(NSString * _Nullable)appID SWIFT_AVAILABILITY(tvos,unavailable);
 /// In case you have disabled swizzling,  call this method to pass the device token to MoEngage SDK
 /// \param deviceToken Identifier for the Apple Push Notification System
 ///
-- (void)setPushToken:(NSData * _Nullable)deviceToken;
+- (void)setPushToken:(NSData * _Nullable)deviceToken SWIFT_AVAILABILITY(tvos,unavailable) SWIFT_AVAILABILITY(ios_app_extension,unavailable);
 /// In case you have disabled swizzling, call this method when notification registration fails
-- (void)didFailToRegisterForPush;
+- (void)didFailToRegisterForPush SWIFT_AVAILABILITY(tvos,unavailable) SWIFT_AVAILABILITY(ios_app_extension,unavailable);
 /// In case you have disabled swizzling, call this method on receiving the notification
 /// \param center The central object for managing notification-related activities for your app or app extension.
 ///
 /// \param notification The data for a local or remote notification the system delivers to your app.
 ///
-- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresent:(UNNotification * _Nonnull)notification;
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresent:(UNNotification * _Nonnull)notification SWIFT_AVAILABILITY(tvos,unavailable) SWIFT_AVAILABILITY(ios_app_extension,unavailable);
+/// In case you have disabled swizzling, call this method on performing any action the notification
+/// \param center The central object for managing notification-related activities for your app or app extension.
+///
+/// \param response The user’s response to an actionable notification.
+///
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceive:(UNNotificationResponse * _Nonnull)response SWIFT_AVAILABILITY(tvos,unavailable) SWIFT_AVAILABILITY(ios_app_extension,unavailable);
 /// In case you have disabled swizzling, call this method when remote notification is received in iOS 9 and below.
 /// \param application The centralized point of control and coordination for apps running in iOS.
 ///
 /// \param pushPayload Dictionary that contains entire Push payload
 /// :nodoc:
 ///
-- (void)didReceieveNotificationInApplication:(UIApplication * _Nullable)application withInfo:(NSDictionary * _Nonnull)pushPayload;
+- (void)didReceieveNotificationInApplication:(UIApplication * _Nullable)application withInfo:(NSDictionary * _Nonnull)pushPayload SWIFT_AVAILABILITY(tvos,unavailable) SWIFT_AVAILABILITY(ios_app_extension,unavailable);
 /// Method to process inbox notification and handle the action associated with  it.
 /// \param pushPayload Dictionary that  represents entire push payload
 ///
 /// \param instanceID MoEngage Account Identifier.
 /// :nodoc:
 ///
-- (void)processWithNotificationPayload:(NSDictionary * _Nonnull)pushPayload forInstanceID:(NSString * _Nonnull)instanceID;
+- (void)processWithNotificationPayload:(NSDictionary * _Nonnull)pushPayload forInstanceID:(NSString * _Nonnull)instanceID SWIFT_AVAILABILITY(tvos,unavailable) SWIFT_AVAILABILITY(ios_app_extension,unavailable);
 /// Method to disable badge reset by SDK
 /// \param disable Pass true to disable badge reset
 ///
-- (void)disableBadgeReset:(BOOL)disable;
+- (void)disableBadgeReset:(BOOL)disable SWIFT_AVAILABILITY(tvos,unavailable);
+/// Method to check if Moengage Push is silent notification
+/// \param launchOptions Dictionary that system passes to application at the time of initialization
+///
+///
+/// returns:
+/// true if moengage notification is silent notification else false.
+/// :nodoc:
 + (BOOL)isMoEngageSilentPushAppLaunchWithLaunchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(tvos,unavailable);
+/// Track notification received impression
+/// \param payload APNS notification payload
+///
+- (void)logNotificationReceivedWithPayload:(NSDictionary * _Nonnull)payload SWIFT_AVAILABILITY(tvos,unavailable);
+/// Track notification click impression
+/// \param payload APNS notification payload
+///
+- (void)logNotificationClickedWithPayload:(NSDictionary * _Nonnull)payload SWIFT_AVAILABILITY(tvos,unavailable) SWIFT_AVAILABILITY(ios_app_extension,unavailable);
+/// Validate if the notification belongs to MoEngage
+/// \param payload APNS notification payload
+///
+///
+/// returns:
+/// true if notification belongs to MoEngage else false.
+- (BOOL)isPushFromMoEngageWithPayload:(NSDictionary * _Nonnull)payload SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(tvos,unavailable);
 @end
 
 #endif

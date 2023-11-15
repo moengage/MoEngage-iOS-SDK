@@ -21,6 +21,8 @@ import _StringProcessing
 }
 @_inheritsConvenienceInitializers @objc public class MoEngageMessagingUtils : ObjectiveC.NSObject {
   public static func getStatsAttributes(fromPayloadDict payloadDict: Swift.Dictionary<Swift.AnyHashable, Any>) -> Swift.Dictionary<Swift.String, Any>
+  public static func addEntryToInbox(payload: MoEngageMessaging.MoEngagePushPayload, sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  public static func fetchAppIdFromPushPayload(payload: [Swift.AnyHashable : Any]) -> Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -35,7 +37,13 @@ public class MoEngageMessageDelegateHandler : MoEngageCore.MoEngageMessagingHand
   @objc public func userNotificationCenterWillPresent(_ notification: UserNotifications.UNNotification?)
   @objc public func userNotificationCenterDidReceive(_ response: UserNotifications.UNNotificationResponse?)
   override public func applicationDidEnterForeground(sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  override public func migrateDataFromNoNEncryptionToEncryption(sdkInstance: MoEngageCore.MoEngageSDKInstance, currentSDKInstance: MoEngageCore.MoEngageSDKInstance)
+  override public func logout(sdkInstance: MoEngageCore.MoEngageSDKInstance)
   @objc deinit
+}
+public protocol MoEngageNotificationStateProtocol {
+  static func notifyReceived(withPushPayload pushPayload: [Swift.AnyHashable : Any])
+  static func notifyClicked(withPushPayload pushPayload: [Swift.AnyHashable : Any])
 }
 public enum MoEngagePushTemplateType {
   case StylizedBasic
@@ -76,11 +84,6 @@ public class MoEngagePushWidget {
   public var type: MoEngageMessaging.MoEngagePushWidgetType?
   public var content: Swift.String?
   public init(_ widgetDict: [Swift.String : Any]) throws
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class MoEngageRichNotificationEventHandler {
-  public static func trackNotificationReceived(payload: MoEngageMessaging.MoEngagePushPayload, completionBlock: (() -> Swift.Void)? = nil)
-  public static func trackNotificationShown(payload: MoEngageMessaging.MoEngagePushPayload, completionBlock: (() -> Swift.Void)? = nil)
   @objc deinit
 }
 public struct MoEngageMessagingConstants {
@@ -162,26 +165,47 @@ public struct MoEngageMessagingConstants {
     }
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOSApplicationExtension, unavailable)
-@objc public class MoEngageSDKMessaging : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MoEngageSDKMessaging : ObjectiveC.NSObject {
   @objc public static let sharedInstance: MoEngageMessaging.MoEngageSDKMessaging
   @available(tvOS, unavailable)
   @objc public func registerForRemoteNotification(withCategories categories: Swift.Set<UserNotifications.UNNotificationCategory>? = nil, andUserNotificationCenterDelegate delegate: (any UserNotifications.UNUserNotificationCenterDelegate)? = nil)
   @available(tvOS, unavailable)
   @objc public func setUserNotificationCategories(_ categories: Swift.Set<UserNotifications.UNNotificationCategory>? = nil)
+  @available(tvOS, unavailable)
   @objc public func disableBadgeReset()
+  @available(tvOS, unavailable)
   @objc public func setMessagingDelegate(_ delegate: (any MoEngageMessaging.MoEngageMessagingDelegate)?)
+  @available(tvOS, unavailable)
   @objc public func setMessagingDelegate(_ delegate: (any MoEngageMessaging.MoEngageMessagingDelegate)?, forAppID appID: Swift.String? = nil)
+  @available(iOSApplicationExtension, unavailable)
+  @available(tvOS, unavailable)
   @objc public func setPushToken(_ deviceToken: Foundation.Data?)
+  @available(iOSApplicationExtension, unavailable)
+  @available(tvOS, unavailable)
   @objc public func didFailToRegisterForPush()
+  @available(iOSApplicationExtension, unavailable)
+  @available(tvOS, unavailable)
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification)
+  @available(iOSApplicationExtension, unavailable)
+  @available(tvOS, unavailable)
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse)
+  @available(iOSApplicationExtension, unavailable)
+  @available(tvOS, unavailable)
   @objc public func didReceieveNotification(inApplication application: UIKit.UIApplication? = nil, withInfo pushPayload: [Swift.AnyHashable : Any])
-  public func setInternalInboxDelegate(_ delegate: (any MoEngageMessaging.MoEngageMessagingDelegate)?, forInstanceID instanceID: Swift.String?)
+  @available(iOSApplicationExtension, unavailable)
+  @available(tvOS, unavailable)
   @objc public func process(notificationPayload pushPayload: [Swift.AnyHashable : Any], forInstanceID instanceID: Swift.String)
+  @available(tvOS, unavailable)
   @objc public func disableBadgeReset(_ disable: Swift.Bool)
   @available(tvOS, unavailable)
   @objc public static func isMoEngageSilentPushAppLaunch(withLaunchOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?) -> Swift.Bool
+  @available(tvOS, unavailable)
+  @objc public func logNotificationReceived(withPayload payload: [Swift.AnyHashable : Any])
+  @available(iOSApplicationExtension, unavailable)
+  @available(tvOS, unavailable)
+  @objc public func logNotificationClicked(withPayload payload: [Swift.AnyHashable : Any])
+  @available(tvOS, unavailable)
+  @objc public func isPushFromMoEngage(withPayload payload: [Swift.AnyHashable : Any]) -> Swift.Bool
   @objc deinit
 }
 public class MoEngageRichPush {

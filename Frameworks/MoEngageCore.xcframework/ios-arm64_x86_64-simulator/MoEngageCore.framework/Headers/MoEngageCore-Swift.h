@@ -450,7 +450,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageCore
 @class NSURL;
 @class UIApplication;
 enum MoEngageInAppWhiteList : NSInteger;
-enum MoEngageRegistrationResult : NSInteger;
+enum MoEngageRegistrationState : NSInteger;
 
 /// :nodoc:
 SWIFT_CLASS("_TtC12MoEngageCore17MoEngageCoreUtils")
@@ -499,7 +499,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isAppInBackground;)
 + (MoEngageAccountMeta * _Nonnull)getAccountMetaWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getStringRepresentationWithEvent:(enum MoEngageInAppWhiteList)event SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isUserRegisteredWithSdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
-+ (void)updateUserRegisterStateWithState:(enum MoEngageRegistrationResult)state sdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig;
++ (void)updateUserRegisterStateWithState:(enum MoEngageRegistrationState)state sdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -742,6 +742,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageGeof
 - (void)moengageSDKStateUpdatedWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 @end
 
+@class UIImageView;
+
+/// :nodoc:
+SWIFT_PROTOCOL("_TtP12MoEngageCore19MoEngageGifDelegate_")
+@protocol MoEngageGifDelegate
+@optional
+- (void)gifDidStartWithSender:(UIImageView * _Nonnull)sender;
+- (void)gifDidLoopWithSender:(UIImageView * _Nonnull)sender;
+- (void)gifDidStopWithSender:(UIImageView * _Nonnull)sender;
+- (void)gifURLDidFinishWithSender:(UIImageView * _Nonnull)sender;
+- (void)gifURLDidFailWithSender:(UIImageView * _Nonnull)sender url:(NSURL * _Nonnull)url error:(NSError * _Nullable)error;
+@end
+
 
 /// Class to configure the InApp.
 SWIFT_CLASS("_TtC12MoEngageCore19MoEngageInAppConfig")
@@ -877,6 +890,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageMess
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)initializeMessagingWithLaunchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions sdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 - (void)applicationDidEnterForegroundWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
+- (void)migrateDataFromNoNEncryptionToEncryptionWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance currentSDKInstance:(MoEngageSDKInstance * _Nonnull)currentSDKInstance;
+- (void)logoutWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 @end
 
 
@@ -1091,6 +1106,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageReal
 @end
 
 enum MoEngageRegistrationType : NSInteger;
+enum MoEngageRegistrationResult : NSInteger;
 
 /// User Registration Data
 SWIFT_CLASS("_TtC12MoEngageCore24MoEngageRegistrationData")
@@ -1099,24 +1115,36 @@ SWIFT_CLASS("_TtC12MoEngageCore24MoEngageRegistrationData")
 @property (nonatomic, readonly, strong) MoEngageAccountMeta * _Nonnull accountMeta;
 /// Enum indicating the User-registration type
 @property (nonatomic, readonly) enum MoEngageRegistrationType type;
-/// Enum indicating the User-registration result
+/// Enum indicating the User-registration state
+@property (nonatomic, readonly) enum MoEngageRegistrationState state;
+/// Enum indicating the User-registration  result.
 @property (nonatomic, readonly) enum MoEngageRegistrationResult result;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-/// User Registration Result states
+/// Registration API result.
 typedef SWIFT_ENUM(NSInteger, MoEngageRegistrationResult, open) {
+/// Sucess if the register/unregister API is successful
+  MoEngageRegistrationResultSuccess = 0,
+/// Failure if the register/unregister API is fails
+  MoEngageRegistrationResultFailure = 1,
+};
+
+/// User Registration Result states
+typedef SWIFT_ENUM(NSInteger, MoEngageRegistrationState, open) {
 /// User is Registered
-  MoEngageRegistrationResultRegistered = 0,
+  MoEngageRegistrationStateRegistered = 0,
 /// User is Unregistered
-  MoEngageRegistrationResultUnregistered = 1,
+  MoEngageRegistrationStateUnregistered = 1,
 /// The User Registration flow has to be enabled at the time of MoEngage SDK initialization to register the user. Use  <code>MoEngageUserRegistrationConfig</code> to enable user registration
-  MoEngageRegistrationResultFlowNotEnabled = 2,
+  MoEngageRegistrationStateFlowNotEnabled = 2,
 /// State when <code>MoEngageSDKCore.unregisterUser</code> is called without successfully registering the user using <code>MoEngageSDKCore.registerUser</code>.
-  MoEngageRegistrationResultUserNotRegistered = 3,
+  MoEngageRegistrationStateUserNotRegistered = 3,
 /// State when passed data is invalid
-  MoEngageRegistrationResultInvalidData = 4,
+  MoEngageRegistrationStateInvalidData = 4,
+/// State when account is blocked or sdk is disabled
+  MoEngageRegistrationStateSdkOrAccountDisabled = 5,
 };
 
 /// User registration type
@@ -1348,6 +1376,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKC
 /// \param completionHandler returns UUID generated by the MoEngage SDK
 ///
 - (void)getMoEngageDeviceIdWithAppId:(NSString * _Nullable)appId completionHandler:(void (^ _Nonnull)(MoEngageUserInformation * _Nonnull))completionHandler;
+/// API to enable the common logs  which are not specific to any AppId.
+- (void)enableAllLogs;
+/// API to disable the common logs  which are not specific to any AppId.
+- (void)disableAllLogs;
 @end
 
 
@@ -1585,19 +1617,6 @@ SWIFT_CLASS("_TtC12MoEngageCore22MoEngageWebViewHandler")
 @interface MoEngageWebViewHandler : NSObject <SFSafariViewControllerDelegate>
 - (void)safariViewControllerDidFinish:(SFSafariViewController * _Nonnull)controller;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIImageView;
-
-/// :nodoc:
-SWIFT_PROTOCOL("_TtP12MoEngageCore17SwiftyGifDelegate_")
-@protocol SwiftyGifDelegate
-@optional
-- (void)gifDidStartWithSender:(UIImageView * _Nonnull)sender;
-- (void)gifDidLoopWithSender:(UIImageView * _Nonnull)sender;
-- (void)gifDidStopWithSender:(UIImageView * _Nonnull)sender;
-- (void)gifURLDidFinishWithSender:(UIImageView * _Nonnull)sender;
-- (void)gifURLDidFailWithSender:(UIImageView * _Nonnull)sender url:(NSURL * _Nonnull)url error:(NSError * _Nullable)error;
 @end
 
 
@@ -2077,7 +2096,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageCore
 @class NSURL;
 @class UIApplication;
 enum MoEngageInAppWhiteList : NSInteger;
-enum MoEngageRegistrationResult : NSInteger;
+enum MoEngageRegistrationState : NSInteger;
 
 /// :nodoc:
 SWIFT_CLASS("_TtC12MoEngageCore17MoEngageCoreUtils")
@@ -2126,7 +2145,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isAppInBackground;)
 + (MoEngageAccountMeta * _Nonnull)getAccountMetaWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getStringRepresentationWithEvent:(enum MoEngageInAppWhiteList)event SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isUserRegisteredWithSdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
-+ (void)updateUserRegisterStateWithState:(enum MoEngageRegistrationResult)state sdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig;
++ (void)updateUserRegisterStateWithState:(enum MoEngageRegistrationState)state sdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2369,6 +2388,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageGeof
 - (void)moengageSDKStateUpdatedWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 @end
 
+@class UIImageView;
+
+/// :nodoc:
+SWIFT_PROTOCOL("_TtP12MoEngageCore19MoEngageGifDelegate_")
+@protocol MoEngageGifDelegate
+@optional
+- (void)gifDidStartWithSender:(UIImageView * _Nonnull)sender;
+- (void)gifDidLoopWithSender:(UIImageView * _Nonnull)sender;
+- (void)gifDidStopWithSender:(UIImageView * _Nonnull)sender;
+- (void)gifURLDidFinishWithSender:(UIImageView * _Nonnull)sender;
+- (void)gifURLDidFailWithSender:(UIImageView * _Nonnull)sender url:(NSURL * _Nonnull)url error:(NSError * _Nullable)error;
+@end
+
 
 /// Class to configure the InApp.
 SWIFT_CLASS("_TtC12MoEngageCore19MoEngageInAppConfig")
@@ -2504,6 +2536,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageMess
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)initializeMessagingWithLaunchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions sdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 - (void)applicationDidEnterForegroundWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
+- (void)migrateDataFromNoNEncryptionToEncryptionWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance currentSDKInstance:(MoEngageSDKInstance * _Nonnull)currentSDKInstance;
+- (void)logoutWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 @end
 
 
@@ -2718,6 +2752,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageReal
 @end
 
 enum MoEngageRegistrationType : NSInteger;
+enum MoEngageRegistrationResult : NSInteger;
 
 /// User Registration Data
 SWIFT_CLASS("_TtC12MoEngageCore24MoEngageRegistrationData")
@@ -2726,24 +2761,36 @@ SWIFT_CLASS("_TtC12MoEngageCore24MoEngageRegistrationData")
 @property (nonatomic, readonly, strong) MoEngageAccountMeta * _Nonnull accountMeta;
 /// Enum indicating the User-registration type
 @property (nonatomic, readonly) enum MoEngageRegistrationType type;
-/// Enum indicating the User-registration result
+/// Enum indicating the User-registration state
+@property (nonatomic, readonly) enum MoEngageRegistrationState state;
+/// Enum indicating the User-registration  result.
 @property (nonatomic, readonly) enum MoEngageRegistrationResult result;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-/// User Registration Result states
+/// Registration API result.
 typedef SWIFT_ENUM(NSInteger, MoEngageRegistrationResult, open) {
+/// Sucess if the register/unregister API is successful
+  MoEngageRegistrationResultSuccess = 0,
+/// Failure if the register/unregister API is fails
+  MoEngageRegistrationResultFailure = 1,
+};
+
+/// User Registration Result states
+typedef SWIFT_ENUM(NSInteger, MoEngageRegistrationState, open) {
 /// User is Registered
-  MoEngageRegistrationResultRegistered = 0,
+  MoEngageRegistrationStateRegistered = 0,
 /// User is Unregistered
-  MoEngageRegistrationResultUnregistered = 1,
+  MoEngageRegistrationStateUnregistered = 1,
 /// The User Registration flow has to be enabled at the time of MoEngage SDK initialization to register the user. Use  <code>MoEngageUserRegistrationConfig</code> to enable user registration
-  MoEngageRegistrationResultFlowNotEnabled = 2,
+  MoEngageRegistrationStateFlowNotEnabled = 2,
 /// State when <code>MoEngageSDKCore.unregisterUser</code> is called without successfully registering the user using <code>MoEngageSDKCore.registerUser</code>.
-  MoEngageRegistrationResultUserNotRegistered = 3,
+  MoEngageRegistrationStateUserNotRegistered = 3,
 /// State when passed data is invalid
-  MoEngageRegistrationResultInvalidData = 4,
+  MoEngageRegistrationStateInvalidData = 4,
+/// State when account is blocked or sdk is disabled
+  MoEngageRegistrationStateSdkOrAccountDisabled = 5,
 };
 
 /// User registration type
@@ -2975,6 +3022,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKC
 /// \param completionHandler returns UUID generated by the MoEngage SDK
 ///
 - (void)getMoEngageDeviceIdWithAppId:(NSString * _Nullable)appId completionHandler:(void (^ _Nonnull)(MoEngageUserInformation * _Nonnull))completionHandler;
+/// API to enable the common logs  which are not specific to any AppId.
+- (void)enableAllLogs;
+/// API to disable the common logs  which are not specific to any AppId.
+- (void)disableAllLogs;
 @end
 
 
@@ -3212,19 +3263,6 @@ SWIFT_CLASS("_TtC12MoEngageCore22MoEngageWebViewHandler")
 @interface MoEngageWebViewHandler : NSObject <SFSafariViewControllerDelegate>
 - (void)safariViewControllerDidFinish:(SFSafariViewController * _Nonnull)controller;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIImageView;
-
-/// :nodoc:
-SWIFT_PROTOCOL("_TtP12MoEngageCore17SwiftyGifDelegate_")
-@protocol SwiftyGifDelegate
-@optional
-- (void)gifDidStartWithSender:(UIImageView * _Nonnull)sender;
-- (void)gifDidLoopWithSender:(UIImageView * _Nonnull)sender;
-- (void)gifDidStopWithSender:(UIImageView * _Nonnull)sender;
-- (void)gifURLDidFinishWithSender:(UIImageView * _Nonnull)sender;
-- (void)gifURLDidFailWithSender:(UIImageView * _Nonnull)sender url:(NSURL * _Nonnull)url error:(NSError * _Nullable)error;
 @end
 
 
