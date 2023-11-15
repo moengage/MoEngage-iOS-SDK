@@ -3,6 +3,20 @@
 
 ## Changelog:
 
+### Version 9.13.0 *(15th November 2023)*
+-------------------------------------------
+* Added notification impression and click API.
+* Incorrect model_name tracked for iPhone 14 Pro
+* Handled the register/unregister API response in consistent with Android.
+* Added new registration state as `sdkOrAccountDisabled`. 
+* Added self-handled inapps for tvOS.
+* Added self-handled cards for tvOS.
+* Cards in first app
+* BugFix - User Registration state will be returned `userNotRegistered` if `unregister` API is called before user is registered.
+* BugFix - Fixed the common logs issue
+* BugFix - Fixed the clicked state for inbox message when the notification is clicked from terminate state
+* BugFix - Refactored public APIs that can cause name collision.
+
 ### Version 9.12.0 *(26th September 2023)*
 -------------------------------------------
 * BugFix - Fixed `setImage` and `setGIF*` extension methods name collision.

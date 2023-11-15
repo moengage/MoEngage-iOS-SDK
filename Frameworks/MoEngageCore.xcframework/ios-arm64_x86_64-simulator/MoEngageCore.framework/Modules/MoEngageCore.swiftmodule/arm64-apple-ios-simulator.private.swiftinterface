@@ -128,6 +128,15 @@ public struct MoEngageCoreConstants {
     get
   }
 }
+@objc public enum MoEngageRegistrationResult : Swift.Int {
+  case success
+  case failure
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc @_hasMissingDesignatedInitializers final public class MoEngageDelayedOperation : Foundation.Operation {
   @objc override final public var isAsynchronous: Swift.Bool {
     @objc get
@@ -152,7 +161,7 @@ extension MoEngageCore.MoEngageDelayedOperation {
     @objc deinit
   }
 }
-@objc @_hasMissingDesignatedInitializers public class MoEngageRemoteInAppConfig : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers public class MoEngageRemoteInAppConfig : ObjectiveC.NSObject, MoEngageCore.MoEngageDictionaryConvertible {
   @objc final public let isStatsEnabled: Swift.Bool
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -171,8 +180,9 @@ extension MoEngageCore.MoEngageDelayedOperation {
 @objc public class MoEngageRegistrationData : ObjectiveC.NSObject {
   @objc final public let accountMeta: MoEngageCore.MoEngageAccountMeta
   @objc final public let type: MoEngageCore.MoEngageRegistrationType
+  @objc final public let state: MoEngageCore.MoEngageRegistrationState
   @objc final public let result: MoEngageCore.MoEngageRegistrationResult
-  public init(accountMeta: MoEngageCore.MoEngageAccountMeta, type: MoEngageCore.MoEngageRegistrationType, result: MoEngageCore.MoEngageRegistrationResult)
+  public init(accountMeta: MoEngageCore.MoEngageAccountMeta, type: MoEngageCore.MoEngageRegistrationType, state: MoEngageCore.MoEngageRegistrationState, result: MoEngageCore.MoEngageRegistrationResult)
   @objc deinit
 }
 @objc public enum MoEngageRegistrationType : Swift.Int {
@@ -214,6 +224,9 @@ public class MoEngageGifManager {
   open func hasCache(_ imageView: UIKit.UIImageView) -> Swift.Bool
   public func setImage(_ image: UIKit.UIImage, inView view: UIKit.UIImageView, loopCount: Swift.Int = -1)
   public func setGifImage(_ gifImage: UIKit.UIImage, inView view: UIKit.UIImageView, loopCount: Swift.Int = -1)
+  public static func createGifImage(fromData gifData: Foundation.Data) throws -> UIKit.UIImage
+  public static func clearGif(in imageView: UIKit.UIImageView)
+  public static func startAnimatingGif(in imageView: UIKit.UIImageView)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MoEngageSDKConfig : ObjectiveC.NSObject {
   @objc public var appId: Swift.String {
@@ -329,7 +342,7 @@ public enum MoEngageExceptions : Swift.Error {
   @objc public static func getAccountMeta(sdkInstance: MoEngageCore.MoEngageSDKInstance) -> MoEngageCore.MoEngageAccountMeta
   @objc public static func getStringRepresentation(event: MoEngageCore.MoEngageInAppWhiteList) -> Swift.String
   @objc public static func isUserRegistered(sdkConfig: MoEngageCore.MoEngageSDKConfig) -> Swift.Bool
-  @objc public static func updateUserRegisterState(state: MoEngageCore.MoEngageRegistrationResult, sdkConfig: MoEngageCore.MoEngageSDKConfig)
+  @objc public static func updateUserRegisterState(state: MoEngageCore.MoEngageRegistrationState, sdkConfig: MoEngageCore.MoEngageSDKConfig)
   public static func getIDFA() -> Swift.String?
   public static func generateHasValue(str: Swift.String) -> Swift.String
   public static func mapJSONToString(data: [Swift.String : Any]) -> Swift.String?
@@ -337,11 +350,9 @@ public enum MoEngageExceptions : Swift.Error {
   public static func mapStringToJSON(str: Swift.String) -> [Swift.String : Any]?
   public static func mapBase64ToJSON(str: Swift.String) -> [Swift.String : Any]?
   public static func getIntegrationInfoFromAppGroupId(sdkConfig: MoEngageCore.MoEngageSDKConfig) -> [[Swift.String : Any]]?
+  public static func getStringFromHTML(_ htmlString: Swift.String) -> Swift.String?
   @objc override dynamic public init()
   @objc deinit
-}
-extension UIKit.UIDevice {
-  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
 }
 @_inheritsConvenienceInitializers @objc public class ValidateExtension : ObjectiveC.NSObject {
   @objc public static func isFromExtension() -> Swift.Bool
@@ -399,18 +410,11 @@ public struct MoEngageGzipError : Swift.Error {
     get
   }
 }
-extension Foundation.Data {
-  public var isGzipped: Swift.Bool {
-    get
-  }
-  public func moenGzipped(level: MoEngageCore.MoEngageCompressionLevel = .defaultCompression, wBits: Swift.Int32 = MoEngageGzip.maxWindowBits + 16) throws -> Foundation.Data
-  public func moenGunzipped(wBits: Swift.Int32 = MoEngageGzip.maxWindowBits + 32) throws -> Foundation.Data
-}
 public struct MoEngageFileData {
   public var data: [Swift.String : Any]
   public init(data: [Swift.String : Any] = [:])
 }
-@objc public enum MoEngageLoggerType : Swift.Int {
+@objc public enum MoEngageLoggerType : Swift.Int, MoEngageCore.MoEngageDictionaryConvertible {
   case verbose = 0
   case debug
   case info
@@ -443,6 +447,8 @@ public typealias UserInfoHandler = (MoEngageCore.MoEngageUserInformation) -> Swi
   @objc public func getUserRegistrationStatus(forAppId appId: Swift.String? = nil, completionHandler: @escaping MoEngageCore.UserRegistrationStatusHandler)
   @objc public func getMoEngageDeviceId(completionHandler: @escaping MoEngageCore.UserInfoHandler)
   @objc public func getMoEngageDeviceId(appId: Swift.String? = nil, completionHandler: @escaping MoEngageCore.UserInfoHandler)
+  @objc public func enableAllLogs()
+  @objc public func disableAllLogs()
   @objc deinit
 }
 @objc public class MoEngageIntegrationInfo : ObjectiveC.NSObject {
@@ -490,43 +496,32 @@ public typealias UserInfoHandler = (MoEngageCore.MoEngageUserInformation) -> Swi
   @objc override dynamic public init()
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class MoEngageInstanceProvider {
+  public static func getSDKInstance(appId: Swift.String? = nil, completionBlock: @escaping (MoEngageCore.MoEngageSDKInstance?) -> Swift.Void)
+  public static func getSDKConfig(appId: Swift.String? = nil) -> MoEngageCore.MoEngageSDKConfig?
+  @objc deinit
+}
 public func integrationInfoToDictionary(_ integrationInfo: Swift.Array<MoEngageCore.MoEngageIntegrationInfo>) -> [[Swift.String : Swift.String]]?
-public typealias GifLevelOfIntegrity = Swift.Float
-extension Swift.Float {
-  public static let highestNoFrameSkipping: MoEngageCore.GifLevelOfIntegrity
-  public static let `default`: MoEngageCore.GifLevelOfIntegrity
-  public static let lowForManyGifs: MoEngageCore.GifLevelOfIntegrity
-  public static let lowForTooManyGifs: MoEngageCore.GifLevelOfIntegrity
-  public static let superLowForSlideShow: MoEngageCore.GifLevelOfIntegrity
-}
-extension UIKit.UIImage {
-  convenience public init(gifData: Foundation.Data, levelOfIntegrity: MoEngageCore.GifLevelOfIntegrity = .default) throws
-  convenience public init(gifName: Swift.String, levelOfIntegrity: MoEngageCore.GifLevelOfIntegrity = .default) throws
-  public func setGifFromData(_ data: Foundation.Data, levelOfIntegrity: MoEngageCore.GifLevelOfIntegrity) throws
-  public func setGif(_ name: Swift.String) throws
-  public func framesCount() -> Swift.Int
-  public func setGif(_ name: Swift.String, levelOfIntegrity: MoEngageCore.GifLevelOfIntegrity) throws
-  public func clear()
-}
 @objc public class MoEngageUserInformation : ObjectiveC.NSObject {
   @objc final public let accountMeta: MoEngageCore.MoEngageAccountMeta
   @objc final public let uniqueId: Swift.String?
   @objc public init(accountMeta: MoEngageCore.MoEngageAccountMeta, uniqueId: Swift.String? = nil)
   @objc deinit
 }
-@objc public enum MoEngageRegistrationResult : Swift.Int {
+@objc public enum MoEngageRegistrationState : Swift.Int {
   case registered
   case unregistered
   case flowNotEnabled
   case userNotRegistered
   case invalidData
+  case sdkOrAccountDisabled
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
-@objc @_hasMissingDesignatedInitializers public class MoEngageRemoteSecurityConfig : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers public class MoEngageRemoteSecurityConfig : ObjectiveC.NSObject, MoEngageCore.MoEngageDictionaryConvertible {
   final public let encryptionKey: Swift.String
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -581,7 +576,7 @@ extension UIKit.UIImage {
   @objc open func syncExistingDataBeforeUnRegisteration(sdkInstance: MoEngageCore.MoEngageSDKInstance, withCompletionBlock completionBlock: ((Swift.Bool) -> Swift.Void)? = nil)
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers public class MoEngageRemoteDataTrackingConfig : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers public class MoEngageRemoteDataTrackingConfig : ObjectiveC.NSObject, MoEngageCore.MoEngageDictionaryConvertible {
   final public let isPeriodicSyncEnabled: Swift.Bool
   final public let periodicSyncInterval: Swift.Int
   final public let blackListedEvents: Swift.Set<Swift.String>
@@ -631,7 +626,7 @@ extension UIKit.UIImage {
   @objc deinit
 }
 public struct MoEngageFileDataHandler {
-  public init(folderPath: Swift.String, filePath: Swift.String, sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  public init(folderPath: Swift.String, filePath: Swift.String, sdkInstance: MoEngageCore.MoEngageSDKInstance, shouldFetchExtensionSharedPath: Swift.Bool = false)
   public func fetchData() -> MoEngageCore.MoEngageFileData
   public func saveData(response: [Swift.String : Any])
 }
@@ -642,6 +637,12 @@ extension MoEngageCore.MoEngageStringConvertibleModel {
   public var description: Swift.String {
     get
   }
+}
+public protocol MoEngageDictionaryConvertible : Swift.Decodable, Swift.Encodable {
+  func convertToDict() -> Swift.Dictionary<Swift.String, Any>?
+}
+extension MoEngageCore.MoEngageDictionaryConvertible {
+  public func convertToDict() -> [Swift.String : Any]?
 }
 @_inheritsConvenienceInitializers @objc public class MoEngageNetworkConfiguration : ObjectiveC.NSObject {
   @objc override dynamic public init()
@@ -667,7 +668,7 @@ extension MoEngageCore.MoEngageStringConvertibleModel {
   open func removeEncryptedFolder(sdkInstance: MoEngageCore.MoEngageSDKInstance)
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers public class MoEngageRemoteConfiguration : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers public class MoEngageRemoteConfiguration : ObjectiveC.NSObject, MoEngageCore.MoEngageDictionaryConvertible {
   @objc final public let isAppEnabled: Swift.Bool
   @objc final public let moduleStatus: MoEngageCore.MoEngageRemoteModuleStatus
   final public let dataTrackingConfig: MoEngageCore.MoEngageRemoteDataTrackingConfig
@@ -689,7 +690,7 @@ extension MoEngageCore.MoEngageStringConvertibleModel {
   @objc public init(withInstanceID instanceID: Swift.String)
   @objc deinit
 }
-public struct MoEngageRemoteNetworkConfig : MoEngageCore.MoEngageStringConvertibleModel {
+public struct MoEngageRemoteNetworkConfig : MoEngageCore.MoEngageStringConvertibleModel, MoEngageCore.MoEngageDictionaryConvertible {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -766,11 +767,6 @@ public enum MoEngageNetworkReachabilityError : Swift.Error {
   case unableToSetCallback(Swift.Int32)
   case unableToSetDispatchQueue(Swift.Int32)
   case unableToGetFlags(Swift.Int32)
-}
-@available(*, unavailable, renamed: "Notification.Name.reachabilityChanged")
-public let ReachabilityChangedNotification: Foundation.NSNotification.Name
-extension Foundation.NSNotification.Name {
-  public static let reachabilityChanged: Foundation.Notification.Name
 }
 public class MoEngageNetworkReachability {
   public typealias NetworkReachable = (MoEngageCore.MoEngageNetworkReachability) -> ()
@@ -872,9 +868,11 @@ extension MoEngageCore.MoEngageNetworkClient : Foundation.URLSessionDelegate {
   @objc required override dynamic public init()
   open func initializeMessaging(launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]? = nil, sdkInstance: MoEngageCore.MoEngageSDKInstance)
   open func applicationDidEnterForeground(sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  open func migrateDataFromNoNEncryptionToEncryption(sdkInstance: MoEngageCore.MoEngageSDKInstance, currentSDKInstance: MoEngageCore.MoEngageSDKInstance)
+  open func logout(sdkInstance: MoEngageCore.MoEngageSDKInstance)
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers public class MoEngageRemoteLogConfig : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers public class MoEngageRemoteLogConfig : ObjectiveC.NSObject, MoEngageCore.MoEngageDictionaryConvertible {
   final public let isRemoteLoggingEnabled: Swift.Bool
   final public let loglevel: MoEngageCore.MoEngageLoggerType
   @objc override dynamic public var description: Swift.String {
@@ -973,7 +971,7 @@ extension MoEngageCore.MoEngageNetworkClient : Foundation.URLSessionDelegate {
   @objc public init(accountMeta: MoEngageCore.MoEngageAccountMeta, isUserRegistered: Swift.Bool)
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers public class MoEngageRemoteModuleStatus : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers public class MoEngageRemoteModuleStatus : ObjectiveC.NSObject, MoEngageCore.MoEngageDictionaryConvertible {
   @objc final public let isInAppEnabled: Swift.Bool
   final public let isInboxEnabled: Swift.Bool
   final public let isGeofenceEnabled: Swift.Bool
@@ -990,6 +988,8 @@ extension MoEngageCore.MoEngageNetworkClient : Foundation.URLSessionDelegate {
   @objc public static let sharedInstance: MoEngageCore.MoEngageMessagingManager
   @objc open func initializeMessaging(launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]? = nil, sdkInstance: MoEngageCore.MoEngageSDKInstance)
   @objc open func applicationDidEnterForeground(sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  @objc open func migrateDataFromNoNEncryptionToEncryption(sdkInstance: MoEngageCore.MoEngageSDKInstance, currentSDKInstance: MoEngageCore.MoEngageSDKInstance)
+  @objc open func logout(sdkInstance: MoEngageCore.MoEngageSDKInstance)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MoEngageLogger : ObjectiveC.NSObject {
@@ -1065,7 +1065,7 @@ public struct MoEngageDefaultStates {
   @objc public func enableDefaultConsoleLogger(_ enable: Swift.Bool)
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers public class MoEngageRemoteAnalyticsConfig : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers public class MoEngageRemoteAnalyticsConfig : ObjectiveC.NSObject, MoEngageCore.MoEngageDictionaryConvertible {
   final public let sessionInActiveDuration: Swift.Int
   final public let sourceIdentifiers: Swift.Set<Swift.String>
   @objc override dynamic public var description: Swift.String {
@@ -1075,7 +1075,7 @@ public struct MoEngageDefaultStates {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@objc @_hasMissingDesignatedInitializers public class MoEngageRemoteRealTimeTriggerConfig : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers public class MoEngageRemoteRealTimeTriggerConfig : ObjectiveC.NSObject, MoEngageCore.MoEngageDictionaryConvertible {
   final public let syncInterval: Swift.Int
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -1097,26 +1097,12 @@ public struct MoEngageDefaultStates {
   public init(safeAreaInset: CoreFoundation.CGFloat)
   @objc deinit
 }
-@objc public protocol SwiftyGifDelegate {
+@objc public protocol MoEngageGifDelegate {
   @objc optional func gifDidStart(sender: UIKit.UIImageView)
   @objc optional func gifDidLoop(sender: UIKit.UIImageView)
   @objc optional func gifDidStop(sender: UIKit.UIImageView)
   @objc optional func gifURLDidFinish(sender: UIKit.UIImageView)
   @objc optional func gifURLDidFail(sender: UIKit.UIImageView, url: Foundation.URL, error: (any Swift.Error)?)
-}
-extension UIKit.UIImageView {
-  @_Concurrency.MainActor(unsafe) public func startAnimatingGif()
-  @_Concurrency.MainActor(unsafe) public func stopAnimatingGif()
-  @_Concurrency.MainActor(unsafe) public func isAnimatingGif() -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) public func showFrameForIndexDelta(_ delta: Swift.Int)
-  @_Concurrency.MainActor(unsafe) public func showFrameAtIndex(_ index: Swift.Int)
-  @_Concurrency.MainActor(unsafe) public func updateCache()
-  @_Concurrency.MainActor(unsafe) public func updateCurrentImage()
-  @_Concurrency.MainActor(unsafe) public func currentFrameIndex() -> Swift.Int
-  @_Concurrency.MainActor(unsafe) public func frameAtIndex(index: Swift.Int) -> UIKit.UIImage
-  @_Concurrency.MainActor(unsafe) public func isDiscarded(_ imageView: UIKit.UIView?) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) public func isDisplayedInScreen(_ imageView: UIKit.UIView?) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) public func clear()
 }
 @objc public enum MoEngageNetworkService : Swift.Int {
   case GetConfig = 0
@@ -1177,8 +1163,9 @@ public struct MoEngageDeviceEntryUtils {
 extension MoEngageCore.MoEngageInAppWhiteList : Swift.Equatable {}
 extension MoEngageCore.MoEngageInAppWhiteList : Swift.Hashable {}
 extension MoEngageCore.MoEngageInAppWhiteList : Swift.RawRepresentable {}
-extension MoEngageCore.MoEngageRemoteInAppConfig : Swift.Encodable {}
-extension MoEngageCore.MoEngageRemoteInAppConfig : Swift.Decodable {}
+extension MoEngageCore.MoEngageRegistrationResult : Swift.Equatable {}
+extension MoEngageCore.MoEngageRegistrationResult : Swift.Hashable {}
+extension MoEngageCore.MoEngageRegistrationResult : Swift.RawRepresentable {}
 extension MoEngageCore.MoEngageRegistrationType : Swift.Equatable {}
 extension MoEngageCore.MoEngageRegistrationType : Swift.Hashable {}
 extension MoEngageCore.MoEngageRegistrationType : Swift.RawRepresentable {}
@@ -1187,39 +1174,21 @@ extension MoEngageCore.MoEngagePartnerIntegrationType : Swift.Hashable {}
 extension MoEngageCore.MoEngagePartnerIntegrationType : Swift.RawRepresentable {}
 extension MoEngageCore.MoEngageExceptions : Swift.Equatable {}
 extension MoEngageCore.MoEngageExceptions : Swift.Hashable {}
-extension MoEngageCore.MoEngageLoggerType : Swift.Encodable {}
-extension MoEngageCore.MoEngageLoggerType : Swift.Decodable {}
 extension MoEngageCore.MoEngageLoggerType : Swift.Equatable {}
 extension MoEngageCore.MoEngageLoggerType : Swift.Hashable {}
 extension MoEngageCore.MoEngageLoggerType : Swift.RawRepresentable {}
-extension MoEngageCore.MoEngageRegistrationResult : Swift.Equatable {}
-extension MoEngageCore.MoEngageRegistrationResult : Swift.Hashable {}
-extension MoEngageCore.MoEngageRegistrationResult : Swift.RawRepresentable {}
-extension MoEngageCore.MoEngageRemoteSecurityConfig : Swift.Encodable {}
-extension MoEngageCore.MoEngageRemoteSecurityConfig : Swift.Decodable {}
-extension MoEngageCore.MoEngageRemoteDataTrackingConfig : Swift.Encodable {}
-extension MoEngageCore.MoEngageRemoteDataTrackingConfig : Swift.Decodable {}
-extension MoEngageCore.MoEngageRemoteConfiguration : Swift.Encodable {}
-extension MoEngageCore.MoEngageRemoteConfiguration : Swift.Decodable {}
-extension MoEngageCore.MoEngageRemoteNetworkConfig : Swift.Encodable {}
-extension MoEngageCore.MoEngageRemoteNetworkConfig : Swift.Decodable {}
+extension MoEngageCore.MoEngageRegistrationState : Swift.Equatable {}
+extension MoEngageCore.MoEngageRegistrationState : Swift.Hashable {}
+extension MoEngageCore.MoEngageRegistrationState : Swift.RawRepresentable {}
 @available(*, unavailable, renamed: "Connection")
 extension MoEngageCore.MoEngageNetworkReachability.NetworkStatus : Swift.Equatable {}
 @available(*, unavailable, renamed: "Connection")
 extension MoEngageCore.MoEngageNetworkReachability.NetworkStatus : Swift.Hashable {}
 extension MoEngageCore.MoEngageNetworkReachability.Connection : Swift.Equatable {}
 extension MoEngageCore.MoEngageNetworkReachability.Connection : Swift.Hashable {}
-extension MoEngageCore.MoEngageRemoteLogConfig : Swift.Encodable {}
-extension MoEngageCore.MoEngageRemoteLogConfig : Swift.Decodable {}
 extension MoEngageCore.MoEngageDataCenter : Swift.Equatable {}
 extension MoEngageCore.MoEngageDataCenter : Swift.Hashable {}
 extension MoEngageCore.MoEngageDataCenter : Swift.RawRepresentable {}
-extension MoEngageCore.MoEngageRemoteModuleStatus : Swift.Encodable {}
-extension MoEngageCore.MoEngageRemoteModuleStatus : Swift.Decodable {}
-extension MoEngageCore.MoEngageRemoteAnalyticsConfig : Swift.Encodable {}
-extension MoEngageCore.MoEngageRemoteAnalyticsConfig : Swift.Decodable {}
-extension MoEngageCore.MoEngageRemoteRealTimeTriggerConfig : Swift.Encodable {}
-extension MoEngageCore.MoEngageRemoteRealTimeTriggerConfig : Swift.Decodable {}
 extension MoEngageCore.MoEngageSDKState : Swift.Equatable {}
 extension MoEngageCore.MoEngageSDKState : Swift.Hashable {}
 extension MoEngageCore.MoEngageSDKState : Swift.RawRepresentable {}
