@@ -487,7 +487,6 @@ SWIFT_CLASS("_TtC12MoEngageCore17MoEngageCoreUtils")
 + (void)updateSDKState:(BOOL)isEnabled withConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig;
 + (BOOL)isDataTrackingEnabledForSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
 + (void)setDataTrackingOptOutStatusForSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig optOutStatus:(BOOL)optOutStatus;
-+ (NSString * _Nullable)MD5Hash:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 + (UIApplication * _Nullable)sharedUIApplication SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isAppInBackground;)
 + (BOOL)isAppInBackground SWIFT_WARN_UNUSED_RESULT;
@@ -500,6 +499,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isAppInBackground;)
 + (NSString * _Nonnull)getStringRepresentationWithEvent:(enum MoEngageInAppWhiteList)event SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isUserRegisteredWithSdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
 + (void)updateUserRegisterStateWithState:(enum MoEngageRegistrationState)state sdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig;
+/// Geneartes SHA256 hash string from input string.
+/// \param input The string to be hashed.
+///
+///
+/// returns:
+/// SHA256 hashed string.
++ (NSString * _Nonnull)generateHashValueFrom:(NSString * _Nonnull)input SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

@@ -330,7 +330,6 @@ public enum MoEngageExceptions : Swift.Error {
   @objc public static func updateSDKState(_ isEnabled: Swift.Bool, withConfig sdkConfig: MoEngageCore.MoEngageSDKConfig)
   @objc public static func isDataTrackingEnabled(forSDKConfig sdkConfig: MoEngageCore.MoEngageSDKConfig) -> Swift.Bool
   @objc public static func setDataTrackingOptOutStatus(forSDKConfig sdkConfig: MoEngageCore.MoEngageSDKConfig, optOutStatus: Swift.Bool)
-  @objc public static func MD5Hash(_ string: Swift.String) -> Swift.String?
   @objc public static func sharedUIApplication() -> UIKit.UIApplication?
   @objc public static var isAppInBackground: Swift.Bool
   @objc public static func setIDFAOptOutStatus(forSDKConfig sdkConfig: MoEngageCore.MoEngageSDKConfig, optOutStatus: Swift.Bool)
@@ -344,7 +343,7 @@ public enum MoEngageExceptions : Swift.Error {
   @objc public static func isUserRegistered(sdkConfig: MoEngageCore.MoEngageSDKConfig) -> Swift.Bool
   @objc public static func updateUserRegisterState(state: MoEngageCore.MoEngageRegistrationState, sdkConfig: MoEngageCore.MoEngageSDKConfig)
   public static func getIDFA() -> Swift.String?
-  public static func generateHasValue(str: Swift.String) -> Swift.String
+  @objc public static func generateHashValue(from input: Swift.String) -> Swift.String
   public static func mapJSONToString(data: [Swift.String : Any]) -> Swift.String?
   public static func mapAnyObjectToDict(data: Any?) -> [Swift.String : Any]?
   public static func mapStringToJSON(str: Swift.String) -> [Swift.String : Any]?

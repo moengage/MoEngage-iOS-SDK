@@ -3,6 +3,13 @@
 
 ## Changelog:
 
+### Version 9.14.0 *(30th November 2023)*
+-------------------------------------------
+* Updated hashing algorithm usages to SHA256.
+* BugFix - Handled removing of invalid value from array of user attribute and parsing the rest.
+* BugFix - Fixed redirection URLs being percent encoded.
+* BugFix - Bug fix for processing notifications action for Screen-Navigation from Inbox(Notification Center) is not behaving the same in SDK version 9.xx as it used to be in 7.xx series.
+
 ### Version 9.13.0 *(15th November 2023)*
 -------------------------------------------
 * Added notification impression and click API.
