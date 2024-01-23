@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageMessaging
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -12,6 +12,7 @@ import UIKit
 import UserNotifications
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public protocol MoEngageMessagingDelegate {
   @objc optional func notificationRegistered(withDeviceToken deviceToken: Swift.String)
   @objc optional func notificationReceived(withPushPayload userInfo: [Swift.AnyHashable : Any])
