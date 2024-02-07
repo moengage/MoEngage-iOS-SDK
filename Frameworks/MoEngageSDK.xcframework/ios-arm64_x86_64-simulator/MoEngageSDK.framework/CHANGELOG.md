@@ -3,6 +3,11 @@
 
 ## Changelog:
 
+### Version 9.15.1 *(7th February 2024)*
+-------------------------------------------
+* BugFix - Fixed crash in decryption.
+* BugFix - Fixed the unnecessary new line rendering in notification.
+
 ### Version 9.15.0 *(23rd January 2024)*
 -------------------------------------------
 * Added privacy manifest file
