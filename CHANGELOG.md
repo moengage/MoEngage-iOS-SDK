@@ -3,6 +3,10 @@
 
 ## Changelog:
 
+### Version 9.15.2 *(9th February 2024)*
+-------------------------------------------
+* BugFix - Fixed network client leaking.
+
 ### Version 9.15.1 *(7th February 2024)*
 -------------------------------------------
 * BugFix - Fixed crash in decryption.

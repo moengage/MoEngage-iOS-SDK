@@ -37961,546 +37961,546 @@
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 1818,
+      "offset": 1715,
       "length": 21,
       "value": "\"User Not registered\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 1999,
+      "offset": 1896,
       "length": 17,
       "value": "\"SDK Not enabled\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 2703,
+      "offset": 2600,
       "length": 32,
       "value": "\"\/gatekeepersdk\/v1\/authenticate\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 2774,
+      "offset": 2671,
       "length": 26,
       "value": "\"\/gatekeepersdk\/v1\/verify\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2844,
+      "offset": 2741,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2877,
+      "offset": 2774,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 2920,
+      "offset": 2817,
       "length": 394,
       "value": "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuejZIFAZj58pWiERt2wmXqdJEJ9Vs3x0ipfO8rncfnUF5OtP1pk0biHuSHi2PWtFd25gmvVlGA8tydOn\/eUGsB0Sw8vtTe7\/TD+jbz0afS9cqRKAwatVEV7dEdxpYREeyXLb83sXAvfTqnv+C8OyEieWKopbL+3oALMg\/4t5QebB90jOaPavFbWyBPpSwDjdI2eMZP82ZQr6Micx3aTKvTCp89Tz5ZqfyUqH6E9ybaneATFMM4gno174+fz1IjJ8G0k\/p55\/OM+lNFDspfH2qBdnmdZU4IPqd0IcicG5Z1fDeRvhLi6XAto2WSiRoC8wYrvOCkdZLa+DOQErQVph5wIDAQAB\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 3350,
+      "offset": 3247,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3455,
+      "offset": 3352,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3488,
+      "offset": 3385,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "Array",
-      "offset": 3547,
+      "offset": 3444,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 3618,
+      "offset": 3515,
       "length": 26,
       "value": "\"com.moengage.tokenmanger\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3716,
+      "offset": 3613,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 4511,
+      "offset": 4230,
       "length": 66,
       "value": "\"Get token called for account \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 4576,
+      "offset": 4295,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5183,
+      "offset": 4902,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5206,
+      "offset": 4925,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5394,
+      "offset": 5113,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6045,
+      "offset": 5764,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 6087,
+      "offset": 5806,
       "length": 79,
       "value": "\"Checking to start token fetch for account \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 6165,
+      "offset": 5884,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 6330,
+      "offset": 6049,
       "length": 67,
       "value": "\"Token fetch ended for account \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 6396,
+      "offset": 6115,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6620,
+      "offset": 6339,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 6868,
+      "offset": 6587,
       "length": 83,
       "value": "\"Limit reached for token fetch in this session \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 6950,
+      "offset": 6669,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 7288,
+      "offset": 7007,
       "length": 4,
       "value": "\"v1\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 7404,
+      "offset": 7123,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 7484,
+      "offset": 7203,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "Array",
-      "offset": 7535,
+      "offset": 7254,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 7725,
+      "offset": 7444,
       "length": 18,
       "value": "\"Content-Encoding\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 7880,
+      "offset": 7599,
       "length": 38,
       "value": "\"Failed to gzip data error:  \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 7917,
+      "offset": 7636,
       "length": 33,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 8066,
+      "offset": 7785,
       "length": 99,
       "value": "\"Token fetch request started for account \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 8142,
+      "offset": 7861,
       "length": 1,
       "value": "\", request - \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 8164,
+      "offset": 7883,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 8394,
+      "offset": 8157,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 8456,
+      "offset": 8219,
       "length": 89,
       "value": "\"Token fetch succesful for account \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 8526,
+      "offset": 8289,
       "length": 1,
       "value": "\", token - \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 8544,
+      "offset": 8307,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8802,
+      "offset": 8565,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 8848,
+      "offset": 8611,
       "length": 65,
       "value": "\"Token fetch 401 for account \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 8912,
+      "offset": 8675,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 8978,
+      "offset": 8741,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 9354,
+      "offset": 9117,
       "length": 98,
       "value": "\"Retrying token fetch for account, count - \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 9415,
+      "offset": 9178,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 9451,
+      "offset": 9214,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9655,
+      "offset": 9418,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 9745,
+      "offset": 9508,
       "length": 69,
       "value": "\"Fetch token Retry limit reached \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 9813,
+      "offset": 9576,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 10047,
+      "offset": 9810,
       "length": 9,
       "value": "\"app_key\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 10372,
+      "offset": 10135,
       "length": 81,
       "value": "\"App key dictionary serialisation failed for \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 10452,
+      "offset": 10215,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10988,
+      "offset": 10751,
       "length": 4,
       "value": "2048"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11040,
+      "offset": 10803,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 12013,
+      "offset": 11776,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 12535,
+      "offset": 12298,
       "length": 76,
       "value": "\"Token Refresh is happening for account \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 12610,
+      "offset": 12373,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 12670,
+      "offset": 12433,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 12798,
+      "offset": 12561,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 12934,
+      "offset": 12697,
       "length": 64,
       "value": "\"Token is valid for account \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 12997,
+      "offset": 12760,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13074,
+      "offset": 12837,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13239,
+      "offset": 13002,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 13319,
+      "offset": 13082,
       "length": 80,
       "value": "\"Token is not valid for account Or No token \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 13398,
+      "offset": 13161,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13466,
+      "offset": 13229,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13517,
+      "offset": 13280,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13845,
+      "offset": 13608,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 14133,
+      "offset": 13896,
       "length": 4,
       "value": "\"v1\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 14245,
+      "offset": 14008,
       "length": 17,
       "value": "\"Bearer \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 14261,
+      "offset": 14024,
       "length": 47,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 14495,
+      "offset": 14258,
       "length": 18,
       "value": "\"Content-Encoding\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 14563,
+      "offset": 14326,
       "length": 92,
       "value": "\"Verify Token started for account \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 14632,
+      "offset": 14395,
       "length": 1,
       "value": "\", request - \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 14654,
+      "offset": 14417,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 14874,
+      "offset": 14681,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageTokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 14933,
+      "offset": 14740,
       "length": 5,
       "value": "false"
     },
@@ -47369,98 +47369,98 @@
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageNetworkClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 4564,
+      "offset": 4607,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageNetworkClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 4886,
+      "offset": 4929,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageNetworkClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 5188,
+      "offset": 5231,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageNetworkClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 5248,
+      "offset": 5291,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageNetworkClient.swift",
       "kind": "StringLiteral",
-      "offset": 5318,
+      "offset": 5361,
       "length": 108,
       "value": "\"🛑 Api failed with response \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageNetworkClient.swift",
       "kind": "StringLiteral",
-      "offset": 5380,
+      "offset": 5423,
       "length": 3,
       "value": "\" and error \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageNetworkClient.swift",
       "kind": "StringLiteral",
-      "offset": 5419,
+      "offset": 5462,
       "length": 4,
       "value": "\" 🛑 \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageNetworkClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 5484,
+      "offset": 5527,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageNetworkClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 5693,
+      "offset": 5779,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageNetworkClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 6294,
+      "offset": 6380,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageNetworkClient.swift",
       "kind": "StringLiteral",
-      "offset": 6430,
+      "offset": 6516,
       "length": 107,
       "value": "\"🛑 Api failed with response \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageNetworkClient.swift",
       "kind": "StringLiteral",
-      "offset": 6492,
+      "offset": 6578,
       "length": 3,
       "value": "\" and error \""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageNetworkClient.swift",
       "kind": "StringLiteral",
-      "offset": 6531,
+      "offset": 6617,
       "length": 4,
       "value": "\" 🛑\""
     },
     {
       "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/pocs\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageCore\/MoEngageNetwork\/MoEngageNetworkClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 6793,
+      "offset": 6922,
       "length": 1,
       "value": "1"
     },
