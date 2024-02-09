@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		F9l3FQeca1B38SAE6syvPlwlPsE=
+		8VwxBOIt/MSJ989qv/OTeMnkBAI=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		jbKWE5rj+jYos/OEtYeWPclLo58=
+		hIeft3v8Q5+xOnBfJAOTqPpzfmk=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		F9l3FQeca1B38SAE6syvPlwlPsE=
+		8VwxBOIt/MSJ989qv/OTeMnkBAI=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		sEHh2d1pgzqHAmh4VaxnzDjf+HQ=
+		T1AdaFzcgE4Dc4y70tAOT2194Ds=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -92,7 +92,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			s8sbveZtHmByzz1+wFjnAIyhAFu/aSLd4UD2JKw2FYM=
+			0ZupbnFLaxCLkmf9ZWnCjEia9a5RiJPyIcLOkKDFpKc=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
@@ -120,14 +120,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X6wUhpMGlx+o/4STTRltF2boYQb/cKGOvlFTR434EdY=
+			nbUl058HD0NzQStEXTM3MG73R2VKOOIb8Ylqvc7wAo4=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s8sbveZtHmByzz1+wFjnAIyhAFu/aSLd4UD2JKw2FYM=
+			0ZupbnFLaxCLkmf9ZWnCjEia9a5RiJPyIcLOkKDFpKc=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
@@ -155,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UJ4L6/jYRu3M+bs7J23R0X7AJVV1iVhEVB1ZceV2dRw=
+			Zm9YV0b6c/EnLmbQeMxOkw9AkoDdwt8Z3C0/JCmaNCA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
