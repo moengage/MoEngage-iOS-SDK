@@ -9,20 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <MoEngageCore/MoEngageCore-Swift.h>
 
-#define MOLogError(config, st, f, ... )          [MoEngageLogger error:[NSString stringWithFormat:(f), ##__VA_ARGS__] stackTrace:st label:nil sdkInstance:config fileName:[[NSString stringWithUTF8String:__FILE__] lastPathComponent] functionName:NSStringFromSelector(_cmd) lineNumber:__LINE__ columnNumber:0]
+#define MODefaultLog(logLevel, lb, st, msg, ...) [MoEngageLogger logDefaultWithLogLevel:logLevel message:[NSString stringWithFormat:(msg), ##__VA_ARGS__] stackTrace:st label:lb shouldLogContext:YES file:[[NSString stringWithUTF8String:__FILE__] lastPathComponent] method:NSStringFromSelector(_cmd)]
 
-
-#define MOLogInfo(config, f, ... )          [MoEngageLogger info:[NSString stringWithFormat:(f), ##__VA_ARGS__] label:nil sdkInstance:config fileName:[[NSString stringWithUTF8String:__FILE__] lastPathComponent] functionName:NSStringFromSelector(_cmd) lineNumber:__LINE__ columnNumber:0]
-
-
-#define MOLogWarning(config, f, ... )          [MoEngageLogger warning:[NSString stringWithFormat:(f), ##__VA_ARGS__] label:nil sdkInstance:config fileName:[[NSString stringWithUTF8String:__FILE__] lastPathComponent] functionName:NSStringFromSelector(_cmd) lineNumber:__LINE__ columnNumber:0]
-
-
-#define MOLog(config, f, ... )          [MoEngageLogger debug:[NSString stringWithFormat:(f), ##__VA_ARGS__] label:nil sdkInstance:config]
-
-#define MOLogDebug(config, f, ... )     [MoEngageLogger debug:[NSString stringWithFormat:(f), ##__VA_ARGS__] label:nil sdkInstance:config]
-
-#define MOLogVerbose(config, f, ... )   [MoEngageLogger verbose:[NSString stringWithFormat:(f), ##__VA_ARGS__] label:nil sdkInstance:config]
+#define MOLog(logger, logLevel, lb, st, msg, ...)  [logger logWithLogLevel:logLevel message:[NSString stringWithFormat:(msg), ##__VA_ARGS__] stackTrace:st label:lb shouldLogContext:YES file:[[NSString stringWithUTF8String:__FILE__] lastPathComponent] method:NSStringFromSelector(_cmd)]
 
 NS_ASSUME_NONNULL_BEGIN
 

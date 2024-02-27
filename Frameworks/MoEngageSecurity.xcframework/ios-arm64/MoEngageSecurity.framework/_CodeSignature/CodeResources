@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4N/0pAQtOGhGgz1u1KC28uDggnE=
+		42vppFXoZPPya7OjDRqlkiKben8=
 		</data>
 		<key>Modules/MoEngageSecurity.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		2oo6OcKc7GK8aRWTjiEEX8cX/EU=
+		JIhxmCyhDDSDVUOKbYpeW91tcdY=
 		</data>
 		<key>Modules/MoEngageSecurity.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		IxZrKi4f6XarcNCUY1e/3avFzsI=
+		emw53zCVWDtojHBkbWHHEcH88Hs=
 		</data>
 		<key>Modules/MoEngageSecurity.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/MoEngageSecurity.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		IxZrKi4f6XarcNCUY1e/3avFzsI=
+		emw53zCVWDtojHBkbWHHEcH88Hs=
 		</data>
 		<key>Modules/MoEngageSecurity.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Va62aS7bGlauz9qlZLPg1Am/gqo=
+		3CyOu77V6OwRMCByI9LdJaL8WmQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GIYzI5D8STVHgO+GqnrdchxsiJrr0AtjWBfCJz+EU58=
+			1JdM5L+tMYh0xUhTfrNMgUYneCOnbb/ZufA+Xgn261E=
 			</data>
 		</dict>
 		<key>Modules/MoEngageSecurity.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YFr6jQ/Rm1nLxYGfTc0Nz97RIDKuouOchVZU/MqSdNg=
+			yW/al8kp8n1jZ3lUBMb2wIubfdhQihU0nhjlIx3KXbE=
 			</data>
 		</dict>
 		<key>Modules/MoEngageSecurity.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YFr6jQ/Rm1nLxYGfTc0Nz97RIDKuouOchVZU/MqSdNg=
+			yW/al8kp8n1jZ3lUBMb2wIubfdhQihU0nhjlIx3KXbE=
 			</data>
 		</dict>
 		<key>Modules/MoEngageSecurity.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZjwlxjvVLA67V5kB7xBczxhzjvleqiT6PmDcNonNgkE=
+			CbIcFjnfl2d5O3zSFH5mGt0Xox9HsJ9p1UG2JmL3R94=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
