@@ -135,8 +135,8 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc public class MoEngageProperties : ObjectiveC.NSObject {
-  @objc public init(withAttributes attributesDict: Swift.Dictionary<Swift.String, Any>? = nil)
-  @objc public func updateAttributes(withPluginPayload payloadDict: Swift.Dictionary<Swift.String, Any>?)
+  @objc public init(withAttributes attributesDict: [Swift.String : Any]? = nil)
+  @objc public func updateAttributes(withPluginPayload payloadDict: [Swift.String : Any]?)
   @objc public func addAttribute(_ attrVal: Any?, withName attrName: Swift.String)
   @objc public func addLocationAttribute(_ attrVal: MoEngageAnalytics.MoEngageGeoLocation, withName attrName: Swift.String)
   @objc public func addDateAttribute(_ attrVal: Foundation.Date, withName attrName: Swift.String)

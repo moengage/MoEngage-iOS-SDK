@@ -177,7 +177,7 @@ public class MoEngagePushRichExpandedMode {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MoEngageMessagingUtils : ObjectiveC.NSObject {
-  public static func getStatsAttributes(fromPayloadDict payloadDict: Swift.Dictionary<Swift.AnyHashable, Any>) -> Swift.Dictionary<Swift.String, Any>
+  public static func getStatsAttributes(fromPayloadDict payloadDict: [Swift.AnyHashable : Any]) -> [Swift.String : Any]
   public static func addEntryToInbox(payload: MoEngageMessaging.MoEngagePushPayload, sdkInstance: MoEngageCore.MoEngageSDKInstance)
   public static func fetchAppIdFromPushPayload(payload: [Swift.AnyHashable : Any]) -> Swift.String?
   @objc override dynamic public init()
@@ -203,7 +203,7 @@ public class MoEngagePushCard {
 }
 public class MoEngagePushPayload {
   public var pushPayload: [Swift.AnyHashable : Any]
-  public var moengageDict: Swift.Dictionary<Swift.String, Any>
+  public var moengageDict: [Swift.String : Any]
   public var mediaAttachment: Swift.String?
   public var mediaType: Swift.String?
   public var richPush: MoEngageMessaging.MoEngageRichPush?
@@ -214,8 +214,8 @@ public class MoEngagePushPayload {
   public var richLandingUrl: Swift.String?
   public var couponCode: Swift.String?
   public var inAppV2CID: Swift.String?
-  public var inAppV3Dict: Swift.Dictionary<Swift.String, Any>?
-  public var customKVPair: Swift.Dictionary<Swift.String, Any>?
+  public var inAppV3Dict: [Swift.String : Any]?
+  public var customKVPair: [Swift.String : Any]?
   public init(withPushPayload payload: [Swift.AnyHashable : Any]) throws
   @objc deinit
 }
@@ -244,7 +244,7 @@ public class MoEngagePushAction {
   public var actionName: MoEngageMessaging.MoEngageActionName?
   public var actionType: MoEngageMessaging.MoEngageActionType?
   public var value: Swift.String?
-  public var kvPairs: Swift.Dictionary<Swift.String, Any>?
+  public var kvPairs: [Swift.String : Any]?
   public init(_ actionDict: [Swift.String : Any]) throws
   @objc deinit
 }

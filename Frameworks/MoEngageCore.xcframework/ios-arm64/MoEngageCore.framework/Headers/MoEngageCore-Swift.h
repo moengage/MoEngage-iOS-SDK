@@ -303,13 +303,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-
-SWIFT_PROTOCOL("_TtP12MoEngageCore28ApplicationLifeCycleProtocol_")
-@protocol ApplicationLifeCycleProtocol
-- (void)applicationEnteredBackground;
-@end
-
-
 @class NSString;
 
 /// Meta-data related to your MoEngage account.
@@ -355,6 +348,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageAnal
 - (void)removeEncryptedFolderWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 - (void)resetDataAfterUnRegistrationWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 - (void)syncExistingDataBeforeUnRegisterationWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance withCompletionBlock:(void (^ _Nullable)(BOOL))completionBlock;
+@end
+
+
+SWIFT_CLASS("_TtC12MoEngageCore22MoEngageAsyncOperation")
+@interface MoEngageAsyncOperation : NSOperation
+@property (nonatomic, readonly, getter=isAsynchronous) BOOL asynchronous;
+@property (nonatomic, readonly, getter=isExecuting) BOOL executing;
+@property (nonatomic, readonly, getter=isFinished) BOOL finished;
+- (void)start;
+- (void)cancel;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -413,6 +417,31 @@ SWIFT_CLASS("_TtC12MoEngageCore29MoEngageConfigDelegateHandler")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+enum MoEngageLoggerType : NSInteger;
+
+/// Model class to enable console logging and logLevel
+SWIFT_CLASS("_TtC12MoEngageCore24MoEngageConsoleLogConfig")
+@interface MoEngageConsoleLogConfig : NSObject
+/// Bool to enable/disable console logging
+@property (nonatomic, readonly) BOOL isLoggingEnabled;
+/// MoEngageLoggerType to enable console logging of ‘loglevel’ type and above.
+@property (nonatomic, readonly) enum MoEngageLoggerType loglevel;
+/// Initialize instance of MoEngageConsoleLogConfig
+/// \param isLoggingEnabled Bool value to enable/disable console logs.
+///
+/// \param loglevel <code>MoEngageLoggerType</code> to enable console logging of ‘loglevel’ type and above.
+///
+- (nonnull instancetype)initWithIsLoggingEnabled:(BOOL)isLoggingEnabled loglevel:(enum MoEngageLoggerType)loglevel OBJC_DESIGNATED_INITIALIZER;
+/// Returns instance of type <code>MoEngageConsoleLogConfig</code> with default configuration
+///
+/// returns:
+/// Instance of type <code>MoEngageConsoleLogConfig</code> with console logging disabled and logLevel as info.
+/// :nodoc:
++ (MoEngageConsoleLogConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 /// :nodoc:
 SWIFT_CLASS("_TtC12MoEngageCore17MoEngageCoreCache")
@@ -444,9 +473,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) dispatch_que
 - (BOOL)isSDKEnabledForInstanceWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)isDeviceUniqueIDPresentInKeyChain SWIFT_WARN_UNUSED_RESULT;
 - (void)dismissRichLandingWebViewControllerWithAnimation:(BOOL)animate;
-- (void)enableLogs:(BOOL)enable;
-- (void)enableLogs:(BOOL)enable forAppID:(NSString * _Nullable)appID;
-- (void)enableDefaultConsoleLogger:(BOOL)enable;
 @end
 
 @class MoEngageIntegrationInfo;
@@ -488,6 +514,7 @@ SWIFT_CLASS("_TtC12MoEngageCore17MoEngageCoreUtils")
 + (void)openRichLandingWithUrl:(NSURL * _Nullable)url;
 + (NSString * _Nonnull)getMoEngageSDKVersion SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getAppVersion SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)getMainTargetAppVersion SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getAppBundleId SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getIDFV SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getDeviceModel SWIFT_WARN_UNUSED_RESULT;
@@ -500,6 +527,7 @@ SWIFT_CLASS("_TtC12MoEngageCore17MoEngageCoreUtils")
 + (NSString * _Nonnull)generateSDKUniqueID SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isSdkEnabledForInstanceWithConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
 + (enum MoEngageSDKState)fetchMoEngageSDKState:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)isAnalyticsEnabledWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance SWIFT_WARN_UNUSED_RESULT;
 + (void)updateUserDefaultWithSDKState:(BOOL)isSDKEnabled forSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig;
 + (void)updateSDKState:(BOOL)isEnabled withConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig;
 + (BOOL)isDataTrackingEnabledForSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig SWIFT_WARN_UNUSED_RESULT;
@@ -525,6 +553,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isAppInBackground;)
 + (NSString * _Nonnull)generateHashValueFrom:(NSString * _Nonnull)input SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 /// Data-center to which the moengage data should flow.
 typedef SWIFT_ENUM(NSInteger, MoEngageDataCenter, open) {
@@ -748,6 +777,14 @@ SWIFT_CLASS("_TtC12MoEngageCore31MoEngageEventConditionEvaluator")
 @end
 
 
+SWIFT_CLASS("_TtC12MoEngageCore29MoEngageGeneralAsyncOperation")
+@interface MoEngageGeneralAsyncOperation : MoEngageAsyncOperation
+- (void)main;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 /// :nodoc:
 SWIFT_CLASS("_TtC12MoEngageCore23MoEngageGeofenceHandler")
 @interface MoEngageGeofenceHandler : NSObject
@@ -786,6 +823,8 @@ SWIFT_CLASS("_TtC12MoEngageCore19MoEngageInAppConfig")
 @interface MoEngageInAppConfig : NSObject
 /// Inset value for nudge placement
 @property (nonatomic, readonly) CGFloat safeAreaInset;
+/// :nodoc:
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -862,6 +901,8 @@ SWIFT_CLASS("_TtC12MoEngageCore22MoEngageKeyChainConfig")
 /// \param groupName Keychain sharing name as set in Capabilities.
 ///
 - (nonnull instancetype)initWithGroupName:(NSString * _Nonnull)groupName OBJC_DESIGNATED_INITIALIZER;
+/// :nodoc:
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -880,12 +921,43 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageLife
 /// :nodoc:
 SWIFT_CLASS("_TtC12MoEngageCore14MoEngageLogger")
 @interface MoEngageLogger : NSObject
-+ (void)verbose:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkInstance:(MoEngageSDKInstance * _Nullable)sdkInstance;
-+ (void)debug:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkInstance:(MoEngageSDKInstance * _Nullable)sdkInstance;
-+ (void)info:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkInstance:(MoEngageSDKInstance * _Nullable)sdkInstance fileName:(NSString * _Nonnull)fileName functionName:(NSString * _Nonnull)functionName lineNumber:(NSInteger)lineNumber columnNumber:(NSInteger)columnNumber;
-+ (void)warning:(NSString * _Nullable)msg label:(NSString * _Nullable)label sdkInstance:(MoEngageSDKInstance * _Nullable)sdkInstance fileName:(NSString * _Nonnull)fileName functionName:(NSString * _Nonnull)functionName lineNumber:(NSInteger)lineNumber columnNumber:(NSInteger)columnNumber;
-+ (void)error:(NSString * _Nullable)msg stackTrace:(NSArray<NSString *> * _Nullable)stackTrace label:(NSString * _Nullable)label sdkInstance:(MoEngageSDKInstance * _Nullable)sdkInstance fileName:(NSString * _Nonnull)fileName functionName:(NSString * _Nonnull)functionName lineNumber:(NSInteger)lineNumber columnNumber:(NSInteger)columnNumber;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSdkInstanceTag:(NSString * _Nonnull)sdkInstanceTag OBJC_DESIGNATED_INITIALIZER;
+/// Method for logging instance specific logs.
+/// \param logLevel <code>MoEngageLoggerType</code> to log the information with provided ‘logLevel’ value. Defaults to <code>.verbose</code>.
+///
+/// \param message The message to log of <code>String</code> type.
+///
+/// \param stackTrace An optional array of <code>String</code> representing the stack trace to be sent to backend when remote logging.
+///
+/// \param label Optional <code>String</code> to add the module tag if required.
+///
+/// \param shouldLogContext Bool value to enable/disable context. Defaults to <code>true</code>.
+///
+/// \param file The file name where the log message was called.
+///
+/// \param method The method name where the log message was called.
+/// :nodoc:
+///
+- (void)logWithLogLevel:(enum MoEngageLoggerType)logLevel message:(NSString * _Nonnull)message stackTrace:(NSArray<NSString *> * _Nullable)stackTrace label:(NSString * _Nullable)label shouldLogContext:(BOOL)shouldLogContext file:(NSString * _Nonnull)file method:(NSString * _Nonnull)method;
+/// Method for logging default (not instance specific)  logs.
+/// \param logLevel <code>MoEngageLoggerType</code> to log the information with provided ‘logLevel’ value. Defaults to <code>.verbose</code>.
+///
+/// \param message The message to log of <code>String</code> type.
+///
+/// \param stackTrace An optional array of <code>String</code> representing the stack trace to be sent to backend when remote logging.
+///
+/// \param label Optional <code>String</code> to add the module tag if required.
+///
+/// \param shouldLogContext Bool value to enable/disable context. Defaults to <code>true</code>.
+///
+/// \param file The file name where the log message was called.
+///
+/// \param method The method name where the log message was called.
+/// :nodoc:
+///
++ (void)logDefaultWithLogLevel:(enum MoEngageLoggerType)logLevel message:(NSString * _Nonnull)message stackTrace:(NSArray<NSString *> * _Nullable)stackTrace label:(NSString * _Nullable)label shouldLogContext:(BOOL)shouldLogContext file:(NSString * _Nonnull)file method:(NSString * _Nonnull)method;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 /// :nodoc:
@@ -944,37 +1016,6 @@ SWIFT_CLASS("_TtC12MoEngageCore34MoEngageNetworkAuthorizationConfig")
 
 
 /// :nodoc:
-SWIFT_CLASS("_TtC12MoEngageCore21MoEngageNetworkClient")
-@interface MoEngageNetworkClient : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSURLSession;
-@class NSURLAuthenticationChallenge;
-@class NSURLCredential;
-
-@interface MoEngageNetworkClient (SWIFT_EXTENSION(MoEngageCore)) <NSURLSessionDelegate>
-- (void)URLSession:(NSURLSession * _Nonnull)session didReceiveChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
-@end
-
-@class NSURLRequest;
-@class NSData;
-
-/// :nodoc:
-SWIFT_PROTOCOL("_TtP12MoEngageCore30MoEngageNetworkRequestProtocol_")
-@protocol MoEngageNetworkRequestProtocol
-- (void)executeRequest:(NSURLRequest * _Nonnull)request withConfigController:(MoEngageSDKInstance * _Nonnull)configController completionHandler:(void (^ _Nonnull)(BOOL, NSInteger, NSDictionary * _Nullable))completionHandler;
-- (void)downloadImageURL:(NSURL * _Nonnull)imageURL forSdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig dataCompletionHandler:(void (^ _Nonnull)(BOOL, NSData * _Nullable))dataCompletionHandler;
-@end
-
-
-@interface MoEngageNetworkClient (SWIFT_EXTENSION(MoEngageCore)) <MoEngageNetworkRequestProtocol>
-- (void)executeRequest:(NSURLRequest * _Nonnull)request withConfigController:(MoEngageSDKInstance * _Nonnull)configController completionHandler:(void (^ _Nonnull)(BOOL, NSInteger, NSDictionary * _Nullable))completionHandler;
-- (void)downloadImageURL:(NSURL * _Nonnull)imageURL forSdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig dataCompletionHandler:(void (^ _Nonnull)(BOOL, NSData * _Nullable))dataCompletionHandler;
-@end
-
-
-/// :nodoc:
 SWIFT_CLASS("_TtC12MoEngageCore28MoEngageNetworkConfiguration")
 @interface MoEngageNetworkConfiguration : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1007,19 +1048,6 @@ SWIFT_CLASS("_TtC12MoEngageCore33MoEngageNetworkDataSecurityConfig")
 /// Instance of MoEngageNetworkDataSecurityConfig with encryption disabled
 /// :nodoc:
 + (MoEngageNetworkDataSecurityConfig * _Nonnull)defaultConfig SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-enum MoEngageNetworkService : NSInteger;
-
-/// :nodoc:
-SWIFT_CLASS("_TtC12MoEngageCore22MoEngageNetworkRequest")
-@interface MoEngageNetworkRequest : NSObject
-- (nonnull instancetype)init:(MoEngageSDKConfig * _Nonnull)sdkConfig configController:(MoEngageSDKInstance * _Nonnull)configController serviceType:(enum MoEngageNetworkService)serviceType params:(NSDictionary<NSString *, id> * _Nullable)params additionalHeaders:(NSDictionary<NSString *, id> * _Nullable)additionalHeaders requestBody:(NSDictionary<NSString *, id> * _Nullable)requestBody additionalPathComponent:(NSString * _Nullable)additionalPathComponent OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithSDKConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig OBJC_DESIGNATED_INITIALIZER;
-- (void)executeWithShouldAddJWT:(BOOL)shouldAddJWT completionHandler:(void (^ _Nonnull)(BOOL, NSDictionary * _Nullable))completionHandler;
-- (void)executeWithShouldAddJWT:(BOOL)shouldAddJWT withCompletionBlockWithResponseCode:(void (^ _Nonnull)(BOOL, NSInteger, NSDictionary * _Nullable))completionBlock;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1066,7 +1094,6 @@ SWIFT_CLASS("_TtC12MoEngageCore28MoEngageNetworkRequestConfig")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-
 /// :nodoc:
 typedef SWIFT_ENUM(NSInteger, MoEngageNetworkService, open) {
   MoEngageNetworkServiceGetConfig = 0,
@@ -1090,6 +1117,35 @@ typedef SWIFT_ENUM(NSInteger, MoEngageNetworkService, open) {
   MoEngageNetworkServiceUnregister = 18,
 };
 
+@class NSURLSession;
+@class NSURLAuthenticationChallenge;
+@class NSURLCredential;
+
+/// Stores session level delegates and propagates callbacks.
+/// :nodoc:
+SWIFT_CLASS("_TtC12MoEngageCore35MoEngageNetworkSessionDelegateStore")
+@interface MoEngageNetworkSessionDelegateStore : NSObject
+/// Handles auth challenge callback form URLSession.
+/// \param session The current session.
+///
+/// \param challenge The challenge recieved.
+///
+/// \param completionHandler The handling callback.
+///
+- (void)URLSession:(NSURLSession * _Nonnull)session didReceiveChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Stores task delegates.
+/// :nodoc:
+SWIFT_CLASS("_TtC12MoEngageCore32MoEngageNetworkTaskDelegateStore")
+@interface MoEngageNetworkTaskDelegateStore : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 /// :nodoc:
 SWIFT_CLASS("_TtC12MoEngageCore20MoEngageNetworkUtils")
@@ -1100,8 +1156,9 @@ SWIFT_CLASS("_TtC12MoEngageCore20MoEngageNetworkUtils")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-/// :nodoc:
+/// Integration Partners for MoEngage SDK.
 typedef SWIFT_ENUM(NSInteger, MoEngagePartnerIntegrationType, open) {
+/// Integration Partner <a href="https://segment.com/">Segment</a>
   MoEngagePartnerIntegrationTypeSegment = 0,
 };
 
@@ -1294,8 +1351,6 @@ SWIFT_CLASS("_TtC12MoEngageCore17MoEngageSDKConfig")
 /// True if instance in running in Debug environment else false
 /// :nodoc:
 @property (nonatomic, readonly) BOOL isTestEnvironment;
-/// Pass true to show the sdk logs in Xcode console
-@property (nonatomic) BOOL enableLogs;
 /// Configuration for InApp Campaigns.
 @property (nonatomic, strong) MoEngageInAppConfig * _Nonnull inAppConfig;
 /// Configuration for SDK Storage
@@ -1306,6 +1361,8 @@ SWIFT_CLASS("_TtC12MoEngageCore17MoEngageSDKConfig")
 @property (nonatomic, strong) MoEngageUserRegistrationConfig * _Nonnull userRegistrationConfig;
 /// Configuration for Network Request.
 @property (nonatomic, strong) MoEngageNetworkRequestConfig * _Nonnull networkConfig;
+/// Configuration for Console Log
+@property (nonatomic, strong) MoEngageConsoleLogConfig * _Nonnull consoleLogConfig;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// Initialize instance of MoEngageSDKConfig
@@ -1414,11 +1471,13 @@ SWIFT_CLASS("_TtC12MoEngageCore19MoEngageSDKInstance")
 @interface MoEngageSDKInstance : NSObject
 @property (nonatomic, strong) MoEngageSDKConfig * _Nonnull sdkConfig;
 @property (nonatomic, readonly, strong) dispatch_queue_t _Nonnull sdkQueue;
+@property (nonatomic, readonly, strong) MoEngageLogger * _Nonnull logger;
 - (void)updateRemoteConfig:(MoEngageRemoteConfiguration * _Nonnull)config;
 - (MoEngageRemoteConfiguration * _Nonnull)getRemoteConfig SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 /// Enum to set the SDK State
 typedef SWIFT_ENUM(NSInteger, MoEngageSDKState, open) {
@@ -1450,6 +1509,7 @@ SWIFT_CLASS("_TtC12MoEngageCore22MoEngageSDKStateHelper")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSData;
 
 /// :nodoc:
 /// A configuration type to support SSL pinning validation.
@@ -1645,7 +1705,6 @@ SWIFT_CLASS("_TtC12MoEngageCore22MoEngageWebViewHandler")
 - (void)safariViewControllerDidFinish:(SFSafariViewController * _Nonnull)controller;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 
 
