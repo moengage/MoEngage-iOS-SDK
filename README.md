@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/MoEngage-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/MoEngage-iOS-SDK)
 
 ## Developer Docs
-Please refer to our developer docs to know how to make use of our SDK to track Events and User Attributes, to implement Push Notification and InApps: [link]([https://docs.moengage.com/docs/sdk-integration](https://developers.moengage.com/hc/en-us/articles/4403900743828-SDK-Integration)).
+Please refer to our developer docs to know how to make use of our SDK to track Events and User Attributes, to implement Push Notification and InApps: [link]([[https://docs.moengage.com/docs/sdk-integration](https://developers.moengage.com/hc/en-us/articles/4403900743828-SDK-Integration)](https://developers.moengage.com/hc/en-us/articles/4403900743828-SDK-Integration)).
 
 ## Change Log
 See [SDK Change Log](https://github.com/moengage/MoEngage-iOS-SDK/blob/master/CHANGELOG.md) for information on every released version.
