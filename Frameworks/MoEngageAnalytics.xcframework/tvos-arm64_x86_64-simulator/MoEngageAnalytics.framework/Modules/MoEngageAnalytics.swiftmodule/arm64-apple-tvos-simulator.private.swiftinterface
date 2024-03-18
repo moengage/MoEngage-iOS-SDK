@@ -2,8 +2,6 @@
 // swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-tvos11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageAnalytics
 // swift-module-flags-ignorable: -enable-bare-slash-regex
-import AdSupport
-import AppTrackingTransparency
 import CommonCrypto
 import Foundation
 import MoEngageCore
@@ -53,6 +51,9 @@ import _SwiftConcurrencyShims
   override public func resetDataAfterUnRegistration(sdkInstance: MoEngageCore.MoEngageSDKInstance)
   override public func syncExistingDataBeforeUnRegisteration(sdkInstance: MoEngageCore.MoEngageSDKInstance, withCompletionBlock completionBlock: ((Swift.Bool) -> Swift.Void)? = nil)
   @objc deinit
+}
+@objc public protocol MoEngageAnalyticsCallBack {
+  @objc optional func didLogOut(from accountMeta: MoEngageCore.MoEngageAccountMeta)
 }
 @_inheritsConvenienceInitializers @objc public class MoEngageSDKAnalytics : ObjectiveC.NSObject {
   @objc public static let sharedInstance: MoEngageAnalytics.MoEngageSDKAnalytics
@@ -120,6 +121,7 @@ import _SwiftConcurrencyShims
   @objc public func disableIDFVTracking(forAppID appID: Swift.String? = nil)
   @objc public func disableIDFVTracking()
   @objc public func processURL(_ url: Foundation.URL?)
+  @objc public func setDelegate(delegate: any MoEngageAnalytics.MoEngageAnalyticsCallBack, forAppID appID: Swift.String? = nil)
   @objc override dynamic public init()
   @objc deinit
 }

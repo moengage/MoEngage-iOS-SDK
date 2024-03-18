@@ -299,6 +299,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class MoEngageAccountMeta;
+
+/// Protocol for all Analytics related Events
+SWIFT_PROTOCOL("_TtP17MoEngageAnalytics25MoEngageAnalyticsCallBack_")
+@protocol MoEngageAnalyticsCallBack
+@optional
+/// Callback received when Force Logout is done
+/// \param accountMeta MoEngageAccount information
+///
+- (void)didLogOutFrom:(MoEngageAccountMeta * _Nonnull)accountMeta;
+@end
+
 @class NSString;
 
 /// :nodoc:
@@ -711,6 +723,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKA
 /// \param url URL that contains source information in query params
 ///
 - (void)processURL:(NSURL * _Nullable)url;
+/// Set the Analytics delegate to get the callback for various Analytics events
+/// \param delegate Instance that confirms to <code>MoEngageAnalyticsProtocol</code>
+///
+/// \param appID Optional Account Identifier
+///
+- (void)setDelegateWithDelegate:(id <MoEngageAnalyticsCallBack> _Nonnull)delegate forAppID:(NSString * _Nullable)appID;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1033,6 +1051,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class MoEngageAccountMeta;
+
+/// Protocol for all Analytics related Events
+SWIFT_PROTOCOL("_TtP17MoEngageAnalytics25MoEngageAnalyticsCallBack_")
+@protocol MoEngageAnalyticsCallBack
+@optional
+/// Callback received when Force Logout is done
+/// \param accountMeta MoEngageAccount information
+///
+- (void)didLogOutFrom:(MoEngageAccountMeta * _Nonnull)accountMeta;
+@end
+
 @class NSString;
 
 /// :nodoc:
@@ -1445,6 +1475,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKA
 /// \param url URL that contains source information in query params
 ///
 - (void)processURL:(NSURL * _Nullable)url;
+/// Set the Analytics delegate to get the callback for various Analytics events
+/// \param delegate Instance that confirms to <code>MoEngageAnalyticsProtocol</code>
+///
+/// \param appID Optional Account Identifier
+///
+- (void)setDelegateWithDelegate:(id <MoEngageAnalyticsCallBack> _Nonnull)delegate forAppID:(NSString * _Nullable)appID;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

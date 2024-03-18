@@ -2,8 +2,6 @@
 // swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-tvos11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageCore
 // swift-module-flags-ignorable: -enable-bare-slash-regex
-import AdSupport
-import AppTrackingTransparency
 import CommonCrypto
 import Foundation
 @_exported import MoEngageCore
@@ -16,6 +14,12 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import zlib
+public struct MoEngagePlatformInfo {
+  public let platformType: Swift.String
+  public let osType: Swift.String?
+  public func asRequestPayload() -> [Swift.String : Swift.String]
+  public static func current() -> MoEngageCore.MoEngagePlatformInfo
+}
 @objc public class MoEngageUserRegistrationStatus : ObjectiveC.NSObject {
   @objc final public let accountMeta: MoEngageCore.MoEngageAccountMeta
   @objc public var isUserRegistered: Swift.Bool
@@ -591,6 +595,13 @@ public struct MoEngageCoreConstants {
     public static let eventTrackingPref: Swift.String
     public static let requestID: Swift.String
   }
+  public enum ConditionEvaluatorConstants {
+    public static let appVersion: Swift.String
+    public static let sdkVersion: Swift.String
+    public static let platform: Swift.String
+    public static let platformiOS: Swift.String
+    public static let eventAttributes: Swift.String
+  }
 }
 @objc public enum MoEngageInAppWhiteList : Swift.Int {
   case inAppShown
@@ -693,6 +704,7 @@ public class JSONCodingKey : Swift.CodingKey {
   @objc deinit
 }
 public class JSONAny : Swift.Codable {
+  final public let value: Any
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -719,6 +731,11 @@ public class JSONAny : Swift.Codable {
     @objc get
   }
   @objc deinit
+}
+public struct MoEngageNetworkConstants {
+  public struct APIRequestBodyKeys {
+    public static let osType: Swift.String
+  }
 }
 @objc @_hasMissingDesignatedInitializers public class MoEngageRemoteSecurityConfig : ObjectiveC.NSObject, MoEngageCore.MoEngageDictionaryConvertible {
   final public let encryptionKey: Swift.String
@@ -1024,6 +1041,7 @@ public enum MoEngageExceptions : Swift.Error {
   public static func mapBase64ToJSON(str: Swift.String) -> [Swift.String : Any]?
   public static func getIntegrationInfoFromAppGroupId(sdkConfig: MoEngageCore.MoEngageSDKConfig) -> [[Swift.String : Any]]?
   public static func getStringFromHTML(_ htmlString: Swift.String) -> Swift.String?
+  public static func getDoubleValue(from string: Swift.String) -> Swift.Double?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -1133,6 +1151,14 @@ extension MoEngageCore.MoEngageNetworkTask {
   open func migrateDataFromNoNEncryptionToEncryption(sdkInstance: MoEngageCore.MoEngageSDKInstance, currentSDKInstance: MoEngageCore.MoEngageSDKInstance)
   open func removeEncryptedFolder(sdkInstance: MoEngageCore.MoEngageSDKInstance)
   @objc deinit
+}
+public struct MoEngageFolderDataHandler {
+  public init(sdkInstance: MoEngageCore.MoEngageSDKInstance, folderName: Swift.String, isFromExtension: Swift.Bool = false)
+  public func getData(file: Swift.String) throws -> Foundation.Data
+  public func saveData(response: [Swift.String : Any], fileName: Swift.String)
+  public func doesPathExist(for file: Swift.String) -> Swift.Bool
+  public func getFolderPath() -> Swift.String?
+  public func getFilePath(for file: Swift.String) -> Swift.String?
 }
 @_hasMissingDesignatedInitializers public class MoEngageInstanceProvider {
   public static func getSDKInstance(appId: Swift.String? = nil, completionBlock: @escaping (MoEngageCore.MoEngageSDKInstance?) -> Swift.Void)
