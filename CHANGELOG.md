@@ -10,7 +10,7 @@
 * Provided callback when force logout is done.
 * Added tvOS platform identifier changes
 * Remove linking to AdSupport by default.
-* BugFix - MOEN-30596: Fixed crash in network session delegate.
+* BugFix - Fixed crash in network session delegate.
 
 ### Version 9.16.0 *(27th February 2024)*
 -------------------------------------------
