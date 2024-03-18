@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iqW+SxYkGiBAXxHwNhm8UJofBfc=
+		R+2TI3X0U2+N0+3P3DILECxwRe8=
 		</data>
 		<key>Modules/MoEngageSecurity.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		UkxZ0EnuxbTTDU2MYdm1JoOrHOM=
+		paXANOBeNqsHMyZC7FLZegZZKAY=
 		</data>
 		<key>Modules/MoEngageSecurity.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/MoEngageSecurity.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		UkxZ0EnuxbTTDU2MYdm1JoOrHOM=
+		paXANOBeNqsHMyZC7FLZegZZKAY=
 		</data>
 		<key>Modules/MoEngageSecurity.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			h6GgZMXUJ/C34qaiD255LKtRbVfxhtlGA0V9iG4n3eg=
+			8ccyPeCeVAV9h4nrCWtZr02/vk9fEXya77Go3Px69+k=
 			</data>
 		</dict>
 		<key>Modules/MoEngageSecurity.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
@@ -116,7 +116,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			h6GgZMXUJ/C34qaiD255LKtRbVfxhtlGA0V9iG4n3eg=
+			8ccyPeCeVAV9h4nrCWtZr02/vk9fEXya77Go3Px69+k=
 			</data>
 		</dict>
 		<key>Modules/MoEngageSecurity.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>

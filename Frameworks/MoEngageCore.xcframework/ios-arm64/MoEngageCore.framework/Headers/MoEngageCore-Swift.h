@@ -319,6 +319,16 @@ SWIFT_CLASS("_TtC12MoEngageCore19MoEngageAccountMeta")
 - (nonnull instancetype)initWithInstanceID:(NSString * _Nonnull)instanceID OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSUUID;
+
+/// <code>AdSupport</code> bridge for accessing methods without import.
+SWIFT_PROTOCOL("_TtP12MoEngageCore23MoEngageAdSupportBridge_")
+@protocol MoEngageAdSupportBridge <NSObject>
++ (id _Nonnull)sharedManager SWIFT_WARN_UNUSED_RESULT;
+- (NSUUID * _Nonnull)advertisingIdentifier SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isAdvertisingTrackingEnabled SWIFT_WARN_UNUSED_RESULT;
+@end
+
 
 /// :nodoc:
 SWIFT_CLASS("_TtC12MoEngageCore25MoEngageAnalyticsDelegate")
@@ -348,6 +358,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageAnal
 - (void)removeEncryptedFolderWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 - (void)resetDataAfterUnRegistrationWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 - (void)syncExistingDataBeforeUnRegisterationWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance withCompletionBlock:(void (^ _Nullable)(BOOL))completionBlock;
+@end
+
+
+/// <code>AppTrackingTransparency</code> bridge for accessing methods without import.
+SWIFT_PROTOCOL("_TtP12MoEngageCore37MoEngageAppTrackingTransparencyBridge_")
+@protocol MoEngageAppTrackingTransparencyBridge <NSObject>
++ (NSUInteger)trackingAuthorizationStatus SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
