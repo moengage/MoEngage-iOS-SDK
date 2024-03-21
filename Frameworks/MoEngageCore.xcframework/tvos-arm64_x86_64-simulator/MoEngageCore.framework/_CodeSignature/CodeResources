@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EIEjWPr9EMUw0ZXnZbuuU9WRHwo=
+		wpPka/AJxCHuokVy7X8m47DTwMQ=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		RKxPt8/YD1hf9kLa5K54NyxCbWk=
+		RJlXePV6Uv53fidilaWX0fZSI/Y=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		FQWOL9rCiiw/vGLiIW/vcoiMhaw=
+		BW9PY2sBL/PVwqXSNzdUcvAwP9U=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		RKxPt8/YD1hf9kLa5K54NyxCbWk=
+		RJlXePV6Uv53fidilaWX0fZSI/Y=
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		6o/S334/1dZxMh0l2kVRBS8a/aI=
+		ua17G3YzloqNsZGH3GdgPasygB0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -92,7 +92,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pbxnGY7+nKjjkaGWRhz+yEg+MYO9OIZyUy2fJicSB58=
+			9o9bNcbrsBw3orhS1agMU0EHKhkenbfdpJ3zBSv0EsM=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
@@ -120,14 +120,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CDsN4ahBrKCs+IDhR8Sm3p3s09tdD3kFmJECZeQFQO4=
+			IpzrNEe7rSPm69Bq0ylQ9/Nsbnv30QH1OZphS9q9jbg=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pbxnGY7+nKjjkaGWRhz+yEg+MYO9OIZyUy2fJicSB58=
+			9o9bNcbrsBw3orhS1agMU0EHKhkenbfdpJ3zBSv0EsM=
 			</data>
 		</dict>
 		<key>Modules/MoEngageCore.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
@@ -155,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			O0M76rzFB1CoR+sI9+wJj9XBPr6Z1RzLcUXCyBtLnrs=
+			bEPn/MLWmMkEygOIyXBafNkVMFyZOViBqrqrnh/F4WI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
