@@ -1,4 +1,0 @@
-framework module MoEngageMessaging {
-  header "MoEngageMessaging-Swift.h"
-  requires objc
-}
