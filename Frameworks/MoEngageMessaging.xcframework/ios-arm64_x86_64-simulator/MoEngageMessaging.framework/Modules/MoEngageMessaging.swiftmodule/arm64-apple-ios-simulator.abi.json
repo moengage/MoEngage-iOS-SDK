@@ -49,6 +49,23 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "MoEngageCore",
+        "printedName": "MoEngageCore",
+        "declKind": "Import",
+        "moduleName": "MoEngageMessaging"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoEngageMessaging",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "MoEngageMessagingDelegate",
         "printedName": "MoEngageMessagingDelegate",
@@ -5449,12 +5466,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "UserNotifications.UNUserNotificationCenterDelegate?",
+                "printedName": "(any UserNotifications.UNUserNotificationCenterDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "UNUserNotificationCenterDelegate",
-                    "printedName": "UserNotifications.UNUserNotificationCenterDelegate",
+                    "printedName": "any UserNotifications.UNUserNotificationCenterDelegate",
                     "usr": "c:objc(pl)UNUserNotificationCenterDelegate"
                   }
                 ],
@@ -5557,12 +5574,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "MoEngageMessaging.MoEngageMessagingDelegate?",
+                "printedName": "(any MoEngageMessaging.MoEngageMessagingDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MoEngageMessagingDelegate",
-                    "printedName": "MoEngageMessaging.MoEngageMessagingDelegate",
+                    "printedName": "any MoEngageMessaging.MoEngageMessagingDelegate",
                     "usr": "c:@M@MoEngageMessaging@objc(pl)MoEngageMessagingDelegate"
                   }
                 ],
@@ -5594,12 +5611,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "MoEngageMessaging.MoEngageMessagingDelegate?",
+                "printedName": "(any MoEngageMessaging.MoEngageMessagingDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MoEngageMessagingDelegate",
-                    "printedName": "MoEngageMessaging.MoEngageMessagingDelegate",
+                    "printedName": "any MoEngageMessaging.MoEngageMessagingDelegate",
                     "usr": "c:@M@MoEngageMessaging@objc(pl)MoEngageMessagingDelegate"
                   }
                 ],
@@ -9667,1642 +9684,592 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushFileStorage.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushFileStorage.swift",
       "kind": "StringLiteral",
       "offset": 267,
       "length": 6,
       "value": "\"Push\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushFileStorage.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushFileStorage.swift",
       "kind": "StringLiteral",
       "offset": 308,
       "length": 25,
       "value": "\"MoEngagePushImpressions\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushFileStorage.swift",
-      "kind": "BooleanLiteral",
-      "offset": 700,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushFileStorage.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushFileStorage.swift",
       "kind": "StringLiteral",
-      "offset": 1025,
-      "length": 26,
-      "value": "\"Failed to parse the data\""
+      "offset": 360,
+      "length": 18,
+      "value": "\"MoEngagePushCore\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushFileStorage.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1493,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushFileStorage.swift",
-      "kind": "Dictionary",
-      "offset": 1681,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
       "kind": "StringLiteral",
       "offset": 263,
       "length": 20,
       "value": "\"received_epoch_val\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
       "kind": "StringLiteral",
       "offset": 323,
       "length": 27,
       "value": "\"moe_pending_notifications\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
       "kind": "StringLiteral",
       "offset": 386,
       "length": 19,
       "value": "\"receivedCampaigns\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
       "kind": "StringLiteral",
       "offset": 443,
       "length": 21,
       "value": "\"impressionEpochTime\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
       "kind": "IntegerLiteral",
       "offset": 507,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
       "kind": "IntegerLiteral",
       "offset": 512,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
       "kind": "IntegerLiteral",
       "offset": 517,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
       "kind": "IntegerLiteral",
       "offset": 522,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1481,
-      "length": 70,
-      "value": "\"Appending new impression entry for cid - \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1550,
-      "length": 47,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1803,
-      "length": 67,
-      "value": "\"Adding new impression entry for cid - \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1869,
-      "length": 47,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3140,
-      "length": 60,
-      "value": "\"Push Impression for cid \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3183,
-      "length": 3,
-      "value": "\" has not expired\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3274,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3374,
-      "length": 55,
-      "value": "\"Push Impression for cid \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3417,
-      "length": 2,
-      "value": "\" is expired\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushDataManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3503,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 474,
-      "length": 8,
-      "value": "\"%02hhx\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "Dictionary",
-      "offset": 972,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 2707,
-      "length": 47,
-      "value": "\"Push Payload belongs to MoEngage - \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 2753,
-      "length": 47,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2820,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 2905,
-      "length": 55,
-      "value": "\"Push Payload does not belong to MoEngage - \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 2959,
-      "length": 47,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3023,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 3461,
-      "length": 68,
-      "value": "\"Failed to process payload as its MoEngage Silent push - \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 3528,
-      "length": 47,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3599,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 3799,
-      "length": 42,
-      "value": "\"Valid MoEngage push payload - \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 3840,
-      "length": 47,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3911,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 4010,
-      "length": 54,
-      "value": "\"Push payload doesnot belong to MoEngage - \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 4063,
-      "length": 47,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4126,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4443,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4553,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 4620,
-      "length": 49,
-      "value": "\"Dropping the first notification from inbox list\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4753,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5442,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 6009,
-      "length": 45,
-      "value": "\"Saving the entry to inbox - \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 6053,
-      "length": 47,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "Array",
-      "offset": 6722,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 7110,
-      "length": 44,
-      "value": "\"AppId fetched from Push Payload - \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 7153,
-      "length": 47,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 7306,
-      "length": 66,
-      "value": "\"Invalid AppId from Push Payload as it doesnot belong to MoEngage\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 7889,
-      "length": 63,
-      "value": "\"Saved Remote config - \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 7951,
-      "length": 47,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 8330,
-      "length": 64,
-      "value": "\"Failed to serialize remote config object from saved dictionary\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 8879,
-      "length": 64,
-      "value": "\"Impression already tracked for cid \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 8942,
-      "length": 47,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9013,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 9107,
-      "length": 60,
-      "value": "\"Impression not tracked for cid \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 9166,
-      "length": 47,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingUtils.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9239,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngageMessageDelegateHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3232,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngageMessageDelegateHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4952,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngageMessageDelegateHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5611,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngageMessageDelegateHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5766,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngageMessageDelegateHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5810,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngageNotificationStateHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 1853,
-      "length": 65,
-      "value": "\"Class - \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngageNotificationStateHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 1874,
-      "length": 7,
-      "value": "\" doesnot exist to handle the clicked action\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngageNotificationStateHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 2437,
-      "length": 66,
-      "value": "\"Class - \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngageNotificationStateHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 2458,
-      "length": 7,
-      "value": "\" doesnot exist to handle the received action\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Model\/MoEngagePushRichExpandedMode.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/Model\/MoEngagePushRichExpandedMode.swift",
       "kind": "BooleanLiteral",
       "offset": 477,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
       "offset": 319,
       "length": 25,
       "value": "\"tracked_push_preference\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
       "offset": 391,
       "length": 29,
       "value": "\"categories_sent_app_version\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 467,
-      "length": 25,
-      "value": "\"notification_categories\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 572,
+      "offset": 500,
       "length": 17,
       "value": "\"PUSH_PREFERENCE\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 689,
+      "offset": 617,
       "length": 32,
       "value": "\"NOTIFICATION_DISMISSED_IOS_MOE\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 779,
+      "offset": 707,
       "length": 24,
       "value": "\"MOE_NOTIFICATION_SHOWN\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 861,
+      "offset": 789,
       "length": 29,
       "value": "\"DT_CAMPAIGN_SCHEDULE_FAILED\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 948,
+      "offset": 876,
       "length": 23,
       "value": "\"DT_CAMPAIGN_SCHEDULED\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1029,
+      "offset": 957,
       "length": 26,
       "value": "\"NOTIFICATION_OFFLINE_MOE\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1142,
+      "offset": 1070,
       "length": 24,
       "value": "\"push_preference_status\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1209,
+      "offset": 1137,
       "length": 24,
       "value": "\"apns_action_identifier\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1276,
+      "offset": 1204,
       "length": 15,
       "value": "\"template_name\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1402,
+      "offset": 1330,
       "length": 22,
       "value": "\"MOE_DISMISS_CATEGORY\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1463,
+      "offset": 1391,
       "length": 19,
       "value": "\"MOE_PUSH_TEMPLATE\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1560,
+      "offset": 1488,
       "length": 20,
       "value": "\"MOE_DISMISS_ACTION\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1675,
+      "offset": 1603,
       "length": 5,
       "value": "\"aps\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1718,
+      "offset": 1646,
       "length": 10,
       "value": "\"moengage\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1766,
+      "offset": 1694,
       "length": 11,
       "value": "\"app_extra\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1868,
+      "offset": 1796,
       "length": 7,
       "value": "\"alert\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1925,
+      "offset": 1853,
       "length": 7,
       "value": "\"title\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1982,
+      "offset": 1910,
       "length": 10,
       "value": "\"subtitle\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2042,
+      "offset": 1970,
       "length": 6,
       "value": "\"body\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2098,
+      "offset": 2026,
       "length": 7,
       "value": "\"sound\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2155,
+      "offset": 2083,
       "length": 10,
       "value": "\"category\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2267,
+      "offset": 2195,
       "length": 12,
       "value": "\"silentPush\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2325,
+      "offset": 2253,
       "length": 5,
       "value": "\"cid\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2376,
+      "offset": 2304,
       "length": 8,
       "value": "\"app_id\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2430,
+      "offset": 2358,
       "length": 8,
       "value": "\"webUrl\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2484,
+      "offset": 2412,
       "length": 12,
       "value": "\"couponCode\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2542,
+      "offset": 2470,
       "length": 14,
       "value": "\"inbox_expiry\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2602,
+      "offset": 2530,
       "length": 11,
       "value": "\"moe_inapp\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2659,
+      "offset": 2587,
       "length": 15,
       "value": "\"moe_inapp_cid\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2720,
+      "offset": 2648,
       "length": 12,
       "value": "\"media-type\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2781,
+      "offset": 2709,
       "length": 18,
       "value": "\"media-attachment\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2859,
+      "offset": 2787,
       "length": 8,
       "value": "\"isRead\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2914,
+      "offset": 2842,
       "length": 20,
       "value": "\"received_epoch_val\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2981,
+      "offset": 2909,
       "length": 19,
       "value": "\"clicked_epoch_val\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3106,
+      "offset": 3034,
       "length": 14,
       "value": "\"moe_deeplink\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3170,
+      "offset": 3098,
       "length": 12,
       "value": "\"screenName\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3232,
+      "offset": 3160,
       "length": 12,
       "value": "\"screenData\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3352,
+      "offset": 3280,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3406,
+      "offset": 3334,
       "length": 9,
       "value": "\"actions\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3465,
+      "offset": 3393,
       "length": 9,
       "value": "\"widgets\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3524,
+      "offset": 3452,
       "length": 13,
       "value": "\"displayName\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3587,
+      "offset": 3515,
       "length": 16,
       "value": "\"defaultActions\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3653,
+      "offset": 3581,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3709,
+      "offset": 3637,
       "length": 7,
       "value": "\"value\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3766,
+      "offset": 3694,
       "length": 9,
       "value": "\"kvPairs\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3825,
+      "offset": 3753,
       "length": 9,
       "value": "\"content\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3884,
+      "offset": 3812,
       "length": 15,
       "value": "\"stylizedBasic\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3949,
+      "offset": 3877,
       "length": 15,
       "value": "\"imageCarousel\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4014,
+      "offset": 3942,
       "length": 13,
       "value": "\"moeFeatures\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4077,
+      "offset": 4005,
       "length": 10,
       "value": "\"richPush\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4137,
+      "offset": 4065,
       "length": 10,
       "value": "\"navigate\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4197,
+      "offset": 4125,
       "length": 8,
       "value": "\"coupon\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4255,
+      "offset": 4183,
       "length": 10,
       "value": "\"expanded\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4315,
+      "offset": 4243,
       "length": 11,
       "value": "\"autoStart\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4376,
+      "offset": 4304,
       "length": 7,
       "value": "\"cards\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4433,
+      "offset": 4361,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4489,
+      "offset": 4417,
       "length": 7,
       "value": "\"style\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4546,
+      "offset": 4474,
       "length": 9,
       "value": "\"bgColor\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4660,
+      "offset": 4588,
       "length": 5,
       "value": "\"ios\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4715,
+      "offset": 4643,
       "length": 10,
       "value": "\"category\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4775,
+      "offset": 4703,
       "length": 7,
       "value": "\"sound\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4885,
+      "offset": 4813,
       "length": 10,
       "value": "\"deepLink\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4945,
+      "offset": 4873,
       "length": 13,
       "value": "\"richLanding\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5008,
+      "offset": 4936,
       "length": 12,
       "value": "\"screenName\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5140,
+      "offset": 5068,
       "length": 7,
       "value": "\"image\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5197,
+      "offset": 5125,
       "length": 6,
       "value": "\"text\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5253,
+      "offset": 5181,
       "length": 8,
       "value": "\"button\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5359,
+      "offset": 5287,
       "length": 53,
       "value": "\"MoEngageInbox.MoEngageInboxNotificationStateHandler\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5451,
+      "offset": 5379,
       "length": 11,
       "value": "\"MESSAGING\""
     },
     {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushParser.swift",
-      "kind": "StringLiteral",
-      "offset": 1508,
-      "length": 51,
-      "value": "\"Failed to update the content as its not rich push\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushParser.swift",
-      "kind": "StringLiteral",
-      "offset": 4271,
-      "length": 44,
-      "value": "\"Updated MoEngage Push Payload - \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushParser.swift",
-      "kind": "StringLiteral",
-      "offset": 4314,
-      "length": 47,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushParser.swift",
-      "kind": "StringLiteral",
-      "offset": 5267,
-      "length": 51,
-      "value": "\"Failed to update the content as its not rich push\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushParser.swift",
-      "kind": "StringLiteral",
-      "offset": 6353,
-      "length": 4,
-      "value": "\"\n\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageSDKMessaging.swift",
-      "kind": "StringLiteral",
-      "offset": 1503,
-      "length": 25,
-      "value": "\"Push permission granted\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageSDKMessaging.swift",
-      "kind": "StringLiteral",
-      "offset": 1636,
-      "length": 6,
-      "value": "\"-NA-\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageSDKMessaging.swift",
-      "kind": "StringLiteral",
-      "offset": 1844,
-      "length": 50,
-      "value": "\"Push permission denied, with Error: \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageSDKMessaging.swift",
-      "kind": "StringLiteral",
-      "offset": 1893,
-      "length": 47,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageSDKMessaging.swift",
-      "kind": "StringLiteral",
-      "offset": 2866,
-      "length": 9,
-      "value": "\"Dismiss\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageSDKMessaging.swift",
-      "kind": "Array",
-      "offset": 3082,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageSDKMessaging.swift",
-      "kind": "Array",
-      "offset": 3405,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageSDKMessaging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3928,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageSDKMessaging.swift",
-      "kind": "StringLiteral",
-      "offset": 11316,
-      "length": 43,
-      "value": "\"App launch is due to MoEngage Silent Push\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageSDKMessaging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11441,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageSDKMessaging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11551,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageSDKMessaging.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12544,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/Internal\/MoEngagePushFileStorageHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 647,
-      "length": 32,
-      "value": "\"Migrating Push Impression data\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingCoordinator.swift",
+      "filePath": "\/Users\/soumya.mahunt\/Documents\/moengage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingCoordinator.swift",
       "kind": "BooleanLiteral",
       "offset": 390,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingCoordinator.swift",
-      "kind": "StringLiteral",
-      "offset": 2661,
-      "length": 28,
-      "value": "\"Device Token passed as nil\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingCoordinator.swift",
-      "kind": "StringLiteral",
-      "offset": 3135,
-      "length": 65,
-      "value": "\"Device token parsing failed: \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingCoordinator.swift",
-      "kind": "StringLiteral",
-      "offset": 3199,
-      "length": 47,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingCoordinator.swift",
-      "kind": "StringLiteral",
-      "offset": 3926,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingCoordinator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4634,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingCoordinator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4707,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingCoordinator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4777,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingCoordinator.swift",
-      "kind": "StringLiteral",
-      "offset": 5127,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingCoordinator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5554,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 1059,
-      "length": 26,
-      "value": "\"Messaging Module Blocked\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 1430,
-      "length": 26,
-      "value": "\"Messaging Module Blocked\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 1604,
-      "length": 52,
-      "value": "\"========= Push Token 📲 : \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 1645,
-      "length": 9,
-      "value": "\" =========\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 2682,
-      "length": 26,
-      "value": "\"Messaging Module Blocked\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 2847,
-      "length": 26,
-      "value": "\"Push Registration Failed\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2981,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 3399,
-      "length": 26,
-      "value": "\"Messaging Module Blocked\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 4741,
-      "length": 33,
-      "value": "\"Categories Request successfull.\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 5234,
-      "length": 43,
-      "value": "\"Categories Request Failed -- Server Error\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 5649,
-      "length": 58,
-      "value": "\"Categories Request not made due to error in Request Body\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 6328,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6404,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 6437,
-      "length": 9,
-      "value": "\"actions\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 6492,
-      "length": 19,
-      "value": "\"actionsIdentifier\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 6899,
-      "length": 14,
-      "value": "\"query_params\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 6946,
-      "length": 6,
-      "value": "\"data\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7693,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7855,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7912,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7989,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8427,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8582,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8640,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8727,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 10083,
-      "length": 26,
-      "value": "\"Messaging Module Blocked\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12063,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 12234,
-      "length": 30,
-      "value": "\"moe_push_template_click_info\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 12333,
-      "length": 13,
-      "value": "\"campaign_id\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 12448,
-      "length": 9,
-      "value": "\"card_id\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 12618,
-      "length": 30,
-      "value": "\"moe_push_template_click_info\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 13003,
-      "length": 54,
-      "value": "\"Push - Card Actions is Empty, perform default action\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 13642,
-      "length": 9,
-      "value": "\"card_id\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 16161,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 18217,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 18538,
-      "length": 8,
-      "value": "\"Coupon\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 18557,
-      "length": 50,
-      "value": "\"Coupon code : \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 18585,
-      "length": 1,
-      "value": "\" \n Copy coupon code?\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 18688,
-      "length": 6,
-      "value": "\"COPY\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 19102,
-      "length": 8,
-      "value": "\"Cancel\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 19493,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 20583,
-      "length": 5,
-      "value": "\"cid\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 20629,
-      "length": 8,
-      "value": "\"isTest\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 20641,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 21241,
-      "length": 20,
-      "value": "\"Push - Card Action\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 21772,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 22913,
-      "length": 94,
-      "value": "\"Push - Card Screen Navigation Actions with screen name\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 22986,
-      "length": 6,
-      "value": "\"-NA-\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 22993,
-      "length": 3,
-      "value": "\" and KV Pairs\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 23321,
-      "length": 21,
-      "value": "\"Card Action Invalid\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 23478,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 23531,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 24537,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 24567,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 25178,
-      "length": 15,
-      "value": "\"template_name\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 25975,
-      "length": 15,
-      "value": "\"template_name\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 26933,
-      "length": 64,
-      "value": "\"Impression already tracked for cid  - \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 26996,
-      "length": 47,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 27156,
-      "length": 56,
-      "value": "\"Tracking Impression for cid - \""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 27211,
-      "length": 47,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 27483,
-      "length": 47,
-      "value": "\"Failed to create MoEngagePushPayload instance\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 27864,
-      "length": 62,
-      "value": "\"Click Impression will not be tracked for silent notification\""
-    },
-    {
-      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageMessaging\/MoEngageMessagingController.swift",
-      "kind": "StringLiteral",
-      "offset": 28637,
-      "length": 47,
-      "value": "\"Failed to create MoEngagePushPayload instance\""
     }
   ]
 }

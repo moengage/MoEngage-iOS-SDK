@@ -3,6 +3,10 @@
 
 ## Changelog:
 
+### Version 9.17.0 *(8th April March 2024)*
+-------------------------------------------
+* Handled UserDefault storage limit
+
 ### Version 9.16.2 *(21st March 2024)*
 -------------------------------------------
 * Fixed the app rejection issue due to privacy manifest

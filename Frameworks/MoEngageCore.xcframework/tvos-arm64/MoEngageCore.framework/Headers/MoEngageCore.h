@@ -18,3 +18,4 @@ FOUNDATION_EXPORT const unsigned char MoEngageCoreTvOSVersionString[];
 
 
 #import <MoEngageCore/MoEngageInAppDelegate.h>
+#import <MoEngageCore/MoEngageExceptionUtils.h>
