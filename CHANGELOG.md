@@ -3,6 +3,10 @@
 
 ## Changelog:
 
+### Version 9.17.1 *(18th April 2024)*
+-------------------------------------------
+*  Added support to provide optional deep link callback to MoEngageInAppNativeDelegate protocol via MoEngageInAppConfig.
+
 ### Version 9.17.0 *(8th April March 2024)*
 -------------------------------------------
 * Handled UserDefault storage limit
