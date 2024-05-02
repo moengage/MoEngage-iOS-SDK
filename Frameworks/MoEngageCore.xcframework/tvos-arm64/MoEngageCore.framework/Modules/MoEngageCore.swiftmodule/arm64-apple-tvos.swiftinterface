@@ -1244,6 +1244,11 @@ public typealias completionHandler = ((Swift.Bool, [Swift.AnyHashable : Any]?) -
 public typealias completionHandlerWithResponseCode = ((Swift.Bool, Swift.Int, [Swift.AnyHashable : Any]?) -> Swift.Void)
 public typealias dataCompletionHandler = ((Swift.Bool, Foundation.Data?) -> Swift.Void)
 public typealias richNotificationCompletionHandler = ((_ tempURL: Foundation.URL?) -> Swift.Void)
+public struct MoEngageFileSaver {
+  public init()
+  public func save(payload: [Swift.String : Any], to filePath: Swift.String, folderPath: Swift.String, sdkInstance: MoEngageCore.MoEngageSDKInstance, isInstanceSpecific: Swift.Bool)
+  public func fetchFile(from filePath: Swift.String, folderPath: Swift.String, sdkInstance: MoEngageCore.MoEngageSDKInstance, isInstanceSpecific: Swift.Bool) -> MoEngageCore.MoEngageFileData
+}
 @_hasMissingDesignatedInitializers public class MoEngageQueueManager {
   final public let operationQueue: Foundation.OperationQueue
   @objc deinit
