@@ -2,6 +2,12 @@
 =================================
 
 ## Changelog:
+### Version 9.17.2 *(02nd May 2024)*
+-------------------------------------------
+* CrashFix: Fixed migration crash from 8.2.0 to 9.17.0
+* BugFix - Fixed the issue where push token was not being sent in API call when app group id is missing.
+* BugFix - Fixed the issue where API call is made when sdk is disabled.
+* BugFix - Fixed the issue where ReInstall was getting tracked.
 
 ### Version 9.17.1 *(18th April 2024)*
 -------------------------------------------

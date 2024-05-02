@@ -751,6 +751,11 @@ extension MoEngageCore.MoEngageCoreUtils {
   public static func hexToRGB(hex: Swift.String, alpha: Swift.Float = 1.0) -> UIKit.UIColor
   @objc deinit
 }
+public struct MoEngageFileSaver {
+  public init()
+  public func save(payload: [Swift.String : Any], to filePath: Swift.String, folderPath: Swift.String, sdkInstance: MoEngageCore.MoEngageSDKInstance, isInstanceSpecific: Swift.Bool)
+  public func fetchFile(from filePath: Swift.String, folderPath: Swift.String, sdkInstance: MoEngageCore.MoEngageSDKInstance, isInstanceSpecific: Swift.Bool) -> MoEngageCore.MoEngageFileData
+}
 public struct MoEngageFileDataHandler {
   public init(folderPath: Swift.String, filePath: Swift.String, sdkInstance: MoEngageCore.MoEngageSDKInstance, shouldFetchExtensionSharedPath: Swift.Bool = false, isInstanceSpecific: Swift.Bool = false)
   public func fetchData() -> MoEngageCore.MoEngageFileData
