@@ -2,6 +2,12 @@
 =================================
 
 ## Changelog:
+### Version 9.17.3 *(16th May 2024)*
+-------------------------------------------
+* Added DC-06 support.
+* BugFix - Fixed where notification received event was tracked when SDK was disabled.
+* BugFix - Fixed push token migration from 7.x version
+
 ### Version 9.17.2 *(02nd May 2024)*
 -------------------------------------------
 * CrashFix: Fixed migration crash from 8.2.0 to 9.17.0

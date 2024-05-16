@@ -52,6 +52,7 @@ public struct MoEngageFileData {
   case data_center_04
   case data_center_05
   case data_center_100
+  case data_center_06
   public static func getDataCenter(dataCenter: Swift.String) -> MoEngageCore.MoEngageDataCenter
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
