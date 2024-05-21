@@ -2,6 +2,11 @@
 =================================
 
 ## Changelog:
+### Version 9.17.4 *(21st May 2024)*
+-------------------------------------------
+* Adding support of Array in triggered-based InApps.
+* BugFix - Fixed geofence enabled migration with encryption
+
 ### Version 9.17.3 *(16th May 2024)*
 -------------------------------------------
 * Added DC-06 support.
