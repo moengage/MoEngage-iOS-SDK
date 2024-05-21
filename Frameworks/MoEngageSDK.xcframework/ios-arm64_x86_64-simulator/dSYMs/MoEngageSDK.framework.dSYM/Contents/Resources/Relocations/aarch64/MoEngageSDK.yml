@@ -1,10 +1,10 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/rakshitha/Library/Developer/Xcode/DerivedData/MoEngage-cnobpkmsqmaefpeplvsvpecxdigk/Build/Intermediates.noindex/ArchiveIntermediates/MoEngageSDK/InstallationBuildProductsLocation/Library/Frameworks/MoEngageSDK.framework/MoEngageSDK'
+binary-path:     '/Users/rakshitha/Library/Developer/Xcode/DerivedData/MoEngage-agkiherlqdmvaeakrqtfvsowceuq/Build/Intermediates.noindex/ArchiveIntermediates/MoEngageSDK/InstallationBuildProductsLocation/Library/Frameworks/MoEngageSDK.framework/MoEngageSDK'
 relocations:
   - { offsetInCU: 0x34, offset: 0x5595A, size: 0x8, addend: 0x0, symName: _MoEngageSDKVersionString, symObjAddr: 0x0, symBinAddr: 0x3880, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0x5598F, size: 0x8, addend: 0x0, symName: _MoEngageSDKVersionNumber, symObjAddr: 0x30, symBinAddr: 0x38B0, symSize: 0x0 }
-  - { offsetInCU: 0x4F, offset: 0x559F4, size: 0x8, addend: 0x0, symName: '_$s11MoEngageSDK0aB0C14sharedInstanceACvpZ', symObjAddr: 0x6888, symBinAddr: 0x85F0, symSize: 0x0 }
+  - { offsetInCU: 0x4F, offset: 0x559F4, size: 0x8, addend: 0x0, symName: '_$s11MoEngageSDK0aB0C14sharedInstanceACvpZ', symObjAddr: 0x6890, symBinAddr: 0x85F0, symSize: 0x0 }
   - { offsetInCU: 0x7A, offset: 0x55A1F, size: 0x8, addend: 0x0, symName: '_$s11MoEngageSDK0aB0C14sharedInstanceACvgZ', symObjAddr: 0x2C, symBinAddr: 0x1418, symSize: 0x40 }
   - { offsetInCU: 0xBF, offset: 0x55A64, size: 0x8, addend: 0x0, symName: '_$s11MoEngageSDK0aB0C14sharedInstanceACvgZTo', symObjAddr: 0x6C, symBinAddr: 0x1458, symSize: 0x40 }
   - { offsetInCU: 0x11C, offset: 0x55AC1, size: 0x8, addend: 0x0, symName: '_$s11MoEngageSDK0aB0CACyc33_B0FA01D6E5EF84AE4FCDF7C6DFD641B4LlfcTo', symObjAddr: 0xAC, symBinAddr: 0x1498, symSize: 0x3C }
