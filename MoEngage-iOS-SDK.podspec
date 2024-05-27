@@ -15,17 +15,15 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'Commercial', :file => 'LICENSE' }
   s.author       = { 'MobileDev' => 'mobiledevs@moengage.com' }
   s.social_media_url   = 'https://twitter.com/moengage'
-  s.platform     = :ios
   s.ios.deployment_target = '11.0'
   s.tvos.deployment_target = '11.0'
 
   s.source       = { 
-                    :git => 'https://github.com/moengage/MoEngage-iOS-SDK.git', 
-                    :tag => 'moengage-' + s.version.to_s 
+                    :http => "https://github.com/moengage/MoEngage-iOS-SDK/releases/download/#{s.version}/MoEngage-iOS-SDK.zip", 
+                    :sha256 => '144435fda36a02b12ef7590d572ea9ad596c7765e58b7dc2f37373a99a6933b8'
                     }
                     
-  s.ios.vendored_frameworks = 'Frameworks/MoEngageSDK.xcframework','Frameworks/MoEngageCore.xcframework', 'Frameworks/MoEngageAnalytics.xcframework', 'Frameworks/MoEngageMessaging.xcframework','Frameworks/MoEngageObjCUtils.xcframework', 'Frameworks/MoEngageSecurity.xcframework'
-  s.tvos.vendored_frameworks = 'Frameworks/MoEngageSDK.xcframework','Frameworks/MoEngageCore.xcframework', 'Frameworks/MoEngageAnalytics.xcframework', 'Frameworks/MoEngageMessaging.xcframework', 'Frameworks/MoEngageObjCUtils.xcframework', 'Frameworks/MoEngageSecurity.xcframework'
+  s.vendored_frameworks = 'MoEngageSDK.xcframework','MoEngageCore.xcframework', 'MoEngageAnalytics.xcframework', 'MoEngageMessaging.xcframework','MoEngageObjCUtils.xcframework', 'MoEngageSecurity.xcframework'
   s.requires_arc = true
   s.frameworks = 'Foundation', 'UIKit', 'SystemConfiguration' , 'Security'
   s.weak_framework = 'AdSupport', 'UserNotifications', 'AppTrackingTransparency'
