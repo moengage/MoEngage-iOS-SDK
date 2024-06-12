@@ -2,6 +2,17 @@
 =================================
 
 ## Changelog:
+### Version 9.17.5 *(12th June 2024)*
+-------------------------------------------
+* Added JSON object support to user attributes.
+* Handled environment update with same installation.
+* BugFix
+    - Fixed tracked object attributes duplication.
+    - Notification impression not tracked after app update.
+    - Reset user completion handler not invoked
+- CrashFix
+    - Fixed crash by handling data race when the application comes to foreground
+    
 ### Version 9.17.4 *(21st May 2024)*
 -------------------------------------------
 * Adding support of Array in triggered-based InApps.

@@ -10,14 +10,14 @@ let package = Package(
     swiftLanguageVersions: [.v5]
 )
 
-let version = "9.17.0"
+let version = "9.17.5"
 let targetMap = [
-    "MoEngageAnalytics": "2f670eabaab73f1b3eec5c72597c03e8611defb96fbd95de02354cbd97b01c1e",
-    "MoEngageCore": "6e2887da33b662ecfd3212cc9ce2a2172fe162da33ec2f8eacc5788474eeee30",
-    "MoEngageMessaging": "df5805c84d925532bc9cdbede7bebdc073ce0292cb49f93c89ba177413e4d800",
-    "MoEngageObjCUtils": "a39a9d4f748800b932e8ef472f4951745338cc4ea06c5f21aac0a1ed5b1093b5",
-    "MoEngageSDK": "ec7535fde932de6857233623f21317a706dd62bfdc42b2612621847e79cf33f8",
-    "MoEngageSecurity": "8f2a9a7bd73dae604c7eef5fec7f02828a8cfc0df457bbc40dcc28554766acfd",
+    "MoEngageAnalytics": "01cbf142cbc2869d38be797e523731316d2701c718b14c22cdc097a1c22b12d2",
+    "MoEngageCore": "7ec047a75bcccead3ce01d0365c9b896db47f62add55834d4a392b99a07e4854",
+    "MoEngageMessaging": "7680f297ee37df195295edb3956d0d8c346148286122107a56972b7f2fffc809",
+    "MoEngageObjCUtils": "d9aaf5a27c7a554b06cc9821cfde0dc14c704a24459111015a7d84b6179bdb75",
+    "MoEngageSDK": "3470ace3bf75e7c9f08a41dec57a0270b43fc516b532e9bb368feceb00444c47",
+    "MoEngageSecurity": "a33963bd41a51cc4ae8ca92360424ec0f89bd47d441f773163eadb7dcb971ea2",
 ]
 
 for (target, checksum) in targetMap {

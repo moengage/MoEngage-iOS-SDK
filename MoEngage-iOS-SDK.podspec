@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'MoEngage-iOS-SDK'
-  s.version      = '9.17.4'
+  s.version      = '9.17.5'
   s.summary      = 'MoEngage for iOS'
   s.description  = <<-DESC
                    MoEngage is a mobile marketing automation company. This framework acts like a umbrella framework to include MoEngageCore, MoEngageAnalytics and MoEngageMessaging frameworks.
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.source       = { 
                     :http => "https://github.com/moengage/MoEngage-iOS-SDK/releases/download/#{s.version}/MoEngage-iOS-SDK.zip", 
-                    :sha256 => '144435fda36a02b12ef7590d572ea9ad596c7765e58b7dc2f37373a99a6933b8'
+                    :sha256 => 'b3473d23a16ca14eb7cb50e33befd06620a6050471090be7c692ad74ab35496c'
                     }
                     
   s.vendored_frameworks = 'MoEngageSDK.xcframework','MoEngageCore.xcframework', 'MoEngageAnalytics.xcframework', 'MoEngageMessaging.xcframework','MoEngageObjCUtils.xcframework', 'MoEngageSecurity.xcframework'
