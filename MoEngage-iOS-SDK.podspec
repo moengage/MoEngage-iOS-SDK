@@ -1,30 +1,63 @@
 
 Pod::Spec.new do |s|
+  require_relative 'Utils/spec'
+  s.extend MoEngageSDK::Spec
+  s.define
 
-  s.name         = 'MoEngage-iOS-SDK'
   s.version      = '9.17.5'
   s.summary      = 'MoEngage for iOS'
   s.description  = <<-DESC
-                   MoEngage is a mobile marketing automation company. This framework acts like a umbrella framework to include MoEngageCore, MoEngageAnalytics and MoEngageMessaging frameworks.
-                   MoEngageCore contains the central configuration of your app and common Utils and modules to be used accross all the MoEngage frameworks. MoEngageAnalytics framework enables you to track required data regarding user and user's activities inside the app to use the same for effective engagement.
-                   MoEngageMessaging module will help you support all the features related to push notifications in your App.
+                   MoEngage is a mobile marketing automation company.
+                   This framework acts like a umbrella framework to include all MoEngage frameworks.
+                   Refer individual framework's description for their usages.
                    DESC
 
-  s.homepage     = 'https://www.moengage.com'
-  s.documentation_url = 'https://developers.moengage.com'
-  s.license      = { :type => 'Commercial', :file => 'LICENSE' }
-  s.author       = { 'MobileDev' => 'mobiledevs@moengage.com' }
-  s.social_media_url   = 'https://twitter.com/moengage'
-  s.ios.deployment_target = '11.0'
-  s.tvos.deployment_target = '11.0'
+  s.source       = {
+    :git => 'https://github.com/moengage/MoEngage-iOS-SDK.git',
+    :tag => s.version.to_s 
+  }
 
-  s.source       = { 
-                    :http => "https://github.com/moengage/MoEngage-iOS-SDK/releases/download/#{s.version}/MoEngage-iOS-SDK.zip", 
-                    :sha256 => 'b3473d23a16ca14eb7cb50e33befd06620a6050471090be7c692ad74ab35496c'
-                    }
-                    
-  s.vendored_frameworks = 'MoEngageSDK.xcframework','MoEngageCore.xcframework', 'MoEngageAnalytics.xcframework', 'MoEngageMessaging.xcframework','MoEngageObjCUtils.xcframework', 'MoEngageSecurity.xcframework'
-  s.requires_arc = true
-  s.frameworks = 'Foundation', 'UIKit', 'SystemConfiguration' , 'Security'
-  s.weak_framework = 'AdSupport', 'UserNotifications', 'AppTrackingTransparency'
+  s.tvos.deployment_target = '11.0'
+  s.default_subspec = 'Core'
+  s.subspec 'Core' do |ss|
+    ss.dependency 'MoEngageSDK', '9.17.5'
+    ss.dependency 'MoEngageCore', '9.17.5'
+    ss.dependency 'MoEngageAnalytics', '4.17.5'
+    ss.dependency 'MoEngageMessaging', '4.17.5'
+    ss.dependency 'MoEngageObjCUtils', '3.17.5'
+    ss.dependency 'MoEngageSecurity', '1.9.5'
+  end
+
+  s.subspec 'InApp' do |ss|
+    ss.dependency 'MoEngageSDK/Core'
+    ss.dependency 'MoEngageTriggerEvaluator', '1.01.0'
+    ss.dependency 'MoEngageInApp', '6.00.3'
+  end
+
+  s.subspec 'Cards' do |ss|
+    ss.dependency 'MoEngageSDK/Core'
+    ss.dependency 'MoEngageCards', '4.16.1'
+  end
+
+  s.subspec 'GeoFence' do |ss|
+    ss.dependency 'MoEngageSDK/Core'
+    ss.dependency 'MoEngageGeofence', '5.16.2'
+  end
+
+  s.subspec 'RichNotification' do |ss|
+    ss.dependency 'MoEngageSDK/Core'
+    ss.dependency 'MoEngageRichNotification', '7.16.1'
+  end
+
+  s.subspec 'Inbox' do |ss|
+    ss.dependency 'MoEngageSDK/Core'
+    ss.dependency 'MoEngageSDK/RichNotification'
+    ss.dependency 'MoEngageInbox', '2.16.2'
+  end
+
+  s.subspec 'RealTimeTrigger' do |ss|
+    ss.dependency 'MoEngageSDK/Core'
+    ss.dependency 'MoEngageSDK/RichNotification'
+    ss.dependency 'MoEngageRealTimeTrigger', '2.16.1'
+  end
 end
