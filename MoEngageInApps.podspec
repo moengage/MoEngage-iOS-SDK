@@ -7,8 +7,8 @@ Pod::Spec.new do |s|
   s.version      = '6.00.3'
   s.summary      =  "#{s.name} Campaigns for iOS"
   s.description  = <<-DESC
-                     MoEngageInApp Messaging are custom views which you can send to a segment of users to show custom messages or give new offers or take to some specific pages.
-                     They can be created from your MoEngage dashboard and MOInApp framework enables you to show those InApp campaigns in your iOS Apps.
+                     MoEngageInApps Messaging are custom views which you can send to a segment of users to show custom messages or give new offers or take to some specific pages.
+                     They can be created from your MoEngage dashboard and MoEngageInApps framework enables you to show those InApp campaigns in your iOS Apps.
                    DESC
 
   s.source       = {
