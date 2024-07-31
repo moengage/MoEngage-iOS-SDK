@@ -2,6 +2,17 @@
 =================================
 
 ## Changelog:
+### Version 9.18.0 *(31st July 2024)*
+-------------------------------------------
+* Internal improvements
+
+#### Core
+* Added secondary domain config when primary domain blocked.
+* Deprecated SDK provided SSL Pinning in favour of [OS provided one](https://developer.apple.com/documentation/bundleresources/information_property_list/nsapptransportsecurity/nspinneddomains).
+
+#### Geofence
+* BugFix - Geofence API will be blocked, if data tracking is opted out.
+
 ### Version 9.17.5 *(12th June 2024)*
 -------------------------------------------
 * Added JSON object support to user attributes.
