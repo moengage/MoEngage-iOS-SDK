@@ -1,6 +1,6 @@
 require 'json'
 
-module MoEngageSDK
+module MoEngageReleaseSDK
   module Spec
     def define()
       podspec_path = caller.find do |trace|
