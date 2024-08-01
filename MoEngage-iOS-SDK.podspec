@@ -1,4 +1,3 @@
-
 Pod::Spec.new do |s|
   require_relative 'Utilities/spec'
   s.extend MoEngageReleaseSDK::Spec
@@ -14,44 +13,51 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '11.0'
   s.default_subspec = 'Core'
   s.subspec 'Core' do |ss|
-    ss.dependency 'MoEngageSDK', '9.18.0'
-    ss.dependency 'MoEngageCore', '9.18.0'
-    ss.dependency 'MoEngageAnalytics', '4.18.0'
-    ss.dependency 'MoEngageMessaging', '4.18.0'
-    ss.dependency 'MoEngageObjCUtils', '3.18.0'
-    ss.dependency 'MoEngageSecurity', '1.10.0'
+    ss.extend MoEngageReleaseSDK::SubSpec
+    ss.dependency_pod 'MoEngageSDK'
+    ss.dependency_pod 'MoEngageCore'
+    ss.dependency_pod 'MoEngageAnalytics'
+    ss.dependency_pod 'MoEngageMessaging'
+    ss.dependency_pod 'MoEngageObjCUtils'
+    ss.dependency_pod 'MoEngageSecurity'
   end
 
   s.subspec 'InApps' do |ss|
+    ss.extend MoEngageReleaseSDK::SubSpec
     ss.dependency 'MoEngage-iOS-SDK/Core'
-    ss.dependency 'MoEngageTriggerEvaluator', '1.02.0'
-    ss.dependency 'MoEngageInApps', '6.01.0'
+    ss.dependency_pod 'MoEngageTriggerEvaluator'
+    ss.dependency_pod 'MoEngageInApps'
   end
 
   s.subspec 'Cards' do |ss|
+    ss.extend MoEngageReleaseSDK::SubSpec
     ss.dependency 'MoEngage-iOS-SDK/Core'
-    ss.dependency 'MoEngageCards', '4.17.0'
+    ss.dependency_pod 'MoEngageCards'
   end
 
   s.subspec 'GeoFence' do |ss|
+    ss.extend MoEngageReleaseSDK::SubSpec
     ss.dependency 'MoEngage-iOS-SDK/Core'
-    ss.dependency 'MoEngageGeofence', '5.17.0'
+    ss.dependency_pod 'MoEngageGeofence', :ios
   end
 
   s.subspec 'RichNotification' do |ss|
+    ss.extend MoEngageReleaseSDK::SubSpec
     ss.dependency 'MoEngage-iOS-SDK/Core'
-    ss.dependency 'MoEngageRichNotification', '7.17.0'
+    ss.dependency_pod 'MoEngageRichNotification', :ios
   end
 
   s.subspec 'Inbox' do |ss|
+    ss.extend MoEngageReleaseSDK::SubSpec
     ss.dependency 'MoEngage-iOS-SDK/Core'
-    ss.dependency 'MoEngage-iOS-SDK/RichNotification'
-    ss.dependency 'MoEngageInbox', '2.17.0'
+    ss.ios.dependency 'MoEngage-iOS-SDK/RichNotification'
+    ss.dependency_pod 'MoEngageInbox', :ios
   end
 
   s.subspec 'RealTimeTrigger' do |ss|
+    ss.extend MoEngageReleaseSDK::SubSpec
     ss.dependency 'MoEngage-iOS-SDK/Core'
-    ss.dependency 'MoEngage-iOS-SDK/RichNotification'
-    ss.dependency 'MoEngageRealTimeTrigger', '2.17.0'
+    ss.ios.dependency 'MoEngage-iOS-SDK/RichNotification'
+    ss.dependency_pod 'MoEngageRealTimeTrigger', :ios
   end
 end

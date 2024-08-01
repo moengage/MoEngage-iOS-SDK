@@ -2,6 +2,10 @@
 =================================
 
 ## Changelog:
+### Version 9.18.1 *(1st August 2024)*
+-------------------------------------------
+* Fixed Swift Package Resolution
+
 ### Version 9.18.0 *(31st July 2024)*
 -------------------------------------------
 * Internal improvements

@@ -1,6 +1,11 @@
 require 'json'
 
 module MoEngageReleaseSDK
+  @@config = JSON.parse(File.read('package.json'), {object_class: OpenStruct})
+  def self.config
+    @@config
+  end
+
   module Spec
     def define()
       podspec_path = caller.find do |trace|
@@ -8,15 +13,14 @@ module MoEngageReleaseSDK
       end.split(":")[0]
 
       podspec = File.basename(podspec_path, File.extname(podspec_path))
-      config = JSON.parse(File.read('package.json'), {object_class: OpenStruct})
-      package_index = config.packages.find_index { |package| package.name == podspec }
-      package = config.packages[package_index] if package_index
+      package_index = MoEngageReleaseSDK.config.packages.find_index { |package| package.name == podspec }
+      package = MoEngageReleaseSDK.config.packages[package_index] if package_index
 
       self.name              = podspec
-      self.version           = package&.version || config.version
+      self.version           = package&.version || MoEngageReleaseSDK.config.version
       self.homepage          = 'https://www.moengage.com'
       self.documentation_url = 'https://developers.moengage.com'
-      self.license           = { :type => 'Commercial', :file => 'LICENSE' }
+      self.license           = { :type => 'Commercial', :text => File.read('LICENSE') }
       self.author            = { 'MobileDev' => 'mobiledevs@moengage.com' }
       self.social_media_url  = 'https://twitter.com/moengage'
 
@@ -25,7 +29,7 @@ module MoEngageReleaseSDK
       else
         self.source       = {
           :git => 'https://github.com/moengage/MoEngage-iOS-SDK.git',
-          :tag => "#{config.tagPrefix}#{self.version.to_s}"
+          :tag => "#{MoEngageReleaseSDK.config.tagPrefix}#{self.version.to_s}"
         }
       end
 
@@ -36,6 +40,17 @@ module MoEngageReleaseSDK
 
     def addDirectUseWarning()
         self.description << '\nDO NOT USE THIS POD DIRECTLY, USE MoEngage-iOS-SDK INSTEAD THAT INCLUDES THIS POD'
+    end
+  end
+
+  module SubSpec
+    def dependency_pod(name, proxy = nil)
+      dependency = MoEngageReleaseSDK.config.packages.find { |package| package.name.eql?(name) }
+      if proxy
+        self.send(proxy).dependency name, dependency.version
+      else
+        self.dependency name, dependency.version
+      end
     end
   end
 end
