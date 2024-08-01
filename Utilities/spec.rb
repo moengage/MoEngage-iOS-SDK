@@ -25,7 +25,7 @@ module MoEngageReleaseSDK
       self.social_media_url  = 'https://twitter.com/moengage'
 
       if package
-        self.source       = { :http => package.url, :sha256 => package.hash }
+        self.source       = { :http => package.url, :sha256 => package[:hash] }
       else
         self.source       = {
           :git => 'https://github.com/moengage/MoEngage-iOS-SDK.git',
