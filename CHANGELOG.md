@@ -2,76 +2,76 @@
 =================================
 
 ## Changelog:
-### Version 9.19.0 *(1st August 2024)*
+### Version 9.19.0 *(5th September 2024)*
 -------------------------------------------
 
 #### Core
 Whats New
-    • Cards fetch on login support added.
-    • Multiple self handled inapps support.
+    * Cards fetch on login support added.
+    * Multiple self handled inapps support.
 
 Improvements
-    • Expose app install/update API without appId input
-    • Revamp storage access
-    • Refactor threading and queueing
+    * Expose app install/update API without appId input
+    * Revamp storage access
+    * Refactor threading and queueing
 Fixes
-    • Fixed previous instance deinitialization when default instance changed.
-    • in-memory data not getting cleared on disable data tracking
-    • Source tracking happening before flush
-    • Device type not getting tracked after data tracking re-enabled from disabled
-    • Analytics batch data migration from 8.7.0
-    • User getting reset while on disabled state
-    • API calls not happening when application is killed and relaunched with SDK state enabled from disabled state.
-    • No data tracked post tracking restricted unique id
-    • No data tracked post tracking invalid timestamp or location
-    • Inconsistency with unique id validation
+    * Fixed previous instance deinitialization when default instance changed.
+    * in-memory data not getting cleared on disable data tracking
+    * Source tracking happening before flush
+    * Device type not getting tracked after data tracking re-enabled from disabled
+    * Analytics batch data migration from 8.7.0
+    * User getting reset while on disabled state
+    * API calls not happening when application is killed and relaunched with SDK state enabled from disabled state.
+    * No data tracked post tracking restricted unique id
+    * No data tracked post tracking invalid timestamp or location
+    * Inconsistency with unique id validation
 
-#### Analytics 4.19.0
+#### Analytics
 Whats New
-    • Cards fetch on login support added.
+    * Cards fetch on login support added.
 Improvements
-    • Cleaned remoteconfig whitelisted events.
-    • Added push opt-in device attribute tracking.
+    * Cleaned remoteconfig whitelisted events.
+    * Added push opt-in device attribute tracking.
 
-#### Messaging 4.19.0
+#### Messaging
 Whats New
-    • Added support for Provisional Push.
+    * Added support for Provisional Push.
 Improvements
-    • Refactor threading and queueing
-    • Added push opt-in device attribute and events tracking and navigate to settings page API.
+    * Refactor threading and queueing
+    * Added push opt-in device attribute and events tracking and navigate to settings page API.
 
-#### Inbox 2.18.0
+#### Inbox
 Improvements
-    • Refactor threading and queueing
+    * Refactor threading and queueing
 
-#### Cards 4.18.0
+#### Cards
 Whats New
-    • Cards fetch on login support added.
+    * Cards fetch on login support added.
 Improvements
-    • Refactor threading and queueing
+    * Refactor threading and queueing
 
-#### inApp 6.02.0
+#### inApp
 Whats New
-    • Multiple self handled inApps support
+    * Multiple self handled inApps support
 Improvements
-    • Refactor threading and queueing 
-    • Self handled in-App callback improvement.
+    * Refactor threading and queueing 
+    * Self handled in-App callback improvement.
 Fixes
-    • inApp image cropping issue.
-    • Added showing push opt-in only if push permission not provided.
-    • Fixed static inapp version
+    * inApp image cropping issue.
+    * Added showing push opt-in only if push permission not provided.
+    * Fixed static inapp version
 
-#### RichNotification 7.18.0
+#### RichNotification
 Improvements
-    • Refactor threading and queueing
+    * Refactor threading and queueing
 
-#### RTT 2.18.0
+#### RTT
 Improvements
-    • Refactor threading and queueing
+    * Refactor threading and queueing
 
-#### Geofence 5.18.0
+#### Geofence
 Improvements
-    • Refactor threading and queueing
+    * Refactor threading and queueing
 
 
 ### Version 9.18.1 *(1st August 2024)*
