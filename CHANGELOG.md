@@ -19,8 +19,8 @@ Whats New
     * Added JSON Object support in condition evaluator
 
 Improvements
-    * MOEN-34187: Made `MoEngageInAppRules` init method as public and made `MoEngageInAppRules` as part of response for `getSelfHandledInApp` API.
-    
+    * Made `MoEngageInAppRules` init method as public and made `MoEngageInAppRules` as part of response for `getSelfHandledInApp` API.
+
 Fixes
     * Video Nudge in unmute state when initially shown fix.
     * Pointer Nullability type specifier warning fix.
