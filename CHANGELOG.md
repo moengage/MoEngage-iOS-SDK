@@ -2,6 +2,29 @@
 =================================
 
 ## Changelog:
+### Version 9.20.0 *(26th September 2024)*
+-------------------------------------------
+#### Core
+Fixes
+    * Fixed integer in the following and timestamp/date based trigger conditions not working
+    * Fixed the issue where Tablet device model is tracked as MOBILE.
+    * Send device time stamp and event time stamp in milliseconds
+
+#### Messaging
+Fixes
+    * Available macro check failing fix.
+    
+#### InApp
+Whats New
+    * Added JSON Object support in condition evaluator
+
+Improvements
+    * Made `MoEngageInAppRules` init method as public and made `MoEngageInAppRules` as part of response for `getSelfHandledInApp` API.
+
+Fixes
+    * Video Nudge in unmute state when initially shown fix.
+    * Pointer Nullability type specifier warning fix.
+
 ### Version 9.19.0 *(5th September 2024)*
 -------------------------------------------
 
