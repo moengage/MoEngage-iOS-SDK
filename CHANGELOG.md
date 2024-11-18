@@ -2,6 +2,10 @@
 =================================
 
 ## Changelog:
+### Version 9.20.1 *(18th November 2024)*
+Fixes
+    * Removed debug symbols from frameworks.
+
 ### Version 9.20.0 *(26th September 2024)*
 -------------------------------------------
 #### Core
