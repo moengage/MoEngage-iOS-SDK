@@ -1,0 +1,35 @@
+name: Publish pods to CocoaPods
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    name: Create release
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout release repository
+      uses: actions/checkout@v4
+      with:
+        ref: master
+
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3
+
+    - name: Setup Xcode version
+      uses: maxim-lobanov/setup-xcode@v1.4.1
+      with:
+        xcode-version: '15.4'
+
+    - name: Setup Cocoapods
+      uses: maxim-lobanov/setup-cocoapods@v1
+      with:
+        version: latest
+
+    - name: Publish pods
+      run: ./Utilities/pod_publish.rb
+      env:
+        COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}

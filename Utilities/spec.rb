@@ -1,4 +1,6 @@
+require 'fileutils'
 require 'json'
+require 'ostruct'
 
 module MoEngageReleaseSDK
   @@config = JSON.parse(File.read('package.json'), {object_class: OpenStruct})

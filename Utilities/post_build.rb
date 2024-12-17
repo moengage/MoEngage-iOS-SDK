@@ -3,7 +3,9 @@
 # Usage:
 # Update Package.swift file according to package.json
 
+require 'fileutils'
 require 'json'
+require 'ostruct'
 
 config = JSON.parse(File.read('package.json'), {object_class: OpenStruct})
 config_map = Hash[ *config.packages.collect { |package| [ package.name, package ] }.flatten ]
