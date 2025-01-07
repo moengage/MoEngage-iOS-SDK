@@ -2,6 +2,64 @@
 =================================
 
 ## Changelog:
+### Version 9.21.0 *(07th January 2025)*
+-------------------------------------------
+
+#### Core
+Whats New
+    * Added APIs for mParticle integration
+    * Added SDK feature adoption tracking
+Improvements
+    * Revamped SDK Storage
+Fixes
+    * Fixed Config API log_level parsing
+
+#### Analytics
+Whats New
+    * Added APIs for mParticle integration
+Improvements
+    * Cleaned remoteconfig whitelisted events.
+    * Revamped SDK Storage
+
+#### Messaging
+Whats New
+    * Added APIs for mParticle integration
+Improvements
+    * Revamped SDK Storage
+Fixes
+    * Fixed issue where notification was populated in Inbox when sdk is disabled.
+    * Fixed the crash on clicking the slides of CarouselNotification.
+
+#### Inbox
+Improvements
+    * Revamped SDK Storage
+Fixes
+    * Fixed issue where notification was populated in Inbox when sdk is disabled.
+
+#### Cards
+Improvements
+    *  Revamped SDK Storage
+Fixes
+    * Fixed the issue of images getting trimmed in Illustration Cards.
+
+#### inApp
+Improvements
+    *  Revamped SDK Storage
+Fixes
+    * Fixed Bottom margin issue in Nudges
+
+#### RichNotification
+Improvements
+    * Revamped SDK Storage
+
+#### RTT
+Improvements
+    * Revamped SDK Storage
+
+#### Geofence
+Improvements
+    * Revamped SDK Storage
+
 ### Version 9.20.1 *(18th November 2024)*
 Fixes
     * Removed debug symbols from frameworks.
