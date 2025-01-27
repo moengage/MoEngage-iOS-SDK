@@ -2,9 +2,25 @@
 =================================
 
 ## Changelog:
+### Version 9.22.0 *(27th January 2025)*
+-------------------------------------------
+## Core 9.22.0
+- MOEN-34113: Added InApp InSession Attributes in InApp meta sync request.
+
+## Analytics 4.21.0
+- MOEN-34113: Added InApp InSession Attributes in InApp meta sync request.
+
+## InApp 6.04.0
+- MOEN-34113: Added InApp InSession Attributes in InApp meta sync request.
+- BugFix:
+  - MOEN-36484: Fix appid switch carsh
+
+## Cards 4.19.1
+- BugFix:
+  - MOEN-36478: Fixed logged in users card sync
+
 ### Version 9.21.0 *(07th January 2025)*
 -------------------------------------------
-
 #### Core
 Whats New
     * Added APIs for mParticle integration

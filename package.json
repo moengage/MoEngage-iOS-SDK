@@ -1,6 +1,6 @@
 {
   "name": "MoEngage-iOS-SDK",
-  "version": "9.21.0",
+  "version": "9.22.0",
   "tagPrefix": "moengage-",
   "postBuild": "Utilities/post_build.rb",
   "packages": [
@@ -13,7 +13,7 @@
     },
     {
       "name": "MoEngageCore",
-      "version": "9.21.0",
+      "version": "9.22.0",
       "tagPrefix": "core-",
       "hash": "da35f095c4e92760e51cab159490fe79c014d12f86b8d7ff68e28b1d48789247",
       "url": "https://github.com/moengage/MoEngage-iOS-SDK/releases/download/9.21.0/MoEngageCore.xcframework.zip"
@@ -27,7 +27,7 @@
     },
     {
       "name": "MoEngageAnalytics",
-      "version": "4.20.0",
+      "version": "4.21.0",
       "tagPrefix": "analytics-",
       "hash": "7cfe65ff3f281f24c805b3a451602e324757c330aec2715dc37a6491485b5fcb",
       "url": "https://github.com/moengage/MoEngage-iOS-SDK/releases/download/9.21.0/MoEngageAnalytics.xcframework.zip"
@@ -55,14 +55,14 @@
     },
     {
       "name": "MoEngageInApps",
-      "version": "6.03.0",
+      "version": "6.04.0",
       "tagPrefix": "inapp-",
       "hash": "294506358da6283c478de2f862c02092983d0426bc2d64bd0c862146c9460c9d",
       "url": "https://github.com/moengage/MoEngage-iOS-SDK/releases/download/9.21.0/MoEngageInApps.xcframework.zip"
     },
     {
       "name": "MoEngageCards",
-      "version": "4.19.0",
+      "version": "4.19.1",
       "tagPrefix": "cards-",
       "hash": "b142b04439da8b19748b83638b280a84363a3d469cbc11b024d098c8bad13fd3",
       "url": "https://github.com/moengage/MoEngage-iOS-SDK/releases/download/9.21.0/MoEngageCards.xcframework.zip"
