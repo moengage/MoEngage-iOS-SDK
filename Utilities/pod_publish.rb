@@ -20,3 +20,13 @@ config.packages.each do |package|
     puts "::warning::Pod published failed with #{error&.message}"
   end
 end
+
+# publish main pod
+podspec = "#{config.name}.podspec"
+return unless File.exist?(podspec)
+begin
+  FileUtils.rm_rf(derived_data) if File.directory?(derived_data)
+  system("pod trunk push \"#{podspec}\" --verbose --synchronous --allow-warnings", out: STDOUT, exception: true)
+rescue => error
+  puts "::warning::Pod published failed with #{error&.message}"
+end
