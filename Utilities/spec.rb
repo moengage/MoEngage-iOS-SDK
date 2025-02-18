@@ -30,7 +30,7 @@ module MoEngageReleaseSDK
         self.source       = { :http => package.url, :sha256 => package[:hash] }
       else
         self.source       = {
-          :git => 'https://github.com/moengage/MoEngage-iOS-SDK.git',
+          :git => 'https://github.com/moengage/apple-sdk.git',
           :tag => "#{MoEngageReleaseSDK.config.tagPrefix}#{self.version.to_s}"
         }
       end
