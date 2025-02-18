@@ -2,6 +2,11 @@
 =================================
 
 ## Changelog:
+### Version 9.22.2 *(18th February 2025)*
+-------------------------------------------
+## Cards 4.19.2
+- Fixed cards campaigns navigation data parsing.
+
 ### Version 9.22.1 *(27th January 2025)*
 -------------------------------------------
 ## Core 9.22.1
