@@ -2,6 +2,38 @@
 =================================
 
 ## Changelog:
+### Version 9.23.0 *(11th March 2025)*
+-------------------------------------------
+## Core 9.23.0
+Whats New
+    * Added multiple identities support
+    * Added integration validation exceptions
+    
+## Analytics 4.22.0
+Whats New
+    * Added multiple identities support
+
+## InApp 6.05.0
+Whats New
+    * Added Click analysis support in HTML
+    * Added Multi-ID identifiers in Meta Sync Request and Template Fetch Request.
+Fixes
+    * Self Handled Trigger Callback switched from sdkInstance Queue to MainQueue for TestInapp flow.
+    * Removed `moe_v2_campaigns_states_migrated` key from common userdefault on migration from 8.x.x
+
+## Cards 4.20.0
+Whats New
+    *  Added cards fetch on identifiers change
+
+## Inbox 2.19.1
+Fixes
+    * `Int64` datatype typecasting check added for inbox expiry time.
+
+## Messaging 4.20.1
+Fixes
+    * Removed `notification_categories` key from instance userdefault on migration from 8.x.x
+
+## Changelog:
 ### Version 9.22.2 *(18th February 2025)*
 -------------------------------------------
 ## Cards 4.19.2
