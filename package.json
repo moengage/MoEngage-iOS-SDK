@@ -1,6 +1,6 @@
 {
   "name": "MoEngage-iOS-SDK",
-  "version": "9.22.2",
+  "version": "9.23.0",
   "tagPrefix": "moengage-",
   "postBuild": "Utilities/post_build.rb",
   "packages": [
@@ -13,7 +13,7 @@
     },
     {
       "name": "MoEngageCore",
-      "version": "9.22.2",
+      "version": "9.23.0",
       "tagPrefix": "core-",
       "hash": "865528f05b77aedf690bc9cc9dfc037e2614f6b5ccd0dd6f48999c0b970b1a1c",
       "url": "https://github.com/moengage/apple-sdk/releases/download/9.22.2/MoEngageCore.xcframework.zip"
@@ -27,14 +27,14 @@
     },
     {
       "name": "MoEngageAnalytics",
-      "version": "4.21.0",
+      "version": "4.22.0",
       "tagPrefix": "analytics-",
       "hash": "f810fc0b3a8b7c4fa61ee5f3e8f82b57f8e4a5be85e2e02a324c3c1f26b7fdf9",
       "url": "https://github.com/moengage/MoEngage-iOS-SDK/releases/download/9.22.0/MoEngageAnalytics.xcframework.zip"
     },
     {
       "name": "MoEngageMessaging",
-      "version": "4.20.0",
+      "version": "4.20.1",
       "tagPrefix": "messaging-",
       "hash": "b6c5b2c75e51d37693ecb6f3f29e205f4c1c3063a18249e6144cf72fd4cd406b",
       "url": "https://github.com/moengage/MoEngage-iOS-SDK/releases/download/9.21.0/MoEngageMessaging.xcframework.zip"
@@ -55,21 +55,21 @@
     },
     {
       "name": "MoEngageInApps",
-      "version": "6.04.0",
+      "version": "6.05.0",
       "tagPrefix": "inapp-",
       "hash": "7f398485b2508a799dde89abed20bbbb47d31e72219c073034c3b5b40a304532",
       "url": "https://github.com/moengage/MoEngage-iOS-SDK/releases/download/9.22.0/MoEngageInApps.xcframework.zip"
     },
     {
       "name": "MoEngageCards",
-      "version": "4.19.2",
+      "version": "4.20.0",
       "tagPrefix": "cards-",
       "hash": "9d7ea863ef0730c9c918f2b176b349a4a47f9c3c6184112fca9e0530c1247f65",
       "url": "https://github.com/moengage/apple-sdk/releases/download/9.22.2/MoEngageCards.xcframework.zip"
     },
     {
       "name": "MoEngageInbox",
-      "version": "2.19.0",
+      "version": "2.19.1",
       "tagPrefix": "inbox-",
       "hash": "c250d876229de1d753cf2c93c02dcda6606482277222f11ba6425b12107f0013",
       "url": "https://github.com/moengage/MoEngage-iOS-SDK/releases/download/9.21.0/MoEngageInbox.xcframework.zip"
