@@ -2,6 +2,16 @@
 =================================
 
 ## Changelog:
+### Version 9.23.1 *(19th March 2025)*
+
+## Geofence 5.19.1
+Fixes
+  * Fixed missing symbol exception.
+
+## RTT 2.19.1
+Fixes
+  * Fixed missing symbol exception.
+
 ### Version 9.23.0 *(11th March 2025)*
 -------------------------------------------
 ## Core 9.23.0
