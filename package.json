@@ -1,6 +1,6 @@
 {
   "name": "MoEngage-iOS-SDK",
-  "version": "9.23.1",
+  "version": "9.23.2",
   "tagPrefix": "moengage-",
   "postBuild": "Utilities/post_build.rb",
   "packages": [
@@ -13,10 +13,10 @@
     },
     {
       "name": "MoEngageCore",
-      "version": "9.23.1",
+      "version": "9.23.2",
       "tagPrefix": "core-",
-      "hash": "bded0a602e5ee8a5bc3705dc2acf115f6f6244014b72f2a476666d0f4bd99d07",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/9.23.1/MoEngageCore.xcframework.zip"
+      "hash": "853fe29ad22aa88fc8d716a595d165229f3db95509ed5c7770858af411f23040",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/9.23.2/MoEngageCore.xcframework.zip"
     },
     {
       "name": "MoEngageObjCUtils",
@@ -34,10 +34,10 @@
     },
     {
       "name": "MoEngageMessaging",
-      "version": "4.20.1",
+      "version": "4.20.2",
       "tagPrefix": "messaging-",
-      "hash": "a6d33373f24669462ebac6db35bd7befa077587399ffd1b14143ba453f52c819",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/9.23.0/MoEngageMessaging.xcframework.zip"
+      "hash": "ef4ccc3be0fb5591e1b907570cd6211caec52fc181e2156a17ed176ee5637f35",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/9.23.2/MoEngageMessaging.xcframework.zip"
     },
     {
       "name": "MoEngageSDK",
@@ -62,10 +62,10 @@
     },
     {
       "name": "MoEngageCards",
-      "version": "4.20.0",
+      "version": "4.20.1",
       "tagPrefix": "cards-",
-      "hash": "78764d6d88dd6ea310882cf6ba38cfd6ab647bb4746a5b7ac13b4385da968c53",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/9.23.0/MoEngageCards.xcframework.zip"
+      "hash": "6995ce132a7d931788bf8a094c983ea89cbb3711a9c88ee4de8759a94e80d36f",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/9.23.2/MoEngageCards.xcframework.zip"
     },
     {
       "name": "MoEngageInbox",

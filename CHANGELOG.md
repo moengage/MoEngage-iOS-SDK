@@ -2,6 +2,17 @@
 =================================
 
 ## Changelog:
+### Version 9.23.2 *(26th March 2025)*
+
+## Cards 4.20.1
+Fixes
+  * Fixed Pinned card being returned as first element in `fetchCards` API.
+
+## Messaging 4.20.2
+Fixes
+  * Fixed no navigation on Inbox messages click.
+
+## Changelog:
 ### Version 9.23.1 *(19th March 2025)*
 
 ## Geofence 5.19.1
