@@ -2,6 +2,36 @@
 =================================
 
 ## Changelog:
+### Version 9.24.0 *(29th April 2025)*
+
+##  Messaging 4.20.5
+Fixes
+  * Fixed push payload parsing for rich notification
+  * Fixed push notification action callback not received with app killed state.
+
+## Inbox 2.20.0
+Whats new
+  * Added support for notification grouping, replacement & event tracking in Inbox.
+
+## InApp 6.06.0
+Whats new
+  * Added support for Session Triggered InApps
+
+## SDK 9.20.1
+Fixes
+  * Fixed delay in method swizzling causing AppDelegate callback misses.
+
+## Analytics 4.23.0
+Whats new
+  * Added support for Session Triggered InApps
+Fixes
+  * Fixed deeplink callback not received with app killed state.
+
+## ObjCUtils 3.20.1
+Fixes
+  * Fixed delay in method swizzling causing AppDelegate callback misses.
+    
+## Changelog:
 ### Version 9.23.4 *(15th April 2025)*
 
 ## Messaging 4.20.4
