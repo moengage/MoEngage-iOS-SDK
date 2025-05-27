@@ -15,7 +15,7 @@ def binary_target(package)
 end
 
 package_swift = <<PACKAGE
-// swift-tools-version:5.5
+// swift-tools-version:5.6
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 // This file generated from post_build script, modify the script instaed of this file.
 
@@ -23,8 +23,12 @@ import PackageDescription
 
 let package = Package(
     name: "#{config.name}",
-    platforms: [.iOS(.v11), .tvOS(.v11)],
-    products: [], dependencies: [], targets: [],
+    platforms: [.iOS(.v13), .tvOS(.v13)],
+    products: [], dependencies: [
+        // can be updated to from:
+        .package(url: "https://github.com/moengage/kmm-apple-sdk", exact: "#{config.kmm.ce}")
+    ],
+    targets: [],
     swiftLanguageVersions: [.v5]
 )
 
@@ -36,8 +40,7 @@ struct MoEngagePackageProduct {
 extension Collection where Element == Target.Dependency {
     static var `default`: [Target.Dependency] {
         return [
-            "MoEngageAnalytics", "MoEngageCore", "MoEngageMessaging",
-            "MoEngageObjCUtils", "MoEngageSDK", "MoEngageSecurity",
+            "MoEngageCore", "MoEngageMessaging", "MoEngageSDK", "MoEngageSecurity",
         ]
     }
 
@@ -50,14 +53,25 @@ extension Collection where Element == Target.Dependency {
 
 let products: [MoEngagePackageProduct] = [
     .init(
-        name: "MoEngage-iOS-SDK",
+        name: "MoEngageSDK",
         targets: [
-            #{binary_target(config_map['MoEngageAnalytics'])},
             #{binary_target(config_map['MoEngageCore'])},
             #{binary_target(config_map['MoEngageMessaging'])},
-            #{binary_target(config_map['MoEngageObjCUtils'])},
             #{binary_target(config_map['MoEngageSDK'])},
             #{binary_target(config_map['MoEngageSecurity'])},
+        ]
+    ),
+    .init(
+        name: "MoEngage-iOS-SDK",
+        targets: [
+            .target(
+                name: "MoEngageSDKSPM",
+                dependencies: .additional(
+                    dependency: .product(
+                        name: "MoEngageKMMConditionEvaluator", package: "kmm-apple-sdk"
+                    )
+                )
+            ),
         ]
     ),
     .init(

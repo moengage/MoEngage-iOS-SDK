@@ -11,13 +11,11 @@ Pod::Spec.new do |s|
                    DESC
 
   s.addDirectUseWarning
-  s.tvos.deployment_target = '11.0'
+  s.tvos.deployment_target = '13.0'
   s.vendored_frameworks = "#{s.name}.xcframework"
   s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics'
 
   s.dependency 'MoEngageCore'
-  s.dependency 'MoEngageAnalytics'
   s.dependency 'MoEngageMessaging'
-  s.dependency 'MoEngageObjCUtils'
   s.dependency 'MoEngageTriggerEvaluator'
 end

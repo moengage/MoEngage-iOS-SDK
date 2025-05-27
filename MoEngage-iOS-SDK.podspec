@@ -10,16 +10,21 @@ Pod::Spec.new do |s|
                    Refer individual framework's description for their usages.
                    DESC
 
-  s.tvos.deployment_target = '11.0'
-  s.default_subspec = 'Core'
+  s.tvos.deployment_target = '13.0'
+  s.default_subspec = 'KMMedCore'
   s.subspec 'Core' do |ss|
     ss.extend MoEngageReleaseSDK::SubSpec
     ss.dependency_pod 'MoEngageSDK'
     ss.dependency_pod 'MoEngageCore'
-    ss.dependency_pod 'MoEngageAnalytics'
     ss.dependency_pod 'MoEngageMessaging'
-    ss.dependency_pod 'MoEngageObjCUtils'
     ss.dependency_pod 'MoEngageSecurity'
+  end
+
+  s.subspec 'KMMedCore' do |ss|
+    ss.extend MoEngageReleaseSDK::SubSpec
+    ss.dependency 'MoEngage-iOS-SDK/Core'
+    # can be updated to next major version range '~> 1.0.0'
+    ss.dependency 'MoEngageKMMConditionEvaluator', "#{MoEngageReleaseSDK.config.kmm.ce}"
   end
 
   s.subspec 'InApps' do |ss|

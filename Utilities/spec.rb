@@ -35,7 +35,7 @@ module MoEngageReleaseSDK
         }
       end
 
-      self.ios.deployment_target = '11.0'
+      self.ios.deployment_target = '13.0'
       self.requires_arc = true
       self.preserve_paths = "*.md", "LICENSE" unless package
     end

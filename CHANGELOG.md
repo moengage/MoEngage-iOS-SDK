@@ -2,6 +2,65 @@
 =================================
 
 ## Changelog:
+### Version 10.00.0 *(27th May 2025)*
+-------------------------------------------
+
+#### Security 2.00.0
+BREAKING CHANGE:
+    * Updated iOS and tvOS deployment target to 13.
+
+#### Core 10.00.0
+Whats new
+    * Added KMM condition evaluator
+BREAKING CHANGE:
+    * Updated iOS and tvOS deployment target to 13.
+
+#### Messaging 5.00.0
+BREAKING CHANGE:
+    * Updated iOS and tvOS deployment target to 13.
+
+#### SDK 10.00.0
+BREAKING CHANGE:
+    * Updated iOS and tvOS deployment target to 13.
+
+#### TriggerEvaluator 2.00.0
+Whats new
+    * Added KMM condition evaluator
+BREAKING CHANGE:
+    * Updated iOS and tvOS deployment target to 13.
+
+#### InApps 7.00.0
+Whats new
+    * Added KMM condition evaluator
+BREAKING CHANGE:
+    * Updated iOS and tvOS deployment target to 13.
+Fixes:
+    * Fixed migration failing from 7.x.x and 8.x.x.
+
+#### Cards 5.00.0
+BREAKING CHANGE:
+    * Updated iOS and tvOS deployment target to 13.
+
+#### Inbox 3.00.0
+BREAKING CHANGE:
+    * Updated iOS deployment target to 13.
+Fixes:
+    * Fixed the `collapseId` being set to empty instead of nil when the value is not set in payload
+
+#### Geofence 6.00.0
+BREAKING CHANGE:
+    * Updated iOS deployment target to 13.
+
+#### RichNotification 8.00.0
+BREAKING CHANGE:
+    * Updated iOS deployment target to 13.
+
+#### RealTimeTrigger 3.00.0
+Whats new
+    * Added KMM condition evaluator
+BREAKING CHANGE:
+    * Updated iOS deployment target to 13.
+
 ### Version 9.24.0 *(29th April 2025)*
 
 ##  Messaging 4.20.5

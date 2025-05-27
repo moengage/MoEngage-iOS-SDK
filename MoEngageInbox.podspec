@@ -14,6 +14,5 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation', 'UIKit', 'ImageIO'
 
   s.dependency 'MoEngageCore'
-  s.dependency 'MoEngageAnalytics'
   s.dependency 'MoEngageMessaging'
 end
