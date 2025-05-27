@@ -9,27 +9,26 @@ jobs:
     runs-on: macos-latest
 
     steps:
+    - name: Checkout scripts
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.SDK_BOT_ACCESS_TOKEN }}
+        path: scripts
+        repository: moengage/sdk-automation-scripts
+
+    - name: Setup dev environment
+      uses: ./scripts/actions/ios-action-setup
+      env:
+        SDK_BOT_ACCESS_TOKEN: ${{ secrets.SDK_BOT_ACCESS_TOKEN }}
+
     - name: Checkout release repository
       uses: actions/checkout@v4
       with:
         ref: master
+        path: source
 
-    - name: Setup Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 3
-
-    - name: Setup Xcode version
-      uses: maxim-lobanov/setup-xcode@v1.4.1
-      with:
-        xcode-version: '15.4'
-
-    - name: Setup Cocoapods
-      uses: maxim-lobanov/setup-cocoapods@v1
-      with:
-        version: latest
-
-    - name: Publish pods
-      run: ./Utilities/pod_publish.rb
+    - name: Publish to CocoaPods
+      run: ${{ github.workspace }}/scripts/scripts/release/ios/pod_push.rb
+      working-directory: source
       env:
         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}

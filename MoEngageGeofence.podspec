@@ -15,5 +15,4 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation', 'UIKit', 'CoreLocation'
 
   s.dependency 'MoEngageCore'
-  s.dependency 'MoEngageAnalytics'
 end

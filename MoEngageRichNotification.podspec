@@ -14,7 +14,5 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation', 'UIKit', 'UserNotifications', 'UserNotificationsUI'
 
   s.dependency 'MoEngageCore'
-  s.dependency 'MoEngageAnalytics'
   s.dependency 'MoEngageMessaging'
-  s.dependency 'MoEngageObjCUtils'
 end
