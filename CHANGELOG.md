@@ -2,6 +2,41 @@
 =================================
 
 ## Changelog:
+### Version 9.25.0 *(16th June 2025)*
+-------------------------------------------
+
+#### Core 10.01.0
+Whats new
+    * APIs for tracking personalization clicks and impressions
+
+#### Messaging 5.01.0
+Whats new
+    * Added accessibility support
+Fixes:
+    * Fixed provisional opt in device attribute not getting tracked after 24hrs.
+
+#### Inbox 3.01.0
+Whats new
+    * Added accessibility support
+    
+#### InApps 7.01.0
+Whats new
+    * Added accessibility support
+Fixes:
+    * Fixed crash when `rootViewController` is nil while showing inapp campaign.
+
+#### RichNotification 8.01.0
+Whats new
+     * Added accessibility support
+    
+#### RealTimeTrigger 3.01.0
+Whats new
+    * Added accessibility support
+
+#### CampaignsCore 1.00.0
+Whats new
+    * Added new framework for Campaigns module.
+    
 ### Version 10.00.0 *(27th May 2025)*
 -------------------------------------------
 

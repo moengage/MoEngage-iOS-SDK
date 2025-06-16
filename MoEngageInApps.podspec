@@ -18,4 +18,6 @@ Pod::Spec.new do |s|
   s.dependency 'MoEngageCore'
   s.dependency 'MoEngageMessaging'
   s.dependency 'MoEngageTriggerEvaluator'
+  s.dependency 'MoEngageCampaignsCore'
+
 end
