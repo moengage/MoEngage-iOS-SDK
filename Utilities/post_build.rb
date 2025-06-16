@@ -40,7 +40,7 @@ struct MoEngagePackageProduct {
 extension Collection where Element == Target.Dependency {
     static var `default`: [Target.Dependency] {
         return [
-            "MoEngageCore", "MoEngageMessaging", "MoEngageSDK", "MoEngageSecurity",
+            "MoEngageCore", "MoEngageMessaging", "MoEngageSDK", "MoEngageSecurity","MoEngageCampaignsCore"
         ]
     }
 
@@ -59,6 +59,7 @@ let products: [MoEngagePackageProduct] = [
             #{binary_target(config_map['MoEngageMessaging'])},
             #{binary_target(config_map['MoEngageSDK'])},
             #{binary_target(config_map['MoEngageSecurity'])},
+            #{binary_target(config_map['MoEngageCampaignsCore'])},
         ]
     ),
     .init(

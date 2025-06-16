@@ -6,15 +6,14 @@ Pod::Spec.new do |s|
 
   s.summary      =  "#{s.name} for iOS"
   s.description  = <<-DESC
-                     MoEngageMessaging module will help you support all the features related to push notifications in your App.
+                     MoEngageCampaignsCore contains the central configuration of Campaigns and common Utils to be used accross all the MoEngage frameworks.
                    DESC
 
   s.addDirectUseWarning
   s.tvos.deployment_target = '13.0'
   s.vendored_frameworks = "#{s.name}.xcframework"
-  s.frameworks = 'Foundation', 'UIKit'
+  s.frameworks = 'Foundation', 'UIKit', 'SystemConfiguration' , 'Security'
   s.weak_framework = 'UserNotifications'
 
   s.dependency 'MoEngageCore'
-  s.dependency 'MoEngageCampaignsCore'
 end

@@ -23,7 +23,7 @@ struct MoEngagePackageProduct {
 extension Collection where Element == Target.Dependency {
     static var `default`: [Target.Dependency] {
         return [
-            "MoEngageCore", "MoEngageMessaging", "MoEngageSDK", "MoEngageSecurity",
+            "MoEngageCore", "MoEngageMessaging", "MoEngageSDK", "MoEngageSecurity","MoEngageCampaignsCore"
         ]
     }
 
@@ -42,6 +42,7 @@ let products: [MoEngagePackageProduct] = [
             .binaryTarget(name: "MoEngageMessaging", url: "https://github.com/moengage/apple-sdk/releases/download/10.00.0/MoEngageMessaging.xcframework.zip", checksum: "6ab4c802ab44f61124992dfc9c15e0c369c525dfcac58b9d20839c6bafd8dd45"),
             .binaryTarget(name: "MoEngageSDK", url: "https://github.com/moengage/apple-sdk/releases/download/10.00.0/MoEngageSDK.xcframework.zip", checksum: "3bfccbf74e7838b16a47043e6679f120a0d8c9f0fcee86521a925b04abfb0bd6"),
             .binaryTarget(name: "MoEngageSecurity", url: "https://github.com/moengage/apple-sdk/releases/download/10.00.0/MoEngageSecurity.xcframework.zip", checksum: "204a9cdc5cd4b03090264d6daced4855916f79bad2cd514cbfc44e8d2a069b36"),
+            .binaryTarget(name: "MoEngageCampaignsCore", url: "https://github.com/moengage/apple-sdk/releases/download/10.00.0/MoEngageCampaignsCore.xcframework.zip", checksum: "6ab4c802ab44f61124992dfc9c15e0c369c525dfcac58b9d20839c6bafd8dd45"),
         ]
     ),
     .init(
