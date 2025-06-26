@@ -112,6 +112,13 @@ let products: [MoEngagePackageProduct] = [
         ]
     ),
     .init(
+        name: "MoEngageLiveActivity",
+        targets: [
+            #{binary_target(config_map['MoEngageLiveActivity'])},
+            .target(name: "MoEngageLiveActivitySPM", dependencies: .default),
+        ]
+    ),
+    .init(
         name: "MoEngageInbox",
         targets: [
             #{binary_target(config_map['MoEngageInbox'])},

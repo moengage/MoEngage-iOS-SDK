@@ -2,6 +2,26 @@
 =================================
 
 ## Changelog:
+### Version 10.02.1 *(26th June 2025)*
+-------------------------------------------
+
+#### Core 10.02.1
+Whats new
+    * Added device field tracking and deeplink callback
+
+#### Messaging 5.01.2
+Fixes:
+    * Fixed Notification click Impressions not getting tracked with proxy enabled/disabled in scenarios when application launched from killed state with delayed initialization.
+
+#### Cards 5.01.1
+Whats new
+    * Accessibility support in cards
+
+#### LiveActivity 1.0.1
+Whats new
+    * Added Live activity module
+
+## Changelog:
 ### Version 9.25.0 *(16th June 2025)*
 -------------------------------------------
 

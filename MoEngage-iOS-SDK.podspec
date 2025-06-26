@@ -53,6 +53,12 @@ Pod::Spec.new do |s|
     ss.dependency_pod 'MoEngageRichNotification', :ios
   end
 
+  s.subspec 'LiveActivity' do |ss|
+    ss.extend MoEngageReleaseSDK::SubSpec
+    ss.dependency 'MoEngage-iOS-SDK/Core'
+    ss.dependency_pod 'MoEngageLiveActivity', :ios
+  end
+
   s.subspec 'Inbox' do |ss|
     ss.extend MoEngageReleaseSDK::SubSpec
     ss.dependency 'MoEngage-iOS-SDK/Core'
