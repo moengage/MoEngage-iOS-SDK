@@ -22,6 +22,7 @@ module MoEngageReleaseSDK
       self.version           = package&.version || MoEngageReleaseSDK.config.version
       self.homepage          = 'https://www.moengage.com'
       self.documentation_url = 'https://developers.moengage.com'
+      self.changelog         = 'https://developers.moengage.com/hc/en-us/articles/4404198236564-Changelog'
       self.license           = { :type => 'Commercial', :text => File.read('LICENSE') }
       self.author            = { 'MobileDev' => 'mobiledevs@moengage.com' }
       self.social_media_url  = 'https://twitter.com/moengage'
