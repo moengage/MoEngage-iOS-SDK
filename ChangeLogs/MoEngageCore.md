@@ -1,3 +1,9 @@
+# 15-07-2025
+
+## 10.03.0
+
+- Added support for file based initialization
+
 # 08-07-2025
 
 ## 10.02.3
