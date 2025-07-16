@@ -1,3 +1,9 @@
+# 16-07-2025
+
+## 10.03.1
+
+- Updated Xcode version to fix typed throws API not being added to swift module interface
+
 # 15-07-2025
 
 ## 10.03.0

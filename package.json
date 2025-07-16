@@ -1,6 +1,6 @@
 {
   "name": "MoEngage-iOS-SDK",
-  "version": "10.03.0",
+  "version": "10.03.1",
   "tagPrefix": "moengage-",
   "postBuild": "Utilities/post_build.rb",
   "packages": [
@@ -14,11 +14,11 @@
     },
     {
       "name": "MoEngageCore",
-      "version": "10.03.0",
+      "version": "10.03.1",
       "tagPrefix": "core-",
       "changelog": "ChangeLogs/MoEngageCore.md",
-      "hash": "c2c2a47f7a0e65cc6a02d49927e19fc50d55a7d168139a228b5cdbf011aab7f2",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.03.0/MoEngageCore.xcframework.zip"
+      "hash": "5414a64f4b717662d23f5f9ab83228c30c667c34cbe6651b67f41aa4179dc0a0",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.03.1/MoEngageCore.xcframework.zip"
     },
     {
       "name": "MoEngageCampaignsCore",
