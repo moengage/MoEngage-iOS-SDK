@@ -1,3 +1,13 @@
+# 25-07-2025
+
+## 10.03.2
+
+- Removed fallback domain switch functionality.
+- Updated file based initialization keys
+    - IsSdkAutoInitialisationDisabled -> IsSdkAutoInitialisationEnabled
+    - AnalyticsDisablePeriodicFlush -> AnalyticsEnablePeriodicFlush
+- Resolved the issue with incorrect unique ID retrieval from the extension, ensuring accurate Request ID generation.
+
 # 16-07-2025
 
 ## 10.03.1
