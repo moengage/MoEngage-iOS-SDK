@@ -1,3 +1,10 @@
+# 05-08-2025
+
+## 7.02.0
+
+- Added support for new test inapp experience
+- Added HTML Nudges support in InApps module
+
 # 25-07-2025
 
 ## 7.01.2

@@ -1,6 +1,6 @@
 {
   "name": "MoEngage-iOS-SDK",
-  "version": "10.03.2",
+  "version": "10.04.0",
   "tagPrefix": "moengage-",
   "postBuild": "Utilities/post_build.rb",
   "packages": [
@@ -14,11 +14,11 @@
     },
     {
       "name": "MoEngageCore",
-      "version": "10.03.2",
+      "version": "10.03.3",
       "tagPrefix": "core-",
       "changelog": "ChangeLogs/MoEngageCore.md",
-      "hash": "16e3ed18009233f7dc33aca5646015f7e7875e32f0e3a36e10b6148c08b1711a",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.03.2/MoEngageCore.xcframework.zip"
+      "hash": "a934d9d1177aad8ed812f8b0e00e01141fa36f239a345261a2da0e6736d1011c",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.04.0/MoEngageCore.xcframework.zip"
     },
     {
       "name": "MoEngageCampaignsCore",
@@ -30,11 +30,11 @@
     },
     {
       "name": "MoEngageMessaging",
-      "version": "5.01.3",
+      "version": "5.01.4",
       "tagPrefix": "messaging-",
       "changelog": "ChangeLogs/MoEngageMessaging.md",
-      "hash": "3bdfed30f0fa284773d3c648bae34799ede466928b8c9b1db937d04005da13cb",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.03.0/MoEngageMessaging.xcframework.zip"
+      "hash": "5ef139e1e7b36659ffc81bc94398754861c0e7b471c5ddf7016d32e6cbe6bb71",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.04.0/MoEngageMessaging.xcframework.zip"
     },
     {
       "name": "MoEngageSDK",
@@ -46,19 +46,19 @@
     },
     {
       "name": "MoEngageTriggerEvaluator",
-      "version": "2.00.1",
+      "version": "2.00.2",
       "tagPrefix": "triggerEvalvator-",
       "changelog": "ChangeLogs/MoEngageTriggerEvaluator.md",
-      "hash": "b0cb40b8c98cb8f6d695e64ba62a99570547e638d7cbe0c6cc576988006567eb",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.02.1/MoEngageTriggerEvaluator.xcframework.zip"
+      "hash": "3170abe5d8793c4e9decb34200ed546b53a373b0cdb7ccce14ec1c46a8a42dc3",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.04.0/MoEngageTriggerEvaluator.xcframework.zip"
     },
     {
       "name": "MoEngageInApps",
-      "version": "7.01.2",
+      "version": "7.02.0",
       "tagPrefix": "inapp-",
       "changelog": "ChangeLogs/MoEngageInApps.md",
-      "hash": "dc145a82084be467645c6267846134532c133b4c2f28db44a6c156ed8373f61a",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.03.2/MoEngageInApps.xcframework.zip"
+      "hash": "788c7a20e406f6210f4bc785688b7b73fa3e70303d18b6942688b19cd022a895",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.04.0/MoEngageInApps.xcframework.zip"
     },
     {
       "name": "MoEngageCards",

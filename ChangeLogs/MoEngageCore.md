@@ -1,3 +1,12 @@
+# 05-08-2025
+
+## 10.03.3
+
+- Added support for new test inapp experience
+### Internal
+- Convert some tests to new Swift testing framework
+- Added fallback SDK configuration for partner SDKs
+
 # 25-07-2025
 
 ## 10.03.2

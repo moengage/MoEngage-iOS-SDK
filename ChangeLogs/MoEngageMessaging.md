@@ -1,3 +1,9 @@
+# 05-08-2025
+
+## 5.01.4
+
+- Added support for new test inapp experience
+
 # 15-07-2025
 
 ## 5.01.3
