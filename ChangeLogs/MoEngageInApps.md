@@ -1,3 +1,10 @@
+# 21-08-2025
+
+## 7.02.1
+
+- Fixed the universal deeplink callback to SceneDelegate.
+- Fixed nullability specifier warnings/errors in ObjC files
+
 # 05-08-2025
 
 ## 7.02.0

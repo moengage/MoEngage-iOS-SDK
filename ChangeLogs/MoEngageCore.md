@@ -1,3 +1,11 @@
+# 21-08-2025
+
+## 10.03.4
+- Fixed the universal deeplink callback to SceneDelegate.Moved the method to CampaignsCore framework
+
+### Internal
+- Fixed nullability specifier warnings/errors in ObjC files
+
 # 05-08-2025
 
 ## 10.03.3
