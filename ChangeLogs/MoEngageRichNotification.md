@@ -1,3 +1,9 @@
+# 28-08-2025
+
+## 8.01.3
+
+- Improve push notification received impression tracking performance.
+
 # 15-07-2025
 
 ## 8.01.2

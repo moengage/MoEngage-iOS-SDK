@@ -1,3 +1,10 @@
+# 28-08-2025
+
+## 10.03.5
+
+### Internal
+- Added improvements to data tracking debugging.
+
 # 21-08-2025
 
 ## 10.03.4

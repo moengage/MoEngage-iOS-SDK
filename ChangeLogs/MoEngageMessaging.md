@@ -1,3 +1,9 @@
+# 28-08-2025
+
+## 5.01.6
+
+- Added completion callback to `logNotificationReceived`. Deprecated older API without completion.
+
 # 21-08-2025
 
 ## 5.01.5

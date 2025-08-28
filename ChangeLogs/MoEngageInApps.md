@@ -1,3 +1,9 @@
+# 28-08-2025
+
+## 7.02.2
+
+- MOEN:39995: [CrashFix] Fixed Inapps condition evaluator thread safety issue
+
 # 21-08-2025
 
 ## 7.02.1

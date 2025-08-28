@@ -1,3 +1,8 @@
+# 28-08-2025
+
+## 5.01.4
+- Added UID and Multi-Id to cards user activity API request call
+
 # 21-08-2025
 
 ## 5.01.3
