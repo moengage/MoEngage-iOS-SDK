@@ -1,3 +1,12 @@
+# 08-09-2025
+
+## 10.04.0
+
+- Added support for device attributes tracking
+
+### Internal
+- Moved push opt-in status to report calls
+
 # 28-08-2025
 
 ## 10.03.5

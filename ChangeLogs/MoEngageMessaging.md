@@ -1,3 +1,8 @@
+# 08-09-2025
+
+## 5.01.7
+- Moved push opt-in status to report calls
+
 # 28-08-2025
 
 ## 5.01.6
