@@ -1,3 +1,13 @@
+# 20-09-2025
+
+## 10.04.1
+
+- Campaign priority management support added.
+
+### CrashFix
+
+- Fixed duplicated user attribute migration from 7.x version
+
 # 08-09-2025
 
 ## 10.04.0

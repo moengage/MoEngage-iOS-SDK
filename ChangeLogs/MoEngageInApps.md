@@ -1,3 +1,11 @@
+# 20-09-2025
+
+## 7.03.0
+
+- Campaign priority management support added.
+- Updated bordering,resizing of imageviews, containers in InApps
+- Added support for Multi-ID in JS bridge
+
 # 28-08-2025
 
 ## 7.02.2
