@@ -1,3 +1,10 @@
+# 24-09-2025
+
+## 7.03.1
+
+- Nullability and nullable warning fixes
+- [CrashFix] Fix crash in MoEngageInAppState encoding when expiry_time is nil.
+
 # 20-09-2025
 
 ## 7.03.0

@@ -1,3 +1,10 @@
+# 24-09-2025
+
+## 10.05.0
+
+- Added multiple project support in single workspace
+- Added support for portfolio level user attributes tracking
+
 # 20-09-2025
 
 ## 10.04.1
