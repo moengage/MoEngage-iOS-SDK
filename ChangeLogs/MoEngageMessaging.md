@@ -1,3 +1,10 @@
+# 13-10-2025
+
+## 5.01.8
+
+- Replaced the deprecated API to ensure iOS 13 compatibility
+- Updated push opt-in with nil check
+
 # 08-09-2025
 
 ## 5.01.7

@@ -1,3 +1,11 @@
+# 13-10-2025
+
+## 10.05.1
+
+### Internal
+- Replaced the deprecated API to ensure iOS 13 compatibility
+- Fixed an internal Objective-C keyword conflict by renaming a variable for C++ build compatibility.
+
 # 24-09-2025
 
 ## 10.05.0

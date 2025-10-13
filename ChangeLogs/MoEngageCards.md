@@ -1,3 +1,9 @@
+# 13-10-2025
+
+## 5.01.5
+
+- Replaced the deprecated API to ensure iOS 13 compatibility
+
 # 28-08-2025
 
 ## 5.01.4

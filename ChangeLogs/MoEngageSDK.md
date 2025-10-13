@@ -1,3 +1,9 @@
+# 13-10-2025
+
+## 10.01.1
+
+- Added dependency to MoEngageCampaignsCore module.
+
 # 15-07-2025
 
 ## 10.01.0

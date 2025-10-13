@@ -1,3 +1,11 @@
+# 13-10-2025
+
+## 7.03.2
+
+- [BugFix] Fixed stats API migration issue where old batches were using v2 format on v1 endpoint.
+- Replaced the deprecated API to ensure iOS 13 compatibility
+- Fixed an internal Objective-C keyword conflict by renaming a variable for C++ build compatibility.
+
 # 24-09-2025
 
 ## 7.03.1
