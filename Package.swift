@@ -38,7 +38,7 @@ let products: [MoEngagePackageProduct] = [
     .init(
         name: "MoEngageSDK",
         targets: [
-            .binaryTarget(name: "MoEngageCore", url: "https://github.com/moengage/apple-sdk/releases/download/10.07.1/MoEngageCore.xcframework.zip", checksum: "3432f10b20c9ea5a8f4dd8fb8ad64216d3771bcdd2921f0b21e965c6eb758dcd"),
+            .binaryTarget(name: "MoEngageCore", url: "https://github.com/moengage/apple-sdk/releases/download/10.07.2/MoEngageCore.xcframework.zip", checksum: "ad2f0f78038620d7acbb5035780ba7343809cd3ad8759dc4210b95748b66d1ab"),
             .binaryTarget(name: "MoEngageMessaging", url: "https://github.com/moengage/apple-sdk/releases/download/10.07.1/MoEngageMessaging.xcframework.zip", checksum: "f17208e6c2c27529674d0dbfa6524b135dce14df1c2392e12fbb936695c873fd"),
             .binaryTarget(name: "MoEngageSDK", url: "https://github.com/moengage/apple-sdk/releases/download/10.07.1/MoEngageSDK.xcframework.zip", checksum: "f81a5160dde8e3d84a14ae62d2dae2a2e3ac5662a023efbeefc05788c31f78f9"),
             .binaryTarget(name: "MoEngageSecurity", url: "https://github.com/moengage/apple-sdk/releases/download/10.02.1/MoEngageSecurity.xcframework.zip", checksum: "6d91ede2600a7fd7f389dcd0273381aa6df3f0ae11d70986b5a7d0a497b6e3c6"),
@@ -83,7 +83,7 @@ let products: [MoEngagePackageProduct] = [
     .init(
         name: "MoEngageGeofence",
         targets: [
-            .binaryTarget(name: "MoEngageGeofence", url: "https://github.com/moengage/apple-sdk/releases/download/10.03.0/MoEngageGeofence.xcframework.zip", checksum: "5cf0834dd0995876cb65f030e59d6b9e099376f4181342503660c632f5525f3b"),
+            .binaryTarget(name: "MoEngageGeofence", url: "https://github.com/moengage/apple-sdk/releases/download/10.07.2/MoEngageGeofence.xcframework.zip", checksum: "4647e7a3402be53995e82ba0693ae04b0b7d0dbf4aa78dadcede89f54a2e72df"),
             .target(name: "MoEngageGeofenceSPM", dependencies: .default),
         ]
     ),
@@ -111,7 +111,7 @@ let products: [MoEngagePackageProduct] = [
     .init(
         name: "MoEngageRealTimeTrigger",
         targets: [
-            .binaryTarget(name: "MoEngageRealTimeTrigger", url: "https://github.com/moengage/apple-sdk/releases/download/10.02.1/MoEngageRealTimeTrigger.xcframework.zip", checksum: "cc8771ee1062c47df05b29e955be8a55790238e557e96723310fd5dbecb4f57a"),
+            .binaryTarget(name: "MoEngageRealTimeTrigger", url: "https://github.com/moengage/apple-sdk/releases/download/10.07.2/MoEngageRealTimeTrigger.xcframework.zip", checksum: "32181044bd12e6b6cce2f4cadeaf38a2e81da0e232bd898253a878eae900ab9f"),
             .target(name: "MoEngageRealTimeTriggerSPM", dependencies: .additional(dependency: "MoEngageRichNotification")),
         ]
     ),

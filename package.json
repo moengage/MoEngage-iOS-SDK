@@ -1,6 +1,6 @@
 {
   "name": "MoEngage-iOS-SDK",
-  "version": "10.07.1",
+  "version": "10.07.2",
   "tagPrefix": "moengage-",
   "postBuild": "Utilities/post_build.rb",
   "packages": [
@@ -14,11 +14,11 @@
     },
     {
       "name": "MoEngageCore",
-      "version": "10.05.1",
+      "version": "10.05.2",
       "tagPrefix": "core-",
       "changelog": "ChangeLogs/MoEngageCore.md",
-      "hash": "3432f10b20c9ea5a8f4dd8fb8ad64216d3771bcdd2921f0b21e965c6eb758dcd",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.07.1/MoEngageCore.xcframework.zip"
+      "hash": "ad2f0f78038620d7acbb5035780ba7343809cd3ad8759dc4210b95748b66d1ab",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.07.2/MoEngageCore.xcframework.zip"
     },
     {
       "name": "MoEngageCampaignsCore",
@@ -78,11 +78,11 @@
     },
     {
       "name": "MoEngageGeofence",
-      "version": "6.00.2",
+      "version": "6.00.3",
       "tagPrefix": "geofence-",
       "changelog": "ChangeLogs/MoEngageGeofence.md",
-      "hash": "5cf0834dd0995876cb65f030e59d6b9e099376f4181342503660c632f5525f3b",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.03.0/MoEngageGeofence.xcframework.zip"
+      "hash": "4647e7a3402be53995e82ba0693ae04b0b7d0dbf4aa78dadcede89f54a2e72df",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.07.2/MoEngageGeofence.xcframework.zip"
     },
     {
       "name": "MoEngageRichNotification",
@@ -102,11 +102,11 @@
     },
     {
       "name": "MoEngageRealTimeTrigger",
-      "version": "3.01.1",
+      "version": "3.01.2",
       "tagPrefix": "rtt-",
       "changelog": "ChangeLogs/MoEngageRealTimeTrigger.md",
-      "hash": "cc8771ee1062c47df05b29e955be8a55790238e557e96723310fd5dbecb4f57a",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.02.1/MoEngageRealTimeTrigger.xcframework.zip"
+      "hash": "32181044bd12e6b6cce2f4cadeaf38a2e81da0e232bd898253a878eae900ab9f",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.07.2/MoEngageRealTimeTrigger.xcframework.zip"
     }
   ],
   "kmm": {
