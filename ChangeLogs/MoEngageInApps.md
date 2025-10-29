@@ -1,3 +1,14 @@
+# 29-10-2025
+
+## 7.03.3
+
+- [BugFix] Added missing mapping for InApp Stat.
+
+### Internal
+
+- Removed older JWT authentication
+- Converted MoEngageInAppCampaignMeta to swift
+
 # 13-10-2025
 
 ## 7.03.2

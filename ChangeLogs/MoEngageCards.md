@@ -1,3 +1,11 @@
+# 29-10-2025
+
+## 5.01.6
+
+### Internal
+
+- Removed older JWT authentication
+
 # 13-10-2025
 
 ## 5.01.5

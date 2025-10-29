@@ -1,3 +1,17 @@
+# 29-10-2025
+
+## 10.06.0
+
+- Added option to remotely update data center host
+- Updated JWT implementation to v2
+
+### Internal
+
+- Removed older JWT authentication
+- Fixed typo in JWT authorization initialization config
+- Exposed single background task
+- Exposed URL processing callback to CampaignsCore
+
 # 17-10-2025
 
 ## 10.05.2

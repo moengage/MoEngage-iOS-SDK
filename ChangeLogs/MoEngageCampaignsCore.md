@@ -1,3 +1,9 @@
+# 29-10-2025
+
+## 1.01.0
+
+- Added support for tracking clicks in email
+
 # 13-10-2025
 
 ## 1.00.3
