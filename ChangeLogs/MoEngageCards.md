@@ -1,3 +1,11 @@
+# 01-12-2025
+
+## 5.01.7
+
+### Internal
+
+- Remove unrequired data from backup
+
 # 29-10-2025
 
 ## 5.01.6

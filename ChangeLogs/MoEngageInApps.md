@@ -1,3 +1,12 @@
+# 01-12-2025
+
+## 7.03.4
+
+### Internal
+
+- Fixed InApps Warnings
+- Remove unrequired data from backup
+
 # 29-10-2025
 
 ## 7.03.3

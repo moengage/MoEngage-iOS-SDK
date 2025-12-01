@@ -38,11 +38,11 @@ let products: [MoEngagePackageProduct] = [
     .init(
         name: "MoEngageSDK",
         targets: [
-            .binaryTarget(name: "MoEngageCore", url: "https://github.com/moengage/apple-sdk/releases/download/10.08.0/MoEngageCore.xcframework.zip", checksum: "109aae19562cd35b610cec9548e8b041634a509c142265d9f88e233740ab2535"),
+            .binaryTarget(name: "MoEngageCore", url: "https://github.com/moengage/apple-sdk/releases/download/10.08.1/MoEngageCore.xcframework.zip", checksum: "993febedad88ca64f3413cab518304e89cf3a9bc2dc74dc947ed75efd1b8d762"),
             .binaryTarget(name: "MoEngageMessaging", url: "https://github.com/moengage/apple-sdk/releases/download/10.08.0/MoEngageMessaging.xcframework.zip", checksum: "0c4add18321e3414540d8dd8e0d15d8efbee4699b263c1e52256701913e3bd49"),
             .binaryTarget(name: "MoEngageSDK", url: "https://github.com/moengage/apple-sdk/releases/download/10.07.1/MoEngageSDK.xcframework.zip", checksum: "f81a5160dde8e3d84a14ae62d2dae2a2e3ac5662a023efbeefc05788c31f78f9"),
             .binaryTarget(name: "MoEngageSecurity", url: "https://github.com/moengage/apple-sdk/releases/download/10.02.1/MoEngageSecurity.xcframework.zip", checksum: "6d91ede2600a7fd7f389dcd0273381aa6df3f0ae11d70986b5a7d0a497b6e3c6"),
-            .binaryTarget(name: "MoEngageCampaignsCore", url: "https://github.com/moengage/apple-sdk/releases/download/10.08.0/MoEngageCampaignsCore.xcframework.zip", checksum: "4faf7919b5be7906ee3e40c104d41669659cd3458aa5e1bd7d6437fc4180baeb"),
+            .binaryTarget(name: "MoEngageCampaignsCore", url: "https://github.com/moengage/apple-sdk/releases/download/10.08.1/MoEngageCampaignsCore.xcframework.zip", checksum: "117ad83317413192f3f3193ca1066fd7bc38362b7b3e12fe1be1cecba28968a0"),
         ]
     ),
     .init(
@@ -68,14 +68,14 @@ let products: [MoEngagePackageProduct] = [
     .init(
         name: "MoEngageInApps",
         targets: [
-            .binaryTarget(name: "MoEngageInApps", url: "https://github.com/moengage/apple-sdk/releases/download/10.08.0/MoEngageInApps.xcframework.zip", checksum: "d637cc95eb651ceef7d8d2963298a2c66ff4a85df560706659bc90a67785992b"),
+            .binaryTarget(name: "MoEngageInApps", url: "https://github.com/moengage/apple-sdk/releases/download/10.08.1/MoEngageInApps.xcframework.zip", checksum: "d23e86515460e908200cfd535396bc275212948d9be6d32d452f3ef07328e62c"),
             .target(name: "MoEngageInAppSPM", dependencies: .additional(dependency: "MoEngageTriggerEvaluator")),
         ]
     ),
     .init(
         name: "MoEngageCards",
         targets: [
-            .binaryTarget(name: "MoEngageCards", url: "https://github.com/moengage/apple-sdk/releases/download/10.08.0/MoEngageCards.xcframework.zip", checksum: "438834cc89185b5da55b875695f1fba4db5f15a119c812e3a18c088a27e0aef8"),
+            .binaryTarget(name: "MoEngageCards", url: "https://github.com/moengage/apple-sdk/releases/download/10.08.1/MoEngageCards.xcframework.zip", checksum: "6b93488f6ca167961936e7df9a1a9045955f5d82b9cd1ccc1e4f3272509ce9bd"),
             .target(name: "MoEngageCardsSPM", dependencies: .default),
         ]
     ),
@@ -90,7 +90,7 @@ let products: [MoEngagePackageProduct] = [
     .init(
         name: "MoEngageRichNotification",
         targets: [
-            .binaryTarget(name: "MoEngageRichNotification", url: "https://github.com/moengage/apple-sdk/releases/download/10.04.2/MoEngageRichNotification.xcframework.zip", checksum: "880b79ab01c5eb4d3b488d9899eb38a429a80a3322b3c281e03f3d298ada3aae"),
+            .binaryTarget(name: "MoEngageRichNotification", url: "https://github.com/moengage/apple-sdk/releases/download/10.08.1/MoEngageRichNotification.xcframework.zip", checksum: "2ee08ec701bee6fdc91f633a18caa423e99ceaee795264496aa1806845172a6a"),
             .target(name: "MoEngageRichNotificationSPM", dependencies: .default),
         ]
     ),

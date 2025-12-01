@@ -1,3 +1,14 @@
+# 01-12-2025
+
+## 10.06.1
+
+- Added support for `inTheFollowing` operator for String
+
+### Internal
+
+- Fixed InApps Warnings
+- Remove unrequired data from backup
+
 # 29-10-2025
 
 ## 10.06.0
