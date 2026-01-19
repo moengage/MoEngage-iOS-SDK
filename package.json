@@ -1,6 +1,6 @@
 {
   "name": "MoEngage-iOS-SDK",
-  "version": "10.08.1",
+  "version": "10.09.0",
   "tagPrefix": "moengage-",
   "postBuild": "Utilities/post_build.rb",
   "packages": [
@@ -14,99 +14,99 @@
     },
     {
       "name": "MoEngageCore",
-      "version": "10.06.1",
+      "version": "10.07.0",
       "tagPrefix": "core-",
       "changelog": "ChangeLogs/MoEngageCore.md",
-      "hash": "993febedad88ca64f3413cab518304e89cf3a9bc2dc74dc947ed75efd1b8d762",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.08.1/MoEngageCore.xcframework.zip"
+      "hash": "01523977f6df19f61f3100801425b2e843d7da603efaa6121b1f98b068ae5287",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.09.0/MoEngageCore.xcframework.zip"
     },
     {
       "name": "MoEngageCampaignsCore",
-      "version": "1.01.1",
+      "version": "1.01.2",
       "tagPrefix": "campaignsCore-",
       "changelog": "ChangeLogs/MoEngageCampaignsCore.md",
-      "hash": "117ad83317413192f3f3193ca1066fd7bc38362b7b3e12fe1be1cecba28968a0",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.08.1/MoEngageCampaignsCore.xcframework.zip"
+      "hash": "5bf4679d31de7fe3575bdb363c2fff7ed9ac1493465511a45e4888c098d0dbad",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.09.0/MoEngageCampaignsCore.xcframework.zip"
     },
     {
       "name": "MoEngageMessaging",
-      "version": "5.01.9",
+      "version": "5.01.10",
       "tagPrefix": "messaging-",
       "changelog": "ChangeLogs/MoEngageMessaging.md",
-      "hash": "0c4add18321e3414540d8dd8e0d15d8efbee4699b263c1e52256701913e3bd49",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.08.0/MoEngageMessaging.xcframework.zip"
+      "hash": "58c96e9ec1562e76301a1724e07885bbd6f92f6b8b7080fc5f64052bca0ab57f",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.09.0/MoEngageMessaging.xcframework.zip"
     },
     {
       "name": "MoEngageSDK",
-      "version": "10.01.1",
+      "version": "10.01.2",
       "tagPrefix": "sdk-",
       "changelog": "ChangeLogs/MoEngageSDK.md",
-      "hash": "f81a5160dde8e3d84a14ae62d2dae2a2e3ac5662a023efbeefc05788c31f78f9",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.07.1/MoEngageSDK.xcframework.zip"
+      "hash": "6526e5eedbc202c8953d9dae2e4b2a6876c49f39ca411aa596bea981f4bc6af8",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.09.0/MoEngageSDK.xcframework.zip"
     },
     {
       "name": "MoEngageTriggerEvaluator",
-      "version": "2.00.2",
+      "version": "2.00.3",
       "tagPrefix": "triggerEvalvator-",
       "changelog": "ChangeLogs/MoEngageTriggerEvaluator.md",
-      "hash": "3170abe5d8793c4e9decb34200ed546b53a373b0cdb7ccce14ec1c46a8a42dc3",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.04.0/MoEngageTriggerEvaluator.xcframework.zip"
+      "hash": "1d8f00300a7cf1e5c5934066e7aaf897ce94ddf4d8e7782370d7f3d07047dd6a",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.09.0/MoEngageTriggerEvaluator.xcframework.zip"
     },
     {
       "name": "MoEngageInApps",
-      "version": "7.03.4",
+      "version": "7.04.0",
       "tagPrefix": "inapp-",
       "changelog": "ChangeLogs/MoEngageInApps.md",
-      "hash": "d23e86515460e908200cfd535396bc275212948d9be6d32d452f3ef07328e62c",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.08.1/MoEngageInApps.xcframework.zip"
+      "hash": "9d36833fcbbb01cb60c5b1a0027debf240ceb7353e8de71e1f38dd049411c1e8",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.09.0/MoEngageInApps.xcframework.zip"
     },
     {
       "name": "MoEngageCards",
-      "version": "5.01.7",
+      "version": "5.01.8",
       "tagPrefix": "cards-",
       "changelog": "ChangeLogs/MoEngageCards.md",
-      "hash": "6b93488f6ca167961936e7df9a1a9045955f5d82b9cd1ccc1e4f3272509ce9bd",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.08.1/MoEngageCards.xcframework.zip"
+      "hash": "44b882734bd96843936753c3b8656dc5e5a5107504f601664bff03c8897e4b12",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.09.0/MoEngageCards.xcframework.zip"
     },
     {
       "name": "MoEngageInbox",
-      "version": "3.01.3",
+      "version": "3.01.4",
       "tagPrefix": "inbox-",
       "changelog": "ChangeLogs/MoEngageInbox.md",
-      "hash": "15448803685f94002f4b177d51163a3c03ab39e7e7a6840aa67b24749464497b",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.08.0/MoEngageInbox.xcframework.zip"
+      "hash": "7e132740bb62201e85eeb81541afe62d8470470a5f6fea5bbe36da1ea01217ce",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.09.0/MoEngageInbox.xcframework.zip"
     },
     {
       "name": "MoEngageGeofence",
-      "version": "6.00.4",
+      "version": "6.00.5",
       "tagPrefix": "geofence-",
       "changelog": "ChangeLogs/MoEngageGeofence.md",
-      "hash": "a696c83a1c75a61a510b6dbbea6693a753036e22c6a99cb91cab2129ac10436d",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.08.0/MoEngageGeofence.xcframework.zip"
+      "hash": "34366877d3bf8c729ba4b7a8ebe1ac9acb37c985e2df42fcb04667529e4ba1bb",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.09.0/MoEngageGeofence.xcframework.zip"
     },
     {
       "name": "MoEngageRichNotification",
-      "version": "8.01.4",
+      "version": "8.01.5",
       "tagPrefix": "richPush-",
       "changelog": "ChangeLogs/MoEngageRichNotification.md",
-      "hash": "2ee08ec701bee6fdc91f633a18caa423e99ceaee795264496aa1806845172a6a",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.08.1/MoEngageRichNotification.xcframework.zip"
+      "hash": "1581bb9b0f263e707d56d024def5cbb66b4d934aa3391c06918392e82b4e1ec4",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.09.0/MoEngageRichNotification.xcframework.zip"
     },
     {
       "name": "MoEngageLiveActivity",
-      "version": "1.0.2",
+      "version": "1.1.0",
       "tagPrefix": "liveActivity-",
       "changelog": "ChangeLogs/MoEngageLiveActivity.md",
-      "hash": "da57badad9179522056a9d86bb179076ebc7ca5b06ab42f6c6c685761f1a70c9",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.03.0/MoEngageLiveActivity.xcframework.zip"
+      "hash": "f1e43446864c0d8a0901f7f961562460f67056d3946cd9eb2f355daabcd1bd1b",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.09.0/MoEngageLiveActivity.xcframework.zip"
     },
     {
       "name": "MoEngageRealTimeTrigger",
-      "version": "3.01.3",
+      "version": "3.01.4",
       "tagPrefix": "rtt-",
       "changelog": "ChangeLogs/MoEngageRealTimeTrigger.md",
-      "hash": "8336f52bcc4fe6877ef703da462b77e14691e0264cc627ad0fbf0864631a0041",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.08.0/MoEngageRealTimeTrigger.xcframework.zip"
+      "hash": "1b4ef3f8361b0ccb8e155cb8c5083474ead15c5751f268abdd76fdff526b2f62",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.09.0/MoEngageRealTimeTrigger.xcframework.zip"
     }
   ],
   "kmm": {

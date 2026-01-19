@@ -1,3 +1,11 @@
+# 19-01-2026
+
+## 5.01.8
+
+### Internal
+
+- Binary compatibility changes
+
 # 01-12-2025
 
 ## 5.01.7

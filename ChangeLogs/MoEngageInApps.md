@@ -1,3 +1,16 @@
+# 19-01-2026
+
+## 7.04.0
+- Added Frequency Capping for Inapps
+- Added Segment Re-evaluation Support
+
+### Internal
+
+- Binary compatibility changes
+- InApp Stats migration from Objective C to Swift.
+- Push click action not working on notification drawer fix
+- Fixed the focus warning seen in tvOS while dismissing the inapp.
+
 # 01-12-2025
 
 ## 7.03.4

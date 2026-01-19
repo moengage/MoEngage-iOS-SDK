@@ -1,3 +1,12 @@
+# 19-01-2026
+
+## 3.01.4
+
+### Internal
+
+- Binary compatibility changes
+- push_opt_in_mode attribute value fix
+
 # 29-10-2025
 
 ## 3.01.3

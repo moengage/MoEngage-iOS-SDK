@@ -1,3 +1,14 @@
+# 19-01-2026
+
+## 5.01.10
+
+- Added the new API logNotificationClicked that can accurately track click or dimiss of                      notification
+- push_opt_in_mode attribute value fix
+
+### Internal
+
+- Binary compatibility changes
+
 # 29-10-2025
 
 ## 5.01.9

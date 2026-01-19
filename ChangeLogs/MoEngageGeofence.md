@@ -1,3 +1,11 @@
+# 19-01-2026
+
+## 6.00.5
+
+### Internal
+
+- Binary compatibility changes
+
 # 29-10-2025
 
 ## 6.00.4

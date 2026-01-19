@@ -1,3 +1,13 @@
+# 19-01-2026
+
+## 1.01.2
+
+- Push click action not working on notification drawer fix
+
+### Internal
+
+- Binary compatibility changes
+
 # 01-12-2025
 
 ## 1.01.1

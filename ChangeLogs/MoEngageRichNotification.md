@@ -1,3 +1,11 @@
+# 19-01-2026
+
+## 8.01.5
+
+### Internal
+
+- Binary compatibility changes
+
 # 01-12-2025
 
 ## 8.01.4

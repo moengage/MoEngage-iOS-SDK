@@ -1,3 +1,19 @@
+# 19-01-2026
+
+## 10.07.0
+
+- Added support for Frequency Capping in InApps
+- Added support for transactional live activity
+- Added custom base domain configuration for MoEngage REST APIs
+
+### Internal
+
+- Provide logout completion callback after new user created
+- Fixed remote config request contract
+- Added no-code SDK file based initialization
+- Added new module callback handling approach with `MoEngageModule`
+- Fixed incorrect error log when deleting file
+
 # 01-12-2025
 
 ## 10.06.1
