@@ -1,3 +1,13 @@
+# 29-01-2026
+
+## 5.01.9
+
+### Internal
+
+- Added automated extension integration setup
+- Optimized cards controller code snippet for unit test
+- Added the unit test cases to the files that are under model
+
 # 19-01-2026
 
 ## 5.01.8

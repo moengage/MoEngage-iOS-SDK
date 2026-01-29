@@ -1,3 +1,14 @@
+# 29-01-2026
+
+## 5.02.00
+
+- Added support for SelfHandled Background Push.
+
+### Internal
+
+- Added automated extension integration setup
+- Added the unit test cases for pushdatamanager and messagingutils
+
 # 19-01-2026
 
 ## 5.01.10

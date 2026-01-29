@@ -1,3 +1,11 @@
+# 29-01-2026
+
+## 1.1.1
+
+### Internal
+
+- Added automated extension integration setup
+
 # 19-01-2026
 
 ## 1.1.0

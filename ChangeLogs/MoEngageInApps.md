@@ -1,3 +1,18 @@
+# 29-01-2026
+
+## 7.05.0
+
+- Added Frequency Capping for Inapps
+
+### CrashFix
+
+- Fixed crash with HTML nudge testing
+
+### Internal
+
+- Added automated extension integration setup
+- Added support for device level campaign show count and delay
+
 # 19-01-2026
 
 ## 7.04.0

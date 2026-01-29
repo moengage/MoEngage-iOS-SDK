@@ -1,3 +1,14 @@
+# 29-01-2026
+
+## 3.02.0
+
+- Added support for SelfHandled Background Push.
+
+### Internal
+
+- Added automated extension integration setup
+- Changed default value for inboxExtensionData to an empty array
+
 # 19-01-2026
 
 ## 3.01.4
