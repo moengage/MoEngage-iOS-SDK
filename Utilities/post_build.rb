@@ -11,7 +11,7 @@ config = JSON.parse(File.read('package.json'), {object_class: OpenStruct})
 config_map = Hash[ *config.packages.collect { |package| [ package.name, package ] }.flatten ]
 
 def binary_target(package)
-  ".binaryTarget(name: \"#{package.name}\", url: \"#{package.url}\", checksum: \"#{package[:hash]}\")"
+  ".binaryTarget(name: \"#{package.tool || package.name}\", url: \"#{package.url}\", checksum: \"#{package[:hash]}\")"
 end
 
 package_swift = <<PACKAGE
@@ -130,6 +130,12 @@ let products: [MoEngagePackageProduct] = [
         targets: [
             #{binary_target(config_map['MoEngageRealTimeTrigger'])},
             .target(name: "MoEngageRealTimeTriggerSPM", dependencies: .additional(dependency: "MoEngageRichNotification")),
+        ]
+    ),
+    .init(
+        name: "moengage-extensions-integration",
+        targets: [
+            #{binary_target(config_map['MoEngageExtensionsIntegration'])},
         ]
     ),
 ]

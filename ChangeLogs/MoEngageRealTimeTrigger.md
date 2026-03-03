@@ -1,3 +1,9 @@
+# 03-03-2026
+
+## 3.01.6
+
+- Removed the usage of MoEngageNetworkservice in NetworkRequest.
+
 # 29-01-2026
 
 ## 3.01.5

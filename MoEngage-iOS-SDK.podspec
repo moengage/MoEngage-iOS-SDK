@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
     ss.dependency_pod 'MoEngageMessaging'
     ss.dependency_pod 'MoEngageSecurity'
     ss.dependency_pod 'MoEngageCampaignsCore'
+    ss.dependency_pod 'MoEngageExtensionsIntegration', :ios
   end
 
   s.subspec 'KMMedCore' do |ss|

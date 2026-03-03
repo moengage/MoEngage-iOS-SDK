@@ -1,3 +1,11 @@
+# 03-03-2026
+
+## 1.01.4
+
+### Internal
+
+- Observing Warning in Xcode on InApp Display Fix
+
 # 29-01-2026
 
 ## 1.01.3

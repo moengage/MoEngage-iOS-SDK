@@ -1,3 +1,11 @@
+# 03-03-2026
+
+## 5.01.10
+
+### Internal
+
+- Added the unit test cases for cards controller fixing the data race.
+
 # 29-01-2026
 
 ## 5.01.9

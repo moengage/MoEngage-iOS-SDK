@@ -1,3 +1,17 @@
+# 03-03-2026
+
+## 7.05.1
+
+- [BugFix] Handled HTML Inapp navigation callback in main thread.
+- Migrated MoEngageInAppDebuggingService from objective-c to swift
+
+### Internal
+
+- InApp data manager migration from Objective C to Swift
+- InApp campaign evaluation migration from Objective C to Swift
+- InApp RatingView and CustomRatingView migration from Objective C to Swift
+- InApp JS Bridge and WebView migration from Objective C to Swift
+
 # 29-01-2026
 
 ## 7.05.0

@@ -9,7 +9,7 @@ let package = Package(
     platforms: [.iOS(.v13), .tvOS(.v13)],
     products: [], dependencies: [
         // can be updated to from:
-        .package(url: "https://github.com/moengage/kmm-apple-sdk", exact: "1.0.0")
+        .package(url: "https://github.com/moengage/kmm-apple-sdk", exact: "1.0.1")
     ],
     targets: [],
     swiftLanguageVersions: [.v5]
@@ -42,7 +42,7 @@ let products: [MoEngagePackageProduct] = [
             .binaryTarget(name: "MoEngageMessaging", url: "https://github.com/moengage/apple-sdk/releases/download/10.10.0/MoEngageMessaging.xcframework.zip", checksum: "75c67153fa5dffbb78693d0b1131e20d300b5b10ae634f125007a3a59b368384"),
             .binaryTarget(name: "MoEngageSDK", url: "https://github.com/moengage/apple-sdk/releases/download/10.10.0/MoEngageSDK.xcframework.zip", checksum: "98b425f503ac0e7e218bf0ba9aae764f5bf8e76cecc63395b483be9f393df810"),
             .binaryTarget(name: "MoEngageSecurity", url: "https://github.com/moengage/apple-sdk/releases/download/10.10.0/MoEngageSecurity.xcframework.zip", checksum: "59459215dffb7a78ce60dc9065fb87ff1803578dec940bf2125ff5775d091137"),
-            .binaryTarget(name: "MoEngageCampaignsCore", url: "https://github.com/moengage/apple-sdk/releases/download/10.10.0/MoEngageCampaignsCore.xcframework.zip", checksum: "4041676f1bdf4bafe427ebbf64b37562a3dbf3627039ea57f2cebe7657a89e54"),
+            .binaryTarget(name: "MoEngageCampaignsCore", url: "https://github.com/moengage/apple-sdk/releases/download/10.10.1/MoEngageCampaignsCore.xcframework.zip", checksum: "d829ca82a58ce2c2d03c2b0931b869f174c52bab6d76ffa455af4c010ad6b7cf"),
         ]
     ),
     .init(
@@ -68,14 +68,14 @@ let products: [MoEngagePackageProduct] = [
     .init(
         name: "MoEngageInApps",
         targets: [
-            .binaryTarget(name: "MoEngageInApps", url: "https://github.com/moengage/apple-sdk/releases/download/10.10.0/MoEngageInApps.xcframework.zip", checksum: "2fc44f9b34418d230fa1553a83bea93467d6ebbd805da0a1a31fd8fbcb4aeb3d"),
+            .binaryTarget(name: "MoEngageInApps", url: "https://github.com/moengage/apple-sdk/releases/download/10.10.1/MoEngageInApps.xcframework.zip", checksum: "74249e8c5218aa460ca88eb62d46f936ef865032e37dd8bbe0545ab118b70f6e"),
             .target(name: "MoEngageInAppSPM", dependencies: .additional(dependency: "MoEngageTriggerEvaluator")),
         ]
     ),
     .init(
         name: "MoEngageCards",
         targets: [
-            .binaryTarget(name: "MoEngageCards", url: "https://github.com/moengage/apple-sdk/releases/download/10.10.0/MoEngageCards.xcframework.zip", checksum: "84cf27a3f2298b4a7b33f868f2681e159571cfb76cf015906cf64544c782cb9e"),
+            .binaryTarget(name: "MoEngageCards", url: "https://github.com/moengage/apple-sdk/releases/download/10.10.1/MoEngageCards.xcframework.zip", checksum: "5a71ec914883a811de12005c20d5699047bdd72f4814e8b188ad9c419ab90bdf"),
             .target(name: "MoEngageCardsSPM", dependencies: .default),
         ]
     ),
@@ -111,8 +111,14 @@ let products: [MoEngagePackageProduct] = [
     .init(
         name: "MoEngageRealTimeTrigger",
         targets: [
-            .binaryTarget(name: "MoEngageRealTimeTrigger", url: "https://github.com/moengage/apple-sdk/releases/download/10.10.0/MoEngageRealTimeTrigger.xcframework.zip", checksum: "abaa247575e33e98b22b44a69e400f9082d922b8f5419a063b7146eebfa3150e"),
+            .binaryTarget(name: "MoEngageRealTimeTrigger", url: "https://github.com/moengage/apple-sdk/releases/download/10.10.1/MoEngageRealTimeTrigger.xcframework.zip", checksum: "8725c41d97396627ac3a796be3d838f4f6bee413aacbeba931d68deb5557f589"),
             .target(name: "MoEngageRealTimeTriggerSPM", dependencies: .additional(dependency: "MoEngageRichNotification")),
+        ]
+    ),
+    .init(
+        name: "moengage-extensions-integration",
+        targets: [
+            .binaryTarget(name: "moengage-extensions-integration", url: "https://github.com/moengage/apple-sdk/releases/download/10.10.1/moengage-extensions-integration.artifactbundle.zip", checksum: "dbe8d68ffc69ed1a03dd41650493052bfeff7e0f22364fceca799e738d3d25e4"),
         ]
     ),
 ]
