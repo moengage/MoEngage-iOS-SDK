@@ -1,3 +1,11 @@
+# 31-03-2026
+
+## 3.01.7
+
+### Internal
+
+- Release for binary compatibility with core
+
 # 03-03-2026
 
 ## 3.01.6

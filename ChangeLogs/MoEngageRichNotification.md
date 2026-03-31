@@ -1,3 +1,12 @@
+# 31-03-2026
+
+## 8.01.7
+
+### Internal
+
+- Release for binary compatibility with core
+- Fixed the CI data race condition.
+
 # 29-01-2026
 
 ## 8.01.6

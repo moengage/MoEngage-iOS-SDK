@@ -1,3 +1,17 @@
+# 31-03-2026
+
+## 10.07.2
+
+### BugFix
+
+- Fixed background task leak when MoEngageLiveActivity framework is not integrated. 
+
+### Internal
+
+- InAppsDelegate Handler Objc to Swift Migration
+- Improved data tracking implementation logic and performance
+- Added adoption tracking for integrated extensions
+
 # 29-01-2026
 
 ## 10.07.1
