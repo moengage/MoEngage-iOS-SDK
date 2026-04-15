@@ -1,3 +1,21 @@
+# 15-04-2026
+
+## 7.05.3
+
+### Internal
+- FC and other test fix for CI
+- InAppsDelegate Handler Objc to Swift Migration
+- InApp template API model migration
+- InAppsAssetManager Swift Migration
+- Release for binary compatibility with core
+- InApps ActionHandler Objc to Swift Migration
+- InApp Image widget migration.
+- Unit Test update for unique ids
+- Button widget migration.
+- InApp Label and Feedback label migration from Objective C to Swift
+- Migrated inapp star rating widget.
+- InAppController Phase 1 Swift Migration
+
 # 31-03-2026
 
 ## 7.05.2

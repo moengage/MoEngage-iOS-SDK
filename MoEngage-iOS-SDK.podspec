@@ -73,4 +73,10 @@ Pod::Spec.new do |s|
     ss.ios.dependency 'MoEngage-iOS-SDK/RichNotification'
     ss.dependency_pod 'MoEngageRealTimeTrigger', :ios
   end
+
+  s.subspec 'Personalization' do |ss|
+    ss.extend MoEngageReleaseSDK::SubSpec
+    ss.dependency 'MoEngage-iOS-SDK/Core'
+    ss.dependency_pod 'MoEngagePersonalization'
+  end
 end

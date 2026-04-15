@@ -96,6 +96,13 @@ let products: [MoEngagePackageProduct] = [
             .target(name: "MoEngageCardsSPM", dependencies: .default),
         ]
     ),
+    .init(
+        name: "MoEngagePersonalization",
+        targets: [
+            #{binary_target(config_map['MoEngagePersonalization'])},
+            .target(name: "MoEngagePersonalizationSPM", dependencies: .default),
+        ]
+    ),
     // tvOS unsupported products
     .init(
         name: "MoEngageGeofence",

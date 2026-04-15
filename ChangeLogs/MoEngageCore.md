@@ -1,3 +1,12 @@
+# 15-04-2026
+
+## 10.08.0
+
+### Internal
+
+- Core Tests Tsan Fix
+- Added `Personalize` module and support
+
 # 31-03-2026
 
 ## 10.07.2
