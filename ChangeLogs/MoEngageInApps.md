@@ -1,3 +1,15 @@
+# 30-04-2026
+
+## 7.05.4
+
+### Internal
+
+- InAppController Phase 2 Swift Migration
+- Made `occupiedNudgePosition` of MoEngageInAppConfigurationHandler thread safe
+- ContainerView migrated to Swift
+- Handle Exception Crash in InApp Objective C to Swift conversion.
+- Internal Enum conversion to Swift
+
 # 15-04-2026
 
 ## 7.05.3

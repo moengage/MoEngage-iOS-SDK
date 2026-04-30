@@ -1,3 +1,10 @@
+# 30-04-2026
+
+## 10.08.1
+
+- Expose generic actor isolated execution API
+- Fixed a crash occurring in Unit Tests that happened immediately on launch when executed without a host app.
+
 # 15-04-2026
 
 ## 10.08.0

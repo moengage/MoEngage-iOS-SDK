@@ -1,6 +1,6 @@
 {
   "name": "MoEngage-iOS-SDK",
-  "version": "10.11.0",
+  "version": "10.12.0",
   "tagPrefix": "moengage-",
   "postBuild": "Utilities/post_build.rb",
   "packages": [
@@ -14,11 +14,11 @@
     },
     {
       "name": "MoEngageCore",
-      "version": "10.08.0",
+      "version": "10.08.1",
       "tagPrefix": "core-",
       "changelog": "ChangeLogs/MoEngageCore.md",
-      "hash": "dee87a70092c7165ad2632b63b68b9de1ae8a843786d37112a190bfa8f69fad1",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.11.0/MoEngageCore.xcframework.zip"
+      "hash": "70ddbbd8eea0e539786282864424b2eea59f3cd28e47c09ae63105a369c6f340",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.12.0/MoEngageCore.xcframework.zip"
     },
     {
       "name": "MoEngageCampaignsCore",
@@ -54,11 +54,11 @@
     },
     {
       "name": "MoEngageInApps",
-      "version": "7.05.3",
+      "version": "7.05.4",
       "tagPrefix": "inapp-",
       "changelog": "ChangeLogs/MoEngageInApps.md",
-      "hash": "dd5e0ebe72cbf9900e3b26580c3d9c9ddc0c9da1b009f29466ec37025e09dfb5",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.11.0/MoEngageInApps.xcframework.zip"
+      "hash": "fa8115b01ded23a3b0100fc5d8a6318479b241903ff4a65c9c4471367ea3f07c",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.12.0/MoEngageInApps.xcframework.zip"
     },
     {
       "name": "MoEngageCards",
@@ -110,11 +110,11 @@
     },
     {
       "name": "MoEngagePersonalization",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "tagPrefix": "personalization-",
       "changelog": "ChangeLogs/MoEngagePersonalization.md",
-      "hash": "d180948a94f2968384347c0a38d6b3e649a5de11e98a828b5b0ad954f89fabcd",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/10.11.0/MoEngagePersonalization.xcframework.zip"
+      "hash": "d2ef30605c756a4335aac023ca7185bc16751c14ba5bb1a95ee96ff38b1e1e90",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/10.12.0/MoEngagePersonalization.xcframework.zip"
     },
     {
       "name": "MoEngageExtensionsIntegration",
