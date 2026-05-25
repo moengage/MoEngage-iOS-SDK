@@ -1,3 +1,12 @@
+# 25-05-2026
+
+## 8.01.8
+
+### Internal
+
+- Updated the logic of Badge Count
+- Fixed leading space in podspec version_file path
+
 # 31-03-2026
 
 ## 8.01.7

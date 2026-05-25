@@ -1,3 +1,16 @@
+# 25-05-2026
+
+## 10.08.2
+
+### CrashFix
+
+- Fixed crash in allClasses(forFrameworks:) caused by NSClassFromString triggering Swift metadata realization for third-party classes on iOS 15/16
+
+### Internal
+
+- Made the method `mainApplicationBundle` of MoEngageInitialization as public to access in Messaging module.
+- Fixed leading space in podspec version_file path
+
 # 30-04-2026
 
 ## 10.08.1

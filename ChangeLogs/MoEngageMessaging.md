@@ -1,3 +1,13 @@
+# 25-05-2026
+
+## 5.03.00
+
+- Updated the logic of Badge Count. Deprecated existing `disableBadgeReset()` of MoEngageSDKMessaging and introduced support a new key `MoEngageBadgeUpdateEnabled` in Info.plist
+ 
+### Internal
+
+- Fixed leading space in podspec version_file path
+
 # 31-03-2026
 
 ## 5.02.01

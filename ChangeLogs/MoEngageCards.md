@@ -1,3 +1,15 @@
+# 25-05-2026
+
+## 5.01.12
+
+### Bug Fixes
+
+- Fixed card resurrection bug — soft-deleted card re-issued by server now correctly resets `isDeleted` flag and re-enters user-activity reporting
+
+### Internal
+
+- Fixed leading space in podspec version_file path
+
 # 31-03-2026
 
 ## 5.01.11
