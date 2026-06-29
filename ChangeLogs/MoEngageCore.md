@@ -1,3 +1,13 @@
+# 29-06-2026
+
+## 10.09.0
+
+- Added Scene delegate swizzling support
+
+### BugFix
+
+- Suppressed spurious `ImageView doesnot exist` warning emitted by `MoEngageGifManager.setImage` when assigning a non-GIF image (e.g. card placeholders, basic/illustration cards) to an untracked imageView.
+
 # 25-05-2026
 
 ## 10.08.2

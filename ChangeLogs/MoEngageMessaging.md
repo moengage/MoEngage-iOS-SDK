@@ -1,3 +1,11 @@
+# 29-06-2026
+
+## 5.03.01
+
+### Internal
+
+- Fixed Main Thread Checker warning by reading `UIApplication.applicationState` on the main thread in `applicationDidReceiveRemoteNotification(_:)`.
+
 # 25-05-2026
 
 ## 5.03.00

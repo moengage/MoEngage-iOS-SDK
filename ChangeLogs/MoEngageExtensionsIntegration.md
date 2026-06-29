@@ -1,3 +1,11 @@
+# 29-06-2026
+
+## 1.0.2
+
+### Internal
+
+- Fixed CI failure in Test Extensions Integration by pinning swift-argument-parser to 1.3.0 to avoid async API changes in newer versions.
+
 # 31-03-2026
 
 ## 1.0.1

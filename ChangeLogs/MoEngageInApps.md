@@ -1,3 +1,20 @@
+# 29-06-2026
+
+## 7.06.0
+
+- InAppConstants coversion to swift
+- InAppUtils migrated to swift 
+- Updated In-App copy action alert title string (MoEngageInAppConstants.coupon) to Coupon copied!.
+- Fixed Bottom nudge showing alongside BottomLeft/BottomRight nudges by treating them as mutually exclusive in the position suppression gate.
+- Push to InApp: Introduced DisplayGate which dismisses any low priority inapps to make way for higher priority one.
+- Fixed animated GIF in-app media rendering as a static image when the media URL does not end in `.gif` (e.g. `.gifv`); GIF detection now inspects the asset's content instead of the URL extension.
+- Added support for moveable nudges (iOS only).Nudges marked as floating can now be dragged freely by the user. The nudge snaps to the nearest horizontal edge on release with a spring animation. 
+- Added support for moveable nudges (iOS only).Nudges marked as floating can now be dragged freely by the user. The nudge snaps to the nearest horizontal edge on release with a spring animation. 
+
+### BugFix
+
+- HTML nudges now correctly respect safe area insets in all orientations (iOS only). Percentage-based dimensions are computed from the top view controller's view, ensuring full-width nudges stay within bounds in landscape and never overlap the navigation bar, Dynamic Island, or home indicator.
+
 # 30-04-2026
 
 ## 7.05.4
