@@ -1,3 +1,16 @@
+# 22-07-2026
+
+## 6.00.00
+
+- `presentCardsViewController`, `pushCardsViewController` and `getCardsViewController` are now annotated `@MainActor`. Objective-C callers are unaffected; Swift callers invoking these from a non-main-actor context must now hop to the main actor (e.g. `await MainActor.run { … }`).
+- Cards concurrency migration.
+
+### Internal
+
+- Adopted Gif and campaigns utils from `MoEngageCampaignsCore` and replaced deprecated `MoEngagePlatformInfo` API usage
+- Added concurrency safe storage and network APIs
+- Release for binary compatibility with core
+
 # 25-05-2026
 
 ## 5.01.12

@@ -1,3 +1,12 @@
+# 22-07-2026
+
+## 1.2.1
+
+### Internal
+
+- Added concurrency safe storage and network APIs
+- Release for binary compatibility with core
+
 # 29-06-2026
 
 ## 1.2.0

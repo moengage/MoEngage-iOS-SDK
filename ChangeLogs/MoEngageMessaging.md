@@ -1,3 +1,27 @@
+# 22-07-2026
+
+## 6.00.00
+
+### Breaking changes
+
+- SDK throws Fatal Error in case of Public API before SDK Initialization
+- Public methods that previously returned `Void` now return a `MoEngageBaseTask` subclass. Direct calls and ObjC callers compile unchanged (`@discardableResult` covers ignored returns; ObjC selector encoding is return-type-agnostic). Function-reference assignments with an explicit `Void` return on the lvalue no longer type-match — `@discardableResult` does not propagate through function-typed assignments.
+
+  Example (compile error → workaround):
+  ```swift
+  // Compile error after let tokenFn: (Data) -> Void = MoEngageSDKMessaging.sharedInstance.setPushToken
+
+  // Workaround — wrap with an explicit closure:
+  let tokenFn: (Data) -> Void = { _ = MoEngageSDKMessaging.sharedInstance.setPushToken($0) }
+  ```
+
+### Internal
+
+- Adopted Gif and campaigns utils from `MoEngageCampaignsCore` and removed deprecated `MoEngageDictionaryConvertible` protocol conformance
+- Migrated MoEngageSDKMessaging public APIs to typed-task returns, via `@discardableResult`. Added public `MoEngageMessagingRequestFailureReason` and per-API Result/Task types. `logNotificationReceived` ships a deprecation on the completion-block variant and rejects duplicate-impression payloads with `.duplicateImpression`.
+- Added concurrency safe storage and network APIs
+- Release for binary compatibility with core
+
 # 29-06-2026
 
 ## 5.03.01

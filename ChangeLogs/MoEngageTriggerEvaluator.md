@@ -1,3 +1,13 @@
+# 22-07-2026
+
+## 2.00.6
+
+### Internal
+
+- Removed deprecated `MoEngageDictionaryConvertible` protocol conformance
+- Release for binary compatibility with core
+- Fixed leading space in podspec version_file path
+
 # 31-03-2026
 
 ## 2.00.5

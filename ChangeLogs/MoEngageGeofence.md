@@ -1,3 +1,14 @@
+# 22-07-2026
+
+## 6.00.8
+
+### Internal
+
+- Adopted Gif and campaigns utils from `MoEngageCampaignsCore`
+- Added concurrency safe storage and network APIs
+- Release for binary compatibility with core
+- Fixed leading space in podspec version_file path
+
 # 31-03-2026
 
 ## 6.00.7

@@ -1,3 +1,50 @@
+# 22-07-2026
+
+## 11.00.0
+
+- Completed the Swift concurrency migration — the module now builds in the Swift 6 language mode with `SWIFT_STRICT_CONCURRENCY = complete`. All remaining GCD-based threading was moved to the actor model (`@MoEngageGlobalActor`, the `MoEngageSDKInstance` actor backed by `MoEngageSerialExecutor`, and `@MoEngageLoggerActor`); the legacy GCD surface (`MoEngageCoreHandler.globalQueue`, `sdkInstance.sdkQueue`, `MoEngageQueuedControllerProvider`, `MoEngageDelayedOperation*`) is retained as deprecated shims under `Deprecated/` for binary compatibility.
+- Added Scene delegate swizzling support
+- Introduced actor-based concurrency APIs replacing the legacy GCD threading model — `MoEngageAsyncWorkQueue` for async work sequencing with configurable concurrency and targeted cancellation (replaces `OperationQueue`/`MoEngageDelayedOperation`), `MoEngageAppLifeCycleEventHandler` for actor-isolated app lifecycle event handling, and the `MoEngageModule.Item` event bus with ordered sync/async `process(event:)` callbacks (replaces the legacy lifecycle delegate/manager hierarchy). Legacy GCD APIs are retained as deprecated shims for binary compatibility.
+- Added concurrency-safe storage, network, config and remote config APIs built on `MoEngageSDKInstance` actor isolation — the `MoEngageStorage` family (`Specification` + sync/async `State` access) with `InMemory`/`File`/`Keychain`/`UserDefault`/`Folder`/`Mirrored`/`Migrating` backends and composable AES-encrypted, app-group and processor layers; typed HTTP network locations (`MoEngageStorage.Network.HTTP.TypedGet`/`TypedSet`, plus raw data/download tasks) with authentication, base-domain, GZip, encryption and timeout processors; and actor-isolated `MoEngageConfig.Data` SDK config (read via `sdkInstance.config`) and `MoEngageConfig.Remote.Data` remote config (read via `sdkInstance.remoteConfig`), each with its manager, specification and extension-aware snapshots.
+- Added typed task return values on Core public APIs to surface per-call `onSuccess` / `onFailure` / async `result()` outcomes, replacing the previous fire-and-forget signatures. Migrated APIs: `MoEngageSDKAnalytics.trackEvent`; the `setUserAttribute` family (including `setAlias`, `setUniqueID`, `setEmailID`, `setName`, `setLocation`, and date / epoch / ISO variants); `identifyUser`; `getUserIdentities`; `setDeviceAttribute`; `appStatus`; `flush`; `resetUser`; `processURL`; `trackLocale`; the six `enable` / `disable` `{DataTracking, IDFA, IDFV}Tracking` toggles; partner integration (`enableSDKForPartner`, `addIntergrationInfo`); and the `MoEngage.initialize*` overloads — each returns its own `MoEngageBaseTask` subclass. `trackLocale` reports per-attribute outcomes (`acceptedAttributes` + `skippedAttributes` on success; rejects `MoEngageCoreRequestFailureReason(moduleCode: .trackLocaleSubAttributeFailed)` when every attempted attribute is skipped). Added an SDK-autonomous event surface via `MoEngage.registerSDKEventObserver(_:forWorkspaceId:)` and `AsyncStream` counterpart `sdkEventStream(forWorkspaceId:)` — delivering `MoEngageSDKEventSyncSuccess` / `MoEngageSDKEventSyncFailure` for background batch syncs.
+- Removed depreacated Cards method in concurrency migration 
+
+### Internal
+
+- Added unit tests for keychain storage access-group resolution and empty access-group handling
+
+### BREAKING CHANGE
+
+- Public methods that previously returned `Void` now return a `MoEngageBaseTask` subclass. Direct calls and ObjC callers compile unchanged (`@discardableResult` covers ignored returns; ObjC selector encoding is return-type-agnostic). Function-reference assignments with an explicit `Void` return on the lvalue no longer type-match — `@discardableResult` does not propagate through function-typed assignments.
+
+  Example (compile error → workaround):
+  ```swift
+  // Compile error after let trackFn: (String, MoEngageProperties?, String?) -> Void = MoEngageSDKAnalytics.sharedInstance.trackEvent
+
+  // Workaround — wrap with an explicit closure:
+  let trackFn: (String, MoEngageProperties?, String?) -> Void = { name, props, appID in
+      _ = MoEngageSDKAnalytics.sharedInstance.trackEvent(name, withProperties: props, forAppID: appID)
+  }
+  ```
+- SDK throws Fatal Error in case of Public API before SDK Initialization
+- `MoEngageSDKAnalytics` now requires user/device attribute values to conform to `Sendable` for Swift concurrency safety — the value parameters of the following public APIs changed from `Any` to `any Sendable`. Under the Swift 6 language mode / strict concurrency, call sites passing non-`Sendable` values will need to be updated. Affected APIs:
+  - `setUserAttribute(_:withAttributeName:level:forAppID:)` — `value` parameter (`Any` → `any Sendable`)
+  - `setDeviceAttribute(_:withName:forWorkspaceId:)` — `value` parameter (`Any` → `any Sendable`)
+- The following public callback protocols are now `Sendable` and `@MainActor` isolated. Conforming types must be safe to use across concurrency domains, and their callback methods are now invoked on the main actor — implementations that were not already main-thread confined will need to be updated:
+  - `MoEngageAnalyticsCallBack`
+  - `MoEngageAuthenticationError.Listener`
+- `MoEngageProperties` now requires event attribute values to conform to `Sendable` for Swift concurrency safety — the value/payload parameters of the following public APIs changed from `Any` to `any Sendable`. Under the Swift 6 language mode / strict concurrency, call sites passing non-`Sendable` values (including untyped `[String: Any]` dictionaries) will need to be updated. Affected APIs:
+  - `init(withAttributes:)` — `attributesDict` parameter (`[String: Any]` → `[String: any Sendable]`)
+  - `updateAttributes(withPluginPayload:)` — `payloadDict` parameter (`[String: Any]` → `[String: any Sendable]`)
+  - `addAttribute(_:withName:)` — `attrVal` parameter (`Any` → `any Sendable`)
+- `MoEngageSDKAppPersonalization` (deprecated) now requires experience/offering attribute values to conform to `Sendable` — its public track APIs changed their dictionary parameters from `[String: Any]`/`[[String: Any]]` to `[String: any Sendable]`/`[[String: any Sendable]]`. Under the Swift 6 language mode / strict concurrency, call sites passing non-`Sendable` values (including untyped `[String: Any]` dictionaries) will need to be updated. Affected APIs:
+  - `experienceShown(experienceAttribute:forWorkspaceId:)` / `experienceShown(experienceAttribute:)`
+  - `experienceShown(experienceAttributes:forWorkspaceId:)` / `experienceShown(experienceAttributes:)`
+  - `experienceClicked(experienceAttribute:forWorkspaceId:)` / `experienceClicked(experienceAttribute:)`
+  - `experienceClicked(experienceAttributes:forWorkspaceId:)` / `experienceClicked(experienceAttributes:)`
+  - `offeringShown(offeringAttributes:forWorkspaceId:)` / `offeringShown(offeringAttributes:)`
+  - `offeringClicked(offeringAttributes:withExperienceAttributes:forWorkspaceId:)` and its overloads
+
 # 29-06-2026
 
 ## 10.09.0

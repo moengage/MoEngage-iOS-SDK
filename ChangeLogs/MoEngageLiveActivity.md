@@ -1,3 +1,13 @@
+# 22-07-2026
+
+## 1.1.3
+
+### Internal
+
+- Added concurrency safe storage and network APIs
+- Release for binary compatibility with core
+- Fixed leading space in podspec version_file path
+
 # 31-03-2026
 
 ## 1.1.2

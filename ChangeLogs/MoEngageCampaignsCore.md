@@ -1,3 +1,16 @@
+# 22-07-2026
+
+## 1.01.6
+
+### Internal
+
+- Moved Gif and campaigns utils from Core, and removed deprecated `MoEngageDictionaryConvertible` protocol conformance
+- Added concurrency safe storage and network APIs
+- Release for binary compatibility with core
+- Fixed leading space in podspec version_file path
+- Downgraded the log level of the "ImageView doesnot exist" message in `MoEngageGifManager.deleteImageView(_:)` from `warning` to `debug`, as it is an expected condition when setting a static (non-GIF) image on a view that was never animating a GIF.
+
+
 # 31-03-2026
 
 ## 1.01.5

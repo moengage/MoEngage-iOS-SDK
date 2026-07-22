@@ -1,3 +1,13 @@
+# 22-07-2026
+
+## 8.01.9
+
+### Internal
+
+- Adopted Gif and campaigns utils from `MoEngageCampaignsCore` and removed deprecated `MoEngageExceptionUtils` usage
+- Added concurrency safe storage and network APIs
+- Release for binary compatibility with core
+
 # 25-05-2026
 
 ## 8.01.8

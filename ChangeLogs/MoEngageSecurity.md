@@ -1,3 +1,12 @@
+# 22-07-2026
+
+## 2.00.4
+
+### Internal
+
+- Fixed leading space in podspec version_file path
+- Adopt Swift 6 concurrency checking
+
 # 31-03-2026
 
 ## 2.00.3

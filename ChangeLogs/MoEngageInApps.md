@@ -1,3 +1,52 @@
+# 22-07-2026
+
+## 8.00.0
+
+### BugFix
+
+- Fixed bottom-positioned non-intrusive nudges with height-from-content templates (e.g. image-only) rendering pushed above the screen with an unreachable close button when the content exceeded the available height; the nudge height is now clamped to the visible area (nav/tab-bar aware), the bottom anchor is recomputed from the final height, and clipped content scrolls.
+
+### Breaking changes
+
+- Public ObjC enums `MoEngageInAppActionType` and `MoEngageNudgePosition` migrated to Swift `@objc` enums. This is a **breaking change** — enum case names have been updated to Swift convention.
+
+  **`MoEngageInAppActionType` migration:**
+
+  | | Swift (before) | Swift (after) | Objective-C (before) | Objective-C (after) |
+  |---|---|---|---|---|
+  | Navigation action | `NavigationAction` | `.navigationAction` | `NavigationAction` | `MoEngageInAppActionTypeNavigationAction` |
+  | Custom action | `CustomAction` | `.customAction` | `CustomAction` | `MoEngageInAppActionTypeCustomAction` |
+
+  **`MoEngageNudgePosition` migration:**
+
+  | | Swift (before) | Swift (after) | Objective-C (before) | Objective-C (after) |
+  |---|---|---|---|---|
+  | Top | `NudgePositionTop` | `.top` | `NudgePositionTop` | `MoEngageNudgePositionTop` |
+  | Bottom | `NudgePositionBottom` | `.bottom` | `NudgePositionBottom` | `MoEngageNudgePositionBottom` |
+  | Bottom-left | `NudgePositionBottomLeft` | `.bottomLeft` | `NudgePositionBottomLeft` | `MoEngageNudgePositionBottomLeft` |
+  | Bottom-right | `NudgePositionBottomRight` | `.bottomRight` | `NudgePositionBottomRight` | `MoEngageNudgePositionBottomRight` |
+  | Any | `NudgePositionAny` | `.any` | `NudgePositionAny` | `MoEngageNudgePositionAny` |
+  | None | `NudgePositionNone` | `.none` | `NudgePositionNone` | `MoEngageNudgePositionNone` |
+
+- Public methods that previously returned `Void` now return a `MoEngageBaseTask` subclass. Direct calls and ObjC callers compile unchanged (`@discardableResult` covers ignored returns; ObjC selector encoding is return-type-agnostic). Function-reference assignments with an explicit `Void` return on the lvalue no longer type-match — `@discardableResult` does not propagate through function-typed assignments.
+
+  Example (compile error → workaround):
+  ```swift
+  // Compile error after let showFn: () -> Void = MoEngageSDKInApp.sharedInstance.showInApp
+
+  // Workaround — wrap with an explicit closure:
+  let showFn: () -> Void = { _ = MoEngageSDKInApp.sharedInstance.showInApp() }
+  ```
+
+### Internal
+
+- Fixed HTML non-intrusive in-app rendering cropped after an orientation change by loading the web content on-window so it lays out at the correct bounds and reflows on rotation
+- Adopted Gif and campaigns utils from `MoEngageCampaignsCore` and replaced deprecated `MoEngageCoreUtils` and `MoEngagePlatformInfo` API usage
+- Migrated MoEngageSDKInApp public APIs to typed-task returns via `@discardableResult`. `showInApp` / `showNudge` typed tasks resolve AFTER visible render (via the `inAppShown` delegate path); render-side failures and pre-attach guards reject the task instead of hanging. `getSelfHandledInApp(s)` ships a deprecation on the completion-block variants. Promoted `MoEngageInAppType` to public. Config-shape APIs (`setCurrentInAppContexts`, `invalidateInAppContexts`, `blockInApp`, `disableInApps`) return `Void`. MoEngageInAppRequestFailureReason is the InApps-specific failure-reason class — customers downcast to read InApp-specific moduleCode + campaignId. selfHandledShown / selfHandledClicked / selfHandledDismissed also migrated to typed-task returns.
+- Added concurrency safe storage and network APIs
+- Release for binary compatibility with core
+- Fixed nudge visibility check to scope by current screen, so nudges on a previous screen no longer block the same campaign from showing on the current screen. Screen identity is determined by view controller instance comparison. **Limitation:** SwiftUI apps using `NavigationStack` are not supported — UIKit's view hierarchy always returns the same `UIHostingController` regardless of the visible SwiftUI screen, so screen changes within a SwiftUI navigation stack are not detected.
+
 # 29-06-2026
 
 ## 7.06.0
@@ -8,8 +57,7 @@
 - Fixed Bottom nudge showing alongside BottomLeft/BottomRight nudges by treating them as mutually exclusive in the position suppression gate.
 - Push to InApp: Introduced DisplayGate which dismisses any low priority inapps to make way for higher priority one.
 - Fixed animated GIF in-app media rendering as a static image when the media URL does not end in `.gif` (e.g. `.gifv`); GIF detection now inspects the asset's content instead of the URL extension.
-- Added support for moveable nudges (iOS only).Nudges marked as floating can now be dragged freely by the user. The nudge snaps to the nearest horizontal edge on release with a spring animation. 
-- Added support for moveable nudges (iOS only).Nudges marked as floating can now be dragged freely by the user. The nudge snaps to the nearest horizontal edge on release with a spring animation. 
+- Added support for moveable nudges (iOS only).Nudges marked as floating can now be dragged freely by the user. The nudge snaps to the nearest horizontal edge on release with a spring animation.
 
 ### BugFix
 
