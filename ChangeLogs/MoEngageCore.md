@@ -1,3 +1,16 @@
+# 02-09-2026
+
+## 11.01.0
+
+- Fixed `device_tz_offset` being sent in seconds (plus 1000) instead of milliseconds on every API call — IST sent `20800` instead of `19800000`. Regression introduced in 11.00.0.
+- Fixed the report-sync retry reason (`r_r`) reporting the sentinel `Int.max` instead of the real error code when a report call fails with a transport error (Flight Mode, no connectivity, timeout). `MoEngageStorage.Network.HTTP.TypedError` now conforms to `CustomNSError` and forwards the underlying failure's `NSError` code, so Flight Mode records `-1009`, timeouts record `-1001` and cancellations record `-999`. Regression introduced in 11.00.0 by the Swift concurrency migration; this restores the pre-11.00.0 wire contract. Note that the `CustomNSError` conformance also changes `TypedError`'s `NSError` bridging — `domain` is now `com.moengage.storage.network.http.typed`, `code` is the underlying failure's code rather than the enum case discriminant, and `localizedDescription` is the underlying error's message.
+- Fixed the JWT authentication token persisting across a user reset. The token supplied for one user survived logout, so with `jwt` enabled and `allUsers` disabled the next user to log in — without passing any token — had the previous user's `MOENGAGE-AUTH-TOKEN` / `MOENGAGE-USER-IDENTIFIER` headers attached and their report call succeeded, authenticated as the previous user. Authentication details and the failure count are now cleared as part of `MoEngageSDKUser.reset`, covering logout, unregister, environment switch, compliance reset and SDK disable.
+- Fixed analytics batch ID (`bid`) reuse across report calls — the `bid` is now minted when a batch is promoted for sync instead of when the current batch is created, and is never persisted with the open batch. Previously the pre-minted `bid` was stored on disk with the in-progress batch, so a launch killed before deferred storage writes landed (e.g. killed-state push-dismiss handling) could reload an already-synced `bid` and send a different set of events under it, producing duplicate `event_uuid`s for distinct events in data exports (SUP-34523).
+- Deprecated `trackUserPushPreference` on `MoEngageSDKAnalytics`.
+- Removed depreacated RTT methods in concurrency migration 
+- Removed deprecated Inbox manager/delegate shims in Inbox concurrency migration
+- Removed depreacated geofence method in concurrency migration 
+
 # 22-07-2026
 
 ## 11.00.0
