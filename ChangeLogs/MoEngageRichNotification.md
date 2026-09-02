@@ -1,13 +1,3 @@
-# 02-09-2026
-
-## 8.01.10
-
-### Internal
-
-- Push template XIBs now ship in a named `MoEngageRichNotification.bundle` inside the framework rather than at the framework root. The privacy manifest stays at the framework root. The framework remains dynamically linked, as the notification service and content extensions link it and each runs in its own process.
-
-- Fixed rich push media not displaying for dynamic media URLs by resolving the server's Content-Type, falling back to the URL extension when unavailable
-
 # 22-07-2026
 
 ## 8.01.9

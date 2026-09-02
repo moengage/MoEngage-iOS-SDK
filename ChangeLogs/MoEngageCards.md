@@ -1,9 +1,3 @@
-# 02-09-2026
-
-## 6.01.00
-
-- The framework is now statically linked into the host binary instead of being embedded as a dynamic framework. Resources (storyboard, XIBs, asset catalog and privacy manifest) now ship in a named `MoEngageCards.bundle` instead of being copied flat. CocoaPods and Swift Package Manager integrations need no change. **Manual xcframework integrations must set this framework to "Do Not Embed" and copy `MoEngageCards.bundle` from the release zip into the app bundle** — with "Do Not Embed" nothing is copied out of the framework, so without it the cards UI fails to load and the privacy manifest is missing.
-
 # 22-07-2026
 
 ## 6.00.00
