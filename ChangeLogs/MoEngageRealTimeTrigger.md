@@ -1,3 +1,10 @@
+# 02-09-2026
+
+## 3.02.0
+
+- Rtt module migrated to swift concurrency
+- The framework is now statically linked into the host binary instead of being embedded as a dynamic framework. The privacy manifest now ships in a named `MoEngageRealTimeTrigger.bundle` instead of being copied flat. CocoaPods and Swift Package Manager integrations need no change. **Manual xcframework integrations must set this framework to "Do Not Embed" and copy `MoEngageRealTimeTrigger.bundle` from the release zip into the app bundle** — with "Do Not Embed" nothing is copied out of the framework, so without it the privacy manifest is missing.
+
 # 22-07-2026
 
 ## 3.01.8
