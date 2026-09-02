@@ -1,11 +1,3 @@
-# 02-09-2026
-
-## 1.1.4
-
-### Internal
-
-- Fixed an actor-isolation violation where the push-to-start token observation task read `MoEngageSDKInstance`-isolated in-memory storage off-actor; the observation loop now captures the token stream while isolated and hops onto each instance actor via `MoEngageAction` before updating module state.
-
 # 22-07-2026
 
 ## 1.1.3

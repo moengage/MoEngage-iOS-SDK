@@ -1,14 +1,3 @@
-# 02-09-2026
-
-## 8.01.0
-
-- The framework is now statically linked into the host binary instead of being embedded as a dynamic framework. Resources (XIBs, asset catalog, default close-button image and privacy manifest) now ship in a named `MoEngageInApps.bundle` instead of being copied flat. CocoaPods and Swift Package Manager integrations need no change. **Manual xcframework integrations must set this framework to "Do Not Embed" and copy `MoEngageInApps.bundle` from the release zip into the app bundle** — with "Do Not Embed" nothing is copied out of the framework, so without it images and XIBs fail to load and the privacy manifest is missing.
-
-### Internal
-
-- Added AccessibilityIdentifier to InAppPrimaryContainer for UI Automation
-- Fixed actor-isolation violations detected by `MoEngageSerialExecutor` telemetry in in-app display, impression tracking, primary-click persistence, button-action handling, nudge/pop-up auto-dismiss tracking, and HTML/video asset downloading — these paths now hop onto the `MoEngageSDKInstance` actor via `MoEngageAction` before reading `sdkConfig` or writing `MoEngageModuleState`, instead of touching isolated state from the main thread or an off-actor download task.
-
 # 22-07-2026
 
 ## 8.00.0
