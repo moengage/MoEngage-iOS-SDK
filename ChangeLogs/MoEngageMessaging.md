@@ -1,9 +1,3 @@
-# 02-09-2026 
-
-## 6.01.00
-
-- Removed the SDK's default "Dismiss" notification action from the `MOE_DISMISS_CATEGORY` and `MOE_PUSH_TEMPLATE` categories.
-
 # 22-07-2026
 
 ## 6.00.00

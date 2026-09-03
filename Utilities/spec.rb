@@ -21,11 +21,11 @@ module MoEngageReleaseSDK
       self.name              = podspec
       self.version           = package&.version || MoEngageReleaseSDK.config.version
       self.homepage          = 'https://www.moengage.com'
-      self.documentation_url = 'https://www.moengage.com/docs/developer-guide/ios-sdk'
-      self.changelog         = 'https://www.moengage.com/docs/release-notes/sdks/ios'
+      self.documentation_url = 'https://developers.moengage.com'
+      self.changelog         = 'https://developers.moengage.com/hc/en-us/articles/4404198236564-Changelog'
       self.license           = { :type => 'Commercial', :text => File.read('LICENSE') }
       self.author            = { 'MobileDev' => 'mobiledevs@moengage.com' }
-      self.social_media_url  = 'https://x.com/moengage'
+      self.social_media_url  = 'https://twitter.com/moengage'
 
       if package
         self.source       = { :http => package.url, :sha256 => package[:hash] }
@@ -38,23 +38,6 @@ module MoEngageReleaseSDK
 
       self.ios.deployment_target = '13.0'
       self.requires_arc = true
-
-      # A statically linked module is not embedded in the consumer's app, so CocoaPods
-      # copies nothing out of the vendored xcframework — unlike a dynamic module, whose
-      # `<Module>.bundle` rides along inside the embedded framework. The bundle sits beside
-      # the xcframework in the release archive and is discarded at `pod install` unless
-      # declared here, which leaves the module's images, XIBs, storyboards and privacy
-      # manifest unreachable at runtime. That fails silently: the code still links and the
-      # build still succeeds, but the UI renders blank.
-      #
-      # `staticFramework` and `common` are propagated into `package.json` by the SDK repo's
-      # release script, so this is inert for dynamically linked modules and for releases
-      # cut before those flags existed.
-      if package&.staticFramework
-        self.ios.resources = "#{self.name}.bundle"
-        self.tvos.resources = "tvos/#{self.name}.bundle" if package.common
-      end
-
       self.preserve_paths = "*.md", "LICENSE" unless package
     end
 
