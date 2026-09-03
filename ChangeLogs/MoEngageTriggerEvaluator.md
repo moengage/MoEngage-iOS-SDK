@@ -1,9 +1,3 @@
-# 02-09-2026
-
-## 2.01.0
-
-- The framework is now statically linked into the host binary instead of being embedded as a dynamic framework. CocoaPods and Swift Package Manager integrations need no change. **Manual xcframework integrations must set this framework to "Do Not Embed".** This module ships no resources, so nothing else needs copying.
-
 # 22-07-2026
 
 ## 2.00.6
