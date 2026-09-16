@@ -1,3 +1,13 @@
+# 16-09-2026
+
+## 8.02.00
+
+- Added Telemetry to track push notifications(startspan,cheeckpoints,endspan). A notification that renders after losing some of its assets is now reported as a successful render rather than a failure — `is_success` answers whether the notification reached the user, while the failed assets stay visible in their own `asset_download` checkpoints and in `basic_rendering`. `basic_rendering` now records on every push, including a plain one with no assets — it brackets the payload-to-displayable-content step (aps rewrite plus the HTML→string conversion of title, subtitle and body), which is where the real cost sits; it no longer doubles as a degradation marker, since the per-asset checkpoints already carry that.
+
+### BugFix
+
+- Fixed the app icon badge being one higher than the notification tray after a notification update (same update key). The extension now excludes the notification being replaced when computing the badge.
+
 # 03-09-2026
 
 ## 8.01.11

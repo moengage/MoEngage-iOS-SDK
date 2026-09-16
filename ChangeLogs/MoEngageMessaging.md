@@ -1,3 +1,11 @@
+# 16-09-2026
+
+## 6.02.01
+
+### BugFix
+
+- Fixed the app icon badge being one higher than the notification tray after a notification update (`apns-collapse-id`). `MoEngageBadgeHandler.badgeForIncomingNotification(deliveredNotifications:)` is replaced by `badgeForIncomingNotification(deliveredRequests:replacingRequestIdentifier:)`, which takes the delivered notifications' requests and the incoming request identifier.
+
 # 03-09-2026 
 
 ## 6.02.00

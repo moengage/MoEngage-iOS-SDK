@@ -1,3 +1,14 @@
+# 16-09-2026
+
+## 11.03.0
+
+- Added telemetry remote-config keys, the `MoEngageTelemetryRecording` contract, `MoEngageMetricMeta` (campaign detail travels as additional meta rather than typed fields), `MoEngageTelemetryRecorderStore` with `MoEngageCoreHandler.telemetryRecorder(forWorkspaceId:)` / `(forInstance:)` so a module can record without depending on the telemetry pod, `MoEngageCoreHandler.hasSyncedRemoteConfig(forInstance:)`, and monotonic-clock + process-start-time (`processStartTime`, the `pre_init` source) system-info providers; the initialisation path now captures a per-workspace init timeline (replayed as the `init` telemetry span once telemetry starts), the remote-config sync records the `config_fetch` span, and the analytics pipeline records the `data_track`, `batch_creation` and `batch_syncing` spans. Public entry points that produce exactly one tracking event — event tracking, the `setUserAttribute` family, `setAlias`, `resetUser` and `appStatus` — capture a `MoEngageTelemetryAnchor` at the call (gated on an actively recording recorder, so workspaces with telemetry disabled by config pay no capture cost) so a span reports the caller's instant rather than the post-dispatch one, and calls rejected before the funnel now record a failed span identifying the phase they were rejected in: per rejected call for a blacklisted event name, and once per state episode for the sticky causes (SDK disabled, data tracking opted out) so a chatty app under opt-out does not write a failed metric per call (measurement only; no behaviour change). Added `MoEngageCoreHandler.performOnRegisteredInstance(workspaceId:_:)` for SDK-internal engine-driven dispatch that must not trip the missing-initialization precondition, `getTelemetryQueryParams` carrying the contract-required device fields through data-tracking opt-out, a `max(1, …)` clamp on the telemetry batch-size remote value, and the first successful remote-config sync now dispatches `didUpdateRemoteConfig` even when the payload equals the stored default, so subscribers distinguishing cached from actual configuration learn it became authoritative
+
+### HotFix
+
+- Fixed every SDK module being skipped in Swift Package Manager integrations when running on the simulator from Xcode, which left in-apps, cards, inbox and geofence uninitialised.
+- Statically linked modules are now built as a single object file (`GENERATE_MASTER_OBJECT_FILE`), so referencing any part of a module links all of it. Previously a module's archive members were pulled in only when a symbol they define was referenced, so classes the SDK resolves by name and `@objcMembers` methods declared in extensions were dropped. CocoaPods and Swift Package Manager integrations need no change. **Manual xcframework integrations of the statically linked modules must add `-ObjC` to Other Linker Flags** — the linker contributes such a module's code only when the app references a symbol it defines.
+
 # 03-09-2026
 
 ## 11.02.0

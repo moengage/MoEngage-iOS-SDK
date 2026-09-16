@@ -1,3 +1,13 @@
+# 16-09-2026
+
+## 3.03.1
+
+- Storage-encryption transitions now apply to trigger data immediately — turning encryption off removes the stale encrypted file even when no RTT sync runs, and turning it on migrates the plain file into the encrypted path
+
+### HotFix
+
+- Fixed the modules not initialised in Swift Package Manager integrations. As a statically linked framework its archive members were pulled in only when a symbol they define was referenced, so classes the SDK resolves by name and `@objcMembers` methods declared in extensions were dropped. The module is now built as a single object file (`GENERATE_MASTER_OBJECT_FILE`), so referencing any part of it links all of it. CocoaPods and Swift Package Manager integrations need no change. **Manual xcframework integrations must add `-ObjC` to Other Linker Flags** — the linker contributes a statically linked module's code only when the app references a symbol it defines.
+
 # 03-09-2026
 
 ## 3.03.0

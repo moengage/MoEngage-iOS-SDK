@@ -1,3 +1,13 @@
+# 16-09-2026
+
+## 8.03.0
+
+- Instrumented the `inapp_render` telemetry span across all render routes (general, triggered, session-triggered, nudge, self-handled) with evaluation/template-fetch/scheduled/asset-download/imp-evaluation/rendering checkpoints; the new `imp_evaluation` checkpoint covers the impression-stage rule re-check, so a campaign rejected after selection now names the phase that rejected it instead of failing the span with no failing checkpoint; the self-handled routes are now measured too, on the same contract the triggered self-handled route already uses — settling at hand-off, since the SDK cannot observe what the integrator does with the campaign afterwards. `getSelfHandledInApp` records evaluation, template fetch, display delay and the impression-stage re-check; `getSelfHandledInApps` records one span per eligible campaign, each backdated to the call instant and carrying that campaign's meta, evaluation and template fetch — the work is shared across the batch, so every span carries the same durations and differs only in which campaign it names and whether that campaign's payload came back; that path has neither a display delay nor a per-campaign re-check; also fixed a silent HTML-webview build failure leaking the customer's show task
+
+### HotFix
+
+- Fixed the modules not initialised in Swift Package Manager integrations. As a statically linked framework its archive members were pulled in only when a symbol they define was referenced, so classes the SDK resolves by name and `@objcMembers` methods declared in extensions were dropped. The module is now built as a single object file (`GENERATE_MASTER_OBJECT_FILE`), so referencing any part of it links all of it. CocoaPods and Swift Package Manager integrations need no change. **Manual xcframework integrations must add `-ObjC` to Other Linker Flags** — the linker contributes a statically linked module's code only when the app references a symbol it defines.
+
 # 03-09-2026
 
 ## 8.02.0
