@@ -1,3 +1,15 @@
+# 08-10-2026
+
+## 8.03.1
+
+### BugFix
+
+- Fixed nudge close button not responding when the SDK instance was busy (for example device registration or logout in progress) while the nudge rendered. In-app widgets and the HTML JavaScript bridge now receive the controller's action handler when they are built instead of resolving it through a queued lookup, so tap targets are attached before the first tap.
+- Fixed pop-up and full-screen in-app close controls being covered by the iOS 26 floating navigation bar on devices without a top safe-area inset. These in-apps now attach to the container holding the current screen, one level above the screen's own view, instead of inside it; they still dismiss with that screen and still sit below alerts and sheets the app presents. Nudges are unchanged.
+- Fixed top HTML nudge rendering below the top of a screen presented while the nudge was still loading; the nudge frame and show-on-screen rule are now evaluated on the screen it lands on.
+- Fixed non-intrusive nudge overlapping the presented screen's layout on rapid navigation; same cause and fix as - Fixed video nudges cropping a video taller than its space when maximised; the video now fits inside its area in fullscreen. Nudges no longer scroll sideways when their content is wider than the nudge. Restored the media area growing into the space left by a full-width button in fullscreen (stopped working in 7.05.2).
+- Fixed taps on a video nudge's maximise and mute controls closing the nudge where the close button's padding overlaps them, including right after the controls auto-hide.
+
 # 16-09-2026
 
 ## 8.03.0

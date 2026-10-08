@@ -1,3 +1,13 @@
+# 08-10-2026
+
+## 6.03.00
+
+- Added the swiftui support for cards
+
+### BugFix
+
+- Fixed the SwiftUI cards category tab bar drawing past the screen edges (under the notch and rounded corners) in landscape when there are many categories.
+
 # 16-09-2026
 
 ## 6.02.01

@@ -80,4 +80,10 @@ Pod::Spec.new do |s|
     ss.dependency 'MoEngage-iOS-SDK/Core'
     ss.dependency_pod 'MoEngagePersonalization'
   end
+
+  s.subspec 'Recommendations' do |ss|
+    ss.extend MoEngageReleaseSDK::SubSpec
+    ss.dependency 'MoEngage-iOS-SDK/Core'
+    ss.dependency_pod 'MoEngageRecommendations'
+  end
 end

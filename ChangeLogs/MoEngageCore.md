@@ -1,3 +1,13 @@
+# 08-10-2026
+
+## 11.04.0
+
+- Added `MoEngageRecommendationConfig` to the SDK config, plus the recommendations remote-config keys and their DTO/file-based-config plumbing.
+
+### Internal
+
+- Added unit tests covering the `inTheNext` / `inTheLast` relative date filter window boundaries in `MoEngageEventConditionEvaluator`, including the last day of an `inTheNext` window.
+
 # 16-09-2026
 
 ## 11.03.0

@@ -9,7 +9,7 @@ let package = Package(
     platforms: [.iOS(.v13), .tvOS(.v13)],
     products: [], dependencies: [
         // can be updated to from:
-        .package(url: "https://github.com/moengage/kmm-apple-sdk", exact: "1.0.1")
+        .package(url: "https://github.com/moengage/kmm-apple-sdk", exact: "2.0.1")
     ],
     targets: [],
     swiftLanguageVersions: [.v5]
@@ -38,11 +38,11 @@ let products: [MoEngagePackageProduct] = [
     .init(
         name: "MoEngageSDK",
         targets: [
-            .binaryTarget(name: "MoEngageCore", url: "https://github.com/moengage/apple-sdk/releases/download/11.02.0/MoEngageCore.xcframework.zip", checksum: "a11fa0ffd77708d71ca1250782ed19d2200c1650126976f0d9605c91ff65e340"),
+            .binaryTarget(name: "MoEngageCore", url: "https://github.com/moengage/apple-sdk/releases/download/11.03.0/MoEngageCore.xcframework.zip", checksum: "262fba0ce927829e3e928c10f2b7efd0fe2d3811c484e6dc191f6983b2d2fcf5"),
             .binaryTarget(name: "MoEngageMessaging", url: "https://github.com/moengage/apple-sdk/releases/download/11.02.0/MoEngageMessaging.xcframework.zip", checksum: "365e06437d7e7389937a3c9de58301f9fa3bf004214211e924f38566fe61ce1a"),
             .binaryTarget(name: "MoEngageSDK", url: "https://github.com/moengage/apple-sdk/releases/download/11.02.0/MoEngageSDK.xcframework.zip", checksum: "d4a74a134869551fe7eeb74d706ea911a2d04b14a027ad49df942ecccddb68b9"),
             .binaryTarget(name: "MoEngageSecurity", url: "https://github.com/moengage/apple-sdk/releases/download/11.00.0/MoEngageSecurity.xcframework.zip", checksum: "a0a388053557f5c61e5bea5b0c5fb950f10908028ff93f50cbd55d3443aadb45"),
-            .binaryTarget(name: "MoEngageCampaignsCore", url: "https://github.com/moengage/apple-sdk/releases/download/11.00.0/MoEngageCampaignsCore.xcframework.zip", checksum: "207cfbeb924d02ada80034761174692f3b0ebc24183b3b7044a7abc16e30df5b"),
+            .binaryTarget(name: "MoEngageCampaignsCore", url: "https://github.com/moengage/apple-sdk/releases/download/11.03.0/MoEngageCampaignsCore.xcframework.zip", checksum: "fc0a57d441086f6cf823ee32f331934f520746ddea2c6956a2aa34f6ae96205e"),
         ]
     ),
     .init(
@@ -68,14 +68,14 @@ let products: [MoEngagePackageProduct] = [
     .init(
         name: "MoEngageInApps",
         targets: [
-            .binaryTarget(name: "MoEngageInApps", url: "https://github.com/moengage/apple-sdk/releases/download/11.02.0/MoEngageInApps.xcframework.zip", checksum: "5e40fb4992eb86bb4632089c38247a2a24216f2f70a6b689b1ed2f2b04ba6189"),
+            .binaryTarget(name: "MoEngageInApps", url: "https://github.com/moengage/apple-sdk/releases/download/11.03.0/MoEngageInApps.xcframework.zip", checksum: "93fea003f9519e5d5cbd06ac48fd78180b4b826198efa715e54bc79f3d66005e"),
             .target(name: "MoEngageInAppSPM", dependencies: .additional(dependency: "MoEngageTriggerEvaluator")),
         ]
     ),
     .init(
         name: "MoEngageCards",
         targets: [
-            .binaryTarget(name: "MoEngageCards", url: "https://github.com/moengage/apple-sdk/releases/download/11.02.0/MoEngageCards.xcframework.zip", checksum: "f4be60cf9141064bb65102953aaa0fadb327534dbac7438a3f1b29c48212b39a"),
+            .binaryTarget(name: "MoEngageCards", url: "https://github.com/moengage/apple-sdk/releases/download/11.03.0/MoEngageCards.xcframework.zip", checksum: "fb19d683efd03502b5e8e8791486869571df4d6bfd03aff7f22ccbe4a62dbfe4"),
             .target(name: "MoEngageCardsSPM", dependencies: .default),
         ]
     ),
@@ -86,11 +86,18 @@ let products: [MoEngagePackageProduct] = [
             .target(name: "MoEngagePersonalizationSPM", dependencies: .default),
         ]
     ),
+    .init(
+        name: "MoEngageRecommendations",
+        targets: [
+            .binaryTarget(name: "MoEngageRecommendations", url: "https://github.com/moengage/apple-sdk/releases/download/11.03.0/MoEngageRecommendations.xcframework.zip", checksum: "5e8695562989ba46422192961f3b7404386d530e9361a2638cfe4b3e483904bf"),
+            .target(name: "MoEngageRecommendationsSPM", dependencies: .default),
+        ]
+    ),
     // tvOS unsupported products
     .init(
         name: "MoEngageGeofence",
         targets: [
-            .binaryTarget(name: "MoEngageGeofence", url: "https://github.com/moengage/apple-sdk/releases/download/11.02.0/MoEngageGeofence.xcframework.zip", checksum: "bf325e841b3283242f2bd3fed4345c93da324e688847c65a215d026184e89e3e"),
+            .binaryTarget(name: "MoEngageGeofence", url: "https://github.com/moengage/apple-sdk/releases/download/11.03.0/MoEngageGeofence.xcframework.zip", checksum: "6d2c7268e3b4d8f9c3a492ead6739acca2868e40614c918fcac402bacf443e7a"),
             .target(name: "MoEngageGeofenceSPM", dependencies: .default),
         ]
     ),

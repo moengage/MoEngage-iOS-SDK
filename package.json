@@ -1,6 +1,6 @@
 {
   "name": "MoEngage-iOS-SDK",
-  "version": "11.02.0",
+  "version": "11.03.0",
   "tagPrefix": "moengage-",
   "postBuild": "Utilities/post_build.rb",
   "packages": [
@@ -14,19 +14,19 @@
     },
     {
       "name": "MoEngageCore",
-      "version": "11.03.0",
+      "version": "11.04.0",
       "tagPrefix": "core-",
       "changelog": "ChangeLogs/MoEngageCore.md",
-      "hash": "a11fa0ffd77708d71ca1250782ed19d2200c1650126976f0d9605c91ff65e340",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/11.02.0/MoEngageCore.xcframework.zip"
+      "hash": "262fba0ce927829e3e928c10f2b7efd0fe2d3811c484e6dc191f6983b2d2fcf5",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/11.03.0/MoEngageCore.xcframework.zip"
     },
     {
       "name": "MoEngageCampaignsCore",
-      "version": "1.01.6",
+      "version": "1.02.0",
       "tagPrefix": "campaignsCore-",
       "changelog": "ChangeLogs/MoEngageCampaignsCore.md",
-      "hash": "207cfbeb924d02ada80034761174692f3b0ebc24183b3b7044a7abc16e30df5b",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/11.00.0/MoEngageCampaignsCore.xcframework.zip"
+      "hash": "fc0a57d441086f6cf823ee32f331934f520746ddea2c6956a2aa34f6ae96205e",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/11.03.0/MoEngageCampaignsCore.xcframework.zip"
     },
     {
       "name": "MoEngageMessaging",
@@ -56,21 +56,21 @@
     },
     {
       "name": "MoEngageInApps",
-      "version": "8.03.0",
+      "version": "8.03.1",
       "tagPrefix": "inapp-",
       "changelog": "ChangeLogs/MoEngageInApps.md",
-      "hash": "5e40fb4992eb86bb4632089c38247a2a24216f2f70a6b689b1ed2f2b04ba6189",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/11.02.0/MoEngageInApps.xcframework.zip",
+      "hash": "93fea003f9519e5d5cbd06ac48fd78180b4b826198efa715e54bc79f3d66005e",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/11.03.0/MoEngageInApps.xcframework.zip",
       "staticFramework": true,
       "common": true
     },
     {
       "name": "MoEngageCards",
-      "version": "6.02.01",
+      "version": "6.03.00",
       "tagPrefix": "cards-",
       "changelog": "ChangeLogs/MoEngageCards.md",
-      "hash": "f4be60cf9141064bb65102953aaa0fadb327534dbac7438a3f1b29c48212b39a",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/11.02.0/MoEngageCards.xcframework.zip",
+      "hash": "fb19d683efd03502b5e8e8791486869571df4d6bfd03aff7f22ccbe4a62dbfe4",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/11.03.0/MoEngageCards.xcframework.zip",
       "staticFramework": true,
       "common": true
     },
@@ -86,11 +86,11 @@
     },
     {
       "name": "MoEngageGeofence",
-      "version": "6.02.1",
+      "version": "6.02.2",
       "tagPrefix": "geofence-",
       "changelog": "ChangeLogs/MoEngageGeofence.md",
-      "hash": "bf325e841b3283242f2bd3fed4345c93da324e688847c65a215d026184e89e3e",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/11.02.0/MoEngageGeofence.xcframework.zip",
+      "hash": "6d2c7268e3b4d8f9c3a492ead6739acca2868e40614c918fcac402bacf443e7a",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/11.03.0/MoEngageGeofence.xcframework.zip",
       "staticFramework": true,
       "common": false
     },
@@ -139,6 +139,16 @@
       "common": true
     },
     {
+      "name": "MoEngageRecommendations",
+      "version": "1.0.0",
+      "tagPrefix": "recommendations-",
+      "changelog": "ChangeLogs/MoEngageRecommendations.md",
+      "hash": "5e8695562989ba46422192961f3b7404386d530e9361a2638cfe4b3e483904bf",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/11.03.0/MoEngageRecommendations.xcframework.zip",
+      "staticFramework": true,
+      "common": true
+    },
+    {
       "name": "MoEngageExtensionsIntegration",
       "tool": "moengage-extensions-integration",
       "version": "1.0.3",
@@ -149,7 +159,7 @@
     }
   ],
   "kmm": {
-    "ce": "1.0.1"
+    "ce": "2.0.1"
   },
   "blacklisted": null
 }

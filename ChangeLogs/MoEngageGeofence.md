@@ -1,3 +1,11 @@
+# 08-10-2026
+
+## 6.02.2
+
+### Internal
+
+- The legacy-storage migration behind `geofenceEnabled` now runs on the `.start` module event instead of `.init`. `.init` is dispatched synchronously inside `MoEngageSDKInstance.syncExecute`, which enters the instance queue via `DispatchQueue.sync` without starting a concurrency job, so storage reads there invoked closures taking `isolated MoEngageSDKInstance` while the runtime still recorded the caller's executor — surfacing as a `data race detected: actor-isolated function ... was not called on the same actor` runtime warning on iOS 17. `.start` runs as a real job on the instance executor, so the migration still happens eagerly at startup with correct isolation
+
 # 16-09-2026
 
 ## 6.02.1

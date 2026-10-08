@@ -1,3 +1,9 @@
+# 08-10-2026
+
+## 1.02.0
+
+- updated the new Gifmanager which can be used by the swiftui for gif handling.
+
 # 22-07-2026
 
 ## 1.01.6
