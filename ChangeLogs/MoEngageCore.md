@@ -1,3 +1,11 @@
+# 14-10-2026
+
+## 11.04.1
+
+### Internal
+
+- SDK-60: Added Swift and Objective-C usage examples to the `getMoEngageDeviceId` documentation in `MoEngageSDKCore`.
+
 # 08-10-2026
 
 ## 11.04.0

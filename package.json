@@ -1,6 +1,6 @@
 {
   "name": "MoEngage-iOS-SDK",
-  "version": "11.03.0",
+  "version": "11.04.0",
   "tagPrefix": "moengage-",
   "postBuild": "Utilities/post_build.rb",
   "packages": [
@@ -14,11 +14,11 @@
     },
     {
       "name": "MoEngageCore",
-      "version": "11.04.0",
+      "version": "11.04.1",
       "tagPrefix": "core-",
       "changelog": "ChangeLogs/MoEngageCore.md",
-      "hash": "262fba0ce927829e3e928c10f2b7efd0fe2d3811c484e6dc191f6983b2d2fcf5",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/11.03.0/MoEngageCore.xcframework.zip"
+      "hash": "7e773469f4e9e86f2bdce94d52e8d6d6b910c92ea004fba72a56b70906b0284e",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/11.04.0/MoEngageCore.xcframework.zip"
     },
     {
       "name": "MoEngageCampaignsCore",
@@ -130,11 +130,11 @@
     },
     {
       "name": "MoEngagePersonalization",
-      "version": "1.4.1",
+      "version": "1.5.0",
       "tagPrefix": "personalization-",
       "changelog": "ChangeLogs/MoEngagePersonalization.md",
-      "hash": "801835ccb18038c2f25f50eea7cb43bd72a1b111162bee0af02250aa2b67212a",
-      "url": "https://github.com/moengage/apple-sdk/releases/download/11.02.0/MoEngagePersonalization.xcframework.zip",
+      "hash": "4dbdcf541eacfb6514d19e04af48b8bf9d867ab9ba5f78e5d7c1bb85ec96a3ff",
+      "url": "https://github.com/moengage/apple-sdk/releases/download/11.04.0/MoEngagePersonalization.xcframework.zip",
       "staticFramework": true,
       "common": true
     },

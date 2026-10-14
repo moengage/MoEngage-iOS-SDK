@@ -1,3 +1,9 @@
+# 14-10-2026
+
+## 1.5.0
+
+- SDK-25: The next experience meta and experience fetch now go to the network after the user's identities or unique ID change, and the next experience fetch also goes to the network when the day or hour changes. Experience responses that arrive after a user change or reset are still returned but not cached. Calls waiting on another call's request now get their callback on logout, unregister, environment switch or SDK disable, with those keys reported as invalid experience keys, instead of no callback.
+
 # 16-09-2026
 
 ## 1.4.1
