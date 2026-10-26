@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
                    DESC
 
   s.addDirectUseWarning
-  s.tvos.deployment_target = '13.0'
+  s.tvos.deployment_target = '15.0'
   s.vendored_frameworks = "#{s.name}.xcframework"
   s.frameworks = 'Foundation', 'Security'
 end
