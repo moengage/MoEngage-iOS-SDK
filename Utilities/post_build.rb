@@ -49,6 +49,10 @@ extension Collection where Element == Target.Dependency {
         dependencies.append(dependency)
         return dependencies
     }
+
+    static func additional(dependencies: [Target.Dependency]) -> [Target.Dependency] {
+        return Self.default + dependencies
+    }
 }
 
 let products: [MoEngagePackageProduct] = [
@@ -83,10 +87,17 @@ let products: [MoEngagePackageProduct] = [
         ]
     ),
     .init(
+        name: "MoEngageCampaignsUIKit",
+        targets: [
+            #{binary_target(config_map['MoEngageCampaignsUIKit'])},
+            .target(name: "MoEngageCampaignsUIKitSPM", dependencies: .default),
+        ]
+    ),
+    .init(
         name: "MoEngageInApps",
         targets: [
             #{binary_target(config_map['MoEngageInApps'])},
-            .target(name: "MoEngageInAppSPM", dependencies: .additional(dependency: "MoEngageTriggerEvaluator")),
+            .target(name: "MoEngageInAppSPM", dependencies: .additional(dependencies: ["MoEngageTriggerEvaluator", "MoEngageCampaignsUIKit"])),
         ]
     ),
     .init(
