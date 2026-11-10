@@ -34,6 +34,7 @@ Pod::Spec.new do |s|
     ss.extend MoEngageReleaseSDK::SubSpec
     ss.dependency 'MoEngage-iOS-SDK/Core'
     ss.dependency_pod 'MoEngageTriggerEvaluator'
+    ss.dependency_pod 'MoEngageCampaignsUIKit'
     ss.dependency_pod 'MoEngageInApps'
   end
 

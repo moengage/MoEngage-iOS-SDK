@@ -55,6 +55,14 @@
       "url": "https://github.com/moengage/apple-sdk/releases/download/11.02.0/MoEngageTriggerEvaluator.xcframework.zip"
     },
     {
+      "name": "MoEngageCampaignsUIKit",
+      "version": "0.0.1",
+      "tagPrefix": "campaignsUIKit-",
+      "changelog": "ChangeLogs/MoEngageCampaignsUIKit.md",
+      "hash": "",
+      "url": ""
+    },
+    {
       "name": "MoEngageInApps",
       "version": "8.03.1",
       "tagPrefix": "inapp-",
