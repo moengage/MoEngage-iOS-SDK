@@ -1,3 +1,13 @@
+# 18-11-2026
+
+## 8.03.2
+
+### BugFix
+
+- SDK-56: Fixed the close button of native pop-up and full-screen in-apps sitting partly under the status bar on iPhones with a notch or Dynamic Island, where it needed several taps. Nudges now move clear of a navigation or tab bar that appears over them after they are shown, so their close button stays tappable. VoiceOver now reads the close button as "Close" when the campaign has no accessibility text.
+- Fixed a portrait-only in-app (nudge or pop-up) staying on screen after the device was rotated while the app was in the app switcher or background. On iOS 16 and later the orientation rules now run once the interface has settled into the new orientation. On iOS 15 the SDK still reacts only to the device orientation notification.
+- Fixed an HTML nudge that supports both orientations being laid out against the previous orientation's screen after a rotation, on iOS 16 and later.
+
 # 08-10-2026
 
 ## 8.03.1

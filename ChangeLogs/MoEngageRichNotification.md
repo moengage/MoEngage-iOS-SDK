@@ -1,3 +1,13 @@
+# 18-11-2026
+
+## 8.03.00
+
+- `MoEngageSDKRichNotification.addPushTemplate(toController:withNotification:)` is now annotated `@MainActor`. Objective-C callers and calls from a notification content extension's `didReceive(_:)` (already main-actor isolated) are unaffected; Swift callers not already on the main actor must now hop to it (e.g. `await MainActor.run { … }`).
+
+### Internal
+
+- Removed `MoEngageRichNotificationDelegateHandler`. Notification service extension requests now reach RichNotification as the `SharedEvent.extension(.didReceiveNotificationRequest)` module event, handled by `MoEngageRichNotificationModule`, instead of through Core's deprecated manager.
+
 # 16-09-2026
 
 ## 8.02.00

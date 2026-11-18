@@ -1,3 +1,11 @@
+# 18-11-2026
+
+## 11.02.2
+
+### Internal
+
+- SDK-167: SDK initialization now calls `MoEngageCoreHandler.initializeSDK` directly instead of creating its own task.
+
 # 16-09-2026
 
 ## 11.02.1

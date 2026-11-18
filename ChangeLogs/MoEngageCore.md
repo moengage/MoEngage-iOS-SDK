@@ -1,3 +1,22 @@
+# 18-11-2026
+
+## 11.05.0
+
+### BugFix
+
+- SDK-167: Fixed data-race warnings on iOS 17 and below during SDK initialization and auto-initialization.
+
+### Internal
+
+- SDK-167: `MoEngageCoreHandler.initializeSDK` now creates the initialization task itself and returns immediately.
+- Removed deprecated CampaignsCore manager/delegate shims in CampaignsCore concurrency migration
+- Removed deprecated RichNotification manager/delegate shims in RichNotification concurrency migration. Added `MoEngageModule.SharedEvent`, instance-independent module events delivered through the new `MoEngageModule.Item.process(event: SharedEvent) -> Bool`.
+
+### BugFix
+
+- SDK-279: Fixed in-app "Open in external browser" actions doing nothing on iOS 18 and later. The URL was opened through the deprecated `UIApplication` `openURL:` selector, which iOS 18 turned into a no-op; it now uses `open(_:options:completionHandler:)`.
+
+
 # 14-10-2026
 
 ## 11.04.1

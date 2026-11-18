@@ -1,3 +1,11 @@
+# 18-11-2026
+
+## 1.0.4
+
+### Internal
+
+- The notification service extension now looks up `MoEngageRichNotificationModule` by name and hands it the request as `SharedEvent.extension(.didReceiveNotificationRequest)`, instead of calling the removed RichNotification manager (RichNotification stays weak-linked and is not imported). Falls back to Messaging when RichNotification is absent or doesn't handle the request.
+
 # 22-07-2026
 
 ## 1.0.3

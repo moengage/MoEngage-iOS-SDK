@@ -1,3 +1,11 @@
+# 18-11-2026
+
+## 6.02.02
+
+### Internal
+
+- The missing-RichNotification-integration check for rich push payloads now checks whether `MoEngageRichNotificationModule` is loaded instead of using the removed RichNotification manager.
+
 # 16-09-2026
 
 ## 6.02.01

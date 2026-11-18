@@ -1,3 +1,15 @@
+# 18-11-2026
+
+## 1.02.1
+
+### BugFix
+
+- Fixed email click sync stopping for the rest of the session when a click's request could not be built.
+
+### Internal
+
+- Migrated the module to Swift concurrency — email click tracking runs on the SDK instance actor with the typed storage and network APIs, the retry timer is task-based, and the UI helpers isolate their UIKit work to the main actor. No public API changes.
+
 # 08-10-2026
 
 ## 1.02.0
