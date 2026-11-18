@@ -6,7 +6,7 @@ import PackageDescription
 
 let package = Package(
     name: "MoEngage-iOS-SDK",
-    platforms: [.iOS(.v13), .tvOS(.v13)],
+    platforms: [.iOS(.v15), .tvOS(.v15)],
     products: [], dependencies: [
         // can be updated to from:
         .package(url: "https://github.com/moengage/kmm-apple-sdk", exact: "2.0.1")

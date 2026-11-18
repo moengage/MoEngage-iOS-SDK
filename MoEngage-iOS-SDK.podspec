@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
                    Refer individual framework's description for their usages.
                    DESC
 
-  s.tvos.deployment_target = '13.0'
+  s.tvos.deployment_target = '15.0'
   s.default_subspec = 'KMMedCore'
   s.subspec 'Core' do |ss|
     ss.extend MoEngageReleaseSDK::SubSpec
