@@ -1,3 +1,12 @@
+# 26-11-2026
+
+## 11.05.1
+
+### BugFix
+
+- SUP-36605: Fixed App/Site Opened being tracked when the app is launched in background (e.g. silent push, notification action). App open is now tracked only when the app enters foreground.
+
+
 # 18-11-2026
 
 ## 11.05.0
